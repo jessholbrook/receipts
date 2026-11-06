@@ -168,7 +168,7 @@
   ],
   "research_type": "mixed",
   "industry": "saas_b2b",
-  "product_type": "enterprise_software",
+  "product_type": "desktop_software",
   "metrics": [
    "task_success"
   ],
@@ -386,6 +386,376 @@
     "url": "https://priceonomics.com/?p=4105",
     "publisher": "Priceonomics",
     "date": null
+   }
+  ]
+ },
+ {
+  "slug": "lego-friends-girls-research",
+  "title": "LEGO's four years of research with girls led to LEGO Friends, which doubled sales targets",
+  "company": "The LEGO Group",
+  "is_anonymized": false,
+  "summary": "With about 90% of its consumers boys, LEGO spent roughly four years studying how girls play and testing ideas with them. The resulting LEGO Friends line (2012) used mini-doll figures, named characters and detailed settings. NPR reports it doubled sales expectations in its launch year and sales to girls tripled.",
+  "problem": "In 2011, 90% of LEGO's consumers were boys, and earlier attempts to sell to girls had not worked.",
+  "research": "About four years of research into how girls and boys play, including asking girls what they would want in sets (e.g. 'what would you like to see in a Lego school?'). Sample sizes are not given in the NPR report; other sources cite figures from 3,000 to 4,500 girls and mothers that vary between accounts.",
+  "insight": "When girls build, they tend to play 'on the inside' of a structure and with characters and stories, and they value small, realistic details (an art studio with paint canisters and a canvas, for example).",
+  "change": "LEGO launched Friends: five named mini-doll characters with storylines and detailed settings such as a vet's office, karate studio and beauty parlour.",
+  "outcome": "Per NPR: the line 'doubled sales expectations in 2012', the year it launched, and 'sales to girls tripled in just that year'.",
+  "headline_metric": "2x sales expectations",
+  "attribution": "The research shaped the line's design and is widely credited for its success, but launch-year sales also depend on marketing, retail placement and price; no causal analysis is published.",
+  "caveats": "Sales figures are company statements reported by press. The line was criticized for reinforcing gender stereotypes, so 'success' is commercial, not a verdict on the research framing. Research sample sizes differ across sources.",
+  "methods": [
+   "field_study",
+   "concept_testing",
+   "interviews"
+  ],
+  "research_type": "generative",
+  "industry": "ecommerce_retail",
+  "product_type": "physical_product",
+  "metrics": [
+   "revenue",
+   "adoption"
+  ],
+  "company_size": "enterprise",
+  "year": 2012,
+  "evidence_strength": "reported",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "Girls' Legos Are A Hit, But Why Do Girls Need Special Legos?",
+    "url": "https://www.kunc.org/2013-06-29/girls-legos-are-a-hit-but-why-do-girls-need-special-legos",
+    "publisher": "NPR (Neda Ulaby), via KUNC",
+    "date": "2013-06-29"
+   }
+  ]
+ },
+ {
+  "slug": "pg-swiffer-home-cleaning-observation",
+  "title": "Watching people clean their floors led P&G and Continuum to the Swiffer",
+  "company": "Procter & Gamble (with Continuum)",
+  "is_anonymized": false,
+  "summary": "P&G asked design firm Continuum to help invent a better mop. Researchers videotaped people cleaning at home and saw how much they hated touching dirty mops, and that most floor dirt was dust that could be picked up electrostatically. The Swiffer launched in 1999 and is reported to have sold more than 11 million starter kits in its first year.",
+  "problem": "P&G's new-ventures group wanted a better way to clean floors; mops and buckets were messy and disliked.",
+  "research": "In-home observation and video of people cleaning (late 1990s). Because participants often cleaned before researchers arrived, researchers reportedly started bringing in dirt themselves, for example spilling coffee grounds, to watch real clean-up.",
+  "insight": "People hated handling dirty mops and wringing them out; much of the dirt was fine dust that could be picked up electrostatically. One older participant swept spilled coffee grounds and then used a damp paper towel for the fine residue rather than a mop.",
+  "change": "The Swiffer: a lightweight sweeper with disposable electrostatic or wet cloths, sold on a razor-and-blades model.",
+  "outcome": "Continuum's case study says it generated $100 million in sales in its first four months, more than 11.1 million starter kits sold in the US within a year, and eventually became a $500 million annual brand.",
+  "headline_metric": "11.1M kits in year 1",
+  "attribution": "The product concept is credited to the observation work by both the agency and independent press. Sales also reflect P&G's distribution and marketing power.",
+  "caveats": "Sales figures come from the design agency's own case study (incentive to promote); independent press (Boston Globe) confirms the research story and calls the product a 'blockbuster' without numbers. The coffee-grounds anecdote appears in marketing retellings without a cited source. P&G has not published current sales.",
+  "methods": [
+   "ethnography",
+   "field_study"
+  ],
+  "research_type": "generative",
+  "industry": "ecommerce_retail",
+  "product_type": "physical_product",
+  "metrics": [
+   "revenue",
+   "adoption"
+  ],
+  "company_size": "enterprise",
+  "year": 1999,
+  "evidence_strength": "reported",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Procter & Gamble customer case study (EPAM Continuum)",
+    "url": "https://www.casestudies.com/company/epam-continuum/case-study/procter-gamble-customer-case-study-2",
+    "publisher": "CaseStudies.com / EPAM Continuum",
+    "date": null
+   },
+   {
+    "title": "In Swiffer, a pet project that went big",
+    "url": "https://www.bostonglobe.com/business/2016/03/22/product-development-race-goes-swiffer/ddjA1UKErXX33B2Vx1rdsJ/story.html",
+    "publisher": "The Boston Globe (Megan Woolhouse)",
+    "date": "2016-03-22"
+   },
+   {
+    "title": "Why researchers tricked a woman into cleaning her floor",
+    "url": "https://marketingsociety.com/the-library/why-researchers-tricked-woman-cleaning-her-floor",
+    "publisher": "The Marketing Society (Giles Lury)",
+    "date": "2015-01-18"
+   }
+  ]
+ },
+ {
+  "slug": "ibm-1999-website-redesign",
+  "title": "IBM's 1999 site redesign: the much-quoted 'help use down 84%, sales up 400%'",
+  "company": "IBM",
+  "is_anonymized": false,
+  "summary": "Usage data showed that the most-used features on IBM's late-1990s website were search and then the Help button, signs that people could not navigate the site. IBM redesigned the site around ease of use and relaunched in February 1999. The widely quoted result is that Help use fell 84% and sales rose 400%.",
+  "problem": "IBM's web presence was a hard-to-navigate maze of separate subsites. Search was the most popular feature because navigation failed, and Help was second because search worked poorly.",
+  "research": "Analysis of how visitors used the site (feature usage), as described in secondary accounts. The redesign took about 10 weeks and more than 100 employees, at a cost estimated 'in the millions'. Details of any usability testing are not given.",
+  "insight": "Heavy use of search and Help was a symptom of failed navigation, not a sign those features were working.",
+  "change": "A site-wide redesign to make IBM's web presence more cohesive and easier to navigate, relaunched February 1999.",
+  "outcome": "Secondary accounts say: in the first week after the redesign, use of the Help button fell 84% and sales rose 400%. Another account says IBM announced, one month after relaunch, that traffic to the Shop IBM store rose 120% and sales went up 400%.",
+  "headline_metric": "+400% sales (claimed)",
+  "attribution": "Weak. The figures are IBM's own announcement relayed by press; the redesign was large and the research input is thinly described. Sales growth in 1999 e-commerce had many other drivers.",
+  "caveats": "A staple of 'usability ROI' slide decks, but sources disagree on the timeframe (first week vs. one month). The original source (InfoWorld, 1999) is no longer online; the figures here are confirmed only in secondary academic material citing it. Baselines are not given, so a 400% rise could be from a small base. Treat as folklore with a paper trail, not evidence.",
+  "methods": [
+   "analytics"
+  ],
+  "research_type": "evaluative",
+  "industry": "saas_b2b",
+  "product_type": "website",
+  "metrics": [
+   "revenue",
+   "support_cost"
+  ],
+  "company_size": "enterprise",
+  "year": 1999,
+  "evidence_strength": "reported",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "User Centered Design works... (lecture slides, citing IBM figures)",
+    "url": "https://rauterberg.employee.id.tue.nl/publications/2003-ucd-works.pdf",
+    "publisher": "Matthias Rauterberg, Technical University Eindhoven",
+    "date": "2003"
+   },
+   {
+    "title": "Modeling Web Usability Diagnostics on the Basis of Usage Statistics (book chapter, citing Battey, InfoWorld 1999)",
+    "url": "https://www.avi.har-el.com/eng/Articles/Wiley-c07.pdf",
+    "publisher": "Harel, Kenett & Ruggeri (Wiley)",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "jstor-no-native-app-mobile-intercepts",
+  "title": "JSTOR drops plans for a native app after in-the-moment mobile interviews",
+  "company": "JSTOR (ITHAKA)",
+  "is_anonymized": false,
+  "summary": "JSTOR had to decide between building a separate mobile app or a responsive website, and its analytics couldn't show how research moved across devices. Short live interviews with people using JSTOR on phones and tablets showed they often started research on one device and finished on another. JSTOR decided not to build an app and invested in a consistent responsive site plus user accounts.",
+  "problem": "A product-strategy decision: build a dedicated JSTOR mobile app, or make the website responsive? Analytics could not explain mobile users' wider workflows.",
+  "research": "Targeted live intercepts of mobile-only visitors (phones and tablets) via Ethnio, inviting them to a 10-minute interview and calling them within 30 minutes of opting in. Participant numbers are not published.",
+  "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
+  "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
+  "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
+  "headline_metric": null,
+  "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
+  "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
+  "methods": [
+   "interviews"
+  ],
+  "research_type": "generative",
+  "industry": "education",
+  "product_type": "web_app",
+  "metrics": [
+   "cost_avoided"
+  ],
+  "company_size": "midmarket",
+  "year": null,
+  "evidence_strength": "decision",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "JSTOR (ITHAKA): Taking a leap into targeted mobile intercepts",
+    "url": "https://ethn.io/customers/ithaka",
+    "publisher": "Ethnio",
+    "date": null
+   },
+   {
+    "title": "JSTOR reaches mobile users in 10-minute live interviews with Ethnio",
+    "url": "https://www.casestudies.com/company/ethnio/case-study/jstor-reaches-mobile-users-in-10-minute-live-interviews-with-ethnio",
+    "publisher": "CaseStudies.com",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "uk-dh-digital-consultations-no-new-product",
+  "title": "UK Department of Health discovery concludes no new consultation product is needed",
+  "company": "UK Department of Health",
+  "is_anonymized": false,
+  "summary": "A six-week discovery into how the Department of Health runs public consultations looked at respondents, organisations that collate responses, and policy makers. The team concluded that the needs could be met by using existing tools better, writing in plain English and communicating throughout policy-making, rather than building a new digital product.",
+  "problem": "The department wanted to improve digital public consultations and expected the answer to be a new product or service.",
+  "research": "A 6-week discovery (early 2015) with three user groups: individual respondents, consultation response curators at charities and trade unions, and policy makers. Methods included personas, a prioritized list of user needs (card sorting), sketching and prototyping, a design workshop, and a webinar with agencies and Cabinet Office colleagues. Participant numbers are not given.",
+  "insight": "Respondents' core need was to put their views across clearly, and the department only accepted text responses; most of the improvement could come from process and content, not new software.",
+  "change": "The team decided not to build a new product or service, and instead to use existing tools more effectively, write consultations in plain English and keep respondents informed throughout the policy process.",
+  "outcome": "No new build. The product manager writes that the approach needed 'no hard cash'. No metrics reported.",
+  "headline_metric": null,
+  "attribution": "Direct: the product manager states the research led to the no-build decision.",
+  "caveats": "Short first-party blog post with no participant numbers or cost estimate. Whether the process changes improved consultations is not reported.",
+  "methods": [
+   "interviews",
+   "card_sorting",
+   "concept_testing",
+   "co_design"
+  ],
+  "research_type": "generative",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "cost_avoided"
+  ],
+  "company_size": "public_sector",
+  "year": 2015,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Digital consultations: what we discovered in discovery",
+    "url": "https://digitalhealth.blog.gov.uk/2015/02/06/digital-consultations-what-we-discovered-in-discovery",
+    "publisher": "Department of Health digital blog (GOV.UK)",
+    "date": "2015-02-06"
+   }
+  ]
+ },
+ {
+  "slug": "gds-webchat-no-central-component",
+  "title": "GDS research finds no need for a central government webchat platform",
+  "company": "Government Digital Service (UK)",
+  "is_anonymized": false,
+  "summary": "GDS ran a discovery and alpha to see whether government needed a centrally run webchat component, like GOV.UK Pay or Notify. Research with service users, advisers, managers, service teams and contact centres found no need for a shared component. GDS published patterns and guidance instead and closed the alpha.",
+  "problem": "Several government service teams were using or considering webchat, and GDS needed to decide whether to build and run a shared webchat platform.",
+  "research": "A call-out to service teams, then discovery and alpha research (2016) with government and commercial contact centres and four user groups: service users, advisers, managers and service teams. Methods included role play of chat interactions, deliberately breaking user journeys, and screen-reader testing for accessibility.",
+  "insight": "There was no identified need for a central webchat component. Teams would benefit more from shared service patterns. The research also warned against assuming webchat saves money on its own, and found chat conversations are a useful source of insight into user needs.",
+  "change": "GDS did not build a webchat platform. It produced patterns and guidance for the Service Manual and a published approach to implementing webchat, then ended the alpha.",
+  "outcome": "A central platform build was avoided; guidance was published instead. No cost figures given.",
+  "headline_metric": null,
+  "attribution": "Direct: the GDS post presents the decision as a result of the research.",
+  "caveats": "First-party. No participant counts or estimate of cost avoided. Platform builds may also have been weighed against other GDS priorities not discussed.",
+  "methods": [
+   "interviews",
+   "concept_testing",
+   "accessibility_research",
+   "field_study"
+  ],
+  "research_type": "mixed",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "cost_avoided"
+  ],
+  "company_size": "public_sector",
+  "year": 2017,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Webchat: the journey so far",
+    "url": "https://governmentasaplatform.blog.gov.uk/2017/01/17/webchat-journey",
+    "publisher": "Government as a Platform blog (GDS)",
+    "date": "2017-01-17"
+   }
+  ]
+ },
+ {
+  "slug": "shelter-chatbot-to-triage-discovery",
+  "title": "Shelter drops an AI advice chatbot for triage after discovery research",
+  "company": "Shelter (UK housing charity)",
+  "is_anonymized": false,
+  "summary": "Shelter considered building an AI chatbot to personalise housing advice on its website. Discovery research showed the bigger problem was that people with the most urgent, complex needs struggled to reach advisers, while people with simpler needs preferred talking to someone. Shelter switched to designing triage, asked funders for less money, and launched a simple non-AI journey for low-urgency needs.",
+  "problem": "Shelter wanted to use digital tools to help more people with housing problems and was considering an AI chatbot that would ask questions and curate advice content.",
+  "research": "A remote discovery run with two specialist agencies. A follow-on triage discovery (April to August 2021) interviewed 10 team leaders/stakeholders and 11 advisers, analysed 15 helpline calls, 60 webchat transcripts and 7 social media conversations, and interviewed 34 service users.",
+  "insight": "Helpline and webchat were first-come, first-served, so urgent, complex cases often couldn't get through; only 29% of queries handled were high-priority. A chatbot would not fix this. Many users had only a smartphone with limited credit or a landline, and many had health conditions or disabilities.",
+  "change": "Shelter moved from a chatbot to a triage approach that prioritises urgent, complex cases for one-to-one advice and points simpler needs to advice content. It applied for less funding to run a triage discovery (a later implementation bid succeeded) and launched a tailored journey for low-urgency needs on its existing site without AI.",
+  "outcome": "The chatbot build was not pursued. No outcome metrics for triage are reported yet.",
+  "headline_metric": null,
+  "attribution": "Direct: Shelter's product team says the discovery findings redirected the funding bid and the product.",
+  "caveats": "First-party charity blog. Outcomes of the triage approach were not published at the time; the 29% figure is a pre-change baseline.",
+  "methods": [
+   "interviews",
+   "support_analysis",
+   "journey_mapping"
+  ],
+  "research_type": "generative",
+  "industry": "nonprofit",
+  "product_type": "service",
+  "metrics": [
+   "cost_avoided"
+  ],
+  "company_size": "midmarket",
+  "year": 2022,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "The importance of discovery in product opportunity selection",
+    "url": "https://blog.shelter.org.uk/the-importance-of-discovery-in-product-opportunity-selection/",
+    "publisher": "Shelter blog (Jane Kelly)",
+    "date": "2022-02-25"
+   },
+   {
+    "title": "How a discovery phase process helped transform our helpline and webchat services",
+    "url": "https://blog.shelter.org.uk/how-a-discovery-phase-process-helped-transform-our-helpline-and-webchat-services/",
+    "publisher": "Shelter blog (Jemima Stevens)",
+    "date": "2022-03-02"
+   }
+  ]
+ },
+ {
+  "slug": "embrace-infant-warmer-nepal-field-research",
+  "title": "Field research in Nepal redirects the Embrace infant warmer toward home use",
+  "company": "Embrace (Stanford 'Design for Extreme Affordability' project)",
+  "is_anonymized": false,
+  "summary": "A Stanford student team set out to make a low-cost way to keep premature and low-birth-weight babies warm, initially as a device for clinics. Observing rural families in Nepal showed that many babies were far from hospitals and that mothers improvised with blankets, hot-water bottles or light bulbs. The team added an at-home warmer that needs no constant electricity, priced at an expected $100 to $200 versus incubators costing up to $20,000.",
+  "problem": "Millions of premature and underweight babies die each year in their first weeks, often from hypothermia, and conventional incubators are expensive and need reliable power and trained staff.",
+  "research": "Field observation of hospitals and rural families in Nepal by the student team (around 2007–2008), followed by clinical trials with mothers.",
+  "insight": "The need was not only in clinics: rural families far from hospitals tried to keep babies warm with blankets, warm water bottles or light bulbs, which were usually not enough (and bulbs sometimes shattered over babies).",
+  "change": "Alongside the electrically heated clinic version, the team built a cheaper at-home model heated with warm water, with more safety features and more wax to hold 37°C for longer, including during an emergency trip to hospital. Both use a sleeping-bag pouch with a phase-change wax pad.",
+  "outcome": "At the time of the source the product was in clinical trials with an expected price of $100–$200, against $1,000–$2,000 for incubators in developing countries. Mothers in trials were reluctant to take babies out, and NGOs in Africa and Asia were sending inquiries. No mortality or deployment figures are given.",
+  "headline_metric": null,
+  "attribution": "The student newspaper credits observations of rural families' unmet needs with the at-home model. Later impact claims are not covered by this source.",
+  "caveats": "Often retold as a dramatic pivot 'from incubator to sleeping bag'; the 2010 source describes adding an at-home version to a clinic device rather than abandoning it. Health outcomes are not documented here. Student-newspaper source written while the venture was pre-launch.",
+  "methods": [
+   "field_study",
+   "ethnography"
+  ],
+  "research_type": "generative",
+  "industry": "healthcare",
+  "product_type": "physical_product",
+  "metrics": [
+   "accessibility"
+  ],
+  "company_size": "startup",
+  "year": 2010,
+  "evidence_strength": "decision",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "At-risk babies kept warm by Stanford innovation",
+    "url": "https://stanforddaily.com/2010/11/18/at-risk-babies-kept-warm-by-stanford-innovation/",
+    "publisher": "The Stanford Daily (Kathleen Chaykowski)",
+    "date": "2010-11-18"
+   }
+  ]
+ },
+ {
+  "slug": "firefox-tab-groups-removed-usage-data",
+  "title": "Usage data of about 0.01% leads Mozilla to remove Firefox Tab Groups",
+  "company": "Mozilla",
+  "is_anonymized": false,
+  "summary": "Firefox's Tab Groups (Panorama) feature was buggy, slow and getting in the way of Firefox's multi-process rewrite. Telemetry showed only around 0.01% of users used it. Mozilla removed it, deleting more than 24,000 lines of code, rather than spend the effort to rebuild it.",
+  "problem": "The team had to decide whether to invest in fixing a large, fragile feature with serious performance problems and flaky tests, which also clashed with the move to separate processes for tabs (electrolysis).",
+  "research": "Firefox usage telemetry measured over a long period, as part of a 'Great or Dead' review of Firefox features; combined with the bug record.",
+  "insight": "Usage was extremely low, around 0.01% of users, which could not justify the work needed to bring the feature up to acceptable quality for millions of users.",
+  "change": "Tab Groups was removed from Firefox (with an add-on path for existing users) instead of being rebuilt.",
+  "outcome": "More than 24,000 lines of code were removed, freeing the team from maintaining the feature and unblocking multi-process work. Tab groups later returned in a new design years afterwards.",
+  "headline_metric": "24,000+ lines removed",
+  "attribution": "Usage data was a central reason, alongside quality and architecture problems, so it was one of several causes.",
+  "caveats": "Written on a Mozilla engineer's personal blog, not an official report. Behavioural analytics only; no qualitative research on why people didn't use it. A small but vocal group of users was upset, and Mozilla later reintroduced tab groups, so the long-term call is debatable.",
+  "methods": [
+   "analytics"
+  ],
+  "research_type": "evaluative",
+  "industry": "consumer_tech",
+  "product_type": "desktop_software",
+  "metrics": [
+   "cost_avoided",
+   "adoption"
+  ],
+  "company_size": "midmarket",
+  "year": 2016,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Why was Tab Groups (Panorama) removed?",
+    "url": "https://www.gijsk.com/blog/2016/02/tab-groups-removal/",
+    "publisher": "Gijs Kruitbosch (Firefox engineer) blog",
+    "date": "2016-02-04"
    }
   ]
  },
@@ -717,6 +1087,363 @@
   ]
  },
  {
+  "slug": "zalando-computer-vision-search-pivot",
+  "title": "Zalando team drops computer-vision search idea after customer research shows outfit hunts start on social media",
+  "company": "Zalando",
+  "is_anonymized": false,
+  "summary": "A group of Zalando intrapreneurs set out to use computer vision to improve search. Before building, they interviewed customers about how they look for outfits and mapped the journey. Most started on social media and used makeshift workarounds to find similar items, which 'changed the course of the whole project' toward redesigning that journey.",
+  "problem": "An internal innovation team wanted to explore computer vision as a way to improve fashion search, a technology-first starting point.",
+  "research": "In Zalando's intrapreneurship programme (around 2017-2018) the team wrote a research question about how people search for outfits, met 'several' customers, and turned the conversations into a user journey map.",
+  "insight": "Most users began their outfit search on social media and then used 'hacky ways' to find similar pieces to buy, so the real problem sat in the jump from inspiration to shopping rather than in search technology.",
+  "change": "The team changed the project's direction from a computer-vision search tool to redesigning the inspiration-to-purchase journey so users could get there with less effort.",
+  "outcome": "No metrics. The author describes the result as a 'different approach, huge impact!' for the project's direction.",
+  "headline_metric": null,
+  "attribution": "Direct for the decision: the post says the research finding itself changed the project's course. Nothing is reported about what shipped afterwards.",
+  "caveats": "Short first-party blog post used to illustrate an innovation process. Number of customers and methods are vague ('several'). No outcome data, and it isn't clear whether the redesigned journey launched.",
+  "methods": [
+   "interviews",
+   "journey_mapping"
+  ],
+  "research_type": "generative",
+  "industry": "ecommerce_retail",
+  "product_type": "website",
+  "metrics": [
+   "cost_avoided"
+  ],
+  "company_size": "enterprise",
+  "year": 2018,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "The Intrapreneurship Journey at Zalando",
+    "url": "https://engineering.zalando.com/posts/2018/06/innovation-intrapreneurship.html",
+    "publisher": "Zalando Engineering Blog",
+    "date": "2018-06-21"
+   }
+  ]
+ },
+ {
+  "slug": "zalando-sustainability-cause-based-browsing",
+  "title": "Zalando research finds half of shoppers don't understand 'sustainable fashion'; it launches browsing by cause",
+  "company": "Zalando",
+  "is_anonymized": false,
+  "summary": "Zalando's 'It Takes Two' research found that while most customers call sustainability important, about one in two don't understand what it means in fashion, and complexity and trust block them. In response, Zalando built a browsing experience where customers shop by causes such as animal welfare or water conservation, translating technical sustainability criteria into plain impact areas.",
+  "problem": "Many customers said sustainability mattered to them, but far fewer acted on it when buying fashion. Zalando wanted to understand the gap and make sustainable products easier to choose.",
+  "research": "The 'It Takes Two' attitude-behaviour gap study (published 2021) ran in three stages, including a 12-person ethnographic study and a survey of 2,500 consumers across two generations and five markets, plus Zalando's own customer data.",
+  "insight": "Complexity was a main barrier: roughly one in two customers didn't understand what sustainability means in fashion. Trust was the other blocker, and customers needed a positive, emotional connection to the topic before digging deeper.",
+  "change": "Zalando launched a value-based browsing experience in the Fashion Store, mapping its existing sustainability criteria onto six cause areas (animal welfare, reusing materials, worker well-being, water conservation, reducing emissions, extending the life of fashion) described in simpler language.",
+  "outcome": "No outcome metrics reported. Zalando described the launch as a first step and a learning opportunity.",
+  "headline_metric": null,
+  "attribution": "The launch post explicitly ties the design approach (plain-language cause areas) to the research finding about complexity. No evidence about whether it changed behaviour.",
+  "caveats": "First-party announcement, partly sustainability communications. No adoption or conversion data. The ethnographic component is small (12 people) and the survey is self-reported attitudes.",
+  "methods": [
+   "survey",
+   "ethnography"
+  ],
+  "research_type": "generative",
+  "industry": "ecommerce_retail",
+  "product_type": "website",
+  "metrics": [
+   "engagement"
+  ],
+  "company_size": "enterprise",
+  "year": 2021,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Zalando Enables More Customers to Shop Sustainably With New Value-Based Browsing Experience",
+    "url": "https://corporate.zalando.com/en/our-impact/zalando-enables-more-customers-shop-sustainably-new-value-based-browsing-experience",
+    "publisher": "Zalando",
+    "date": "2021-04-20"
+   },
+   {
+    "title": "Attitude-Behavior Gap Report",
+    "url": "https://corporate.zalando.com/en/our-impact/sustainability/sustainability-reports/attitude-behavior-gap-report",
+    "publisher": "Zalando",
+    "date": "2021"
+   }
+  ]
+ },
+ {
+  "slug": "just-eat-multi-page-checkout",
+  "title": "Just Eat watches people order at home, splits accordion checkout into pages; order completion up 5%",
+  "company": "Just Eat",
+  "is_anonymized": false,
+  "summary": "A designer working on Just Eat's UK site watched people place real takeaway orders in a lab and in their own homes. They got stuck in the single-page accordion checkout, scrolling up and down to open and close panels. The checkout was rebuilt with one step and one button per page, and the designer reports a 5% rise in order completion, plus 3% from a related search results redesign.",
+  "problem": "Just Eat's checkout was a single-page accordion with inconsistent controls, and the mobile search results page had no filters and an awkward sort control.",
+  "research": "Around 2014, observation of users placing real orders in a research lab and in their own homes, plus bi-weekly A/B tests in Optimizely used to prioritise work. Participant numbers not stated.",
+  "insight": "In the accordion checkout people got stuck and scrolled up and down to open and close panels. Controls were inconsistent: the delivery step had several buttons while other steps used radio buttons and a single button.",
+  "change": "Each checkout step moved to its own page with a single button. Separately, search results got an accessible, responsive sort control that works on all screen sizes, and mobile filters and sort start collapsed so results get more room.",
+  "outcome": "The designer reports that the multi-page checkout increased order completion rate by 5%, and the search results redesign increased order completion rate by 3%.",
+  "headline_metric": "+5% order completion",
+  "attribution": "The checkout change responds directly to the observed problem. The team was running regular Optimizely A/B tests, so the figures may come from controlled tests, but the write-up doesn't say so explicitly.",
+  "caveats": "Written by the designer (a contractor) about his own work, as a portfolio case study, not by Just Eat. Measurement method, baseline and sample sizes aren't given. Old (around 2014). Rated 'measured' rather than 'tested' because the test design isn't stated.",
+  "methods": [
+   "field_study",
+   "usability_testing",
+   "experimentation"
+  ],
+  "research_type": "evaluative",
+  "industry": "food_delivery",
+  "product_type": "checkout_flow",
+  "metrics": [
+   "conversion",
+   "task_success"
+  ],
+  "company_size": "enterprise",
+  "year": 2015,
+  "evidence_strength": "measured",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Redesigning Just Eat's checkout and search results page",
+    "url": "https://adamsilver.io/case-studies/redesigning-just-eats-checkout-and-search-results-page/",
+    "publisher": "Adam Silver",
+    "date": "2015-01-01"
+   }
+  ]
+ },
+ {
+  "slug": "time4sleep-buying-guides-mobile",
+  "title": "Time4Sleep finds bed shoppers lost and missing buying guides; A/B-tested category page lifts mobile conversion 63%",
+  "company": "Time4Sleep",
+  "is_anonymized": false,
+  "summary": "UK bed retailer Time4Sleep and its CRO agency Epiphany combined analytics, session recordings, heatmaps and on-page polls to work out why mobile shoppers weren't buying. Visitors bounced between the beds category and product pages, never found the buried buying guides, and were confused about bed-buying basics even with items in the cart. A redesigned category page, A/B tested against two other variants, produced a 63% rise in mobile conversion for bed shoppers.",
+  "problem": "About 70% of Time4Sleep's traffic was mobile, and mobile visitors weren't converting well, especially in the beds category.",
+  "research": "Around 2017, the agency queried Google Analytics for back-and-forth paths between category and product pages, watched session recordings of those visitors, studied mobile heatmaps, and ran on-page polls asking things like 'Is there anything preventing you from purchasing at this point?' Persona work suggested first-time bed buyers lacked basic knowledge. Some remote user test videos were also run but proved less useful.",
+  "insight": "Visitors reached checkout with a product in the cart but still lacked information to finish. They looped between the bed category page and product pages, rarely clicked buying-guide links because they were buried under other content, and rarely used sort buttons because it wasn't clear what they did. Poll answers confirmed confusion about bed-buying fundamentals.",
+  "change": "The beds category page got visible links to information pages (size guides, children's bed guides) at the top, simpler filters for mobile, and improved informational content. Three variations were built and A/B tested.",
+  "outcome": "The winning variation produced 'a 63% increase in mobile conversion rates for the bed shopper segment'. For the Beds category page the case study also reports a 19% increase in overall conversions, 36% more visitors reaching the cart, 124% more visitors reaching informational content, and a 9% reduction in category-page bounce rate.",
+  "headline_metric": "+63% mobile conversion",
+  "attribution": "Strong for a vendor story: the change came from specific research findings and was A/B tested against the existing page. The 63% applies to one segment (mobile bed shoppers), not the whole site.",
+  "caveats": "Published by Hotjar (the tool vendor) with the CRO agency, both with an incentive. Test duration, sample size and significance aren't reported. Much of the 'research' is behavioural analytics plus short polls rather than moderated studies; the team said its user-test videos weren't very helpful. Exact year is approximate.",
+  "methods": [
+   "analytics",
+   "survey",
+   "usability_testing",
+   "experimentation"
+  ],
+  "research_type": "mixed",
+  "industry": "ecommerce_retail",
+  "product_type": "website",
+  "metrics": [
+   "conversion",
+   "engagement"
+  ],
+  "company_size": "midmarket",
+  "year": 2019,
+  "evidence_strength": "tested",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
+    "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
+    "publisher": "Hotjar (via FeaturedCustomers)",
+    "date": null
+   },
+   {
+    "title": "Case Study: Time4Sleep achieves 63% increase in mobile conversions with Hotjar",
+    "url": "https://www.casestudies.com/company/hotjar/case-study/time4sleep-customer-case-study",
+    "publisher": "CaseStudies.com",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "intertop-checkout-exit-survey",
+  "title": "Intertop exit survey shows shoppers can't finish the checkout form; simplified form lifts conversion 54.68% in A/B test",
+  "company": "Intertop",
+  "is_anonymized": false,
+  "summary": "Ukrainian shoe retailer Intertop was losing almost half of shoppers at checkout. Its agency, Turum-burum, put an exit-intent survey on the checkout page: of 444 respondents, 48.6% said they couldn't complete the order form. A shorter, blocked-out form with autofill raised checkout conversion 54.68% in an A/B test, and average revenue per user rose 11.46% after rollout.",
+  "problem": "Almost half of prospective customers abandoned Intertop's checkout, and the team didn't know why.",
+  "research": "An exit-intent pop-up survey on the checkout page asked 'Why would you like to stop placing the order?' (444 respondents), alongside session recordings and heatmaps showing friction such as rage clicks. Run by the UX/CRO agency Turum-burum.",
+  "insight": "48.6% of respondents said they were leaving because they couldn't complete the checkout form. Heatmaps also showed the 'Buy now' button sat below the fold for most users on the product page.",
+  "change": "Checkout fields were cut to three, the order page was split into clear blocks, and autofill was added for signed-in users. The product page was also simplified so the buy button was visible.",
+  "outcome": "In the A/B test the variant's conversion rate rose 54.68%. After rollout, average revenue per user grew 11.46% and the checkout bounce rate fell 13.35%.",
+  "headline_metric": "+54.68% checkout conv.",
+  "attribution": "Direct: the survey pinpointed the form as the barrier, the changes targeted it, and the variant was A/B tested against the original.",
+  "caveats": "Reported by the analytics vendor (Hotjar/Contentsquare) about an agency client; both have an incentive. Test length, traffic and significance aren't given. The 54.68% applies to the checkout step, not site-wide conversion. Survey is self-reported by people already leaving. Source undated; year is approximate.",
+  "methods": [
+   "survey",
+   "analytics",
+   "experimentation"
+  ],
+  "research_type": "evaluative",
+  "industry": "ecommerce_retail",
+  "product_type": "checkout_flow",
+  "metrics": [
+   "conversion",
+   "revenue"
+  ],
+  "company_size": "midmarket",
+  "year": 2021,
+  "evidence_strength": "tested",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "A/B testing examples (Turum-burum for Intertop)",
+    "url": "https://contentsquare.com/blog/ab-testing-examples/",
+    "publisher": "Contentsquare",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "instacart-shopper-app-field-research",
+  "title": "Instacart field research with in-store shoppers leads to one-handed app design and one-tap substitution messages",
+  "company": "Instacart",
+  "is_anonymized": false,
+  "summary": "Instacart's design team observed shoppers in grocery stores and shopped orders themselves to audit the experience. They saw that shoppers are always moving, with one hand on a cart or a product, and that out-of-stock items drive most of the back-and-forth with customers. That led to a one-handed Shopper app and features such as photo-backed messages and one-tap approval of replacement items.",
+  "problem": "Instacart shoppers work in busy stores carrying up to 50,000 products whose stock Instacart doesn't control, and the team needed the Shopper app to fit real in-store conditions and keep customers informed.",
+  "research": "Field research observing Instacart shoppers in stores and how they handled different scenarios, plus first-hand shopping by designers to audit the journey (described in 2021).",
+  "insight": "Shoppers usually use the phone with one hand while the other pushes a cart or picks items. Missing items are inevitable, and good communication matters more than perfection: customers still give 5-star ratings when the shopper clearly tried their best.",
+  "change": "A simplified, one-handed Shopper app with large icons, big tap targets and fewer manual inputs; prompts asking customers for replacement preferences on low-stock items; quick messaging with shelf photos; context such as first-time customer flags; crowdsourced out-of-stock data that stops later customers adding the item; and auto-generated substitution messages customers can approve with one tap.",
+  "outcome": "No numbers. Instacart says automated messaging cuts back-and-forth for both shopper and customer and that ratings data supports the value of communication.",
+  "headline_metric": null,
+  "attribution": "The post presents the one-handed principle and the communication features as direct results of field observation, but gives no outcome data.",
+  "caveats": "First-party design blog written partly for recruiting. No participant numbers, dates or metrics. Some features (crowdsourced stock data) rely on analytics as much as research.",
+  "methods": [
+   "field_study",
+   "ethnography"
+  ],
+  "research_type": "generative",
+  "industry": "food_delivery",
+  "product_type": "mobile_app",
+  "metrics": [
+   "task_success",
+   "satisfaction"
+  ],
+  "company_size": "enterprise",
+  "year": 2021,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Designing Digital Experiences That Augment the Analog World",
+    "url": "https://company.instacart.com/how-its-made/designing-digital-experiences-that-augment-the-analog-world",
+    "publisher": "Instacart",
+    "date": "2021-08-18"
+   }
+  ]
+ },
+ {
+  "slug": "despegar-pandemic-traveler-research",
+  "title": "Despegar's pandemic traveler research backs flexible packages and kills the hard sell",
+  "company": "Despegar",
+  "is_anonymized": false,
+  "summary": "When COVID-19 upended travel, Latin American online travel agency Despegar stepped up surveys and interviews with frequent travelers and tested hotel photo sets. Travelers were uncertain about income and trips, disliked aggressive sales tactics, and reacted badly to sanitation photos of rooms and food. The team made flexible cancellation and packages core products, softened its tone against stakeholder pressure for a hard sell, and changed how sanitation imagery is shown.",
+  "problem": "Travel demand and traveler attitudes changed abruptly in 2020, and the team needed to know what travelers in different Latin American markets felt and wanted before deciding product and messaging.",
+  "research": "In 2020 the UX research team ran self-reported surveys and interviews with frequent travelers recruited through social media and groups (past bookers were excluded because many were trying to cancel), and tested two hotel photo sets: standard amenity photos versus photos emphasising sanitation.",
+  "insight": "Many travelers were unsure about trips and their future income, reacted poorly to aggressive sales tactics, and split into risk-averse and risk-tolerant groups. Sanitation photos of intimate spaces like rooms and food caused discomfort, while communal spaces like lobbies did not. Attitudes differed by country (Brazil and Mexico readier to travel than Argentina), and six in ten planned a first trip within their own country.",
+  "change": "Flexible cancellation and modification features, and flexible packages, became core products. The team pushed back on stakeholders who wanted a hard sell and moved to a softer, reassuring voice. Supplier sanitation imagery was guided toward communal spaces rather than rooms and food.",
+  "outcome": "No business metrics reported. The team says flexible packages became the most popular option despite higher prices, and flexibility features became core products.",
+  "headline_metric": null,
+  "attribution": "The NN/g article, based on interviews with Despegar's UX and research leads, credits the research with the tone change and the imagery guidance. The rise of flexible packages was also driven by the pandemic itself, so research is one of several causes.",
+  "caveats": "Secondhand account from NN/g interviews with the company's own UX leads. Mostly self-reported attitudes gathered during a crisis. No metrics on bookings, conversion or revenue.",
+  "methods": [
+   "survey",
+   "interviews",
+   "concept_testing"
+  ],
+  "research_type": "mixed",
+  "industry": "travel_hospitality",
+  "product_type": "website",
+  "metrics": [
+   "conversion",
+   "satisfaction"
+  ],
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "decision",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "COVID-19 Has Changed Your Users",
+    "url": "https://www.nngroup.com/articles/covid-changed-users/",
+    "publisher": "Nielsen Norman Group",
+    "date": "2020-08-30"
+   }
+  ]
+ },
+ {
+  "slug": "property-finder-whatsapp-leads",
+  "title": "Property Finder sees evening browsers reluctant to phone agents, launches WhatsApp enquiries",
+  "company": "Property Finder",
+  "is_anonymized": false,
+  "summary": "UAE property portal Property Finder combined periodic user surveys (over 1,500 users across 18 months) with other discovery research. One finding was that mobile users browse heavily in the evening but hesitate to call agents. That led to a test of WhatsApp as a way to contact agents, which the company says reached 'almost instant product-market fit'.",
+  "problem": "The portal wanted more buyers and renters to contact agents, and needed to understand how and when people searched and what stopped them reaching out.",
+  "research": "Around 2019: periodic sentiment surveys of more than 1,500 portal users over about a year and a half, plus discovery work the team describes as personas, diary studies and user interviews, and a map of more than 40 questions buyers and renters ask during a search.",
+  "insight": "Mobile users were very active in the evening but reluctant to phone agents. Research also showed some information (popular unit types, guest parking, community issues) is best supplied by residents, and that the map is central to the UAE search journey.",
+  "change": "Property Finder tested and launched WhatsApp Leads, a way to message agents instead of calling. Related findings led to resident-written Community Guides, Building Reviews on listing pages, and better map search.",
+  "outcome": "The company says WhatsApp Leads reached 'almost instant product-market fit'. No lead numbers are given. Separately, it reports over 10% of mobile searches used Map Search.",
+  "headline_metric": null,
+  "attribution": "The post states the evening-browsing finding 'inspired' the WhatsApp test. The success claim is qualitative.",
+  "caveats": "First-party blog by a product manager, published in 2023 about 2019 work. No lead volumes, conversion or test design reported. The specific research method behind the WhatsApp insight isn't separated from the general list of methods.",
+  "methods": [
+   "survey",
+   "interviews",
+   "diary_study",
+   "analytics"
+  ],
+  "research_type": "generative",
+  "industry": "real_estate",
+  "product_type": "mobile_app",
+  "metrics": [
+   "conversion",
+   "adoption"
+  ],
+  "company_size": "midmarket",
+  "year": 2019,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Property portals redesigned",
+    "url": "https://www.propertyfinder.ae/blog/?p=29156",
+    "publisher": "Property Finder Blog",
+    "date": "2023-07-24"
+   }
+  ]
+ },
+ {
+  "slug": "rightmove-shared-lists",
+  "title": "Rightmove builds Shared Lists after home hunters repeatedly ask for it in user testing",
+  "company": "Rightmove",
+  "is_anonymized": false,
+  "summary": "Rightmove, the UK's largest property portal, launched Shared Lists, which let renters and buyers collect listings and send them to others who can react, comment and suggest alternatives. Its CTO said the idea was 'repeatedly requested during thousands of hours of user testing'.",
+  "problem": "Buyers and renters had no built-in way on Rightmove to share a shortlist of listings with other people and discuss it.",
+  "research": "Ongoing user testing sessions with renters and buyers, described as 'thousands of hours' in total, in which participants kept asking for a way to share and discuss shortlists. Details of method and sample aren't published.",
+  "insight": "Participants in user testing kept asking for a way to share and discuss listings with others inside the product.",
+  "change": "Rightmove launched Shared Lists in November 2025 for both renters and buyers: users build collections of agents' listings and share them, and recipients can react, comment and propose alternatives.",
+  "outcome": "No usage or business metrics reported at launch.",
+  "headline_metric": null,
+  "attribution": "The company directly credits user testing as the source of the idea. Nothing yet shows whether it changed behaviour.",
+  "caveats": "Trade-press report of a launch announcement. 'Thousands of hours' is unspecific and refers to user testing in general, not a dedicated study. No outcome data.",
+  "methods": [
+   "usability_testing"
+  ],
+  "research_type": "evaluative",
+  "industry": "real_estate",
+  "product_type": "website",
+  "metrics": [
+   "engagement"
+  ],
+  "company_size": "enterprise",
+  "year": 2025,
+  "evidence_strength": "decision",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "Rightmove rolls out Shared Lists to help renters and buyers' search",
+    "url": "https://www.property118.com/?p=186705",
+    "publisher": "Property118",
+    "date": "2025-11-19"
+   }
+  ]
+ },
+ {
   "slug": "google-chrome-ssl-warning-redesign",
   "title": "Chrome's research-based SSL warning got about 30% more people to stay safe",
   "company": "Google (Chrome)",
@@ -867,7 +1594,7 @@
   ],
   "research_type": "mixed",
   "industry": "gaming",
-  "product_type": "web_app",
+  "product_type": "game",
   "metrics": [
    "errors",
    "retention",
@@ -913,7 +1640,7 @@
   ],
   "research_type": "evaluative",
   "industry": "gaming",
-  "product_type": "physical_product",
+  "product_type": "game",
   "metrics": [
    "task_success",
    "satisfaction",
@@ -1081,7 +1808,7 @@
   ],
   "research_type": "evaluative",
   "industry": "gaming",
-  "product_type": "physical_product",
+  "product_type": "game",
   "metrics": [
    "task_success",
    "engagement"
@@ -1172,6 +1899,285 @@
     "url": "https://uxmag.com/articles/behind-the-design-building-a-seamless-experience-to-request-a-ride-for-others",
     "publisher": "UX Magazine (Lyft Behind the Design series)",
     "date": "2020-09-28"
+   }
+  ]
+ },
+ {
+  "slug": "waymo-rider-feedback-route-pullover-messaging",
+  "title": "Waymo rider research led to clearer route and drop-off messaging in driverless cars",
+  "company": "Waymo",
+  "is_anonymized": false,
+  "summary": "With no human driver to ask, Waymo riders could be confused when the car took an unexpected route or stopped somewhere unexpected at the end of a trip. Waymo's UX researchers rode along with riders, interviewed them and ran surveys. The service added in-app and in-car messages explaining route differences and setting clearer pull-over expectations.",
+  "problem": "In a fully driverless ride-hail service, riders can't ask a driver why the car is going a certain way or where exactly it will stop, which undermines trust and comfort.",
+  "research": "Waymo's UX research team (quoted: senior UX researcher Naomi Guthrie) used ride-alongs with riders, phone and in-person interviews, surveys and questionnaires, and analysis of in-app ride ratings, working with design, engineering, product and operations. Riders in the Phoenix East Valley; described in 2020.",
+  "insight": "Riders wanted to understand the car's choices, especially when a route differed from what they expected and where the car would pull over at the destination.",
+  "change": "Added messaging in the Waymo app and on the in-car screen to explain when a route may differ from what a rider expects, and more specific expectations about where the car will pull over at the end of a trip.",
+  "outcome": "No metric reported. Waymo lists these as changes deployed based on rider feedback.",
+  "headline_metric": null,
+  "attribution": "Waymo explicitly names these changes as resulting from rider feedback gathered through its research program.",
+  "caveats": "First-party blog with no numbers, sample sizes or before/after data. Changes described are modest. Promotional context around opening the driverless service to the public.",
+  "methods": [
+   "field_study",
+   "interviews",
+   "survey",
+   "support_analysis"
+  ],
+  "research_type": "mixed",
+  "industry": "transportation",
+  "product_type": "ai_product",
+  "metrics": [
+   "satisfaction"
+  ],
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "How rider feedback shapes Waymo's fully autonomous ride-hailing service",
+    "url": "https://waymo.com/blog/2020/11/how-rider-feedback-shapes-waymos-fully-autonomous-ride-hailing-service/",
+    "publisher": "Waymo Blog",
+    "date": "2020-11-23"
+   }
+  ]
+ },
+ {
+  "slug": "last-of-us-part-ii-accessibility-consultation",
+  "title": "Consulting disabled players gave The Last of Us Part II 60+ accessibility options",
+  "company": "Naughty Dog / Sony Interactive Entertainment (The Last of Us Part II)",
+  "is_anonymized": false,
+  "summary": "Naughty Dog worked with disabled consultants and playtesters while building The Last of Us Part II. They learned that vision accessibility is a wide spectrum and that players wanted fine-grained control rather than presets. The game shipped with over 60 customizable options, including full text-to-speech and audio cues that let blind players finish it.",
+  "problem": "Action games routinely lock out players with vision, hearing and motor impairments, and a single 'accessibility mode' can't meet very different needs.",
+  "research": "During development, Naughty Dog consulted gamers with disabilities, including Steve Saylor (who has a vision impairment), plus other unnamed consultants and playtesters, and experimented with options based on their feedback. Accessibility planned in from the start, per lead designers Emilia Schatz and Matthew Gallant. Released 2020.",
+  "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
+  "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
+  "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
+  "headline_metric": null,
+  "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
+  "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
+  "methods": [
+   "accessibility_research",
+   "usability_testing",
+   "interviews"
+  ],
+  "research_type": "mixed",
+  "industry": "gaming",
+  "product_type": "game",
+  "metrics": [
+   "accessibility",
+   "satisfaction"
+  ],
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "decision",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "'The Last Of Us Part II' Presents An Accessible Apocalypse",
+    "url": "https://www.gpb.org/news/2020/07/20/the-last-of-us-part-ii-presents-accessible-apocalypse",
+    "publisher": "NPR (via GPB)",
+    "date": "2020-07-20"
+   }
+  ]
+ },
+ {
+  "slug": "instagram-hide-like-counts-optional",
+  "title": "Instagram's like-count research turned a planned removal into a user choice",
+  "company": "Instagram / Facebook (Meta)",
+  "is_anonymized": false,
+  "summary": "Instagram set out to make like counts private to reduce pressure on posting. After testing hidden likes with some users since 2019 and hearing from users and experts, it found hidden counts helped some people and annoyed others. Instead of removing like counts for everyone, it made hiding them an option in 2021.",
+  "problem": "Instagram wanted to know whether hiding public like counts would reduce social pressure on posting, and whether to remove them for everyone.",
+  "research": "Tests hiding like counts for groups of users starting in 2019, followed by a 2021 test letting users choose, plus feedback from users and outside experts. Instagram did not publish sample sizes or methods.",
+  "insight": "Not seeing like counts was beneficial for some people and annoying to others, who use likes to see what's trending or popular.",
+  "change": "Rather than removing like counts globally, Instagram and Facebook let people choose to hide like counts on posts in their feed and on their own posts (May 2021).",
+  "outcome": "No metric reported. The research changed the decision from a blanket removal to an optional setting.",
+  "headline_metric": null,
+  "attribution": "Instagram attributes the opt-in approach to what it heard during testing from people and experts.",
+  "caveats": "Primarily product testing plus feedback; Instagram has not published the research. Critics noted the outcome also preserved engagement metrics advertisers value. No well-being outcome data shared.",
+  "methods": [
+   "experimentation",
+   "interviews",
+   "survey"
+  ],
+  "research_type": "evaluative",
+  "industry": "consumer_tech",
+  "product_type": "mobile_app",
+  "metrics": [
+   "satisfaction",
+   "engagement"
+  ],
+  "company_size": "enterprise",
+  "year": 2021,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Giving People More Control on Instagram and Facebook",
+    "url": "https://about.instagram.com/blog/announcements/giving-people-more-control",
+    "publisher": "Instagram",
+    "date": "2021-05-26"
+   },
+   {
+    "title": "Instagram's new test lets you choose if you want to hide 'Likes,' Facebook test to follow",
+    "url": "https://techcrunch.com/2021/04/14/instagrams-new-test-lets-you-choose-if-you-want-to-hide-likes-facebook-test-to-follow/",
+    "publisher": "TechCrunch",
+    "date": "2021-04-14"
+   }
+  ]
+ },
+ {
+  "slug": "be-my-ai-blind-beta-testers",
+  "title": "Blind beta testers shaped Be My AI's safety limits and human fallback",
+  "company": "Be My Eyes (with OpenAI)",
+  "is_anonymized": false,
+  "summary": "Be My Eyes piloted an AI image-description assistant built on GPT-4V with nearly 200 blind and low-vision testers, growing to 16,000. Testers surfaced confident hallucinations and strongly asked for descriptions of people's faces. The result was explicit warnings against safety-critical use, a one-tap route to a human volunteer, and work to describe people without identifying them by name.",
+  "problem": "Before launching an AI that describes the visual world to blind users, the team needed to know where it could fail them and how to deploy it responsibly.",
+  "research": "A pilot from March to early August 2023 with nearly 200 blind and low-vision beta testers, expanding to 16,000 by September 2023 (averaging 25,000 descriptions a day), with an ongoing feedback channel to Be My Eyes leadership.",
+  "insight": "The model could make basic errors with 'misleading matter-of-fact confidence' (one tester: it 'very confidently told me there was an item on a menu that was in fact not there'). Testers repeatedly said they wanted to know the facial and visible characteristics of people around them, information sighted people get at a glance.",
+  "change": "Be My Eyes warns users not to rely on the AI for safety or health tasks (prescriptions, allergens, crossing streets) or as a replacement for a cane or guide dog; added an option to leave the AI and connect immediately to a human volunteer; and is designing ways to describe features of people without identifying them by name.",
+  "outcome": "OpenAI reports that hallucinations and errors noticeably fell in frequency and severity over the beta, and testers noticed better text recognition and richer descriptions. No figures given.",
+  "headline_metric": null,
+  "attribution": "The system card ties the warnings, fallback and face-description work directly to issues raised by beta testers.",
+  "caveats": "Beta testing and feedback rather than a structured study; no metrics. Source is OpenAI's own system card, written as part of a launch. Improvements in hallucination may be due to model work rather than the research itself.",
+  "methods": [
+   "accessibility_research",
+   "usability_testing",
+   "support_analysis"
+  ],
+  "research_type": "evaluative",
+  "industry": "consumer_tech",
+  "product_type": "ai_product",
+  "metrics": [
+   "accessibility",
+   "errors"
+  ],
+  "company_size": "startup",
+  "year": 2023,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "GPT-4V(ision) System Card",
+    "url": "https://cdn.openai.com/papers/GPTV_System_Card.pdf",
+    "publisher": "OpenAI",
+    "date": "2023-09-25"
+   }
+  ]
+ },
+ {
+  "slug": "google-pixel-guided-frame-blind-testers",
+  "title": "Testing with blind users made Pixel's Guided Frame coach in real time and auto-capture",
+  "company": "Google (Pixel)",
+  "is_anonymized": false,
+  "summary": "Google set out to help blind and low-vision people take selfies on Pixel phones. A small study with three blind Googlers showed the team was solving the wrong problem, and prototype testing with blind and low-vision volunteers reshaped the feature around real-time audio and haptic guidance and automatic capture. Home testing also revealed demand for group photos.",
+  "problem": "Taking a well-framed selfie is hard without sight, and the team's first idea focused on helping users find the front camera.",
+  "research": "Sighted team members first tried eyes-closed selfies; then a preliminary study with three blind Googlers; then iterative prototype testing with blind and low-vision volunteers (including Google's Central Accessibility team, blind and low-vision Googlers, and the Vista Center for the Blind and Visually Impaired), including home testing. Launched with Pixel 7 in 2022.",
+  "insight": "Users needed live guidance while framing, not just the camera's location. Blind and low-vision users valued automatic capture (not having to find the shutter), even though sighted users generally dislike it. Users also wanted it for group photos.",
+  "change": "Built voice instructions telling users whether they are left, right or centered; combined audio cues, haptics and high-contrast visuals; made the camera capture automatically once the face is centered; extended support to group photos.",
+  "outcome": "No metric reported. Testing changed the core interaction and scope of the feature.",
+  "headline_metric": null,
+  "attribution": "Google states the early study showed the team had been focused on the wrong solution, and that testing feedback set the final mix of cues and auto-capture.",
+  "caveats": "Small, partly internal sample (three blind Googlers in the first study); first-party blog with no outcome data.",
+  "methods": [
+   "accessibility_research",
+   "usability_testing",
+   "concept_testing",
+   "field_study"
+  ],
+  "research_type": "evaluative",
+  "industry": "hardware",
+  "product_type": "ai_product",
+  "metrics": [
+   "accessibility",
+   "task_success"
+  ],
+  "company_size": "enterprise",
+  "year": 2022,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "How we tested Guided Frame and Real Tone on Pixel",
+    "url": "https://blog.google/products/pixel/how-we-tested-the-pixels-new-inclusive-camera-features/",
+    "publisher": "Google Keyword blog",
+    "date": "2022-12-01"
+   }
+  ]
+ },
+ {
+  "slug": "kooapps-snake-io-playtesting",
+  "title": "Remote playtests helped Snake.io lift tutorial completions 40%",
+  "company": "Kooapps (Snake.io)",
+  "is_anonymized": false,
+  "summary": "After acquiring the mobile game Snake.io, Kooapps used PlaytestCloud's remote playtests, both single-session and longitudinal, to guide a series of changes to art style, scoring visibility and reward progression. The vendor reports tutorial completions up 40% and Day 1 and Day 3 retention up 10%.",
+  "problem": "Kooapps needed to improve Day 1 retention and grow daily active users for Snake.io, and adapt it for a younger audience.",
+  "research": "Iterative remote playtests via PlaytestCloud: single-session tests for first impressions and longitudinal tests for longer-term play. Number of players and rounds not stated.",
+  "insight": "The vendor does not detail specific findings; the playtests pointed to the art style, how visible scores were, and reward progression as areas to improve.",
+  "change": "Refreshed the art style, added character skins, made scores and leaderboards more visible, added reward progression, and added live events and boss modes.",
+  "outcome": "Day 1 and Day 3 retention up 10%; tutorial completions up 40%; rewarded-video ad conversions up 10%. Art-style changes alone were credited with a 5% Day 1 retention lift.",
+  "headline_metric": "+40% tutorial completions",
+  "attribution": "The vendor credits the playtest-driven changes, but doesn't explain how the lifts were measured or separate them from other factors.",
+  "caveats": "Vendor marketing about its own client. No method for the metrics, no dates, no sample sizes, no control. Several changes shipped together.",
+  "methods": [
+   "usability_testing",
+   "diary_study"
+  ],
+  "research_type": "evaluative",
+  "industry": "gaming",
+  "product_type": "game",
+  "metrics": [
+   "retention",
+   "revenue",
+   "task_success"
+  ],
+  "company_size": "midmarket",
+  "year": 2023,
+  "evidence_strength": "reported",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Kooapps case study",
+    "url": "https://start.playtestcloud.com/case-studies/kooapps",
+    "publisher": "PlaytestCloud",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "facebook-reactions-emotion-research",
+  "title": "Emotion research and seven-country testing picked Facebook's five Reactions",
+  "company": "Facebook (Meta)",
+  "is_anonymized": false,
+  "summary": "To give people more ways to respond than 'Like', Facebook worked with UC Berkeley psychologist Dacher Keltner, whose lab had already tested which emotion illustrations people could reliably recognize. Keltner's team proposed 43 ideas; Facebook narrowed them and tested in seven countries before launch, dropping a planned 'Yay' reaction because it wasn't used in some countries.",
+  "problem": "'Like' felt wrong for sad or upsetting posts, but Facebook needed a small set of reactions that would be instantly understood across cultures and 70+ languages.",
+  "research": "Keltner's lab had earlier shown about 40 emotion illustrations to dozens to hundreds of people to check recognition (for Messenger stickers). For Reactions, his team proposed 43 ideas about a year before launch. Facebook then tested candidate reactions in seven countries, including Ireland and Spain, before the 2016 global launch.",
+  "insight": "Each reaction had to be 'extremely easily recognizable' everywhere; some candidates, like 'Yay', didn't get used in some countries.",
+  "change": "Launched five reactions alongside Like (Love, Haha, Wow, Sad, Angry), dropped 'Yay', and kept the same set and near-identical translations worldwide.",
+  "outcome": "No usage or outcome numbers in the source. Research shaped which reactions shipped and killed one.",
+  "headline_metric": null,
+  "attribution": "The article links the chosen set to Keltner's recognition research and the multi-country tests, and the dropped 'Yay' directly to test results.",
+  "caveats": "Journalism based on interviews with Facebook and Keltner; methods of the country tests aren't described. No outcome data. 2016.",
+  "methods": [
+   "concept_testing",
+   "experimentation",
+   "survey"
+  ],
+  "research_type": "mixed",
+  "industry": "consumer_tech",
+  "product_type": "web_app",
+  "metrics": [
+   "engagement"
+  ],
+  "company_size": "enterprise",
+  "year": 2016,
+  "evidence_strength": "decision",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "Facebook's Long, Psychological Journey To Reactions",
+    "url": "https://www.popsci.com/long-psychological-journey-facebooks-reactions/",
+    "publisher": "Popular Science",
+    "date": "2016-02-24"
    }
   ]
  },
@@ -1620,6 +2626,242 @@
   ]
  },
  {
+  "slug": "purefy-landing-page-interviews",
+  "title": "Purefy's borrower interviews led to a landing-page fix that lifted conversion 36%",
+  "company": "Purefy",
+  "is_anonymized": false,
+  "summary": "Student loan refinancing startup Purefy interviewed 25 borrowers and parents to understand how they research refinancing and how they reacted to its website. Within about ten interviews a clear theme emerged: a key landing page tried to say too many things at once. The team simplified the page's messaging and A/B tested it, reporting a 36% lift in conversion.",
+  "problem": "Purefy wanted to understand hesitant prospects' decision-making and improve its web presence and positioning as a relatively unknown brand.",
+  "research": "Twenty-five hour-long moderated remote interviews (dscout Live) over about a month in 2021, with borrowers and parents of borrowers interested in refinancing, recruited via video screener questions. Interviews covered how people research refinancing and live reactions to Purefy's site, with UX, design, copy and content staff observing.",
+  "insight": "A key landing page presented several value propositions at once, so Purefy's message was unclear. Prospects also needed more trust signals and social proof. Three distinct segments emerged: new graduates, experienced refinancers and parents.",
+  "change": "After a debrief around interview ten, the team made immediate language and sequencing changes, drafted a simplified landing page within a week, and the UX researcher set up an A/B test while interviews were still running. Three personas were created for marketing.",
+  "outcome": "The CMO is quoted: 'That one change, which we noticed early on, resulted in a 36% lift in conversion.'",
+  "headline_metric": "+36% conversion",
+  "attribution": "Direct. The tested change came straight from an interview finding, and it was evaluated with an A/B test.",
+  "caveats": "Vendor (dscout) case study. No baseline conversion, sample size, test duration or significance reported, and the exact variant isn't described. Small startup, single test.",
+  "methods": [
+   "interviews",
+   "concept_testing",
+   "experimentation"
+  ],
+  "research_type": "mixed",
+  "industry": "finance",
+  "product_type": "website",
+  "metrics": [
+   "conversion"
+  ],
+  "company_size": "startup",
+  "year": 2021,
+  "evidence_strength": "tested",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Purefy case study",
+    "url": "https://dscout.com/customers/purefy-case-study",
+    "publisher": "dscout",
+    "date": "2021-09-22"
+   }
+  ]
+ },
+ {
+  "slug": "anonymous-fintech-autopay-research-redesign",
+  "title": "Lender's research-led repayment redesign raised autopay activation 25%",
+  "company": "Bay Area fintech lender (unnamed)",
+  "is_anonymized": true,
+  "summary": "An unnamed Bay Area fintech lender worked with consultancy Coforge to understand why borrowers weren't setting up autopay and were falling behind. Generative interviews, surveys and contextual inquiry with different borrower types fed simplified repayment flows that were then usability tested. The consultancy reports a 25% rise in autopay activation and a 50% fall in delinquency.",
+  "problem": "Too few borrowers were activating autopay, and loan delinquency was a concern.",
+  "research": "Generative research with user interviews, surveys and contextual inquiries, aimed at personas including debt-burdened borrowers and people with stable incomes; low- and high-fidelity concepts validated through user testing; analytics after launch. Sample sizes and dates are not given.",
+  "insight": "The source says research uncovered behavioural insights about borrowers' financial stress and repayment behaviour but does not spell them out.",
+  "change": "Simplified repayment workflows and clearer, more personalised financial interactions, refined after launch using analytics.",
+  "outcome": "Reported: 25% increase in autopay activation and 50% reduction in loan delinquency rates. Satisfaction and engagement described only as 'improved'.",
+  "headline_metric": "+25% autopay activation",
+  "attribution": "Unclear. The consultancy presents the outcome as a result of its research-led redesign but gives no baseline, period or method.",
+  "caveats": "Vendor (Coforge) success story about an anonymous client. No findings described, no baseline or measurement period. A 50% drop in delinquency is a large claim that could reflect many factors (economy, underwriting, collections policy). Undated. The page is undated; the year field reflects when it was found, not when the work happened.",
+  "methods": [
+   "interviews",
+   "survey",
+   "field_study",
+   "usability_testing",
+   "analytics"
+  ],
+  "research_type": "mixed",
+  "industry": "finance",
+  "product_type": "web_app",
+  "metrics": [
+   "adoption",
+   "errors"
+  ],
+  "company_size": "undisclosed",
+  "year": 2026,
+  "evidence_strength": "reported",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Driving higher autopay adoption with research-led experience redesign",
+    "url": "https://coforge.com/success-stories/driving-higher-autopay-adoption-with-research-led-experience-redesign",
+    "publisher": "Coforge",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "slack-2020-redesign-pilot-and-benchmark",
+  "title": "Slack's 2020 redesign changed course on several features after a 100-user pilot and benchmark tests",
+  "company": "Slack",
+  "is_anonymized": false,
+  "summary": "Slack's 2020 interface redesign started as rough internal prototypes aimed at cutting clutter. A months-long co-design pilot with about 100 customers and benchmark tests with people new to Slack reversed or reshaped several planned changes, from hiding member counts to where the compose button sat. A second benchmark found the new design beat or tied the old one on core tasks.",
+  "problem": "Slack had grown more capable but harder to use, especially for new users. The team wanted a simpler interface but didn't know whether its tidier prototypes were actually more usable.",
+  "research": "A shared Slack channel pilot with about 100 users from Slack's champion network across dozens of organisations, running for weeks to months with ongoing feedback. Usability benchmarking comparing old and new designs with people who had never used Slack (tasks: send a message, search, find and join channels), repeated after changes, plus similar studies with average Slack users. Participant counts for benchmarks not given. Published March 2020.",
+  "insight": "Member counts help people 'read the room' in a channel. New users ignored a compose button at the bottom of the sidebar, often tried right-clicking, and missed key features when sections started collapsed. Users preferred familiar search placement over novel layouts.",
+  "change": "Restored the channel member count the team had planned to hide; made the custom-sections entry point less prominent with an in-product prompt; chose a conventional top-navigation search layout; moved compose to the top of the sidebar; built fuller right-click menus across the app; made collapsible views start open.",
+  "outcome": "After these changes, the new design 'beat or tied' the existing one on the benchmark tasks, which the authors cite as the basis for confidence in the release. No numbers are given.",
+  "headline_metric": null,
+  "attribution": "Direct for the design decisions: each change is tied to a specific pilot or benchmark finding. The benchmark result is reported only qualitatively.",
+  "caveats": "First-party blog post with no sample sizes, task-success figures or post-launch metrics. Pilot participants were Slack champions, who are not typical users. Rated 'decision' because no measured outcome is shared.",
+  "methods": [
+   "co_design",
+   "usability_testing",
+   "benchmarking",
+   "concept_testing"
+  ],
+  "research_type": "evaluative",
+  "industry": "saas_b2b",
+  "product_type": "enterprise_software",
+  "metrics": [
+   "task_success",
+   "adoption"
+  ],
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Designing teamwork: How our customers helped shape the future of Slack",
+    "url": "https://slack.com/blog/designing-the-future-of-slack-with-customers",
+    "publisher": "Slack blog",
+    "date": "2020-03-18"
+   }
+  ]
+ },
+ {
+  "slug": "slack-2023-redesign-search-placement",
+  "title": "Slack moved search back to the top after research showed users couldn't find it",
+  "company": "Slack",
+  "is_anonymized": false,
+  "summary": "In its 2023 redesign Slack tried moving search into the left-hand navigation to simplify the interface. User research, pilot customer feedback and internal usage data all showed people couldn't find it there. Slack moved search back to the top of the window before wide release.",
+  "problem": "Slack's navigation was reaching its limits: people on large, busy teams struggled to keep up with basics and to find Slack's growing set of features.",
+  "research": "Provocative early prototypes discussed with users, user research on search placement, pilot customers using early designs, internal usage data, regular conversations with internal users and pilot customers, and pulse surveys of internal and external users. Methods and sample sizes are not described. Around 2023.",
+  "insight": "With search in the left-hand navigation, it 'just wasn't findable' for users.",
+  "change": "Search was moved back to the top of the interface. The authors say other changes were also revisited after pulse surveys and pilot feedback, without naming them.",
+  "outcome": "A design decision was reversed before launch. No metrics are reported.",
+  "headline_metric": null,
+  "attribution": "Direct: the authors (Slack's VP of Product Design and a principal PM) state that research, pilot feedback and usage data drove the reversal.",
+  "caveats": "First-party post with no method detail or numbers. Undated on the page (images suggest 2023). Usage data contributed alongside research, so research was one of several signals.",
+  "methods": [
+   "usability_testing",
+   "concept_testing",
+   "survey",
+   "analytics"
+  ],
+  "research_type": "evaluative",
+  "industry": "saas_b2b",
+  "product_type": "enterprise_software",
+  "metrics": [
+   "task_success"
+  ],
+  "company_size": "enterprise",
+  "year": 2023,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "How our biggest redesign yet came to be",
+    "url": "https://slack.design/articles/how-our-biggest-redesign-yet-came-to-be/",
+    "publisher": "Slack Design",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "xero-new-invoicing-feedback-fixes",
+  "title": "Xero reworked its new invoicing screens after users said they were slower",
+  "company": "Xero",
+  "is_anonymized": false,
+  "summary": "Xero launched a new invoicing experience that many small-business users found slower than the old one. Reviewing user feedback and then watching users work through invoices showed extra clicks, broken keyboard navigation and a harder-to-read layout. Xero shipped a set of fixes, began redesigning the page layout and extended the availability of classic invoicing.",
+  "problem": "After the new invoicing experience launched, users reported it took more clicks and was harder to use than classic invoicing, a core daily task for small businesses.",
+  "research": "Analysis of user feedback on the new experience, followed by observational sessions sitting beside users as they clicked and tabbed through invoicing screens, and recruitment for a beta programme to test and co-design features. Participant numbers are not given. Reported May 2024, updated November 2024.",
+  "insight": "The new experience required more clicks, changes to keyboard navigation slowed invoice creation for keyboard-heavy users, and the new layout made the invoice page harder to read and navigate.",
+  "change": "Deleting a line item went from two clicks to one; Tab in branding and tax fields now selects and moves on; the date field accepts typing immediately; attachments preview in place; single clicks for printing/downloading, creating another invoice, sending receipts and marking as sent; invoice number shown in the browser tab. A redesign of the top half of the create-invoice page was started, and classic invoicing was kept available until 27 February 2025.",
+  "outcome": "Specific usability fixes shipped and the retirement of classic invoicing was postponed. No metrics are reported.",
+  "headline_metric": null,
+  "attribution": "Direct for the changes: Xero's Head of Product lists the fixes as responses to what users reported and what researchers observed.",
+  "caveats": "First-party post responding to customer complaints, so partly reputation management. Research happened after launch, not before. No numbers on how many users were observed or whether the fixes improved speed. The postponement may have had other reasons.",
+  "methods": [
+   "support_analysis",
+   "field_study",
+   "co_design"
+  ],
+  "research_type": "evaluative",
+  "industry": "saas_b2b",
+  "product_type": "web_app",
+  "metrics": [
+   "task_success",
+   "satisfaction"
+  ],
+  "company_size": "enterprise",
+  "year": 2024,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "How your feedback is helping us improve the new invoicing experience",
+    "url": "https://blog.xero.com/product-updates/feedback-helping-improve-new-invoicing-experience/",
+    "publisher": "Xero blog",
+    "date": "2024-05-24"
+   }
+  ]
+ },
+ {
+  "slug": "insure4retirement-quote-journey-usability",
+  "title": "Insure4Retirement doubled quote completion after usability testing moved contact questions later",
+  "company": "Insure4Retirement (AJG group)",
+  "is_anonymized": false,
+  "summary": "Insure4Retirement, an online home insurance broker for over-50s, had its quote-and-buy journey usability tested before rebuilding it. Testing showed people disliked giving contact details on the first page but accepted it once they had built their policy, and profiling revealed many users were buying on behalf of older relatives. After the rebuild, the agency reports quote completion rising from about 37% to about 77%.",
+  "problem": "The broker was rebuilding its online quote-and-buy journey and wanted more visitors to get through to a price.",
+  "research": "Usability testing of the existing quote-and-buy journey before the build, a user profiling project, a workshop with the broker and its design agency to map wireframes and the question set, and a second usability test of the brochure site after changes. Participant numbers are not given. The work appears to date from around 2016.",
+  "insight": "Users reacted badly to entering personal contact details on the first page but were much more accepting once they had built their product. An extra core audience emerged: people arranging cover for older relatives or friends. Of 30 recommendations, 15-20 covered problems the team had not expected to matter as much.",
+  "change": "Contact-detail questions were moved later in the journey, the question set and flow were reworked in a joint workshop, and the brochure site was tweaked after a second round of testing.",
+  "outcome": "Quote start to quote completion (reaching a price) went from about 37% to about 77%. Overall visitor-to-quote completion went from 6% to over 20% after the brochure site changes. Digital marketing cost per acquisition fell to 'double-digit figures' (no exact numbers). The headline claims a 300% increase without explaining the calculation.",
+  "headline_metric": "Quote completion 37%→77%",
+  "attribution": "Moderate. Specific research findings map to specific changes, but the comparison is before/after a full rebuild, judged in January (a peak month), with no control.",
+  "caveats": "Agency (Experience UX) writing about its own client. Seasonality may inflate the after figures. No sample sizes, dates or exact periods. The '300%' headline figure is unexplained.",
+  "methods": [
+   "usability_testing",
+   "interviews",
+   "co_design"
+  ],
+  "research_type": "mixed",
+  "industry": "insurance",
+  "product_type": "checkout_flow",
+  "metrics": [
+   "conversion",
+   "cost_avoided"
+  ],
+  "company_size": "midmarket",
+  "year": 2016,
+  "evidence_strength": "measured",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "UX Case Study – Insure4Retirement – Driving a 300% increased conversion rate",
+    "url": "https://experienceux.co.uk/?p=6156",
+    "publisher": "Experience UX",
+    "date": null
+   }
+  ]
+ },
+ {
   "slug": "michigan-mdhhs-project-reform-benefits-application",
   "title": "Michigan's benefits form cut from 1,000 questions to 213 after in-home research",
   "company": "Michigan Department of Health and Human Services (with Civilla)",
@@ -1990,6 +3232,341 @@
     "url": "https://design.canada.ca/research-summaries/student-loans-research-summary.html",
     "publisher": "Canada.ca Design (Government of Canada)",
     "date": "2019-08-22"
+   }
+  ]
+ },
+ {
+  "slug": "wikipedia-sticky-header",
+  "title": "Wikipedia's research-shaped sticky header cut scrolling 15% in an A/B test",
+  "company": "Wikimedia Foundation",
+  "is_anonymized": false,
+  "summary": "As part of its desktop redesign, the Wikimedia Foundation tested what readers and editors needed in a header that stays on screen. User testing in three locations and a prototype survey on 30 wikis shaped which links it showed and made it persistent. An A/B test on pilot wikis found logged-in users scrolled 15% less per session.",
+  "problem": "On long Wikipedia articles, readers and editors had to scroll back to the top to reach search, page tools, the talk page, history or the edit button.",
+  "research": "User testing with readers and editors in three locations and languages to find the highest-priority functions, then prototype testing with logged-in users across 30 wikis in May 2021. Followed by A/B tests on pilot wikis in 2022.",
+  "insight": "Users valued being able to reach key functions from anywhere on the page, but about 20% of prototype testers reported problems with how the header appeared and disappeared; editors in particular wanted it to stay put rather than pop in and out.",
+  "change": "The team chose which links to include based on testing, removed the show/hide trigger behaviour so the header became persistent, and later added an edit button to it.",
+  "outcome": "In an A/B test from 5 to 31 January 2022, logged-in users in the treatment group scrolled on average 15% less per session than the control group. In two later A/B tests, the share of people completing at least one edit via the header's edit button rose 2.8% and 6.8% compared with other edit buttons, and those edits were less likely to be reverted (no figure given due to a wide margin of error).",
+  "headline_metric": "-15% scrolling (A/B)",
+  "attribution": "Good: research determined the header's contents and behaviour, and the outcome comes from a controlled A/B test of that design. The A/B test measures the feature as a whole, not each research-driven decision separately.",
+  "caveats": "Scrolling less is a proxy for efficiency, not a direct measure of task success. Results are for logged-in users on pilot wikis. Participant counts for the user testing are not given on the project page. Self-reported by the Foundation, though it publishes the underlying reports openly.",
+  "methods": [
+   "usability_testing",
+   "concept_testing",
+   "survey",
+   "experimentation"
+  ],
+  "research_type": "evaluative",
+  "industry": "nonprofit",
+  "product_type": "website",
+  "metrics": [
+   "task_success",
+   "engagement"
+  ],
+  "company_size": "midmarket",
+  "year": 2022,
+  "evidence_strength": "tested",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Reading/Web/Desktop Improvements/Features/Sticky Header",
+    "url": "https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements/Features/Sticky_Header",
+    "publisher": "MediaWiki.org (Wikimedia Foundation)",
+    "date": "2022-09-01"
+   }
+  ]
+ },
+ {
+  "slug": "social-security-scotland-experience-panels",
+  "title": "Scotland's 2,400-member experience panels reshaped how its new benefits agency treats people",
+  "company": "Scottish Government / Social Security Scotland",
+  "is_anonymized": false,
+  "summary": "When Scotland took over some benefits from the UK government, it recruited more than 2,400 people with lived experience of the old system into research panels. Over six years their input changed policy and operational decisions, from how cases were transferred to the words used for disability assessments and even the colour of envelopes.",
+  "problem": "Scotland was building a new social security agency from scratch and wanted it to avoid the stress, distrust and stigma many people associated with the existing UK benefits system.",
+  "research": "The Social Security Experience Panels ran from 2017 to March 2024 with more than 2,400 members. Methods included interviews, focus groups, workshops, surveys (more than 70 surveys, 14,000+ responses) and user testing of forms and information; more than 1,000 members took part in interviews and focus groups.",
+  "insight": "People wanted to be treated with dignity and respect, not just processed; transferring benefits must not disrupt payments or require re-applying; the language of 'assessment' and 'assessor' was intimidating; and even brown envelopes caused anxiety because of what they had come to signal.",
+  "change": "The case transfer policy guaranteed no one would need to re-apply; the agency's Charter was co-designed with panel members; Adult Disability Payment processes used 'client consultation' and 'practitioner' instead of 'assessment' and 'assessor'; letters moved from brown to white envelopes; tone-of-voice, branding, buildings, telephony greetings, opening hours and local delivery venues were shaped by panel input.",
+  "outcome": "The government's legacy report documents these decisions as directly informed by panel research and concludes the panels achieved their purpose of helping design and deliver the new benefits. No outcome metrics are attached to the individual decisions.",
+  "headline_metric": null,
+  "attribution": "Direct for the listed decisions, which the report traces to specific panel findings. Whether they improved client outcomes is not measured here.",
+  "caveats": "Self-assessment by the Scottish Government of its own programme, partly based on interviews with its own staff. No comparison with outcomes under the UK system. Panel members self-selected.",
+  "methods": [
+   "interviews",
+   "survey",
+   "co_design",
+   "usability_testing"
+  ],
+  "research_type": "generative",
+  "industry": "government",
+  "product_type": "service",
+  "metrics": [
+   "satisfaction"
+  ],
+  "company_size": "public_sector",
+  "year": 2024,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Social Security Experience Panels: legacy report — 3. Impact from Experience Panels Research",
+    "url": "https://www.gov.scot/publications/social-security-experience-panels-legacy-report/pages/4/",
+    "publisher": "Scottish Government",
+    "date": "2024"
+   },
+   {
+    "title": "Social Security Experience Panels: legacy report — Introduction",
+    "url": "https://www.gov.scot/publications/social-security-experience-panels-legacy-report/pages/2/",
+    "publisher": "Scottish Government",
+    "date": "2024"
+   }
+  ]
+ },
+ {
+  "slug": "medicare-plan-finder-drug-costs",
+  "title": "Medicare Plan Finder rebuilt around drug costs reported 40% more enrollments",
+  "company": "Centers for Medicare & Medicaid Services (with Ad Hoc)",
+  "is_anonymized": false,
+  "summary": "CMS's tool for comparing Medicare plans was widely seen as overwhelming. Contractor Ad Hoc ran user testing with beneficiaries and the people who help them, found drug costs were the most stressful decision point, and rebuilt the tool around annual drug-cost estimates. The contractor reports about 40% more enrollments than the legacy tool the year before.",
+  "problem": "The legacy Medicare Plan Finder was hard for beneficiaries to use, and they struggled to compare what plans would actually cost them.",
+  "research": "Starting in 2018, Ad Hoc reviewed earlier user feedback and reports from support organizations, then ran in-person user testing sessions and research interviews with Medicare beneficiaries and the counselors and advocates who help them, throughout the build. Participant counts are not given.",
+  "insight": "Drug costs were one of the most stressful and most important decisions for beneficiaries. They wanted three specific numbers: what an individual drug costs across coverage phases, what their set of drugs costs each month, and the total annual cost at a given pharmacy under a given plan.",
+  "change": "Instead of exposing full policy complexity, the team built a drug search and pricing engine that estimates annual costs for each plan and pharmacy, plus a logged-in experience with saved drugs and pre-filled enrollment, and a version for 1-800-Medicare representatives. Relaunched in August 2019.",
+  "outcome": "Ad Hoc reports the new tool helped more than 2.6 million beneficiaries enroll in a plan, about 40% more enrollments than the legacy tool the previous year, with 373,000 visitors a day on average during Open Enrollment.",
+  "headline_metric": "+40% enrollments",
+  "attribution": "Weak to moderate. The research shaped the core design, but the enrollment rise is compared with the prior year's tool and could reflect other changes (promotion, logged-in enrollment, market shifts).",
+  "caveats": "Contractor writing about its own work. Year-over-year comparison with no control. ProPublica reported in November 2019 that advocates and counselors found the relaunched tool often gave wrong drug coverage, premium and cost data; CMS acknowledged some problems and called the roughly $11 million redesign iterative.",
+  "methods": [
+   "usability_testing",
+   "interviews",
+   "support_analysis"
+  ],
+  "research_type": "mixed",
+  "industry": "healthcare",
+  "product_type": "public_service",
+  "metrics": [
+   "conversion",
+   "adoption"
+  ],
+  "company_size": "public_sector",
+  "year": 2020,
+  "evidence_strength": "reported",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Modernizing how Medicare beneficiaries find and enroll in coverage",
+    "url": "https://adhoc.team/2020/04/09/modernizing-how-medicare-beneficiaries-find-and-enroll/",
+    "publisher": "Ad Hoc",
+    "date": "2020-04-09"
+   },
+   {
+    "title": "The $11 Million Medicare Tool That Gives Seniors the Wrong Insurance Information",
+    "url": "https://www.propublica.org/article/the-11-million-dollar-medicare-tool-that-gives-seniors-the-wrong-insurance-information",
+    "publisher": "ProPublica",
+    "date": "2019-11-25"
+   }
+  ]
+ },
+ {
+  "slug": "va-medication-alerts-human-factors-redesign",
+  "title": "Human-factors redesign of VA drug alerts halved prescribing errors in a controlled simulation",
+  "company": "U.S. Department of Veterans Affairs (VA HSR&D research team)",
+  "is_anonymized": false,
+  "summary": "Researchers at a VA medical center used field observations, prescriber interviews and human factors principles to redesign the drug-interaction and allergy alerts in the VA's electronic health record. In a crossover simulation with 20 prescribers, the redesigned alerts were resolved faster, rated higher, and led to fewer prescribing errors (median 2 versus 4).",
+  "problem": "Medication alerts in electronic health records are meant to prevent harm, but poorly designed alerts get missed, misread or overridden, and can themselves cause errors.",
+  "research": "Field observations and prescriber interviews, plus existing evidence, informed an 8-month iterative redesign led by two human factors engineers with physicians, pharmacists, a nurse practitioner and informatics staff, reviewed by a national advisory panel. The redesign was then evaluated in a counterbalanced crossover simulation with 20 VA prescribers (14 physicians, 2 nurse practitioners, 4 clinical pharmacists) across three scenarios with 19 possible alerts, October 2011 to March 2012.",
+  "insight": "In the original design, 30% of prescribers missed alerts because they required scrolling, 60% intended to cancel a drug but didn't complete the cancellation, some misread the cancel checkbox as an ordering control, and repeated alerts confused people.",
+  "change": "Alerts were redesigned using chunking, proximity of clinical data to the decision point, visual importance ordering, signal words, a tabular layout for alert text and consistent controls.",
+  "outcome": "Compared with the original alerts: time spent on alerts fell from a median of 85 to 56 seconds (p=0.015); total scenario time fell from 246 to 195 seconds (p=0.010); prescribing errors per prescriber fell from a median of 4 to 2 (p=0.024); overall satisfaction rose from 4.3 to 5.2 on a 7-point scale (p=0.033); perceived workload dropped modestly (p=0.042).",
+  "headline_metric": "Errors: median 4 → 2",
+  "attribution": "Strong: a controlled crossover comparison of the original and research-informed redesign, with no training on the new design.",
+  "caveats": "Lab simulation with fictitious patients, not live care; single VA site, outpatient only, 20 prescribers. The redesign also introduced new usability errors (for example, 2 prescribers clicked Cancel when they meant to proceed). The authors note error counts remained too high even after redesign.",
+  "methods": [
+   "field_study",
+   "interviews",
+   "heuristic_review",
+   "usability_testing",
+   "experimentation"
+  ],
+  "research_type": "mixed",
+  "industry": "healthcare",
+  "product_type": "enterprise_software",
+  "metrics": [
+   "errors",
+   "task_success",
+   "satisfaction"
+  ],
+  "company_size": "public_sector",
+  "year": 2014,
+  "evidence_strength": "tested",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "Applying human factors principles to alert design increases efficiency and reduces prescribing errors in a scenario-based simulation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4173163/",
+    "publisher": "Journal of the American Medical Informatics Association",
+    "date": "2014-03-25"
+   }
+  ]
+ },
+ {
+  "slug": "irs-direct-file-pilot",
+  "title": "IRS Direct File, built through 33 studies with taxpayers, scored 90% excellent or above average",
+  "company": "Internal Revenue Service (with U.S. Digital Service and 18F)",
+  "is_anonymized": false,
+  "summary": "The IRS built its free Direct File tax-filing pilot through continuous user research, from a 2023 prototype through the 2024 filing season: 33 studies with 195 taxpayers, in English and Spanish and including assistive technology users. In the pilot's post-filing survey, 90% rated their experience excellent or above average, with a Net Promoter Score of +74.",
+  "problem": "The IRS needed to know whether a free, government-built filing tool could work for taxpayers with simple returns, and how to make tax questions answerable accurately and confidently by non-experts.",
+  "research": "Unstructured one-on-one interviews, observations and usability testing with taxpayers of varied attitudes, aptitudes, abilities and access needs, in English and Spanish, including assistive technology users, recruited partly via community and accessibility nonprofits. 33 studies with 195 taxpayers; some studies targeted sections that generated customer-support demand.",
+  "insight": "Research assessed whether taxpayers could answer the interview-style questions accurately and confidently and identified sections driving support requests. Pilot data also showed more than 18% of submissions were rejected because people entered the wrong prior-year AGI or PIN.",
+  "change": "The product was iterated throughout the pilot based on research and support feedback. For prior-year AGI rejections, the UX team showed information earlier, improved explanatory text and made links to the IRS online account more prominent, then added a feature importing the data directly.",
+  "outcome": "Of about 15,000 survey respondents, 90% rated Direct File excellent or above average (NPS +74), 86% said it increased their trust in the IRS, and 90% of those who used customer support rated it excellent or above average. AGI/PIN rejections fell from 18.2% to 16.4% after UX changes and to 12.1% after adding data import. The pilot accepted 140,803 returns.",
+  "headline_metric": "90% rated excellent/above",
+  "attribution": "Moderate. Research was central to how the product was built, but satisfaction is a post-hoc survey with no comparison group, so the score cannot be credited to research alone. The reject-rate fix is better linked but was prompted by pilot data and support feedback as much as research.",
+  "caveats": "Self-reported by the IRS. Survey response rate was 13% and likely skews toward satisfied users; it was sent to people who used the product. Eligibility was limited to simple returns in 12 states. At publication the IRS had not decided the program's future, and this pilot-year report says nothing about long-term outcomes.",
+  "methods": [
+   "interviews",
+   "field_study",
+   "usability_testing",
+   "accessibility_research",
+   "survey",
+   "support_analysis"
+  ],
+  "research_type": "mixed",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "satisfaction",
+   "errors",
+   "accessibility"
+  ],
+  "company_size": "public_sector",
+  "year": 2024,
+  "evidence_strength": "reported",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "IRS Direct File Pilot Program: Filing Season 2024 After Action Report (Publication 5969)",
+    "url": "https://www.irs.gov/pub/irs-pdf/p5969.pdf",
+    "publisher": "Internal Revenue Service",
+    "date": "2024-05-03"
+   }
+  ]
+ },
+ {
+  "slug": "tesco-access-blind-shoppers",
+  "title": "Tesco Access, tested with 90 visually impaired users, was credited with £13m a year on a £35k build",
+  "company": "Tesco (with RNIB)",
+  "is_anonymized": false,
+  "summary": "In 2000–2001 Tesco built an accessible version of its online grocery store, testing it first with 20 visually impaired users and then with 70 blind and partially sighted users recruited with the RNIB. The simplified site launched in May 2001; it reportedly cost £35,000 to build and was later credited with about £13 million a year in sales.",
+  "problem": "Tesco.com's image-heavy, multi-column layout was very hard to use with screen readers and magnifiers, shutting out blind and partially sighted shoppers, who arguably had the most to gain from grocery delivery.",
+  "research": "Alpha testing with 20 users with varied visual impairments (June–September 2000) alongside iterative interface design, then beta testing with 70 blind and partially sighted users recruited in liaison with the Royal National Institute of Blind People (January–May 2001).",
+  "insight": "Screen reader and low-vision users were slowed down by decorative images, vague link text and column layouts that made navigation order unclear.",
+  "change": "Launched 'Tesco Access' on 22 May 2001: an alternative interface with superfluous images removed, clearly described links and a single-column layout, designed so anyone could buy 30 items in 15 minutes over a 56K connection.",
+  "outcome": "The W3C business case, citing the Employers' Forum on Disability, states the accessible site cost £35,000 to develop and that revenue from it rose to £13 million a year. It also displayed well on mobile devices and slow connections. The site won RNIB's 'See it Right' award.",
+  "headline_metric": "£13m/yr on £35k build",
+  "attribution": "The site was built and validated through extensive testing with visually impaired users; the revenue figure is attributed to that site. How the £13m was calculated, and how much was new versus diverted spend, is not stated.",
+  "caveats": "Old (2001–2003) and the revenue figure is second-hand with no method. A separate 'accessible version' is no longer considered best practice; the W3C page itself says so. The often-quoted 700,000 orders a week figure refers to Tesco.com overall, not the accessible site.",
+  "methods": [
+   "accessibility_research",
+   "usability_testing"
+  ],
+  "research_type": "evaluative",
+  "industry": "ecommerce_retail",
+  "product_type": "website",
+  "metrics": [
+   "revenue",
+   "accessibility"
+  ],
+  "company_size": "enterprise",
+  "year": 2001,
+  "evidence_strength": "reported",
+  "source_type": "independent",
+  "sources": [
+   {
+    "title": "Tesco Case Study (archived business case)",
+    "url": "https://www.w3.org/WAI/business-case/archive/tesco-case-study",
+    "publisher": "W3C Web Accessibility Initiative",
+    "date": "2009-12-14"
+   }
+  ]
+ },
+ {
+  "slug": "durham-university-website-ucas-referrals",
+  "title": "Durham University's research-led site consolidation lifted UCAS application click-throughs 52%",
+  "company": "Durham University (with CTI Digital)",
+  "is_anonymized": false,
+  "summary": "Durham's web presence was spread across fifty-five domains, confusing prospective students. Its agency ran surveys, workshops, on-campus interviews and user testing, mapped the application journey and rebuilt the site as one. The agency reports a 52% increase in exits to the UCAS application system.",
+  "problem": "Prospective students had to navigate fifty-five separate university domains, with navigation problems especially on mobile, making it harder to find courses and start an application.",
+  "research": "Surveys, workshops and on-campus interviews; refined personas and journey mapping of the application process; a website audit and competitor review; responsive prototypes tested with students; and user testing across devices. Participant numbers are not given.",
+  "insight": "The fragmented site and weak mobile navigation got in the way of the core task for prospective students: understanding courses and moving on to apply through UCAS.",
+  "change": "Unified the website on a new platform with a new information architecture and design, content-first and accessible content guidelines, rolled out in phases.",
+  "outcome": "CTI Digital reports a 52% increase in exits to the UCAS application system, a 9% reduction in mobile bounce rate and a 13% decrease in course page bounce rate.",
+  "headline_metric": "+52% UCAS referrals",
+  "attribution": "Indirect. Research shaped the new structure, but the outcome reflects a whole-site consolidation and replatforming, not specific research findings.",
+  "caveats": "Agency case study about its own client. The page is undated: the agency says it has worked with Durham for six years (the contract was awarded in late 2019), so the year here is approximate. No comparison period or participant numbers. Click-throughs to UCAS are not applications or enrolments.",
+  "methods": [
+   "survey",
+   "interviews",
+   "journey_mapping",
+   "usability_testing",
+   "concept_testing"
+  ],
+  "research_type": "mixed",
+  "industry": "education",
+  "product_type": "website",
+  "metrics": [
+   "conversion",
+   "engagement"
+  ],
+  "company_size": "midmarket",
+  "year": 2025,
+  "evidence_strength": "reported",
+  "source_type": "agency_vendor",
+  "sources": [
+   {
+    "title": "Durham University Increases UCAS Application Clicks by 52% through Digital Transformation",
+    "url": "https://www.ctidigital.com/work/durham-university",
+    "publisher": "CTI Digital",
+    "date": null
+   }
+  ]
+ },
+ {
+  "slug": "louisiana-lamessage-benefit-renewal-texts",
+  "title": "Louisiana's research-led text reminders: SNAP renewals 70% vs 51% for non-opted-in clients",
+  "company": "Code for America with Louisiana Department of Children and Family Services and Department of Health",
+  "is_anonymized": false,
+  "summary": "Field research with Louisiana benefit clients found many lost food, health or cash assistance simply because they didn't know a renewal step was due, and that they relied on mobile phones rather than mail. Code for America and the state piloted opt-in text reminders across Medicaid, SNAP, TANF and WIC in 2019. Clients who opted in completed renewals and appointments at much higher rates than those who didn't.",
+  "problem": "Eligible people were dropping off benefits ('churn') at renewal time, often discovering the loss only when they tried to use their benefits. Churn also creates administrative cost and caseworker burden.",
+  "research": "Discovery interviews with sorting and prioritization exercises, contextual inquiry in homes and public places such as libraries, remote user testing, electronic surveys, an optional satisfaction survey sent to about 1,100 clients, and in-home feedback sessions. Two A/B tests during the pilot (message tone with about 11,000 Medicaid clients; number of WIC reminders).",
+  "insight": "Churn often happened because clients didn't know what they had to do to keep benefits or struggled with the procedural steps; most relied solely on mobile phones and strongly preferred electronic communication to mail. Later research showed clients replied to the one-way texts, and trusted professional-toned messages more because friendly ones could look like scams.",
+  "change": "Launched LA'MESSAGE, opt-in text reminders for eleven case types across four programs, from April to December 2019. Added an auto-responder and recorded voice message pointing to customer service after seeing clients reply. Adopted professional message framing after the tone A/B test.",
+  "outcome": "About 27,000 of 108,000 people offered reminders opted in. Compared with clients who did not opt in: SNAP renewal 70% vs 51% baseline; Medicaid annual approval 25% vs 15%; WIC appointments kept 52% vs 29%; SNAP simplified reporting 81% vs 67%. In the A/B test, professional framing led 37.6% to return Medicaid renewal packets versus 33.8% for friendly framing.",
+  "headline_metric": "SNAP renewals 70% vs 51%",
+  "attribution": "Research identified the problem (people not knowing a step was due) and the channel (texts). The main outcome comparison is between people who chose to opt in and those who didn't, so it overstates the effect; only the message-tone result comes from a randomized test.",
+  "caveats": "Opt-in clients are likely more engaged than the baseline group, so the large gaps are not causal estimates. No significance testing reported. Self-reported by Code for America, which ran the pilot. Some groups were small (58 FITAP clients).",
+  "methods": [
+   "interviews",
+   "field_study",
+   "usability_testing",
+   "survey",
+   "experimentation"
+  ],
+  "research_type": "mixed",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "retention",
+   "task_success"
+  ],
+  "company_size": "public_sector",
+  "year": 2020,
+  "evidence_strength": "measured",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Cell Phones as a Safety Net Lifeline",
+    "url": "https://codeforamerica.org/news/cell-phones-as-a-safety-net-lifeline/",
+    "publisher": "Code for America",
+    "date": "2020-02-24"
    }
   ]
  }

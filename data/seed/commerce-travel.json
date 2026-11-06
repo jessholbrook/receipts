@@ -567,5 +567,120 @@
         "date": "2021-08-18"
       }
     ]
+  },
+  {
+    "slug": "despegar-pandemic-traveler-research",
+    "title": "Despegar's pandemic traveler research backs flexible packages and kills the hard sell",
+    "company": "Despegar",
+    "is_anonymized": false,
+    "summary": "When COVID-19 upended travel, Latin American online travel agency Despegar stepped up surveys and interviews with frequent travelers and tested hotel photo sets. Travelers were uncertain about income and trips, disliked aggressive sales tactics, and reacted badly to sanitation photos of rooms and food. The team made flexible cancellation and packages core products, softened its tone against stakeholder pressure for a hard sell, and changed how sanitation imagery is shown.",
+    "problem": "Travel demand and traveler attitudes changed abruptly in 2020, and the team needed to know what travelers in different Latin American markets felt and wanted before deciding product and messaging.",
+    "research": "In 2020 the UX research team ran self-reported surveys and interviews with frequent travelers recruited through social media and groups (past bookers were excluded because many were trying to cancel), and tested two hotel photo sets: standard amenity photos versus photos emphasising sanitation.",
+    "insight": "Many travelers were unsure about trips and their future income, reacted poorly to aggressive sales tactics, and split into risk-averse and risk-tolerant groups. Sanitation photos of intimate spaces like rooms and food caused discomfort, while communal spaces like lobbies did not. Attitudes differed by country (Brazil and Mexico readier to travel than Argentina), and six in ten planned a first trip within their own country.",
+    "change": "Flexible cancellation and modification features, and flexible packages, became core products. The team pushed back on stakeholders who wanted a hard sell and moved to a softer, reassuring voice. Supplier sanitation imagery was guided toward communal spaces rather than rooms and food.",
+    "outcome": "No business metrics reported. The team says flexible packages became the most popular option despite higher prices, and flexibility features became core products.",
+    "headline_metric": null,
+    "attribution": "The NN/g article, based on interviews with Despegar's UX and research leads, credits the research with the tone change and the imagery guidance. The rise of flexible packages was also driven by the pandemic itself, so research is one of several causes.",
+    "caveats": "Secondhand account from NN/g interviews with the company's own UX leads. Mostly self-reported attitudes gathered during a crisis. No metrics on bookings, conversion or revenue.",
+    "methods": [
+      "survey",
+      "interviews",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "travel_hospitality",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "COVID-19 Has Changed Your Users",
+        "url": "https://www.nngroup.com/articles/covid-changed-users/",
+        "publisher": "Nielsen Norman Group",
+        "date": "2020-08-30"
+      }
+    ]
+  },
+  {
+    "slug": "property-finder-whatsapp-leads",
+    "title": "Property Finder sees evening browsers reluctant to phone agents, launches WhatsApp enquiries",
+    "company": "Property Finder",
+    "is_anonymized": false,
+    "summary": "UAE property portal Property Finder combined periodic user surveys (over 1,500 users across 18 months) with other discovery research. One finding was that mobile users browse heavily in the evening but hesitate to call agents. That led to a test of WhatsApp as a way to contact agents, which the company says reached 'almost instant product-market fit'.",
+    "problem": "The portal wanted more buyers and renters to contact agents, and needed to understand how and when people searched and what stopped them reaching out.",
+    "research": "Around 2019: periodic sentiment surveys of more than 1,500 portal users over about a year and a half, plus discovery work the team describes as personas, diary studies and user interviews, and a map of more than 40 questions buyers and renters ask during a search.",
+    "insight": "Mobile users were very active in the evening but reluctant to phone agents. Research also showed some information (popular unit types, guest parking, community issues) is best supplied by residents, and that the map is central to the UAE search journey.",
+    "change": "Property Finder tested and launched WhatsApp Leads, a way to message agents instead of calling. Related findings led to resident-written Community Guides, Building Reviews on listing pages, and better map search.",
+    "outcome": "The company says WhatsApp Leads reached 'almost instant product-market fit'. No lead numbers are given. Separately, it reports over 10% of mobile searches used Map Search.",
+    "headline_metric": null,
+    "attribution": "The post states the evening-browsing finding 'inspired' the WhatsApp test. The success claim is qualitative.",
+    "caveats": "First-party blog by a product manager, published in 2023 about 2019 work. No lead volumes, conversion or test design reported. The specific research method behind the WhatsApp insight isn't separated from the general list of methods.",
+    "methods": [
+      "survey",
+      "interviews",
+      "diary_study",
+      "analytics"
+    ],
+    "research_type": "generative",
+    "industry": "real_estate",
+    "product_type": "mobile_app",
+    "metrics": [
+      "conversion",
+      "adoption"
+    ],
+    "company_size": "midmarket",
+    "year": 2019,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Property portals redesigned",
+        "url": "https://www.propertyfinder.ae/blog/?p=29156",
+        "publisher": "Property Finder Blog",
+        "date": "2023-07-24"
+      }
+    ]
+  },
+  {
+    "slug": "rightmove-shared-lists",
+    "title": "Rightmove builds Shared Lists after home hunters repeatedly ask for it in user testing",
+    "company": "Rightmove",
+    "is_anonymized": false,
+    "summary": "Rightmove, the UK's largest property portal, launched Shared Lists, which let renters and buyers collect listings and send them to others who can react, comment and suggest alternatives. Its CTO said the idea was 'repeatedly requested during thousands of hours of user testing'.",
+    "problem": "Buyers and renters had no built-in way on Rightmove to share a shortlist of listings with other people and discuss it.",
+    "research": "Ongoing user testing sessions with renters and buyers, described as 'thousands of hours' in total, in which participants kept asking for a way to share and discuss shortlists. Details of method and sample aren't published.",
+    "insight": "Participants in user testing kept asking for a way to share and discuss listings with others inside the product.",
+    "change": "Rightmove launched Shared Lists in November 2025 for both renters and buyers: users build collections of agents' listings and share them, and recipients can react, comment and propose alternatives.",
+    "outcome": "No usage or business metrics reported at launch.",
+    "headline_metric": null,
+    "attribution": "The company directly credits user testing as the source of the idea. Nothing yet shows whether it changed behaviour.",
+    "caveats": "Trade-press report of a launch announcement. 'Thousands of hours' is unspecific and refers to user testing in general, not a dedicated study. No outcome data.",
+    "methods": [
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "real_estate",
+    "product_type": "website",
+    "metrics": [
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2025,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Rightmove rolls out Shared Lists to help renters and buyers' search",
+        "url": "https://www.property118.com/?p=186705",
+        "publisher": "Property118",
+        "date": "2025-11-19"
+      }
+    ]
   }
 ]

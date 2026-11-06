@@ -414,45 +414,6 @@
     ]
   },
   {
-    "slug": "xbox-adaptive-controller-accessible-packaging",
-    "title": "Gamers with disabilities shaped Xbox Adaptive Controller packaging that opens one-handed",
-    "company": "Microsoft (Xbox)",
-    "is_anonymized": false,
-    "summary": "Microsoft's first packaging designed for accessibility was built with input from gamers with limited mobility and disability advocates. Their feedback, starting with 'no teeth', drove a box that opens with one hand through loops, hinges and simple steps. The packaging went through more than 100 iterations of its components.",
-    "problem": "The Xbox Adaptive Controller was made for gamers with limited mobility, but standard packaging (tape, twist ties, tight plastic, two-handed lids) would have been a barrier for the very people buying it.",
-    "research": "Xbox design researcher Scott Wang consulted gamers and disability advocates in the US and UK while the controller was in development. Prototypes were tested with Microsoft employees with limited mobility, including one tester born without fingers on his left hand who used only that hand to represent a more extreme case.",
-    "insight": "Many disabled gamers open everyday items with their teeth and did not want to; they preferred several simple steps over fewer complicated ones; they needed access from multiple points; and edges and plastic covers caused cuts and frustration. Small circular loops were hard for some testers to use.",
-    "change": "Loops on the outer tape, quick-start guide and cable wrap; a hinged inner box instead of a two-handed lid; oval rather than round loops; no twist ties; rigid paperboard; an open-fronted tray; a guide folded on its long edge to reduce arm movement; and the controller centred so buttons aren't pressed in transit.",
-    "outcome": "The packaging shipped with the controller in 2018 after more than 100 iterations. Microsoft reports no quantitative test results; the evidence is the design decisions themselves and tester accounts.",
-    "headline_metric": null,
-    "attribution": "Direct for the design decisions: specific features (oval loops, no-teeth opening) are traced to named tester feedback. No outcome metric.",
-    "caveats": "Company feature story written at launch for publicity. No sales, returns or satisfaction data. Testing was partly with Microsoft employees.",
-    "methods": [
-      "accessibility_research",
-      "co_design",
-      "concept_testing",
-      "interviews"
-    ],
-    "research_type": "mixed",
-    "industry": "gaming",
-    "product_type": "physical_product",
-    "metrics": [
-      "accessibility"
-    ],
-    "company_size": "enterprise",
-    "year": 2018,
-    "evidence_strength": "decision",
-    "source_type": "first_party",
-    "sources": [
-      {
-        "title": "How gamers with disabilities helped design the new Xbox Adaptive Controller's elegantly accessible packaging",
-        "url": "https://news.microsoft.com/features/how-gamers-with-disabilities-helped-design-the-new-xbox-adaptive-controllers-elegantly-accessible-packaging/",
-        "publisher": "Microsoft Stories",
-        "date": "2018-07-25"
-      }
-    ]
-  },
-  {
     "slug": "social-security-scotland-experience-panels",
     "title": "Scotland's 2,400-member experience panels reshaped how its new benefits agency treats people",
     "company": "Scottish Government / Social Security Scotland",
@@ -624,6 +585,126 @@
         "url": "https://www.irs.gov/pub/irs-pdf/p5969.pdf",
         "publisher": "Internal Revenue Service",
         "date": "2024-05-03"
+      }
+    ]
+  },
+  {
+    "slug": "tesco-access-blind-shoppers",
+    "title": "Tesco Access, tested with 90 visually impaired users, was credited with £13m a year on a £35k build",
+    "company": "Tesco (with RNIB)",
+    "is_anonymized": false,
+    "summary": "In 2000–2001 Tesco built an accessible version of its online grocery store, testing it first with 20 visually impaired users and then with 70 blind and partially sighted users recruited with the RNIB. The simplified site launched in May 2001; it reportedly cost £35,000 to build and was later credited with about £13 million a year in sales.",
+    "problem": "Tesco.com's image-heavy, multi-column layout was very hard to use with screen readers and magnifiers, shutting out blind and partially sighted shoppers, who arguably had the most to gain from grocery delivery.",
+    "research": "Alpha testing with 20 users with varied visual impairments (June–September 2000) alongside iterative interface design, then beta testing with 70 blind and partially sighted users recruited in liaison with the Royal National Institute of Blind People (January–May 2001).",
+    "insight": "Screen reader and low-vision users were slowed down by decorative images, vague link text and column layouts that made navigation order unclear.",
+    "change": "Launched 'Tesco Access' on 22 May 2001: an alternative interface with superfluous images removed, clearly described links and a single-column layout, designed so anyone could buy 30 items in 15 minutes over a 56K connection.",
+    "outcome": "The W3C business case, citing the Employers' Forum on Disability, states the accessible site cost £35,000 to develop and that revenue from it rose to £13 million a year. It also displayed well on mobile devices and slow connections. The site won RNIB's 'See it Right' award.",
+    "headline_metric": "£13m/yr on £35k build",
+    "attribution": "The site was built and validated through extensive testing with visually impaired users; the revenue figure is attributed to that site. How the £13m was calculated, and how much was new versus diverted spend, is not stated.",
+    "caveats": "Old (2001–2003) and the revenue figure is second-hand with no method. A separate 'accessible version' is no longer considered best practice; the W3C page itself says so. The often-quoted 700,000 orders a week figure refers to Tesco.com overall, not the accessible site.",
+    "methods": [
+      "accessibility_research",
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "website",
+    "metrics": [
+      "revenue",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2001,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Tesco Case Study (archived business case)",
+        "url": "https://www.w3.org/WAI/business-case/archive/tesco-case-study",
+        "publisher": "W3C Web Accessibility Initiative",
+        "date": "2009-12-14"
+      }
+    ]
+  },
+  {
+    "slug": "durham-university-website-ucas-referrals",
+    "title": "Durham University's research-led site consolidation lifted UCAS application click-throughs 52%",
+    "company": "Durham University (with CTI Digital)",
+    "is_anonymized": false,
+    "summary": "Durham's web presence was spread across fifty-five domains, confusing prospective students. Its agency ran surveys, workshops, on-campus interviews and user testing, mapped the application journey and rebuilt the site as one. The agency reports a 52% increase in exits to the UCAS application system.",
+    "problem": "Prospective students had to navigate fifty-five separate university domains, with navigation problems especially on mobile, making it harder to find courses and start an application.",
+    "research": "Surveys, workshops and on-campus interviews; refined personas and journey mapping of the application process; a website audit and competitor review; responsive prototypes tested with students; and user testing across devices. Participant numbers are not given.",
+    "insight": "The fragmented site and weak mobile navigation got in the way of the core task for prospective students: understanding courses and moving on to apply through UCAS.",
+    "change": "Unified the website on a new platform with a new information architecture and design, content-first and accessible content guidelines, rolled out in phases.",
+    "outcome": "CTI Digital reports a 52% increase in exits to the UCAS application system, a 9% reduction in mobile bounce rate and a 13% decrease in course page bounce rate.",
+    "headline_metric": "+52% UCAS referrals",
+    "attribution": "Indirect. Research shaped the new structure, but the outcome reflects a whole-site consolidation and replatforming, not specific research findings.",
+    "caveats": "Agency case study about its own client. The page is undated: the agency says it has worked with Durham for six years (the contract was awarded in late 2019), so the year here is approximate. No comparison period or participant numbers. Click-throughs to UCAS are not applications or enrolments.",
+    "methods": [
+      "survey",
+      "interviews",
+      "journey_mapping",
+      "usability_testing",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "education",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "engagement"
+    ],
+    "company_size": "midmarket",
+    "year": 2025,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Durham University Increases UCAS Application Clicks by 52% through Digital Transformation",
+        "url": "https://www.ctidigital.com/work/durham-university",
+        "publisher": "CTI Digital",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "louisiana-lamessage-benefit-renewal-texts",
+    "title": "Louisiana's research-led text reminders: SNAP renewals 70% vs 51% for non-opted-in clients",
+    "company": "Code for America with Louisiana Department of Children and Family Services and Department of Health",
+    "is_anonymized": false,
+    "summary": "Field research with Louisiana benefit clients found many lost food, health or cash assistance simply because they didn't know a renewal step was due, and that they relied on mobile phones rather than mail. Code for America and the state piloted opt-in text reminders across Medicaid, SNAP, TANF and WIC in 2019. Clients who opted in completed renewals and appointments at much higher rates than those who didn't.",
+    "problem": "Eligible people were dropping off benefits ('churn') at renewal time, often discovering the loss only when they tried to use their benefits. Churn also creates administrative cost and caseworker burden.",
+    "research": "Discovery interviews with sorting and prioritization exercises, contextual inquiry in homes and public places such as libraries, remote user testing, electronic surveys, an optional satisfaction survey sent to about 1,100 clients, and in-home feedback sessions. Two A/B tests during the pilot (message tone with about 11,000 Medicaid clients; number of WIC reminders).",
+    "insight": "Churn often happened because clients didn't know what they had to do to keep benefits or struggled with the procedural steps; most relied solely on mobile phones and strongly preferred electronic communication to mail. Later research showed clients replied to the one-way texts, and trusted professional-toned messages more because friendly ones could look like scams.",
+    "change": "Launched LA'MESSAGE, opt-in text reminders for eleven case types across four programs, from April to December 2019. Added an auto-responder and recorded voice message pointing to customer service after seeing clients reply. Adopted professional message framing after the tone A/B test.",
+    "outcome": "About 27,000 of 108,000 people offered reminders opted in. Compared with clients who did not opt in: SNAP renewal 70% vs 51% baseline; Medicaid annual approval 25% vs 15%; WIC appointments kept 52% vs 29%; SNAP simplified reporting 81% vs 67%. In the A/B test, professional framing led 37.6% to return Medicaid renewal packets versus 33.8% for friendly framing.",
+    "headline_metric": "SNAP renewals 70% vs 51%",
+    "attribution": "Research identified the problem (people not knowing a step was due) and the channel (texts). The main outcome comparison is between people who chose to opt in and those who didn't, so it overstates the effect; only the message-tone result comes from a randomized test.",
+    "caveats": "Opt-in clients are likely more engaged than the baseline group, so the large gaps are not causal estimates. No significance testing reported. Self-reported by Code for America, which ran the pilot. Some groups were small (58 FITAP clients).",
+    "methods": [
+      "interviews",
+      "field_study",
+      "usability_testing",
+      "survey",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "retention",
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2020,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Cell Phones as a Safety Net Lifeline",
+        "url": "https://codeforamerica.org/news/cell-phones-as-a-safety-net-lifeline/",
+        "publisher": "Code for America",
+        "date": "2020-02-24"
       }
     ]
   }

@@ -51,3 +51,10 @@ To change the passphrase, run in the Supabase SQL editor:
 ```sql
 update admin_secrets set passphrase_hash = extensions.crypt('NEW-PASSPHRASE', extensions.gen_salt('bf', 10));
 ```
+
+### About the Supabase security advisor warnings
+
+The advisor flags the `admin_*` functions as "SECURITY DEFINER executable by anon". That's by design:
+each one checks the moderator passphrase against a bcrypt hash before doing anything, and
+`admin_check` sleeps 300ms per attempt to slow guessing. `admin_secrets` has RLS on with no
+policies, so it's unreadable through the API.
