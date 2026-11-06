@@ -69,6 +69,46 @@ slack-2020-redesign-pilot-and-benchmark | Slack | Slack's 2020 redesign changed 
 slack-2023-redesign-search-placement | Slack | Slack moved search back to the top after research showed users couldn't find it
 xero-new-invoicing-feedback-fixes | Xero | Xero reworked its new invoicing screens after users said they were slower
 insure4retirement-quote-journey-usability | Insure4Retirement (AJG group) | Insure4Retirement doubled quote completion after usability testing moved contact questions later
+figma-notifications-research-data-pairing | Figma | Figma interviews and data reveal hidden notification bell and missing alerts, reshaping its roadmap
+mozilla-firefox-focus-value-study | Mozilla (Firefox) | Mozilla's 61-person value study made the case for small-audience Firefox Focus
+mozilla-firefox-picture-in-picture-interviews | Mozilla (Firefox) | Interviews with Firefox Picture-in-Picture users stop Mozilla treating 'habit' as the success metric
+mozilla-firefox-security-warning-rewrite | Mozilla (Firefox) | Firefox's rewritten security warnings cut stated intent to ignore them by 22–50%
+mozilla-screenshotgo-indonesia-pivot | Mozilla (Firefox ScreenshotGo) | Mozilla's Indonesia research pivots a shopping wish-list idea into a screenshot app
+mozilla-firefox-ios-chronological-tabs | Mozilla (Firefox for iOS) | Concept tests and a diary study reshape Firefox for iOS's chronological tabs
+airbnb-co-hosting-sacrificial-concepts | Airbnb | Airbnb picks a host-to-host marketplace for co-hosting after testing three rough concepts
+uber-cash-fee-collection-mexico-field-tests | Uber | Uber's in-car prototype tests in Mexico fix a payment flow drivers 'completed' without paying
+wayfair-supplier-research-listing-priority | Wayfair | Wayfair's supplier research puts 'Build the Best Listing' on its global roadmap
+instacart-pandemic-research-senior-support | Instacart | Instacart's 2020 research found many new users were seniors, leading to a senior support line
+google-material-3-expressive-eye-tracking | Google (Material Design) | Google's 46 studies behind Material 3 Expressive: key buttons spotted up to 4x faster
+google-maps-two-wheeler-mode-field-research | Google (Google Maps) | Riding with drivers in Delhi and Jakarta led Google Maps to build a two-wheeler mode
+ft-edit-in-app-survey-weekend-and-app-merge | Financial Times (FT Edit) | FT Edit's in-app survey drives a print cross-promotion and shapes its move into the main FT app
+tokopedia-phone-trade-in-research | Tokopedia | Tokopedia's interviews and post-launch tests shape its phone trade-in and raise purchase completion
+gitlab-clone-button-click-tests | GitLab | GitLab click tests: moving the clone button lifted findability from 84% to 98%
+gitlab-navigation-overhaul-diary-studies | GitLab | GitLab dropped its first navigation fixes after research, then rebuilt around diary studies
+duolingo-practice-hub-mistakes-interviews | Duolingo | Duolingo interviews about learners' mistakes led to the Practice Hub
+slack-activity-tab-triage-behaviours | Slack (Salesforce) | Slack built Activity 2.0 around four triage habits found in research
+figma-ui3-floating-panels-reversed | Figma | Figma reversed UI3's floating panels after beta feedback showed they slowed people down
+monzo-home-screen-customisation | Monzo | Monzo added home screen customisation after early concepts confused customers
+microsoft-eeg-meeting-breaks-outlook | Microsoft | Microsoft's EEG study of back-to-back meetings led to Outlook settings that build in breaks
+hubspot-navigation-card-sort-object-based | HubSpot | HubSpot card sorts showed no one grouped its apps by its own marketing methodology
+hubspot-crm-index-page-usability-baseline | HubSpot | HubSpot's usability baseline found users missed filters and saved views, so it redesigned its busiest pages
+adobe-fresco-artist-research | Adobe | Interviews with 50+ artists led Adobe to build Fresco instead of extending its two drawing apps
+microsoft-intellicode-inclusive-focus-research | Microsoft (Visual Studio) | Designing Visual Studio IntelliCode with developers who struggle to focus tripled regular use
+duolingo-india-everyday-hindi-and-no-paywall | Duolingo | Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%
+gitlab-free-trial-signup-journey-audit | GitLab | GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%
+wikimedia-reply-tool-talk-pages | Wikimedia Foundation (Editing team) | Wikipedia's Reply tool: newer editors far more likely to publish a talk-page comment
+wikimedia-growth-newcomer-homepage | Wikimedia Foundation (Growth team) | Wikipedia's newcomer homepage: early test showed gains, a 27-wiki trial found small ones
+nyc-court-summons-redesign-text-reminders | New York City Mayor's Office of Criminal Justice, NYPD and Office of Court Administration (with ideas42 and University of Chicago Crime Lab) | New York's redesigned court summons and text reminders cut missed court dates 13–26%
+gov-uk-start-now-button-benchmarking-tests | Government Digital Service (GOV.UK) | GOV.UK benchmarking found people stalling at 'Start now'; button-label tests lifted clicks up to 30%
+gov-uk-service-sign-in-page | Government Digital Service (GOV.UK) with HM Revenue and Customs | GOV.UK's new sign-in choice page nearly doubled clicks on the less-visible option
+moj-gov-uk-separating-families-guidance | Ministry of Justice (UK) | Task-based testing with 100+ separating parents reshaped GOV.UK family law guidance
+mnbenefits-spanish-speaker-completion | Code for America with Minnesota Department of Human Services | MNbenefits research with Spanish speakers lifted their application completion from 51% to 64%
+gov-uk-set-up-business-guidance | Government Digital Service (GOV.UK) with Companies House, BEIS and HMRC | GOV.UK cut business start-up guidance from 50+ pages to 16; clicks to registration services rose 25%
+canada-weather-pages-task-success | Environment and Climate Change Canada (with TBS Canada.ca Experience Office) | Canada's weather pages: task success rose from 33% to 72% after mobile-first redesign
+canada-cra-business-registration-task-success | Canada Revenue Agency (with TBS Canada.ca Experience Office) | CRA business registration pages: task success rose from 34% to 72% in testing
+google-chrome-not-secure-indicators | Google (Chrome) | Google surveyed thousands on browser icons, and Chrome adopted 'Not secure' labels
+canada-ei-maternity-parental-benefits-pages | Employment and Social Development Canada / Service Canada (with TBS Digital Transformation Office) | Canada's EI maternity and parental benefit pages: task success rose from 28% to 78% in testing
+google-secret-questions-account-recovery | Google | Google's data on millions of recoveries showed secret questions fail, so it shifted to SMS and email
 michigan-mdhhs-project-reform-benefits-application | Michigan Department of Health and Human Services (with Civilla) | Michigan's benefits form cut from 1,000 questions to 213 after in-home research
 login-gov-identity-proofing-photo-step | Login.gov (U.S. General Services Administration) | Login.gov lifted identity-proofing success from 51% to 74% after user testing
 vets-gov-health-care-application | U.S. Department of Veterans Affairs (with U.S. Digital Service) | VA's online health care applications rose from about 62 to 500+ a day after a researched rebuild

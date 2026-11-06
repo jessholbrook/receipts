@@ -4384,6 +4384,87 @@
   ]
  },
  {
+  "slug": "canada-ei-maternity-parental-benefits-pages",
+  "title": "Canada's EI maternity and parental benefit pages: task success rose from 28% to 78% in testing",
+  "company": "Employment and Social Development Canada / Service Canada (with TBS Digital Transformation Office)",
+  "is_anonymized": false,
+  "summary": "Ahead of a new parental sharing benefit in 2019, Canada tested its Employment Insurance maternity and parental benefit pages with 22 working-age people; they completed only 28% of tasks such as working out how long they could take off. A rewritten prototype with a comparison table, worked examples and a simple estimator raised task success to 78% with 20 new participants.",
+  "problem": "Thousands of parents apply for EI maternity and parental benefits each year, and a new 'use it or lose it' sharing benefit was launching in March 2019. Existing content blurred legally distinct ideas and used jargon, so people couldn't work out their options or amounts.",
+  "research": "The Digital Transformation Office reviewed other websites and talked with EI service agents, then ran baseline task-performance testing with 22 participants aged 25–39 in full-time work (8 scenarios, 155 task trials). A prototype was validated with 20 new participants (167 tests), with fixes made after observing sessions.",
+  "insight": "People didn't distinguish 'leave' from 'benefits', didn't realise the choice between standard and extended benefits couldn't be changed later, misread how one parent's choices affect the other's, and confused eligibility weeks with entitlement weeks, latching onto the bigger number.",
+  "change": "The team reorganised pages to match their headings, hid technical detail in expandable sections, added a table comparing standard and extended benefits, worked examples set out as equations, a simple estimator of benefit amounts and end dates, and a section on special circumstances.",
+  "outcome": "Overall task completion rose from 28% to 78% and finding the right page from 46% to 90%. Working out maximum leave rose from 5% to 79%; whether a bonus counts in earnings from 0% to 69%. 'Variable best weeks' stayed weak at 53%, and the 80% target was missed, though the 20-point improvement target was met.",
+  "headline_metric": "Task success 28% → 78%",
+  "attribution": "Direct. Same scenarios before and after a redesign built around the baseline findings.",
+  "caveats": "Prototype testing with small samples (22 and 20) and a narrow participant profile; the prototype was revised during validation. No live-site, call volume or application data reported.",
+  "methods": [
+   "usability_testing",
+   "benchmarking",
+   "interviews"
+  ],
+  "research_type": "evaluative",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "task_success"
+  ],
+  "company_size": "public_sector",
+  "year": 2019,
+  "evidence_strength": "measured",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "EI maternity and parental benefits optimization: Research summary",
+    "url": "https://design.canada.ca/research-summaries/maternity-parental-research-summary.html",
+    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+    "date": "2019-08-23"
+   },
+   {
+    "title": "EI maternity and parental benefits (project page)",
+    "url": "https://design.canada.ca/partners/project-09.html",
+    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+    "date": "2019-01-01"
+   }
+  ]
+ },
+ {
+  "slug": "google-secret-questions-account-recovery",
+  "title": "Google's data on millions of recoveries showed secret questions fail, so it shifted to SMS and email",
+  "company": "Google",
+  "is_anonymized": false,
+  "summary": "Secret questions were long assumed to be a memorable backup for lost passwords. Google analysed hundreds of millions of secret answers and millions of recovery attempts, plus surveys of about 1,500 people, and found answers were both easy to guess and often forgotten. The findings motivated Google to favour SMS and email recovery and keep secret questions only as a last-resort signal.",
+  "problem": "Many services, Google included, relied on personal knowledge questions ('Favourite food?', 'Father's middle name?') for account recovery, on the assumption that people remember them reliably. Their real-world security and memorability had never been measured at scale.",
+  "research": "Google researchers studied the distribution of hundreds of millions of secret answers and a month of account recovery claims across languages and countries, and ran Google Consumer Surveys in the US (1,500 respondents for the main survey, plus two follow-up surveys) on why people give untruthful answers and how much they trust each recovery method.",
+  "insight": "About 40% of English-speaking US users couldn't recall their answers when needed; the questions that were hardest to guess were the hardest to remember. A single guess could crack 19.7% of English speakers' 'Favorite food?' answers. 37% of surveyed people who gave fake answers did so to make them harder to guess, which made answers more predictable, and people trusted secret questions more than SMS, the opposite of reality.",
+  "change": "Google favoured SMS and email as recovery mechanisms and now uses secret questions only as a last resort, combined with other signals in its login risk analysis.",
+  "outcome": "Over a full month of recovery claims, SMS recovery succeeded 80.9% of the time, against 60.8% for the best-performing secret question group (down to 44% for French users) and 75% for email. The paper reports the findings 'motivated Google's decision' to favour these alternatives.",
+  "headline_metric": "SMS 81% vs questions 61%",
+  "attribution": "Direct for the decision: the paper states the research motivated the switch. The success rates compare existing mechanisms rather than measuring the effect of the switch itself.",
+  "caveats": "This is large-scale behavioural analytics plus surveys, not usability testing. No before/after figures for overall recovery success after the change. Authors are Google staff (and a former Google researcher). SMS later became recognised as weaker than other second factors.",
+  "methods": [
+   "analytics",
+   "survey"
+  ],
+  "research_type": "evaluative",
+  "industry": "consumer_tech",
+  "product_type": "web_app",
+  "metrics": [
+   "task_success"
+  ],
+  "company_size": "enterprise",
+  "year": 2015,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Secrets, Lies, and Account Recovery: Lessons from the Use of Personal Knowledge Questions at Google (Bonneau, Bursztein, Caron, Jackson, Williamson; WWW 2015)",
+    "url": "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43783.pdf",
+    "publisher": "Google Research",
+    "date": "2015-05-18"
+   }
+  ]
+ },
+ {
   "slug": "michigan-mdhhs-project-reform-benefits-application",
   "title": "Michigan's benefits form cut from 1,000 questions to 213 after in-home research",
   "company": "Michigan Department of Health and Human Services (with Civilla)",
