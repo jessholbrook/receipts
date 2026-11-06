@@ -68,6 +68,14 @@ export default function About() {
           <a href="https://github.com/jessholbrook/receipts/issues/new">Open an issue</a> with the correction and a
           source. Or <Link href="/submit">submit a win</Link> of your own.
         </p>
+
+        <h2>Cite it, share it</h2>
+        <p>
+          Receipts lives at <a href="https://www.researchreceipts.org">researchreceipts.org</a>. Every entry has its own
+          link with a preview card, so you can drop a single receipt into a deck, a doc or a budget thread. For the
+          skeptic in your life, <a href="https://whathasresearcheverdone.com">whathasresearcheverdone.com</a> gets you
+          here too.
+        </p>
       </div>
     </div>
   );

@@ -48,7 +48,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <footer className="site-footer">
           <div className="wrap">
-            <span>Receipts: a public atlas of UX research wins, rated for evidence strength.</span>
+            <span>
+              <a href="https://www.researchreceipts.org">researchreceipts.org</a>: a public atlas of UX research wins,
+              rated for evidence strength.
+            </span>
             <span>
               <Link href="/about">Methodology</Link> · <Link href="/submit">Submit</Link> ·{" "}
               <a href="https://github.com/jessholbrook/receipts">Source</a>
