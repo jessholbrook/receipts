@@ -3841,82 +3841,81 @@
   ]
  },
  {
-  "slug": "firefox-certificate-warning-rewrite",
-  "title": "Firefox's research-led security warning rewrite cut stated intent to ignore warnings by 22–50%",
-  "company": "Mozilla (Firefox)",
+  "slug": "duolingo-india-everyday-hindi-and-no-paywall",
+  "title": "Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%",
+  "company": "Duolingo",
   "is_anonymized": false,
-  "summary": "About 3% of Firefox users hit a security certificate warning every day, and the old pages were full of vague jargon. Mozilla's UX and security teams rewrote them using published research plus their own usability test, survey and live study. In a panel survey, the new pages cut the share of people saying they would ignore the warning by 22–50%, and a live comparison found no harm to usage or retention.",
-  "problem": "Firefox's most common certificate error pages used technical jargon in a dated design. Mozilla wanted people to understand the risk and choose the safe option, without driving them to switch browsers.",
-  "research": "Three studies in 2018–2019: a remote unmoderated usability test of draft pages with eight participants (UserTesting); a paid panel survey comparing the new Firefox pages, the old Firefox pages and Chrome's equivalent pages; and a live study comparing new and old pages with Firefox users. External academic research on security warnings also fed the design.",
-  "insight": "Words like 'security credentials', 'encrypted' and 'certificate' were too abstract. In the usability test, the word 'connection' made people think their internet connection was the problem rather than the website's certificate.",
-  "change": "The pages were rewritten in plain language (dropping 'connection' from headings and explaining 'certificate' on first use), with the most important content up front and the safer choice made the clear default.",
-  "outcome": "In the survey, the redesigned messages showed a 22–50% decrease in people saying they would try to ignore the warning, and a 29–60% decrease in people saying they would use another browser to reach the site (4.7–8.5% for the new Firefox pages versus 10–11.3% for Chrome's). The live study found the new pages did not significantly hurt usage or retention, so they shipped to all users.",
-  "headline_metric": "-22–50% would ignore",
-  "attribution": "Good for the wording changes, which came straight from test findings. The positive numbers are what people said they would do in a survey, not what they did.",
-  "caveats": "Stated intentions in a panel survey, reported as ranges across message types without sample sizes. The live study only checked for harm and its numbers are not shared. Company blog post.",
+  "summary": "As newly online learners poured into Duolingo in India in 2020, research showed its Hindi interface used formal words even native speakers found hard, and that people mistook the Duolingo Plus promotion for a paywall and preferred one-off payments. A/B tests of the fixes lifted onboarding completion by 1%, and removing Duolingo Plus in India raised daily active users by 6%.",
+  "problem": "New learners in India grew 400% year on year, many of them online for the first time. Duolingo's app had been built for markets where people had different language habits and were used to app subscriptions.",
+  "research": "User research with learners in India, including interviews, alongside usage data, followed by A/B tests of each change. The post does not say how the tap-through behaviour was spotted, and gives no participant numbers or dates.",
+  "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
+  "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
+  "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
+  "headline_metric": "+6% DAU",
+  "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
+  "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
   "methods": [
-   "usability_testing",
-   "survey",
-   "experimentation"
+   "interviews",
+   "experimentation",
+   "analytics"
   ],
-  "research_type": "evaluative",
-  "industry": "consumer_tech",
-  "product_type": "desktop_software",
+  "research_type": "mixed",
+  "industry": "education",
+  "product_type": "mobile_app",
   "metrics": [
-   "errors",
-   "retention",
-   "task_success"
+   "engagement",
+   "conversion",
+   "retention"
   ],
-  "company_size": "midmarket",
-  "year": 2019,
-  "evidence_strength": "measured",
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "tested",
   "source_type": "first_party",
   "sources": [
    {
-    "title": "Designing better security warnings",
-    "url": "https://blog.mozilla.org/ux/2019/03/designing-better-security-warnings/",
-    "publisher": "Firefox UX blog (Mozilla)",
-    "date": "2019-03"
+    "title": "Language learning for the next billion: Duolingo in India",
+    "url": "https://blog.duolingo.com/language-learning-for-the-next-billion-duolingo-in-india/",
+    "publisher": "Duolingo Blog",
+    "date": "2020-09-24"
    }
   ]
  },
  {
-  "slug": "firefox-focus-kept-value-research",
-  "title": "Mozilla's 61-person study of how people value Firefox helped save Firefox Focus despite low usage",
-  "company": "Mozilla (Firefox)",
+  "slug": "gitlab-free-trial-signup-journey-audit",
+  "title": "GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%",
+  "company": "GitLab",
   "is_anonymized": false,
-  "summary": "Firefox Focus, a privacy-focused mobile browser, had few users, and Mozilla was debating whether to keep investing in it. A three-phase study with 61 people in six cities showed Focus played a specific role alongside other Firefox browsers, such as sensitive or one-off searches. Researchers say this made the case to keep the product and changed how leaders thought about measuring its success.",
-  "problem": "Mozilla measured success mainly by monthly and daily active users, but had little qualitative understanding of those numbers and collects limited usage data by design. Focus's small user base led to internal discussion about cutting investment.",
-  "research": "A study in Berlin, Chicago, Portland, Seattle, Taipei and Vancouver with 61 participants, proposed in late 2019 and run before the pandemic: a three-day diary study, short remote interviews, and 2.5-hour in-person workshops using futures thinking and participatory design. Two senior product managers joined the field team. Follow-up surveys with thousands of people tested the resulting use-case categories at scale.",
-  "insight": "Focus was often used alongside another Firefox mobile browser for particular jobs, such as searches people did not want recorded or quick one-off lookups where they liked starting fresh. The study also showed that some 'good' usage metrics, like many open tabs, could reflect a bad experience.",
-  "change": "Mozilla kept Firefox Focus, and the research changed how the organisation defined success for products like it. The use-case categories were adopted for wider survey work.",
-  "outcome": "Focus was retained. No usage or business figures are given.",
-  "headline_metric": null,
-  "attribution": "The researchers say they 'were able to make the case to keep this unique product around'. Other factors in the decision are not described, and the PMs' own view is not given.",
-  "caveats": "Self-reported influence by the researchers who ran the study, on the company's UX blog. Related research by another colleague also contributed.",
+  "summary": "While planning new onboarding, a GitLab designer walked the full free trial signup and found it took over five minutes and about 37 interactions across two apps, with steps that broke if done out of order. A unified flow launched in October 2019. Weekly free trial signups went from an average of 330 before launch to more than 800, which GitLab reports as a 141% improvement.",
+  "problem": "Signing up for a GitLab.com free trial meant using two separate applications (GitLab.com and Subscription Manager) with different styles, repeated forms and duplicate email confirmations. The trial landing page defaulted to the harder self-managed option.",
+  "research": "Designer-led experience audits in 2019: a full user journey map of the signup with video walkthroughs, then a formal UX scorecard (GitLab's heuristic evaluation of a job) by a second designer, and a follow-up scorecard after launch by a third.",
+  "insight": "The flow took more than five minutes and around 37 interactions. Users were sent to their inbox mid-flow, asked again for information they had already given, asked to pick a group even when they had only one option, and could hit a dead end if they missed written instructions. The main cause was two apps not talking to each other.",
+  "change": "GitLab built a single signup flow inside GitLab.com that adapts to whether the person is new or existing and syncs with Subscription Manager in the background, and rebalanced the landing page so the SaaS trial was easy to find.",
+  "outcome": "The new flow launched on 29 October 2019. Weekly free trial signups were 466 the week before launch, 628 in launch week and 842 the week after, stayed above 800 through November, dipped (not below 600) in December, and passed 900 a week by early 2020. GitLab reports a pre-launch weekly average of 330 and a 141% improvement. A follow-up scorecard found about 17 interactions and 2.5 minutes to complete.",
+  "headline_metric": "+141% trial signups",
+  "attribution": "Plausible: the jump is large and immediate after launch. But this is a before/after count with no control, and the 'research' was expert evaluation by designers rather than testing with users.",
+  "caveats": "No usability testing with users is described; the evidence is designer-led journey mapping and heuristic scorecards. No control for marketing or seasonal changes. The 141% figure depends on the chosen baseline (330 average versus 466 the week before). Written by the lead designer on GitLab's blog.",
   "methods": [
-   "diary_study",
-   "interviews",
-   "co_design",
-   "survey"
+   "journey_mapping",
+   "heuristic_review",
+   "analytics"
   ],
-  "research_type": "generative",
-  "industry": "consumer_tech",
-  "product_type": "mobile_app",
+  "research_type": "evaluative",
+  "industry": "saas_b2b",
+  "product_type": "checkout_flow",
   "metrics": [
-   "retention",
-   "cost_avoided"
+   "conversion",
+   "task_success"
   ],
-  "company_size": "midmarket",
-  "year": 2021,
-  "evidence_strength": "decision",
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "measured",
   "source_type": "first_party",
   "sources": [
    {
-    "title": "Who Gets to Define Success? Listening to Stories of How People Value Firefox to Redefine Metrics",
-    "url": "https://blog.mozilla.org/ux/2021/01/who-gets-to-define-success-listening-to-stories-of-how-people-value-firefox-to-redefine-metrics/",
-    "publisher": "Firefox UX blog (Mozilla)",
-    "date": "2021-01"
+    "title": "How holistic UX design increased GitLab.com free trial signups",
+    "url": "https://about.gitlab.com/blog/how-holistic-ux-design-increased-gitlab-free-trial-signups/",
+    "publisher": "GitLab blog",
+    "date": "2020-02-27"
    }
   ]
  },
@@ -4269,6 +4268,118 @@
     "url": "https://gds.blog.gov.uk/2017/07/18/taking-care-of-business-on-gov-uk/",
     "publisher": "Government Digital Service blog",
     "date": "2017-07-18"
+   }
+  ]
+ },
+ {
+  "slug": "canada-weather-pages-task-success",
+  "title": "Canada's weather pages: task success rose from 33% to 72% after mobile-first redesign",
+  "company": "Environment and Climate Change Canada (with TBS Canada.ca Experience Office)",
+  "is_anonymized": false,
+  "summary": "Canada's government weather site was hard to use on phones: in baseline testing people succeeded at only a third of everyday weather tasks, and almost nobody realised weather warnings could be tapped. After a redesign driven by usability testing, a new group of 20 participants succeeded on 72% of tasks on the prototype.",
+  "problem": "Most people check the weather on a phone, but city forecast pages were long, important links sat at the bottom, and alerts didn't look clickable. Participants struggled with tasks like judging the chance of rain or finding hail warnings.",
+  "research": "Starting July 2017, the team reviewed past usability studies, traffic and search patterns and support requests, then ran moderated baseline testing with 20 participants (16 in person on smartphones in four cities, 4 remote on desktop) on 7 realistic task scenarios. A further 20 new participants tested the redesigned prototype.",
+  "insight": "Few people realised they could click a warning to see details; the long single-column city page buried the links people needed; and people tapped weather icons expecting more information.",
+  "change": "Alerts got a warning icon, underlined text and a chevron and were repeated below the forecast; city pages were shortened into two columns with task links beside the forecast; the team set mobile-first design principles such as fewer layers and showing answers rather than information.",
+  "outcome": "Overall task success rose from 33% to 72% and findability from 35% to 82%. Finding the likelihood of precipitation went from 19% to 94%; acting on a thunderstorm watch for hail from 6% to 63%. One task fell slightly (humidex, 88% to 81%) and radar interpretation stayed low at 31%.",
+  "headline_metric": "Task success 33% → 72%",
+  "attribution": "Direct. The same task scenarios were run before and after a redesign built to fix problems seen in the baseline testing.",
+  "caveats": "Small samples (20 per round) and the validation tested a prototype, not the live site, so real-world impact is not shown. No statistical testing reported. Validation session format not stated.",
+  "methods": [
+   "usability_testing",
+   "benchmarking",
+   "analytics",
+   "support_analysis"
+  ],
+  "research_type": "evaluative",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "task_success"
+  ],
+  "company_size": "public_sector",
+  "year": 2018,
+  "evidence_strength": "measured",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Weather optimization: Research summary",
+    "url": "https://design.canada.ca/research-summaries/weather-research-summary.html",
+    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+    "date": "2018-07-23"
+   }
+  ]
+ },
+ {
+  "slug": "canada-cra-business-registration-task-success",
+  "title": "CRA business registration pages: task success rose from 34% to 72% in testing",
+  "company": "Canada Revenue Agency (with TBS Canada.ca Experience Office)",
+  "is_anonymized": false,
+  "summary": "The Canada Revenue Agency wanted fewer call-centre calls about business numbers and GST registration. Baseline testing showed people succeeded at only about a third of common tasks, such as working out whether they needed a business number. After restructuring and relabelling the content, task success on the prototype rose to 72%.",
+  "problem": "Information on registering a business number and GST/HST account was scattered across pages, keywords weren't used consistently, key information wasn't first, and finding the right tax centre mailing address was hard. CRA's longer-term aim was to resolve more of these questions online instead of by phone.",
+  "research": "From March 2018, the team ran moderated task-based testing with 18 participants on 8 scenarios chosen with call-centre agents and program experts, then tested a GitHub-built prototype of the redesigned pages with 20 new participants.",
+  "insight": "The business number page lacked content people expected, related information was split across a three-page list, and users scanned for words like 'registration' and 'changes' that weren't in labels or links.",
+  "change": "The team put keywords at the start of titles and links, grouped related content under the relevant steps, condensed the three-page list into one, shortened text, added new topics to the business number page, and built a short wizard with postal-code lookup to give the right mailing address.",
+  "outcome": "Overall task success rose from 34% to 72% and findability from 44% to 84%. Finding the tax centre address for documents went from 18% to 61%; GST registration from 28% to 83%. Deciding whether you need a business number stayed weak (28% to 44%).",
+  "headline_metric": "Task success 34% → 72%",
+  "attribution": "Direct. Same task scenarios before and after a redesign targeted at the baseline findings.",
+  "caveats": "Prototype testing, not live-site data; no call volume figures reported. Small samples, and participants were business students without a business number, not real small-business owners. No statistical testing.",
+  "methods": [
+   "usability_testing",
+   "benchmarking"
+  ],
+  "research_type": "evaluative",
+  "industry": "government",
+  "product_type": "public_service",
+  "metrics": [
+   "task_success"
+  ],
+  "company_size": "public_sector",
+  "year": 2019,
+  "evidence_strength": "measured",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "CRA business registration and account maintenance: Research summary",
+    "url": "https://design.canada.ca/research-summaries/business-account-research-summary.html",
+    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+    "date": "2019-02-04"
+   }
+  ]
+ },
+ {
+  "slug": "google-chrome-not-secure-indicators",
+  "title": "Google surveyed thousands on browser icons, and Chrome adopted 'Not secure' labels",
+  "company": "Google (Chrome)",
+  "is_anonymized": false,
+  "summary": "Chrome's security researchers noticed during field work in India that even tech-savvy people didn't link Chrome's padlock icons with security. A survey of 1,329 Chrome users and tests of 40 icons and 7 labels with thousands of survey respondents led Google to replace Chrome's connection security indicators with 'Secure' and 'Not secure' icons and words, launched in Chrome 53.",
+  "problem": "Browser security indicators had barely changed since early-2000s research, and Chrome's icons, especially the neutral page icon for plain HTTP, weren't understood. Icons also had to work small, without colour, and for new internet users on phones.",
+  "research": "Google researchers surveyed 1,329 people in the moment while they browsed, via a Chrome extension (65% outside the US), then evaluated forty candidate icons and seven strings through Google Consumer Surveys, with around 500 respondents per variant.",
+  "insight": "Most respondents linked the green lock with security, but many had no idea what the plain HTTP icon meant, and many wrongly thought HTTPS guaranteed a site was trustworthy. Shape alone needed to signal risk for colour-blind users, and words were needed to teach meaning.",
+  "change": "Google selected three indicators: a lock with 'Secure' for HTTPS, and 'Not secure' with neutral and red-triangle icons for HTTP and broken HTTPS. Chrome adopted them in Chrome 53, rolling out 'Not secure' for HTTP gradually to avoid alarming people.",
+  "outcome": "The paper reports the proposed indicators were adopted by Google Chrome. No post-launch comprehension or behaviour metrics are given.",
+  "headline_metric": null,
+  "attribution": "Direct. The paper documents the research and states Chrome adopted the indicators it selected.",
+  "caveats": "Decision only: no measured outcome after launch. Survey respondents were tech-savvy extension users and Google Consumer Surveys panels, and the indicators were not yet tested in countries with many new internet users. Authors are Google employees.",
+  "methods": [
+   "survey",
+   "field_study",
+   "concept_testing"
+  ],
+  "research_type": "mixed",
+  "industry": "consumer_tech",
+  "product_type": "desktop_software",
+  "metrics": [],
+  "company_size": "enterprise",
+  "year": 2016,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Rethinking Connection Security Indicators (Porter Felt et al., SOUPS 2016)",
+    "url": "https://www.usenix.org/system/files/conference/soups2016/soups2016-paper-porter-felt.pdf",
+    "publisher": "USENIX SOUPS 2016",
+    "date": "2016-06-22"
    }
   ]
  },

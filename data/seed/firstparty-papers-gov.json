@@ -350,5 +350,117 @@
         "date": "2017-07-18"
       }
     ]
+  },
+  {
+    "slug": "canada-weather-pages-task-success",
+    "title": "Canada's weather pages: task success rose from 33% to 72% after mobile-first redesign",
+    "company": "Environment and Climate Change Canada (with TBS Canada.ca Experience Office)",
+    "is_anonymized": false,
+    "summary": "Canada's government weather site was hard to use on phones: in baseline testing people succeeded at only a third of everyday weather tasks, and almost nobody realised weather warnings could be tapped. After a redesign driven by usability testing, a new group of 20 participants succeeded on 72% of tasks on the prototype.",
+    "problem": "Most people check the weather on a phone, but city forecast pages were long, important links sat at the bottom, and alerts didn't look clickable. Participants struggled with tasks like judging the chance of rain or finding hail warnings.",
+    "research": "Starting July 2017, the team reviewed past usability studies, traffic and search patterns and support requests, then ran moderated baseline testing with 20 participants (16 in person on smartphones in four cities, 4 remote on desktop) on 7 realistic task scenarios. A further 20 new participants tested the redesigned prototype.",
+    "insight": "Few people realised they could click a warning to see details; the long single-column city page buried the links people needed; and people tapped weather icons expecting more information.",
+    "change": "Alerts got a warning icon, underlined text and a chevron and were repeated below the forecast; city pages were shortened into two columns with task links beside the forecast; the team set mobile-first design principles such as fewer layers and showing answers rather than information.",
+    "outcome": "Overall task success rose from 33% to 72% and findability from 35% to 82%. Finding the likelihood of precipitation went from 19% to 94%; acting on a thunderstorm watch for hail from 6% to 63%. One task fell slightly (humidex, 88% to 81%) and radar interpretation stayed low at 31%.",
+    "headline_metric": "Task success 33% → 72%",
+    "attribution": "Direct. The same task scenarios were run before and after a redesign built to fix problems seen in the baseline testing.",
+    "caveats": "Small samples (20 per round) and the validation tested a prototype, not the live site, so real-world impact is not shown. No statistical testing reported. Validation session format not stated.",
+    "methods": [
+      "usability_testing",
+      "benchmarking",
+      "analytics",
+      "support_analysis"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2018,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Weather optimization: Research summary",
+        "url": "https://design.canada.ca/research-summaries/weather-research-summary.html",
+        "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+        "date": "2018-07-23"
+      }
+    ]
+  },
+  {
+    "slug": "canada-cra-business-registration-task-success",
+    "title": "CRA business registration pages: task success rose from 34% to 72% in testing",
+    "company": "Canada Revenue Agency (with TBS Canada.ca Experience Office)",
+    "is_anonymized": false,
+    "summary": "The Canada Revenue Agency wanted fewer call-centre calls about business numbers and GST registration. Baseline testing showed people succeeded at only about a third of common tasks, such as working out whether they needed a business number. After restructuring and relabelling the content, task success on the prototype rose to 72%.",
+    "problem": "Information on registering a business number and GST/HST account was scattered across pages, keywords weren't used consistently, key information wasn't first, and finding the right tax centre mailing address was hard. CRA's longer-term aim was to resolve more of these questions online instead of by phone.",
+    "research": "From March 2018, the team ran moderated task-based testing with 18 participants on 8 scenarios chosen with call-centre agents and program experts, then tested a GitHub-built prototype of the redesigned pages with 20 new participants.",
+    "insight": "The business number page lacked content people expected, related information was split across a three-page list, and users scanned for words like 'registration' and 'changes' that weren't in labels or links.",
+    "change": "The team put keywords at the start of titles and links, grouped related content under the relevant steps, condensed the three-page list into one, shortened text, added new topics to the business number page, and built a short wizard with postal-code lookup to give the right mailing address.",
+    "outcome": "Overall task success rose from 34% to 72% and findability from 44% to 84%. Finding the tax centre address for documents went from 18% to 61%; GST registration from 28% to 83%. Deciding whether you need a business number stayed weak (28% to 44%).",
+    "headline_metric": "Task success 34% → 72%",
+    "attribution": "Direct. Same task scenarios before and after a redesign targeted at the baseline findings.",
+    "caveats": "Prototype testing, not live-site data; no call volume figures reported. Small samples, and participants were business students without a business number, not real small-business owners. No statistical testing.",
+    "methods": [
+      "usability_testing",
+      "benchmarking"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "CRA business registration and account maintenance: Research summary",
+        "url": "https://design.canada.ca/research-summaries/business-account-research-summary.html",
+        "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
+        "date": "2019-02-04"
+      }
+    ]
+  },
+  {
+    "slug": "google-chrome-not-secure-indicators",
+    "title": "Google surveyed thousands on browser icons, and Chrome adopted 'Not secure' labels",
+    "company": "Google (Chrome)",
+    "is_anonymized": false,
+    "summary": "Chrome's security researchers noticed during field work in India that even tech-savvy people didn't link Chrome's padlock icons with security. A survey of 1,329 Chrome users and tests of 40 icons and 7 labels with thousands of survey respondents led Google to replace Chrome's connection security indicators with 'Secure' and 'Not secure' icons and words, launched in Chrome 53.",
+    "problem": "Browser security indicators had barely changed since early-2000s research, and Chrome's icons, especially the neutral page icon for plain HTTP, weren't understood. Icons also had to work small, without colour, and for new internet users on phones.",
+    "research": "Google researchers surveyed 1,329 people in the moment while they browsed, via a Chrome extension (65% outside the US), then evaluated forty candidate icons and seven strings through Google Consumer Surveys, with around 500 respondents per variant.",
+    "insight": "Most respondents linked the green lock with security, but many had no idea what the plain HTTP icon meant, and many wrongly thought HTTPS guaranteed a site was trustworthy. Shape alone needed to signal risk for colour-blind users, and words were needed to teach meaning.",
+    "change": "Google selected three indicators: a lock with 'Secure' for HTTPS, and 'Not secure' with neutral and red-triangle icons for HTTP and broken HTTPS. Chrome adopted them in Chrome 53, rolling out 'Not secure' for HTTP gradually to avoid alarming people.",
+    "outcome": "The paper reports the proposed indicators were adopted by Google Chrome. No post-launch comprehension or behaviour metrics are given.",
+    "headline_metric": null,
+    "attribution": "Direct. The paper documents the research and states Chrome adopted the indicators it selected.",
+    "caveats": "Decision only: no measured outcome after launch. Survey respondents were tech-savvy extension users and Google Consumer Surveys panels, and the indicators were not yet tested in countries with many new internet users. Authors are Google employees.",
+    "methods": [
+      "survey",
+      "field_study",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "consumer_tech",
+    "product_type": "desktop_software",
+    "metrics": [],
+    "company_size": "enterprise",
+    "year": 2016,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Rethinking Connection Security Indicators (Porter Felt et al., SOUPS 2016)",
+        "url": "https://www.usenix.org/system/files/conference/soups2016/soups2016-paper-porter-felt.pdf",
+        "publisher": "USENIX SOUPS 2016",
+        "date": "2016-06-22"
+      }
+    ]
   }
 ]

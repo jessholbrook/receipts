@@ -436,122 +436,81 @@
   ]
  },
  {
-  "slug": "firefox-certificate-warning-rewrite",
-  "title": "Firefox's research-led security warning rewrite cut stated intent to ignore warnings by 22–50%",
-  "company": "Mozilla (Firefox)",
+  "slug": "duolingo-india-everyday-hindi-and-no-paywall",
+  "title": "Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%",
+  "company": "Duolingo",
   "is_anonymized": false,
-  "summary": "About 3% of Firefox users hit a security certificate warning every day, and the old pages were full of vague jargon. Mozilla's UX and security teams rewrote them using published research plus their own usability test, survey and live study. In a panel survey, the new pages cut the share of people saying they would ignore the warning by 22–50%, and a live comparison found no harm to usage or retention.",
-  "problem": "Firefox's most common certificate error pages used technical jargon in a dated design. Mozilla wanted people to understand the risk and choose the safe option, without driving them to switch browsers.",
-  "research": "Three studies in 2018–2019: a remote unmoderated usability test of draft pages with eight participants (UserTesting); a paid panel survey comparing the new Firefox pages, the old Firefox pages and Chrome's equivalent pages; and a live study comparing new and old pages with Firefox users. External academic research on security warnings also fed the design.",
-  "insight": "Words like 'security credentials', 'encrypted' and 'certificate' were too abstract. In the usability test, the word 'connection' made people think their internet connection was the problem rather than the website's certificate.",
-  "change": "The pages were rewritten in plain language (dropping 'connection' from headings and explaining 'certificate' on first use), with the most important content up front and the safer choice made the clear default.",
-  "outcome": "In the survey, the redesigned messages showed a 22–50% decrease in people saying they would try to ignore the warning, and a 29–60% decrease in people saying they would use another browser to reach the site (4.7–8.5% for the new Firefox pages versus 10–11.3% for Chrome's). The live study found the new pages did not significantly hurt usage or retention, so they shipped to all users.",
-  "headline_metric": "-22–50% would ignore",
-  "attribution": "Good for the wording changes, which came straight from test findings. The positive numbers are what people said they would do in a survey, not what they did.",
-  "caveats": "Stated intentions in a panel survey, reported as ranges across message types without sample sizes. The live study only checked for harm and its numbers are not shared. Company blog post.",
+  "summary": "As newly online learners poured into Duolingo in India in 2020, research showed its Hindi interface used formal words even native speakers found hard, and that people mistook the Duolingo Plus promotion for a paywall and preferred one-off payments. A/B tests of the fixes lifted onboarding completion by 1%, and removing Duolingo Plus in India raised daily active users by 6%.",
+  "problem": "New learners in India grew 400% year on year, many of them online for the first time. Duolingo's app had been built for markets where people had different language habits and were used to app subscriptions.",
+  "research": "User research with learners in India, including interviews, alongside usage data, followed by A/B tests of each change. The post does not say how the tap-through behaviour was spotted, and gives no participant numbers or dates.",
+  "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
+  "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
+  "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
+  "headline_metric": "+6% DAU",
+  "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
+  "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
   "methods": [
-   "usability_testing",
-   "survey",
-   "experimentation"
+   "interviews",
+   "experimentation",
+   "analytics"
+  ],
+  "research_type": "mixed",
+  "industry": "education",
+  "product_type": "mobile_app",
+  "metrics": [
+   "engagement",
+   "conversion",
+   "retention"
+  ],
+  "company_size": "enterprise",
+  "year": 2020,
+  "evidence_strength": "tested",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Language learning for the next billion: Duolingo in India",
+    "url": "https://blog.duolingo.com/language-learning-for-the-next-billion-duolingo-in-india/",
+    "publisher": "Duolingo Blog",
+    "date": "2020-09-24"
+   }
+  ]
+ },
+ {
+  "slug": "gitlab-free-trial-signup-journey-audit",
+  "title": "GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%",
+  "company": "GitLab",
+  "is_anonymized": false,
+  "summary": "While planning new onboarding, a GitLab designer walked the full free trial signup and found it took over five minutes and about 37 interactions across two apps, with steps that broke if done out of order. A unified flow launched in October 2019. Weekly free trial signups went from an average of 330 before launch to more than 800, which GitLab reports as a 141% improvement.",
+  "problem": "Signing up for a GitLab.com free trial meant using two separate applications (GitLab.com and Subscription Manager) with different styles, repeated forms and duplicate email confirmations. The trial landing page defaulted to the harder self-managed option.",
+  "research": "Designer-led experience audits in 2019: a full user journey map of the signup with video walkthroughs, then a formal UX scorecard (GitLab's heuristic evaluation of a job) by a second designer, and a follow-up scorecard after launch by a third.",
+  "insight": "The flow took more than five minutes and around 37 interactions. Users were sent to their inbox mid-flow, asked again for information they had already given, asked to pick a group even when they had only one option, and could hit a dead end if they missed written instructions. The main cause was two apps not talking to each other.",
+  "change": "GitLab built a single signup flow inside GitLab.com that adapts to whether the person is new or existing and syncs with Subscription Manager in the background, and rebalanced the landing page so the SaaS trial was easy to find.",
+  "outcome": "The new flow launched on 29 October 2019. Weekly free trial signups were 466 the week before launch, 628 in launch week and 842 the week after, stayed above 800 through November, dipped (not below 600) in December, and passed 900 a week by early 2020. GitLab reports a pre-launch weekly average of 330 and a 141% improvement. A follow-up scorecard found about 17 interactions and 2.5 minutes to complete.",
+  "headline_metric": "+141% trial signups",
+  "attribution": "Plausible: the jump is large and immediate after launch. But this is a before/after count with no control, and the 'research' was expert evaluation by designers rather than testing with users.",
+  "caveats": "No usability testing with users is described; the evidence is designer-led journey mapping and heuristic scorecards. No control for marketing or seasonal changes. The 141% figure depends on the chosen baseline (330 average versus 466 the week before). Written by the lead designer on GitLab's blog.",
+  "methods": [
+   "journey_mapping",
+   "heuristic_review",
+   "analytics"
   ],
   "research_type": "evaluative",
-  "industry": "consumer_tech",
-  "product_type": "desktop_software",
+  "industry": "saas_b2b",
+  "product_type": "checkout_flow",
   "metrics": [
-   "errors",
-   "retention",
+   "conversion",
    "task_success"
   ],
-  "company_size": "midmarket",
-  "year": 2019,
+  "company_size": "enterprise",
+  "year": 2020,
   "evidence_strength": "measured",
   "source_type": "first_party",
   "sources": [
    {
-    "title": "Designing better security warnings",
-    "url": "https://blog.mozilla.org/ux/2019/03/designing-better-security-warnings/",
-    "publisher": "Firefox UX blog (Mozilla)",
-    "date": "2019-03"
-   }
-  ]
- },
- {
-  "slug": "firefox-focus-kept-value-research",
-  "title": "Mozilla's 61-person study of how people value Firefox helped save Firefox Focus despite low usage",
-  "company": "Mozilla (Firefox)",
-  "is_anonymized": false,
-  "summary": "Firefox Focus, a privacy-focused mobile browser, had few users, and Mozilla was debating whether to keep investing in it. A three-phase study with 61 people in six cities showed Focus played a specific role alongside other Firefox browsers, such as sensitive or one-off searches. Researchers say this made the case to keep the product and changed how leaders thought about measuring its success.",
-  "problem": "Mozilla measured success mainly by monthly and daily active users, but had little qualitative understanding of those numbers and collects limited usage data by design. Focus's small user base led to internal discussion about cutting investment.",
-  "research": "A study in Berlin, Chicago, Portland, Seattle, Taipei and Vancouver with 61 participants, proposed in late 2019 and run before the pandemic: a three-day diary study, short remote interviews, and 2.5-hour in-person workshops using futures thinking and participatory design. Two senior product managers joined the field team. Follow-up surveys with thousands of people tested the resulting use-case categories at scale.",
-  "insight": "Focus was often used alongside another Firefox mobile browser for particular jobs, such as searches people did not want recorded or quick one-off lookups where they liked starting fresh. The study also showed that some 'good' usage metrics, like many open tabs, could reflect a bad experience.",
-  "change": "Mozilla kept Firefox Focus, and the research changed how the organisation defined success for products like it. The use-case categories were adopted for wider survey work.",
-  "outcome": "Focus was retained. No usage or business figures are given.",
-  "headline_metric": null,
-  "attribution": "The researchers say they 'were able to make the case to keep this unique product around'. Other factors in the decision are not described, and the PMs' own view is not given.",
-  "caveats": "Self-reported influence by the researchers who ran the study, on the company's UX blog. Related research by another colleague also contributed.",
-  "methods": [
-   "diary_study",
-   "interviews",
-   "co_design",
-   "survey"
-  ],
-  "research_type": "generative",
-  "industry": "consumer_tech",
-  "product_type": "mobile_app",
-  "metrics": [
-   "retention",
-   "cost_avoided"
-  ],
-  "company_size": "midmarket",
-  "year": 2021,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Who Gets to Define Success? Listening to Stories of How People Value Firefox to Redefine Metrics",
-    "url": "https://blog.mozilla.org/ux/2021/01/who-gets-to-define-success-listening-to-stories-of-how-people-value-firefox-to-redefine-metrics/",
-    "publisher": "Firefox UX blog (Mozilla)",
-    "date": "2021-01"
-   }
-  ]
- },
- {
-  "slug": "mozilla-screenshotgo-indonesia-pivot",
-  "title": "Mozilla set out to build a shopping wish list for Indonesia and built a screenshot app instead",
-  "company": "Mozilla",
-  "is_anonymized": false,
-  "summary": "Mozilla's team in Taipei had six weeks to find a shopping product for Indonesia. Surveys of about 200 online shoppers per track kept showing that screenshots were people's main tool for saving wish lists, promotions and receipts, and field interviews in Indonesia confirmed it. The team dropped the wish-list idea and built Firefox ScreenshotGo, an Android app for capturing, finding and acting on screenshots.",
-  "problem": "Mozilla wanted to grow its impact on shopping in Southeast Asia, starting with Indonesia, a market the team knew little about.",
-  "research": "Existing interviews and observation in Indonesia by a Mozilla researcher; desk research and a shopping journey map; mobile surveys of about 200 online shoppers per exploration track (via JakPat); storyboard surveys testing three wish-list concepts; then a field trip with eight participants, four for interviews about screenshot habits and four for concept and usability testing after a day of iteration. Early 2018.",
-  "insight": "Screenshots were the dominant way people kept track of almost everything, shopping or not, partly because slow, limited data made an offline image more reliable than a link. But screenshots piled up in the gallery, were hard to find, and held no usable data.",
-  "change": "The team abandoned a cross-channel wish-list tool and built Firefox ScreenshotGo, an Android app to capture, organise and search screenshots and get back to related content online.",
-  "outcome": "ScreenshotGo launched on Google Play in Indonesia only. No usage figures are given.",
-  "headline_metric": null,
-  "attribution": "Strong for the pivot: the post shows the screenshot finding emerging, unexpected, from repeated surveys and interviews.",
-  "caveats": "Designer's own account on the company UX blog. Small field sample. No adoption data, and the app's later fate is not covered.",
-  "methods": [
-   "survey",
-   "interviews",
-   "journey_mapping",
-   "concept_testing",
-   "usability_testing"
-  ],
-  "research_type": "generative",
-  "industry": "consumer_tech",
-  "product_type": "mobile_app",
-  "metrics": [
-   "adoption"
-  ],
-  "company_size": "midmarket",
-  "year": 2018,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "A bumpy road to Firefox ScreenshotGo in a foreign market",
-    "url": "https://blog.mozilla.org/ux/2018/12/a-bumpy-road-to-firefox-screenshotgo-in-a-foreign-market/",
-    "publisher": "Firefox UX blog (Mozilla)",
-    "date": "2018-12"
+    "title": "How holistic UX design increased GitLab.com free trial signups",
+    "url": "https://about.gitlab.com/blog/how-holistic-ux-design-increased-gitlab-free-trial-signups/",
+    "publisher": "GitLab blog",
+    "date": "2020-02-27"
    }
   ]
  }
