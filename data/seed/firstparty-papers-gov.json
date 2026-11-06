@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "wikimedia-reply-tool-talk-pages",
+    "title": "Wikipedia's Reply tool: newer editors far more likely to publish a talk-page comment",
+    "company": "Wikimedia Foundation (Editing team)",
+    "is_anonymized": false,
+    "summary": "Replying on Wikipedia talk pages meant editing raw wikitext, indenting and signing by hand. After a community consultation and usability tests showed newcomers couldn't do it, the Editing team built a one-click Reply tool. A month-long A/B test on 22 Wikipedias found newer editors with the tool published comments far more often and had fewer reverted.",
+    "problem": "To reply on a talk page, contributors had to edit the whole page's source, find the right spot, indent with colons and sign with tildes. Newer editors often did not know how to reply at all; experienced ones struggled to find the comment they wanted in long threads.",
+    "research": "The team drew on the 2019 Talk Page Consultation with the editing community, earlier user testing from 2014, and its own usability tests: 5 people on the existing workflow, 5 on a version 1.0 prototype, and later about 10 junior and 13 senior contributors on version 2.0.",
+    "insight": "In testing the existing workflow, 0 of 5 participants indented and signed their comment correctly. With the prototype, all 5 published a correctly formatted reply in about half the time. The barrier for newcomers was mechanical, not motivation.",
+    "change": "The team built a Reply link next to each comment that opens a small box and handles indentation and signatures automatically, released it as a beta feature in 2020, then as an opt-out default on several wikis.",
+    "outcome": "In an A/B test from 11 February to 10 March 2021 on 22 Wikipedias, where half of editors got the tool automatically, 72.9% of Junior Contributors with the tool published at least one comment versus 27.6% without (the team calls it a 160% increase). Junior Contributors were 7.2 times more likely to publish a comment they started, and reverts of their comments fell 79.5%. The team then offered the tool as an opt-out default across Wikimedia projects.",
+    "headline_metric": "72.9% vs 27.6% posted",
+    "attribution": "Strong. The tool was designed to fix problems found in consultation and usability tests, and the outcome comes from a randomized test of that tool.",
+    "caveats": "The write-up is inconsistent about whether the comparison is people who 'opened' the tool or who 'had access' to it; the figures are the same either way, but the exact denominator is unclear. Results are on talk-page participation, not longer-term editor retention. Some large wikis (including English Wikipedia) were not part of the default rollout at first.",
+    "methods": ["usability_testing", "survey", "experimentation", "analytics"],
+    "research_type": "evaluative",
+    "industry": "nonprofit",
+    "product_type": "web_app",
+    "metrics": ["task_success", "errors", "engagement"],
+    "company_size": "midmarket",
+    "year": 2021,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      { "title": "Talk pages project/Replying", "url": "https://www.mediawiki.org/wiki/Talk_pages_project/Replying", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2021-04-23" }
+    ]
+  },
+  {
+    "slug": "wikimedia-growth-newcomer-homepage",
+    "title": "Wikipedia's newcomer homepage: early test showed gains, a 27-wiki trial found small ones",
+    "company": "Wikimedia Foundation (Growth team)",
+    "is_anonymized": false,
+    "summary": "Interviews with new and experienced editors in Korea and the Czech Republic led Wikimedia to form a Growth team and build a 'newcomer homepage' with suggested edits and help. A four-wiki randomized test in 2019–20 reported an 11.6% lift in newcomers making a first edit, but a later 27-wiki controlled experiment found only a small activation effect and no retention gain.",
+    "problem": "Midsize Wikipedias were not attracting and keeping new editors. Most people who created an account never made an edit, and few came back.",
+    "research": "From May to July 2017 Wikimedia ran design research with the firm Reboot: 64 in-person interviews (30 on Korean Wikipedia, 34 on Czech Wikipedia) with new editors and the experienced editors who support them.",
+    "insight": "Newcomers' main obstacles were conceptual rather than technical: they didn't understand policies or 'the Wikipedia way', couldn't find help or editing processes, and often sought help outside Wikipedia. The research recommended in-context help, mentorship and task suggestions based on interests.",
+    "change": "The research led to the creation of the Growth team in 2018, which built the newcomer homepage, a help panel, mentorship and 'newcomer tasks' that suggest easy edits on topics the person picks.",
+    "outcome": "A randomized experiment on Arabic, Vietnamese, Czech and Korean Wikipedia (97,755 new accounts, Nov 2019–May 2020) estimated activation (first article edit within 24 hours) rose from 21.6% to 24.1%, an 11.6% increase, with constructive activation up 26.7%; retention changes were not detected directly. A later peer-reviewed randomized experiment across 27 non-English Wikipedias found only a small but significant increase in activation (about 1% higher odds of editing within 24 hours) and no difference in retention, productivity or reverts.",
+    "headline_metric": "+11.6% then ~+1% odds",
+    "attribution": "Moderate. The feature set traces back to the 2017 interview research, and both evaluations were randomized, but neither isolates which research finding drove which feature.",
+    "caveats": "The two controlled experiments disagree: the larger, later study found much weaker effects than the early pilot. Retention gains in the pilot were inferred, not measured. The homepage seemed to distract newcomers who were already mid-edit. Included as an honest example that a research-led feature can test modestly.",
+    "methods": ["interviews", "field_study", "experimentation", "analytics"],
+    "research_type": "mixed",
+    "industry": "nonprofit",
+    "product_type": "web_app",
+    "metrics": ["adoption", "engagement", "retention"],
+    "company_size": "midmarket",
+    "year": 2023,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      { "title": "New Editor Experiences", "url": "https://www.mediawiki.org/wiki/New_Editor_Experiences", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2017-08-01" },
+      { "title": "Growth/Personalized first day/Newcomer tasks/Experiment analysis, November 2020", "url": "https://www.mediawiki.org/wiki/Growth/Personalized_first_day/Newcomer_tasks/Experiment_analysis,_November_2020", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2020-11-01" },
+      { "title": "Increasing Participation in Peer Production Communities with the Newcomer Homepage (Warncke-Wang, Ho, Miller, Johnson)", "url": "https://arxiv.org/abs/2308.09642", "publisher": "arXiv / Proceedings of the ACM on Human-Computer Interaction (CSCW)", "date": "2023-09-28" }
+    ]
+  }
+]
