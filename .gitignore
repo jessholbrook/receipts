@@ -40,3 +40,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 supabase/seed.sql
+
+# impeccable design skill: downloaded engine and local runtime state
+.claude/skills/impeccable/scripts/bin/
+.claude/skills/impeccable/scripts/.impeccable/
+.impeccable/live/
+.impeccable/history/
+.impeccable/config.local.json
+**/.impeccable/hook.cache.json
+**/.impeccable/hook.pending.json
