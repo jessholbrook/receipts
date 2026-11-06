@@ -57,7 +57,10 @@ export default function About() {
 
         <h2>Ground rules</h2>
         <ul>
-          <li>Every entry links to at least one public source we opened and checked.</li>
+          <li>
+            Every entry based on a published case links to at least one public source we opened and checked.
+            Community submissions without a public source are labeled as such.
+          </li>
           <li>Entries are summaries of the research. Go to the source for the full story.</li>
           <li>Evidence, numbers, and metrics are quoted exactly as the source reports them.</li>
           <li>Community submissions are reviewed before they appear. Anonymized entries are allowed.</li>

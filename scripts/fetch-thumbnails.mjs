@@ -2,7 +2,8 @@
 // publishes for link previews. Generic images are dropped:
 //   - the same image used by 2+ entries (a site-wide default), or
 //   - the same image the source site's homepage uses (a site logo/banner), or
-//   - the entry's slug is listed in data/thumbnail-blocklist.json (manual veto).
+//   - the entry's slug, or the image's domain ("domain:example.com"), is listed in
+//     data/thumbnail-blocklist.json (manual veto).
 // Writes data/thumbnails.json; with RECEIPTS_ADMIN_TOKEN set, also saves to the database.
 //
 // Usage: [RECEIPTS_ADMIN_TOKEN=...] node scripts/fetch-thumbnails.mjs [--only-missing]
@@ -114,7 +115,12 @@ const blockPath = path.join(root, "data/thumbnail-blocklist.json");
 const blocked = new Set(fs.existsSync(blockPath) ? JSON.parse(fs.readFileSync(blockPath, "utf8")) : []);
 const map = {};
 for (const f of found) map[f.slug] = null;
-for (const f of verified) if (f && !blocked.has(f.slug)) map[f.slug] = f.img;
+const blockedHosts = [...blocked].filter((b) => b.startsWith("domain:")).map((b) => b.slice(7));
+const hostBlocked = (u) => {
+  const h = new URL(u).hostname;
+  return blockedHosts.some((d) => h === d || h.endsWith("." + d));
+};
+for (const f of verified) if (f && !blocked.has(f.slug) && !hostBlocked(f.img)) map[f.slug] = f.img;
 
 const outPath = path.join(root, "data/thumbnails.json");
 const prev = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, "utf8")) : {};
