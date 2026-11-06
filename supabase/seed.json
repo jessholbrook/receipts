@@ -3881,45 +3881,6 @@
   ]
  },
  {
-  "slug": "gitlab-free-trial-signup-journey-audit",
-  "title": "GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%",
-  "company": "GitLab",
-  "is_anonymized": false,
-  "summary": "While planning new onboarding, a GitLab designer walked the full free trial signup and found it took over five minutes and about 37 interactions across two apps, with steps that broke if done out of order. A unified flow launched in October 2019. Weekly free trial signups went from an average of 330 before launch to more than 800, which GitLab reports as a 141% improvement.",
-  "problem": "Signing up for a GitLab.com free trial meant using two separate applications (GitLab.com and Subscription Manager) with different styles, repeated forms and duplicate email confirmations. The trial landing page defaulted to the harder self-managed option.",
-  "research": "Designer-led experience audits in 2019: a full user journey map of the signup with video walkthroughs, then a formal UX scorecard (GitLab's heuristic evaluation of a job) by a second designer, and a follow-up scorecard after launch by a third.",
-  "insight": "The flow took more than five minutes and around 37 interactions. Users were sent to their inbox mid-flow, asked again for information they had already given, asked to pick a group even when they had only one option, and could hit a dead end if they missed written instructions. The main cause was two apps not talking to each other.",
-  "change": "GitLab built a single signup flow inside GitLab.com that adapts to whether the person is new or existing and syncs with Subscription Manager in the background, and rebalanced the landing page so the SaaS trial was easy to find.",
-  "outcome": "The new flow launched on 29 October 2019. Weekly free trial signups were 466 the week before launch, 628 in launch week and 842 the week after, stayed above 800 through November, dipped (not below 600) in December, and passed 900 a week by early 2020. GitLab reports a pre-launch weekly average of 330 and a 141% improvement. A follow-up scorecard found about 17 interactions and 2.5 minutes to complete.",
-  "headline_metric": "+141% trial signups",
-  "attribution": "Plausible: the jump is large and immediate after launch. But this is a before/after count with no control, and the 'research' was expert evaluation by designers rather than testing with users.",
-  "caveats": "No usability testing with users is described; the evidence is designer-led journey mapping and heuristic scorecards. No control for marketing or seasonal changes. The 141% figure depends on the chosen baseline (330 average versus 466 the week before). Written by the lead designer on GitLab's blog.",
-  "methods": [
-   "journey_mapping",
-   "heuristic_review",
-   "analytics"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "checkout_flow",
-  "metrics": [
-   "conversion",
-   "task_success"
-  ],
-  "company_size": "enterprise",
-  "year": 2020,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "How holistic UX design increased GitLab.com free trial signups",
-    "url": "https://about.gitlab.com/blog/how-holistic-ux-design-increased-gitlab-free-trial-signups/",
-    "publisher": "GitLab blog",
-    "date": "2020-02-27"
-   }
-  ]
- },
- {
   "slug": "wikimedia-reply-tool-talk-pages",
   "title": "Wikipedia's Reply tool: newer editors far more likely to publish a talk-page comment",
   "company": "Wikimedia Foundation (Editing team)",
@@ -4268,82 +4229,6 @@
     "url": "https://gds.blog.gov.uk/2017/07/18/taking-care-of-business-on-gov-uk/",
     "publisher": "Government Digital Service blog",
     "date": "2017-07-18"
-   }
-  ]
- },
- {
-  "slug": "canada-weather-pages-task-success",
-  "title": "Canada's weather pages: task success rose from 33% to 72% after mobile-first redesign",
-  "company": "Environment and Climate Change Canada (with TBS Canada.ca Experience Office)",
-  "is_anonymized": false,
-  "summary": "Canada's government weather site was hard to use on phones: in baseline testing people succeeded at only a third of everyday weather tasks, and almost nobody realised weather warnings could be tapped. After a redesign driven by usability testing, a new group of 20 participants succeeded on 72% of tasks on the prototype.",
-  "problem": "Most people check the weather on a phone, but city forecast pages were long, important links sat at the bottom, and alerts didn't look clickable. Participants struggled with tasks like judging the chance of rain or finding hail warnings.",
-  "research": "Starting July 2017, the team reviewed past usability studies, traffic and search patterns and support requests, then ran moderated baseline testing with 20 participants (16 in person on smartphones in four cities, 4 remote on desktop) on 7 realistic task scenarios. A further 20 new participants tested the redesigned prototype.",
-  "insight": "Few people realised they could click a warning to see details; the long single-column city page buried the links people needed; and people tapped weather icons expecting more information.",
-  "change": "Alerts got a warning icon, underlined text and a chevron and were repeated below the forecast; city pages were shortened into two columns with task links beside the forecast; the team set mobile-first design principles such as fewer layers and showing answers rather than information.",
-  "outcome": "Overall task success rose from 33% to 72% and findability from 35% to 82%. Finding the likelihood of precipitation went from 19% to 94%; acting on a thunderstorm watch for hail from 6% to 63%. One task fell slightly (humidex, 88% to 81%) and radar interpretation stayed low at 31%.",
-  "headline_metric": "Task success 33% → 72%",
-  "attribution": "Direct. The same task scenarios were run before and after a redesign built to fix problems seen in the baseline testing.",
-  "caveats": "Small samples (20 per round) and the validation tested a prototype, not the live site, so real-world impact is not shown. No statistical testing reported. Validation session format not stated.",
-  "methods": [
-   "usability_testing",
-   "benchmarking",
-   "analytics",
-   "support_analysis"
-  ],
-  "research_type": "evaluative",
-  "industry": "government",
-  "product_type": "public_service",
-  "metrics": [
-   "task_success"
-  ],
-  "company_size": "public_sector",
-  "year": 2018,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Weather optimization: Research summary",
-    "url": "https://design.canada.ca/research-summaries/weather-research-summary.html",
-    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
-    "date": "2018-07-23"
-   }
-  ]
- },
- {
-  "slug": "canada-cra-business-registration-task-success",
-  "title": "CRA business registration pages: task success rose from 34% to 72% in testing",
-  "company": "Canada Revenue Agency (with TBS Canada.ca Experience Office)",
-  "is_anonymized": false,
-  "summary": "The Canada Revenue Agency wanted fewer call-centre calls about business numbers and GST registration. Baseline testing showed people succeeded at only about a third of common tasks, such as working out whether they needed a business number. After restructuring and relabelling the content, task success on the prototype rose to 72%.",
-  "problem": "Information on registering a business number and GST/HST account was scattered across pages, keywords weren't used consistently, key information wasn't first, and finding the right tax centre mailing address was hard. CRA's longer-term aim was to resolve more of these questions online instead of by phone.",
-  "research": "From March 2018, the team ran moderated task-based testing with 18 participants on 8 scenarios chosen with call-centre agents and program experts, then tested a GitHub-built prototype of the redesigned pages with 20 new participants.",
-  "insight": "The business number page lacked content people expected, related information was split across a three-page list, and users scanned for words like 'registration' and 'changes' that weren't in labels or links.",
-  "change": "The team put keywords at the start of titles and links, grouped related content under the relevant steps, condensed the three-page list into one, shortened text, added new topics to the business number page, and built a short wizard with postal-code lookup to give the right mailing address.",
-  "outcome": "Overall task success rose from 34% to 72% and findability from 44% to 84%. Finding the tax centre address for documents went from 18% to 61%; GST registration from 28% to 83%. Deciding whether you need a business number stayed weak (28% to 44%).",
-  "headline_metric": "Task success 34% → 72%",
-  "attribution": "Direct. Same task scenarios before and after a redesign targeted at the baseline findings.",
-  "caveats": "Prototype testing, not live-site data; no call volume figures reported. Small samples, and participants were business students without a business number, not real small-business owners. No statistical testing.",
-  "methods": [
-   "usability_testing",
-   "benchmarking"
-  ],
-  "research_type": "evaluative",
-  "industry": "government",
-  "product_type": "public_service",
-  "metrics": [
-   "task_success"
-  ],
-  "company_size": "public_sector",
-  "year": 2019,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "CRA business registration and account maintenance: Research summary",
-    "url": "https://design.canada.ca/research-summaries/business-account-research-summary.html",
-    "publisher": "Canada.ca Design (Treasury Board of Canada Secretariat)",
-    "date": "2019-02-04"
    }
   ]
  },
@@ -4717,46 +4602,6 @@
     "url": "https://www.w3.org/WAI/business-case/archive/legal-and-general-case-study",
     "publisher": "W3C Web Accessibility Initiative",
     "date": "2009-12-14"
-   }
-  ]
- },
- {
-  "slug": "canada-cra-contact-pages-task-success",
-  "title": "Canada Revenue Agency contact pages: task success rose from 40% to 85% in testing",
-  "company": "Canada Revenue Agency (with TBS Digital Transformation Office)",
-  "is_anonymized": false,
-  "summary": "At least 5 million people a year looked up a CRA phone number on Canada.ca, and many ended up calling the wrong line. The team built test tasks from real call drivers, usability-tested the existing pages, then redesigned around guided choices and an online-first option. Task success on the prototype rose from 40% to 85%.",
-  "problem": "The CRA contact page was one of Canada.ca's top tasks, and callers often failed to reach the right number or didn't know there was an online option, adding load to a call centre that handles millions of calls a year.",
-  "research": "CRA call centre agents and specialists turned the highest-volume call problems into job stories and test tasks. The team ran a recorded baseline usability test of the existing pages with Canadian small business owners (personal and business scenarios), drew on call centre data and web analytics, then retested the same tasks on a prototype.",
-  "insight": "Many users never reached the telephone numbers page because of an extra link and overlay; those who did often picked the wrong number from a long list; and people rarely followed links to hours of service or what to prepare.",
-  "change": "Custom contact pages for each top call driver, a 'Find a phone number' wizard, collapsible choices (home or business first), the online option as a primary button placed before the phone number, and each number grouped with hours, preparation checklist and services.",
-  "outcome": "Overall task success rose from 40% at baseline to 85% on the redesigned prototype. Some tasks moved dramatically, for example finding the line for a misallocated payment went from 12% to 83%, and the address for an RC1 form from 0% to 100%.",
-  "headline_metric": "40% → 85% task success",
-  "attribution": "Direct: the same research-derived tasks were measured before and after a redesign built from the baseline findings.",
-  "caveats": "Results are from usability testing of a prototype, not live traffic; no participant counts or significance testing reported. Call volume impact was not reported. Published by the government's own design office.",
-  "methods": [
-   "usability_testing",
-   "benchmarking",
-   "support_analysis",
-   "analytics"
-  ],
-  "research_type": "evaluative",
-  "industry": "government",
-  "product_type": "website",
-  "metrics": [
-   "task_success",
-   "support_cost"
-  ],
-  "company_size": "public_sector",
-  "year": 2019,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Contact the CRA: Research summary",
-    "url": "https://design.canada.ca/research-summaries/cra-contact-us-research-summary.html",
-    "publisher": "Canada.ca Design (Government of Canada)",
-    "date": "2019-11-01"
    }
   ]
  },

@@ -95,7 +95,6 @@ hubspot-crm-index-page-usability-baseline | HubSpot | HubSpot's usability baseli
 adobe-fresco-artist-research | Adobe | Interviews with 50+ artists led Adobe to build Fresco instead of extending its two drawing apps
 microsoft-intellicode-inclusive-focus-research | Microsoft (Visual Studio) | Designing Visual Studio IntelliCode with developers who struggle to focus tripled regular use
 duolingo-india-everyday-hindi-and-no-paywall | Duolingo | Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%
-gitlab-free-trial-signup-journey-audit | GitLab | GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%
 wikimedia-reply-tool-talk-pages | Wikimedia Foundation (Editing team) | Wikipedia's Reply tool: newer editors far more likely to publish a talk-page comment
 wikimedia-growth-newcomer-homepage | Wikimedia Foundation (Growth team) | Wikipedia's newcomer homepage: early test showed gains, a 27-wiki trial found small ones
 nyc-court-summons-redesign-text-reminders | New York City Mayor's Office of Criminal Justice, NYPD and Office of Court Administration (with ideas42 and University of Chicago Crime Lab) | New York's redesigned court summons and text reminders cut missed court dates 13–26%
@@ -104,8 +103,6 @@ gov-uk-service-sign-in-page | Government Digital Service (GOV.UK) with HM Revenu
 moj-gov-uk-separating-families-guidance | Ministry of Justice (UK) | Task-based testing with 100+ separating parents reshaped GOV.UK family law guidance
 mnbenefits-spanish-speaker-completion | Code for America with Minnesota Department of Human Services | MNbenefits research with Spanish speakers lifted their application completion from 51% to 64%
 gov-uk-set-up-business-guidance | Government Digital Service (GOV.UK) with Companies House, BEIS and HMRC | GOV.UK cut business start-up guidance from 50+ pages to 16; clicks to registration services rose 25%
-canada-weather-pages-task-success | Environment and Climate Change Canada (with TBS Canada.ca Experience Office) | Canada's weather pages: task success rose from 33% to 72% after mobile-first redesign
-canada-cra-business-registration-task-success | Canada Revenue Agency (with TBS Canada.ca Experience Office) | CRA business registration pages: task success rose from 34% to 72% in testing
 google-chrome-not-secure-indicators | Google (Chrome) | Google surveyed thousands on browser icons, and Chrome adopted 'Not secure' labels
 canada-ei-maternity-parental-benefits-pages | Employment and Social Development Canada / Service Canada (with TBS Digital Transformation Office) | Canada's EI maternity and parental benefit pages: task success rose from 28% to 78% in testing
 google-secret-questions-account-recovery | Google | Google's data on millions of recoveries showed secret questions fail, so it shifted to SMS and email
@@ -115,7 +112,6 @@ vets-gov-health-care-application | U.S. Department of Veterans Affairs (with U.S
 getcalfresh-application-time | Code for America with California Department of Social Services | GetCalFresh cut California's food-aid application from 45 to about 10 minutes
 hmcts-online-divorce-form-errors | HM Courts & Tribunals Service (UK Ministry of Justice) | HMCTS online divorce cut error-driven form returns from about 40% to 0.5%
 legal-and-general-accessible-website | Legal & General | Legal & General's accessibility-led rebuild doubled quote requests within 3 months
-canada-cra-contact-pages-task-success | Canada Revenue Agency (with TBS Digital Transformation Office) | Canada Revenue Agency contact pages: task success rose from 40% to 85% in testing
 canada-diseases-immunization-content | Health Canada and Public Health Agency of Canada (with TBS Digital Transformation Office) | Canada's vaccine and disease pages: task completion rose from 53% to 84% on mobile
 canada-student-loans-grants-pages | Employment and Social Development Canada (Canada Student Grants and Loans Program) | Canada student aid pages: task success rose from 61% to 88% after research-led rework
 wikipedia-sticky-header | Wikimedia Foundation | Wikipedia's research-shaped sticky header cut scrolling 15% in an A/B test

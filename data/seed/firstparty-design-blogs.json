@@ -1,517 +1,478 @@
 [
- {
-  "slug": "gitlab-clone-button-click-tests",
-  "title": "GitLab click tests: moving the clone button lifted findability from 84% to 98%",
-  "company": "GitLab",
-  "is_anonymized": false,
-  "summary": "After a redesign hid GitLab's clone options in the page header, users asked for the button back near the file tree. A designer ran quick click tests against the live design before deciding. The proposed spot was found by 98% of testers versus 84% for the live one, and a second test showed that removing the button from empty repositories would drop success to 50%, so the team kept one there.",
-  "problem": "GitLab's 2019 project overview redesign put a single clone button in the page header, which removed it from the repository page. Users suggested moving it down to the file tree controls, but the team had already had complaints about the earlier change and worried that moving it lower would make it harder to find.",
-  "research": "Two unmoderated click tests (UsabilityHub), each run as two variants: the proposed design and the live design as a control. Around 40 answers per variant. The UX research team helped word the task so it did not use the word 'clone'. A second pair of tests checked the empty-repository page with and without a clone button.",
-  "insight": "Moving the button down to the file tree did not hurt findability, it improved it: people expected it there, as on other Git platforms. On empty repositories, though, removing the button badly hurt findability.",
-  "change": "The clone button moved to the file tree controls and returned to the repository page. A clone button was added above the instructions on the empty-repository page rather than dropped.",
-  "outcome": "Proposed file-tree position: 98% correct, 15 seconds on average. Live header position: 84% correct, 21 seconds. Empty repository without a button: 50% correct, 37 seconds, versus 77% and 16 seconds with the button. At publication the change was being built by a community contributor.",
-  "headline_metric": "84% → 98% found it",
-  "attribution": "Direct for the decision: the post says the tests drove both choices. The numbers are test results, not live product metrics after launch.",
-  "caveats": "Small unmoderated samples (about 40 per variant) and a single click task, with no statistical testing reported. No post-launch data. Written by the designer who ran the tests on GitLab's own blog.",
-  "methods": [
-   "usability_testing",
-   "benchmarking"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "web_app",
-  "metrics": [
-   "task_success"
-  ],
-  "company_size": "enterprise",
-  "year": 2019,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Quantifying UX: Positioning the clone button",
-    "url": "https://about.gitlab.com/blog/quantifying-ux-positioning-of-the-clone-button/",
-    "publisher": "GitLab blog",
-    "date": "2019-07-26"
-   }
-  ]
- },
- {
-  "slug": "gitlab-navigation-overhaul-diary-studies",
-  "title": "GitLab dropped its first navigation fixes after research, then rebuilt around diary studies",
-  "company": "GitLab",
-  "is_anonymized": false,
-  "summary": "GitLab users kept calling its navigation confusing. The team's first proposed fixes did poorly in research, so it went back to study how people actually move around GitLab, using diary studies, card sorts and repeated concept tests. The 2023 navigation added pinning and task-based sidebar groups, and a month-long study found users preferred it.",
-  "problem": "Users said GitLab's navigation was complex and confusing. Early solutions the team researched would not have helped users enough to be worth shipping, and the team did not understand why the navigation was failing.",
-  "research": "Review of past research and System Usability Scale feedback; diary studies with cohorts of key personas; several rounds of solution validation tests on design concepts; facilitated card sorts on sidebar groupings; then a month-long longitudinal study with interviews and surveys at the start, middle and end, while the new navigation was an opt-in toggle. Roughly 2022–2023.",
-  "insight": "Many users barely navigate inside GitLab because they arrive via links from Slack, email and other tools. Their work is narrowly scoped, so they wanted quick access to a few core features, and they used workarounds such as bookmarks and open tabs. Card sorts showed people wanted analytics items grouped together.",
-  "change": "GitLab stopped pursuing its earlier proposed fixes and built a new navigation around three themes from the feedback (less overwhelm, better orientation, picking up where you left off). It added pinning, task-based sidebar categories and a new Analyze section, and shipped with an on/off toggle.",
-  "outcome": "Participants in the longitudinal study found the new navigation an improvement and preferred its features, especially pinning and the task-based sidebar. They also raised problems, such as not being able to pin whole projects and unpinning items by accident. No usage or satisfaction numbers are given.",
-  "headline_metric": null,
-  "attribution": "Strong for the decisions: the posts trace the abandoned fixes, the pinning feature and the sidebar groupings to specific studies. The outcome is qualitative.",
-  "caveats": "Company blog posts with no numbers on adoption or satisfaction; a quarterly navigation survey was set up but results are not reported. Community reaction to redesigns is mixed and not covered here.",
-  "methods": [
-   "diary_study",
-   "card_sorting",
-   "concept_testing",
-   "interviews",
-   "survey",
-   "support_analysis"
-  ],
-  "research_type": "mixed",
-  "industry": "saas_b2b",
-  "product_type": "web_app",
-  "metrics": [
-   "task_success",
-   "satisfaction"
-  ],
-  "company_size": "enterprise",
-  "year": 2023,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "How we overhauled GitLab navigation",
-    "url": "https://about.gitlab.com/blog/navigation-research-blog-post/",
-    "publisher": "GitLab blog",
-    "date": "2023-08-15"
-   },
-   {
-    "title": "Inside the vision for GitLab's new platform navigation",
-    "url": "https://about.gitlab.com/blog/gitlab-product-navigation/",
-    "publisher": "GitLab blog",
-    "date": "2023-05-01"
-   }
-  ]
- },
- {
-  "slug": "duolingo-practice-hub-mistakes-interviews",
-  "title": "Duolingo interviews about learners' mistakes led to the Practice Hub",
-  "company": "Duolingo",
-  "is_anonymized": false,
-  "summary": "Duolingo's researchers interviewed learners about how they think about the mistakes they make. Learners wanted to see past mistakes and drill their weak areas. Duolingo says this research was the inspiration for the Practice Hub, a paid feature for reviewing mistakes and practising skills.",
-  "problem": "Duolingo wanted to understand what learners need beyond new lessons, and specifically how they relate to the errors they make.",
-  "research": "A series of one-on-one UX interviews with learners about their mistakes. Participant numbers and dates are not given.",
-  "insight": "Learners wanted to know which mistakes they had made in past lessons and to practise their 'weak areas'. One learner described repeatedly forgetting verb forms for a tense.",
-  "change": "Duolingo built the Practice Hub, a subscription feature that gathers past mistakes for targeted practice and adds speaking and listening practice.",
-  "outcome": "The feature shipped as part of Duolingo's paid tier. No usage, retention or revenue figures are given.",
-  "headline_metric": null,
-  "attribution": "The company names the research as 'the inspiration' for the feature. How much the interviews shaped the final design is not described.",
-  "caveats": "A short example inside a general post written for learners, not a case study. No metrics. The feature also sits behind a paywall, so the company had a commercial reason to build it.",
-  "methods": [
-   "interviews"
-  ],
-  "research_type": "generative",
-  "industry": "education",
-  "product_type": "mobile_app",
-  "metrics": [
-   "revenue",
-   "engagement"
-  ],
-  "company_size": "enterprise",
-  "year": 2022,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "How our learners (that's you!) help improve Duolingo",
-    "url": "https://blog.duolingo.com/how-duolingo-works-with-learners/",
-    "publisher": "Duolingo Blog",
-    "date": "2022-04-04"
-   }
-  ]
- },
- {
-  "slug": "slack-activity-tab-triage-behaviours",
-  "title": "Slack built Activity 2.0 around four triage habits found in research",
-  "company": "Slack (Salesforce)",
-  "is_anonymized": false,
-  "summary": "Slack's Activity tab was popular but only held some notifications and could only mark them read. Research into how people triage found four distinct habits that the same person switches between. Slack rebuilt Activity to support all of them and reports an 80% engagement rate for the new version.",
-  "problem": "Activity, launched in Slack's 2023 redesign, became the second most-used surface, but people still jumped between surfaces to catch up. It lacked some notification types and only let people mark items as read.",
-  "research": "User research on how people manage and triage notifications, combined with usage data, pilots with different kinds of companies and rapid internal testing of functional prototypes. Participant numbers are not given.",
-  "insight": "There is no single triage style. People move between keeping a curated inbox, moving items to other task tools, skimming, and clearing unreads, depending on context. Notification volume also changes what people need: large-team users need different tools from small-team users.",
-  "change": "Activity 2.0 brings DMs, mentions, threads, reminders, reactions and key channel notifications into one feed, with a simple default and optional filters, saved views, keyboard navigation and bulk actions for heavy users.",
-  "outcome": "Slack reports an 80% engagement rate for the new experience, and that 60% of engaged Activity users are starting to triage and recall DMs from Activity. It also says some users struggled to leave familiar workflows.",
-  "headline_metric": "80% engagement rate",
-  "attribution": "Partial. The triage insight clearly shaped the design, but the engagement numbers are not compared with Activity 1.0 and no method is given.",
-  "caveats": "'Engagement rate' is not defined and there is no baseline. Company design blog post, written partly to showcase the team's process.",
-  "methods": [
-   "interviews",
-   "analytics",
-   "concept_testing"
-  ],
-  "research_type": "mixed",
-  "industry": "saas_b2b",
-  "product_type": "enterprise_software",
-  "metrics": [
-   "engagement",
-   "adoption"
-  ],
-  "company_size": "enterprise",
-  "year": 2026,
-  "evidence_strength": "reported",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "No small task: Evolving the way millions catch up in Slack",
-    "url": "https://slack.design/articles/no-small-task-evolving-the-way-millions-catch-up-in-slack/",
-    "publisher": "Slack Design",
-    "date": "2026-04-09"
-   }
-  ]
- },
- {
-  "slug": "figma-ui3-floating-panels-reversed",
-  "title": "Figma reversed UI3's floating panels after beta feedback showed they slowed people down",
-  "company": "Figma",
-  "is_anonymized": false,
-  "summary": "Figma's UI3 redesign put the main side panels in floating windows over the canvas. During the open beta, feedback, adoption and performance data showed the panels cramped the canvas and slowed down people who work in Figma all day. Figma re-docked the panels for the general release and reverted a few other beta changes.",
-  "problem": "Figma spent over two years on UI3 and chose floating navigation and properties panels for a simpler look, knowing it might be too big a change for heavy users.",
-  "research": "An open beta with an opt-out, monitored through feature adoption, performance metrics and user feedback. The post does not describe formal studies or sample sizes.",
-  "insight": "The floating panels hindered people who spend many hours a day in Figma: they cramped the canvas, especially on small screens, designs peeked out distractingly behind them, rulers sat further from the work, and they slowed people down. A dropdown for 'clip content' also added a click that slowed workflows.",
-  "change": "For the October 2024 full rollout, the navigation and properties panels became fixed (but resizable). Clip content went back to a checkbox, and constraints were expanded by default. Floating panels stayed only in Minimize UI, Figma Slides grid view and FigJam.",
-  "outcome": "A core design decision was reversed before general release. No metrics are shared.",
-  "headline_metric": null,
-  "attribution": "Clear that beta feedback and data drove the reversal ('the nail in the coffin was learning that they slowed people down'). The evidence came from a beta rather than planned research.",
-  "caveats": "Evidence is beta feedback and product analytics rather than structured research, and no numbers are given. Company blog post; heavy public criticism of the floating panels on Figma's forum was likely also a factor.",
-  "methods": [
-   "support_analysis",
-   "analytics"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "web_app",
-  "metrics": [
-   "task_success",
-   "satisfaction"
-  ],
-  "company_size": "enterprise",
-  "year": 2024,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Figma on Figma: Our approach to designing UI3",
-    "url": "https://www.figma.com/blog/our-approach-to-designing-ui3/",
-    "publisher": "Figma Blog",
-    "date": "2024-10-01"
-   }
-  ]
- },
- {
-  "slug": "monzo-home-screen-customisation",
-  "title": "Monzo added home screen customisation after early concepts confused customers",
-  "company": "Monzo",
-  "is_anonymized": false,
-  "summary": "Monzo's app had outgrown its design, so it spent over a year redesigning the home screen, hearing from more than 1,000 customers along the way. Early concepts were called overwhelming and confusing; customers wanted control over what they see, which became the customisation feature. Research also led Monzo to let people snooze the switch to the new design.",
-  "problem": "After adding many products (Plus, Premium, Flex, savings pots, external accounts), customers could not easily discover features or see their full financial picture on Monzo's home screen.",
-  "research": "Customer research throughout a project of more than a year, with input from over 1,000 customers, alongside Monzo Community feedback and 4 major and 2 minor experiments over 7 months. Specific methods are not detailed.",
-  "insight": "Early concepts felt overwhelming and confusing. Customers wanted to choose what appears on their home screen. Interrupting people with the new design while they were trying to do a task went badly.",
-  "change": "Monzo built customisation into the new home screen, kept core jobs (balances, card details, transaction search) prominent, and let customers snooze the upgrade and be prompted later.",
-  "outcome": "The new home screen rolled out to more than 8 million customers. No outcome metrics are shared.",
-  "headline_metric": null,
-  "attribution": "The user researcher names customisation as a direct result of research. No outcome data is linked to it.",
-  "caveats": "Short company post with quotes from team members; methods, sample breakdowns and experiment results are not given.",
-  "methods": [
-   "interviews",
-   "usability_testing",
-   "experimentation",
-   "support_analysis"
-  ],
-  "research_type": "mixed",
-  "industry": "finance",
-  "product_type": "mobile_app",
-  "metrics": [
-   "satisfaction",
-   "adoption"
-  ],
-  "company_size": "enterprise",
-  "year": 2023,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "How we built the new Home screen, by the people who got us here",
-    "url": "https://www.monzo.com/blog/how-we-built-the-new-home-screen",
-    "publisher": "Monzo blog",
-    "date": "2023-11-06"
-   }
-  ]
- },
- {
-  "slug": "microsoft-eeg-meeting-breaks-outlook",
-  "title": "Microsoft's EEG study of back-to-back meetings led to Outlook settings that build in breaks",
-  "company": "Microsoft",
-  "is_anonymized": false,
-  "summary": "Microsoft's Human Factors Lab had 14 people do video meetings while wearing EEG caps, once back-to-back and once with 10-minute breaks. Stress-linked brain activity built up without breaks and stayed flat with them. Microsoft says the findings helped inform Outlook settings that automatically shorten meetings to leave breaks, including organisation-wide defaults.",
-  "problem": "During the pandemic, back-to-back video meetings became normal and people reported meeting fatigue. Microsoft wanted to know whether short breaks made a measurable difference.",
-  "research": "A within-subjects lab study: 14 volunteers wore EEG caps through two sessions of four 30-minute video meetings on consecutive Mondays, one with no breaks and one with 10-minute meditation breaks (Headspace), with order swapped between groups.",
-  "insight": "Without breaks, beta-wave activity (associated with stress) kept building and spiked at transitions between meetings, and frontal alpha asymmetry suggested people were less engaged. With breaks, stress stayed level and engagement was higher.",
-  "change": "Microsoft promoted Outlook settings that shave 5, 10 or 15 minutes off meetings, and added organisation-wide defaults so a company can build in breaks for everyone.",
-  "outcome": "The settings shipped for individuals and organisations in 2021. No data on adoption or effect on wellbeing is given.",
-  "headline_metric": null,
-  "attribution": "Microsoft says the findings 'helped inform' the settings. Adjustable meeting lengths may have been in the works anyway; the study mainly justified and publicised them.",
-  "caveats": "Very small sample (14), lab setting, and EEG proxies for stress and engagement. Published as a marketing-led Work Trend Index piece. No measure of whether the product change reduced fatigue.",
-  "methods": [
-   "experimentation"
-  ],
-  "research_type": "generative",
-  "industry": "saas_b2b",
-  "product_type": "enterprise_software",
-  "metrics": [
-   "satisfaction"
-  ],
-  "company_size": "enterprise",
-  "year": 2021,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Research Proves Your Brain Needs Breaks",
-    "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research",
-    "publisher": "Microsoft WorkLab",
-    "date": "2021-04-20"
-   }
-  ]
- },
- {
-  "slug": "hubspot-navigation-card-sort-object-based",
-  "title": "HubSpot card sorts showed no one grouped its apps by its own marketing methodology",
-  "company": "HubSpot",
-  "is_anonymized": false,
-  "summary": "HubSpot's product navigation was organised around its Inbound Marketing methodology, and support staff confirmed customers got lost. In about 6.5 hours of card sorting and quick usability tests, not one participant, including long-time customers, grouped the apps by the methodology. HubSpot switched to an object-based navigation.",
-  "problem": "HubSpot's apps had long been organised by the stages of its Inbound Marketing methodology. As the product grew this became hard to extend, and it had been debated internally for years.",
-  "research": "Conversations with Support and Services staff about customers getting lost; open card sorts with HubSpot's own marketing team (about four sessions); remote card sorts of about 20 cards with four customers; then usability tests of three low-fidelity layouts plus the existing navigation with three customers and three non-customers. About 6.5 hours of testing in total, in 2012.",
-  "insight": "Support confirmed customers got lost and filed cases about finding apps. In testing, an object-based layout was most intuitive, and none of the participants, even customers who had embraced inbound marketing, organised the apps by the methodology.",
-  "change": "HubSpot replaced the methodology-based menu with an object-based navigation, released first to beta customers and then to all users.",
-  "outcome": "The post was written at beta launch. It expected fewer support cases about finding apps but reports no results.",
-  "headline_metric": null,
-  "attribution": "Strong for the decision: the post credits the tests with settling a long internal debate. No outcome data.",
-  "caveats": "Very small samples (four customers in the card sort, six people in the usability test). Old (2012). No follow-up numbers were published in this post. Company blog.",
-  "methods": [
-   "card_sorting",
-   "usability_testing",
-   "support_analysis"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "web_app",
-  "metrics": [
-   "task_success",
-   "support_cost"
-  ],
-  "company_size": "midmarket",
-  "year": 2012,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "The New HubSpot Nav Bar Design: A Web App Usability Study",
-    "url": "https://product.hubspot.com/blog/bid/86560/The-New-HubSpot-Nav-Bar-Design-A-Web-App-Usability-Study",
-    "publisher": "HubSpot Product Blog",
-    "date": "2012-05-25"
-   }
-  ]
- },
- {
-  "slug": "hubspot-crm-index-page-usability-baseline",
-  "title": "HubSpot's usability baseline found users missed filters and saved views, so it redesigned its busiest pages",
-  "company": "HubSpot",
-  "is_anonymized": false,
-  "summary": "HubSpot's CRM index pages are used by more than 96% of daily users, but a 2019 usability baseline study found many people never noticed filtering, saved views or column editing. Combined with usage data and old bug tickets, this led to a redesign with saved-view tabs, quick filters and visible column editing.",
-  "problem": "The Contacts, Companies, Deals and Tickets index pages are HubSpot's most-used pages, but after a service outage the team took a hard look and found customers did not like using them.",
-  "research": "Usability baseline studies of the Sales and Service Hubs in early 2019; a review of past Jira tickets closed as 'works as designed'; usage analytics; interaction-flow mapping; customer conversations, concept testing and several rounds of usability testing over some months.",
-  "insight": "Many users never noticed that filtering was possible, and saving views, sorting and adding columns were rarely found. Related controls, like search and filters, sat far apart. Usage data showed users who save and revisit a view have 16% higher week-12 retention, yet only 5% of new users touched saved views in their first month and only 15% of daily users saved one.",
-  "change": "The redesigned table view added tabs for saved views, quick filters based on the most-used properties, and column editing on the main screen. The board view got its own layout with pipeline and saved-view toggles up front.",
-  "outcome": "Released as an opt-in experience in 2020. No post-launch results are reported.",
-  "headline_metric": null,
-  "attribution": "The post ties each design change to a usability or analytics finding. There is no outcome data.",
-  "caveats": "Company product blog with an opt-in launch and no reported results. The 16% retention link for saved views is correlational. Usability study sample sizes are not given.",
-  "methods": [
-   "benchmarking",
-   "usability_testing",
-   "analytics",
-   "concept_testing",
-   "support_analysis"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "web_app",
-  "metrics": [
-   "task_success",
-   "adoption",
-   "retention"
-  ],
-  "company_size": "enterprise",
-  "year": 2020,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Overhauling the Index Page",
-    "url": "https://product.hubspot.com/blog/overhauling-the-index-page",
-    "publisher": "HubSpot Product Blog",
-    "date": "2020-04-14"
-   }
-  ]
- },
- {
-  "slug": "adobe-fresco-artist-research",
-  "title": "Interviews with 50+ artists led Adobe to build Fresco instead of extending its two drawing apps",
-  "company": "Adobe",
-  "is_anonymized": false,
-  "summary": "Adobe had two free drawing apps and had to choose between improving them or building something new. Months of interviews with more than 50 artists, followed by alpha testing with 10 hand-picked illustrators and regular usability sessions, led to Adobe Fresco, which combines pixel and vector drawing. Testing also changed specific features, such as where tool options sit and a new Touch Shortcut.",
-  "problem": "Adobe Photoshop Sketch and Illustrator Draw were used for professional work, but customers wanted Photoshop and Illustrator features in them. Adobe had to decide whether to keep iterating on both or build a new app.",
-  "research": "Several months of interviews with more than 50 artists and illustrators across 11 illustration categories and many countries, chosen to cover the popular apps in each. Then a three-month alpha with 10 illustrators ('Gemini 10') doing workflow tasks on early builds; feature usability sessions with at least three professionals and three emerging artists, including non-Adobe users; group sessions three to four times a year; student sessions; and a prerelease community of over 600 artists. Roughly 2017–2020.",
-  "insight": "Customisation was a big reason people love Adobe's desktop tools, and keyboard shortcuts are central to fast work, but few iPad artists use keyboards. Testers said Fresco felt a little slow. Very few noticed tool options placed directly below the tool, while floating options were easy to find but took canvas space.",
-  "change": "Adobe built Fresco as a new app combining pixels and vectors, with a customisable app frame. It added a Touch Shortcut that temporarily changes the current tool's action, and docked tool options at the bottom of the toolbar with the option to drag them anywhere. Some early experiences were reworked after poor test results.",
-  "outcome": "Fresco launched in 2019 and kept evolving with monthly releases. No usage or business metrics are given.",
-  "headline_metric": null,
-  "attribution": "The article says the decision to create Fresco 'grew from extensive user research' and links specific features to test findings. No outcome data.",
-  "caveats": "Promotional company article timed with product updates. Adobe also had strategic reasons (competing on iPad) that the article does not weigh. No metrics.",
-  "methods": [
-   "interviews",
-   "usability_testing",
-   "concept_testing",
-   "co_design"
-  ],
-  "research_type": "mixed",
-  "industry": "saas_b2b",
-  "product_type": "mobile_app",
-  "metrics": [
-   "task_success",
-   "adoption"
-  ],
-  "company_size": "enterprise",
-  "year": 2020,
-  "evidence_strength": "decision",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "The creation and evolution of Adobe Fresco",
-    "url": "https://adobe.design/ideas/the-creation-and-evolution-of-adobe-fresco",
-    "publisher": "Adobe Design",
-    "date": "2020-04-03"
-   }
-  ]
- },
- {
-  "slug": "microsoft-intellicode-inclusive-focus-research",
-  "title": "Designing Visual Studio IntelliCode with developers who struggle to focus tripled regular use",
-  "company": "Microsoft (Visual Studio)",
-  "is_anonymized": false,
-  "summary": "Microsoft's developer tools team recruited developers by cognitive need, including people with and without ADHD who find it hard to focus, rather than by language or background. They found IntelliCode's suggestions appeared too fast and its hint bar was hard to find. Co-designed changes gave users more control over when suggestions appear, and Microsoft reports a 3.5x increase in regular users of one feature.",
-  "problem": "The team needed to balance making AI code suggestions discoverable against interrupting developers, and to find the most helpful way to present suggestions.",
-  "research": "Inclusive design research and co-design sessions with existing users, recruited around the cognitive demand of focus (developers with and without ADHD). Sample size and dates are not given.",
-  "insight": "The tool's interruptions made concentration hard: code suggestions appeared automatically too quickly, and the hint bar took a lot of work to find.",
-  "change": "The team co-designed changes that give developers more control over when intelligent suggestions surface, for both inline code insertion suggestions and single-line code change suggestions.",
-  "outcome": "Microsoft reports a 3.5x increase in regular users of inline code insertion suggestions. Testing of the enhanced single-line code change suggestions showed a 176% increase in suggestions accepted and a 29% increase in regular users.",
-  "headline_metric": "3.5x regular users",
-  "attribution": "The case study links the changes to the research, but it does not say how the numbers were measured, over what period, or whether other changes shipped at the same time.",
-  "caveats": "Short promotional case study in Microsoft's inclusive design toolkit, with no method, baseline or dates for the numbers. 'Testing' may mean an A/B test, but this is not stated.",
-  "methods": [
-   "accessibility_research",
-   "co_design",
-   "interviews"
-  ],
-  "research_type": "mixed",
-  "industry": "saas_b2b",
-  "product_type": "desktop_software",
-  "metrics": [
-   "adoption",
-   "engagement",
-   "accessibility"
-  ],
-  "company_size": "enterprise",
-  "year": 2023,
-  "evidence_strength": "reported",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Microsoft Inclusive Design for Cognition: Case Studies (PDF)",
-    "url": "https://inclusive.microsoft.design/tools-and-activities/CaseStudiesCreatingForCognition.pdf",
-    "publisher": "Microsoft Inclusive Design",
-    "date": "2023-03-03"
-   }
-  ]
- },
- {
-  "slug": "duolingo-india-everyday-hindi-and-no-paywall",
-  "title": "Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%",
-  "company": "Duolingo",
-  "is_anonymized": false,
-  "summary": "As newly online learners poured into Duolingo in India in 2020, research showed its Hindi interface used formal words even native speakers found hard, and that people mistook the Duolingo Plus promotion for a paywall and preferred one-off payments. A/B tests of the fixes lifted onboarding completion by 1%, and removing Duolingo Plus in India raised daily active users by 6%.",
-  "problem": "New learners in India grew 400% year on year, many of them online for the first time. Duolingo's app had been built for markets where people had different language habits and were used to app subscriptions.",
-  "research": "User research with learners in India, including interviews, alongside usage data, followed by A/B tests of each change. The post does not say how the tap-through behaviour was spotted, and gives no participant numbers or dates.",
-  "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
-  "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
-  "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
-  "headline_metric": "+6% DAU",
-  "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
-  "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
-  "methods": [
-   "interviews",
-   "experimentation",
-   "analytics"
-  ],
-  "research_type": "mixed",
-  "industry": "education",
-  "product_type": "mobile_app",
-  "metrics": [
-   "engagement",
-   "conversion",
-   "retention"
-  ],
-  "company_size": "enterprise",
-  "year": 2020,
-  "evidence_strength": "tested",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "Language learning for the next billion: Duolingo in India",
-    "url": "https://blog.duolingo.com/language-learning-for-the-next-billion-duolingo-in-india/",
-    "publisher": "Duolingo Blog",
-    "date": "2020-09-24"
-   }
-  ]
- },
- {
-  "slug": "gitlab-free-trial-signup-journey-audit",
-  "title": "GitLab's journey audit of its free trial signup cut steps from 37 to 17; signups rose 141%",
-  "company": "GitLab",
-  "is_anonymized": false,
-  "summary": "While planning new onboarding, a GitLab designer walked the full free trial signup and found it took over five minutes and about 37 interactions across two apps, with steps that broke if done out of order. A unified flow launched in October 2019. Weekly free trial signups went from an average of 330 before launch to more than 800, which GitLab reports as a 141% improvement.",
-  "problem": "Signing up for a GitLab.com free trial meant using two separate applications (GitLab.com and Subscription Manager) with different styles, repeated forms and duplicate email confirmations. The trial landing page defaulted to the harder self-managed option.",
-  "research": "Designer-led experience audits in 2019: a full user journey map of the signup with video walkthroughs, then a formal UX scorecard (GitLab's heuristic evaluation of a job) by a second designer, and a follow-up scorecard after launch by a third.",
-  "insight": "The flow took more than five minutes and around 37 interactions. Users were sent to their inbox mid-flow, asked again for information they had already given, asked to pick a group even when they had only one option, and could hit a dead end if they missed written instructions. The main cause was two apps not talking to each other.",
-  "change": "GitLab built a single signup flow inside GitLab.com that adapts to whether the person is new or existing and syncs with Subscription Manager in the background, and rebalanced the landing page so the SaaS trial was easy to find.",
-  "outcome": "The new flow launched on 29 October 2019. Weekly free trial signups were 466 the week before launch, 628 in launch week and 842 the week after, stayed above 800 through November, dipped (not below 600) in December, and passed 900 a week by early 2020. GitLab reports a pre-launch weekly average of 330 and a 141% improvement. A follow-up scorecard found about 17 interactions and 2.5 minutes to complete.",
-  "headline_metric": "+141% trial signups",
-  "attribution": "Plausible: the jump is large and immediate after launch. But this is a before/after count with no control, and the 'research' was expert evaluation by designers rather than testing with users.",
-  "caveats": "No usability testing with users is described; the evidence is designer-led journey mapping and heuristic scorecards. No control for marketing or seasonal changes. The 141% figure depends on the chosen baseline (330 average versus 466 the week before). Written by the lead designer on GitLab's blog.",
-  "methods": [
-   "journey_mapping",
-   "heuristic_review",
-   "analytics"
-  ],
-  "research_type": "evaluative",
-  "industry": "saas_b2b",
-  "product_type": "checkout_flow",
-  "metrics": [
-   "conversion",
-   "task_success"
-  ],
-  "company_size": "enterprise",
-  "year": 2020,
-  "evidence_strength": "measured",
-  "source_type": "first_party",
-  "sources": [
-   {
-    "title": "How holistic UX design increased GitLab.com free trial signups",
-    "url": "https://about.gitlab.com/blog/how-holistic-ux-design-increased-gitlab-free-trial-signups/",
-    "publisher": "GitLab blog",
-    "date": "2020-02-27"
-   }
-  ]
- }
+  {
+    "slug": "gitlab-clone-button-click-tests",
+    "title": "GitLab click tests: moving the clone button lifted findability from 84% to 98%",
+    "company": "GitLab",
+    "is_anonymized": false,
+    "summary": "After a redesign hid GitLab's clone options in the page header, users asked for the button back near the file tree. A designer ran quick click tests against the live design before deciding. The proposed spot was found by 98% of testers versus 84% for the live one, and a second test showed that removing the button from empty repositories would drop success to 50%, so the team kept one there.",
+    "problem": "GitLab's 2019 project overview redesign put a single clone button in the page header, which removed it from the repository page. Users suggested moving it down to the file tree controls, but the team had already had complaints about the earlier change and worried that moving it lower would make it harder to find.",
+    "research": "Two unmoderated click tests (UsabilityHub), each run as two variants: the proposed design and the live design as a control. Around 40 answers per variant. The UX research team helped word the task so it did not use the word 'clone'. A second pair of tests checked the empty-repository page with and without a clone button.",
+    "insight": "Moving the button down to the file tree did not hurt findability, it improved it: people expected it there, as on other Git platforms. On empty repositories, though, removing the button badly hurt findability.",
+    "change": "The clone button moved to the file tree controls and returned to the repository page. A clone button was added above the instructions on the empty-repository page rather than dropped.",
+    "outcome": "Proposed file-tree position: 98% correct, 15 seconds on average. Live header position: 84% correct, 21 seconds. Empty repository without a button: 50% correct, 37 seconds, versus 77% and 16 seconds with the button. At publication the change was being built by a community contributor.",
+    "headline_metric": "84% → 98% found it",
+    "attribution": "Direct for the decision: the post says the tests drove both choices. The numbers are test results, not live product metrics after launch.",
+    "caveats": "Small unmoderated samples (about 40 per variant) and a single click task, with no statistical testing reported. No post-launch data. Written by the designer who ran the tests on GitLab's own blog.",
+    "methods": [
+      "usability_testing",
+      "benchmarking"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Quantifying UX: Positioning the clone button",
+        "url": "https://about.gitlab.com/blog/quantifying-ux-positioning-of-the-clone-button/",
+        "publisher": "GitLab blog",
+        "date": "2019-07-26"
+      }
+    ]
+  },
+  {
+    "slug": "gitlab-navigation-overhaul-diary-studies",
+    "title": "GitLab dropped its first navigation fixes after research, then rebuilt around diary studies",
+    "company": "GitLab",
+    "is_anonymized": false,
+    "summary": "GitLab users kept calling its navigation confusing. The team's first proposed fixes did poorly in research, so it went back to study how people actually move around GitLab, using diary studies, card sorts and repeated concept tests. The 2023 navigation added pinning and task-based sidebar groups, and a month-long study found users preferred it.",
+    "problem": "Users said GitLab's navigation was complex and confusing. Early solutions the team researched would not have helped users enough to be worth shipping, and the team did not understand why the navigation was failing.",
+    "research": "Review of past research and System Usability Scale feedback; diary studies with cohorts of key personas; several rounds of solution validation tests on design concepts; facilitated card sorts on sidebar groupings; then a month-long longitudinal study with interviews and surveys at the start, middle and end, while the new navigation was an opt-in toggle. Roughly 2022–2023.",
+    "insight": "Many users barely navigate inside GitLab because they arrive via links from Slack, email and other tools. Their work is narrowly scoped, so they wanted quick access to a few core features, and they used workarounds such as bookmarks and open tabs. Card sorts showed people wanted analytics items grouped together.",
+    "change": "GitLab stopped pursuing its earlier proposed fixes and built a new navigation around three themes from the feedback (less overwhelm, better orientation, picking up where you left off). It added pinning, task-based sidebar categories and a new Analyze section, and shipped with an on/off toggle.",
+    "outcome": "Participants in the longitudinal study found the new navigation an improvement and preferred its features, especially pinning and the task-based sidebar. They also raised problems, such as not being able to pin whole projects and unpinning items by accident. No usage or satisfaction numbers are given.",
+    "headline_metric": null,
+    "attribution": "Strong for the decisions: the posts trace the abandoned fixes, the pinning feature and the sidebar groupings to specific studies. The outcome is qualitative.",
+    "caveats": "Company blog posts with no numbers on adoption or satisfaction; a quarterly navigation survey was set up but results are not reported. Community reaction to redesigns is mixed and not covered here.",
+    "methods": [
+      "diary_study",
+      "card_sorting",
+      "concept_testing",
+      "interviews",
+      "survey",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How we overhauled GitLab navigation",
+        "url": "https://about.gitlab.com/blog/navigation-research-blog-post/",
+        "publisher": "GitLab blog",
+        "date": "2023-08-15"
+      },
+      {
+        "title": "Inside the vision for GitLab's new platform navigation",
+        "url": "https://about.gitlab.com/blog/gitlab-product-navigation/",
+        "publisher": "GitLab blog",
+        "date": "2023-05-01"
+      }
+    ]
+  },
+  {
+    "slug": "duolingo-practice-hub-mistakes-interviews",
+    "title": "Duolingo interviews about learners' mistakes led to the Practice Hub",
+    "company": "Duolingo",
+    "is_anonymized": false,
+    "summary": "Duolingo's researchers interviewed learners about how they think about the mistakes they make. Learners wanted to see past mistakes and drill their weak areas. Duolingo says this research was the inspiration for the Practice Hub, a paid feature for reviewing mistakes and practising skills.",
+    "problem": "Duolingo wanted to understand what learners need beyond new lessons, and specifically how they relate to the errors they make.",
+    "research": "A series of one-on-one UX interviews with learners about their mistakes. Participant numbers and dates are not given.",
+    "insight": "Learners wanted to know which mistakes they had made in past lessons and to practise their 'weak areas'. One learner described repeatedly forgetting verb forms for a tense.",
+    "change": "Duolingo built the Practice Hub, a subscription feature that gathers past mistakes for targeted practice and adds speaking and listening practice.",
+    "outcome": "The feature shipped as part of Duolingo's paid tier. No usage, retention or revenue figures are given.",
+    "headline_metric": null,
+    "attribution": "The company names the research as 'the inspiration' for the feature. How much the interviews shaped the final design is not described.",
+    "caveats": "A short example inside a general post written for learners, not a case study. No metrics. The feature also sits behind a paywall, so the company had a commercial reason to build it.",
+    "methods": [
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "education",
+    "product_type": "mobile_app",
+    "metrics": [
+      "revenue",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2022,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How our learners (that's you!) help improve Duolingo",
+        "url": "https://blog.duolingo.com/how-duolingo-works-with-learners/",
+        "publisher": "Duolingo Blog",
+        "date": "2022-04-04"
+      }
+    ]
+  },
+  {
+    "slug": "slack-activity-tab-triage-behaviours",
+    "title": "Slack built Activity 2.0 around four triage habits found in research",
+    "company": "Slack (Salesforce)",
+    "is_anonymized": false,
+    "summary": "Slack's Activity tab was popular but only held some notifications and could only mark them read. Research into how people triage found four distinct habits that the same person switches between. Slack rebuilt Activity to support all of them and reports an 80% engagement rate for the new version.",
+    "problem": "Activity, launched in Slack's 2023 redesign, became the second most-used surface, but people still jumped between surfaces to catch up. It lacked some notification types and only let people mark items as read.",
+    "research": "User research on how people manage and triage notifications, combined with usage data, pilots with different kinds of companies and rapid internal testing of functional prototypes. Participant numbers are not given.",
+    "insight": "There is no single triage style. People move between keeping a curated inbox, moving items to other task tools, skimming, and clearing unreads, depending on context. Notification volume also changes what people need: large-team users need different tools from small-team users.",
+    "change": "Activity 2.0 brings DMs, mentions, threads, reminders, reactions and key channel notifications into one feed, with a simple default and optional filters, saved views, keyboard navigation and bulk actions for heavy users.",
+    "outcome": "Slack reports an 80% engagement rate for the new experience, and that 60% of engaged Activity users are starting to triage and recall DMs from Activity. It also says some users struggled to leave familiar workflows.",
+    "headline_metric": "80% engagement rate",
+    "attribution": "Partial. The triage insight clearly shaped the design, but the engagement numbers are not compared with Activity 1.0 and no method is given.",
+    "caveats": "'Engagement rate' is not defined and there is no baseline. Company design blog post, written partly to showcase the team's process.",
+    "methods": [
+      "interviews",
+      "analytics",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "engagement",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2026,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "No small task: Evolving the way millions catch up in Slack",
+        "url": "https://slack.design/articles/no-small-task-evolving-the-way-millions-catch-up-in-slack/",
+        "publisher": "Slack Design",
+        "date": "2026-04-09"
+      }
+    ]
+  },
+  {
+    "slug": "figma-ui3-floating-panels-reversed",
+    "title": "Figma reversed UI3's floating panels after beta feedback showed they slowed people down",
+    "company": "Figma",
+    "is_anonymized": false,
+    "summary": "Figma's UI3 redesign put the main side panels in floating windows over the canvas. During the open beta, feedback, adoption and performance data showed the panels cramped the canvas and slowed down people who work in Figma all day. Figma re-docked the panels for the general release and reverted a few other beta changes.",
+    "problem": "Figma spent over two years on UI3 and chose floating navigation and properties panels for a simpler look, knowing it might be too big a change for heavy users.",
+    "research": "An open beta with an opt-out, monitored through feature adoption, performance metrics and user feedback. The post does not describe formal studies or sample sizes.",
+    "insight": "The floating panels hindered people who spend many hours a day in Figma: they cramped the canvas, especially on small screens, designs peeked out distractingly behind them, rulers sat further from the work, and they slowed people down. A dropdown for 'clip content' also added a click that slowed workflows.",
+    "change": "For the October 2024 full rollout, the navigation and properties panels became fixed (but resizable). Clip content went back to a checkbox, and constraints were expanded by default. Floating panels stayed only in Minimize UI, Figma Slides grid view and FigJam.",
+    "outcome": "A core design decision was reversed before general release. No metrics are shared.",
+    "headline_metric": null,
+    "attribution": "Clear that beta feedback and data drove the reversal ('the nail in the coffin was learning that they slowed people down'). The evidence came from a beta rather than planned research.",
+    "caveats": "Evidence is beta feedback and product analytics rather than structured research, and no numbers are given. Company blog post; heavy public criticism of the floating panels on Figma's forum was likely also a factor.",
+    "methods": [
+      "support_analysis",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Figma on Figma: Our approach to designing UI3",
+        "url": "https://www.figma.com/blog/our-approach-to-designing-ui3/",
+        "publisher": "Figma Blog",
+        "date": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "slug": "monzo-home-screen-customisation",
+    "title": "Monzo added home screen customisation after early concepts confused customers",
+    "company": "Monzo",
+    "is_anonymized": false,
+    "summary": "Monzo's app had outgrown its design, so it spent over a year redesigning the home screen, hearing from more than 1,000 customers along the way. Early concepts were called overwhelming and confusing; customers wanted control over what they see, which became the customisation feature. Research also led Monzo to let people snooze the switch to the new design.",
+    "problem": "After adding many products (Plus, Premium, Flex, savings pots, external accounts), customers could not easily discover features or see their full financial picture on Monzo's home screen.",
+    "research": "Customer research throughout a project of more than a year, with input from over 1,000 customers, alongside Monzo Community feedback and 4 major and 2 minor experiments over 7 months. Specific methods are not detailed.",
+    "insight": "Early concepts felt overwhelming and confusing. Customers wanted to choose what appears on their home screen. Interrupting people with the new design while they were trying to do a task went badly.",
+    "change": "Monzo built customisation into the new home screen, kept core jobs (balances, card details, transaction search) prominent, and let customers snooze the upgrade and be prompted later.",
+    "outcome": "The new home screen rolled out to more than 8 million customers. No outcome metrics are shared.",
+    "headline_metric": null,
+    "attribution": "The user researcher names customisation as a direct result of research. No outcome data is linked to it.",
+    "caveats": "Short company post with quotes from team members; methods, sample breakdowns and experiment results are not given.",
+    "methods": [
+      "interviews",
+      "usability_testing",
+      "experimentation",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "finance",
+    "product_type": "mobile_app",
+    "metrics": [
+      "satisfaction",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How we built the new Home screen, by the people who got us here",
+        "url": "https://www.monzo.com/blog/how-we-built-the-new-home-screen",
+        "publisher": "Monzo blog",
+        "date": "2023-11-06"
+      }
+    ]
+  },
+  {
+    "slug": "microsoft-eeg-meeting-breaks-outlook",
+    "title": "Microsoft's EEG study of back-to-back meetings led to Outlook settings that build in breaks",
+    "company": "Microsoft",
+    "is_anonymized": false,
+    "summary": "Microsoft's Human Factors Lab had 14 people do video meetings while wearing EEG caps, once back-to-back and once with 10-minute breaks. Stress-linked brain activity built up without breaks and stayed flat with them. Microsoft says the findings helped inform Outlook settings that automatically shorten meetings to leave breaks, including organisation-wide defaults.",
+    "problem": "During the pandemic, back-to-back video meetings became normal and people reported meeting fatigue. Microsoft wanted to know whether short breaks made a measurable difference.",
+    "research": "A within-subjects lab study: 14 volunteers wore EEG caps through two sessions of four 30-minute video meetings on consecutive Mondays, one with no breaks and one with 10-minute meditation breaks (Headspace), with order swapped between groups.",
+    "insight": "Without breaks, beta-wave activity (associated with stress) kept building and spiked at transitions between meetings, and frontal alpha asymmetry suggested people were less engaged. With breaks, stress stayed level and engagement was higher.",
+    "change": "Microsoft promoted Outlook settings that shave 5, 10 or 15 minutes off meetings, and added organisation-wide defaults so a company can build in breaks for everyone.",
+    "outcome": "The settings shipped for individuals and organisations in 2021. No data on adoption or effect on wellbeing is given.",
+    "headline_metric": null,
+    "attribution": "Microsoft says the findings 'helped inform' the settings. Adjustable meeting lengths may have been in the works anyway; the study mainly justified and publicised them.",
+    "caveats": "Very small sample (14), lab setting, and EEG proxies for stress and engagement. Published as a marketing-led Work Trend Index piece. No measure of whether the product change reduced fatigue.",
+    "methods": [
+      "experimentation"
+    ],
+    "research_type": "generative",
+    "industry": "saas_b2b",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Research Proves Your Brain Needs Breaks",
+        "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research",
+        "publisher": "Microsoft WorkLab",
+        "date": "2021-04-20"
+      }
+    ]
+  },
+  {
+    "slug": "hubspot-navigation-card-sort-object-based",
+    "title": "HubSpot card sorts showed no one grouped its apps by its own marketing methodology",
+    "company": "HubSpot",
+    "is_anonymized": false,
+    "summary": "HubSpot's product navigation was organised around its Inbound Marketing methodology, and support staff confirmed customers got lost. In about 6.5 hours of card sorting and quick usability tests, not one participant, including long-time customers, grouped the apps by the methodology. HubSpot switched to an object-based navigation.",
+    "problem": "HubSpot's apps had long been organised by the stages of its Inbound Marketing methodology. As the product grew this became hard to extend, and it had been debated internally for years.",
+    "research": "Conversations with Support and Services staff about customers getting lost; open card sorts with HubSpot's own marketing team (about four sessions); remote card sorts of about 20 cards with four customers; then usability tests of three low-fidelity layouts plus the existing navigation with three customers and three non-customers. About 6.5 hours of testing in total, in 2012.",
+    "insight": "Support confirmed customers got lost and filed cases about finding apps. In testing, an object-based layout was most intuitive, and none of the participants, even customers who had embraced inbound marketing, organised the apps by the methodology.",
+    "change": "HubSpot replaced the methodology-based menu with an object-based navigation, released first to beta customers and then to all users.",
+    "outcome": "The post was written at beta launch. It expected fewer support cases about finding apps but reports no results.",
+    "headline_metric": null,
+    "attribution": "Strong for the decision: the post credits the tests with settling a long internal debate. No outcome data.",
+    "caveats": "Very small samples (four customers in the card sort, six people in the usability test). Old (2012). No follow-up numbers were published in this post. Company blog.",
+    "methods": [
+      "card_sorting",
+      "usability_testing",
+      "support_analysis"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "support_cost"
+    ],
+    "company_size": "midmarket",
+    "year": 2012,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The New HubSpot Nav Bar Design: A Web App Usability Study",
+        "url": "https://product.hubspot.com/blog/bid/86560/The-New-HubSpot-Nav-Bar-Design-A-Web-App-Usability-Study",
+        "publisher": "HubSpot Product Blog",
+        "date": "2012-05-25"
+      }
+    ]
+  },
+  {
+    "slug": "hubspot-crm-index-page-usability-baseline",
+    "title": "HubSpot's usability baseline found users missed filters and saved views, so it redesigned its busiest pages",
+    "company": "HubSpot",
+    "is_anonymized": false,
+    "summary": "HubSpot's CRM index pages are used by more than 96% of daily users, but a 2019 usability baseline study found many people never noticed filtering, saved views or column editing. Combined with usage data and old bug tickets, this led to a redesign with saved-view tabs, quick filters and visible column editing.",
+    "problem": "The Contacts, Companies, Deals and Tickets index pages are HubSpot's most-used pages, but after a service outage the team took a hard look and found customers did not like using them.",
+    "research": "Usability baseline studies of the Sales and Service Hubs in early 2019; a review of past Jira tickets closed as 'works as designed'; usage analytics; interaction-flow mapping; customer conversations, concept testing and several rounds of usability testing over some months.",
+    "insight": "Many users never noticed that filtering was possible, and saving views, sorting and adding columns were rarely found. Related controls, like search and filters, sat far apart. Usage data showed users who save and revisit a view have 16% higher week-12 retention, yet only 5% of new users touched saved views in their first month and only 15% of daily users saved one.",
+    "change": "The redesigned table view added tabs for saved views, quick filters based on the most-used properties, and column editing on the main screen. The board view got its own layout with pipeline and saved-view toggles up front.",
+    "outcome": "Released as an opt-in experience in 2020. No post-launch results are reported.",
+    "headline_metric": null,
+    "attribution": "The post ties each design change to a usability or analytics finding. There is no outcome data.",
+    "caveats": "Company product blog with an opt-in launch and no reported results. The 16% retention link for saved views is correlational. Usability study sample sizes are not given.",
+    "methods": [
+      "benchmarking",
+      "usability_testing",
+      "analytics",
+      "concept_testing",
+      "support_analysis"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "adoption",
+      "retention"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Overhauling the Index Page",
+        "url": "https://product.hubspot.com/blog/overhauling-the-index-page",
+        "publisher": "HubSpot Product Blog",
+        "date": "2020-04-14"
+      }
+    ]
+  },
+  {
+    "slug": "adobe-fresco-artist-research",
+    "title": "Interviews with 50+ artists led Adobe to build Fresco instead of extending its two drawing apps",
+    "company": "Adobe",
+    "is_anonymized": false,
+    "summary": "Adobe had two free drawing apps and had to choose between improving them or building something new. Months of interviews with more than 50 artists, followed by alpha testing with 10 hand-picked illustrators and regular usability sessions, led to Adobe Fresco, which combines pixel and vector drawing. Testing also changed specific features, such as where tool options sit and a new Touch Shortcut.",
+    "problem": "Adobe Photoshop Sketch and Illustrator Draw were used for professional work, but customers wanted Photoshop and Illustrator features in them. Adobe had to decide whether to keep iterating on both or build a new app.",
+    "research": "Several months of interviews with more than 50 artists and illustrators across 11 illustration categories and many countries, chosen to cover the popular apps in each. Then a three-month alpha with 10 illustrators ('Gemini 10') doing workflow tasks on early builds; feature usability sessions with at least three professionals and three emerging artists, including non-Adobe users; group sessions three to four times a year; student sessions; and a prerelease community of over 600 artists. Roughly 2017–2020.",
+    "insight": "Customisation was a big reason people love Adobe's desktop tools, and keyboard shortcuts are central to fast work, but few iPad artists use keyboards. Testers said Fresco felt a little slow. Very few noticed tool options placed directly below the tool, while floating options were easy to find but took canvas space.",
+    "change": "Adobe built Fresco as a new app combining pixels and vectors, with a customisable app frame. It added a Touch Shortcut that temporarily changes the current tool's action, and docked tool options at the bottom of the toolbar with the option to drag them anywhere. Some early experiences were reworked after poor test results.",
+    "outcome": "Fresco launched in 2019 and kept evolving with monthly releases. No usage or business metrics are given.",
+    "headline_metric": null,
+    "attribution": "The article says the decision to create Fresco 'grew from extensive user research' and links specific features to test findings. No outcome data.",
+    "caveats": "Promotional company article timed with product updates. Adobe also had strategic reasons (competing on iPad) that the article does not weigh. No metrics.",
+    "methods": [
+      "interviews",
+      "usability_testing",
+      "concept_testing",
+      "co_design"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "mobile_app",
+    "metrics": [
+      "task_success",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The creation and evolution of Adobe Fresco",
+        "url": "https://adobe.design/ideas/the-creation-and-evolution-of-adobe-fresco",
+        "publisher": "Adobe Design",
+        "date": "2020-04-03"
+      }
+    ]
+  },
+  {
+    "slug": "microsoft-intellicode-inclusive-focus-research",
+    "title": "Designing Visual Studio IntelliCode with developers who struggle to focus tripled regular use",
+    "company": "Microsoft (Visual Studio)",
+    "is_anonymized": false,
+    "summary": "Microsoft's developer tools team recruited developers by cognitive need, including people with and without ADHD who find it hard to focus, rather than by language or background. They found IntelliCode's suggestions appeared too fast and its hint bar was hard to find. Co-designed changes gave users more control over when suggestions appear, and Microsoft reports a 3.5x increase in regular users of one feature.",
+    "problem": "The team needed to balance making AI code suggestions discoverable against interrupting developers, and to find the most helpful way to present suggestions.",
+    "research": "Inclusive design research and co-design sessions with existing users, recruited around the cognitive demand of focus (developers with and without ADHD). Sample size and dates are not given.",
+    "insight": "The tool's interruptions made concentration hard: code suggestions appeared automatically too quickly, and the hint bar took a lot of work to find.",
+    "change": "The team co-designed changes that give developers more control over when intelligent suggestions surface, for both inline code insertion suggestions and single-line code change suggestions.",
+    "outcome": "Microsoft reports a 3.5x increase in regular users of inline code insertion suggestions. Testing of the enhanced single-line code change suggestions showed a 176% increase in suggestions accepted and a 29% increase in regular users.",
+    "headline_metric": "3.5x regular users",
+    "attribution": "The case study links the changes to the research, but it does not say how the numbers were measured, over what period, or whether other changes shipped at the same time.",
+    "caveats": "Short promotional case study in Microsoft's inclusive design toolkit, with no method, baseline or dates for the numbers. 'Testing' may mean an A/B test, but this is not stated.",
+    "methods": [
+      "accessibility_research",
+      "co_design",
+      "interviews"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "desktop_software",
+    "metrics": [
+      "adoption",
+      "engagement",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Microsoft Inclusive Design for Cognition: Case Studies (PDF)",
+        "url": "https://inclusive.microsoft.design/tools-and-activities/CaseStudiesCreatingForCognition.pdf",
+        "publisher": "Microsoft Inclusive Design",
+        "date": "2023-03-03"
+      }
+    ]
+  },
+  {
+    "slug": "duolingo-india-everyday-hindi-and-no-paywall",
+    "title": "Duolingo's interviews in India led to everyday Hindi wording and dropping its subscription, lifting active users 6%",
+    "company": "Duolingo",
+    "is_anonymized": false,
+    "summary": "As newly online learners poured into Duolingo in India in 2020, research showed its Hindi interface used formal words even native speakers found hard, and that people mistook the Duolingo Plus promotion for a paywall and preferred one-off payments. A/B tests of the fixes lifted onboarding completion by 1%, and removing Duolingo Plus in India raised daily active users by 6%.",
+    "problem": "New learners in India grew 400% year on year, many of them online for the first time. Duolingo's app had been built for markets where people had different language habits and were used to app subscriptions.",
+    "research": "User research with learners in India, including interviews, alongside usage data, followed by A/B tests of each change. The post does not say how the tap-through behaviour was spotted, and gives no participant numbers or dates.",
+    "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
+    "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
+    "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
+    "headline_metric": "+6% DAU",
+    "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
+    "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
+    "methods": [
+      "interviews",
+      "experimentation",
+      "analytics"
+    ],
+    "research_type": "mixed",
+    "industry": "education",
+    "product_type": "mobile_app",
+    "metrics": [
+      "engagement",
+      "conversion",
+      "retention"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Language learning for the next billion: Duolingo in India",
+        "url": "https://blog.duolingo.com/language-learning-for-the-next-billion-duolingo-in-india/",
+        "publisher": "Duolingo Blog",
+        "date": "2020-09-24"
+      }
+    ]
+  }
 ]
