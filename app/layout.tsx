@@ -7,7 +7,15 @@ const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "https://receipts-six-iota.vercel.app");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  twitter: { card: "summary_large_image" },
   title: {
     default: "Receipts — What has UX research ever done for us?",
     template: "%s · Receipts",

@@ -1,0 +1,88 @@
+spool-300-million-button | Unnamed major e-commerce retailer | Removing a forced 'Register' step at checkout: the "$300 million button"
+intuit-quicken-office-use-quickbooks | Intuit | Intuit spots Quicken being used at work and builds QuickBooks
+christensen-milkshake-jobs-to-be-done | Unnamed fast-food chain | Clayton Christensen's milkshake study: commuters 'hire' a shake for a boring drive
+bank-of-america-keep-the-change | Bank of America (with IDEO) | Bank of America 'Keep the Change' grew from watching people round up
+microsoft-office-2007-ribbon-usage-data | Microsoft | Office 2007 usage data stopped the team dropping the Paste button
+etsy-infinite-scroll-killed | Etsy | Etsy's infinite scroll lost in an A/B test, so the team killed it
+ge-healthcare-adventure-series-mri | GE Healthcare | GE Healthcare redesigns scanners as adventures after seeing children's fear
+airbnb-new-york-photos | Airbnb | Airbnb doubles weekly revenue after meeting New York hosts and fixing photos
+kaiser-permanente-nurse-knowledge-exchange | Kaiser Permanente | Kaiser Permanente's shift-change redesign got nurses to patients 3x faster
+pg-febreze-home-visits-repositioning | Procter & Gamble | P&G's Febreze home visits revealed people go 'nose-blind', prompting a relaunch
+lego-friends-girls-research | The LEGO Group | LEGO's four years of research with girls led to LEGO Friends, which doubled sales targets
+pg-swiffer-home-cleaning-observation | Procter & Gamble (with Continuum) | Watching people clean their floors led P&G and Continuum to the Swiffer
+ibm-1999-website-redesign | IBM | IBM's 1999 site redesign: the much-quoted 'help use down 84%, sales up 400%'
+jstor-no-native-app-mobile-intercepts | JSTOR (ITHAKA) | JSTOR drops plans for a native app after in-the-moment mobile interviews
+uk-dh-digital-consultations-no-new-product | UK Department of Health | UK Department of Health discovery concludes no new consultation product is needed
+gds-webchat-no-central-component | Government Digital Service (UK) | GDS research finds no need for a central government webchat platform
+shelter-chatbot-to-triage-discovery | Shelter (UK housing charity) | Shelter drops an AI advice chatbot for triage after discovery research
+embrace-infant-warmer-nepal-field-research | Embrace (Stanford 'Design for Extreme Affordability' project) | Field research in Nepal redirects the Embrace infant warmer toward home use
+firefox-tab-groups-removed-usage-data | Mozilla | Usage data of about 0.01% leads Mozilla to remove Firefox Tab Groups
+zillow-search-map-list-view | Zillow | Zillow keeps map beside listings after user feedback, reports up to 8% more agent contacts
+costco-travel-package-entry-points | Costco Travel | Costco Travel drops a single 'Vacation Packages' entry after testers couldn't book; support calls fall 82%
+american-airlines-trip-management-benchmark | American Airlines | American Airlines benchmarks booking and trip management, lifts completion of key tasks 37%
+spabreaks-discovery-usability-testing | Spabreaks.com | Spabreaks.com usability testing finds booking-funnel fixes; conversion up 28% within six months
+specialist-retailer-baymard-checkout-guidelines | Unnamed specialist online retailer | Multi-store retailer applies checkout usability research, reports checkout conversion doubled
+coop-membership-local-cause-label | Co-op (UK) | Co-op lab tests show members didn't know they could pick a local cause; one-line copy fix lifts selections 10%
+jet-com-product-page-shopper-feedback | Jet.com | Jet.com shopper tests reveal hunt for shipping and returns info; surfacing it lifts conversion about 10%
+panera-catering-site-prototype-testing | Panera Bread | Panera's catering site prototype tests fix retail/catering confusion; revenue per visit up 18% year over year
+zalando-computer-vision-search-pivot | Zalando | Zalando team drops computer-vision search idea after customer research shows outfit hunts start on social media
+zalando-sustainability-cause-based-browsing | Zalando | Zalando research finds half of shoppers don't understand 'sustainable fashion'; it launches browsing by cause
+just-eat-multi-page-checkout | Just Eat | Just Eat watches people order at home, splits accordion checkout into pages; order completion up 5%
+time4sleep-buying-guides-mobile | Time4Sleep | Time4Sleep finds bed shoppers lost and missing buying guides; A/B-tested category page lifts mobile conversion 63%
+intertop-checkout-exit-survey | Intertop | Intertop exit survey shows shoppers can't finish the checkout form; simplified form lifts conversion 54.68% in A/B test
+instacart-shopper-app-field-research | Instacart | Instacart field research with in-store shoppers leads to one-handed app design and one-tap substitution messages
+despegar-pandemic-traveler-research | Despegar | Despegar's pandemic traveler research backs flexible packages and kills the hard sell
+property-finder-whatsapp-leads | Property Finder | Property Finder sees evening browsers reluctant to phone agents, launches WhatsApp enquiries
+rightmove-shared-lists | Rightmove | Rightmove builds Shared Lists after home hunters repeatedly ask for it in user testing
+google-chrome-ssl-warning-redesign | Google (Chrome) | Chrome's research-based SSL warning got about 30% more people to stay safe
+facebook-compassion-research-photo-reporting | Facebook (Meta) | Facebook's compassion research made more people ask friends to take photos down
+google-clips-user-control-from-research | Google (Clips) | Research with parents and photographers put a shutter button on Google's AI camera
+riot-league-of-legends-player-behavior | Riot Games (League of Legends) | Riot's behavioral research raised League of Legends reform rates to 92%
+halo-3-microsoft-playtest-lab | Microsoft Game Studios / Bungie (Halo 3) | 3,000 hours of lab playtesting reshaped Halo 3's levels and weapons
+xbox-adaptive-controller-accessible-packaging | Microsoft (Xbox) | Gamers with limited mobility shaped the Xbox Adaptive Controller's one-hand packaging
+duolingo-placement-test-wording-japan | Duolingo | Duolingo dropped the word 'test' after interviews in Japan and doubled placement tests
+youtube-go-data-cost-field-research | Google (YouTube Go) | Field research in India showed people fear data costs, so YouTube Go shows them
+fortnite-weak-point-playtests | Epic Games (Fortnite) | Fortnite playtests got 80–90% of players using a mechanic they'd been missing
+ford-f150-jobsite-ethnography | Ford (F-150) | 1,000 hours on job sites gave the 2021 Ford F-150 a fold-away shifter and sleep seats
+lyft-ride-for-others | Lyft | Lyft found 10% of rides were booked for someone else and built a flow for it
+waymo-rider-feedback-route-pullover-messaging | Waymo | Waymo rider research led to clearer route and drop-off messaging in driverless cars
+last-of-us-part-ii-accessibility-consultation | Naughty Dog / Sony Interactive Entertainment (The Last of Us Part II) | Consulting disabled players gave The Last of Us Part II 60+ accessibility options
+instagram-hide-like-counts-optional | Instagram / Facebook (Meta) | Instagram's like-count research turned a planned removal into a user choice
+be-my-ai-blind-beta-testers | Be My Eyes (with OpenAI) | Blind beta testers shaped Be My AI's safety limits and human fallback
+google-pixel-guided-frame-blind-testers | Google (Pixel) | Testing with blind users made Pixel's Guided Frame coach in real time and auto-capture
+kooapps-snake-io-playtesting | Kooapps (Snake.io) | Remote playtests helped Snake.io lift tutorial completions 40%
+facebook-reactions-emotion-research | Facebook (Meta) | Emotion research and seven-country testing picked Facebook's five Reactions
+british-gas-bill-redesign | British Gas (with Lippincott) | British Gas bill redesign cut query calls by 3,000 a week
+sage-intacct-product-tour-conversion | Sage | Sage's research-led site changes lifted Intacct page conversion
+comed-customer-designed-bill | ComEd (Commonwealth Edison) | ComEd rebuilt its electricity bill around what customers said mattered
+gitlab-settings-pages-findability | GitLab | GitLab settings redesign raised first-click success from 34% to 97% on a key task
+gitlab-devops-stage-navigation-decision | GitLab | GitLab research steered it away from organising navigation by DevOps stage
+google-infrastructure-tools-console-consolidation | Google (Technical Infrastructure UX team) | Google survey of 10,000 developers reshaped its internal infrastructure tooling strategy
+ee-roaming-chatbot-and-app-navigation | EE (BT Group) | EE's prototype testing raised chatbot containment by 75% and trimmed calls 2.4%
+monzo-gambling-block | Monzo | Monzo's gambling block, shaped by affected customers, used by ~100,000 people in 10 months
+credit-sesame-ios-app-relaunch | Credit Sesame | Credit Sesame's research-tested iOS relaunch lifted completed registrations 31.7%
+banco-sabadell-qxscore-launch-gate | Banco Sabadell | Banco Sabadell made a usability score a launch gate and reports 50% faster delivery
+everypaw-tv-ad-concept-testing | Everypaw (Cardif Pinnacle, BNP Paribas Cardif) | Everypaw pet insurance tested its TV ad with owners; quote starts after airings rose 85%
+purefy-landing-page-interviews | Purefy | Purefy's borrower interviews led to a landing-page fix that lifted conversion 36%
+anonymous-fintech-autopay-research-redesign | Bay Area fintech lender (unnamed) | Lender's research-led repayment redesign raised autopay activation 25%
+slack-2020-redesign-pilot-and-benchmark | Slack | Slack's 2020 redesign changed course on several features after a 100-user pilot and benchmark tests
+slack-2023-redesign-search-placement | Slack | Slack moved search back to the top after research showed users couldn't find it
+xero-new-invoicing-feedback-fixes | Xero | Xero reworked its new invoicing screens after users said they were slower
+insure4retirement-quote-journey-usability | Insure4Retirement (AJG group) | Insure4Retirement doubled quote completion after usability testing moved contact questions later
+michigan-mdhhs-project-reform-benefits-application | Michigan Department of Health and Human Services (with Civilla) | Michigan's benefits form cut from 1,000 questions to 213 after in-home research
+login-gov-identity-proofing-photo-step | Login.gov (U.S. General Services Administration) | Login.gov lifted identity-proofing success from 51% to 74% after user testing
+vets-gov-health-care-application | U.S. Department of Veterans Affairs (with U.S. Digital Service) | VA's online health care applications rose from about 62 to 500+ a day after a researched rebuild
+getcalfresh-application-time | Code for America with California Department of Social Services | GetCalFresh cut California's food-aid application from 45 to about 10 minutes
+hmcts-online-divorce-form-errors | HM Courts & Tribunals Service (UK Ministry of Justice) | HMCTS online divorce cut error-driven form returns from about 40% to 0.5%
+legal-and-general-accessible-website | Legal & General | Legal & General's accessibility-led rebuild doubled quote requests within 3 months
+canada-cra-contact-pages-task-success | Canada Revenue Agency (with TBS Digital Transformation Office) | Canada Revenue Agency contact pages: task success rose from 40% to 85% in testing
+canada-diseases-immunization-content | Health Canada and Public Health Agency of Canada (with TBS Digital Transformation Office) | Canada's vaccine and disease pages: task completion rose from 53% to 84% on mobile
+canada-student-loans-grants-pages | Employment and Social Development Canada (Canada Student Grants and Loans Program) | Canada student aid pages: task success rose from 61% to 88% after research-led rework
+wikipedia-sticky-header | Wikimedia Foundation | Wikipedia's research-shaped sticky header cut scrolling 15% in an A/B test
+social-security-scotland-experience-panels | Scottish Government / Social Security Scotland | Scotland's 2,400-member experience panels reshaped how its new benefits agency treats people
+medicare-plan-finder-drug-costs | Centers for Medicare & Medicaid Services (with Ad Hoc) | Medicare Plan Finder rebuilt around drug costs reported 40% more enrollments
+va-medication-alerts-human-factors-redesign | U.S. Department of Veterans Affairs (VA HSR&D research team) | Human-factors redesign of VA drug alerts halved prescribing errors in a controlled simulation
+irs-direct-file-pilot | Internal Revenue Service (with U.S. Digital Service and 18F) | IRS Direct File, built through 33 studies with taxpayers, scored 90% excellent or above average
+tesco-access-blind-shoppers | Tesco (with RNIB) | Tesco Access, tested with 90 visually impaired users, was credited with £13m a year on a £35k build
+durham-university-website-ucas-referrals | Durham University (with CTI Digital) | Durham University's research-led site consolidation lifted UCAS application click-throughs 52%
+louisiana-lamessage-benefit-renewal-texts | Code for America with Louisiana Department of Children and Family Services and Department of Health | Louisiana's research-led text reminders: SNAP renewals 70% vs 51% for non-opted-in clients
