@@ -1,0 +1,762 @@
+[
+  {
+    "slug": "spool-300-million-button",
+    "title": "Removing a forced 'Register' step at checkout: the \"$300 million button\"",
+    "company": "Unnamed major e-commerce retailer",
+    "is_anonymized": true,
+    "summary": "Jared Spool describes usability testing of an unnamed large retailer's checkout, where shoppers balked at a login/register form placed before payment. Replacing the Register button with a Continue button (registration optional) is reported to have lifted purchasing customers by 45% and added $300 million in the first year.",
+    "problem": "Checkout began with a form asking shoppers to log in or register. The design team assumed this helped repeat buyers and that first-timers would not mind registering.",
+    "research": "Usability tests in which participants who needed to buy products brought shopping lists and were given money to buy them on the site. The team then analyzed the retailer's customer database and password-request logs.",
+    "insight": "First-time shoppers resented being pushed to register ('I'm not here to enter into a relationship. I just want to buy something'). Repeat shoppers often could not remember which email or password they had used. The database showed 45% of customers had multiple registrations, and about 160,000 password requests a day, 75% of which never ended in a purchase.",
+    "change": "The Register button was removed and replaced with a Continue button plus a message saying an account was not needed to buy; shoppers could optionally create one during checkout.",
+    "outcome": "Per Spool: the number of customers purchasing went up 45%, extra purchases brought in $15 million in the first month, and $300,000,000 in extra revenue in the first year.",
+    "headline_metric": "+$300M revenue in yr 1",
+    "attribution": "Direct in the story: the design change came straight from usability-test observations and log analysis. But the only account is the consultant's own article.",
+    "caveats": "Told by Jared Spool, whose firm (UIE) did the work, so it is an agency writing about its own client. The retailer is never named and the figures have never been independently verified. No control group or test method is described; the numbers are a before/after claim. Widely retold, sometimes with details drifting.",
+    "methods": [
+      "usability_testing",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "revenue",
+      "conversion"
+    ],
+    "company_size": "enterprise",
+    "year": 2009,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "The $300 Million Button",
+        "url": "https://articles.centercentre.com/three_hund_million_button/",
+        "publisher": "Center Centre / UIE (Jared M. Spool)",
+        "date": "2009-01-14"
+      }
+    ]
+  },
+  {
+    "slug": "intuit-quicken-office-use-quickbooks",
+    "title": "Intuit spots Quicken being used at work and builds QuickBooks",
+    "company": "Intuit",
+    "is_anonymized": false,
+    "summary": "Survey data showed many Quicken customers were running the personal-finance product in offices for bookkeeping. Scott Cook says Intuit talked to those users, learned they wanted Quicken's simplicity for business accounting, and launched QuickBooks as accounting software 'with no accounting in it'.",
+    "problem": "Quicken was designed for household finances. Intuit had no small-business product and was not looking to build one.",
+    "research": "Customer survey data, followed by conversations with the users who reported using Quicken at work. Intuit is also known for its 'Follow Me Home' practice of watching customers use software in their own setting, though the source for this case does not tie that method to it specifically.",
+    "insight": "Many respondents were using Quicken in their bookkeeping jobs, not at home, because they liked its simple checkbook-style approach and found conventional accounting software too complex.",
+    "change": "Intuit built and launched QuickBooks, positioned as the first accounting software with no accounting in it.",
+    "outcome": "Cook says QuickBooks outsold the competition within two months of launch, and that QuickBooks today makes up half of Intuit's business.",
+    "headline_metric": "Led category in 2 months",
+    "attribution": "The founder directly credits the surprising survey result and follow-up conversations with the decision to create the product. The commercial outcome is the founder's own account.",
+    "caveats": "Founder storytelling in a university talk, recounted decades later; no data published. The source gives the launch year as 1991 (other sources say 1992). Commercial success also depended on many other factors. Counted as a pivot/new-product decision rather than a measured research effect.",
+    "methods": [
+      "survey",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "finance",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "revenue",
+      "adoption"
+    ],
+    "company_size": "midmarket",
+    "year": 1991,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Savor surprises: A conversation with Intuit co-founder Scott Cook",
+        "url": "https://business.wisc.edu/news/savor-surprises-a-conversation-with-intuit-co-founder-scott-cook/",
+        "publisher": "Wisconsin School of Business",
+        "date": "2022"
+      }
+    ]
+  },
+  {
+    "slug": "christensen-milkshake-jobs-to-be-done",
+    "title": "Clayton Christensen's milkshake study: commuters 'hire' a shake for a boring drive",
+    "company": "Unnamed fast-food chain",
+    "is_anonymized": true,
+    "summary": "A fast-food chain's demographic segmentation and 'ideal milkshake' feedback had failed to lift sales. Observing a restaurant for a day and interviewing customers showed about 40% of shakes were bought early in the morning by commuters who wanted something filling and slow to consume one-handed in the car. The recommendation was a thicker morning shake and a separate thinner shake for kids.",
+    "problem": "The chain had asked people fitting the typical milkshake-buyer profile what an ideal shake would be and changed the product accordingly, but sales did not improve.",
+    "research": "A researcher working with Christensen spent a full day in one restaurant recording who bought shakes, when, and whether they ate in or left. The next morning he interviewed customers leaving with shakes about what job they were 'hiring' the shake to do. The number of interviews is not given.",
+    "insight": "Around 40% of shakes were bought first thing in the morning, to go, by people facing a long, dull commute. They wanted something to occupy one free hand, keep them full until mid-morning and not make a mess on work clothes; a thick shake through a thin straw beat bagels or doughnuts on all counts. Demographics did not explain the purchase; the situation did.",
+    "change": "Christensen's team recommended a thicker, more interesting morning shake (e.g. with fruit chunks) to last the commute, and a separate thinner shake for children in the afternoon.",
+    "outcome": "The source does not report whether the chain made the changes or whether sales rose. The case is cited as the origin story for the jobs-to-be-done approach to research.",
+    "headline_metric": null,
+    "attribution": "The research clearly produced the recommendation, but there is no documented business outcome.",
+    "caveats": "Classic teaching story told by Christensen in talks and books; the chain is never named in the original HBS write-up (it is often assumed to be McDonald's in retellings, which is not confirmed there). No sample sizes, dates or sales results are published. Include as a famous illustration of a research reframing, not as proof of impact.",
+    "methods": [
+      "field_study",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "food_delivery",
+    "product_type": "physical_product",
+    "metrics": [],
+    "company_size": "enterprise",
+    "year": 2011,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Clay Christensen's Milkshake Marketing",
+        "url": "https://www.library.hbs.edu/working-knowledge/clay-christensens-milkshake-marketing",
+        "publisher": "Harvard Business School Working Knowledge (Carmen Nobel)",
+        "date": "2011-02-14"
+      }
+    ]
+  },
+  {
+    "slug": "bank-of-america-keep-the-change",
+    "title": "Bank of America 'Keep the Change' grew from watching people round up",
+    "company": "Bank of America (with IDEO)",
+    "is_anonymized": false,
+    "summary": "IDEO and Bank of America's innovation team observed people in three US cities and noticed they routinely rounded up transactions for convenience, while many mothers struggled to save. The resulting service rounds debit card purchases up to the next dollar and moves the difference to savings. It reportedly attracted 2.5 million customers.",
+    "problem": "Bank of America wanted to attract new account holders, particularly in a target audience of mothers.",
+    "research": "Field observation by IDEO alongside members of Bank of America's innovation team in Atlanta, Baltimore and San Francisco (around 2004–2005). Sample size and session details are not published in the source.",
+    "insight": "People in the target audience and beyond often rounded up their financial transactions for speed and convenience, and many mothers had trouble saving, whether for lack of money or willpower.",
+    "change": "The bank launched 'Keep the Change', which rounds purchases on a Bank of America Visa debit card up to the nearest dollar and transfers the difference from checking to savings.",
+    "outcome": "Core77 reports the program 'attracted 2.5 million customers', translating into more than 700,000 new checking accounts and one million new savings accounts.",
+    "headline_metric": "2.5M customers",
+    "attribution": "The product concept is directly credited to the observed rounding behaviour. Account growth is reported, but the share caused by this program versus marketing and other factors is unknown.",
+    "caveats": "Figures appear to come from IDEO/Bank of America material repeated in design press; no method for counting 'attracted' customers is given. IDEO had an incentive to promote the case. Figures and target-audience descriptions vary across later retellings.",
+    "methods": [
+      "field_study",
+      "ethnography"
+    ],
+    "research_type": "generative",
+    "industry": "finance",
+    "product_type": "service",
+    "metrics": [
+      "adoption",
+      "revenue"
+    ],
+    "company_size": "enterprise",
+    "year": 2007,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Bank of America enlists IDEO's services, FTW",
+        "url": "https://www.core77.com/posts/5564/Bank-of-America-enlists-IDEOs-servicesFTW",
+        "publisher": "Core77",
+        "date": "2007-02-20"
+      }
+    ]
+  },
+  {
+    "slug": "microsoft-office-2007-ribbon-usage-data",
+    "title": "Office 2007 usage data stopped the team dropping the Paste button",
+    "company": "Microsoft",
+    "is_anonymized": false,
+    "summary": "For the Office 2007 redesign (the Ribbon), Microsoft mined opt-in usage data from Office 2003 alongside years of usability testing. The data overturned an internal assumption that the toolbar Paste button was unnecessary, and Paste became the first big button in Word's Ribbon. Usability tests had also shown people rarely clicked unlabeled icons, so Ribbon commands were labeled.",
+    "problem": "Office had grown to thousands of commands spread across menus, toolbars and task panes. People could not find features, and design debates were driven by guesses and anecdotes about how people used the product.",
+    "research": "Opt-in telemetry from the Office Customer Experience Improvement Program (SQM), covering all opted-in Word 2003 users and every command run by any means; plus usability testing over several years and early tests of Ribbon prototypes.",
+    "insight": "Paste alone was over 11% of all Word 2003 commands, more than twice the next (Save), and the top five commands were about 32% of use. Even though many people used Ctrl+V or the context menu, the Paste toolbar button was still the most-clicked button. Usability tests also showed most people don't click unlabeled 16x16 icons beyond the first few.",
+    "change": "The team dropped an early idea of leaving Cut/Copy/Paste buttons out of the Ribbon and made Paste the first large button on Word's first tab. Ribbon commands were given text labels.",
+    "outcome": "Jensen Harris writes that the data 'kept us from making a crucial, stupid mistake' that beta testers, being expert users, might not have caught. No post-launch metrics are given.",
+    "headline_metric": null,
+    "attribution": "Direct: the design lead names the specific decision the data changed.",
+    "caveats": "Written by Microsoft's own UX lead. Analytics is behavioural data rather than direct observation, though it was paired with usability testing. No outcome metric; the Ribbon itself was controversial with experienced users at launch.",
+    "methods": [
+      "analytics",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "desktop_software",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2006,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "No Distaste for Paste (Why the UI, Part 7)",
+        "url": "https://learn.microsoft.com/en-us/archive/blogs/jensenh/no-distaste-for-paste-why-the-ui-part-7",
+        "publisher": "Jensen Harris: An Office User Interface Blog (Microsoft)",
+        "date": "2006-04-07"
+      },
+      {
+        "title": "Enter the Ribbon",
+        "url": "https://learn.microsoft.com/en-us/archive/blogs/jensenh/enter-the-ribbon",
+        "publisher": "Jensen Harris: An Office User Interface Blog (Microsoft)",
+        "date": "2005-09-15"
+      }
+    ]
+  },
+  {
+    "slug": "etsy-infinite-scroll-killed",
+    "title": "Etsy's infinite scroll lost in an A/B test, so the team killed it",
+    "company": "Etsy",
+    "is_anonymized": false,
+    "summary": "Etsy built infinite scroll for search results on the assumption that more items, faster, would help buyers. A controlled test showed the opposite: people saw and clicked fewer items, favorited fewer and bought fewer items from search. Follow-up tests showed the premises behind the feature were wrong, and it was removed.",
+    "problem": "The team believed showing more search results, faster, would be a better shopping experience, and invested in building infinite scroll before checking whether that belief held.",
+    "research": "An A/B test of infinite scroll against standard paginated search, followed by a month of checking for browser- and location-specific bugs, then two smaller experiments testing the underlying premises: more results per page, and artificially slower search.",
+    "insight": "Users with infinite scroll saw fewer items than the control group, clicked fewer, saved fewer favorites and bought fewer items from search (overall purchases held because people found items other ways). Showing more results per page barely changed behaviour and did not increase purchases; adding delay to search changed nothing measurable.",
+    "change": "Etsy removed infinite scroll ('we took infinite scroll out back and we shot it') and changed its process to validate premises with minimal experiments before building large features.",
+    "outcome": "A feature that hurt search engagement and search-driven purchases was rolled back. Dan McKinley's talk gives directional results but no percentages; avoided cost is the main win, plus a shift in how Etsy scoped product work.",
+    "headline_metric": null,
+    "attribution": "Direct: the experiment results were the stated reason for removing the feature.",
+    "caveats": "First-party conference talk by an Etsy engineer (2012). The win is avoiding a harmful change after it was built, not before. Exact effect sizes are not in the talk transcript; larger percentages circulating in third-party blogs could not be verified. This is experimentation rather than qualitative research.",
+    "methods": [
+      "experimentation",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "web_app",
+    "metrics": [
+      "engagement",
+      "conversion",
+      "cost_avoided"
+    ],
+    "company_size": "midmarket",
+    "year": 2012,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Design for Continuous Experimentation (talk transcript)",
+        "url": "https://mcfunley.com/continuous-experimentation/",
+        "publisher": "Dan McKinley (mcfunley.com)",
+        "date": "2012"
+      }
+    ]
+  },
+  {
+    "slug": "ge-healthcare-adventure-series-mri",
+    "title": "GE Healthcare redesigns scanners as adventures after seeing children's fear",
+    "company": "GE Healthcare",
+    "is_anonymized": false,
+    "summary": "GE designer Doug Dietz saw a frightened child facing an MRI scan he had designed and realised he had designed the machine, not the experience. Working with children, child-life specialists and children's-museum experts, GE created the 'Adventure Series', themed rooms that turn a scan into a story. Hospitals using it report scanning about 7% more children.",
+    "problem": "Many young children were too frightened to lie still for MRI and CT scans; Dietz cites about 80% of children aged 3 to 8 needing sedation, which adds risk, time and cost.",
+    "research": "Input from childhood-learning experts at Milwaukee's Betty Brinn Children's Museum, child-life specialists at children's hospitals, and children themselves in brainstorming sessions. Dietz's starting point was watching families struggle through scans.",
+    "insight": "The problem was the experience around the machine, not the machine. Children's own ideas shaped themes: a boy said the machines were too noisy, which led to a space-adventure theme where the noise is part of the story; another suggested the table be a sleeping bag ('Cozy Camp').",
+    "change": "GE created themed scanner rooms (e.g. space, camping, pirate) with a scripted story staff use to guide children through the scan.",
+    "outcome": "Hospitals using the designs report about a 7% increase in patient volume (scans of children). The Milwaukee Magazine piece gives no sedation or satisfaction figures; an anecdote describes a 6-year-old completing a 40-minute PET/CT scan in the Cozy Camp room.",
+    "headline_metric": "+7% pediatric scans",
+    "attribution": "The design is clearly a product of the co-design work. The 7% figure is reported by hospitals via GE and is not linked to a specific study.",
+    "caveats": "Widely retold, often with larger, unsourced claims about sedation dropping sharply and satisfaction rising 90%; those could not be verified from an original source and are excluded here. The 80% baseline is Dietz's own figure without a cited study. Outcome comes from the manufacturer's account.",
+    "methods": [
+      "co_design",
+      "field_study",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "healthcare",
+    "product_type": "physical_product",
+    "metrics": [
+      "task_success",
+      "revenue"
+    ],
+    "company_size": "enterprise",
+    "year": 2013,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "A Scanner Not So Darkly",
+        "url": "https://www.milwaukeemag.com/2013/12/02/AScannerNotSoDarkly/",
+        "publisher": "Milwaukee Magazine",
+        "date": "2013-12-02"
+      },
+      {
+        "title": "Scary CT Scans Get a Kid-Friendly Makeover",
+        "url": "https://www.wuwm.com/podcast/lake-effect-segments/2013-09-25/scary-ct-scans-get-kid-friendly-makeover",
+        "publisher": "WUWM Milwaukee Public Radio",
+        "date": "2013-09-25"
+      }
+    ]
+  },
+  {
+    "slug": "airbnb-new-york-photos",
+    "title": "Airbnb doubles weekly revenue after meeting New York hosts and fixing photos",
+    "company": "Airbnb",
+    "is_anonymized": false,
+    "summary": "In Airbnb's early days, its New York listings weren't converting. The founders reviewed the listings, saw that the photos were poor, then flew to New York to meet hosts and re-photograph their homes themselves. Weekly revenue reportedly went from $200 to $400.",
+    "problem": "Growth had stalled for months and New York listings were getting little booking traction.",
+    "research": "The founders reviewed their roughly 40 New York listings for patterns, then went to New York, visited hosts in person and photographed their places (around 2009).",
+    "insight": "The listings shared one problem: the photos were bad, so guests couldn't see what they would be paying for. Meeting hosts in person also showed the founders what hosts needed.",
+    "change": "The founders replaced amateur photos with high-quality ones taken themselves; this later grew into Airbnb's professional photography program for hosts.",
+    "outcome": "First Round Review reports that better photos doubled weekly revenue from $200 to $400, the first financial improvement in over eight months.",
+    "headline_metric": "$200 to $400/week",
+    "attribution": "Founder-told story. The change is clearly linked to what they observed, but there was no control and the timeframe is short.",
+    "caveats": "This is founder lore retold in many forms (camera cost and details vary). The 'research' was informal: reviewing listings and visiting hosts, not a structured study. Revenue at that scale is noisy. Often cited as a design-thinking or 'do things that don't scale' story rather than a research one.",
+    "methods": [
+      "heuristic_review",
+      "field_study"
+    ],
+    "research_type": "generative",
+    "industry": "travel_hospitality",
+    "product_type": "website",
+    "metrics": [
+      "revenue",
+      "conversion"
+    ],
+    "company_size": "startup",
+    "year": 2009,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "How design thinking transformed Airbnb from a failing startup to a billion dollar business",
+        "url": "https://review.firstround.com/how-design-thinking-transformed-airbnb-from-failing-startup-to-billion-dollar-business/",
+        "publisher": "First Round Review",
+        "date": "2015-02-03"
+      }
+    ]
+  },
+  {
+    "slug": "kaiser-permanente-nurse-knowledge-exchange",
+    "title": "Kaiser Permanente's shift-change redesign got nurses to patients 3x faster",
+    "company": "Kaiser Permanente",
+    "is_anonymized": false,
+    "summary": "Kaiser Permanente's in-house Innovation Consultancy, which learned human-centered design with IDEO, spent hundreds of hours observing nurses and found that shift changes were a weak point for both information and patient contact. The resulting Nurse Knowledge Exchange redesign moved handoffs toward the bedside. KP reports that in the pilot nurses saw patients at the start of their shift three times faster.",
+    "problem": "Nurses spent little time at the bedside, and shift changes were chaotic: information was lost between nurses and patients had to wait for the incoming nurse.",
+    "research": "Over 300 hours of observation of nurses, patients, physicians and support staff, over 20 hours of formal interviews across roles, and a time-and-motion study; followed by storytelling, synthesis, brainstorming, prototyping and field testing on units.",
+    "insight": "Most of nurses' attention was taken up by the 'system' (documentation, equipment, interruptions) rather than caring for patients, and shift change created hectic starts, especially with patients in pain.",
+    "change": "Nurse Knowledge Exchange (later NKEplus): structured handoff with patient involvement, a final hourly round before shift change (pain, toileting, positioning, personal items), support staff covering call lights during handoff, and a unit safety check.",
+    "outcome": "KP's Innovation Consultancy reports that 'nurses got to see patients at the start of their shift 3x faster under NKE pilot'. The model later spread across KP units.",
+    "headline_metric": "3x faster to patients",
+    "attribution": "The redesign came directly out of the observation work. The 3x figure is from a pilot, as reported by the team that designed it.",
+    "caveats": "Source is a first-party conference deck (2010) with headline figures and no method for the 3x measurement. IDEO's role was teaching the method, so it's sometimes retold as an IDEO project. Pilot results may not hold at scale.",
+    "methods": [
+      "field_study",
+      "interviews",
+      "co_design",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "healthcare",
+    "product_type": "service",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2010,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Using Human Centered Design to Achieve Operational Impact (Kaiser Permanente Innovation Consultancy, Christi Zuber)",
+        "url": "https://www.poms.org/KP's_Innovation_Christi_Zuber.pdf",
+        "publisher": "POMS College of Healthcare Operations Management",
+        "date": "2010-05-06"
+      }
+    ]
+  },
+  {
+    "slug": "pg-febreze-home-visits-repositioning",
+    "title": "P&G's Febreze home visits revealed people go 'nose-blind', prompting a relaunch",
+    "company": "Procter & Gamble",
+    "is_anonymized": false,
+    "summary": "Febreze launched as an odor eliminator and sold poorly. P&G researchers visiting homes met a woman with nine cats whose house smelled strongly but who couldn't smell it herself, which showed that people stop noticing their own bad smells. P&G repositioned Febreze as a pleasant finishing scent and it became a bestseller.",
+    "problem": "After millions spent developing a spray that removed odors, sales of the launch campaign (smoky jackets, smelly sofas) were low.",
+    "research": "Home visits to customers by P&G researchers, as recounted by journalist Charles Duhigg (1990s).",
+    "insight": "People become desensitized to the smells in their own homes, so they don't feel a need for an odor remover. What they did want was a nice smell after cleaning.",
+    "change": "P&G repositioned Febreze as an air freshener that adds a pleasant scent at the end of cleaning, rather than a fix for bad smells.",
+    "outcome": "Priceonomics, citing Duhigg, says the product 'became a bestseller'. Retellings give larger figures (sales doubling within two months; a $1 billion brand) that could not be verified from an accessible original here.",
+    "headline_metric": "Became a bestseller",
+    "attribution": "The insight from home visits is credited with the repositioning. But the commercial turnaround also involved new scents and advertising, and the story comes via a journalist, not P&G data.",
+    "caveats": "Secondhand: from Duhigg's 2012 New York Times Magazine article and book The Power of Habit, here confirmed via a summary that cites them. P&G has not published the research. Numbers have drifted in retelling; treat as an illustrative classic.",
+    "methods": [
+      "field_study",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "physical_product",
+    "metrics": [
+      "revenue"
+    ],
+    "company_size": "enterprise",
+    "year": 2012,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Priceonomics summary of the Febreze story (citing Charles Duhigg, NYT)",
+        "url": "https://priceonomics.com/?p=4105",
+        "publisher": "Priceonomics",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "lego-friends-girls-research",
+    "title": "LEGO's four years of research with girls led to LEGO Friends, which doubled sales targets",
+    "company": "The LEGO Group",
+    "is_anonymized": false,
+    "summary": "With about 90% of its consumers boys, LEGO spent roughly four years studying how girls play and testing ideas with them. The resulting LEGO Friends line (2012) used mini-doll figures, named characters and detailed settings. NPR reports it doubled sales expectations in its launch year and sales to girls tripled.",
+    "problem": "In 2011, 90% of LEGO's consumers were boys, and earlier attempts to sell to girls had not worked.",
+    "research": "About four years of research into how girls and boys play, including asking girls what they would want in sets (e.g. 'what would you like to see in a Lego school?'). Sample sizes are not given in the NPR report; other sources cite figures from 3,000 to 4,500 girls and mothers that vary between accounts.",
+    "insight": "When girls build, they tend to play 'on the inside' of a structure and with characters and stories, and they value small, realistic details (an art studio with paint canisters and a canvas, for example).",
+    "change": "LEGO launched Friends: five named mini-doll characters with storylines and detailed settings such as a vet's office, karate studio and beauty parlour.",
+    "outcome": "Per NPR: the line 'doubled sales expectations in 2012', the year it launched, and 'sales to girls tripled in just that year'.",
+    "headline_metric": "2x sales expectations",
+    "attribution": "The research shaped the line's design and is widely credited for its success, but launch-year sales also depend on marketing, retail placement and price; no causal analysis is published.",
+    "caveats": "Sales figures are company statements reported by press. The line was criticized for reinforcing gender stereotypes, so 'success' is commercial, not a verdict on the research framing. Research sample sizes differ across sources.",
+    "methods": [
+      "field_study",
+      "concept_testing",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "physical_product",
+    "metrics": [
+      "revenue",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2012,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Girls' Legos Are A Hit, But Why Do Girls Need Special Legos?",
+        "url": "https://www.kunc.org/2013-06-29/girls-legos-are-a-hit-but-why-do-girls-need-special-legos",
+        "publisher": "NPR (Neda Ulaby), via KUNC",
+        "date": "2013-06-29"
+      }
+    ]
+  },
+  {
+    "slug": "pg-swiffer-home-cleaning-observation",
+    "title": "Watching people clean their floors led P&G and Continuum to the Swiffer",
+    "company": "Procter & Gamble (with Continuum)",
+    "is_anonymized": false,
+    "summary": "P&G asked design firm Continuum to help invent a better mop. Researchers videotaped people cleaning at home and saw how much they hated touching dirty mops, and that most floor dirt was dust that could be picked up electrostatically. The Swiffer launched in 1999 and is reported to have sold more than 11 million starter kits in its first year.",
+    "problem": "P&G's new-ventures group wanted a better way to clean floors; mops and buckets were messy and disliked.",
+    "research": "In-home observation and video of people cleaning (late 1990s). Because participants often cleaned before researchers arrived, researchers reportedly started bringing in dirt themselves, for example spilling coffee grounds, to watch real clean-up.",
+    "insight": "People hated handling dirty mops and wringing them out; much of the dirt was fine dust that could be picked up electrostatically. One older participant swept spilled coffee grounds and then used a damp paper towel for the fine residue rather than a mop.",
+    "change": "The Swiffer: a lightweight sweeper with disposable electrostatic or wet cloths, sold on a razor-and-blades model.",
+    "outcome": "Continuum's case study says it generated $100 million in sales in its first four months, more than 11.1 million starter kits sold in the US within a year, and eventually became a $500 million annual brand.",
+    "headline_metric": "11.1M kits in year 1",
+    "attribution": "The product concept is credited to the observation work by both the agency and independent press. Sales also reflect P&G's distribution and marketing power.",
+    "caveats": "Sales figures come from the design agency's own case study (incentive to promote); independent press (Boston Globe) confirms the research story and calls the product a 'blockbuster' without numbers. The coffee-grounds anecdote appears in marketing retellings without a cited source. P&G has not published current sales.",
+    "methods": [
+      "ethnography",
+      "field_study"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "physical_product",
+    "metrics": [
+      "revenue",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 1999,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Procter & Gamble customer case study (EPAM Continuum)",
+        "url": "https://www.casestudies.com/company/epam-continuum/case-study/procter-gamble-customer-case-study-2",
+        "publisher": "CaseStudies.com / EPAM Continuum",
+        "date": null
+      },
+      {
+        "title": "In Swiffer, a pet project that went big",
+        "url": "https://www.bostonglobe.com/business/2016/03/22/product-development-race-goes-swiffer/ddjA1UKErXX33B2Vx1rdsJ/story.html",
+        "publisher": "The Boston Globe (Megan Woolhouse)",
+        "date": "2016-03-22"
+      },
+      {
+        "title": "Why researchers tricked a woman into cleaning her floor",
+        "url": "https://marketingsociety.com/the-library/why-researchers-tricked-woman-cleaning-her-floor",
+        "publisher": "The Marketing Society (Giles Lury)",
+        "date": "2015-01-18"
+      }
+    ]
+  },
+  {
+    "slug": "ibm-1999-website-redesign",
+    "title": "IBM's 1999 site redesign: the much-quoted 'help use down 84%, sales up 400%'",
+    "company": "IBM",
+    "is_anonymized": false,
+    "summary": "Usage data showed that the most-used features on IBM's late-1990s website were search and then the Help button, signs that people could not navigate the site. IBM redesigned the site around ease of use and relaunched in February 1999. The widely quoted result is that Help use fell 84% and sales rose 400%.",
+    "problem": "IBM's web presence was a hard-to-navigate maze of separate subsites. Search was the most popular feature because navigation failed, and Help was second because search worked poorly.",
+    "research": "Analysis of how visitors used the site (feature usage), as described in secondary accounts. The redesign took about 10 weeks and more than 100 employees, at a cost estimated 'in the millions'. Details of any usability testing are not given.",
+    "insight": "Heavy use of search and Help was a symptom of failed navigation, not a sign those features were working.",
+    "change": "A site-wide redesign to make IBM's web presence more cohesive and easier to navigate, relaunched February 1999.",
+    "outcome": "Secondary accounts say: in the first week after the redesign, use of the Help button fell 84% and sales rose 400%. Another account says IBM announced, one month after relaunch, that traffic to the Shop IBM store rose 120% and sales went up 400%.",
+    "headline_metric": "+400% sales (claimed)",
+    "attribution": "Weak. The figures are IBM's own announcement relayed by press; the redesign was large and the research input is thinly described. Sales growth in 1999 e-commerce had many other drivers.",
+    "caveats": "A staple of 'usability ROI' slide decks, but sources disagree on the timeframe (first week vs. one month). The original source (InfoWorld, 1999) is no longer online; the figures here are confirmed only in secondary academic material citing it. Baselines are not given, so a 400% rise could be from a small base. Treat as folklore with a paper trail, not evidence.",
+    "methods": [
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "website",
+    "metrics": [
+      "revenue",
+      "support_cost"
+    ],
+    "company_size": "enterprise",
+    "year": 1999,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "User Centered Design works... (lecture slides, citing IBM figures)",
+        "url": "https://rauterberg.employee.id.tue.nl/publications/2003-ucd-works.pdf",
+        "publisher": "Matthias Rauterberg, Technical University Eindhoven",
+        "date": "2003"
+      },
+      {
+        "title": "Modeling Web Usability Diagnostics on the Basis of Usage Statistics (book chapter, citing Battey, InfoWorld 1999)",
+        "url": "https://www.avi.har-el.com/eng/Articles/Wiley-c07.pdf",
+        "publisher": "Harel, Kenett & Ruggeri (Wiley)",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "jstor-no-native-app-mobile-intercepts",
+    "title": "JSTOR drops plans for a native app after in-the-moment mobile interviews",
+    "company": "JSTOR (ITHAKA)",
+    "is_anonymized": false,
+    "summary": "JSTOR had to decide between building a separate mobile app or a responsive website, and its analytics couldn't show how research moved across devices. Short live interviews with people using JSTOR on phones and tablets showed they often started research on one device and finished on another. JSTOR decided not to build an app and invested in a consistent responsive site plus user accounts.",
+    "problem": "A product-strategy decision: build a dedicated JSTOR mobile app, or make the website responsive? Analytics could not explain mobile users' wider workflows.",
+    "research": "Targeted live intercepts of mobile-only visitors (phones and tablets) via Ethnio, inviting them to a 10-minute interview and calling them within 30 minutes of opting in. Participant numbers are not published.",
+    "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
+    "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
+    "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
+    "headline_metric": null,
+    "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
+    "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
+    "methods": [
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "education",
+    "product_type": "web_app",
+    "metrics": [
+      "cost_avoided"
+    ],
+    "company_size": "midmarket",
+    "year": null,
+    "evidence_strength": "decision",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "JSTOR (ITHAKA): Taking a leap into targeted mobile intercepts",
+        "url": "https://ethn.io/customers/ithaka",
+        "publisher": "Ethnio",
+        "date": null
+      },
+      {
+        "title": "JSTOR reaches mobile users in 10-minute live interviews with Ethnio",
+        "url": "https://www.casestudies.com/company/ethnio/case-study/jstor-reaches-mobile-users-in-10-minute-live-interviews-with-ethnio",
+        "publisher": "CaseStudies.com",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "uk-dh-digital-consultations-no-new-product",
+    "title": "UK Department of Health discovery concludes no new consultation product is needed",
+    "company": "UK Department of Health",
+    "is_anonymized": false,
+    "summary": "A six-week discovery into how the Department of Health runs public consultations looked at respondents, organisations that collate responses, and policy makers. The team concluded that the needs could be met by using existing tools better, writing in plain English and communicating throughout policy-making, rather than building a new digital product.",
+    "problem": "The department wanted to improve digital public consultations and expected the answer to be a new product or service.",
+    "research": "A 6-week discovery (early 2015) with three user groups: individual respondents, consultation response curators at charities and trade unions, and policy makers. Methods included personas, a prioritized list of user needs (card sorting), sketching and prototyping, a design workshop, and a webinar with agencies and Cabinet Office colleagues. Participant numbers are not given.",
+    "insight": "Respondents' core need was to put their views across clearly, and the department only accepted text responses; most of the improvement could come from process and content, not new software.",
+    "change": "The team decided not to build a new product or service, and instead to use existing tools more effectively, write consultations in plain English and keep respondents informed throughout the policy process.",
+    "outcome": "No new build. The product manager writes that the approach needed 'no hard cash'. No metrics reported.",
+    "headline_metric": null,
+    "attribution": "Direct: the product manager states the research led to the no-build decision.",
+    "caveats": "Short first-party blog post with no participant numbers or cost estimate. Whether the process changes improved consultations is not reported.",
+    "methods": [
+      "interviews",
+      "card_sorting",
+      "concept_testing",
+      "co_design"
+    ],
+    "research_type": "generative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "cost_avoided"
+    ],
+    "company_size": "public_sector",
+    "year": 2015,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Digital consultations: what we discovered in discovery",
+        "url": "https://digitalhealth.blog.gov.uk/2015/02/06/digital-consultations-what-we-discovered-in-discovery",
+        "publisher": "Department of Health digital blog (GOV.UK)",
+        "date": "2015-02-06"
+      }
+    ]
+  },
+  {
+    "slug": "gds-webchat-no-central-component",
+    "title": "GDS research finds no need for a central government webchat platform",
+    "company": "Government Digital Service (UK)",
+    "is_anonymized": false,
+    "summary": "GDS ran a discovery and alpha to see whether government needed a centrally run webchat component, like GOV.UK Pay or Notify. Research with service users, advisers, managers, service teams and contact centres found no need for a shared component. GDS published patterns and guidance instead and closed the alpha.",
+    "problem": "Several government service teams were using or considering webchat, and GDS needed to decide whether to build and run a shared webchat platform.",
+    "research": "A call-out to service teams, then discovery and alpha research (2016) with government and commercial contact centres and four user groups: service users, advisers, managers and service teams. Methods included role play of chat interactions, deliberately breaking user journeys, and screen-reader testing for accessibility.",
+    "insight": "There was no identified need for a central webchat component. Teams would benefit more from shared service patterns. The research also warned against assuming webchat saves money on its own, and found chat conversations are a useful source of insight into user needs.",
+    "change": "GDS did not build a webchat platform. It produced patterns and guidance for the Service Manual and a published approach to implementing webchat, then ended the alpha.",
+    "outcome": "A central platform build was avoided; guidance was published instead. No cost figures given.",
+    "headline_metric": null,
+    "attribution": "Direct: the GDS post presents the decision as a result of the research.",
+    "caveats": "First-party. No participant counts or estimate of cost avoided. Platform builds may also have been weighed against other GDS priorities not discussed.",
+    "methods": [
+      "interviews",
+      "concept_testing",
+      "accessibility_research",
+      "field_study"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "cost_avoided"
+    ],
+    "company_size": "public_sector",
+    "year": 2017,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Webchat: the journey so far",
+        "url": "https://governmentasaplatform.blog.gov.uk/2017/01/17/webchat-journey",
+        "publisher": "Government as a Platform blog (GDS)",
+        "date": "2017-01-17"
+      }
+    ]
+  },
+  {
+    "slug": "shelter-chatbot-to-triage-discovery",
+    "title": "Shelter drops an AI advice chatbot for triage after discovery research",
+    "company": "Shelter (UK housing charity)",
+    "is_anonymized": false,
+    "summary": "Shelter considered building an AI chatbot to personalise housing advice on its website. Discovery research showed the bigger problem was that people with the most urgent, complex needs struggled to reach advisers, while people with simpler needs preferred talking to someone. Shelter switched to designing triage, asked funders for less money, and launched a simple non-AI journey for low-urgency needs.",
+    "problem": "Shelter wanted to use digital tools to help more people with housing problems and was considering an AI chatbot that would ask questions and curate advice content.",
+    "research": "A remote discovery run with two specialist agencies. A follow-on triage discovery (April to August 2021) interviewed 10 team leaders/stakeholders and 11 advisers, analysed 15 helpline calls, 60 webchat transcripts and 7 social media conversations, and interviewed 34 service users.",
+    "insight": "Helpline and webchat were first-come, first-served, so urgent, complex cases often couldn't get through; only 29% of queries handled were high-priority. A chatbot would not fix this. Many users had only a smartphone with limited credit or a landline, and many had health conditions or disabilities.",
+    "change": "Shelter moved from a chatbot to a triage approach that prioritises urgent, complex cases for one-to-one advice and points simpler needs to advice content. It applied for less funding to run a triage discovery (a later implementation bid succeeded) and launched a tailored journey for low-urgency needs on its existing site without AI.",
+    "outcome": "The chatbot build was not pursued. No outcome metrics for triage are reported yet.",
+    "headline_metric": null,
+    "attribution": "Direct: Shelter's product team says the discovery findings redirected the funding bid and the product.",
+    "caveats": "First-party charity blog. Outcomes of the triage approach were not published at the time; the 29% figure is a pre-change baseline.",
+    "methods": [
+      "interviews",
+      "support_analysis",
+      "journey_mapping"
+    ],
+    "research_type": "generative",
+    "industry": "nonprofit",
+    "product_type": "service",
+    "metrics": [
+      "cost_avoided"
+    ],
+    "company_size": "midmarket",
+    "year": 2022,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The importance of discovery in product opportunity selection",
+        "url": "https://blog.shelter.org.uk/the-importance-of-discovery-in-product-opportunity-selection/",
+        "publisher": "Shelter blog (Jane Kelly)",
+        "date": "2022-02-25"
+      },
+      {
+        "title": "How a discovery phase process helped transform our helpline and webchat services",
+        "url": "https://blog.shelter.org.uk/how-a-discovery-phase-process-helped-transform-our-helpline-and-webchat-services/",
+        "publisher": "Shelter blog (Jemima Stevens)",
+        "date": "2022-03-02"
+      }
+    ]
+  },
+  {
+    "slug": "embrace-infant-warmer-nepal-field-research",
+    "title": "Field research in Nepal redirects the Embrace infant warmer toward home use",
+    "company": "Embrace (Stanford 'Design for Extreme Affordability' project)",
+    "is_anonymized": false,
+    "summary": "A Stanford student team set out to make a low-cost way to keep premature and low-birth-weight babies warm, initially as a device for clinics. Observing rural families in Nepal showed that many babies were far from hospitals and that mothers improvised with blankets, hot-water bottles or light bulbs. The team added an at-home warmer that needs no constant electricity, priced at an expected $100 to $200 versus incubators costing up to $20,000.",
+    "problem": "Millions of premature and underweight babies die each year in their first weeks, often from hypothermia, and conventional incubators are expensive and need reliable power and trained staff.",
+    "research": "Field observation of hospitals and rural families in Nepal by the student team (around 2007–2008), followed by clinical trials with mothers.",
+    "insight": "The need was not only in clinics: rural families far from hospitals tried to keep babies warm with blankets, warm water bottles or light bulbs, which were usually not enough (and bulbs sometimes shattered over babies).",
+    "change": "Alongside the electrically heated clinic version, the team built a cheaper at-home model heated with warm water, with more safety features and more wax to hold 37°C for longer, including during an emergency trip to hospital. Both use a sleeping-bag pouch with a phase-change wax pad.",
+    "outcome": "At the time of the source the product was in clinical trials with an expected price of $100–$200, against $1,000–$2,000 for incubators in developing countries. Mothers in trials were reluctant to take babies out, and NGOs in Africa and Asia were sending inquiries. No mortality or deployment figures are given.",
+    "headline_metric": null,
+    "attribution": "The student newspaper credits observations of rural families' unmet needs with the at-home model. Later impact claims are not covered by this source.",
+    "caveats": "Often retold as a dramatic pivot 'from incubator to sleeping bag'; the 2010 source describes adding an at-home version to a clinic device rather than abandoning it. Health outcomes are not documented here. Student-newspaper source written while the venture was pre-launch.",
+    "methods": [
+      "field_study",
+      "ethnography"
+    ],
+    "research_type": "generative",
+    "industry": "healthcare",
+    "product_type": "physical_product",
+    "metrics": [
+      "accessibility"
+    ],
+    "company_size": "startup",
+    "year": 2010,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "At-risk babies kept warm by Stanford innovation",
+        "url": "https://stanforddaily.com/2010/11/18/at-risk-babies-kept-warm-by-stanford-innovation/",
+        "publisher": "The Stanford Daily (Kathleen Chaykowski)",
+        "date": "2010-11-18"
+      }
+    ]
+  },
+  {
+    "slug": "firefox-tab-groups-removed-usage-data",
+    "title": "Usage data of about 0.01% leads Mozilla to remove Firefox Tab Groups",
+    "company": "Mozilla",
+    "is_anonymized": false,
+    "summary": "Firefox's Tab Groups (Panorama) feature was buggy, slow and getting in the way of Firefox's multi-process rewrite. Telemetry showed only around 0.01% of users used it. Mozilla removed it, deleting more than 24,000 lines of code, rather than spend the effort to rebuild it.",
+    "problem": "The team had to decide whether to invest in fixing a large, fragile feature with serious performance problems and flaky tests, which also clashed with the move to separate processes for tabs (electrolysis).",
+    "research": "Firefox usage telemetry measured over a long period, as part of a 'Great or Dead' review of Firefox features; combined with the bug record.",
+    "insight": "Usage was extremely low, around 0.01% of users, which could not justify the work needed to bring the feature up to acceptable quality for millions of users.",
+    "change": "Tab Groups was removed from Firefox (with an add-on path for existing users) instead of being rebuilt.",
+    "outcome": "More than 24,000 lines of code were removed, freeing the team from maintaining the feature and unblocking multi-process work. Tab groups later returned in a new design years afterwards.",
+    "headline_metric": "24,000+ lines removed",
+    "attribution": "Usage data was a central reason, alongside quality and architecture problems, so it was one of several causes.",
+    "caveats": "Written on a Mozilla engineer's personal blog, not an official report. Behavioural analytics only; no qualitative research on why people didn't use it. A small but vocal group of users was upset, and Mozilla later reintroduced tab groups, so the long-term call is debatable.",
+    "methods": [
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "desktop_software",
+    "metrics": [
+      "cost_avoided",
+      "adoption"
+    ],
+    "company_size": "midmarket",
+    "year": 2016,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Why was Tab Groups (Panorama) removed?",
+        "url": "https://www.gijsk.com/blog/2016/02/tab-groups-removal/",
+        "publisher": "Gijs Kruitbosch (Firefox engineer) blog",
+        "date": "2016-02-04"
+      }
+    ]
+  }
+]

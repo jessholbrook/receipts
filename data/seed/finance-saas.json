@@ -1,0 +1,682 @@
+[
+  {
+    "slug": "british-gas-bill-redesign",
+    "title": "British Gas bill redesign cut query calls by 3,000 a week",
+    "company": "British Gas (with Lippincott)",
+    "is_anonymized": false,
+    "summary": "British Gas wanted fewer billing query calls and happier customers. Research with customers and service providers showed bills were overloaded and didn't answer the questions people actually had. The simplified bill launched in 2012 and calls fell by about 10%.",
+    "problem": "UK energy bills were widely criticised as complicated and opaque. British Gas, serving around 10 million customers, received a large volume of query calls about its bills.",
+    "research": "Lippincott ran research with customers and with service providers (the people handling bill queries). Existing research and input from government regulators and consumer watchdogs fed into the same phase. Participant numbers are not given.",
+    "insight": "Customers come to a bill with five questions: what do I owe, how do I pay, how can I save, how can I control it, and can you help me. Around 30% of the information printed on the bill was not needed.",
+    "change": "The bill was cut down to what was needed, jargon was removed, it was structured around those key questions, and customers were pointed to one central phone number. The framing shifted from a demand for money to a way to save money.",
+    "outcome": "After launch (August 2012), the case study reports a reduction of 3,000 calls per week (10%), a saving of more than £750,000 to the organisation, and 17% of customers finding the information clearer. The EU later cited the bill as best practice.",
+    "headline_metric": "-10% query calls",
+    "attribution": "Moderate. The research findings map directly onto the new bill structure, and the call reduction is measured after implementation, but other factors (pricing news, seasonality) are not controlled for.",
+    "caveats": "Short case study reproduced with the agency's permission on an EU service-design project site; reads as promotional. No method for the call measurement, no participant numbers, and the savings period (per year?) is not stated. Old (2012).",
+    "methods": [
+      "interviews",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "energy_utilities",
+    "product_type": "service",
+    "metrics": [
+      "support_cost",
+      "satisfaction",
+      "cost_avoided"
+    ],
+    "company_size": "enterprise",
+    "year": 2012,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Redesigning the British Gas billing experience (case study)",
+        "url": "https://c0356974.myzen.co.uk/wp-content/uploads/2015/09/Redesigning-the-British-Gas-billing-experience.pdf",
+        "publisher": "SHAPE Better Services (reproduced with permission of British Gas and Lippincott)",
+        "date": "2015-05-20"
+      }
+    ]
+  },
+  {
+    "slug": "sage-intacct-product-tour-conversion",
+    "title": "Sage's research-led site changes lifted Intacct page conversion",
+    "company": "Sage",
+    "is_anonymized": false,
+    "summary": "Sage's digital experience team used surveys, usability studies and benchmark scores to find where prospects struggled on sage.com. Each change was framed as a hypothesis tied to a customer insight and then run as an experiment. The vendor reports conversion gains in several markets, including an average 22% rise on Intacct pages.",
+    "problem": "Product pages on sage.com were long and overwhelming, navigation made it hard to find the right product, and product benefits were unclear, which the team believed was holding back conversion.",
+    "research": "Ongoing user surveys and remote studies on the UserTesting platform, analysis of customer feedback, click paths and task completion rates, and QXscore benchmarking of sage.com alongside NPS and brand metrics. Changes were written as 'IF variable THEN outcome DUE TO customer insight' hypotheses. Dates and sample sizes are not given (story appears to date from around 2024).",
+    "insight": "Prospects were overwhelmed by page length, could not easily find relevant solutions, and did not understand product benefits.",
+    "change": "Added step-by-step product tours for Sage Intacct, simplified navigation with filters on the All Products page, added support badges and sections, used more dynamic hero visuals, and shortened product pages with clearer calls to action.",
+    "outcome": "Intacct product tour: conversion up 12% (UK), 7% (US) and 47% (AU), described as a 22% average increase. Support information: form completions up 31% (UK). Hero visuals: trial signups up 10% (UK), 36% (South Africa), 29% (Ireland). Simplified product pages: conversion up 15% (UK), 8% (US). QXscore up an average of 6 points across UK Intacct, Accounting and Payroll pages.",
+    "headline_metric": "+22% Intacct conversion",
+    "attribution": "Partial. The hypothesis framework explicitly ties each change to a customer insight, and the page calls the results 'targeted experiments', but the link between specific studies and specific changes is only stated for the product tour.",
+    "caveats": "Vendor (UserTesting) customer story. No description of test design, sample sizes, durations or significance, so rated 'reported' even though experiments are mentioned. Many market-level results may include cherry-picking (170 experiments were run). Undated.",
+    "methods": [
+      "survey",
+      "usability_testing",
+      "analytics",
+      "benchmarking",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Sage customer story",
+        "url": "https://www.usertesting.com/resources/customers/sage",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "comed-customer-designed-bill",
+    "title": "ComEd rebuilt its electricity bill around what customers said mattered",
+    "company": "ComEd (Commonwealth Edison)",
+    "is_anonymized": false,
+    "summary": "ComEd's customer satisfaction hit a historic low in 2012, and survey analysis pointed to the bill as the most influential touchpoint. The utility gathered customer input through focus groups, surveys and an online 'Bill Builder', tested shortlisted designs with customers, and launched a new bill in 2014. ComEd and its survey vendor credit it with an industry-leading rise in satisfaction.",
+    "problem": "ComEd ranked lowest among large Midwest electric utilities on J.D. Power's customer satisfaction index, in the bottom quartile on 39 of 40 drivers. Customers were confused about pricing and did not realise most charges on the bill were for power supply rather than ComEd's delivery.",
+    "research": "A survey driver analysis identified the billing statement as the most critical touchpoint. From May 2013, ComEd collected customer input via focus groups, surveys, Facebook and an online 'Bill Builder' tool. Three finalist designs (from a crowdsourced competition with more than 280 entries) went back to customers for feedback, heat-map survey questions compared existing and proposed designs, and the final bill was tested with residential customers. Sample sizes are not published.",
+    "insight": "Customers cared most about the bill summary and amount due, then usage and meter information, and wanted to understand supply charges separately from delivery charges.",
+    "change": "The new bill, launched March 2014, ordered information by importance, put summarised usage and charges on the front, clearly separated supply from delivery charges, colour-coded sections and moved contact details and messages to the back. It went to nearly 4 million households in under a year.",
+    "outcome": "Qualtrics' customer story reports an 'industry-leading rise in customer satisfaction' and a J.D. Power award. No satisfaction scores, call volumes or other figures are given.",
+    "headline_metric": null,
+    "attribution": "Weak to moderate. The research clearly shaped the bill, but the satisfaction rise is reported at company level and other ComEd initiatives over the same period likely contributed.",
+    "caveats": "Outcome claim comes from the survey vendor's customer story, with no numbers or method. The independent press coverage (2014) documents the research process but reports no results. Crowdsourced design competition was part of the process, not just research.",
+    "methods": [
+      "survey",
+      "interviews",
+      "co_design",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "energy_utilities",
+    "product_type": "service",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2014,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "ComEd customer story",
+        "url": "https://www.qualtrics.com/customers/comed/",
+        "publisher": "Qualtrics",
+        "date": null
+      },
+      {
+        "title": "ComEd debuts customer bill with crowdsourced redesign",
+        "url": "https://www.renewableenergyworld.com/energy-business/comed-debuts-customer-bill-with-crowdsourced-redesign/",
+        "publisher": "Renewable Energy World",
+        "date": "2014-03-11"
+      }
+    ]
+  },
+  {
+    "slug": "gitlab-settings-pages-findability",
+    "title": "GitLab settings redesign raised first-click success from 34% to 97% on a key task",
+    "company": "GitLab",
+    "is_anonymized": false,
+    "summary": "Users told GitLab its group settings were hard to find after they were folded into collapsible sections with vague labels. The team reorganised the page around the settings most people look for and then measured the old and new versions with click tests involving more than 600 participants. Success rates rose sharply on two of three tasks, though time on task did not improve.",
+    "problem": "After group and project settings were moved into expandable sections, users reported that they couldn't find settings. Section labels were not descriptive, so people had to open sections and guess.",
+    "research": "User reports gathered in a public discovery issue shaped the redesign. After the group settings pilot shipped (GitLab 11.5), the designer ran two unmoderated first-click tests on UsabilityHub, one per version: 389 participants saw the original and 266 the redesign, recruited via Twitter and GitLab's research mailing list. Each had three 'where would you click to...' tasks plus 1-5 ratings of ease and confidence. Published March 2019.",
+    "insight": "A small share of settings (roughly the 20% most people look for) accounted for most visits, and vague section labels were the main reason people guessed wrong.",
+    "change": "The most-used settings were given their own prominent section, vague labels were replaced with descriptive ones, whole section titles became clickable, and some content was moved.",
+    "outcome": "First-click success: task 1 went from 77% to 78%, task 2 from 34% to 97%, task 3 from 49% to 92%. Mean confidence rose on tasks 1 and 2 (3.6 to 4.1, 3.2 to 4.1) but dipped on task 3 (3.9 to 3.7). Time to click got worse on tasks 1 and 3 and better on task 2, so the team's assumption about speed was not validated.",
+    "headline_metric": "34% → 97% task success",
+    "attribution": "Direct. The redesign came from user-reported problems, and the outcome is measured by comparing the two designs on identical tasks.",
+    "caveats": "Separate unmoderated tests with unequal, self-selected samples (GitLab followers), not a randomized live A/B test. Measures findability in a click test, not real-world support load or usage. Mixed results on time and on task 3 difficulty. Only the group settings page was tested.",
+    "methods": [
+      "usability_testing",
+      "support_analysis",
+      "benchmarking"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "midmarket",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Quantifying UX: validating the redesign of GitLab's settings pages",
+        "url": "https://about.gitlab.com/blog/quantifying-ux-validating-the-redesign-of-gitlabs-settings-pages/",
+        "publisher": "GitLab blog",
+        "date": "2019-03-13"
+      }
+    ]
+  },
+  {
+    "slug": "gitlab-devops-stage-navigation-decision",
+    "title": "GitLab research steered it away from organising navigation by DevOps stage",
+    "company": "GitLab",
+    "is_anonymized": false,
+    "summary": "GitLab considered reorganising its product navigation around its DevOps lifecycle stages, matching how the company described itself. A series of research studies suggested this would make features harder to find, because stage names like 'Manage' and 'Create' don't tell users what is inside. The team did not pursue that structure.",
+    "problem": "As GitLab grew, its navigation had to hold more and more features. Internally, the company organised itself around DevOps stages, and there was interest in making the UI follow the same structure.",
+    "research": "A series of research studies on whether stage-based navigation would work, building on earlier usability testing rounds that informed the 2017 navigation redesign. The post does not give methods or participant counts for the stage studies. Reported July 2019.",
+    "insight": "Stage-based sub-navigation would add steps, and stage names are not self-explanatory, especially to people unfamiliar with GitLab's DevOps vocabulary. Context and discoverability were the recurring problems.",
+    "change": "GitLab kept its existing global/contextual navigation model with incremental changes, rather than restructuring it around DevOps stages, and planned further interviews and journey mapping.",
+    "outcome": "In the post's words, findings from the studies 'cautioned us against moving in that direction'. No metric is reported.",
+    "headline_metric": null,
+    "attribution": "Stated directly by GitLab's UX researcher, though the post doesn't describe the studies in detail.",
+    "caveats": "Light on method detail. The post describes ongoing work, so the decision may have been revisited later. No measure of what was avoided.",
+    "methods": [
+      "usability_testing",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "cost_avoided"
+    ],
+    "company_size": "midmarket",
+    "year": 2019,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Navigation: state of play",
+        "url": "https://about.gitlab.com/blog/navigation-state-of-play/",
+        "publisher": "GitLab blog",
+        "date": "2019-07-31"
+      }
+    ]
+  },
+  {
+    "slug": "google-infrastructure-tools-console-consolidation",
+    "title": "Google survey of 10,000 developers reshaped its internal infrastructure tooling strategy",
+    "company": "Google (Technical Infrastructure UX team)",
+    "is_anonymized": false,
+    "summary": "Google's internal infrastructure tools had grown into hundreds of separately built, inconsistent UIs. A survey of 10,000 Googlers, follow-up interviews and service blueprinting showed debugging was the biggest pain point and won executive support for consolidation. Research also led the team to extend an existing console instead of building a new bespoke one.",
+    "problem": "Google has over 1,000 internal tools built by different teams. Developers found infrastructure tools hard to discover, inconsistent, hard to onboard to and slow to troubleshoot, which cost engineering time.",
+    "research": "In November 2021 the team surveyed 10,000 randomly selected Googlers (1,300 responded, 749 gave open-ended feedback). They followed up with 60-minute semi-structured interviews with 23 users, a cross-functional story-mapping workshop, critical-user-journey validation interviews, a service blueprint, logs analysis, and three rounds of RITE (rapid iterative testing) on redesigns and a pipeline prototype.",
+    "insight": "Debuggability was the biggest problem, making up 67% of open-ended feedback: the information existed but was scattered across dashboards and UIs. Performance and reliability made up another 19%. Stakeholder interviews also showed that past measurement dashboards were usually abandoned, so the team chose one success metric (engineer capacity saved) instead.",
+    "change": "The team built a vision for a unified console and used it to secure executive buy-in. After evaluating options, they chose to extend an existing infrastructure console (Sigma) rather than build a bespoke console modelled on Google Cloud's, shipped a readability redesign of a job page, and designed a 'Needs Attention' pipeline page tested through three RITE rounds.",
+    "outcome": "The paper reports executive buy-in and incremental shipped improvements. Projected savings were estimated at 69 (conservative), 208 (moderate) or 1,663 (aggressive) full-time engineers' worth of capacity per year, but these are forecasts, not measured results. The pipeline MVP was still to be released at the time of writing.",
+    "headline_metric": null,
+    "attribution": "Direct for the decisions: the authors state the survey and interviews defined the problem and that the evaluation drove the choice to extend Sigma. No measured outcome yet.",
+    "caveats": "Short CHI 2025 workshop submission written by the team itself. Savings figures are internal estimates. The paper notes Gemini was used to edit parts of the text. The redesign's effect on time-to-find information is described qualitatively.",
+    "methods": [
+      "survey",
+      "interviews",
+      "journey_mapping",
+      "analytics",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "consumer_tech",
+    "product_type": "internal_tool",
+    "metrics": [
+      "task_success",
+      "cost_avoided"
+    ],
+    "company_size": "enterprise",
+    "year": 2025,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "From 600 Tools to 1 Console: A UX-Driven Transformation",
+        "url": "https://arxiv.org/abs/2506.16107",
+        "publisher": "arXiv (CHI '25 workshop paper)",
+        "date": "2025-06-19"
+      }
+    ]
+  },
+  {
+    "slug": "ee-roaming-chatbot-and-app-navigation",
+    "title": "EE's prototype testing raised chatbot containment by 75% and trimmed calls 2.4%",
+    "company": "EE (BT Group)",
+    "is_anonymized": false,
+    "summary": "EE's research team found that its chatbot, Aimee, was swamped with roaming questions it could not answer, pushing most of them to phone advisers. Iterative prototype testing with current, prospective and competitors' customers shaped a new chatbot version, a roaming calculator and a reorganised app navigation. The vendor reports a 75% rise in chatbot containment and a 2.4% drop in contact-centre calls.",
+    "problem": "Aimee, EE's chatbot, resolved only 16% of roaming questions directly; the rest became calls to advisers. Separately, the app homepage was crowded and common account actions were hard to find.",
+    "research": "Embedded researchers and designers ran iterative remote tests of sketches and prototypes with existing EE customers, prospective customers and people using competitors' products, via the UserTesting platform. For roaming, the team modelled likely trips and package costs and tested new prototypes with participants. Sample sizes and dates are not given (story appears to date from around 2024).",
+    "insight": "Customers' roaming questions were too varied for the old bot, and a dedicated 'Manage' area would reduce homepage cognitive load and make account tasks easier to find.",
+    "change": "Launched a new version of Aimee that answered roaming questions more accurately, added a roaming calculator, added a 'Manage' area to app navigation, and aligned the information architecture across app and web and logged-in and logged-out states.",
+    "outcome": "Reported: 75% increase in chatbot containment, 2.4% decrease in calls to the contact centre, 50% more click-through from the roaming calculator, 50% uplift in traffic to broadband pages, and 'Manage' became the most popular hub destination in the app within its first month.",
+    "headline_metric": "+75% chatbot containment",
+    "attribution": "Moderate. The research finding (16% roaming resolution) leads directly to the chatbot change, but outcomes are reported without method, baseline period or control, and several changes shipped together.",
+    "caveats": "Vendor (UserTesting) customer story. No dates, sample sizes or measurement method. The 2.4% call reduction is small and could reflect other factors. Several other gains are claimed without figures.",
+    "methods": [
+      "usability_testing",
+      "concept_testing",
+      "support_analysis"
+    ],
+    "research_type": "evaluative",
+    "industry": "telecom",
+    "product_type": "mobile_app",
+    "metrics": [
+      "support_cost",
+      "engagement",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "EE (BT Group) customer story",
+        "url": "https://www.usertesting.com/resources/customers/ee-bt-group",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "monzo-gambling-block",
+    "title": "Monzo's gambling block, shaped by affected customers, used by ~100,000 people in 10 months",
+    "company": "Monzo",
+    "is_anonymized": false,
+    "summary": "Monzo customers on its community forum asked for a way to block their own gambling spending. Monzo built a card-level gambling block shaped by that feedback and tested with people who had requested it, deliberately making it harder to turn off than on. A 2023 update, developed with GamCare and people with lived experience of gambling harm, added longer cooldowns and personal notes.",
+    "problem": "Some customers experiencing gambling harm wanted their bank to help them stop impulsive gambling spending, and there was no self-exclusion tool at the bank level.",
+    "research": "In 2018 Monzo drew on feedback and experiences shared on its community forum and tested the feature with a few people who had requested it. For the 2023 improvements it worked with the charity GamCare, customers, industry experts and people with first-hand experience of gambling harm, and benchmarked itself against GamCare's recommendations for banks. Methods and sample sizes are not described.",
+    "insight": "Gambling is often impulsive, so a block that can be lifted instantly offers little protection; people who turn it on want friction that gives them time to reconsider.",
+    "change": "The 2018 block required contacting support and then waiting 48 hours before it could be switched off. In 2023 Monzo added cooldown options of up to a year, a personal note shown when a cooldown starts and ends, and routing to specialist support teams for customers who had disclosed gambling harm.",
+    "outcome": "Monzo's 2023 post says close to 100,000 people used the block in the previous 10 months, more than 200,000 attempted gambling transactions were blocked, and its compliance with GamCare's recommendations rose from 45% to 87%. No data on whether users' gambling harm fell.",
+    "headline_metric": "~100k users in 10 months",
+    "attribution": "Moderate for the design (Monzo says customer feedback shaped how the block was built); weak for the outcome, which is adoption rather than an effect of research-driven design choices.",
+    "caveats": "Research is informal (forum feedback, small testing group) and not described in detail. Outcome figures are Monzo's own and measure uptake and blocked transactions, not reduced harm. Blocked attempts may include repeated attempts by the same people.",
+    "methods": [
+      "support_analysis",
+      "usability_testing",
+      "co_design"
+    ],
+    "research_type": "generative",
+    "industry": "finance",
+    "product_type": "mobile_app",
+    "metrics": [
+      "adoption",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How to block gambling spending from your Monzo account",
+        "url": "https://monzo.com/blog/2018/06/19/gambling-block-self-exclusion",
+        "publisher": "Monzo blog",
+        "date": "2018-06-19"
+      },
+      {
+        "title": "We've improved our gambling block",
+        "url": "https://monzo.com/blog/weve-improved-our-gambling-block",
+        "publisher": "Monzo blog",
+        "date": "2023-09-13"
+      }
+    ]
+  },
+  {
+    "slug": "credit-sesame-ios-app-relaunch",
+    "title": "Credit Sesame's research-tested iOS relaunch lifted completed registrations 31.7%",
+    "company": "Credit Sesame",
+    "is_anonymized": false,
+    "summary": "Credit Sesame, a US credit and financial wellness platform, redesigned its iOS app to improve trust, engagement and conversion. Its researchers ran unmoderated usability tests, think-alouds, comparative studies and surveys across onboarding, navigation and messaging. Comparing the months before and after the July 2023 release, completed registrations rose 31.7% and the app's rating went from 3.19 to 4.11.",
+    "problem": "The iOS app needed to do better on engagement, trust and conversion, particularly through onboarding and account creation.",
+    "research": "Unmoderated usability tests, think-aloud sessions, comparative studies and surveys run on the UserTesting platform, covering onboarding and account creation, navigation and decisions about credit products, clarity and emotional tone of messaging, and trust signals. Sample sizes are not given. The redesigned app shipped on 13 July 2023 (versions 6.0.0 and 6.0.1).",
+    "insight": "The story names the areas studied (onboarding, navigation, messaging, trust indicators) but does not list specific findings.",
+    "change": "A redesigned and relaunched iOS app. Specific design changes are not described.",
+    "outcome": "Before/after comparison: completed registrations +31.7%, new users +18.4%, subscriptions +14.3%, credit card click-applies +1.6%, email open rate +18.3%. Net Fan Score 30 to 54, 'love for experience' score 28% to 70%, in-app rating 3.19 to 4.11.",
+    "headline_metric": "+31.7% registrations",
+    "attribution": "Moderate. The research fed the redesign, but outcomes compare the whole release before and after, and the source itself says it does not isolate the redesign's effect from other factors.",
+    "caveats": "Vendor (UserTesting) customer story. No sample sizes, no specific findings or changes, and no control group. The page notes results come from the months around release and may not reflect later updates. Experience scores are the vendor's own metrics.",
+    "methods": [
+      "usability_testing",
+      "survey",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "finance",
+    "product_type": "mobile_app",
+    "metrics": [
+      "conversion",
+      "adoption",
+      "satisfaction",
+      "revenue"
+    ],
+    "company_size": "midmarket",
+    "year": 2023,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Credit Sesame customer story",
+        "url": "https://www.usertesting.com/resources/customers/credit-sesame",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "banco-sabadell-qxscore-launch-gate",
+    "title": "Banco Sabadell made a usability score a launch gate and reports 50% faster delivery",
+    "company": "Banco Sabadell",
+    "is_anonymized": false,
+    "summary": "Spanish bank Banco Sabadell requires every digital experience to pass customer testing and reach a minimum benchmark score before it goes to engineering and launch. It ran more than 500 tests in a year, including over 40 on online account opening. The vendor reports a 50% increase in speed to market, and more than half of new customers now open accounts online.",
+    "problem": "The bank was moving key journeys, such as account opening, from branches to digital channels and needed a consistent way to decide whether designs were ready to build and ship.",
+    "research": "More than 500 remote tests in one year with prospective and existing customers on the UserTesting platform, covering account creation, sign-in, bill payment, loan simulation, insurance and navigation. Designers compared options with customers, tracked drop-offs and clicks, and scored each experience with QXscore (a vendor usability-and-enjoyment benchmark). Over 40 tests went into online account signup. Roughly 2023.",
+    "insight": "Comparative testing of design options showed which version customers could complete and preferred, letting teams settle choices with evidence rather than opinion.",
+    "change": "A minimum QXscore of 85 became mandatory before any digital experience can go live; scores are logged in Jira and project managers use them to decide whether work moves to the next phase. Online account opening was built and refined through repeated testing.",
+    "outcome": "Reported: 50% increase in the speed of bringing projects to market (also described as research project speed up 50%), and account opening moved from branch-only a year earlier to more than half of new customers opening online.",
+    "headline_metric": "+50% speed to market",
+    "attribution": "Weak to moderate. The speed claim is about the research process itself, and the shift to online account opening also reflects the bank's decision to offer it online at all.",
+    "caveats": "Vendor (UserTesting) customer story about its own proprietary metric. No baseline or method for the 50% figure. Undated. The online-signup share is not a research effect on its own.",
+    "methods": [
+      "usability_testing",
+      "benchmarking",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "finance",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "time_to_market",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Banco Sabadell customer story",
+        "url": "https://www.usertesting.com/resources/customers/banco-sabadell",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "everypaw-tv-ad-concept-testing",
+    "title": "Everypaw pet insurance tested its TV ad with owners; quote starts after airings rose 85%",
+    "company": "Everypaw (Cardif Pinnacle, BNP Paribas Cardif)",
+    "is_anonymized": false,
+    "summary": "Everypaw, a UK pet insurer with about 5% market share, was producing its first 30-second TV ad and the internal team was split on key choices. It tested ad variants with UK pet owners considering insurance, which settled the music, the value propositions to lead with and the ending screen. The vendor reports an 85% rise in people starting a quote within five minutes of airings, versus the previous year's campaign.",
+    "problem": "The team needed to choose between creative options for a costly TV campaign, with executives split (for example 50/50 on the music) and worries that the CGI and ending screen would distract viewers.",
+    "research": "Remote tests on the UserTesting panel with women aged 25-55 in the UK who own pets and were considering pet insurance. Ad clips were shown in A/B variants to compare background music, a voiceover with three value propositions, and an ending screen with a call to action. Participant numbers are not given (story appears to date from around 2024).",
+    "insight": "Viewers strongly preferred one song, enjoyed the CGI rather than being distracted, valued 24/7 access to vets and experts far more than the free dog activity tracker, and liked the ending screen, with most saying they would visit the site on mobile.",
+    "change": "The ad was adjusted before airing based on participant feedback, including the music choice and which value propositions to emphasise.",
+    "outcome": "An 85% increase in engagement versus the previous year's campaign, where engagement means visiting the website within five minutes of the ad airing and starting a quote. The story also claims increased market share, with no figure.",
+    "headline_metric": "+85% quote starts",
+    "attribution": "Weak. Testing shaped creative choices, but the comparison is with a different, earlier campaign, so media spend, timing and the creative concept itself all differ.",
+    "caveats": "Vendor (UserTesting) customer story. Marketing research on an advert, not product UX. Year-on-year comparison with no control. Sample size unknown. The story also loosely calls the result 'twice the number of people', which does not match 85%.",
+    "methods": [
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "insurance",
+    "product_type": "service",
+    "metrics": [
+      "conversion",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Everypaw (Cardif Pinnacle) customer story",
+        "url": "https://www.usertesting.com/customers/everypaw-cardif-pinnacle",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "purefy-landing-page-interviews",
+    "title": "Purefy's borrower interviews led to a landing-page fix that lifted conversion 36%",
+    "company": "Purefy",
+    "is_anonymized": false,
+    "summary": "Student loan refinancing startup Purefy interviewed 25 borrowers and parents to understand how they research refinancing and how they reacted to its website. Within about ten interviews a clear theme emerged: a key landing page tried to say too many things at once. The team simplified the page's messaging and A/B tested it, reporting a 36% lift in conversion.",
+    "problem": "Purefy wanted to understand hesitant prospects' decision-making and improve its web presence and positioning as a relatively unknown brand.",
+    "research": "Twenty-five hour-long moderated remote interviews (dscout Live) over about a month in 2021, with borrowers and parents of borrowers interested in refinancing, recruited via video screener questions. Interviews covered how people research refinancing and live reactions to Purefy's site, with UX, design, copy and content staff observing.",
+    "insight": "A key landing page presented several value propositions at once, so Purefy's message was unclear. Prospects also needed more trust signals and social proof. Three distinct segments emerged: new graduates, experienced refinancers and parents.",
+    "change": "After a debrief around interview ten, the team made immediate language and sequencing changes, drafted a simplified landing page within a week, and the UX researcher set up an A/B test while interviews were still running. Three personas were created for marketing.",
+    "outcome": "The CMO is quoted: 'That one change, which we noticed early on, resulted in a 36% lift in conversion.'",
+    "headline_metric": "+36% conversion",
+    "attribution": "Direct. The tested change came straight from an interview finding, and it was evaluated with an A/B test.",
+    "caveats": "Vendor (dscout) case study. No baseline conversion, sample size, test duration or significance reported, and the exact variant isn't described. Small startup, single test.",
+    "methods": [
+      "interviews",
+      "concept_testing",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "finance",
+    "product_type": "website",
+    "metrics": [
+      "conversion"
+    ],
+    "company_size": "startup",
+    "year": 2021,
+    "evidence_strength": "tested",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Purefy case study",
+        "url": "https://dscout.com/customers/purefy-case-study",
+        "publisher": "dscout",
+        "date": "2021-09-22"
+      }
+    ]
+  },
+  {
+    "slug": "anonymous-fintech-autopay-research-redesign",
+    "title": "Lender's research-led repayment redesign raised autopay activation 25%",
+    "company": "Bay Area fintech lender (unnamed)",
+    "is_anonymized": true,
+    "summary": "An unnamed Bay Area fintech lender worked with consultancy Coforge to understand why borrowers weren't setting up autopay and were falling behind. Generative interviews, surveys and contextual inquiry with different borrower types fed simplified repayment flows that were then usability tested. The consultancy reports a 25% rise in autopay activation and a 50% fall in delinquency.",
+    "problem": "Too few borrowers were activating autopay, and loan delinquency was a concern.",
+    "research": "Generative research with user interviews, surveys and contextual inquiries, aimed at personas including debt-burdened borrowers and people with stable incomes; low- and high-fidelity concepts validated through user testing; analytics after launch. Sample sizes and dates are not given.",
+    "insight": "The source says research uncovered behavioural insights about borrowers' financial stress and repayment behaviour but does not spell them out.",
+    "change": "Simplified repayment workflows and clearer, more personalised financial interactions, refined after launch using analytics.",
+    "outcome": "Reported: 25% increase in autopay activation and 50% reduction in loan delinquency rates. Satisfaction and engagement described only as 'improved'.",
+    "headline_metric": "+25% autopay activation",
+    "attribution": "Unclear. The consultancy presents the outcome as a result of its research-led redesign but gives no baseline, period or method.",
+    "caveats": "Vendor (Coforge) success story about an anonymous client. No findings described, no baseline or measurement period. A 50% drop in delinquency is a large claim that could reflect many factors (economy, underwriting, collections policy). Undated. The page is undated; the year field reflects when it was found, not when the work happened.",
+    "methods": [
+      "interviews",
+      "survey",
+      "field_study",
+      "usability_testing",
+      "analytics"
+    ],
+    "research_type": "mixed",
+    "industry": "finance",
+    "product_type": "web_app",
+    "metrics": [
+      "adoption",
+      "errors"
+    ],
+    "company_size": "undisclosed",
+    "year": 2026,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Driving higher autopay adoption with research-led experience redesign",
+        "url": "https://coforge.com/success-stories/driving-higher-autopay-adoption-with-research-led-experience-redesign",
+        "publisher": "Coforge",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "slack-2020-redesign-pilot-and-benchmark",
+    "title": "Slack's 2020 redesign changed course on several features after a 100-user pilot and benchmark tests",
+    "company": "Slack",
+    "is_anonymized": false,
+    "summary": "Slack's 2020 interface redesign started as rough internal prototypes aimed at cutting clutter. A months-long co-design pilot with about 100 customers and benchmark tests with people new to Slack reversed or reshaped several planned changes, from hiding member counts to where the compose button sat. A second benchmark found the new design beat or tied the old one on core tasks.",
+    "problem": "Slack had grown more capable but harder to use, especially for new users. The team wanted a simpler interface but didn't know whether its tidier prototypes were actually more usable.",
+    "research": "A shared Slack channel pilot with about 100 users from Slack's champion network across dozens of organisations, running for weeks to months with ongoing feedback. Usability benchmarking comparing old and new designs with people who had never used Slack (tasks: send a message, search, find and join channels), repeated after changes, plus similar studies with average Slack users. Participant counts for benchmarks not given. Published March 2020.",
+    "insight": "Member counts help people 'read the room' in a channel. New users ignored a compose button at the bottom of the sidebar, often tried right-clicking, and missed key features when sections started collapsed. Users preferred familiar search placement over novel layouts.",
+    "change": "Restored the channel member count the team had planned to hide; made the custom-sections entry point less prominent with an in-product prompt; chose a conventional top-navigation search layout; moved compose to the top of the sidebar; built fuller right-click menus across the app; made collapsible views start open.",
+    "outcome": "After these changes, the new design 'beat or tied' the existing one on the benchmark tasks, which the authors cite as the basis for confidence in the release. No numbers are given.",
+    "headline_metric": null,
+    "attribution": "Direct for the design decisions: each change is tied to a specific pilot or benchmark finding. The benchmark result is reported only qualitatively.",
+    "caveats": "First-party blog post with no sample sizes, task-success figures or post-launch metrics. Pilot participants were Slack champions, who are not typical users. Rated 'decision' because no measured outcome is shared.",
+    "methods": [
+      "co_design",
+      "usability_testing",
+      "benchmarking",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "task_success",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Designing teamwork: How our customers helped shape the future of Slack",
+        "url": "https://slack.com/blog/designing-the-future-of-slack-with-customers",
+        "publisher": "Slack blog",
+        "date": "2020-03-18"
+      }
+    ]
+  },
+  {
+    "slug": "slack-2023-redesign-search-placement",
+    "title": "Slack moved search back to the top after research showed users couldn't find it",
+    "company": "Slack",
+    "is_anonymized": false,
+    "summary": "In its 2023 redesign Slack tried moving search into the left-hand navigation to simplify the interface. User research, pilot customer feedback and internal usage data all showed people couldn't find it there. Slack moved search back to the top of the window before wide release.",
+    "problem": "Slack's navigation was reaching its limits: people on large, busy teams struggled to keep up with basics and to find Slack's growing set of features.",
+    "research": "Provocative early prototypes discussed with users, user research on search placement, pilot customers using early designs, internal usage data, regular conversations with internal users and pilot customers, and pulse surveys of internal and external users. Methods and sample sizes are not described. Around 2023.",
+    "insight": "With search in the left-hand navigation, it 'just wasn't findable' for users.",
+    "change": "Search was moved back to the top of the interface. The authors say other changes were also revisited after pulse surveys and pilot feedback, without naming them.",
+    "outcome": "A design decision was reversed before launch. No metrics are reported.",
+    "headline_metric": null,
+    "attribution": "Direct: the authors (Slack's VP of Product Design and a principal PM) state that research, pilot feedback and usage data drove the reversal.",
+    "caveats": "First-party post with no method detail or numbers. Undated on the page (images suggest 2023). Usage data contributed alongside research, so research was one of several signals.",
+    "methods": [
+      "usability_testing",
+      "concept_testing",
+      "survey",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How our biggest redesign yet came to be",
+        "url": "https://slack.design/articles/how-our-biggest-redesign-yet-came-to-be/",
+        "publisher": "Slack Design",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "xero-new-invoicing-feedback-fixes",
+    "title": "Xero reworked its new invoicing screens after users said they were slower",
+    "company": "Xero",
+    "is_anonymized": false,
+    "summary": "Xero launched a new invoicing experience that many small-business users found slower than the old one. Reviewing user feedback and then watching users work through invoices showed extra clicks, broken keyboard navigation and a harder-to-read layout. Xero shipped a set of fixes, began redesigning the page layout and extended the availability of classic invoicing.",
+    "problem": "After the new invoicing experience launched, users reported it took more clicks and was harder to use than classic invoicing, a core daily task for small businesses.",
+    "research": "Analysis of user feedback on the new experience, followed by observational sessions sitting beside users as they clicked and tabbed through invoicing screens, and recruitment for a beta programme to test and co-design features. Participant numbers are not given. Reported May 2024, updated November 2024.",
+    "insight": "The new experience required more clicks, changes to keyboard navigation slowed invoice creation for keyboard-heavy users, and the new layout made the invoice page harder to read and navigate.",
+    "change": "Deleting a line item went from two clicks to one; Tab in branding and tax fields now selects and moves on; the date field accepts typing immediately; attachments preview in place; single clicks for printing/downloading, creating another invoice, sending receipts and marking as sent; invoice number shown in the browser tab. A redesign of the top half of the create-invoice page was started, and classic invoicing was kept available until 27 February 2025.",
+    "outcome": "Specific usability fixes shipped and the retirement of classic invoicing was postponed. No metrics are reported.",
+    "headline_metric": null,
+    "attribution": "Direct for the changes: Xero's Head of Product lists the fixes as responses to what users reported and what researchers observed.",
+    "caveats": "First-party post responding to customer complaints, so partly reputation management. Research happened after launch, not before. No numbers on how many users were observed or whether the fixes improved speed. The postponement may have had other reasons.",
+    "methods": [
+      "support_analysis",
+      "field_study",
+      "co_design"
+    ],
+    "research_type": "evaluative",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How your feedback is helping us improve the new invoicing experience",
+        "url": "https://blog.xero.com/product-updates/feedback-helping-improve-new-invoicing-experience/",
+        "publisher": "Xero blog",
+        "date": "2024-05-24"
+      }
+    ]
+  },
+  {
+    "slug": "insure4retirement-quote-journey-usability",
+    "title": "Insure4Retirement doubled quote completion after usability testing moved contact questions later",
+    "company": "Insure4Retirement (AJG group)",
+    "is_anonymized": false,
+    "summary": "Insure4Retirement, an online home insurance broker for over-50s, had its quote-and-buy journey usability tested before rebuilding it. Testing showed people disliked giving contact details on the first page but accepted it once they had built their policy, and profiling revealed many users were buying on behalf of older relatives. After the rebuild, the agency reports quote completion rising from about 37% to about 77%.",
+    "problem": "The broker was rebuilding its online quote-and-buy journey and wanted more visitors to get through to a price.",
+    "research": "Usability testing of the existing quote-and-buy journey before the build, a user profiling project, a workshop with the broker and its design agency to map wireframes and the question set, and a second usability test of the brochure site after changes. Participant numbers are not given. The work appears to date from around 2016.",
+    "insight": "Users reacted badly to entering personal contact details on the first page but were much more accepting once they had built their product. An extra core audience emerged: people arranging cover for older relatives or friends. Of 30 recommendations, 15-20 covered problems the team had not expected to matter as much.",
+    "change": "Contact-detail questions were moved later in the journey, the question set and flow were reworked in a joint workshop, and the brochure site was tweaked after a second round of testing.",
+    "outcome": "Quote start to quote completion (reaching a price) went from about 37% to about 77%. Overall visitor-to-quote completion went from 6% to over 20% after the brochure site changes. Digital marketing cost per acquisition fell to 'double-digit figures' (no exact numbers). The headline claims a 300% increase without explaining the calculation.",
+    "headline_metric": "Quote completion 37%→77%",
+    "attribution": "Moderate. Specific research findings map to specific changes, but the comparison is before/after a full rebuild, judged in January (a peak month), with no control.",
+    "caveats": "Agency (Experience UX) writing about its own client. Seasonality may inflate the after figures. No sample sizes, dates or exact periods. The '300%' headline figure is unexplained.",
+    "methods": [
+      "usability_testing",
+      "interviews",
+      "co_design"
+    ],
+    "research_type": "mixed",
+    "industry": "insurance",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "conversion",
+      "cost_avoided"
+    ],
+    "company_size": "midmarket",
+    "year": 2016,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "UX Case Study – Insure4Retirement – Driving a 300% increased conversion rate",
+        "url": "https://experienceux.co.uk/?p=6156",
+        "publisher": "Experience UX",
+        "date": null
+      }
+    ]
+  }
+]

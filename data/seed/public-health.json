@@ -1,0 +1,630 @@
+[
+  {
+    "slug": "michigan-mdhhs-project-reform-benefits-application",
+    "title": "Michigan's benefits form cut from 1,000 questions to 213 after in-home research",
+    "company": "Michigan Department of Health and Human Services (with Civilla)",
+    "is_anonymized": false,
+    "summary": "Michigan's combined application for food, health and other assistance was over 40 pages and about 1,000 questions. Design studio Civilla spent thousands of hours with applicants and caseworkers, then rebuilt the form with them. Early figures showed far more complete applications and much faster case processing.",
+    "problem": "The state's assistance application was one of the longest in the country: more than 40 pages, roughly 18,000 words and 1,000 questions. Applications came in incomplete and took caseworkers a long time to process.",
+    "research": "Starting in September 2015, Civilla researchers spent more than 4,000 hours interviewing benefit applicants in their homes and shadowing and interviewing public servants. Clients and staff then tested drafts of the new form.",
+    "insight": "The form itself was a major source of friction for both residents and staff: much of its length did not help the state decide eligibility, and confusing questions led to incomplete submissions that caseworkers then had to chase.",
+    "change": "MDHHS replaced the old application with an 18-page, 3,904-word, 213-question version with clearer organization and headings, launched statewide in January 2018.",
+    "outcome": "Government Technology reported early indications: forms arrived about 94% complete versus about 72% before; case processing time fell 42% (a 10-hour case now took about 5 hours 48 minutes); caseworkers gained about 4 hours 12 minutes per week; paper use dropped 80%; and the state reported no loss of information collected.",
+    "headline_metric": "-42% processing time",
+    "attribution": "Direct. The new form was designed from the field research and tested with clients and staff; the outcome figures compare the old and new form.",
+    "caveats": "Early figures reported within weeks of statewide launch, likely from pilot use; no control group and no published methodology for the completeness and timing numbers. Figures come via journalism quoting the state and Civilla.",
+    "methods": [
+      "interviews",
+      "field_study",
+      "usability_testing",
+      "co_design"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "errors",
+      "cost_avoided"
+    ],
+    "company_size": "public_sector",
+    "year": 2018,
+    "evidence_strength": "measured",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Michigan Scales Back Massive Applications Process with Human-Centric Design",
+        "url": "https://www.govtech.com/health/michigan-scales-back-massive-applications-process-with-human-centric-design.html",
+        "publisher": "Government Technology",
+        "date": "2018-01-31"
+      }
+    ]
+  },
+  {
+    "slug": "login-gov-identity-proofing-photo-step",
+    "title": "Login.gov lifted identity-proofing success from 51% to 74% after user testing",
+    "company": "Login.gov (U.S. General Services Administration)",
+    "is_anonymized": false,
+    "summary": "Many people who started Login.gov's higher-assurance identity verification never finished it. The team tested the photo-capture flow with users, found tap-target, wording and screen-order problems, and fixed them. Proofing success rose from 51% to 60% within two weeks and averaged 74% within 30 days.",
+    "problem": "Login.gov's identity verification flow (IAL2), which asks people to photograph their ID and themselves, had a low success rate: about half of people who started it completed every step.",
+    "research": "Remote concept testing and user interviews with members of the public, watched by cross-disciplinary team members, with fast iteration between rounds. Participant counts are not given.",
+    "insight": "Mobile users needed large tap targets and did not reliably hit the small photo button; the word 'selfie' was not universally understood; and an interim verification screen shown after only two steps confused people.",
+    "change": "Made the whole photo box tappable, replaced 'selfie' with 'Take a photo of yourself', and reworked the unhelpful interim screen, among other plain-language changes.",
+    "outcome": "Actual proofing success (people who start and complete all steps) rose from 51% to 60% within two weeks of the changes. Within 30 days the average was 74%, with a daily high of 84%.",
+    "headline_metric": "51% → 74% proofing rate",
+    "attribution": "Fairly direct: the post lists specific research findings, the changes made in response, and the before/after success rate. It does not rule out other changes or shifts in user mix over the same period.",
+    "caveats": "Self-reported by GSA on its own platform. No control group, no participant numbers, and the measurement window is short. The rise continued into the 30-day mark, so some of it may reflect other factors.",
+    "methods": [
+      "usability_testing",
+      "interviews",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "conversion",
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2021,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Security Is Everyone's Job: Delivering Secure, Usable Login for Government",
+        "url": "https://digital.gov/2021/03/02/security-is-everyones-job-delivering-secure-usable-login-for-government",
+        "publisher": "Digital.gov (GSA)",
+        "date": "2021-03-02"
+      }
+    ]
+  },
+  {
+    "slug": "vets-gov-health-care-application",
+    "title": "VA's online health care applications rose from about 62 to 500+ a day after a researched rebuild",
+    "company": "U.S. Department of Veterans Affairs (with U.S. Digital Service)",
+    "is_anonymized": false,
+    "summary": "VA's online health care application was a fillable PDF that most browsers couldn't open, so only about 8% of applications came in online. The U.S. Digital Service rebuilt it as a web form on Vets.gov, shaped through research with Veterans. Daily online submissions went from about 62 to more than 500.",
+    "problem": "The 10-10EZ health care application was a PDF requiring Adobe Acrobat. Only Internet Explorer opened it by default, so about 70% of visitors hit an error. Since 2012 only about 8% of applications had been submitted online.",
+    "research": "Vets.gov ran usability testing, card sorting and contextual interviews with Veterans, remote and in person, individually and in groups, and worked through bugs and feedback directly with Veterans. The report describes these methods for Vets.gov as a whole rather than for the form alone.",
+    "insight": "Veterans were blocked by the technology itself (the PDF failing to open) and by having to navigate multiple VA sites with several logins, not by unwillingness to apply online.",
+    "change": "On June 30, 2016 VA launched a plain HTML health care application on Vets.gov that works in any browser, and kept iterating it based on Veteran feedback.",
+    "outcome": "Online submissions went from about 62 per day to more than 500 per day; 41,000 online submissions arrived in the first 60 days. In 2015 only about 10% of 582,000 applications were online.",
+    "headline_metric": "62 → 500+ apps/day",
+    "attribution": "Partial. The largest gain likely came from replacing a broken PDF, which basic analytics would reveal. The report credits a user-centered process, but the research methods are described for Vets.gov generally, not tied to specific form decisions.",
+    "caveats": "Self-reported by USDS in its report to Congress. No control group. The improvement mixes fixing a technical failure with research-led design; it is not possible to separate them. Completion rates were not reported.",
+    "methods": [
+      "usability_testing",
+      "card_sorting",
+      "field_study",
+      "interviews"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "adoption",
+      "conversion"
+    ],
+    "company_size": "public_sector",
+    "year": 2016,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Vets.gov — U.S. Digital Service Report to Congress 2016",
+        "url": "https://www.usds.gov/report-to-congress/2016/vets-dot-gov/",
+        "publisher": "U.S. Digital Service",
+        "date": "2016-12-01"
+      }
+    ]
+  },
+  {
+    "slug": "getcalfresh-application-time",
+    "title": "GetCalFresh cut California's food-aid application from 45 to about 10 minutes",
+    "company": "Code for America with California Department of Social Services",
+    "is_anonymized": false,
+    "summary": "Code for America watched people try to apply for CalFresh (SNAP) through the existing online system and found it long, desktop-bound and paperwork-heavy. It built GetCalFresh, a mobile-first application with photo uploads and text updates. Application time dropped from 45 minutes to about 10, and the service went statewide in 2019.",
+    "problem": "Applying for CalFresh online took around 45 minutes, didn't work well on phones, and required faxing, mailing or dropping off documents, so many eligible Californians never applied or never finished.",
+    "research": "Starting in 2013, Code for America observed applicants navigating the existing enrollment process, ran pilots in counties, gathered insights from county staff and analyzed data on where people dropped off.",
+    "insight": "The application needed to be much simpler and to work on a mobile phone; document submission was a major barrier; and applicants lost track of what happened after submitting.",
+    "change": "Built GetCalFresh: a shorter, mobile-friendly application, document upload by phone camera, and text messages confirming submission and reminding people of key steps. Research findings were fed back to county staff to change local processes.",
+    "outcome": "Code for America and CDSS report that application time fell from 45 minutes to about 10 minutes (under 10 minutes by 2019). The service expanded to all 58 California counties in May 2019. Application rates reportedly rose in counties using it, but no figures are given.",
+    "headline_metric": "45 → 10 min to apply",
+    "attribution": "The product was designed from the observational research, and the time reduction compares it with the old process. The source does not say how the times were measured.",
+    "caveats": "Self-reported by Code for America, which built and runs the product. The time comparison is between two different systems with no published method. Uptake gains are claimed without numbers.",
+    "methods": [
+      "field_study",
+      "concept_testing",
+      "analytics",
+      "interviews"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "adoption"
+    ],
+    "company_size": "public_sector",
+    "year": 2019,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "California Launches Code for America's GetCalFresh in All 58 Counties",
+        "url": "https://codeforamerica.org/news/california-launches-code-for-americas-getcalfresh-in-all-58-counties",
+        "publisher": "Code for America",
+        "date": "2019-05-31"
+      }
+    ]
+  },
+  {
+    "slug": "hmcts-online-divorce-form-errors",
+    "title": "HMCTS online divorce cut error-driven form returns from about 40% to 0.5%",
+    "company": "HM Courts & Tribunals Service (UK Ministry of Justice)",
+    "is_anonymized": false,
+    "summary": "Research into the divorce process found the paper application form was the biggest source of problems, with around 40% of forms sent back for errors. HMCTS replaced it with a researched, tailored online form and kept refining it from what users got wrong. Error-driven returns fell to 8% in the first online version and 0.5% later.",
+    "problem": "Under the paper process, up to 40% of divorce applications were rejected or returned because forms were filled in incorrectly, costing applicants time and stress and creating rework for court staff.",
+    "research": "From April 2016: discovery research with applicants, court staff and support workers (Personal Support Unit, Citizens Advice); end-to-end journey mapping; contextual research; usability and prototype testing, including with front-line staff and at the Digital Accessibility Centre with people with access needs; call-centre and nationwide surveys. A limited pilot at the East Midlands divorce centre began in January 2017.",
+    "insight": "Of all the documents in the process, the D8 application form caused the most problems. Applicants were making avoidable mistakes about eligibility rules (such as the one-year marriage requirement), jurisdiction and marriage certificate details.",
+    "change": "The D8 was replaced with an online 'smart form' that adapts its questions to the applicant's circumstances, with in-service guidance and validation against common errors (for example a divorce date before the marriage date). Wording and help were refined after launch, and the paper form was redesigned on the same principles.",
+    "outcome": "HMCTS reports that about 40% of paper forms were returned for errors; the first online version brought that to 8%, and further work brought it to 0.5% by May 2018.",
+    "headline_metric": "40% → 0.5% form returns",
+    "attribution": "Strong link: research identified the form as the problem and the specific errors to design against; the outcome is the error-return rate for that form. Some of the gain comes from validation that any digital form could add.",
+    "caveats": "Figures are self-reported by HMCTS in a blog post without method detail. Comparing paper to online is not like for like, and early online users were a limited, self-selected pool. An alpha assessment also cited a separate 17% judicial rejection rate, not reported on here.",
+    "methods": [
+      "field_study",
+      "usability_testing",
+      "concept_testing",
+      "survey",
+      "journey_mapping",
+      "accessibility_research"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "errors",
+      "task_success",
+      "cost_avoided"
+    ],
+    "company_size": "public_sector",
+    "year": 2018,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Shaping change around users increases efficiency too",
+        "url": "https://insidehmcts.blog.gov.uk/2018/05/14/shaping-change-around-users-increases-efficiency-too/",
+        "publisher": "Inside HMCTS blog",
+        "date": "2018-05-14"
+      },
+      {
+        "title": "Working with stakeholders to develop an online divorce service",
+        "url": "https://insidehmcts.blog.gov.uk/2017/04/11/working-with-stakeholders-to-develop-an-online-divorce-service/",
+        "publisher": "Inside HMCTS blog",
+        "date": "2017-04-11"
+      },
+      {
+        "title": "Apply for Divorce - Alpha Assessment",
+        "url": "https://www.gov.uk/service-standard-reports/apply-for-divorce",
+        "publisher": "GOV.UK service standard reports",
+        "date": "2017-01-18"
+      }
+    ]
+  },
+  {
+    "slug": "legal-and-general-accessible-website",
+    "title": "Legal & General's accessibility-led rebuild doubled quote requests within 3 months",
+    "company": "Legal & General",
+    "is_anonymized": false,
+    "summary": "Legal & General audited its website for accessibility, usability-tested it, and surveyed customers, then rebuilt it to accessibility standards and had disabled users evaluate it before launch in 2005. The company reported doubled quote requests, more search traffic and much lower maintenance costs.",
+    "problem": "The existing site was hard to use for people most likely to be excluded by inaccessible websites, including older and disabled customers, who are a large part of the insurer's audience.",
+    "research": "An accessibility audit and usability testing of the existing site, market research with existing customers, and usability testing plus an evaluation by users with disabilities of the new site before launch.",
+    "insight": "The old site created barriers for the target audience most likely to be shut out by inaccessible design; fixing them meant a rebuild to accessibility standards rather than patching.",
+    "change": "Designed and built a new site to accessibility standards, also usable on mobile devices; changes went live on 31 July 2005.",
+    "outcome": "As stated in the W3C case study: natural search traffic up 25% within 24 hours and eventually 50%; visitors requesting quotes doubled within 3 months; maintenance costs down 66%; content maintenance time from 5 days to 0.5 days, saving £200,000 a year; page load times down 75%; inaccessibility complaints dropped to zero; 100% ROI in 12 months.",
+    "headline_metric": "2x quote requests",
+    "attribution": "Indirect. Research with disabled users shaped and validated the rebuild, but many outcomes (search traffic, load time, maintenance cost) come from cleaner code and a new CMS rather than research findings as such.",
+    "caveats": "Old (2005). The figures come from Legal & General via a W3C business-case page now archived; no method or baseline is given. A W3C mailing list discussion notes parts were reskins rather than a full redesign. No control for seasonality or marketing.",
+    "methods": [
+      "accessibility_research",
+      "usability_testing",
+      "heuristic_review",
+      "survey"
+    ],
+    "research_type": "evaluative",
+    "industry": "insurance",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "cost_avoided",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2006,
+    "evidence_strength": "measured",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Legal and General Group Case Study (archived business case)",
+        "url": "https://www.w3.org/WAI/business-case/archive/legal-and-general-case-study",
+        "publisher": "W3C Web Accessibility Initiative",
+        "date": "2009-12-14"
+      }
+    ]
+  },
+  {
+    "slug": "canada-cra-contact-pages-task-success",
+    "title": "Canada Revenue Agency contact pages: task success rose from 40% to 85% in testing",
+    "company": "Canada Revenue Agency (with TBS Digital Transformation Office)",
+    "is_anonymized": false,
+    "summary": "At least 5 million people a year looked up a CRA phone number on Canada.ca, and many ended up calling the wrong line. The team built test tasks from real call drivers, usability-tested the existing pages, then redesigned around guided choices and an online-first option. Task success on the prototype rose from 40% to 85%.",
+    "problem": "The CRA contact page was one of Canada.ca's top tasks, and callers often failed to reach the right number or didn't know there was an online option, adding load to a call centre that handles millions of calls a year.",
+    "research": "CRA call centre agents and specialists turned the highest-volume call problems into job stories and test tasks. The team ran a recorded baseline usability test of the existing pages with Canadian small business owners (personal and business scenarios), drew on call centre data and web analytics, then retested the same tasks on a prototype.",
+    "insight": "Many users never reached the telephone numbers page because of an extra link and overlay; those who did often picked the wrong number from a long list; and people rarely followed links to hours of service or what to prepare.",
+    "change": "Custom contact pages for each top call driver, a 'Find a phone number' wizard, collapsible choices (home or business first), the online option as a primary button placed before the phone number, and each number grouped with hours, preparation checklist and services.",
+    "outcome": "Overall task success rose from 40% at baseline to 85% on the redesigned prototype. Some tasks moved dramatically, for example finding the line for a misallocated payment went from 12% to 83%, and the address for an RC1 form from 0% to 100%.",
+    "headline_metric": "40% → 85% task success",
+    "attribution": "Direct: the same research-derived tasks were measured before and after a redesign built from the baseline findings.",
+    "caveats": "Results are from usability testing of a prototype, not live traffic; no participant counts or significance testing reported. Call volume impact was not reported. Published by the government's own design office.",
+    "methods": [
+      "usability_testing",
+      "benchmarking",
+      "support_analysis",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "website",
+    "metrics": [
+      "task_success",
+      "support_cost"
+    ],
+    "company_size": "public_sector",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Contact the CRA: Research summary",
+        "url": "https://design.canada.ca/research-summaries/cra-contact-us-research-summary.html",
+        "publisher": "Canada.ca Design (Government of Canada)",
+        "date": "2019-11-01"
+      }
+    ]
+  },
+  {
+    "slug": "canada-diseases-immunization-content",
+    "title": "Canada's vaccine and disease pages: task completion rose from 53% to 84% on mobile",
+    "company": "Health Canada and Public Health Agency of Canada (with TBS Digital Transformation Office)",
+    "is_anonymized": false,
+    "summary": "Parents struggled to find and understand vaccine and disease information on Canada.ca, mostly on phones. The team ran moderated mobile usability tests with 16 parents, found where content failed, including Zika risks and vaccine myths, and rewrote it. Retesting with 16 new parents raised task completion from 53% to 84%.",
+    "problem": "Health information on Canada.ca about diseases and immunization was hard to find and act on, especially on mobile, where most people accessed it. Vaccine hesitancy made clear answers more important.",
+    "research": "Discovery reviewed vaccine-hesitancy research, past usability studies, traffic, search and support requests. A baseline moderated usability test on smartphones in Toronto and Ottawa with 16 employed parents of children under 18 ran 11 tasks (176 trials). Guerrilla tests during design, then a validation test with 16 new participants on the same tasks.",
+    "insight": "Testers did not take in the serious risks of Zika during pregnancy; myths such as an autism-vaccine link were hard to answer from the pages (13% success); and key Health and Travel links were hidden in a closed menu on the home page.",
+    "change": "Rewrote content to give direct answers, added content addressing vaccine hesitancy, redesigned the Zika page (grouped tasks, simpler title, all country answers visible), and exposed Health and Travel links on the Canada.ca home page.",
+    "outcome": "Findability rose from 66% to 90% and task completion from 53% to 84%, meeting the team's targets. The autism myth task went from 13% to 80% and travel vaccines for Mexico from 13% to 69%. One task (FluWatch comparison) fell from 94% to 88%.",
+    "headline_metric": "53% → 84% task completion",
+    "attribution": "Direct: the redesign targeted problems seen in the baseline test, and the same tasks were remeasured with new participants.",
+    "caveats": "Small samples (16 per round) and prototype testing, not live behaviour. No data on whether vaccination intent or real-world outcomes changed. Published by the government's own design team.",
+    "methods": [
+      "usability_testing",
+      "benchmarking",
+      "analytics",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "healthcare",
+    "product_type": "website",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2018,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Diseases and immunization: Research summary",
+        "url": "https://design.canada.ca/research-summaries/diseases-research-summary.html",
+        "publisher": "Canada.ca Design (Government of Canada)",
+        "date": "2018-05-10"
+      }
+    ]
+  },
+  {
+    "slug": "canada-student-loans-grants-pages",
+    "title": "Canada student aid pages: task success rose from 61% to 88% after research-led rework",
+    "company": "Employment and Social Development Canada (Canada Student Grants and Loans Program)",
+    "is_anonymized": false,
+    "summary": "Students found Canada's single student-aid application form only about 60% of the time across years of testing. The team combined usability baselines, analytics and an analysis of how students actually phrase searches (including on Reddit), then restructured and renamed the pages. Task success on the prototype rose from 61% to 88%.",
+    "problem": "Canada supported 490,000 full-time students with $2.7 billion in loans in 2016, but the web pages were organized around programs: loans and grants sat on separate pages even though students apply for both with one form, and routes from the home page took many clicks.",
+    "research": "A spring 2018 usability test of top student tasks as baseline; analytics and earlier studies including multi-year testing of the application form; analysis of search language from Reddit posts, Canada.ca site search and Google queries; design workshops; and a retest of the same tasks on a prototype.",
+    "insight": "Students think of loans and grants as one task, use different words than the government ('student aid', 'lump-sum payment'), and most people looking to manage a loan arrive from Google and just want to log in to the loan service centre.",
+    "change": "Cut program-centric pages, grouped loans and grants by task, retitled a page to 'Manage your student loan at the NSLSC' with a single login button, and changed wording to match search language.",
+    "outcome": "Overall task success went from 61% to 88% on the prototype. Updating banking information rose from 15% to 82%; paying back a student loan from 57% to 100%; part-time aid from 72% to 100%.",
+    "headline_metric": "61% → 88% task success",
+    "attribution": "Direct: the same task scenarios were tested before and after a redesign shaped by the research.",
+    "caveats": "Prototype usability testing, not live metrics; sample sizes are not reported. Published by the government's own design office.",
+    "methods": [
+      "usability_testing",
+      "benchmarking",
+      "analytics",
+      "co_design"
+    ],
+    "research_type": "mixed",
+    "industry": "education",
+    "product_type": "website",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Student loans and grants optimization: Research summary",
+        "url": "https://design.canada.ca/research-summaries/student-loans-research-summary.html",
+        "publisher": "Canada.ca Design (Government of Canada)",
+        "date": "2019-08-22"
+      }
+    ]
+  },
+  {
+    "slug": "wikipedia-sticky-header",
+    "title": "Wikipedia's research-shaped sticky header cut scrolling 15% in an A/B test",
+    "company": "Wikimedia Foundation",
+    "is_anonymized": false,
+    "summary": "As part of its desktop redesign, the Wikimedia Foundation tested what readers and editors needed in a header that stays on screen. User testing in three locations and a prototype survey on 30 wikis shaped which links it showed and made it persistent. An A/B test on pilot wikis found logged-in users scrolled 15% less per session.",
+    "problem": "On long Wikipedia articles, readers and editors had to scroll back to the top to reach search, page tools, the talk page, history or the edit button.",
+    "research": "User testing with readers and editors in three locations and languages to find the highest-priority functions, then prototype testing with logged-in users across 30 wikis in May 2021. Followed by A/B tests on pilot wikis in 2022.",
+    "insight": "Users valued being able to reach key functions from anywhere on the page, but about 20% of prototype testers reported problems with how the header appeared and disappeared; editors in particular wanted it to stay put rather than pop in and out.",
+    "change": "The team chose which links to include based on testing, removed the show/hide trigger behaviour so the header became persistent, and later added an edit button to it.",
+    "outcome": "In an A/B test from 5 to 31 January 2022, logged-in users in the treatment group scrolled on average 15% less per session than the control group. In two later A/B tests, the share of people completing at least one edit via the header's edit button rose 2.8% and 6.8% compared with other edit buttons, and those edits were less likely to be reverted (no figure given due to a wide margin of error).",
+    "headline_metric": "-15% scrolling (A/B)",
+    "attribution": "Good: research determined the header's contents and behaviour, and the outcome comes from a controlled A/B test of that design. The A/B test measures the feature as a whole, not each research-driven decision separately.",
+    "caveats": "Scrolling less is a proxy for efficiency, not a direct measure of task success. Results are for logged-in users on pilot wikis. Participant counts for the user testing are not given on the project page. Self-reported by the Foundation, though it publishes the underlying reports openly.",
+    "methods": [
+      "usability_testing",
+      "concept_testing",
+      "survey",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "nonprofit",
+    "product_type": "website",
+    "metrics": [
+      "task_success",
+      "engagement"
+    ],
+    "company_size": "midmarket",
+    "year": 2022,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Reading/Web/Desktop Improvements/Features/Sticky Header",
+        "url": "https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements/Features/Sticky_Header",
+        "publisher": "MediaWiki.org (Wikimedia Foundation)",
+        "date": "2022-09-01"
+      }
+    ]
+  },
+  {
+    "slug": "xbox-adaptive-controller-accessible-packaging",
+    "title": "Gamers with disabilities shaped Xbox Adaptive Controller packaging that opens one-handed",
+    "company": "Microsoft (Xbox)",
+    "is_anonymized": false,
+    "summary": "Microsoft's first packaging designed for accessibility was built with input from gamers with limited mobility and disability advocates. Their feedback, starting with 'no teeth', drove a box that opens with one hand through loops, hinges and simple steps. The packaging went through more than 100 iterations of its components.",
+    "problem": "The Xbox Adaptive Controller was made for gamers with limited mobility, but standard packaging (tape, twist ties, tight plastic, two-handed lids) would have been a barrier for the very people buying it.",
+    "research": "Xbox design researcher Scott Wang consulted gamers and disability advocates in the US and UK while the controller was in development. Prototypes were tested with Microsoft employees with limited mobility, including one tester born without fingers on his left hand who used only that hand to represent a more extreme case.",
+    "insight": "Many disabled gamers open everyday items with their teeth and did not want to; they preferred several simple steps over fewer complicated ones; they needed access from multiple points; and edges and plastic covers caused cuts and frustration. Small circular loops were hard for some testers to use.",
+    "change": "Loops on the outer tape, quick-start guide and cable wrap; a hinged inner box instead of a two-handed lid; oval rather than round loops; no twist ties; rigid paperboard; an open-fronted tray; a guide folded on its long edge to reduce arm movement; and the controller centred so buttons aren't pressed in transit.",
+    "outcome": "The packaging shipped with the controller in 2018 after more than 100 iterations. Microsoft reports no quantitative test results; the evidence is the design decisions themselves and tester accounts.",
+    "headline_metric": null,
+    "attribution": "Direct for the design decisions: specific features (oval loops, no-teeth opening) are traced to named tester feedback. No outcome metric.",
+    "caveats": "Company feature story written at launch for publicity. No sales, returns or satisfaction data. Testing was partly with Microsoft employees.",
+    "methods": [
+      "accessibility_research",
+      "co_design",
+      "concept_testing",
+      "interviews"
+    ],
+    "research_type": "mixed",
+    "industry": "gaming",
+    "product_type": "physical_product",
+    "metrics": [
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How gamers with disabilities helped design the new Xbox Adaptive Controller's elegantly accessible packaging",
+        "url": "https://news.microsoft.com/features/how-gamers-with-disabilities-helped-design-the-new-xbox-adaptive-controllers-elegantly-accessible-packaging/",
+        "publisher": "Microsoft Stories",
+        "date": "2018-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "social-security-scotland-experience-panels",
+    "title": "Scotland's 2,400-member experience panels reshaped how its new benefits agency treats people",
+    "company": "Scottish Government / Social Security Scotland",
+    "is_anonymized": false,
+    "summary": "When Scotland took over some benefits from the UK government, it recruited more than 2,400 people with lived experience of the old system into research panels. Over six years their input changed policy and operational decisions, from how cases were transferred to the words used for disability assessments and even the colour of envelopes.",
+    "problem": "Scotland was building a new social security agency from scratch and wanted it to avoid the stress, distrust and stigma many people associated with the existing UK benefits system.",
+    "research": "The Social Security Experience Panels ran from 2017 to March 2024 with more than 2,400 members. Methods included interviews, focus groups, workshops, surveys (more than 70 surveys, 14,000+ responses) and user testing of forms and information; more than 1,000 members took part in interviews and focus groups.",
+    "insight": "People wanted to be treated with dignity and respect, not just processed; transferring benefits must not disrupt payments or require re-applying; the language of 'assessment' and 'assessor' was intimidating; and even brown envelopes caused anxiety because of what they had come to signal.",
+    "change": "The case transfer policy guaranteed no one would need to re-apply; the agency's Charter was co-designed with panel members; Adult Disability Payment processes used 'client consultation' and 'practitioner' instead of 'assessment' and 'assessor'; letters moved from brown to white envelopes; tone-of-voice, branding, buildings, telephony greetings, opening hours and local delivery venues were shaped by panel input.",
+    "outcome": "The government's legacy report documents these decisions as directly informed by panel research and concludes the panels achieved their purpose of helping design and deliver the new benefits. No outcome metrics are attached to the individual decisions.",
+    "headline_metric": null,
+    "attribution": "Direct for the listed decisions, which the report traces to specific panel findings. Whether they improved client outcomes is not measured here.",
+    "caveats": "Self-assessment by the Scottish Government of its own programme, partly based on interviews with its own staff. No comparison with outcomes under the UK system. Panel members self-selected.",
+    "methods": [
+      "interviews",
+      "survey",
+      "co_design",
+      "usability_testing"
+    ],
+    "research_type": "generative",
+    "industry": "government",
+    "product_type": "service",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "public_sector",
+    "year": 2024,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Social Security Experience Panels: legacy report — 3. Impact from Experience Panels Research",
+        "url": "https://www.gov.scot/publications/social-security-experience-panels-legacy-report/pages/4/",
+        "publisher": "Scottish Government",
+        "date": "2024"
+      },
+      {
+        "title": "Social Security Experience Panels: legacy report — Introduction",
+        "url": "https://www.gov.scot/publications/social-security-experience-panels-legacy-report/pages/2/",
+        "publisher": "Scottish Government",
+        "date": "2024"
+      }
+    ]
+  },
+  {
+    "slug": "medicare-plan-finder-drug-costs",
+    "title": "Medicare Plan Finder rebuilt around drug costs reported 40% more enrollments",
+    "company": "Centers for Medicare & Medicaid Services (with Ad Hoc)",
+    "is_anonymized": false,
+    "summary": "CMS's tool for comparing Medicare plans was widely seen as overwhelming. Contractor Ad Hoc ran user testing with beneficiaries and the people who help them, found drug costs were the most stressful decision point, and rebuilt the tool around annual drug-cost estimates. The contractor reports about 40% more enrollments than the legacy tool the year before.",
+    "problem": "The legacy Medicare Plan Finder was hard for beneficiaries to use, and they struggled to compare what plans would actually cost them.",
+    "research": "Starting in 2018, Ad Hoc reviewed earlier user feedback and reports from support organizations, then ran in-person user testing sessions and research interviews with Medicare beneficiaries and the counselors and advocates who help them, throughout the build. Participant counts are not given.",
+    "insight": "Drug costs were one of the most stressful and most important decisions for beneficiaries. They wanted three specific numbers: what an individual drug costs across coverage phases, what their set of drugs costs each month, and the total annual cost at a given pharmacy under a given plan.",
+    "change": "Instead of exposing full policy complexity, the team built a drug search and pricing engine that estimates annual costs for each plan and pharmacy, plus a logged-in experience with saved drugs and pre-filled enrollment, and a version for 1-800-Medicare representatives. Relaunched in August 2019.",
+    "outcome": "Ad Hoc reports the new tool helped more than 2.6 million beneficiaries enroll in a plan, about 40% more enrollments than the legacy tool the previous year, with 373,000 visitors a day on average during Open Enrollment.",
+    "headline_metric": "+40% enrollments",
+    "attribution": "Weak to moderate. The research shaped the core design, but the enrollment rise is compared with the prior year's tool and could reflect other changes (promotion, logged-in enrollment, market shifts).",
+    "caveats": "Contractor writing about its own work. Year-over-year comparison with no control. ProPublica reported in November 2019 that advocates and counselors found the relaunched tool often gave wrong drug coverage, premium and cost data; CMS acknowledged some problems and called the roughly $11 million redesign iterative.",
+    "methods": [
+      "usability_testing",
+      "interviews",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "healthcare",
+    "product_type": "public_service",
+    "metrics": [
+      "conversion",
+      "adoption"
+    ],
+    "company_size": "public_sector",
+    "year": 2020,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Modernizing how Medicare beneficiaries find and enroll in coverage",
+        "url": "https://adhoc.team/2020/04/09/modernizing-how-medicare-beneficiaries-find-and-enroll/",
+        "publisher": "Ad Hoc",
+        "date": "2020-04-09"
+      },
+      {
+        "title": "The $11 Million Medicare Tool That Gives Seniors the Wrong Insurance Information",
+        "url": "https://www.propublica.org/article/the-11-million-dollar-medicare-tool-that-gives-seniors-the-wrong-insurance-information",
+        "publisher": "ProPublica",
+        "date": "2019-11-25"
+      }
+    ]
+  },
+  {
+    "slug": "va-medication-alerts-human-factors-redesign",
+    "title": "Human-factors redesign of VA drug alerts halved prescribing errors in a controlled simulation",
+    "company": "U.S. Department of Veterans Affairs (VA HSR&D research team)",
+    "is_anonymized": false,
+    "summary": "Researchers at a VA medical center used field observations, prescriber interviews and human factors principles to redesign the drug-interaction and allergy alerts in the VA's electronic health record. In a crossover simulation with 20 prescribers, the redesigned alerts were resolved faster, rated higher, and led to fewer prescribing errors (median 2 versus 4).",
+    "problem": "Medication alerts in electronic health records are meant to prevent harm, but poorly designed alerts get missed, misread or overridden, and can themselves cause errors.",
+    "research": "Field observations and prescriber interviews, plus existing evidence, informed an 8-month iterative redesign led by two human factors engineers with physicians, pharmacists, a nurse practitioner and informatics staff, reviewed by a national advisory panel. The redesign was then evaluated in a counterbalanced crossover simulation with 20 VA prescribers (14 physicians, 2 nurse practitioners, 4 clinical pharmacists) across three scenarios with 19 possible alerts, October 2011 to March 2012.",
+    "insight": "In the original design, 30% of prescribers missed alerts because they required scrolling, 60% intended to cancel a drug but didn't complete the cancellation, some misread the cancel checkbox as an ordering control, and repeated alerts confused people.",
+    "change": "Alerts were redesigned using chunking, proximity of clinical data to the decision point, visual importance ordering, signal words, a tabular layout for alert text and consistent controls.",
+    "outcome": "Compared with the original alerts: time spent on alerts fell from a median of 85 to 56 seconds (p=0.015); total scenario time fell from 246 to 195 seconds (p=0.010); prescribing errors per prescriber fell from a median of 4 to 2 (p=0.024); overall satisfaction rose from 4.3 to 5.2 on a 7-point scale (p=0.033); perceived workload dropped modestly (p=0.042).",
+    "headline_metric": "Errors: median 4 → 2",
+    "attribution": "Strong: a controlled crossover comparison of the original and research-informed redesign, with no training on the new design.",
+    "caveats": "Lab simulation with fictitious patients, not live care; single VA site, outpatient only, 20 prescribers. The redesign also introduced new usability errors (for example, 2 prescribers clicked Cancel when they meant to proceed). The authors note error counts remained too high even after redesign.",
+    "methods": [
+      "field_study",
+      "interviews",
+      "heuristic_review",
+      "usability_testing",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "healthcare",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "errors",
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "public_sector",
+    "year": 2014,
+    "evidence_strength": "tested",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Applying human factors principles to alert design increases efficiency and reduces prescribing errors in a scenario-based simulation",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4173163/",
+        "publisher": "Journal of the American Medical Informatics Association",
+        "date": "2014-03-25"
+      }
+    ]
+  },
+  {
+    "slug": "irs-direct-file-pilot",
+    "title": "IRS Direct File, built through 33 studies with taxpayers, scored 90% excellent or above average",
+    "company": "Internal Revenue Service (with U.S. Digital Service and 18F)",
+    "is_anonymized": false,
+    "summary": "The IRS built its free Direct File tax-filing pilot through continuous user research, from a 2023 prototype through the 2024 filing season: 33 studies with 195 taxpayers, in English and Spanish and including assistive technology users. In the pilot's post-filing survey, 90% rated their experience excellent or above average, with a Net Promoter Score of +74.",
+    "problem": "The IRS needed to know whether a free, government-built filing tool could work for taxpayers with simple returns, and how to make tax questions answerable accurately and confidently by non-experts.",
+    "research": "Unstructured one-on-one interviews, observations and usability testing with taxpayers of varied attitudes, aptitudes, abilities and access needs, in English and Spanish, including assistive technology users, recruited partly via community and accessibility nonprofits. 33 studies with 195 taxpayers; some studies targeted sections that generated customer-support demand.",
+    "insight": "Research assessed whether taxpayers could answer the interview-style questions accurately and confidently and identified sections driving support requests. Pilot data also showed more than 18% of submissions were rejected because people entered the wrong prior-year AGI or PIN.",
+    "change": "The product was iterated throughout the pilot based on research and support feedback. For prior-year AGI rejections, the UX team showed information earlier, improved explanatory text and made links to the IRS online account more prominent, then added a feature importing the data directly.",
+    "outcome": "Of about 15,000 survey respondents, 90% rated Direct File excellent or above average (NPS +74), 86% said it increased their trust in the IRS, and 90% of those who used customer support rated it excellent or above average. AGI/PIN rejections fell from 18.2% to 16.4% after UX changes and to 12.1% after adding data import. The pilot accepted 140,803 returns.",
+    "headline_metric": "90% rated excellent/above",
+    "attribution": "Moderate. Research was central to how the product was built, but satisfaction is a post-hoc survey with no comparison group, so the score cannot be credited to research alone. The reject-rate fix is better linked but was prompted by pilot data and support feedback as much as research.",
+    "caveats": "Self-reported by the IRS. Survey response rate was 13% and likely skews toward satisfied users; it was sent to people who used the product. Eligibility was limited to simple returns in 12 states. At publication the IRS had not decided the program's future, and this pilot-year report says nothing about long-term outcomes.",
+    "methods": [
+      "interviews",
+      "field_study",
+      "usability_testing",
+      "accessibility_research",
+      "survey",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "satisfaction",
+      "errors",
+      "accessibility"
+    ],
+    "company_size": "public_sector",
+    "year": 2024,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "IRS Direct File Pilot Program: Filing Season 2024 After Action Report (Publication 5969)",
+        "url": "https://www.irs.gov/pub/irs-pdf/p5969.pdf",
+        "publisher": "Internal Revenue Service",
+        "date": "2024-05-03"
+      }
+    ]
+  }
+]

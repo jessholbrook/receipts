@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Receipts
 
-## Getting Started
+**What has UX research ever done for us?**
 
-First, run the development server:
+A public atlas of documented cases where UX research improved a product, a business metric or a decision.
+Every entry is rated for evidence strength (Tested, Measured, Reported, Decision) and source type.
+
+- Project brief and principles: [`BRIEF.md`](BRIEF.md)
+- Taxonomy: [`docs/taxonomy.md`](docs/taxonomy.md)
+- Seed entry format: [`docs/entry-schema.md`](docs/entry-schema.md)
+
+## Stack
+
+- **Next.js 15** (App Router), deployed on Vercel.
+- **Supabase Postgres** for entries and submissions. The browser and server only use the public
+  publishable key; all access control lives in the database:
+  - `entries`: anyone can read published rows. No public writes.
+  - `submissions`: anyone can insert a pending row. Nobody can read through the API.
+  - Moderation runs through `security definer` functions (`admin_*`) that check a bcrypt-hashed
+    passphrase stored in `admin_secrets`.
+
+Schema: [`supabase/migrations/`](supabase/migrations).
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Supabase URL and publishable key have defaults in `lib/supabase.ts`. Override with
+`NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Seed data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Seed entries live in `data/seed/*.json`. To validate and load them:
 
-## Learn More
+```bash
+node scripts/build-seed.mjs          # validates against lib/taxonomy.ts, writes supabase/seed.json
+RECEIPTS_ADMIN_TOKEN=... node scripts/load-seed.mjs   # upserts by slug
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Moderation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Go to `/admin` and sign in with the moderator passphrase. Pending submissions show up with an
+editable JSON version of the entry: fix the slug, wording or ratings, then approve to publish,
+or reject with a private note.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To change the passphrase, run in the Supabase SQL editor:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sql
+update admin_secrets set passphrase_hash = extensions.crypt('NEW-PASSPHRASE', extensions.gen_salt('bf', 10));
+```

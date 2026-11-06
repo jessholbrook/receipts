@@ -1,0 +1,740 @@
+[
+  {
+    "slug": "google-chrome-ssl-warning-redesign",
+    "title": "Chrome's research-based SSL warning got about 30% more people to stay safe",
+    "company": "Google (Chrome)",
+    "is_anonymized": false,
+    "summary": "Chrome's security warnings for bad HTTPS connections were widely misunderstood and clicked through. Google researchers redesigned the warning using warning-science guidance, checked comprehension with microsurveys, and ran a field experiment. Adherence rose from 37% to 62%, though comprehension barely improved.",
+    "problem": "Most people who saw Chrome's SSL/TLS warning ignored it and proceeded to potentially dangerous sites, and few understood what the warning meant.",
+    "research": "Google security and UX researchers (with a University of Pennsylvania collaborator) designed candidate warnings from published warning-design recommendations, measured comprehension with online microsurveys, and compared warning versions in a field experiment with real Chrome users. Published at CHI 2015.",
+    "insight": "Simplifying the language (to roughly sixth-grade reading level) did not make people understand the threat much better. What did change behavior was 'opinionated design': visual cues and layout that make the safe choice the obvious one and make proceeding harder to find.",
+    "change": "Chrome shipped a new warning with simpler text, a stronger visual treatment, and the 'proceed anyway' path de-emphasized behind an extra step.",
+    "outcome": "In the field, adherence (users choosing not to proceed) rose from 37% to 62% (reported as 61% in some coverage). The authors state plainly that they failed at their goal of a well-understood warning.",
+    "headline_metric": "Adherence 37% → 62%",
+    "attribution": "Direct. The research team designed, tested, and shipped the warning, and the field experiment compares warning versions.",
+    "caveats": "Comprehension did not meaningfully improve, so the win is behavioral, not understanding. Figures reported as 61% or 62% depending on the outlet. Authors are Google employees writing about Google's product, though in a peer-reviewed venue. 2015.",
+    "methods": [
+      "survey",
+      "experimentation",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "web_app",
+    "metrics": [
+      "errors",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2015,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Improving SSL Warnings: Comprehension and Adherence",
+        "url": "https://research.google/pubs/improving-ssl-warnings-comprehension-and-adherence/",
+        "publisher": "Google Research (CHI 2015)",
+        "date": "2015-04-18"
+      },
+      {
+        "title": "Google Improves Chrome's SSL Warnings",
+        "url": "https://biztechmagazine.com/article/2015/03/google-improves-chromes-ssl-warnings",
+        "publisher": "BizTech Magazine",
+        "date": "2015-03-16"
+      }
+    ]
+  },
+  {
+    "slug": "facebook-compassion-research-photo-reporting",
+    "title": "Facebook's compassion research made more people ask friends to take photos down",
+    "company": "Facebook (Meta)",
+    "is_anonymized": false,
+    "summary": "Facebook found that many reported photos weren't policy violations but embarrassing pictures posted by friends. Working with UC Berkeley and Yale emotion researchers, it redesigned the reporting flow to help people message the poster in emotionally specific language. Message sending, photo removal and replies all went up.",
+    "problem": "Large numbers of users reported photos to Facebook that broke no rules (unflattering or embarrassing pictures of themselves). Facebook couldn't act on them, and the old flow left users to write their own message to the poster, which few did.",
+    "research": "Facebook's team led by Arturo Bejar reviewed flagged photos and the reporting flow, and partnered with UC Berkeley's Greater Good Science Center (Dacher Keltner, Paul Piff, Emiliana Simon-Thomas) on emotion-based message design. Yale's Center for Emotional Intelligence ran focus groups with 13–14-year-olds and interviewed kids who had been cyberbullied. New flows were piloted on a random 50% of US English-language users.",
+    "insight": "People reporting these photos wanted the friend to remove it, not Facebook to punish anyone. They were much more likely to reach out when helped to name how the content made them feel and given polite, personal wording. Teens related to 'this post is a problem' more than to the word 'report'.",
+    "change": "The adult flow asked 'I don't like this photo because:' with emotion-based options and pre-filled, polite messages naming the friend. For teens, 'Report' became 'This post is a problem', with more specific reasons and an option to message a trusted adult.",
+    "outcome": "With generic default text, message sending rose from 20% to 51%. In the new flow, about 75–80% sent the suggested message; half of content creators deleted the photo (versus a third under the old system); about 75% replied, a nearly 50% increase. Teens contacting a trusted adult went from 19% to 43%.",
+    "headline_metric": "Messages sent 20% → 51%",
+    "attribution": "Strong. The redesigned flows came directly out of the research partnership and were compared with the old flow in a pilot.",
+    "caveats": "Numbers come from a 2012 magazine article published by one of the research partners (Greater Good), relaying Facebook's figures; some are preliminary. Exact comparison method for each number isn't detailed. Old (2011–2012).",
+    "methods": [
+      "support_analysis",
+      "interviews",
+      "experimentation",
+      "concept_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "consumer_tech",
+    "product_type": "web_app",
+    "metrics": [
+      "engagement",
+      "support_cost",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2012,
+    "evidence_strength": "measured",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Can Science Make Facebook More Compassionate?",
+        "url": "https://greatergood.berkeley.edu/article/item/can_science_make_facebook_more_compassionate",
+        "publisher": "Greater Good Magazine (UC Berkeley)",
+        "date": "2012-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "google-clips-user-control-from-research",
+    "title": "Research with parents and photographers put a shutter button on Google's AI camera",
+    "company": "Google (Clips)",
+    "is_anonymized": false,
+    "summary": "Google Clips was meant to be a fully automatic AI camera. Research with photographers and parents, plus prototype testing on users' own footage, showed people needed control and to understand what the camera was looking for. The team added a capture button and viewfinder and deliberately showed more clips than the model rated best.",
+    "problem": "The team needed to define what a 'memorable moment' is so an on-device model could capture it, and to decide how much control users should have over an automatic camera.",
+    "research": "Over roughly three years, the team hired a documentary filmmaker, a photojournalist and a fine-art photographer to articulate what makes a good moment, studied parents (especially new parents) and their photo habits, and prototyped the experience with users' real content before the models were finished ('fake it till you make it').",
+    "insight": "Perfect automatic capture isn't achievable for something this subjective. Users needed a sense of authorship and control. The team's own enthusiasm for futuristic, gesture-heavy interfaces had hidden how complex they would be for real users. Teaching the model what to ignore (fingers over lens, blur, inside a pocket) mattered as much as what to capture.",
+    "change": "Added a hardware capture button and a software viewfinder; let users choose the still frame and clip length; simplified the UI; had the camera slightly over-deliver clips so users could delete and learn what it looks for; kept processing on-device.",
+    "outcome": "No metric reported. The research changed core product decisions about user control and interface design.",
+    "headline_metric": null,
+    "attribution": "The design lead attributes the control features and simplified UI directly to the human-centered research process.",
+    "caveats": "No outcome metric. Google Clips was discontinued in 2019, so these decisions did not make it a commercial success. Account is first-party (Google Design) plus press coverage of it.",
+    "methods": [
+      "interviews",
+      "concept_testing",
+      "field_study"
+    ],
+    "research_type": "mixed",
+    "industry": "hardware",
+    "product_type": "ai_product",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The UX of AI",
+        "url": "https://design.google/library/ux-ai",
+        "publisher": "Google Design",
+        "date": "2018-01-25"
+      },
+      {
+        "title": "Pro photographers teach Google Clips when (and when not) to take a photo",
+        "url": "https://www.digitaltrends.com/photography/google-clis-inside-look-at-the-ai/",
+        "publisher": "Digital Trends",
+        "date": "2018-01-26"
+      }
+    ]
+  },
+  {
+    "slug": "riot-league-of-legends-player-behavior",
+    "title": "Riot's behavioral research raised League of Legends reform rates to 92%",
+    "company": "Riot Games (League of Legends)",
+    "is_anonymized": false,
+    "summary": "Riot built a player-behavior team of scientists and designers to study toxicity in League of Legends. They found most bad behavior came from ordinary players having a bad day, not dedicated trolls, and that clear, fast feedback changed behavior. Reform rates rose from 50% to 65% with evidence-backed feedback and to 92% once feedback arrived within minutes.",
+    "problem": "Abusive chat was widespread in League of Legends, hurting player experience, and banning a small set of 'trolls' wasn't working.",
+    "research": "A team including PhDs in cognitive neuroscience and human factors, led by Jeffrey Lin, built behavior profiles from game data, ran in-game experiments (optional cross-team chat; a 5×3×4 factorial 'priming' experiment on loading-screen messages), and used the community Tribunal's judgments to train language models. Work presented at GDC 2013 and reported in 2015.",
+    "insight": "Severe, consistent toxicity is rare; many toxic games come from otherwise normal players on a bad day, and negativity spreads. Players reform more when they're told exactly what they did, with evidence, and quickly.",
+    "change": "Made cross-team chat optional; sent banned players 'reform cards' explaining the offense with chat-log evidence; automated detection so feedback arrived within five minutes instead of up to a week; tested priming messages on loading screens.",
+    "outcome": "Making cross-team chat optional significantly reduced offensive language, obscenity and negative attitude. Reform rates rose from 50% to 65% after adding better feedback and evidence, and to an all-time high of 92% with near-instant feedback. Community Tribunal verdicts matched Riot's internal team 98% of the time.",
+    "headline_metric": "Reform rate 50% → 92%",
+    "attribution": "Fairly direct: the interventions were designed from the team's behavioral findings, and some were run as in-game experiments.",
+    "caveats": "Figures come from Riot staff in talks and interviews; methods behind each number aren't published. Different outlets report different percentages. 'Reform' is Riot's own definition (not reoffending). The priming experiment results were only partially shared. One finding (a red positive question) backfired.",
+    "methods": [
+      "analytics",
+      "experimentation",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "gaming",
+    "product_type": "game",
+    "metrics": [
+      "errors",
+      "retention",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2015,
+    "evidence_strength": "measured",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "A Video-Game Algorithm to Solve Online Abuse",
+        "url": "https://www.technologyreview.com/2015/09/14/166255/a-video-game-algorithm-to-solve-online-abuse/",
+        "publisher": "MIT Technology Review",
+        "date": "2015-09-14"
+      },
+      {
+        "title": "GDC: Riot experimentally investigates online toxicity",
+        "url": "https://gamedeveloper.com/design/gdc-riot-experimentally-investigates-online-toxicity",
+        "publisher": "Game Developer",
+        "date": "2013-03-31"
+      }
+    ]
+  },
+  {
+    "slug": "halo-3-microsoft-playtest-lab",
+    "title": "3,000 hours of lab playtesting reshaped Halo 3's levels and weapons",
+    "company": "Microsoft Game Studios / Bungie (Halo 3)",
+    "is_anonymized": false,
+    "summary": "Microsoft's games user research lab watched about 600 ordinary players for more than 3,000 hours of Halo 3, combining video, think-aloud, in-game ratings and telemetry heat maps. The data exposed players getting lost, wasting ammo and killing themselves with a tank turret, and designers fixed each issue.",
+    "problem": "Bungie needed to know whether Halo 3's campaign and multiplayer maps played as intended for everyday players, not just expert staff.",
+    "research": "Led by Randy Pagulayan, starting fall 2006: roughly 20 players every other week, about 600 in total, more than 3,000 hours of play. Methods included one-way-mirror observation, face and controller video, think-aloud, pop-up prompts asking players to rate fun or frustration, and telemetry turned into location and death heat maps.",
+    "insight": "Location maps showed players wandering aimlessly in the jungle level; players fired at out-of-range enemies; AI marines grabbed the Warthogs before players could; players aimed the Wraith turret low and blew themselves up; a death heat map showed one base on the Valhalla map had an advantage.",
+    "change": "Added one-way ledges so players couldn't backtrack in the jungle; made the reticle turn red when enemies were in range; added more Warthogs; limited how low the Wraith turret could aim; reshaped Valhalla's terrain; rebalanced ammo, grenades and melee.",
+    "outcome": "Follow-up telemetry showed players moving through the jungle level as intended. In later ratings, 52% of players gave that level 5 out of 5 for fun and 40% gave it 4. Some issues (finding the melee button, one cliff route) were still unresolved at the time of writing.",
+    "headline_metric": "92% rated level 4–5 fun",
+    "attribution": "Direct for each fix: the article ties specific design changes to specific playtest observations.",
+    "caveats": "Journalism based on access to the lab, not a published study. The fun ratings are from playtesters, not a before/after comparison with a baseline. 2007. The full Wired text was read via an archived copy because wired.com blocked automated fetching.",
+    "methods": [
+      "usability_testing",
+      "analytics",
+      "survey"
+    ],
+    "research_type": "evaluative",
+    "industry": "gaming",
+    "product_type": "game",
+    "metrics": [
+      "task_success",
+      "satisfaction",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2007,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Halo 3: How Microsoft Labs Invented a New Science of Play",
+        "url": "https://www.wired.com/2007/08/ff-halo/",
+        "publisher": "Wired (Clive Thompson)",
+        "date": "2007-08-21"
+      },
+      {
+        "title": "Halo 3: How Microsoft Labs Invented a New Science of Play (archived copy)",
+        "url": "https://wirednews.pages.dev/2007/08/ff-halo-2",
+        "publisher": "Wired (archive mirror)",
+        "date": "2007-08-21"
+      },
+      {
+        "title": "The process of testing Halo3",
+        "url": "https://learn.microsoft.com/en-us/archive/blogs/ewan/the-process-of-testing-halo3",
+        "publisher": "Microsoft TechNet blog archive",
+        "date": "2007-08-22"
+      }
+    ]
+  },
+  {
+    "slug": "xbox-adaptive-controller-accessible-packaging",
+    "title": "Gamers with limited mobility shaped the Xbox Adaptive Controller's one-hand packaging",
+    "company": "Microsoft (Xbox)",
+    "is_anonymized": false,
+    "summary": "Microsoft wanted packaging that people with limited dexterity could open with one hand. A design researcher consulted gamers and disability advocates, and designers tested prototypes with employees and gamers with limited mobility. Specific findings like 'no teeth' and oval loops went straight into the final box.",
+    "problem": "Standard packaging (twist ties, plastic clamshells, lids needing two hands) is hard or impossible to open for many people with disabilities, the exact audience for the Adaptive Controller.",
+    "research": "Xbox design researcher Scott Wang consulted gamers and disability advocates during controller development. Packaging designer Mark Weiser reviewed existing accessible packaging and tested prototypes (over 100 iterations of components, three finalists) with Microsoft employees with limited mobility and gamers in the US and UK, watching them open the boxes. 2018.",
+    "insight": "Many disabled gamers open packaging with their teeth and wanted that never to be necessary. People preferred more simple steps over fewer complicated ones. Small circular loops were hard to grip; perforated edges caused paper cuts; plastic covers were frustrating.",
+    "change": "Loops on the outer tape, inner box, quick-start guide and cable wrap; loops made oval after a tester without fingers on one hand struggled with circles; hinged inner box; front-open pulp tray; no twist ties or plastic; box adjusted so the controller's big buttons don't get pressed in transit.",
+    "outcome": "Testers reported the box was easy to open. Microsoft described it as its first packaging designed specifically for accessibility and said it was discussing applying the lessons to future products. No metric reported.",
+    "headline_metric": null,
+    "attribution": "Direct: Microsoft names specific features that came from specific participant feedback.",
+    "caveats": "First-party feature story; no quantitative outcome. Small number of testers. Promotional context around a product launch.",
+    "methods": [
+      "accessibility_research",
+      "usability_testing",
+      "interviews",
+      "co_design"
+    ],
+    "research_type": "mixed",
+    "industry": "hardware",
+    "product_type": "physical_product",
+    "metrics": [
+      "accessibility",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How gamers with disabilities helped design the new Xbox Adaptive Controller's elegantly accessible packaging",
+        "url": "https://news.microsoft.com/features/how-gamers-with-disabilities-helped-design-the-new-xbox-adaptive-controllers-elegantly-accessible-packaging/",
+        "publisher": "Microsoft News",
+        "date": "2018-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "duolingo-placement-test-wording-japan",
+    "title": "Duolingo dropped the word 'test' after interviews in Japan and doubled placement tests",
+    "company": "Duolingo",
+    "is_anonymized": false,
+    "summary": "Duolingo noticed Japanese learners with prior English were skipping the placement test and quitting from boredom. Interviews revealed the word 'test' itself made people anxious. Rewording it to 'check your English level' doubled placement tests taken, raised retention, and was rolled out globally.",
+    "problem": "New Japanese learners who already knew some English started at the beginning, found the lessons too easy, and left.",
+    "research": "Local market research in Japan combining learner data analysis with on-the-ground user research including learner interviews (published 2021).",
+    "insight": "Learners avoided the placement test because of the word: one said, \"The word 'test' scares me.\" They weren't uninterested in skipping ahead; the framing deterred them.",
+    "change": "Reworded 'take a placement test' to 'check your English level', tested as an experiment in Japan, then run globally.",
+    "outcome": "The change doubled placement tests taken and increased retention in Japan. Run globally, it improved placement completion and retention across markets (no exact figures given for retention or the global result).",
+    "headline_metric": "2x placement tests taken",
+    "attribution": "Direct: the wording change came from the interview finding and was evaluated as an experiment.",
+    "caveats": "Duolingo's own blog. Retention lift not quantified. The post calls it an experiment but doesn't describe the design or sample. Primarily an education/learning app; may overlap with the education slice.",
+    "methods": [
+      "interviews",
+      "analytics",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "education",
+    "product_type": "mobile_app",
+    "metrics": [
+      "conversion",
+      "retention"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Lessons from Asia: Turning local research into global experiments",
+        "url": "https://blog.duolingo.com/lessons-from-asia-turning-local-research-into-global-experiments",
+        "publisher": "Duolingo Blog",
+        "date": "2021-02-02"
+      }
+    ]
+  },
+  {
+    "slug": "youtube-go-data-cost-field-research",
+    "title": "Field research in India showed people fear data costs, so YouTube Go shows them",
+    "company": "Google (YouTube Go)",
+    "is_anonymized": false,
+    "summary": "YouTube's research team heard from Indian users in 2014 that YouTube's data use was mysterious and could drain a prepaid pack. Two years of field research in India, Nigeria and Indonesia shaped a separate app, YouTube Go, built around showing data cost, previewing before watching, and offline sharing. Participants also killed one of the team's early concepts.",
+    "problem": "In markets where most people use prepaid mobile data, YouTube was seen as an expensive, unpredictable data drain, limiting use.",
+    "research": "Google's YouTube research and design team ran interviews and in-field observation in India, Nigeria and Indonesia (plus user stories from Brazil), watched how people searched for and watched videos, tested prototype concepts, and ran beta tests over roughly two years starting in 2014.",
+    "insight": "People budget data carefully and avoid anything with unknown cost; they 'peek' at videos before committing; they share videos offline via SD cards and sideloading; they download ahead for offline times; and they want locally relevant content. Participants rejected a low-res keyframes-plus-audio concept because they still wanted good video quality.",
+    "change": "Built YouTube Go with data cost on every video in the feed, a preview showing keyframes and file size, a choice of quality levels with sizes (e.g. 2MB / 5MB / 12MB), offline peer-to-peer sharing, offline as a normal state, and local trending content. Dropped the keyframe-plus-audio concept.",
+    "outcome": "No metric published. The research defined the product and killed an early concept; the app launched in India and other markets in 2017.",
+    "headline_metric": null,
+    "attribution": "Direct: Google ties each core feature to a research finding.",
+    "caveats": "First-party design story with no sample size or outcome metrics. YouTube Go was later discontinued (2022) in favor of the main app, so its long-term success is unclear.",
+    "methods": [
+      "field_study",
+      "interviews",
+      "concept_testing",
+      "usability_testing"
+    ],
+    "research_type": "generative",
+    "industry": "media_entertainment",
+    "product_type": "mobile_app",
+    "metrics": [
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2017,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Making YouTube Go",
+        "url": "https://design.google/library/making-youtube-go",
+        "publisher": "Google Design",
+        "date": "2017"
+      }
+    ]
+  },
+  {
+    "slug": "fortnite-weak-point-playtests",
+    "title": "Fortnite playtests got 80–90% of players using a mechanic they'd been missing",
+    "company": "Epic Games (Fortnite)",
+    "is_anonymized": false,
+    "summary": "In early Fortnite playtests, many players either missed the 'weak point' that speeds up resource harvesting or thought it was just a targeting aid. Designers changed its color and placement and turned it into an early unlockable skill. Afterward, 80–90% of playtesters used it.",
+    "problem": "Harvesting resources felt grindy, and a mechanic meant to speed it up (hitting a weak point) was being ignored or misunderstood.",
+    "research": "Playtests run by Epic's UX team (led by Celia Hodent) during Fortnite's early development, with video of players; described in a 2018 talk at DigiPen.",
+    "insight": "Players didn't understand what the weak-point indicator was for. Many treated it as a generic aiming aid or didn't notice it at all. Separately, playtests showed testers spending 10–15 minutes trying to interact with purely decorative objects that looked like objectives.",
+    "change": "Adjusted the weak point's color and placement, and made it an early unlockable skill in the skill tree rather than something present from the start, so players noticed and valued it.",
+    "outcome": "After the change, \"80 to 90 percent of people finally used the weak points in our playtests,\" per Hodent. No pre-change percentage given.",
+    "headline_metric": "80–90% used weak points",
+    "attribution": "Direct: the change was made in response to playtest observations and re-checked in playtests.",
+    "caveats": "No baseline number or sample size. Playtest behavior, not live-game data. Account from a university news write-up of a talk. Pre-battle-royale Fortnite (Save the World).",
+    "methods": [
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "gaming",
+    "product_type": "game",
+    "metrics": [
+      "task_success",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Dr. Celia Hodent brings UX insight from Fortnite to DigiPen",
+        "url": "https://www.digipen.edu/showcase/news/dr-celia-hodent-brings-ux-insight-from-fortnite-to-digipen/",
+        "publisher": "DigiPen Institute of Technology",
+        "date": "2018-10-17"
+      }
+    ]
+  },
+  {
+    "slug": "ford-f150-jobsite-ethnography",
+    "title": "1,000 hours on job sites gave the 2021 Ford F-150 a fold-away shifter and sleep seats",
+    "company": "Ford (F-150)",
+    "is_anonymized": false,
+    "summary": "For the 2021 F-150, Ford researchers spent over 1,000 hours with people who use trucks as work tools, from ranchers to construction crews. They found owners eat, work and even sleep in their cabs, and still want a real gear lever. That led to a stow-away shifter, a fold-out work surface, near-flat seats and a tailgate workbench.",
+    "problem": "Ford needed to know how professional owners actually use the cab and bed of a full-size pickup to decide the next F-150's interior and features.",
+    "research": "Ethnographic field research: Ford researchers documented 'a day in the life' of truck owners across the US, including cattle ranches and construction sites. More than 1,000 hours on site, 18,000+ photos and 600+ videos. Presented by F-150 chief designer Ehab Kaoud in 2021.",
+    "insight": "Many owners prefer a traditional gear lever over dials or buttons; they eat lunch and do paperwork in the cab like a mobile office; some nap or sleep overnight in the cab at job sites; and the bed is used as a work surface.",
+    "change": "A physical shift lever that folds away to free console space; an available fold-out work surface big enough for a laptop; Max Recline near-flat seats; an available tailgate workbench with tablet holder and clamping points.",
+    "outcome": "No metric reported. The research shaped specific interior and tailgate features in the 2021 F-150.",
+    "headline_metric": null,
+    "attribution": "Trade-press article paraphrasing Ford's chief designer, who links each feature to field findings.",
+    "caveats": "No sales or satisfaction data tied to the features. Secondary account of a conference presentation, with no direct quotes. Number of participants not stated.",
+    "methods": [
+      "ethnography",
+      "field_study"
+    ],
+    "research_type": "generative",
+    "industry": "transportation",
+    "product_type": "physical_product",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Consumers' Voices Echo in Design of 2021 Ford F-150",
+        "url": "https://www.wardsauto.com/news/archive-wards-consumers-voices-echo-in-design-of-2021-ford-f-150/794997/",
+        "publisher": "WardsAuto",
+        "date": "2021-03-01"
+      }
+    ]
+  },
+  {
+    "slug": "lyft-ride-for-others",
+    "title": "Lyft found 10% of rides were booked for someone else and built a flow for it",
+    "company": "Lyft",
+    "is_anonymized": false,
+    "summary": "Lyft's data showed pickup locations often didn't match the requester's GPS, and a follow-up survey and research confirmed about 10% of rides were for someone else. Those rides had more cancellations, longer pickups and more driver calls. Lyft built a dedicated 'ride for others' experience and cut its notifications after testing.",
+    "problem": "People ordering rides for others had to relay details by screenshot, riders sometimes used the requester's name for fear of being declined, and these rides caused cancellations, slower pickups and calls from drivers.",
+    "research": "Data analysis with data scientists (mismatches between pickup and GPS location), a survey suggested by the researcher to confirm the use case, then employee beta, user testing and observation, and review of beta feedback. About 10 months of work, described in 2020.",
+    "insight": "Around 10% of rides were for someone else, a large hidden use case, and identity confusion between requester, rider and driver was the main pain point.",
+    "change": "Built a flow to request a ride for another person with the rider's own details. Testing showed an early design sent about 30 notifications to requester and rider; the team cut these to key moments.",
+    "outcome": "No post-launch metrics reported. Research sized the opportunity and drove the decision to build the feature and to trim its notifications.",
+    "headline_metric": null,
+    "attribution": "The designer describes the research and data as the basis for prioritizing the feature and for the notification changes.",
+    "caveats": "No outcome numbers despite baseline problems (cancellations, pickup time) being named. Interview with the designer in Lyft's own 'Behind the Design' series, republished by UX Magazine.",
+    "methods": [
+      "analytics",
+      "survey",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "transportation",
+    "product_type": "mobile_app",
+    "metrics": [
+      "adoption",
+      "errors"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Behind the Design: Building a seamless experience to request a ride for others",
+        "url": "https://uxmag.com/articles/behind-the-design-building-a-seamless-experience-to-request-a-ride-for-others",
+        "publisher": "UX Magazine (Lyft Behind the Design series)",
+        "date": "2020-09-28"
+      }
+    ]
+  },
+  {
+    "slug": "waymo-rider-feedback-route-pullover-messaging",
+    "title": "Waymo rider research led to clearer route and drop-off messaging in driverless cars",
+    "company": "Waymo",
+    "is_anonymized": false,
+    "summary": "With no human driver to ask, Waymo riders could be confused when the car took an unexpected route or stopped somewhere unexpected at the end of a trip. Waymo's UX researchers rode along with riders, interviewed them and ran surveys. The service added in-app and in-car messages explaining route differences and setting clearer pull-over expectations.",
+    "problem": "In a fully driverless ride-hail service, riders can't ask a driver why the car is going a certain way or where exactly it will stop, which undermines trust and comfort.",
+    "research": "Waymo's UX research team (quoted: senior UX researcher Naomi Guthrie) used ride-alongs with riders, phone and in-person interviews, surveys and questionnaires, and analysis of in-app ride ratings, working with design, engineering, product and operations. Riders in the Phoenix East Valley; described in 2020.",
+    "insight": "Riders wanted to understand the car's choices, especially when a route differed from what they expected and where the car would pull over at the destination.",
+    "change": "Added messaging in the Waymo app and on the in-car screen to explain when a route may differ from what a rider expects, and more specific expectations about where the car will pull over at the end of a trip.",
+    "outcome": "No metric reported. Waymo lists these as changes deployed based on rider feedback.",
+    "headline_metric": null,
+    "attribution": "Waymo explicitly names these changes as resulting from rider feedback gathered through its research program.",
+    "caveats": "First-party blog with no numbers, sample sizes or before/after data. Changes described are modest. Promotional context around opening the driverless service to the public.",
+    "methods": [
+      "field_study",
+      "interviews",
+      "survey",
+      "support_analysis"
+    ],
+    "research_type": "mixed",
+    "industry": "transportation",
+    "product_type": "ai_product",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How rider feedback shapes Waymo's fully autonomous ride-hailing service",
+        "url": "https://waymo.com/blog/2020/11/how-rider-feedback-shapes-waymos-fully-autonomous-ride-hailing-service/",
+        "publisher": "Waymo Blog",
+        "date": "2020-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "last-of-us-part-ii-accessibility-consultation",
+    "title": "Consulting disabled players gave The Last of Us Part II 60+ accessibility options",
+    "company": "Naughty Dog / Sony Interactive Entertainment (The Last of Us Part II)",
+    "is_anonymized": false,
+    "summary": "Naughty Dog worked with disabled consultants and playtesters while building The Last of Us Part II. They learned that vision accessibility is a wide spectrum and that players wanted fine-grained control rather than presets. The game shipped with over 60 customizable options, including full text-to-speech and audio cues that let blind players finish it.",
+    "problem": "Action games routinely lock out players with vision, hearing and motor impairments, and a single 'accessibility mode' can't meet very different needs.",
+    "research": "During development, Naughty Dog consulted gamers with disabilities, including Steve Saylor (who has a vision impairment), plus other unnamed consultants and playtesters, and experimented with options based on their feedback. Accessibility planned in from the start, per lead designers Emilia Schatz and Matthew Gallant. Released 2020.",
+    "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
+    "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
+    "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
+    "headline_metric": null,
+    "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
+    "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
+    "methods": [
+      "accessibility_research",
+      "usability_testing",
+      "interviews"
+    ],
+    "research_type": "mixed",
+    "industry": "gaming",
+    "product_type": "game",
+    "metrics": [
+      "accessibility",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "'The Last Of Us Part II' Presents An Accessible Apocalypse",
+        "url": "https://www.gpb.org/news/2020/07/20/the-last-of-us-part-ii-presents-accessible-apocalypse",
+        "publisher": "NPR (via GPB)",
+        "date": "2020-07-20"
+      }
+    ]
+  },
+  {
+    "slug": "instagram-hide-like-counts-optional",
+    "title": "Instagram's like-count research turned a planned removal into a user choice",
+    "company": "Instagram / Facebook (Meta)",
+    "is_anonymized": false,
+    "summary": "Instagram set out to make like counts private to reduce pressure on posting. After testing hidden likes with some users since 2019 and hearing from users and experts, it found hidden counts helped some people and annoyed others. Instead of removing like counts for everyone, it made hiding them an option in 2021.",
+    "problem": "Instagram wanted to know whether hiding public like counts would reduce social pressure on posting, and whether to remove them for everyone.",
+    "research": "Tests hiding like counts for groups of users starting in 2019, followed by a 2021 test letting users choose, plus feedback from users and outside experts. Instagram did not publish sample sizes or methods.",
+    "insight": "Not seeing like counts was beneficial for some people and annoying to others, who use likes to see what's trending or popular.",
+    "change": "Rather than removing like counts globally, Instagram and Facebook let people choose to hide like counts on posts in their feed and on their own posts (May 2021).",
+    "outcome": "No metric reported. The research changed the decision from a blanket removal to an optional setting.",
+    "headline_metric": null,
+    "attribution": "Instagram attributes the opt-in approach to what it heard during testing from people and experts.",
+    "caveats": "Primarily product testing plus feedback; Instagram has not published the research. Critics noted the outcome also preserved engagement metrics advertisers value. No well-being outcome data shared.",
+    "methods": [
+      "experimentation",
+      "interviews",
+      "survey"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "mobile_app",
+    "metrics": [
+      "satisfaction",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Giving People More Control on Instagram and Facebook",
+        "url": "https://about.instagram.com/blog/announcements/giving-people-more-control",
+        "publisher": "Instagram",
+        "date": "2021-05-26"
+      },
+      {
+        "title": "Instagram's new test lets you choose if you want to hide 'Likes,' Facebook test to follow",
+        "url": "https://techcrunch.com/2021/04/14/instagrams-new-test-lets-you-choose-if-you-want-to-hide-likes-facebook-test-to-follow/",
+        "publisher": "TechCrunch",
+        "date": "2021-04-14"
+      }
+    ]
+  },
+  {
+    "slug": "be-my-ai-blind-beta-testers",
+    "title": "Blind beta testers shaped Be My AI's safety limits and human fallback",
+    "company": "Be My Eyes (with OpenAI)",
+    "is_anonymized": false,
+    "summary": "Be My Eyes piloted an AI image-description assistant built on GPT-4V with nearly 200 blind and low-vision testers, growing to 16,000. Testers surfaced confident hallucinations and strongly asked for descriptions of people's faces. The result was explicit warnings against safety-critical use, a one-tap route to a human volunteer, and work to describe people without identifying them by name.",
+    "problem": "Before launching an AI that describes the visual world to blind users, the team needed to know where it could fail them and how to deploy it responsibly.",
+    "research": "A pilot from March to early August 2023 with nearly 200 blind and low-vision beta testers, expanding to 16,000 by September 2023 (averaging 25,000 descriptions a day), with an ongoing feedback channel to Be My Eyes leadership.",
+    "insight": "The model could make basic errors with 'misleading matter-of-fact confidence' (one tester: it 'very confidently told me there was an item on a menu that was in fact not there'). Testers repeatedly said they wanted to know the facial and visible characteristics of people around them, information sighted people get at a glance.",
+    "change": "Be My Eyes warns users not to rely on the AI for safety or health tasks (prescriptions, allergens, crossing streets) or as a replacement for a cane or guide dog; added an option to leave the AI and connect immediately to a human volunteer; and is designing ways to describe features of people without identifying them by name.",
+    "outcome": "OpenAI reports that hallucinations and errors noticeably fell in frequency and severity over the beta, and testers noticed better text recognition and richer descriptions. No figures given.",
+    "headline_metric": null,
+    "attribution": "The system card ties the warnings, fallback and face-description work directly to issues raised by beta testers.",
+    "caveats": "Beta testing and feedback rather than a structured study; no metrics. Source is OpenAI's own system card, written as part of a launch. Improvements in hallucination may be due to model work rather than the research itself.",
+    "methods": [
+      "accessibility_research",
+      "usability_testing",
+      "support_analysis"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "ai_product",
+    "metrics": [
+      "accessibility",
+      "errors"
+    ],
+    "company_size": "startup",
+    "year": 2023,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "GPT-4V(ision) System Card",
+        "url": "https://cdn.openai.com/papers/GPTV_System_Card.pdf",
+        "publisher": "OpenAI",
+        "date": "2023-09-25"
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-guided-frame-blind-testers",
+    "title": "Testing with blind users made Pixel's Guided Frame coach in real time and auto-capture",
+    "company": "Google (Pixel)",
+    "is_anonymized": false,
+    "summary": "Google set out to help blind and low-vision people take selfies on Pixel phones. A small study with three blind Googlers showed the team was solving the wrong problem, and prototype testing with blind and low-vision volunteers reshaped the feature around real-time audio and haptic guidance and automatic capture. Home testing also revealed demand for group photos.",
+    "problem": "Taking a well-framed selfie is hard without sight, and the team's first idea focused on helping users find the front camera.",
+    "research": "Sighted team members first tried eyes-closed selfies; then a preliminary study with three blind Googlers; then iterative prototype testing with blind and low-vision volunteers (including Google's Central Accessibility team, blind and low-vision Googlers, and the Vista Center for the Blind and Visually Impaired), including home testing. Launched with Pixel 7 in 2022.",
+    "insight": "Users needed live guidance while framing, not just the camera's location. Blind and low-vision users valued automatic capture (not having to find the shutter), even though sighted users generally dislike it. Users also wanted it for group photos.",
+    "change": "Built voice instructions telling users whether they are left, right or centered; combined audio cues, haptics and high-contrast visuals; made the camera capture automatically once the face is centered; extended support to group photos.",
+    "outcome": "No metric reported. Testing changed the core interaction and scope of the feature.",
+    "headline_metric": null,
+    "attribution": "Google states the early study showed the team had been focused on the wrong solution, and that testing feedback set the final mix of cues and auto-capture.",
+    "caveats": "Small, partly internal sample (three blind Googlers in the first study); first-party blog with no outcome data.",
+    "methods": [
+      "accessibility_research",
+      "usability_testing",
+      "concept_testing",
+      "field_study"
+    ],
+    "research_type": "evaluative",
+    "industry": "hardware",
+    "product_type": "ai_product",
+    "metrics": [
+      "accessibility",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2022,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How we tested Guided Frame and Real Tone on Pixel",
+        "url": "https://blog.google/products/pixel/how-we-tested-the-pixels-new-inclusive-camera-features/",
+        "publisher": "Google Keyword blog",
+        "date": "2022-12-01"
+      }
+    ]
+  },
+  {
+    "slug": "kooapps-snake-io-playtesting",
+    "title": "Remote playtests helped Snake.io lift tutorial completions 40%",
+    "company": "Kooapps (Snake.io)",
+    "is_anonymized": false,
+    "summary": "After acquiring the mobile game Snake.io, Kooapps used PlaytestCloud's remote playtests, both single-session and longitudinal, to guide a series of changes to art style, scoring visibility and reward progression. The vendor reports tutorial completions up 40% and Day 1 and Day 3 retention up 10%.",
+    "problem": "Kooapps needed to improve Day 1 retention and grow daily active users for Snake.io, and adapt it for a younger audience.",
+    "research": "Iterative remote playtests via PlaytestCloud: single-session tests for first impressions and longitudinal tests for longer-term play. Number of players and rounds not stated.",
+    "insight": "The vendor does not detail specific findings; the playtests pointed to the art style, how visible scores were, and reward progression as areas to improve.",
+    "change": "Refreshed the art style, added character skins, made scores and leaderboards more visible, added reward progression, and added live events and boss modes.",
+    "outcome": "Day 1 and Day 3 retention up 10%; tutorial completions up 40%; rewarded-video ad conversions up 10%. Art-style changes alone were credited with a 5% Day 1 retention lift.",
+    "headline_metric": "+40% tutorial completions",
+    "attribution": "The vendor credits the playtest-driven changes, but doesn't explain how the lifts were measured or separate them from other factors.",
+    "caveats": "Vendor marketing about its own client. No method for the metrics, no dates, no sample sizes, no control. Several changes shipped together.",
+    "methods": [
+      "usability_testing",
+      "diary_study"
+    ],
+    "research_type": "evaluative",
+    "industry": "gaming",
+    "product_type": "game",
+    "metrics": [
+      "retention",
+      "revenue",
+      "task_success"
+    ],
+    "company_size": "midmarket",
+    "year": 2023,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Kooapps case study",
+        "url": "https://start.playtestcloud.com/case-studies/kooapps",
+        "publisher": "PlaytestCloud",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "facebook-reactions-emotion-research",
+    "title": "Emotion research and seven-country testing picked Facebook's five Reactions",
+    "company": "Facebook (Meta)",
+    "is_anonymized": false,
+    "summary": "To give people more ways to respond than 'Like', Facebook worked with UC Berkeley psychologist Dacher Keltner, whose lab had already tested which emotion illustrations people could reliably recognize. Keltner's team proposed 43 ideas; Facebook narrowed them and tested in seven countries before launch, dropping a planned 'Yay' reaction because it wasn't used in some countries.",
+    "problem": "'Like' felt wrong for sad or upsetting posts, but Facebook needed a small set of reactions that would be instantly understood across cultures and 70+ languages.",
+    "research": "Keltner's lab had earlier shown about 40 emotion illustrations to dozens to hundreds of people to check recognition (for Messenger stickers). For Reactions, his team proposed 43 ideas about a year before launch. Facebook then tested candidate reactions in seven countries, including Ireland and Spain, before the 2016 global launch.",
+    "insight": "Each reaction had to be 'extremely easily recognizable' everywhere; some candidates, like 'Yay', didn't get used in some countries.",
+    "change": "Launched five reactions alongside Like (Love, Haha, Wow, Sad, Angry), dropped 'Yay', and kept the same set and near-identical translations worldwide.",
+    "outcome": "No usage or outcome numbers in the source. Research shaped which reactions shipped and killed one.",
+    "headline_metric": null,
+    "attribution": "The article links the chosen set to Keltner's recognition research and the multi-country tests, and the dropped 'Yay' directly to test results.",
+    "caveats": "Journalism based on interviews with Facebook and Keltner; methods of the country tests aren't described. No outcome data. 2016.",
+    "methods": [
+      "concept_testing",
+      "experimentation",
+      "survey"
+    ],
+    "research_type": "mixed",
+    "industry": "consumer_tech",
+    "product_type": "web_app",
+    "metrics": [
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2016,
+    "evidence_strength": "decision",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Facebook's Long, Psychological Journey To Reactions",
+        "url": "https://www.popsci.com/long-psychological-journey-facebooks-reactions/",
+        "publisher": "Popular Science",
+        "date": "2016-02-24"
+      }
+    ]
+  }
+]

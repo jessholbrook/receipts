@@ -1,0 +1,571 @@
+[
+  {
+    "slug": "zillow-search-map-list-view",
+    "title": "Zillow keeps map beside listings after user feedback, reports up to 8% more agent contacts",
+    "company": "Zillow",
+    "is_anonymized": false,
+    "summary": "While redesigning its search results page, Zillow's UX team gathered customer feedback on several layout variations through UserTesting. Shoppers said they valued seeing the map and the home list side by side, so the team kept that layout. The vendor case study credits it with up to an 8% lift in people contacting real estate agents.",
+    "problem": "The UX team was redesigning the search results experience and worried a large layout change could hurt conversion (contacts to agents) and revenue.",
+    "research": "Remote customer feedback sessions run through UserTesting on variations of the search results page, covering map placement, advertising options and how listings were shown. Sample size and dates are not given; the case study PDF dates to about 2019.",
+    "insight": "Home shoppers relied on geographic context. Many said seeing the map and listings side by side helped them decide whether to inquire about a home.",
+    "change": "Zillow launched a search results layout that kept the map and the list of homes side by side.",
+    "outcome": "The case study says the map inclusion produced 'up to an 8 percent lift' in customers reaching out to real estate agents, which it says boosted revenue. No dollar figure is given.",
+    "headline_metric": "Up to +8% agent contacts",
+    "attribution": "The vendor ties the conversion lift directly to the feedback-informed layout, but does not say how the lift was measured or whether other changes shipped at the same time.",
+    "caveats": "Vendor marketing piece written by UserTesting about its own client. 'Up to' 8% is a ceiling, not an average. No method for the conversion measurement, no sample size, no control group described. Zillow's own publications do not appear to document this.",
+    "methods": [
+      "usability_testing",
+      "concept_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "real_estate",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "revenue"
+    ],
+    "company_size": "enterprise",
+    "year": 2019,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Zillow improves home search experience, increasing conversion by 8 percent",
+        "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/usertesting_zillow_214672.pdf",
+        "publisher": "UserTesting",
+        "date": "2019-07-01"
+      },
+      {
+        "title": "Case Study: Zillow achieves an 8% conversion lift and improved home-search experience with UserTesting",
+        "url": "https://www.casestudies.com/company/usertesting/case-study/zillow-improves-home-search-experience-increasing-conversion-by-8-percent",
+        "publisher": "CaseStudies.com",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "costco-travel-package-entry-points",
+    "title": "Costco Travel drops a single 'Vacation Packages' entry after testers couldn't book; support calls fall 82%",
+    "company": "Costco Travel",
+    "is_anonymized": false,
+    "summary": "Costco Travel planned to let members build their own trip packages through one search entry point in the main navigation. Prototype testing showed visitors could not complete a hotel-plus-flight booking that way, so the team moved to multiple entry points after about 20 tests. The vendor reports more bookings and 82% fewer support calls after launch.",
+    "problem": "Costco Travel wanted members to build their own travel packages online. Most of the team favored a single entry point, a search widget labeled 'Vacation Packages', in the main navigation.",
+    "research": "The web accessibility and UX lead built prototypes of the team's top ideas and tested them remotely with website visitors on UserTesting, alongside a review of competitor sites. In total about 20 tests over 6 rounds, covering layouts, icons, radio buttons and search fields. Participant counts and dates are not given.",
+    "insight": "The single 'Vacation Packages' entry point did not match how visitors thought about the task. When asked to show how they would book a hotel and flight, testers 'simply could not complete the task.'",
+    "change": "The team abandoned the single entry point and offered several entry points into package building, then refined the details through further rounds of testing.",
+    "outcome": "According to the case study, bookings of customer-built travel rose in the weeks after launch (no figure given) and support calls decreased by 82%.",
+    "headline_metric": "-82% support calls",
+    "attribution": "The research directly overturned the team's preferred design, which is well documented. The 82% support-call drop is reported without baseline, time window or method, so the link from research to that number is asserted rather than shown.",
+    "caveats": "Vendor case study written by UserTesting about its own customer. No participant numbers, no measurement period for the 82% figure, no booking numbers. Undated; mentions COVID-era travel restrictions, so likely 2020-2022.",
+    "methods": [
+      "concept_testing",
+      "usability_testing",
+      "benchmarking"
+    ],
+    "research_type": "evaluative",
+    "industry": "travel_hospitality",
+    "product_type": "website",
+    "metrics": [
+      "support_cost",
+      "conversion",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "How Costco Travel built a better online travel booking experience",
+        "url": "https://www.usertesting.com/resources/customers/costco-travel",
+        "publisher": "UserTesting",
+        "date": null
+      },
+      {
+        "title": "Case Study: Costco Travel achieves intuitive online bookings and 82% fewer support calls with UserTesting",
+        "url": "https://www.casestudies.com/company/usertesting/case-study/how-costco-travel-built-a-better-online-travel-booking-experience",
+        "publisher": "CaseStudies.com",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "american-airlines-trip-management-benchmark",
+    "title": "American Airlines benchmarks booking and trip management, lifts completion of key tasks 37%",
+    "company": "American Airlines",
+    "is_anonymized": false,
+    "summary": "American Airlines set up a UX benchmarking program, scoring its booking, trip management, check-in and loyalty experiences with potential customers and against competing airlines. Tests showed people could not find where to add passport details, loyalty numbers or meal requests. After the trip-management flows were reworked, the vendor reports a 37% rise in completion for those tasks.",
+    "problem": "The team wanted to understand how customers actually used booking and self-service features, beyond analytics and internal assumptions, and needed a shared measure of experience quality.",
+    "research": "Benchmark usability studies with potential customers on UserTesting covering four journeys (booking, changing/managing a flight, check-in, AAdvantage), scored with the vendor's QXscore and compared with competing airlines. Click tests and heat maps were used on the booking path. Sample sizes not given; around 2023.",
+    "insight": "Customers struggled to find where to enter passport information, add a loyalty account, request a meal or email an itinerary. Heat maps also showed the multi-city search option sat below the fold where searchers missed it.",
+    "change": "The UX team reworked the change-and-manage-trip concepts so these tasks were easier to find, and re-measured them in the benchmark.",
+    "outcome": "The case study reports a 15% average increase in QXscore across the experiences measured and changed, and a 37% increase in customer completion rate for the updated tasks (passport details, loyalty accounts, meal requests, emailing itineraries).",
+    "headline_metric": "+37% task completion",
+    "attribution": "Before/after benchmark scores on the same tasks tie the improvement to the redesign that the research prompted. No control group, and no live business metric is reported.",
+    "caveats": "Vendor case study. QXscore is UserTesting's proprietary metric. Completion is measured in test sessions, not in live traffic. No baseline values, sample sizes or statistical detail. The multi-city finding has no reported change or result.",
+    "methods": [
+      "benchmarking",
+      "usability_testing",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "travel_hospitality",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "American Airlines customer story",
+        "url": "https://www.usertesting.com/resources/customers/american-airlines-usertesting",
+        "publisher": "UserTesting",
+        "date": null
+      },
+      {
+        "title": "Case Study: American Airlines achieves a 15% average increase in QXscore with UserTesting",
+        "url": "https://www.casestudies.com/company/usertesting/case-study/how-american-airlines-built-a-benchmarking-program-to-make-booking-and-managing-flights-easier-for-customers",
+        "publisher": "CaseStudies.com",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "spabreaks-discovery-usability-testing",
+    "title": "Spabreaks.com usability testing finds booking-funnel fixes; conversion up 28% within six months",
+    "company": "Spabreaks.com",
+    "is_anonymized": false,
+    "summary": "Spabreaks.com, a small UK spa-booking site, hired Clearleft for a three-week discovery focused on its conversion funnel. Usability testing, an expert review and analytics showed the site didn't support how visitors browsed before booking, and the team shipped a set of prioritised quick wins. Comparing before and after, the agency reports a 28% rise in conversion rate and 78% more booking revenue within six months.",
+    "problem": "A small team with limited resources had a growing backlog and no way to prioritise it. They suspected the site was built around booking and did not support visitors' earlier browsing behaviour.",
+    "research": "Three-week discovery by Clearleft (published around 2019): interviews with 13 stakeholders from eight departments, an expert review, a competitor assessment, Google Analytics analysis to pick high-traffic, high-bounce pages, and moderated usability testing of key pages with Spabreaks staff observing. Findings were prioritised with dot voting.",
+    "insight": "Customer concerns shifted along the journey: early visitors were browsing and comparing, but the design mostly served people ready to book, so needs near the start of the funnel went unmet.",
+    "change": "The team implemented a set of quick-win fixes to the conversion funnel and received longer-term design recommendations. The case study does not list the specific changes.",
+    "outcome": "Comparing data from before the changes, Clearleft reports 'a 28% increase in conversion rate and 78% increase in revenue from bookings within 6 months.' The managing director also cites more online bookings and lower bounce rates on key pages.",
+    "headline_metric": "+28% conversion rate",
+    "attribution": "The client's marketing manager credits the quick wins from the research for the conversion increase, but the six-month window would include seasonality, marketing and any other site changes.",
+    "caveats": "Agency case study about its own client. Before/after only, no control group. Doesn't say whether 28% is relative or in percentage points, and gives no baseline. Specific changes not described. Revenue growth over six months likely reflects factors beyond the site.",
+    "methods": [
+      "usability_testing",
+      "heuristic_review",
+      "analytics",
+      "interviews"
+    ],
+    "research_type": "evaluative",
+    "industry": "travel_hospitality",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "revenue"
+    ],
+    "company_size": "startup",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Spabreaks.com case study",
+        "url": "https://clearleft.com/work/spabreaks.com",
+        "publisher": "Clearleft",
+        "date": "2019"
+      }
+    ]
+  },
+  {
+    "slug": "specialist-retailer-baymard-checkout-guidelines",
+    "title": "Multi-store retailer applies checkout usability research, reports checkout conversion doubled",
+    "company": "Unnamed specialist online retailer",
+    "is_anonymized": true,
+    "summary": "An ecommerce business running several specialist online stores applied Baymard Institute's checkout usability guidelines, which come from Baymard's large-scale usability testing, across all its storefronts. The retailer reported a 100% increase in checkout conversion. Baymard published the account without naming the client or describing the changes.",
+    "problem": "The retailer's checkout across several specialist stores was underperforming and it wanted research-backed guidance on what to fix.",
+    "research": "No new studies of the retailer's own customers. The team applied Baymard's Ecommerce Checkout Usability guidelines, which Baymard derives from its own usability testing of checkout flows, covering step order, form labels, button wording, payment confidence and error recovery.",
+    "insight": "Existing usability research on checkout friction (form design, step order, payment trust, error recovery) applied to the retailer's checkouts, which had violated several of the guidelines.",
+    "change": "The guideline recommendations were implemented across every store's checkout. The specific design changes are not described.",
+    "outcome": "The retailer reported a '100% increase in checkout conversion rates', i.e. checkout conversion roughly doubled.",
+    "headline_metric": "+100% checkout conv.",
+    "attribution": "Weak. The research is generic third-party research, not studies of this retailer's users, and the outcome is a self-reported number with no method.",
+    "caveats": "Promotional post from the research vendor. Client unnamed, so it can't be checked. No baseline, timeframe, measurement method or list of changes. A doubling usually means a very poor starting point. Include only as an example of applying published research, not as a controlled result.",
+    "methods": [
+      "heuristic_review",
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "conversion"
+    ],
+    "company_size": "undisclosed",
+    "year": 2026,
+    "evidence_strength": "reported",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Online Retailer Doubles Checkout Conversion With Baymard",
+        "url": "https://baymard.com/blog/online-retailer-doubles-checkout-conversion",
+        "publisher": "Baymard Institute",
+        "date": "2026-10-16"
+      }
+    ]
+  },
+  {
+    "slug": "coop-membership-local-cause-label",
+    "title": "Co-op lab tests show members didn't know they could pick a local cause; one-line copy fix lifts selections 10%",
+    "company": "Co-op (UK)",
+    "is_anonymized": false,
+    "summary": "Co-op's membership team saw in website feedback and analytics that many members reached the page for the '1% for your community' reward but never chose a cause. Think-aloud lab sessions showed people didn't realise the choice was theirs and didn't notice the clickable element. A small content change, checked in the lab first, was followed by an early 10% rise in members selecting a cause.",
+    "problem": "Members are meant to choose a local cause to receive 1% of their spending, but many who reached the relevant page didn't select one.",
+    "research": "Late 2016, Co-op Membership user researchers combined analysis of 9,469 website feedback comments, follow-up phone interviews, short online surveys, analytics on page visits and errors, and think-aloud lab sessions where participants did tasks such as registering a card and choosing a local cause.",
+    "insight": "People didn't realise they could pick the cause themselves. Some thought Co-op chose for them or that they'd send their choice by email later, and they overlooked the clickable element on screen.",
+    "change": "A content-only fix: the line 'See your local causes' was added inside the 'your community' box. It was tested in the lab, where participants then understood what to do, before going live.",
+    "outcome": "Early results after release showed 'a 10% increase in people selecting a cause'.",
+    "headline_metric": "+10% causes selected",
+    "attribution": "Direct. The change came from a specific lab finding, backed by feedback comments and analytics, and was the only change described. Measurement appears to be before/after live data.",
+    "caveats": "Early results only, reported a week after launch. Measurement method not stated (no A/B test mentioned) and no baseline given, so it isn't clear what the 10% is relative to. First-party blog.",
+    "methods": [
+      "usability_testing",
+      "support_analysis",
+      "analytics",
+      "interviews",
+      "survey"
+    ],
+    "research_type": "mixed",
+    "industry": "ecommerce_retail",
+    "product_type": "web_app",
+    "metrics": [
+      "task_success",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2016,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How user research is helping us improve the membership site",
+        "url": "https://digitalblog.coop.co.uk/2016/12/07/how-user-research-is-helping-us-improve-the-membership-site/",
+        "publisher": "Co-op Digital blog",
+        "date": "2016-12-07"
+      }
+    ]
+  },
+  {
+    "slug": "jet-com-product-page-shopper-feedback",
+    "title": "Jet.com shopper tests reveal hunt for shipping and returns info; surfacing it lifts conversion about 10%",
+    "company": "Jet.com",
+    "is_anonymized": false,
+    "summary": "Jet.com ran remote user tests with shoppers as soon as new features went live. Recordings showed shoppers kept searching product pages for shipping costs, return policies and how to reach customer service. Jet moved that information onto product detail pages, and its research director described a 'significant' conversion increase of roughly 10% or more.",
+    "problem": "Jet.com, a young online retailer, wanted to raise conversion on product detail pages and understand where shoppers hesitated.",
+    "research": "Remote unmoderated usability tests on UserTesting with consumers shopping the live site, typically launched as soon as a new feature shipped (reported in 2016).",
+    "insight": "Shoppers regularly went looking for supporting information before buying: shipping costs, how to contact customer service, and return policies.",
+    "change": "Jet placed shipping costs, customer service availability and hours, and related policy information prominently on product detail pages.",
+    "outcome": "Jet did not disclose exact figures. Research director Ben Babcock described a 'significant' conversion increase of roughly 10 percent or more.",
+    "headline_metric": "~+10% conversion",
+    "attribution": "The research director links the change directly to the shopper-testing finding, but the conversion figure is an approximate verbal estimate with no stated method.",
+    "caveats": "Secondhand: PYMNTS summarises an Internet Retailer article quoting Jet's research lead. No exact numbers, method or timeframe. Jet.com was a fast-changing young site (later absorbed by Walmart), so other changes could have contributed.",
+    "methods": [
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "website",
+    "metrics": [
+      "conversion"
+    ],
+    "company_size": "midmarket",
+    "year": 2016,
+    "evidence_strength": "reported",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Jet.com's Secret Sauce To Improved Conversion Rates",
+        "url": "https://www.pymnts.com/news/retail/2016/jet-com-conversion-rates/",
+        "publisher": "PYMNTS",
+        "date": "2016-06-08"
+      }
+    ]
+  },
+  {
+    "slug": "panera-catering-site-prototype-testing",
+    "title": "Panera's catering site prototype tests fix retail/catering confusion; revenue per visit up 18% year over year",
+    "company": "Panera Bread",
+    "is_anonymized": false,
+    "summary": "Panera tested clickable prototypes of a new catering ordering site with loyalty members and non-members. Visitors couldn't tell retail from catering, got stuck in a two-page setup and wanted to see customization options and past orders easily. After the redesign the vendor reports a 1.2% conversion bump at launch and, year over year, 18% higher revenue per visit and 9% higher conversion.",
+    "problem": "Panera was overhauling its catering website, including how guests start, customize and manage large orders, and wanted to avoid building something that confused customers.",
+    "research": "Around 2024, Panera's product and UX team ran unmoderated usability tests of clickable Figma prototypes on UserTesting, covering order setup and checkout, with participants of varied socioeconomic status and gender, both loyalty members and non-members. Heat maps showed where people clicked.",
+    "insight": "Some visitors didn't know whether they were on the retail or catering site. People clicked a plain text headline, which suggested the two-page setup should be one page. Customers wanted customization options visible, quicker access to past orders, and frequent orderers such as office administrators valued bundles.",
+    "change": "Added tabs to switch between retail and catering, with subtle colour differences; merged the two-page setup into one page; highlighted options like half sandwich/half salad; made past orders easier to reach; added bundles and sandwich assortments for one-click large orders.",
+    "outcome": "The case study reports a '1.2% increase in conversion' from the first round of changes at launch, plus an 18% year-over-year increase in revenue per visit and a 9% year-over-year increase in conversion.",
+    "headline_metric": "+18% revenue per visit",
+    "attribution": "The changes map clearly onto specific test findings. The year-over-year numbers are before/after and could include pricing, menu, marketing or seasonal effects.",
+    "caveats": "Vendor case study by UserTesting. No baseline values, sample sizes or measurement details. Year-over-year comparison has no control group. Only the small 1.2% launch figure is tied closely to the first set of changes.",
+    "methods": [
+      "concept_testing",
+      "usability_testing"
+    ],
+    "research_type": "evaluative",
+    "industry": "food_delivery",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "revenue",
+      "conversion"
+    ],
+    "company_size": "enterprise",
+    "year": 2024,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Panera Bread customer story",
+        "url": "https://www.usertesting.com/resources/customers/panera-bread",
+        "publisher": "UserTesting",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "zalando-computer-vision-search-pivot",
+    "title": "Zalando team drops computer-vision search idea after customer research shows outfit hunts start on social media",
+    "company": "Zalando",
+    "is_anonymized": false,
+    "summary": "A group of Zalando intrapreneurs set out to use computer vision to improve search. Before building, they interviewed customers about how they look for outfits and mapped the journey. Most started on social media and used makeshift workarounds to find similar items, which 'changed the course of the whole project' toward redesigning that journey.",
+    "problem": "An internal innovation team wanted to explore computer vision as a way to improve fashion search, a technology-first starting point.",
+    "research": "In Zalando's intrapreneurship programme (around 2017-2018) the team wrote a research question about how people search for outfits, met 'several' customers, and turned the conversations into a user journey map.",
+    "insight": "Most users began their outfit search on social media and then used 'hacky ways' to find similar pieces to buy, so the real problem sat in the jump from inspiration to shopping rather than in search technology.",
+    "change": "The team changed the project's direction from a computer-vision search tool to redesigning the inspiration-to-purchase journey so users could get there with less effort.",
+    "outcome": "No metrics. The author describes the result as a 'different approach, huge impact!' for the project's direction.",
+    "headline_metric": null,
+    "attribution": "Direct for the decision: the post says the research finding itself changed the project's course. Nothing is reported about what shipped afterwards.",
+    "caveats": "Short first-party blog post used to illustrate an innovation process. Number of customers and methods are vague ('several'). No outcome data, and it isn't clear whether the redesigned journey launched.",
+    "methods": [
+      "interviews",
+      "journey_mapping"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "website",
+    "metrics": [
+      "cost_avoided"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The Intrapreneurship Journey at Zalando",
+        "url": "https://engineering.zalando.com/posts/2018/06/innovation-intrapreneurship.html",
+        "publisher": "Zalando Engineering Blog",
+        "date": "2018-06-21"
+      }
+    ]
+  },
+  {
+    "slug": "zalando-sustainability-cause-based-browsing",
+    "title": "Zalando research finds half of shoppers don't understand 'sustainable fashion'; it launches browsing by cause",
+    "company": "Zalando",
+    "is_anonymized": false,
+    "summary": "Zalando's 'It Takes Two' research found that while most customers call sustainability important, about one in two don't understand what it means in fashion, and complexity and trust block them. In response, Zalando built a browsing experience where customers shop by causes such as animal welfare or water conservation, translating technical sustainability criteria into plain impact areas.",
+    "problem": "Many customers said sustainability mattered to them, but far fewer acted on it when buying fashion. Zalando wanted to understand the gap and make sustainable products easier to choose.",
+    "research": "The 'It Takes Two' attitude-behaviour gap study (published 2021) ran in three stages, including a 12-person ethnographic study and a survey of 2,500 consumers across two generations and five markets, plus Zalando's own customer data.",
+    "insight": "Complexity was a main barrier: roughly one in two customers didn't understand what sustainability means in fashion. Trust was the other blocker, and customers needed a positive, emotional connection to the topic before digging deeper.",
+    "change": "Zalando launched a value-based browsing experience in the Fashion Store, mapping its existing sustainability criteria onto six cause areas (animal welfare, reusing materials, worker well-being, water conservation, reducing emissions, extending the life of fashion) described in simpler language.",
+    "outcome": "No outcome metrics reported. Zalando described the launch as a first step and a learning opportunity.",
+    "headline_metric": null,
+    "attribution": "The launch post explicitly ties the design approach (plain-language cause areas) to the research finding about complexity. No evidence about whether it changed behaviour.",
+    "caveats": "First-party announcement, partly sustainability communications. No adoption or conversion data. The ethnographic component is small (12 people) and the survey is self-reported attitudes.",
+    "methods": [
+      "survey",
+      "ethnography"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "website",
+    "metrics": [
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Zalando Enables More Customers to Shop Sustainably With New Value-Based Browsing Experience",
+        "url": "https://corporate.zalando.com/en/our-impact/zalando-enables-more-customers-shop-sustainably-new-value-based-browsing-experience",
+        "publisher": "Zalando",
+        "date": "2021-04-20"
+      },
+      {
+        "title": "Attitude-Behavior Gap Report",
+        "url": "https://corporate.zalando.com/en/our-impact/sustainability/sustainability-reports/attitude-behavior-gap-report",
+        "publisher": "Zalando",
+        "date": "2021"
+      }
+    ]
+  },
+  {
+    "slug": "just-eat-multi-page-checkout",
+    "title": "Just Eat watches people order at home, splits accordion checkout into pages; order completion up 5%",
+    "company": "Just Eat",
+    "is_anonymized": false,
+    "summary": "A designer working on Just Eat's UK site watched people place real takeaway orders in a lab and in their own homes. They got stuck in the single-page accordion checkout, scrolling up and down to open and close panels. The checkout was rebuilt with one step and one button per page, and the designer reports a 5% rise in order completion, plus 3% from a related search results redesign.",
+    "problem": "Just Eat's checkout was a single-page accordion with inconsistent controls, and the mobile search results page had no filters and an awkward sort control.",
+    "research": "Around 2014, observation of users placing real orders in a research lab and in their own homes, plus bi-weekly A/B tests in Optimizely used to prioritise work. Participant numbers not stated.",
+    "insight": "In the accordion checkout people got stuck and scrolled up and down to open and close panels. Controls were inconsistent: the delivery step had several buttons while other steps used radio buttons and a single button.",
+    "change": "Each checkout step moved to its own page with a single button. Separately, search results got an accessible, responsive sort control that works on all screen sizes, and mobile filters and sort start collapsed so results get more room.",
+    "outcome": "The designer reports that the multi-page checkout increased order completion rate by 5%, and the search results redesign increased order completion rate by 3%.",
+    "headline_metric": "+5% order completion",
+    "attribution": "The checkout change responds directly to the observed problem. The team was running regular Optimizely A/B tests, so the figures may come from controlled tests, but the write-up doesn't say so explicitly.",
+    "caveats": "Written by the designer (a contractor) about his own work, as a portfolio case study, not by Just Eat. Measurement method, baseline and sample sizes aren't given. Old (around 2014). Rated 'measured' rather than 'tested' because the test design isn't stated.",
+    "methods": [
+      "field_study",
+      "usability_testing",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "food_delivery",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "conversion",
+      "task_success"
+    ],
+    "company_size": "enterprise",
+    "year": 2015,
+    "evidence_strength": "measured",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Redesigning Just Eat's checkout and search results page",
+        "url": "https://adamsilver.io/case-studies/redesigning-just-eats-checkout-and-search-results-page/",
+        "publisher": "Adam Silver",
+        "date": "2015-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "time4sleep-buying-guides-mobile",
+    "title": "Time4Sleep finds bed shoppers lost and missing buying guides; A/B-tested category page lifts mobile conversion 63%",
+    "company": "Time4Sleep",
+    "is_anonymized": false,
+    "summary": "UK bed retailer Time4Sleep and its CRO agency Epiphany combined analytics, session recordings, heatmaps and on-page polls to work out why mobile shoppers weren't buying. Visitors bounced between the beds category and product pages, never found the buried buying guides, and were confused about bed-buying basics even with items in the cart. A redesigned category page, A/B tested against two other variants, produced a 63% rise in mobile conversion for bed shoppers.",
+    "problem": "About 70% of Time4Sleep's traffic was mobile, and mobile visitors weren't converting well, especially in the beds category.",
+    "research": "Around 2017, the agency queried Google Analytics for back-and-forth paths between category and product pages, watched session recordings of those visitors, studied mobile heatmaps, and ran on-page polls asking things like 'Is there anything preventing you from purchasing at this point?' Persona work suggested first-time bed buyers lacked basic knowledge. Some remote user test videos were also run but proved less useful.",
+    "insight": "Visitors reached checkout with a product in the cart but still lacked information to finish. They looped between the bed category page and product pages, rarely clicked buying-guide links because they were buried under other content, and rarely used sort buttons because it wasn't clear what they did. Poll answers confirmed confusion about bed-buying fundamentals.",
+    "change": "The beds category page got visible links to information pages (size guides, children's bed guides) at the top, simpler filters for mobile, and improved informational content. Three variations were built and A/B tested.",
+    "outcome": "The winning variation produced 'a 63% increase in mobile conversion rates for the bed shopper segment'. For the Beds category page the case study also reports a 19% increase in overall conversions, 36% more visitors reaching the cart, 124% more visitors reaching informational content, and a 9% reduction in category-page bounce rate.",
+    "headline_metric": "+63% mobile conversion",
+    "attribution": "Strong for a vendor story: the change came from specific research findings and was A/B tested against the existing page. The 63% applies to one segment (mobile bed shoppers), not the whole site.",
+    "caveats": "Published by Hotjar (the tool vendor) with the CRO agency, both with an incentive. Test duration, sample size and significance aren't reported. Much of the 'research' is behavioural analytics plus short polls rather than moderated studies; the team said its user-test videos weren't very helpful. Exact year is approximate.",
+    "methods": [
+      "analytics",
+      "survey",
+      "usability_testing",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "ecommerce_retail",
+    "product_type": "website",
+    "metrics": [
+      "conversion",
+      "engagement"
+    ],
+    "company_size": "midmarket",
+    "year": 2019,
+    "evidence_strength": "tested",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
+        "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
+        "publisher": "Hotjar (via FeaturedCustomers)",
+        "date": null
+      },
+      {
+        "title": "Case Study: Time4Sleep achieves 63% increase in mobile conversions with Hotjar",
+        "url": "https://www.casestudies.com/company/hotjar/case-study/time4sleep-customer-case-study",
+        "publisher": "CaseStudies.com",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "intertop-checkout-exit-survey",
+    "title": "Intertop exit survey shows shoppers can't finish the checkout form; simplified form lifts conversion 54.68% in A/B test",
+    "company": "Intertop",
+    "is_anonymized": false,
+    "summary": "Ukrainian shoe retailer Intertop was losing almost half of shoppers at checkout. Its agency, Turum-burum, put an exit-intent survey on the checkout page: of 444 respondents, 48.6% said they couldn't complete the order form. A shorter, blocked-out form with autofill raised checkout conversion 54.68% in an A/B test, and average revenue per user rose 11.46% after rollout.",
+    "problem": "Almost half of prospective customers abandoned Intertop's checkout, and the team didn't know why.",
+    "research": "An exit-intent pop-up survey on the checkout page asked 'Why would you like to stop placing the order?' (444 respondents), alongside session recordings and heatmaps showing friction such as rage clicks. Run by the UX/CRO agency Turum-burum.",
+    "insight": "48.6% of respondents said they were leaving because they couldn't complete the checkout form. Heatmaps also showed the 'Buy now' button sat below the fold for most users on the product page.",
+    "change": "Checkout fields were cut to three, the order page was split into clear blocks, and autofill was added for signed-in users. The product page was also simplified so the buy button was visible.",
+    "outcome": "In the A/B test the variant's conversion rate rose 54.68%. After rollout, average revenue per user grew 11.46% and the checkout bounce rate fell 13.35%.",
+    "headline_metric": "+54.68% checkout conv.",
+    "attribution": "Direct: the survey pinpointed the form as the barrier, the changes targeted it, and the variant was A/B tested against the original.",
+    "caveats": "Reported by the analytics vendor (Hotjar/Contentsquare) about an agency client; both have an incentive. Test length, traffic and significance aren't given. The 54.68% applies to the checkout step, not site-wide conversion. Survey is self-reported by people already leaving. Source undated; year is approximate.",
+    "methods": [
+      "survey",
+      "analytics",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "ecommerce_retail",
+    "product_type": "checkout_flow",
+    "metrics": [
+      "conversion",
+      "revenue"
+    ],
+    "company_size": "midmarket",
+    "year": 2021,
+    "evidence_strength": "tested",
+    "source_type": "agency_vendor",
+    "sources": [
+      {
+        "title": "A/B testing examples (Turum-burum for Intertop)",
+        "url": "https://contentsquare.com/blog/ab-testing-examples/",
+        "publisher": "Contentsquare",
+        "date": null
+      }
+    ]
+  },
+  {
+    "slug": "instacart-shopper-app-field-research",
+    "title": "Instacart field research with in-store shoppers leads to one-handed app design and one-tap substitution messages",
+    "company": "Instacart",
+    "is_anonymized": false,
+    "summary": "Instacart's design team observed shoppers in grocery stores and shopped orders themselves to audit the experience. They saw that shoppers are always moving, with one hand on a cart or a product, and that out-of-stock items drive most of the back-and-forth with customers. That led to a one-handed Shopper app and features such as photo-backed messages and one-tap approval of replacement items.",
+    "problem": "Instacart shoppers work in busy stores carrying up to 50,000 products whose stock Instacart doesn't control, and the team needed the Shopper app to fit real in-store conditions and keep customers informed.",
+    "research": "Field research observing Instacart shoppers in stores and how they handled different scenarios, plus first-hand shopping by designers to audit the journey (described in 2021).",
+    "insight": "Shoppers usually use the phone with one hand while the other pushes a cart or picks items. Missing items are inevitable, and good communication matters more than perfection: customers still give 5-star ratings when the shopper clearly tried their best.",
+    "change": "A simplified, one-handed Shopper app with large icons, big tap targets and fewer manual inputs; prompts asking customers for replacement preferences on low-stock items; quick messaging with shelf photos; context such as first-time customer flags; crowdsourced out-of-stock data that stops later customers adding the item; and auto-generated substitution messages customers can approve with one tap.",
+    "outcome": "No numbers. Instacart says automated messaging cuts back-and-forth for both shopper and customer and that ratings data supports the value of communication.",
+    "headline_metric": null,
+    "attribution": "The post presents the one-handed principle and the communication features as direct results of field observation, but gives no outcome data.",
+    "caveats": "First-party design blog written partly for recruiting. No participant numbers, dates or metrics. Some features (crowdsourced stock data) rely on analytics as much as research.",
+    "methods": [
+      "field_study",
+      "ethnography"
+    ],
+    "research_type": "generative",
+    "industry": "food_delivery",
+    "product_type": "mobile_app",
+    "metrics": [
+      "task_success",
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Designing Digital Experiences That Augment the Analog World",
+        "url": "https://company.instacart.com/how-its-made/designing-digital-experiences-that-augment-the-analog-world",
+        "publisher": "Instacart",
+        "date": "2021-08-18"
+      }
+    ]
+  }
+]
