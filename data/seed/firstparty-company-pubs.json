@@ -1,0 +1,545 @@
+[
+  {
+    "slug": "figma-notifications-research-data-pairing",
+    "title": "Figma interviews and data reveal hidden notification bell and missing alerts, reshaping its roadmap",
+    "company": "Figma",
+    "is_anonymized": false,
+    "summary": "Figma's activity team didn't know where in the notification funnel to focus. A researcher and a data scientist worked in parallel: interviews showed users lived in their email and never visited the file browser where the bell sat, and data showed most users received no notifications at all. The team moved the bell, centred experiments on team-account users, and shipped comment notifications for file editors, not just owners.",
+    "problem": "Figma wanted people to engage more with notifications, but the activity team couldn't tell whether the weak point was enablement, delivery, viewing or interaction.",
+    "research": "Over several weeks in 2023, a Figma user researcher ran interviews (including observing workflows) while a data scientist analysed the notification funnel. They split open questions by which method could answer them and held regular joint synthesis sessions.",
+    "insight": "Interviewees said they relied heavily on email notifications, which clashed with data showing low email engagement. Re-cutting the data by account type explained it: designers on team accounts opened 80% of comment-notification emails, while many other users simply received nothing ('71% of users don't receive any notifications'). Interviews also showed people rarely visited the file browser, so the bell in its top-right corner was 'out of sight and out of mind'. Collaborators who weren't file owners got no comment notifications at all.",
+    "change": "The bell was moved to a more prominent spot at the upper left of the file browser. The team made team-account users the reference group for notification experiments, and after an experiment released comment notifications for file editors, not only owners.",
+    "outcome": "The post reports the changes and says the work shaped the half's roadmap and a series of experiments. It gives no metric for the effect of the changes.",
+    "headline_metric": null,
+    "attribution": "Direct for the decisions: the bell move and the team-account focus are traced to specific interview and data findings. The editor-notification change came partly from the researchers' own experience and was then tested in an experiment, results not shared.",
+    "caveats": "Figma's own blog, written as a showcase of its research practice. No outcome numbers for the shipped changes. The 80% and 71% figures describe the problem, not the result.",
+    "methods": [
+      "interviews",
+      "analytics",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "saas_b2b",
+    "product_type": "web_app",
+    "metrics": [
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2023,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How Figma's data science and user research teams weave together insights that count",
+        "url": "https://www.figma.com/blog/cross-functional-data-science-user-research-figma/",
+        "publisher": "Figma Blog",
+        "date": "2023-10-25"
+      }
+    ]
+  },
+  {
+    "slug": "mozilla-firefox-focus-value-study",
+    "title": "Mozilla's 61-person value study made the case for small-audience Firefox Focus",
+    "company": "Mozilla (Firefox)",
+    "is_anonymized": false,
+    "summary": "Mozilla researchers ran a diary study, interviews and workshops with 61 people in six cities to learn how people describe the value they get from Firefox. Leaders had been debating whether to keep investing in Firefox Focus, a privacy browser with a small user base. The research showed Focus is often used alongside another Firefox browser and plays a critical role in some people's workflows, which the team calls its most tangible success.",
+    "problem": "Mozilla measured success mainly through usage numbers like monthly active users, and collects little data on what people do in the browser. By that yardstick, Firefox Focus looked small, and there was internal discussion about whether to keep spending limited resources on it.",
+    "research": "In late 2019 and early 2020, Firefox user researchers studied 61 participants in Berlin, Chicago, Portland, Seattle, Taipei and Vancouver in three phases: a three-day diary study, remote interviews, and in-person workshops (including scenario-building and participant 'pitch videos' to Mozilla leaders). Follow-up surveys of thousands of people checked the use-case categories at scale. Leaders and stakeholders took part in the activities.",
+    "insight": "People's most valued uses of Firefox fell into a stable set of categories, and high usage wasn't always good for them (for example, huge numbers of open tabs felt overwhelming). Firefox Focus, despite its small audience, was often used alongside another Firefox mobile browser for specific jobs and mattered a lot in those workflows.",
+    "change": "The study gave leadership evidence to look beyond raw usage numbers when judging Firefox Focus, and the use-case categories fed into further mixed-method research and survey work.",
+    "outcome": "The authors say the most tangible success was highlighting the value of Firefox Focus to leadership teams that had been questioning investment in it. They don't state a formal decision or any metric.",
+    "headline_metric": null,
+    "attribution": "Moderate. The researchers say their study (along with a colleague's research) showed Focus's value. The post doesn't say what was decided or that the research was the deciding factor.",
+    "caveats": "Self-reported impact by the researchers who ran the study. Influence on a funding debate, not a measured outcome. 2021 post.",
+    "methods": [
+      "diary_study",
+      "interviews",
+      "co_design",
+      "survey"
+    ],
+    "research_type": "generative",
+    "industry": "consumer_tech",
+    "product_type": "mobile_app",
+    "metrics": [],
+    "company_size": "midmarket",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Who Gets to Define Success? Listening to Stories of How People Value Firefox to Redefine Metrics",
+        "url": "https://blog.mozilla.org/ux/2021/01/who-gets-to-define-success-listening-to-stories-of-how-people-value-firefox-to-redefine-metrics/",
+        "publisher": "Mozilla UX blog",
+        "date": "2021-01-22"
+      }
+    ]
+  },
+  {
+    "slug": "mozilla-firefox-picture-in-picture-interviews",
+    "title": "Interviews with Firefox Picture-in-Picture users stop Mozilla treating 'habit' as the success metric",
+    "company": "Mozilla (Firefox)",
+    "is_anonymized": false,
+    "summary": "Data showed some Firefox users were forming a habit with Picture-in-Picture video. Mozilla interviewed and observed 11 of them to learn why. People used it to take notes, focus, calm down or break up monotonous work, not as a distraction. The team decided not to measure PiP's success by habit formation and instead to support what people already did, adding controls such as volume.",
+    "problem": "About six months after launch, usage data showed PiP users opened more PiP windows over time. The team didn't know why, and worried the feature might hurt productivity by adding distraction.",
+    "research": "In 2020, Firefox researchers interviewed 11 people who used Picture-in-Picture and watched them use it in their everyday browsing.",
+    "insight": "PiP often helped people get tasks done: a student watched lectures while taking notes, others used background video to stay motivated during dull work or to calm down while reading something hard. The team found nothing seriously wrong that would stop habit formation.",
+    "change": "The team decided not to make 'habit-forming' the measure of PiP's success, and to better support existing uses instead, starting with more controls such as changing the volume. A separate experiment on PiP discoverability was prepared at the same time.",
+    "outcome": "A change in product strategy and feature priorities. No usage or satisfaction metrics are reported for the changes.",
+    "headline_metric": null,
+    "attribution": "Direct for the strategy change: the post's 'Our research impact' section ties it to the interviews.",
+    "caveats": "Small qualitative sample (11 people). Mozilla's own blog. No outcome data.",
+    "methods": [
+      "interviews",
+      "field_study",
+      "analytics"
+    ],
+    "research_type": "generative",
+    "industry": "consumer_tech",
+    "product_type": "desktop_software",
+    "metrics": [
+      "engagement"
+    ],
+    "company_size": "midmarket",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "From a Feature to a Habit: Why are People Watching Videos in Picture-in-Picture?",
+        "url": "https://blog.mozilla.org/ux/2020/09/from-a-feature-to-a-habit-why-are-people-watching-videos-in-picture-in-picture/",
+        "publisher": "Mozilla UX blog",
+        "date": "2020-09-22"
+      }
+    ]
+  },
+  {
+    "slug": "mozilla-firefox-security-warning-rewrite",
+    "title": "Firefox's rewritten security warnings cut stated intent to ignore them by 22–50%",
+    "company": "Mozilla (Firefox)",
+    "is_anonymized": false,
+    "summary": "About 3% of Firefox users hit a certificate security warning every day, and the old pages were full of jargon. Mozilla's content and UX team rewrote them using published warning research and its own usability tests, then compared versions in a survey. People shown the new pages were 22–50% less likely to say they'd ignore the warning, and a live comparison found no harm to usage or retention.",
+    "problem": "Firefox's certificate error pages used vague technical language in a dated design. Mozilla wanted people to understand the risk and avoid unsafe sites, without driving them to switch browsers.",
+    "research": "Three studies in 2018: an unmoderated remote usability study with eight participants on a first draft of the new pages; a paid-panel survey comparing the new Firefox pages, the old Firefox pages and Chrome's equivalents; and a live study comparing new and old messages with Firefox users.",
+    "insight": "The usability study found that the word 'connection' misled people into thinking their internet connection was the problem rather than a bad certificate. Jargon like 'security credentials' and 'encrypted' didn't help people understand.",
+    "change": "New copy and design: plain language with 'certificate' explained on first use, 'connection' removed from headings, short scannable text, and a design that makes the safe choice the clear default while still letting people proceed.",
+    "outcome": "In the survey, people shown the redesigned pages were 22–50% less likely to say they would try to ignore the warning, and 29–60% less likely to say they would open the site in another browser (4.7–8.5% for new Firefox pages vs 10–11.3% for Chrome's). The live study found no significant negative effect on usage or retention, which cleared the pages for release to all users.",
+    "headline_metric": "-22–50% would ignore it",
+    "attribution": "Fairly direct. The tested copy changes came from the usability findings and published warning research, and the survey compared the new pages against the old ones.",
+    "caveats": "The headline numbers are stated intentions in a survey panel, not observed behaviour. Ranges are given without per-message detail or sample sizes. The live study only shows no harm. Written by the Mozilla content strategist who worked on it.",
+    "methods": [
+      "usability_testing",
+      "survey",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "desktop_software",
+    "metrics": [
+      "errors",
+      "retention"
+    ],
+    "company_size": "midmarket",
+    "year": 2019,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Designing Better Security Warnings",
+        "url": "https://blog.mozilla.org/ux/2019/03/designing-better-security-warnings/",
+        "publisher": "Mozilla UX blog",
+        "date": "2019-03-12"
+      }
+    ]
+  },
+  {
+    "slug": "mozilla-screenshotgo-indonesia-pivot",
+    "title": "Mozilla's Indonesia research pivots a shopping wish-list idea into a screenshot app",
+    "company": "Mozilla (Firefox ScreenshotGo)",
+    "is_anonymized": false,
+    "summary": "Mozilla's Taipei team set out to build a shopping tool for Indonesia and favoured a cross-app wish list. Surveys of about 200 online shoppers per round, followed by field tests with eight people, kept showing the same surprise: Indonesians screenshot almost everything. The team dropped the wish-list framing and built Firefox ScreenshotGo, an Android app for capturing, finding and acting on screenshots.",
+    "problem": "In 2018 Mozilla wanted to grow its impact on online shopping in Southeast Asia, starting in Indonesia, a market the team barely knew, with six weeks to define a product.",
+    "research": "Existing interviews by a Mozilla researcher and desk research fed a shopping journey map. The team then ran several mobile surveys through a local panel (around 200 online shoppers each), storyboard surveys of three wish-list concepts, and a field trip in Indonesia: four interviews on screenshot behaviour, a day of iteration, then prototype tests with four more people.",
+    "insight": "Screenshots were the dominant tool for keeping wish lists, promotions, shopping history and more, because apps beat websites on experience and price and patchy, costly data made an offline image more reliable than a link. People then struggled to find the right screenshot among countless images and couldn't act on the information in it.",
+    "change": "The team shaped the product around screenshots instead of a wish list: Firefox ScreenshotGo, an Android app to capture and organise screenshots and get back to related content online, released in the Indonesian Google Play store.",
+    "outcome": "The product direction changed and an app shipped in Indonesia. The post reports no adoption or usage numbers.",
+    "headline_metric": null,
+    "attribution": "Direct for the pivot: the post says the screenshot finding was 'out of our expectation' and that the validated findings shaped ScreenshotGo's blueprint.",
+    "caveats": "Written by the team's designer. No outcome data, and the post doesn't say how the app performed. Small field sample (eight people). 2018.",
+    "methods": [
+      "survey",
+      "interviews",
+      "concept_testing",
+      "field_study",
+      "journey_mapping"
+    ],
+    "research_type": "generative",
+    "industry": "consumer_tech",
+    "product_type": "mobile_app",
+    "metrics": [],
+    "company_size": "midmarket",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "A bumpy road to Firefox ScreenshotGo in a foreign market",
+        "url": "https://blog.mozilla.org/ux/2018/12/a-bumpy-road-to-firefox-screenshotgo-in-a-foreign-market/",
+        "publisher": "Mozilla UX blog",
+        "date": "2018-12-27"
+      }
+    ]
+  },
+  {
+    "slug": "mozilla-firefox-ios-chronological-tabs",
+    "title": "Concept tests and a diary study reshape Firefox for iOS's chronological tabs",
+    "company": "Mozilla (Firefox for iOS)",
+    "is_anonymized": false,
+    "summary": "The Firefox for iOS team wanted to know if ordering tabs by time would help people stay on top of open tasks. A prototype test with 10 people, then a three-day diary study with 10 more using a beta build, showed people already thought about tabs in terms of time. The rounds led to date labels, easier tab deletion, and the finding that the whole tab card (thumbnail, title, URL, date) is what helped people resume tasks.",
+    "problem": "On phones, tabs are ordered by when they were opened, with new tabs from links inserted next to their parent. With many tabs open, finding the one you need is hard.",
+    "research": "April 2020: concept evaluation of a prototype with 10 US adults (half Firefox users, half Safari or Chrome users). Then a diary study with 10 new participants in Canada and the US who used a beta build as their main browser for three days, answered daily surveys, and were interviewed afterwards.",
+    "insight": "Participants naturally described their tabs by time and found the chronological order helpful, especially for recent tabs. They wanted to delete single tabs and batches easily. In real use, the combination of thumbnail, title, URL and date stamp jogged people's memory of unfinished tasks. Missing thumbnails and enlarged system text (truncating titles) broke the design.",
+    "change": "After the first round the team added dates to 'Today' and 'Yesterday', renamed 'Older' to 'Last Week', and made tab deletion easier to reach. After the diary study it prioritised fixing thumbnail loading, and planned research on Android, tablet and desktop plus accessibility work for large text.",
+    "outcome": "Design changes and a further research plan. No usage metrics are reported.",
+    "headline_metric": null,
+    "attribution": "Direct: each design change is described as coming from a specific research round.",
+    "caveats": "Small samples. The post describes a feature still in beta, with no shipped outcome data. Mozilla's own blog.",
+    "methods": [
+      "concept_testing",
+      "diary_study",
+      "interviews"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "mobile_app",
+    "metrics": [
+      "task_success"
+    ],
+    "company_size": "midmarket",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Ordering Browser Tabs Chronologically to Support Task Continuity",
+        "url": "https://blog.mozilla.org/ux/2020/07/ordering-browser-tabs-chronologically-to-support-task-continuity/",
+        "publisher": "Mozilla UX blog",
+        "date": "2020-07-31"
+      }
+    ]
+  },
+  {
+    "slug": "airbnb-co-hosting-sacrificial-concepts",
+    "title": "Airbnb picks a host-to-host marketplace for co-hosting after testing three rough concepts",
+    "company": "Airbnb",
+    "is_anonymized": false,
+    "summary": "Airbnb wanted to help people who had a space but couldn't host it themselves. Designers showed potential hosts three deliberately vague 'sacrificial' concepts: an Airbnb-branded professional service, a directory of hospitality partners, and a marketplace of community hosts. Feedback pointed to the marketplace, which was then piloted by hand in Tokyo before becoming the Co-hosting product. Airbnb says inquiries grew from a trickle to a 'torrent' before any promotion.",
+    "problem": "Host growth lagged guest growth because hosting is hard work, and many would-be hosts couldn't keep up with cleaning, check-ins and guest messages.",
+    "research": "Around 2015–16, Airbnb's experience designers tested three sacrificial concepts with potential hosts, then storyboarded and prototyped the journey. They ran a service prototype in Tokyo, where the operations team manually matched real hosts and co-hosts by email, forms and spreadsheets, then expanded the pilot to Toronto, Chicago and Washington, D.C., with frequent qualitative testing alongside funnel metrics.",
+    "insight": "Hosts wanted the reliability of a professional, trusted brand together with the personal attention, local knowledge and entrepreneurial drive of an individual host, and saw property management companies as too volume-focused. The Tokyo pilot confirmed that nearby co-hosts with local expertise and a personal connection were the most wanted, and helped shape messaging, pricing and packaging.",
+    "change": "Airbnb built Co-hosting as a marketplace connecting hosts with nearby co-hosts from its own community, with search by location and profiles highlighting each co-host's approach and expertise, instead of a professional service or partner directory.",
+    "outcome": "The post says inquiries for hosting services went from a trickle to 'a torrent' before co-hosting was promoted or deeply integrated into the main product. No numbers are given, and the author says it is still early.",
+    "headline_metric": null,
+    "attribution": "Direct for the choice of model: the post ties it to the concept-test feedback and the Tokyo pilot. The demand claim follows the launch but isn't isolated from other factors.",
+    "caveats": "Airbnb's own design blog, written by the lead designer. No figures. Published in 2016, when the service was still in pilot cities.",
+    "methods": [
+      "concept_testing",
+      "journey_mapping",
+      "field_study",
+      "usability_testing",
+      "analytics"
+    ],
+    "research_type": "generative",
+    "industry": "travel_hospitality",
+    "product_type": "service",
+    "metrics": [
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2016,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Co-hosting: Designing a service to support community collaboration",
+        "url": "https://medium.com/airbnb-design/co-hosting-designing-a-service-to-support-community-collaboration-7a630ab029e7",
+        "publisher": "Airbnb Design (Medium)",
+        "date": "2016-12-09"
+      }
+    ]
+  },
+  {
+    "slug": "uber-cash-fee-collection-mexico-field-tests",
+    "title": "Uber's in-car prototype tests in Mexico fix a payment flow drivers 'completed' without paying",
+    "company": "Uber",
+    "is_anonymized": false,
+    "summary": "When riders in Mexico pay drivers in cash, drivers owe Uber its service fee, and the old process was an emailed invoice. An Uber design and research team spent two weeks with drivers in Mexico City and Guadalajara and tested an in-app payment prototype in parked cars. Drivers raced through the screens and reached 'pending' without ever paying, then planned to call support. The team redesigned the flow with education, restart and code access before rolling it out to several markets.",
+    "problem": "Drivers with a high volume of cash trips could go into negative balance. Uber collected the fees by emailing invoice links, which was manual for operations, opaque, and easy for drivers to miss.",
+    "research": "Around 2019–2020, two designers, a product manager and a UX researcher spent two weeks with drivers in Mexico City and Guadalajara (with research trips to Brazil too). They interviewed drivers and tested a Figma prototype on an Android phone in the driver's own car holder.",
+    "insight": "Drivers didn't understand how cash service fees worked. In testing, many tapped briskly through the steps without reading, reached the 'pending' screen and assumed they had paid, even though they had never gone to a convenience store. Some said they would phone support straight away to ask why the payment was still processing.",
+    "change": "The team built an in-app collection flow giving drivers control over when and how much to pay, with step-by-step instructions, information before the flow, contextual help on first use, and the ability to restart, cancel, or see their payment code from the 'pending' screen. Copy was localised with local help rather than translated at the end.",
+    "outcome": "The redesigned flow went on to be released in several markets, including Mexico, Brazil, India and Japan. No metrics are given.",
+    "headline_metric": null,
+    "attribution": "Direct for the design changes: the post traces the restart and code-access features to the specific failure seen in prototype tests.",
+    "caveats": "Uber's design blog, written by the product designer. No numbers on payment completion or support calls. Exact research dates not given.",
+    "methods": [
+      "field_study",
+      "interviews",
+      "concept_testing",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "transportation",
+    "product_type": "mobile_app",
+    "metrics": [
+      "task_success",
+      "support_cost"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Designing For A Cash Experience",
+        "url": "https://medium.com/uber-design/designing-for-a-cash-experience-ff8260e9d146",
+        "publisher": "Uber Design (Medium)",
+        "date": "2020-12-08"
+      }
+    ]
+  },
+  {
+    "slug": "wayfair-supplier-research-listing-priority",
+    "title": "Wayfair's supplier research puts 'Build the Best Listing' on its global roadmap",
+    "company": "Wayfair",
+    "is_anonymized": false,
+    "summary": "Wayfair's supplier technology team wanted to understand the businesses selling through its marketplace beyond the transaction. A survey-based segmentation of all suppliers, a three-week online ethnography with ten suppliers, and stakeholder narratives showed that improving product listings was a key, badly served job. 'Build the Best Listing' was prioritised in the H2 2022 Global Supplier Technology roadmap ahead of new features.",
+    "problem": "Wayfair's B2B suppliers vary widely in size, business model and roles, which made their needs and motivations hard to understand, and the experience for them affects the end-customer experience.",
+    "research": "Over about a year to 2022: an online survey to all suppliers, clustered into three segments by firmographics (three months, one researcher plus an external market research firm); a three-week online ethnographic board (Recollective) with ten suppliers doing tasks about why they use Wayfair's Partner Home; and narratives built with subject-matter experts. A six-week design sprint with 40+ people followed to set a north-star vision.",
+    "insight": "'Improving listings' is a key job suppliers want to get done on Wayfair and is highly underserved. Needs also differ by company size, headquarters location and whether a supplier is a distributor or manufacturer.",
+    "change": "'Build the Best Listing', focused on the product-addition experience, was prioritised in the H2 2022 Global Supplier Technology roadmap over new features. The segmentation is used to send new suppliers personalised communications.",
+    "outcome": "A roadmap decision and a supplier experience vision. The author says the segmentation helped improve supplier satisfaction and loyalty, especially among smaller businesses, but gives no figures.",
+    "headline_metric": null,
+    "attribution": "Direct for the roadmap priority, which the post attributes to the research finding. The satisfaction claim is unsupported by data in the post.",
+    "caveats": "Written by Wayfair's user research lead for the area. No outcome metrics. The listing work's results aren't reported.",
+    "methods": [
+      "survey",
+      "ethnography",
+      "interviews"
+    ],
+    "research_type": "generative",
+    "industry": "ecommerce_retail",
+    "product_type": "enterprise_software",
+    "metrics": [
+      "satisfaction"
+    ],
+    "company_size": "enterprise",
+    "year": 2022,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Building Empathy with Wayfair Suppliers",
+        "url": "https://medium.com/wayfair-design/building-empathy-with-wayfair-suppliers-48eacb7ab965",
+        "publisher": "Wayfair Experience Design (Medium)",
+        "date": "2022-10-26"
+      }
+    ]
+  },
+  {
+    "slug": "instacart-pandemic-research-senior-support",
+    "title": "Instacart's 2020 research found many new users were seniors, leading to a senior support line",
+    "company": "Instacart",
+    "is_anonymized": false,
+    "summary": "When the pandemic hit, Instacart's research team rebuilt its roadmap around four workstreams on customer sentiment, experience, expectations and who the new customers were. It found that many new users were seniors or family members ordering for them, that customers wanted truly contactless handoffs, and that new customers were calling support instead of using the help centre. Instacart launched a Senior Support Service, contactless delivery and a help-centre redesign.",
+    "problem": "In early 2020 Instacart saw larger orders and a huge spike in first-time users, with limited delivery slots and stock problems. It didn't know who the new customers were or what they expected.",
+    "research": "In 2020 Instacart's research team (with the Consumer Insights and Marketing Research team) re-prioritised into four remote workstreams: customer sentiment, post-order experience, online shopping expectations, and understanding new customers. The post doesn't detail methods or sample sizes.",
+    "insight": "Many new users were senior citizens, or relatives ordering for them, who chose Instacart as the safer option. Customers wanted an option for a fully contactless drop-off. New customers called the support line instead of using self-help, and the help centre didn't let them solve problems directly.",
+    "change": "Instacart launched a Senior Support Service (high-touch support for customers over 60), rolled out contactless delivery across the board, and redesigned the help centre to link people to pages where they can fix issues themselves.",
+    "outcome": "Features launched. The post reports no metrics for them.",
+    "headline_metric": null,
+    "attribution": "The research manager says the Senior Support Service was 'one example of a feature launch based on these insights'. Contactless delivery was also an industry-wide pandemic response, so research was one input among many.",
+    "caveats": "Instacart's own design blog. Methods are described only at a high level. Pandemic conditions pushed every delivery company the same way.",
+    "methods": [
+      "survey",
+      "interviews",
+      "support_analysis"
+    ],
+    "research_type": "generative",
+    "industry": "food_delivery",
+    "product_type": "service",
+    "metrics": [
+      "support_cost",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2021,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Research in Unprecedented Times",
+        "url": "https://medium.com/instacart-design/research-in-unprecedented-times-d8f1059f7088",
+        "publisher": "Instacart Design (Medium)",
+        "date": "2021-05-21"
+      }
+    ]
+  },
+  {
+    "slug": "google-material-3-expressive-eye-tracking",
+    "title": "Google's 46 studies behind Material 3 Expressive: key buttons spotted up to 4x faster",
+    "company": "Google (Material Design)",
+    "is_anonymized": false,
+    "summary": "Google's Material Design team spent three years and 46 studies, with more than 18,000 participants, testing a more 'expressive' design system. In a lab eye-tracking study comparing 10 apps in expressive and standard versions, people spotted key UI elements up to four times faster, and older users caught up with younger ones. The research also caught expressive designs that hurt usability, which shaped the system's rules.",
+    "problem": "A 2022 intern study of sentiment toward Material Design in Google apps raised the question of why the apps all looked so similar and dull. The team wanted to know whether more emotional design could also be usable.",
+    "research": "From 2022 to 2025: 46 studies with 18,000+ participants worldwide, including surveys and focus groups on emotional response, usability tests on speed and comprehension, component-level studies (progress indicators, button size, a floating toolbar), and a lab study with eye-tracking glasses where people used 10 apps in Material 3 Expressive and standard Material 3 versions in random order.",
+    "insight": "Well-applied expressive design was preferred across ages, by up to 87% among 18–24-year-olds. In eye tracking, larger, more prominent key actions were found up to four times faster (for example, an email Send button), and age differences in fixation time largely disappeared for users over 45. But expressive designs that broke familiar patterns, such as a scattered album-art playlist or email actions without text labels, scored worse on usability.",
+    "change": "Google shipped Material 3 Expressive in 2025 with new components and guidelines that emphasise size, colour, shape and containment for key actions, while telling teams to keep standard patterns and labels where removing them hurt usability.",
+    "outcome": "Lab results: key elements spotted up to 4x faster and tap times on key actions reduced 'by seconds'. Surveys found 32% higher 'subculture', 34% higher 'modernity' and 30% higher 'rebelliousness' ratings. No in-product business metrics are reported.",
+    "headline_metric": "Up to 4x faster to spot",
+    "attribution": "Direct: the design system was developed and iterated through these studies, and the eye-tracking study compared versions directly.",
+    "caveats": "'Up to' four times is a best case across apps. Lab and survey results, not live product metrics. The authors note unfamiliarity affected results, and a strong minority preferred calmer designs. Google writing about its own design system.",
+    "methods": [
+      "eye_tracking",
+      "usability_testing",
+      "survey",
+      "concept_testing",
+      "accessibility_research"
+    ],
+    "research_type": "evaluative",
+    "industry": "consumer_tech",
+    "product_type": "mobile_app",
+    "metrics": [
+      "task_success",
+      "satisfaction",
+      "accessibility"
+    ],
+    "company_size": "enterprise",
+    "year": 2025,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "The research behind Google's bold new direction for design",
+        "url": "https://design.google/library/expressive-material-design-google-research",
+        "publisher": "Google Design",
+        "date": "2025-05-13"
+      }
+    ]
+  },
+  {
+    "slug": "google-maps-two-wheeler-mode-field-research",
+    "title": "Riding with drivers in Delhi and Jakarta led Google Maps to build a two-wheeler mode",
+    "company": "Google (Google Maps)",
+    "is_anonymized": false,
+    "summary": "Google Maps researchers went to India and Indonesia to understand fast-growing cities and found Maps was built for cars while millions got around on motorbikes and scooters. They rode with drivers, ran a workshop with Go-Jek riders, and kept testing routes with local partners. The result was two-wheeler mode, the first new transport mode in Google Maps in years, with bike-friendly shortcuts, landmarks and arrival times.",
+    "problem": "In Delhi and Jakarta, two-wheelers are the most practical way through heavy traffic, but Google Maps offered no routes or arrival times for them and often suggested roads two-wheelers couldn't use.",
+    "research": "Before mid-2018, a cross-disciplinary team (research, engineering, design, product, marketing) did immersion research in Jaipur, Delhi, Bangalore and Jakarta: interviews in transport hubs and homes, riding along with drivers, and a workshop with Go-Jek drivers (day timelines, pros and cons, co-sketching). Local partners then tested routing, arrival times, landmarks and navigation during development.",
+    "insight": "Riders navigated in many ways (memorising routes, voice guidance, listening to passengers, phones stuck to the speedometer). Shortcuts and landmarks made navigation faster and safer. Car routes and arrival times were wrong for bikes, and drivers relied on each other as a community when lost.",
+    "change": "Google launched two-wheeler mode on Android in India and Indonesia (named 'two-wheeler' in India and 'motor' in Indonesia to match local usage), with two-wheeler routes and shortcuts, arrival times, more landmarks and improved voice navigation in more languages. Design principles from the fieldwork also guided other Maps improvements in both countries.",
+    "outcome": "A new transport mode shipped. The post gives no usage or accuracy figures.",
+    "headline_metric": null,
+    "attribution": "Strong: the authors credit the field research with defining the product, and local testers caught unsuitable roads and missing landmarks.",
+    "caveats": "Written by the Google researcher and designer involved. No metrics. The market need may have been visible from data too; the post doesn't compare.",
+    "methods": [
+      "field_study",
+      "ethnography",
+      "co_design",
+      "interviews",
+      "usability_testing"
+    ],
+    "research_type": "generative",
+    "industry": "transportation",
+    "product_type": "mobile_app",
+    "metrics": [
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2018,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Designing Google Maps for Motorbikes",
+        "url": "https://design.google/library/designing-google-maps-motorbikes",
+        "publisher": "Google Design",
+        "date": "2018-06-22"
+      }
+    ]
+  },
+  {
+    "slug": "ft-edit-in-app-survey-weekend-and-app-merge",
+    "title": "FT Edit's in-app survey drives a print cross-promotion and shapes its move into the main FT app",
+    "company": "Financial Times (FT Edit)",
+    "is_anonymized": false,
+    "summary": "The Financial Times ran a continuous in-app survey in FT Edit, its cheaper eight-articles-a-day app. Moving the survey into a carousel card raised responses 130%. Answers showed one in five readers had recently read the print FT Weekend and that readers feared paywalls and losing the focused format if FT Edit moved into the main FT app. That led to a print campaign in FT Weekend and a dedicated, carousel-based FT Edit space in the main app.",
+    "problem": "FT Edit launched in 2022 with a feedback survey tucked in Settings, and responses had slowed. The team needed steady insight on who its readers were, and later on the risks of folding FT Edit into the main FT app on a tight timeline.",
+    "research": "From 2022 an ongoing in-app survey, later moved to a repurposed carousel card that appeared sparingly and could be dismissed. Questions covered who FT Edit readers are, why they read it, what they want more or less of, and which other FT products they use, plus a later question on concerns about merging into the main app.",
+    "insight": "One in five FT Edit readers had read the print FT Weekend in the past month, which usage data couldn't show, and they were less likely to work in financial services than full FT subscribers. Many wanted more choice. Ahead of the merge, respondents worried about regularly hitting paywalled stories and losing the focused reading experience.",
+    "change": "The FT ran an experimental print marketing campaign for FT Edit inside FT Weekend, trialled recommendation-engine articles alongside the editorial picks, and designed a dedicated FT Edit space in the main FT app that opens automatically for FT Edit subscribers, shields them from paywalled stories, and keeps FT Edit's one-article-at-a-time horizontal carousel.",
+    "outcome": "Survey response rate rose 130% after the move to the carousel card. The FT describes the FT Weekend print campaign as 'successful' but gives no figures. The merge design was 'directly influenced' by survey feedback. Personalisation trials were small due to time and technical limits.",
+    "headline_metric": "+130% survey responses",
+    "attribution": "Direct for the decisions, which the author ties to specific survey findings. The 130% figure measures the research method (survey placement), not a product outcome.",
+    "caveats": "Written by the FT researcher who ran the survey. No metrics for the print campaign or the merged experience. Survey respondents are self-selected.",
+    "methods": [
+      "survey"
+    ],
+    "research_type": "mixed",
+    "industry": "media_entertainment",
+    "product_type": "mobile_app",
+    "metrics": [
+      "revenue",
+      "engagement"
+    ],
+    "company_size": "enterprise",
+    "year": 2025,
+    "evidence_strength": "decision",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Guiding Strategy: How an in-app survey supported product iteration",
+        "url": "https://medium.com/ft-product-technology/guiding-strategy-how-an-in-app-survey-supported-product-iteration-9a1ddb1d9ff6",
+        "publisher": "FT Product & Technology (Medium)",
+        "date": "2025-12-04"
+      }
+    ]
+  },
+  {
+    "slug": "tokopedia-phone-trade-in-research",
+    "title": "Tokopedia's interviews and post-launch tests shape its phone trade-in and raise purchase completion",
+    "company": "Tokopedia",
+    "is_anonymized": false,
+    "summary": "Tokopedia researched why people kept old phones unused or struggled to resell them, using interviews, a survey and competitor research, and built Tukar Tambah, a trade-in where the app values your old phone and a courier swaps it for the new one. After a limited launch, interviews and usability tests found the purchase journey too long and price estimates too inaccurate. Tokopedia says fixes significantly raised purchase completion over the next two quarters, but gives no numbers.",
+    "problem": "Many Indonesians buy a new phone often, and old phones pile up unused because reselling them is a hassle.",
+    "research": "Early stage: in-depth interviews on triggers and barriers when buying a new phone and selling an old one, a survey to size the problems, and desk research benchmarking competitors. Before launch: usability testing of the trade-in flow. After a limited launch: evaluation research with in-depth interviews and usability testing on the live product.",
+    "insight": "The top validated problem was helping people sell their old phone quickly so they could put the money toward a new one. After launch, users wanted a shorter purchase journey and more accurate price indications.",
+    "change": "Tokopedia built Tukar Tambah: choose a new phone, let the app scan the old phone and estimate its value in rupiah, pay the difference, and a courier delivers the new phone and collects the old one. After the evaluation research the team shortened the purchase journey and worked on pricing accuracy.",
+    "outcome": "The author says purchase completion rose 'significantly' in the first two quarters after launch, and the number of trade-ins kept growing as the feature expanded. No figures are given.",
+    "headline_metric": null,
+    "attribution": "Moderate. The post links the improvements to research feedback, but completion gains in the first months after a launch have many possible causes.",
+    "caveats": "Written by a Tokopedia researcher as an argument for research. No numbers, no control. Dates of the work aren't given.",
+    "methods": [
+      "interviews",
+      "survey",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "ecommerce_retail",
+    "product_type": "mobile_app",
+    "metrics": [
+      "conversion",
+      "adoption"
+    ],
+    "company_size": "enterprise",
+    "year": 2020,
+    "evidence_strength": "reported",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How User Research plays Important Keys to Unlock Minimum Lovable Product for Customers",
+        "url": "https://medium.com/tokopedia-design/how-user-research-plays-important-keys-to-unlock-minimum-lovable-product-for-customers-7bdc5835f0be",
+        "publisher": "Tokopedia Design (Medium)",
+        "date": "2020-12-28"
+      }
+    ]
+  }
+]

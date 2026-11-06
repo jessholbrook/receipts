@@ -13,17 +13,31 @@
     "headline_metric": "72.9% vs 27.6% posted",
     "attribution": "Strong. The tool was designed to fix problems found in consultation and usability tests, and the outcome comes from a randomized test of that tool.",
     "caveats": "The write-up is inconsistent about whether the comparison is people who 'opened' the tool or who 'had access' to it; the figures are the same either way, but the exact denominator is unclear. Results are on talk-page participation, not longer-term editor retention. Some large wikis (including English Wikipedia) were not part of the default rollout at first.",
-    "methods": ["usability_testing", "survey", "experimentation", "analytics"],
+    "methods": [
+      "usability_testing",
+      "survey",
+      "experimentation",
+      "analytics"
+    ],
     "research_type": "evaluative",
     "industry": "nonprofit",
     "product_type": "web_app",
-    "metrics": ["task_success", "errors", "engagement"],
+    "metrics": [
+      "task_success",
+      "errors",
+      "engagement"
+    ],
     "company_size": "midmarket",
     "year": 2021,
     "evidence_strength": "tested",
     "source_type": "first_party",
     "sources": [
-      { "title": "Talk pages project/Replying", "url": "https://www.mediawiki.org/wiki/Talk_pages_project/Replying", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2021-04-23" }
+      {
+        "title": "Talk pages project/Replying",
+        "url": "https://www.mediawiki.org/wiki/Talk_pages_project/Replying",
+        "publisher": "MediaWiki.org (Wikimedia Foundation)",
+        "date": "2021-04-23"
+      }
     ]
   },
   {
@@ -40,19 +54,301 @@
     "headline_metric": "+11.6% then ~+1% odds",
     "attribution": "Moderate. The feature set traces back to the 2017 interview research, and both evaluations were randomized, but neither isolates which research finding drove which feature.",
     "caveats": "The two controlled experiments disagree: the larger, later study found much weaker effects than the early pilot. Retention gains in the pilot were inferred, not measured. The homepage seemed to distract newcomers who were already mid-edit. Included as an honest example that a research-led feature can test modestly.",
-    "methods": ["interviews", "field_study", "experimentation", "analytics"],
+    "methods": [
+      "interviews",
+      "field_study",
+      "experimentation",
+      "analytics"
+    ],
     "research_type": "mixed",
     "industry": "nonprofit",
     "product_type": "web_app",
-    "metrics": ["adoption", "engagement", "retention"],
+    "metrics": [
+      "adoption",
+      "engagement",
+      "retention"
+    ],
     "company_size": "midmarket",
     "year": 2023,
     "evidence_strength": "tested",
     "source_type": "first_party",
     "sources": [
-      { "title": "New Editor Experiences", "url": "https://www.mediawiki.org/wiki/New_Editor_Experiences", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2017-08-01" },
-      { "title": "Growth/Personalized first day/Newcomer tasks/Experiment analysis, November 2020", "url": "https://www.mediawiki.org/wiki/Growth/Personalized_first_day/Newcomer_tasks/Experiment_analysis,_November_2020", "publisher": "MediaWiki.org (Wikimedia Foundation)", "date": "2020-11-01" },
-      { "title": "Increasing Participation in Peer Production Communities with the Newcomer Homepage (Warncke-Wang, Ho, Miller, Johnson)", "url": "https://arxiv.org/abs/2308.09642", "publisher": "arXiv / Proceedings of the ACM on Human-Computer Interaction (CSCW)", "date": "2023-09-28" }
+      {
+        "title": "New Editor Experiences",
+        "url": "https://www.mediawiki.org/wiki/New_Editor_Experiences",
+        "publisher": "MediaWiki.org (Wikimedia Foundation)",
+        "date": "2017-08-01"
+      },
+      {
+        "title": "Growth/Personalized first day/Newcomer tasks/Experiment analysis, November 2020",
+        "url": "https://www.mediawiki.org/wiki/Growth/Personalized_first_day/Newcomer_tasks/Experiment_analysis,_November_2020",
+        "publisher": "MediaWiki.org (Wikimedia Foundation)",
+        "date": "2020-11-01"
+      },
+      {
+        "title": "Increasing Participation in Peer Production Communities with the Newcomer Homepage (Warncke-Wang, Ho, Miller, Johnson)",
+        "url": "https://arxiv.org/abs/2308.09642",
+        "publisher": "arXiv / Proceedings of the ACM on Human-Computer Interaction (CSCW)",
+        "date": "2023-09-28"
+      }
+    ]
+  },
+  {
+    "slug": "nyc-court-summons-redesign-text-reminders",
+    "title": "New York's redesigned court summons and text reminders cut missed court dates 13–26%",
+    "company": "New York City Mayor's Office of Criminal Justice, NYPD and Office of Court Administration (with ideas42 and University of Chicago Crime Lab)",
+    "is_anonymized": false,
+    "summary": "About 41% of people given a ticket for a low-level offence in New York missed their court date, triggering an arrest warrant. Researchers interviewed past recipients and redesigned the summons form and added text reminders. Evaluations found the form cut missed appearances by about 13% and the best set of texts by 26%.",
+    "problem": "In 2014 almost 41% of people who received a summons for a low-level offence in New York City did not appear in court, about 130,000 missed court dates a year, each leading to an arrest warrant. The old form made it hard to pick out the date, time, place and consequences.",
+    "research": "Over a three-year collaboration, ideas42 and the University of Chicago Crime Lab worked with city agencies and community groups to interview summons recipients, including people who had previously missed court dates, many with inflexible jobs or experience of homelessness. This fed a behavioural diagnosis of why people didn't show up.",
+    "insight": "Many people did not miss court on purpose: they didn't realise they had to go, forgot, or didn't plan for it. Interviewees also believed most people skip court, when most attend, and that misperception made skipping feel normal.",
+    "change": "Police switched to a redesigned summons with a clear title saying what to do, the court date, time and location at the top, and the consequence of not appearing. People could give a phone number to receive text reminders 7 days, 3 days and 1 day before court, with wording tested for plan-making and consequences.",
+    "outcome": "J-PAL's summary reports the new form cut failure to appear by 6.4 percentage points from a 41% baseline (about 13%), roughly 17,000 fewer arrest warrants a year. In a randomized evaluation of about 20,000 recipients, any pre-court text cut failure to appear by 8 points from a 38% control mean (21%), and the best text set by 10 points (26%). The city adopted the new form for all summonses and sends the best-performing texts to everyone who gives a number.",
+    "headline_metric": "-26% missed court",
+    "attribution": "Strong for the texts (randomized); moderate for the form (quasi-experimental comparison). Interview research shaped the diagnosis and content, though the design also drew heavily on behavioural science theory.",
+    "caveats": "The form evaluation was not randomized. Only a minority of recipients gave a phone number, so the text results apply to that group. Much of the design rationale is behavioural economics rather than direct usability testing with recipients. Partners ideas42 and the Crime Lab co-authored the evaluation (published in Science, 2020).",
+    "methods": [
+      "interviews",
+      "concept_testing",
+      "experimentation"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "cost_avoided"
+    ],
+    "company_size": "public_sector",
+    "year": 2020,
+    "evidence_strength": "tested",
+    "source_type": "independent",
+    "sources": [
+      {
+        "title": "Text Message Reminders Decreased Failure to Appear in Court in New York City",
+        "url": "https://www.povertyactionlab.org/node/2395",
+        "publisher": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+        "date": "2020-10-01"
+      },
+      {
+        "title": "Improving the Summons Process in New York City",
+        "url": "https://behavioralscientist.org/improving-summons-process-new-york-city/",
+        "publisher": "Behavioral Scientist",
+        "date": "2018-02-26"
+      }
+    ]
+  },
+  {
+    "slug": "gov-uk-start-now-button-benchmarking-tests",
+    "title": "GOV.UK benchmarking found people stalling at 'Start now'; button-label tests lifted clicks up to 30%",
+    "company": "Government Digital Service (GOV.UK)",
+    "is_anonymized": false,
+    "summary": "GOV.UK's benchmarking research found users reached the right page but didn't click the green 'Start now' button, looping back instead. The team A/B tested goal-matched labels. Some won clearly (the DVLA contact page's 'Find contact details' raised mobile clicks 30%), but on one page the alternatives lost by up to 18.8%.",
+    "problem": "Users often landed on the right GOV.UK page but hesitated at the 'Start now' button, ran in-page searches or revisited the page several times. On the overseas passports page, about 30% of users visited multiple times, roughly 52,000 people a month.",
+    "research": "GOV.UK's fourth benchmarking wave (reported February 2016) had a representative panel attempt common tasks chosen from analytics, then took the worst-performing tasks into lab research days. Analytics on repeat visits backed this up.",
+    "insight": "The phrase 'Start now' didn't match what people were trying to do. It suggested something more formal or serious, such as starting an application, when they just wanted information or a phone number.",
+    "change": "The team ran A/B/C tests of alternative button labels on the overseas passports, child maintenance calculator and getting married abroad pages, then on the Contact DVLA page changed 'Start now' to 'Find contact details'. They also removed a distracting link on the child maintenance page that benchmarking showed led to lower completion.",
+    "outcome": "On overseas passports, 'Next' raised click rate 5.1%; on child maintenance, 'Estimate your child maintenance' raised it 3.5%. On getting married abroad, the alternatives lost: -13.6% and -18.8%. On Contact DVLA, 'Find contact details' increased button clicks 30% on mobile and 14% on desktop, estimated at about 780,000 more successful sessions a year. Removing the child maintenance link raised calculator button clicks 6%.",
+    "headline_metric": "+30% mobile clicks",
+    "attribution": "Direct. The benchmarking lab research identified the hesitation and the hypothesis; the changes were then A/B tested.",
+    "caveats": "Results are click rates, not full task completion (the team reports button wording did not change continuation after the click). Effects varied by page and one test lost badly, so there is no universal label. Percentages are relative changes in click rate. Annual impact figures are the team's own extrapolations.",
+    "methods": [
+      "benchmarking",
+      "usability_testing",
+      "analytics",
+      "experimentation"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "conversion"
+    ],
+    "company_size": "public_sector",
+    "year": 2017,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Benchmarking GOV.UK and what we are doing with what we found out",
+        "url": "https://userresearch.blog.gov.uk/2016/02/19/benchmarking-gov-uk-and-what-we-are-doing-with-what-we-found-out/",
+        "publisher": "GOV.UK User research blog",
+        "date": "2016-02-19"
+      },
+      {
+        "title": "Absolutely fabulous testing",
+        "url": "https://insidegovuk.blog.gov.uk/2016/08/23/absolutely-fabulous-testing/",
+        "publisher": "Inside GOV.UK blog",
+        "date": "2016-08-23"
+      },
+      {
+        "title": "Using A/B testing to measurably improve common user journeys",
+        "url": "https://insidegovuk.blog.gov.uk/2017/11/14/using-ab-testing-to-measurably-improve-common-user-journeys/",
+        "publisher": "Inside GOV.UK blog",
+        "date": "2017-11-14"
+      }
+    ]
+  },
+  {
+    "slug": "gov-uk-service-sign-in-page",
+    "title": "GOV.UK's new sign-in choice page nearly doubled clicks on the less-visible option",
+    "company": "Government Digital Service (GOV.UK) with HM Revenue and Customs",
+    "is_anonymized": false,
+    "summary": "Some government services could be accessed through several sign-in routes, but the start page's single green button favoured one. Research showed people forget how they signed in before and recognise identity-provider brands better than 'GOV.UK Verify'. A one-week A/B test of a new sign-in choice page nearly doubled clicks on Verify without hurting Government Gateway completion.",
+    "problem": "Services like filing a Self Assessment tax return could be reached through Government Gateway or GOV.UK Verify, but the start page's green button could only point to one, burying the other. The start page had also grown beyond what it was designed for.",
+    "research": "GOV.UK content designers drew on earlier user research into how people sign in to infrequently used services; the post summarises the findings but does not describe the study design. The new page was then A/B tested.",
+    "insight": "People who used a service before often didn't remember which sign-in route they had used, especially for once-a-year tasks. People who had verified their identity tended to remember the certified company they spent time with rather than the name 'GOV.UK Verify'.",
+    "change": "GOV.UK added a 'service sign-in page' between the start page and the service, listing each option with short memory-jogging prompt text and a route for new users.",
+    "outcome": "In a one-week A/B test in November 2017 on HMRC's Self Assessment service (70% old start page, 30% new design), the Verify link, previously clicked by 4.3% of users, 'nearly doubled' its click rate. Government Gateway completion was unaffected, and on-page searches for 'sign in' and 'log in' fell. The page went live and was rolled out to two more HMRC services.",
+    "headline_metric": "~2x Verify clicks",
+    "attribution": "Direct but light on detail. The design responds to stated research findings and was A/B tested.",
+    "caveats": "The post gives no exact post-change figure, sample size or significance. The research behind the insights is described only briefly. Measures choice of sign-in route, not whether more people completed the service. GOV.UK Verify was later wound down.",
+    "methods": [
+      "interviews",
+      "experimentation",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "adoption"
+    ],
+    "company_size": "public_sector",
+    "year": 2018,
+    "evidence_strength": "tested",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Making it easier for users to sign in to services",
+        "url": "https://insidegovuk.blog.gov.uk/2018/02/21/making-it-easier-for-users-to-sign-in-to-services",
+        "publisher": "Inside GOV.UK blog",
+        "date": "2018-02-21"
+      }
+    ]
+  },
+  {
+    "slug": "moj-gov-uk-separating-families-guidance",
+    "title": "Task-based testing with 100+ separating parents reshaped GOV.UK family law guidance",
+    "company": "Ministry of Justice (UK)",
+    "is_anonymized": false,
+    "summary": "A Ministry of Justice content team tested GOV.UK's guidance for separating parents with more than 100 users. Opinion-based sessions said the content was 'fine'; task-based tests showed people couldn't tell whether mediation applied to them. After rewriting the mediation chapter and headings, engagement time rose 74% and the usefulness rating rose from 67% to 80%.",
+    "problem": "GOV.UK's private family law guidance, used by people divorcing or separating who need to sort out child arrangements, left readers confused, especially about mediation, so they kept searching elsewhere.",
+    "research": "From September 2024 a content designer, a user researcher and a content lead tested the guidance with more than 100 users, mainly separating parents. Early sessions asked for opinions; the team switched to task-based testing, asking people to find or do something specific.",
+    "insight": "Asking for opinions hid the problems: people called the content 'good, or fine'. Giving them tasks revealed missing information and that many were unsure whether mediation suited their circumstances. Specific, descriptive headings helped people find things faster.",
+    "change": "The team published eight rounds of changes: restructured the mediation guidance and explained the process plainly, rewrote headings to be more specific, and revamped the 'apply for a court order' chapter.",
+    "outcome": "For the mediation chapter, average engagement time per session rose 74%, the page usefulness rating rose from 67% to 80%, and clicks through to find a mediator rose 14%. The team also reports more page views and fewer on-page searches, without figures.",
+    "headline_metric": "Useful: 67% → 80%",
+    "attribution": "Direct. The changes respond to task-based testing findings and the metrics are for the rewritten chapter.",
+    "caveats": "Before/after analytics with no control group and no stated time periods. Longer engagement time is ambiguous as a success measure. 'Usefulness' is a self-selected page feedback rating. Changes shipped in eight tranches, so effects of individual changes can't be separated.",
+    "methods": [
+      "usability_testing",
+      "analytics"
+    ],
+    "research_type": "evaluative",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "satisfaction",
+      "engagement",
+      "task_success"
+    ],
+    "company_size": "public_sector",
+    "year": 2026,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "How user research transformed GOV.UK guidance for separating families",
+        "url": "https://mojdigital.blog.gov.uk/2026/07/22/how-user-research-transformed-gov-uk-guidance-for-separating-families/",
+        "publisher": "Justice Digital blog (Ministry of Justice)",
+        "date": "2026-07-22"
+      }
+    ]
+  },
+  {
+    "slug": "mnbenefits-spanish-speaker-completion",
+    "title": "MNbenefits research with Spanish speakers lifted their application completion from 51% to 64%",
+    "company": "Code for America with Minnesota Department of Human Services",
+    "is_anonymized": false,
+    "summary": "Code for America and Minnesota built MNbenefits, a single online application for nine safety-net programs that cut average application time from nearly an hour to about 15 minutes. When a funnel analysis showed Spanish speakers dropping out at the citizenship question, a translation audit and research sessions with Spanish speakers led to a new follow-up question, and their completion rate rose from 51% to 64%.",
+    "problem": "Applying for multiple benefits in Minnesota took about an hour. After launch, Spanish-speaking applicants completed the application far less often than English speakers, and many dropped out when asked about U.S. citizenship, even though citizenship is not required for some programs.",
+    "research": "Discovery (2018–2019) included shadowing and interviewing state and county staff and research with clients. After launch, the team combined funnel analysis with a translation audit and in-person research sessions with Spanish-speaking clients, plus SMS surveys and live-chat feedback.",
+    "insight": "Spanish speakers were abandoning at the citizenship question, likely fearing it made them ineligible; the translation also had words and phrases that didn't land, which the team worked through page by page with clients.",
+    "change": "The team added a follow-up question after the citizenship question and reworked the Spanish translation on every page based on the sessions. Separately, client feedback led to changes in document upload.",
+    "outcome": "Code for America reports the follow-up question 'substantially increased' completion for Spanish speakers from 51% to 64%, narrowing the gap with English speakers (69%). Overall, MNbenefits cut average time to apply from nearly an hour to 15 minutes (saving an average of 47 minutes) and helped more than 240,000 people access over $100 million in benefits in two years.",
+    "headline_metric": "Spanish: 51% → 64%",
+    "attribution": "Fairly direct for the Spanish-speaker result: the funnel drop-off was diagnosed through research with Spanish speakers and the specific change followed. The headline time saving reflects the whole product, not one finding.",
+    "caveats": "Before/after comparison with no control group or stated time windows. Self-reported by Code for America, which co-built the service. The overall time saving compares the new application to the legacy one, whose baseline varies across sources (60 to 110 minutes).",
+    "methods": [
+      "analytics",
+      "usability_testing",
+      "interviews",
+      "field_study",
+      "survey"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "accessibility",
+      "conversion"
+    ],
+    "company_size": "public_sector",
+    "year": 2022,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "MNbenefits Report 2022",
+        "url": "https://digitalgovernmenthub.org/wp-content/uploads/2023/04/MNbenefits_Report_2022.pdf",
+        "publisher": "Code for America (via Digital Government Hub)",
+        "date": "2022-12-01"
+      }
+    ]
+  },
+  {
+    "slug": "gov-uk-set-up-business-guidance",
+    "title": "GOV.UK cut business start-up guidance from 50+ pages to 16; clicks to registration services rose 25%",
+    "company": "Government Digital Service (GOV.UK) with Companies House, BEIS and HMRC",
+    "is_anonymized": false,
+    "summary": "GOV.UK's guidance for people starting a business was spread across more than 50 pages owned by different departments. Research showed people only cared about getting compliance tasks done, not who owned them. The team rewrote it as 16 pages; clicks through to business registration services rose 25%.",
+    "problem": "Guidance for setting up a business was split by department and spread over more than 50 pages, much of it not relevant to someone starting out, making it hard to reach the registration services people needed.",
+    "research": "The team reviewed existing research and mapped actions, emotions and pain points; analysed search and page-view data to draft user needs; validated them with people setting up businesses; ran cognitive walkthroughs of the existing content; visited business support helpline advisers; and ran repeated research rounds with people starting businesses.",
+    "insight": "Dealing with government sat at the edge of people's thinking about starting a business and was driven by compliance. They didn't care which department did what and wanted to complete tasks; topics like reporting anti-competitive activity weren't on their minds at all.",
+    "change": "GDS, Companies House, BEIS and HMRC cut the guidance from more than 50 pages to 16, removed content research showed wasn't working, and rewrote the guidance on choosing a business structure.",
+    "outcome": "After the change the team saw a 25% increase in clicks to services needed to set up a business (referrals to HMRC registration for sole traders or Companies House for limited companies) and a 5% decrease in average pages per session to reach them. In the final research round, most participants said the business structure guidance made them more confident.",
+    "headline_metric": "+25% clicks to services",
+    "attribution": "Direct. The content rewrite was driven by the research and the measures are for the rewritten journey.",
+    "caveats": "Before/after analytics with no stated time period, sample size or control; seasonality and other changes could contribute. Clicks to a service are not the same as completed registrations.",
+    "methods": [
+      "journey_mapping",
+      "analytics",
+      "interviews",
+      "heuristic_review",
+      "usability_testing"
+    ],
+    "research_type": "mixed",
+    "industry": "government",
+    "product_type": "public_service",
+    "metrics": [
+      "task_success",
+      "conversion"
+    ],
+    "company_size": "public_sector",
+    "year": 2017,
+    "evidence_strength": "measured",
+    "source_type": "first_party",
+    "sources": [
+      {
+        "title": "Taking care of business on GOV.UK",
+        "url": "https://gds.blog.gov.uk/2017/07/18/taking-care-of-business-on-gov-uk/",
+        "publisher": "Government Digital Service blog",
+        "date": "2017-07-18"
+      }
     ]
   }
 ]
