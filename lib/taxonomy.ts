@@ -133,14 +133,14 @@ export type FacetKey =
   | "source_type";
 
 export const FACETS: { key: FacetKey; label: string; options: Option[]; multi: boolean }[] = [
-  { key: "evidence_strength", label: "Evidence", options: EVIDENCE, multi: false },
-  { key: "methods", label: "Method", options: METHODS, multi: true },
   { key: "industry", label: "Industry", options: INDUSTRIES, multi: false },
-  { key: "metrics", label: "Metric", options: METRICS, multi: true },
-  { key: "research_type", label: "Research type", options: RESEARCH_TYPES, multi: false },
   { key: "product_type", label: "Product type", options: PRODUCT_TYPES, multi: false },
+  { key: "metrics", label: "Metric", options: METRICS, multi: true },
+  { key: "methods", label: "Method", options: METHODS, multi: true },
+  { key: "evidence_strength", label: "Evidence", options: EVIDENCE, multi: false },
   { key: "company_size", label: "Company size", options: COMPANY_SIZES, multi: false },
   { key: "source_type", label: "Source", options: SOURCE_TYPES, multi: false },
+  { key: "research_type", label: "Research type", options: RESEARCH_TYPES, multi: false },
 ];
 
 const ALL: Record<string, Option[]> = {

@@ -42,6 +42,14 @@ node scripts/build-seed.mjs          # validates against lib/taxonomy.ts, writes
 RECEIPTS_ADMIN_TOKEN=... node scripts/load-seed.mjs   # upserts by slug
 ```
 
+Card thumbnails come from each source page's own preview image (`og:image`). Generic images are
+dropped automatically; veto specific ones in `data/thumbnail-blocklist.json`. To refresh:
+
+```bash
+RECEIPTS_ADMIN_TOKEN=... node scripts/fetch-thumbnails.mjs                  # all entries
+RECEIPTS_ADMIN_TOKEN=... node scripts/fetch-thumbnails.mjs --only-missing   # just new ones
+```
+
 ## Moderation
 
 Go to `/admin` and sign in with the moderator passphrase. Pending submissions show up with an

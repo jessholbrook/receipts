@@ -12,13 +12,13 @@ export default function About() {
       <div className="prose">
         <h1>How we rate the receipts</h1>
         <p>
-          Most published &ldquo;research wins&rdquo; are case studies written to make someone look good. That doesn&rsquo;t
-          make them false. It does mean you should know what you&rsquo;re looking at before you cite one in a budget
-          meeting.
+          Published case studies vary widely in how much evidence they include. Some report controlled experiments.
+          Others report an outcome without saying how it was measured. Many are written by the team, agency or vendor
+          that did the work.
         </p>
         <p>
-          So every entry gets two labels: how strong the <strong>evidence</strong> is, and who&rsquo;s{" "}
-          <strong>telling the story</strong>.
+          To make that visible, every entry has two labels: the <strong>strength of the evidence</strong>, and the{" "}
+          <strong>type of source</strong> it comes from.
         </p>
 
         <h2>Evidence strength</h2>
@@ -50,16 +50,16 @@ export default function About() {
 
         <h2>Attribution</h2>
         <p>
-          A redesign that improved conversion isn&rsquo;t automatically a research win. Each entry spells out what the
-          research found, what changed because of it, and how directly the source ties the outcome to the research. If
-          the link is loose, the <em>Attribution</em> and <em>Caveats</em> sections say so.
+          Each entry spells out what the research found, what changed because of it, and how directly the source ties
+          the outcome to the research. If the connection is tenuous, the <em>Attribution</em> and <em>Caveats</em>{" "}
+          sections say so.
         </p>
 
         <h2>Ground rules</h2>
         <ul>
-          <li>Every seed entry links to at least one public source we opened and checked.</li>
-          <li>Entries are summaries in our own words. Go to the source for the full story.</li>
-          <li>Numbers are quoted exactly as the source reports them. We don&rsquo;t extrapolate.</li>
+          <li>Every entry links to at least one public source we opened and checked.</li>
+          <li>Entries are summaries of the research. Go to the source for the full story.</li>
+          <li>Evidence, numbers, and metrics are quoted exactly as the source reports them.</li>
           <li>Community submissions are reviewed before they appear. Anonymized entries are allowed.</li>
         </ul>
 

@@ -25,6 +25,7 @@ export type Entry = {
   source_type: "first_party" | "agency_vendor" | "independent" | "community";
   sources: Source[];
   verified_by: string | null;
+  image_url: string | null;
   created_at: string;
 };
 

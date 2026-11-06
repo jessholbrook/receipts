@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Entry } from "@/lib/types";
 import { labelFor } from "@/lib/taxonomy";
+import Thumb from "./Thumb";
 
 export function EvidenceBadge({ level }: { level: Entry["evidence_strength"] }) {
   return (
@@ -14,6 +15,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
   const total = entry.headline_metric ?? (entry.evidence_strength === "decision" ? "Decision changed" : "See details");
   return (
     <Link href={`/entries/${entry.slug}`} className="receipt">
+      {entry.image_url && <Thumb src={entry.image_url} />}
       <div className="receipt-top">
         <span>
           {labelFor("industry", entry.industry)}

@@ -16,9 +16,9 @@ export default async function Home() {
         <div className="wrap">
           <h1>What has UX research ever done for us?</h1>
           <p className="lede">
-            All right, but apart from <em>the checkout fixes</em>, <em>the features it killed before launch</em>, and{" "}
-            <em>the support tickets that never got filed</em>… Receipts is a public atlas of documented research wins,
-            each rated for how strong the evidence really is.
+            We&rsquo;re tired of this question and we&rsquo;re guessing we&rsquo;re not the only ones. Receipts is a
+            public atlas of documented UX research wins you can reference and point people to so we can move past
+            justifying the value of research.
           </p>
           <div className="stats">
             <div className="stat">

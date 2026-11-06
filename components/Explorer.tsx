@@ -194,6 +194,18 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             <option value="oldest">Oldest first</option>
             <option value="added">Recently added</option>
           </select>
+          <button
+            type="button"
+            className="btn secondary lucky"
+            disabled={results.length === 0}
+            onClick={() => {
+              const pick = results[Math.floor(Math.random() * results.length)];
+              if (pick) router.push(`/entries/${pick.slug}`);
+            }}
+            title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
+          >
+            I&rsquo;m Feeling Lucky
+          </button>
         </div>
 
         {activeCount > 0 && (

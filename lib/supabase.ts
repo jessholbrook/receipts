@@ -14,7 +14,7 @@ export function supabase(): SupabaseClient {
 }
 
 const ENTRY_COLUMNS =
-  "slug,title,company,is_anonymized,summary,problem,research,insight,change,outcome,headline_metric,attribution,caveats,methods,research_type,industry,product_type,metrics,company_size,year,evidence_strength,source_type,sources,verified_by,created_at";
+  "slug,title,company,is_anonymized,summary,problem,research,insight,change,outcome,headline_metric,attribution,caveats,methods,research_type,industry,product_type,metrics,company_size,year,evidence_strength,source_type,sources,verified_by,image_url,created_at";
 
 export async function getEntries(): Promise<Entry[]> {
   const { data, error } = await supabase()

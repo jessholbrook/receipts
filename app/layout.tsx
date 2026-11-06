@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeToggle from "@/components/ThemeToggle";
+import { themeInitScript } from "@/lib/theme";
 
 const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -28,7 +30,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body>
         <header className="site-header">
           <div className="wrap">
@@ -37,11 +42,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Receipts
             </Link>
             <nav className="nav" aria-label="Main">
-              <Link href="/" className="nav-browse">Browse</Link>
               <Link href="/about">How we rate</Link>
               <Link href="/submit" className="btn">
                 Submit a win
               </Link>
+              <ThemeToggle />
             </nav>
           </div>
         </header>
@@ -49,8 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="site-footer">
           <div className="wrap">
             <span>
-              <a href="https://www.researchreceipts.org">researchreceipts.org</a>: a public atlas of UX research wins,
-              rated for evidence strength.
+              <a href="https://www.researchreceipts.org">researchreceipts.org</a>: a public atlas of UX research wins
             </span>
             <span>
               <Link href="/about">Methodology</Link> · <Link href="/submit">Submit</Link> ·{" "}

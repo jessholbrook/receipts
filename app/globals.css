@@ -23,10 +23,12 @@
   --radius: 6px;
   --maxw: 1180px;
   --shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 8px rgba(40, 30, 10, 0.06);
+  --error: #b91c1c;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #15140f;
     --paper-2: #1c1a15;
     --card: #211f19;
@@ -48,7 +50,35 @@
     --ev-decision: #d8b4fe;
     --ev-decision-bg: #2e1a44;
     --shadow: none;
+    --error: #fca5a5;
+    color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --paper: #15140f;
+  --paper-2: #1c1a15;
+  --card: #211f19;
+  --ink: #f1ece1;
+  --ink-2: #c9c2b3;
+  --ink-3: #958e80;
+  --rule: #37332a;
+  --rule-strong: #4d483c;
+  --accent: #fb923c;
+  --accent-ink: #1d1b17;
+  --focus: #60a5fa;
+
+  --ev-tested: #4ade80;
+  --ev-tested-bg: #14301f;
+  --ev-measured: #93c5fd;
+  --ev-measured-bg: #172846;
+  --ev-reported: #fcd34d;
+  --ev-reported-bg: #3a2e0d;
+  --ev-decision: #d8b4fe;
+  --ev-decision-bg: #2e1a44;
+  --shadow: none;
+  --error: #fca5a5;
+  color-scheme: dark;
 }
 
 * {
@@ -923,14 +953,10 @@ a.tag:hover {
 
 .notice.error {
   border-color: #dc2626;
-  color: #b91c1c;
+  color: var(--error);
 }
 
-@media (prefers-color-scheme: dark) {
-  .notice.error {
-    color: #fca5a5;
-  }
-}
+
 
 .notice.ok {
   border-color: var(--ev-tested);
@@ -1002,5 +1028,100 @@ a.tag:hover {
   }
   .logo {
     font-size: 21px;
+  }
+}
+
+/* ---------- theme toggle ---------- */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule-strong);
+  background: transparent;
+  color: var(--ink-2);
+  cursor: pointer;
+  flex: none;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+  background: var(--paper-2);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: none;
+  }
+}
+
+/* ---------- card thumbnail ---------- */
+
+.receipt-thumb {
+  display: block;
+  width: calc(100% + 36px);
+  margin: -18px -18px 14px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- lucky button ---------- */
+
+.toolbar .lucky {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .site-header .wrap {
+    gap: 8px;
+  }
+  .nav {
+    gap: 2px;
+  }
+  .nav a {
+    padding: 6px 6px;
+    font-size: 13px;
+  }
+  .nav a.btn {
+    padding: 7px 10px;
+  }
+  .logo {
+    font-size: 19px;
+    gap: 6px;
+  }
+  .logo-mark {
+    width: 15px;
+    height: 18px;
+  }
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    margin-left: 2px;
   }
 }
