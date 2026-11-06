@@ -1,7 +1,7 @@
 # Monthly scout
 
 A scheduled Claude task runs once a month, looks for newly published UX research wins,
-and sends verified candidates to the **review queue** at `/admin`. It never publishes.
+and sends verified candidates to the **review queue** at https://www.researchreceipts.org/admin. It never publishes.
 
 How it works:
 

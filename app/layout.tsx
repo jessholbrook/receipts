@@ -7,11 +7,8 @@ const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "https://receipts-six-iota.vercel.app");
+// Canonical address. The bare domain and whathasresearcheverdone.com redirect here.
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.researchreceipts.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
