@@ -3841,6 +3841,86 @@
   ]
  },
  {
+  "slug": "firefox-certificate-warning-rewrite",
+  "title": "Firefox's research-led security warning rewrite cut stated intent to ignore warnings by 22–50%",
+  "company": "Mozilla (Firefox)",
+  "is_anonymized": false,
+  "summary": "About 3% of Firefox users hit a security certificate warning every day, and the old pages were full of vague jargon. Mozilla's UX and security teams rewrote them using published research plus their own usability test, survey and live study. In a panel survey, the new pages cut the share of people saying they would ignore the warning by 22–50%, and a live comparison found no harm to usage or retention.",
+  "problem": "Firefox's most common certificate error pages used technical jargon in a dated design. Mozilla wanted people to understand the risk and choose the safe option, without driving them to switch browsers.",
+  "research": "Three studies in 2018–2019: a remote unmoderated usability test of draft pages with eight participants (UserTesting); a paid panel survey comparing the new Firefox pages, the old Firefox pages and Chrome's equivalent pages; and a live study comparing new and old pages with Firefox users. External academic research on security warnings also fed the design.",
+  "insight": "Words like 'security credentials', 'encrypted' and 'certificate' were too abstract. In the usability test, the word 'connection' made people think their internet connection was the problem rather than the website's certificate.",
+  "change": "The pages were rewritten in plain language (dropping 'connection' from headings and explaining 'certificate' on first use), with the most important content up front and the safer choice made the clear default.",
+  "outcome": "In the survey, the redesigned messages showed a 22–50% decrease in people saying they would try to ignore the warning, and a 29–60% decrease in people saying they would use another browser to reach the site (4.7–8.5% for the new Firefox pages versus 10–11.3% for Chrome's). The live study found the new pages did not significantly hurt usage or retention, so they shipped to all users.",
+  "headline_metric": "-22–50% would ignore",
+  "attribution": "Good for the wording changes, which came straight from test findings. The positive numbers are what people said they would do in a survey, not what they did.",
+  "caveats": "Stated intentions in a panel survey, reported as ranges across message types without sample sizes. The live study only checked for harm and its numbers are not shared. Company blog post.",
+  "methods": [
+   "usability_testing",
+   "survey",
+   "experimentation"
+  ],
+  "research_type": "evaluative",
+  "industry": "consumer_tech",
+  "product_type": "desktop_software",
+  "metrics": [
+   "errors",
+   "retention",
+   "task_success"
+  ],
+  "company_size": "midmarket",
+  "year": 2019,
+  "evidence_strength": "measured",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Designing better security warnings",
+    "url": "https://blog.mozilla.org/ux/2019/03/designing-better-security-warnings/",
+    "publisher": "Firefox UX blog (Mozilla)",
+    "date": "2019-03"
+   }
+  ]
+ },
+ {
+  "slug": "firefox-focus-kept-value-research",
+  "title": "Mozilla's 61-person study of how people value Firefox helped save Firefox Focus despite low usage",
+  "company": "Mozilla (Firefox)",
+  "is_anonymized": false,
+  "summary": "Firefox Focus, a privacy-focused mobile browser, had few users, and Mozilla was debating whether to keep investing in it. A three-phase study with 61 people in six cities showed Focus played a specific role alongside other Firefox browsers, such as sensitive or one-off searches. Researchers say this made the case to keep the product and changed how leaders thought about measuring its success.",
+  "problem": "Mozilla measured success mainly by monthly and daily active users, but had little qualitative understanding of those numbers and collects limited usage data by design. Focus's small user base led to internal discussion about cutting investment.",
+  "research": "A study in Berlin, Chicago, Portland, Seattle, Taipei and Vancouver with 61 participants, proposed in late 2019 and run before the pandemic: a three-day diary study, short remote interviews, and 2.5-hour in-person workshops using futures thinking and participatory design. Two senior product managers joined the field team. Follow-up surveys with thousands of people tested the resulting use-case categories at scale.",
+  "insight": "Focus was often used alongside another Firefox mobile browser for particular jobs, such as searches people did not want recorded or quick one-off lookups where they liked starting fresh. The study also showed that some 'good' usage metrics, like many open tabs, could reflect a bad experience.",
+  "change": "Mozilla kept Firefox Focus, and the research changed how the organisation defined success for products like it. The use-case categories were adopted for wider survey work.",
+  "outcome": "Focus was retained. No usage or business figures are given.",
+  "headline_metric": null,
+  "attribution": "The researchers say they 'were able to make the case to keep this unique product around'. Other factors in the decision are not described, and the PMs' own view is not given.",
+  "caveats": "Self-reported influence by the researchers who ran the study, on the company's UX blog. Related research by another colleague also contributed.",
+  "methods": [
+   "diary_study",
+   "interviews",
+   "co_design",
+   "survey"
+  ],
+  "research_type": "generative",
+  "industry": "consumer_tech",
+  "product_type": "mobile_app",
+  "metrics": [
+   "retention",
+   "cost_avoided"
+  ],
+  "company_size": "midmarket",
+  "year": 2021,
+  "evidence_strength": "decision",
+  "source_type": "first_party",
+  "sources": [
+   {
+    "title": "Who Gets to Define Success? Listening to Stories of How People Value Firefox to Redefine Metrics",
+    "url": "https://blog.mozilla.org/ux/2021/01/who-gets-to-define-success-listening-to-stories-of-how-people-value-firefox-to-redefine-metrics/",
+    "publisher": "Firefox UX blog (Mozilla)",
+    "date": "2021-01"
+   }
+  ]
+ },
+ {
   "slug": "wikimedia-reply-tool-talk-pages",
   "title": "Wikipedia's Reply tool: newer editors far more likely to publish a talk-page comment",
   "company": "Wikimedia Foundation (Editing team)",
