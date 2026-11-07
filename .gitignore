@@ -49,3 +49,5 @@ supabase/seed.sql
 .impeccable/config.local.json
 **/.impeccable/hook.cache.json
 **/.impeccable/hook.pending.json
+.impeccable/critique/*
+!.impeccable/critique/ignore.md
