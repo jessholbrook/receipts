@@ -1,15 +1,16 @@
 :root {
-  --paper: #f6f3ec;
-  --paper-2: #efeadf;
-  --card: #fffdf8;
-  --ink: #1d1b17;
-  --ink-2: #4a463e;
-  --ink-3: #686256;
-  --rule: #d9d2c3;
-  --rule-strong: #b8af9c;
-  --accent: #c2410c;
-  --accent-ink: #ffffff;
-  --focus: #c2410c;
+  --paper: #f7f7f5;
+  --paper-2: #ededea;
+  --card: #ffffff;
+  --ink: #0e0e0e;
+  --ink-2: #383838;
+  --ink-3: #5a5a5a;
+  --rule: #e0e0dc;
+  --rule-strong: #bdbdb7;
+  --accent: #ffd426;
+  --accent-ink: #0e0e0e;
+  --focus: #0e0e0e;
+  --field: #8a8a85;
 
   --ev-tested: #166534;
   --ev-tested-bg: #dcfce7;
@@ -22,24 +23,25 @@
 
   --radius: 6px;
   --maxw: 1180px;
-  --shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 8px rgba(40, 30, 10, 0.06);
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
   --error: #b91c1c;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #15140f;
-    --paper-2: #1c1a15;
-    --card: #211f19;
-    --ink: #f1ece1;
-    --ink-2: #c9c2b3;
-    --ink-3: #958e80;
-    --rule: #37332a;
-    --rule-strong: #4d483c;
-    --accent: #fb923c;
-    --accent-ink: #1d1b17;
-    --focus: #fb923c;
+    --paper: #111111;
+    --paper-2: #272725;
+    --card: #1b1b1a;
+    --ink: #f2f2ef;
+    --ink-2: #c9c9c4;
+    --ink-3: #9a9a94;
+    --rule: #2c2c2a;
+    --rule-strong: #4a4a46;
+    --accent: #ffd426;
+    --accent-ink: #0e0e0e;
+    --focus: #ffd426;
+    --field: #77776f;
 
     --ev-tested: #4ade80;
     --ev-tested-bg: #14301f;
@@ -56,17 +58,18 @@
 }
 
 :root[data-theme="dark"] {
-  --paper: #15140f;
-  --paper-2: #1c1a15;
-  --card: #211f19;
-  --ink: #f1ece1;
-  --ink-2: #c9c2b3;
-  --ink-3: #958e80;
-  --rule: #37332a;
-  --rule-strong: #4d483c;
-  --accent: #fb923c;
-  --accent-ink: #1d1b17;
-  --focus: #fb923c;
+  --paper: #111111;
+  --paper-2: #272725;
+  --card: #1b1b1a;
+  --ink: #f2f2ef;
+  --ink-2: #c9c9c4;
+  --ink-3: #9a9a94;
+  --rule: #2c2c2a;
+  --rule-strong: #4a4a46;
+  --accent: #ffd426;
+  --accent-ink: #0e0e0e;
+  --focus: #ffd426;
+  --field: #77776f;
 
   --ev-tested: #4ade80;
   --ev-tested-bg: #14301f;
@@ -447,7 +450,7 @@ a {
   min-width: 0;
   padding: 10px 14px;
   font: inherit;
-  border: 1px solid var(--rule-strong);
+  border: 1px solid var(--field);
   border-radius: var(--radius);
   background: var(--card);
   color: var(--ink);
@@ -463,7 +466,7 @@ select.sort {
   padding: 9px 34px 9px 12px;
   font: inherit;
   font-size: 14px;
-  border: 1px solid var(--rule-strong);
+  border: 1px solid var(--field);
   border-radius: var(--radius);
   color: var(--ink);
   background-color: var(--card);
@@ -1172,7 +1175,7 @@ dialog.sheet::backdrop {
   padding: 9px 12px;
   font: inherit;
   font-size: 15px;
-  border: 1px solid var(--rule-strong);
+  border: 1px solid var(--field);
   border-radius: var(--radius);
   background: var(--paper);
   color: var(--ink);
@@ -1233,13 +1236,13 @@ dialog.sheet::backdrop {
 }
 
 .radio-card:has(input:checked) {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent);
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
 }
 
 .radio-card input {
   margin-top: 4px;
-  accent-color: var(--accent);
+  accent-color: var(--ink);
 }
 
 .radio-card small {
@@ -1459,7 +1462,7 @@ html {
 
 input,
 textarea {
-  caret-color: var(--accent);
+  caret-color: var(--ink);
 }
 
 a {
@@ -2050,7 +2053,7 @@ a.receipt:focus-visible::after {
   object-fit: cover;
   background: var(--paper-2);
   border-bottom: 1px solid var(--rule);
-  filter: grayscale(0.75) sepia(0.12) contrast(0.95);
+  filter: grayscale(0.85) contrast(0.95);
   opacity: 0.75;
   mix-blend-mode: multiply;
   transition:
@@ -2080,4 +2083,10 @@ a.receipt:focus-visible .card-thumb {
   .card-thumb {
     transition: none;
   }
+}
+
+/* placeholders: the browser default grey misses 4.5:1 on the paper */
+::placeholder {
+  color: var(--ink-3);
+  opacity: 1;
 }

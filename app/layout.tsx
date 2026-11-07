@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import { themeInitScript } from "@/lib/theme";
 
-const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: "swap" });
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+// Newsreader's optical-size axis gives display cuts at headline sizes, text cuts on card titles.
+const serif = Newsreader({ subsets: ["latin"], variable: "--font-serif", display: "swap", axes: ["opsz"] });
+const sans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 // Canonical address. The bare domain and whathasresearcheverdone.com redirect here.

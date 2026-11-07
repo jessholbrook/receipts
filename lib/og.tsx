@@ -31,7 +31,7 @@ function Mark() {
       style={{
         width: 30,
         height: 36,
-        background: "#1d1b17",
+        background: "#0e0e0e",
         clipPath: "polygon(0 0, 100% 0, 100% 88%, 83% 100%, 67% 88%, 50% 100%, 33% 88%, 17% 100%, 0 88%)",
       }}
     />
@@ -56,14 +56,14 @@ export async function renderOg(opts: {
     .filter(Boolean)
     .join(" ");
   const [serif, mono, sans] = await Promise.all([
-    googleFont("Fraunces", 600, allText),
+    googleFont("Newsreader", 600, allText),
     googleFont("JetBrains Mono", 600, allText),
-    googleFont("Inter", 400, allText),
+    googleFont("Source Sans 3", 400, allText),
   ]);
   const fonts = [
-    serif && { name: "Fraunces", data: serif, weight: 600 as const },
+    serif && { name: "Newsreader", data: serif, weight: 600 as const },
     mono && { name: "JetBrains Mono", data: mono, weight: 600 as const },
-    sans && { name: "Inter", data: sans, weight: 400 as const },
+    sans && { name: "Source Sans 3", data: sans, weight: 400 as const },
   ].filter(Boolean) as { name: string; data: ArrayBuffer; weight: 400 | 600 }[];
 
   const titleSize = title.length > 110 ? 40 : title.length > 80 ? 46 : title.length > 55 ? 54 : 66;
@@ -75,9 +75,9 @@ export async function renderOg(opts: {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#f6f3ec",
+          background: "#f7f7f5",
           padding: "56px 64px",
-          fontFamily: "Inter",
+          fontFamily: "Source Sans 3",
         }}
       >
         <div
@@ -85,16 +85,16 @@ export async function renderOg(opts: {
             flex: 1,
             display: "flex",
             flexDirection: "column",
-            background: "#fffdf8",
-            border: "1px solid #d9d2c3",
+            background: "#ffffff",
+            border: "1px solid #e0e0dc",
             padding: "40px 48px",
-            boxShadow: "0 4px 24px rgba(40,30,10,0.08)",
+            boxShadow: "0 4px 24px rgba(0,0,0,0.07)",
           }}
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <Mark />
-              <span style={{ fontFamily: "Fraunces", fontSize: 34, color: "#1d1b17" }}>Receipts</span>
+              <span style={{ fontFamily: "Newsreader", fontSize: 34, color: "#0e0e0e" }}>Receipts</span>
             </div>
             {ev ? (
               <div
@@ -121,7 +121,7 @@ export async function renderOg(opts: {
                 fontFamily: "JetBrains Mono",
                 fontSize: 20,
                 letterSpacing: 2,
-                color: "#686256",
+                color: "#5a5a5a",
                 textTransform: "uppercase",
               }}
             >
@@ -132,10 +132,10 @@ export async function renderOg(opts: {
             style={{
               display: "flex",
               marginTop: kicker ? 14 : 48,
-              fontFamily: "Fraunces",
+              fontFamily: "Newsreader",
               fontSize: titleSize,
               lineHeight: 1.08,
-              color: "#1d1b17",
+              color: "#0e0e0e",
               letterSpacing: -1,
             }}
           >
@@ -143,7 +143,7 @@ export async function renderOg(opts: {
           </div>
           {company || source ? (
             <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 16, marginTop: 18 }}>
-              {company ? <span style={{ fontSize: 28, color: "#4a463e" }}>{company}</span> : null}
+              {company ? <span style={{ fontSize: 28, color: "#383838" }}>{company}</span> : null}
               {source ? (
                 <div
                   style={
@@ -159,7 +159,7 @@ export async function renderOg(opts: {
                           borderRadius: 8,
                           padding: "4px 12px",
                         }
-                      : { display: "flex", fontSize: 22, color: "#4a463e" }
+                      : { display: "flex", fontSize: 22, color: "#383838" }
                   }
                 >
                   {source.vendor ? (
@@ -179,13 +179,13 @@ export async function renderOg(opts: {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "baseline",
-              borderTop: "2px dashed #b8af9c",
+              borderTop: "2px dashed #bdbdb7",
               paddingTop: 18,
               fontFamily: "JetBrains Mono",
             }}
           >
-            <span style={{ fontSize: 22, color: "#686256", letterSpacing: 2 }}>{resultLabel}</span>
-            <span style={{ fontSize: 36, color: "#1d1b17" }}>{metric ?? "What has UX research ever done for us?"}</span>
+            <span style={{ fontSize: 22, color: "#5a5a5a", letterSpacing: 2 }}>{resultLabel}</span>
+            <span style={{ fontSize: 36, color: "#0e0e0e" }}>{metric ?? "What has UX research ever done for us?"}</span>
           </div>
         </div>
       </div>
