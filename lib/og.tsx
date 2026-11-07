@@ -4,9 +4,9 @@ import { ImageResponse } from "next/og";
 export const OG_SIZE = { width: 1200, height: 630 };
 
 const EV: Record<string, { label: string; fg: string; bg: string }> = {
-  tested: { label: "TESTED", fg: "#15803d", bg: "#dcfce7" },
+  tested: { label: "TESTED", fg: "#166534", bg: "#dcfce7" },
   measured: { label: "MEASURED", fg: "#1d4ed8", bg: "#dbeafe" },
-  reported: { label: "REPORTED", fg: "#a16207", bg: "#fef3c7" },
+  reported: { label: "REPORTED", fg: "#854d0e", bg: "#fef3c7" },
   decision: { label: "DECISION", fg: "#7e22ce", bg: "#f3e8ff" },
 };
 
@@ -44,10 +44,15 @@ export async function renderOg(opts: {
   company?: string;
   metric?: string | null;
   evidence?: string;
+  /** who is telling the story; vendor accounts are flagged like they are on the site */
+  source?: { text: string; vendor: boolean };
+  resultLabel?: string;
 }) {
-  const { kicker, title, company, metric, evidence } = opts;
+  const { kicker, title, metric, evidence, source, resultLabel = "TOTAL" } = opts;
+  // one line for the company; the full name is on the page
+  const company = opts.company && opts.company.length > 52 ? `${opts.company.slice(0, 50).trimEnd()}…` : opts.company;
   const ev = evidence ? EV[evidence] : undefined;
-  const allText = [kicker, title, company, metric, ev?.label, "Receipts", "TOTAL", "What has UX research ever done for us?"]
+  const allText = [kicker, title, company, metric, ev?.label, source?.text, resultLabel, "Receipts", "What has UX research ever done for us?"]
     .filter(Boolean)
     .join(" ");
   const [serif, mono, sans] = await Promise.all([
@@ -61,7 +66,7 @@ export async function renderOg(opts: {
     sans && { name: "Inter", data: sans, weight: 400 as const },
   ].filter(Boolean) as { name: string; data: ArrayBuffer; weight: 400 | 600 }[];
 
-  const titleSize = title.length > 90 ? 50 : title.length > 60 ? 58 : 68;
+  const titleSize = title.length > 110 ? 40 : title.length > 80 ? 46 : title.length > 55 ? 54 : 66;
 
   return new ImageResponse(
     (
@@ -116,7 +121,7 @@ export async function renderOg(opts: {
                 fontFamily: "JetBrains Mono",
                 fontSize: 20,
                 letterSpacing: 2,
-                color: "#7a7468",
+                color: "#686256",
                 textTransform: "uppercase",
               }}
             >
@@ -136,8 +141,37 @@ export async function renderOg(opts: {
           >
             {title}
           </div>
-          {company ? (
-            <div style={{ display: "flex", marginTop: 18, fontSize: 28, color: "#4a463e" }}>{company}</div>
+          {company || source ? (
+            <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 16, marginTop: 18 }}>
+              {company ? <span style={{ fontSize: 28, color: "#4a463e" }}>{company}</span> : null}
+              {source ? (
+                <div
+                  style={
+                    source.vendor
+                      ? {
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 8,
+                          fontSize: 22,
+                          color: "#9a3412",
+                          background: "#fdecdf",
+                          border: "2px solid #e8b48f",
+                          borderRadius: 8,
+                          padding: "4px 12px",
+                        }
+                      : { display: "flex", fontSize: 22, color: "#4a463e" }
+                  }
+                >
+                  {source.vendor ? (
+                    <svg width="22" height="22" viewBox="0 0 16 16">
+                      <path d="M8 1.5 15 14H1z" fill="none" stroke="#9a3412" strokeWidth="1.6" strokeLinejoin="round" />
+                      <path d="M8 6v3.6M8 11.6v.4" stroke="#9a3412" strokeWidth="1.6" strokeLinecap="round" />
+                    </svg>
+                  ) : null}
+                  {source.text}
+                </div>
+              ) : null}
+            </div>
           ) : null}
           <div style={{ flex: 1, display: "flex" }} />
           <div
@@ -150,7 +184,7 @@ export async function renderOg(opts: {
               fontFamily: "JetBrains Mono",
             }}
           >
-            <span style={{ fontSize: 22, color: "#7a7468", letterSpacing: 2 }}>TOTAL</span>
+            <span style={{ fontSize: 22, color: "#686256", letterSpacing: 2 }}>{resultLabel}</span>
             <span style={{ fontSize: 36, color: "#1d1b17" }}>{metric ?? "What has UX research ever done for us?"}</span>
           </div>
         </div>
