@@ -12,8 +12,11 @@ import { LAST_RESULTS_KEY } from "./BackToResults";
 type Selected = Partial<Record<FacetKey, string[]>>;
 
 const EVIDENCE_RANK: Record<string, number> = { tested: 0, measured: 1, reported: 2, decision: 3 };
-// Evidence has its own bar above the results; the sidebar carries the rest.
-const SIDEBAR_FACETS = FACETS.filter((f) => f.key !== "evidence_strength");
+// Evidence leads the sidebar; the rest follow in taxonomy order.
+const SIDEBAR_FACETS = [
+  ...FACETS.filter((f) => f.key === "evidence_strength"),
+  ...FACETS.filter((f) => f.key !== "evidence_strength"),
+];
 
 function entryValues(e: Entry, key: FacetKey): string[] {
   const v = e[key as keyof Entry];
@@ -96,7 +99,11 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const [q, setQ] = useState(initial.q);
   const [sort, setSort] = useState(initial.sort);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
-  const [openFacets, setOpenFacets] = useState<Record<string, boolean>>({ industry: true, metrics: true });
+  const [openFacets, setOpenFacets] = useState<Record<string, boolean>>({
+    evidence_strength: true,
+    industry: true,
+    metrics: true,
+  });
   const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({});
   const [pageCount, setPageCount] = useState(1);
   const sharedLanding = Object.keys(initial.sel).length > 0 || initial.q !== "";
@@ -193,7 +200,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
   const activeChips = FACETS.flatMap((f) => (selected[f.key] ?? []).map((v) => ({ key: f.key, value: v })));
   const activeCount = activeChips.length;
-  const sidebarActive = activeChips.filter((c) => c.key !== "evidence_strength").length;
+  const sidebarActive = activeCount;
 
   // Empty state: what would each single removal give back?
   const recoveries = useMemo(() => {
@@ -228,9 +235,12 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const facetList = (idPrefix: string) =>
     SIDEBAR_FACETS.map((f) => {
       const c = counts[f.key] ?? {};
-      const opts = f.options.filter((o) => (c[o.value] ?? 0) > 0 || (selected[f.key] ?? []).includes(o.value));
+      const isEvidence = f.key === "evidence_strength";
+      const opts = isEvidence
+        ? f.options
+        : f.options.filter((o) => (c[o.value] ?? 0) > 0 || (selected[f.key] ?? []).includes(o.value));
       if (!opts.length) return null;
-      const limit = 6;
+      const limit = isEvidence ? 4 : 6;
       const isExpanded = expanded[f.key];
       const shown = isExpanded ? opts : opts.slice(0, limit);
       const inUse = (selected[f.key] ?? []).length;
@@ -259,10 +269,29 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             const checked = (selected[f.key] ?? []).includes(o.value);
             const id = `${idPrefix}-${f.key}-${o.value}`;
             return (
-              <div key={o.value} className="facet-opt" data-empty={n === 0 && !checked}>
-                <input id={id} type="checkbox" checked={checked} onChange={() => toggle(f.key, o.value)} />
-                <label htmlFor={id}>{o.label}</label>
+              <div
+                key={o.value}
+                className={`facet-opt${isEvidence ? ` facet-ev ev-tone-${o.value}` : ""}`}
+                data-empty={n === 0 && !checked}
+              >
+                <input
+                  id={id}
+                  type="checkbox"
+                  checked={checked}
+                  disabled={isEvidence && n === 0 && !checked}
+                  aria-describedby={isEvidence ? `${id}-def` : undefined}
+                  onChange={() => toggle(f.key, o.value)}
+                />
+                <label htmlFor={id}>
+                  {isEvidence && <span className="facet-ev-dot" aria-hidden="true" />}
+                  {o.label}
+                </label>
                 <span className="count">{n}</span>
+                {isEvidence && (
+                  <span id={`${id}-def`} className="facet-ev-def">
+                    {o.short}
+                  </span>
+                )}
               </div>
             );
           })}
@@ -276,53 +305,20 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               {isExpanded ? "Show fewer" : `Show all ${opts.length}`}
             </button>
           )}
+          {isEvidence && (
+            <p className="facet-note">
+              Cards also flag who&rsquo;s telling the story. A vendor or agency writing about its own client has an
+              incentive to look good.
+            </p>
+          )}
           </div>
         </fieldset>
       );
     });
 
-  const evSelected = selected.evidence_strength ?? [];
 
   return (
     <>
-      <section className="evidence-bar" aria-labelledby="evidence-h">
-        <h2 id="evidence-h">Filter by evidence strength</h2>
-        <div className="evidence-opts">
-          {EVIDENCE.map((ev) => {
-            const n = counts.evidence_strength?.[ev.value] ?? 0;
-            const on = evSelected.includes(ev.value);
-            return (
-              <button
-                key={ev.value}
-                type="button"
-                className={`evidence-opt ev-tone-${ev.value}`}
-                aria-pressed={on}
-                aria-disabled={n === 0 && !on}
-                data-empty={n === 0 && !on}
-                onClick={() => {
-                  if (n === 0 && !on) return;
-                  toggle("evidence_strength", ev.value);
-                }}
-              >
-                <span className="evidence-opt-top">
-                  <span className="evidence-check" aria-hidden="true">
-                    <svg viewBox="0 0 16 16" width="12" height="12">
-                      <path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
-                  <span className="evidence-opt-label">{ev.label}</span>
-                  <span className="evidence-opt-n">{n}</span>
-                </span>
-                <span className="evidence-opt-def">{ev.short}</span>
-              </button>
-            );
-          })}
-        </div>
-        <p className="evidence-why">
-          Each receipt also says who&rsquo;s telling the story: an independent source, the company itself, or a vendor
-          or agency writing about its own client, which has an incentive to look good.
-        </p>
-      </section>
 
       <div className="explorer">
         <div className="toolbar toolbar-cell">
@@ -534,11 +530,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               type="button"
               className="text-btn"
               disabled={sidebarActive === 0}
-              onClick={() =>
-                setSelected((prev) => ({ evidence_strength: prev.evidence_strength ?? [] }))
-              }
+              onClick={() => setSelected({})}
             >
-              Clear these filters
+              Clear filters
             </button>
             <button type="button" className="btn" onClick={showResults}>
               Show {plural(results.length)}

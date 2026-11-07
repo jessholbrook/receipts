@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Entry } from "@/lib/types";
 import { labelFor } from "@/lib/taxonomy";
 import SourceMark from "./SourceMark";
+import Thumb from "./Thumb";
 import { yearLabel } from "@/lib/cite";
 
 export function EvidenceBadge({ level }: { level: Entry["evidence_strength"] }) {
@@ -24,6 +25,7 @@ export function EntryCard({
   const Title = headingLevel === 4 ? "h4" : "h3";
   return (
     <Link href={`/entries/${entry.slug}`} className="receipt">
+      {entry.image_url && <Thumb src={entry.image_url} className="card-thumb" />}
       <div className="receipt-head">
         <span className="receipt-meta">
           {labelFor("industry", entry.industry)}
