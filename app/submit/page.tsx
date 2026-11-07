@@ -12,7 +12,7 @@ export default function SubmitPage() {
         <p>
           Got a case where research changed a product, a metric or a decision? Add it. Every submission is reviewed
           before it appears. Anonymized cases are welcome. Be honest about the evidence: a well-labeled
-          &ldquo;Reported&rdquo; beats an inflated &ldquo;Tested&rdquo;. See <Link href="/about">how we rate</Link>.
+          &ldquo;Reported&rdquo; beats an inflated &ldquo;Tested&rdquo;. See <Link href="/how-we-rate">how we rate</Link>.
         </p>
       </div>
       <SubmitForm />

@@ -379,7 +379,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           {sharedLanding && (
             <p className="landing-note">
               Receipts is a public atlas of documented UX research wins, each rated for how strong the evidence is.{" "}
-              <a href="/about">How we rate</a>
+              <a href="/how-we-rate">How we rate</a>
             </p>
           )}
           <h2 id="results-h" className={activeCount || q.trim() ? "results-h" : "visually-hidden"}>

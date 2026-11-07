@@ -46,9 +46,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Receipts
             </Link>
             <nav className="nav" aria-label="Main">
-              <Link href="/about">How we rate</Link>
+              <Link href="/about">About</Link>
+              <Link href="/how-we-rate" className="nav-how">
+                How we rate
+              </Link>
               <Link href="/submit" className="btn">
-                Submit a win
+                <span className="submit-long">Submit a win</span>
+                <span className="submit-short">Submit</span>
               </Link>
               <ThemeToggle />
             </nav>
@@ -63,7 +67,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="https://www.researchreceipts.org">researchreceipts.org</a>: a public atlas of UX research wins
             </span>
             <span>
-              <Link href="/about">Methodology</Link> · <Link href="/submit">Submit</Link> ·{" "}
+              <Link href="/about">About</Link> · <Link href="/how-we-rate">How we rate</Link> ·{" "}
+              <Link href="/submit">Submit</Link> ·{" "}
               <a href="https://github.com/jessholbrook/receipts">Source</a>
             </span>
           </div>

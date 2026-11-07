@@ -1,84 +1,83 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { EVIDENCE, SOURCE_TYPES } from "@/lib/taxonomy";
-import { EvidenceBadge } from "@/components/EntryCard";
-import type { Entry } from "@/lib/types";
+import { getEntries } from "@/lib/supabase";
 
-export const metadata: Metadata = { title: "How we rate evidence" };
+export const revalidate = 300;
 
-export default function About() {
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Receipts is a public atlas of documented UX research wins, each rated for how strong the evidence is and who is telling the story.",
+};
+
+export default async function About() {
+  const entries = await getEntries();
+  const n = entries.length;
+  const count = (f: (e: (typeof entries)[number]) => boolean) => entries.filter(f).length;
+  const strong = count((e) => e.evidence_strength === "tested" || e.evidence_strength === "measured");
+  const decisions = count((e) => e.evidence_strength === "decision");
+  const independent = count((e) => e.source_type === "independent");
+  const vendor = count((e) => e.source_type === "agency_vendor");
+  const orgs = new Set(entries.map((e) => e.company)).size;
+
   return (
     <div className="wrap">
       <div className="prose">
-        <h1>How we rate the receipts</h1>
+        <h1>About Receipts</h1>
         <p>
-          Published case studies vary widely in how much evidence they include. Some report controlled experiments.
-          Others report an outcome without saying how it was measured. Many are written by the team, agency or vendor
-          that did the work.
-        </p>
-        <p>
-          To make that visible, every entry has two labels: the <strong>strength of the evidence</strong>, and the{" "}
-          <strong>type of source</strong> it comes from.
+          Receipts is a public atlas of documented UX research wins: cases where research changed a product, a metric
+          or a decision. Each one is rated for how strong the evidence is and labelled with who is telling the story.
         </p>
 
-        <h2>Evidence strength</h2>
-        <div className="ev-table">
-          {EVIDENCE.map((e) => (
-            <div className="ev-row" key={e.value}>
-              <span>
-                <EvidenceBadge level={e.value as Entry["evidence_strength"]} />
-              </span>
-              <span>{e.description}</span>
-            </div>
-          ))}
-        </div>
+        <h2>Why it exists</h2>
         <p>
-          When a case sits between two levels, we pick the lower one. &ldquo;Decision&rdquo; isn&rsquo;t a weaker
-          category. It&rsquo;s a different kind of win: the expensive thing that didn&rsquo;t get built. Those rarely come
-          with a number, and they&rsquo;re often research&rsquo;s biggest payoff.
+          &ldquo;What has UX research ever done for us?&rdquo; Most researchers have heard some version of that
+          question. The answers exist, but they are scattered across company blogs, conference talks, government
+          reports and papers, and they vary a lot in how much they actually prove.
+        </p>
+        <p>
+          Receipts puts them in one place and is honest about each one, so you can find a case that fits your argument,
+          know exactly how much weight it can bear, and point people to it.
         </p>
 
-        <h2>Source type</h2>
-        <div className="ev-table">
-          {SOURCE_TYPES.map((s) => (
-            <div className="ev-row" key={s.value}>
-              <strong style={{ fontSize: 14 }}>{s.label}</strong>
-              <span>{s.description}</span>
-            </div>
-          ))}
-        </div>
-
-        <h2>Attribution</h2>
+        <h2>What&rsquo;s in it</h2>
         <p>
-          Each entry spells out what the research found, what changed because of it, and how directly the source ties
-          the outcome to the research. If the connection is tenuous, the <em>Attribution</em> and <em>Caveats</em>{" "}
-          sections say so.
+          {n} receipts from {orgs} organizations. {strong} have tested or measured results; {decisions} are decisions
+          research changed, such as a feature that was never built. {independent} come from independent sources, and{" "}
+          {vendor} are vendor or agency accounts of their own client work, which are flagged on every card because the
+          teller has an incentive.
+        </p>
+        <p>
+          <Link href="/how-we-rate">How we rate</Link> explains the evidence levels and source labels in full.
         </p>
 
-        <h2>Ground rules</h2>
+        <h2>How cases get in</h2>
         <ul>
+          <li>Every published case links to at least one public source we opened and checked.</li>
+          <li>Entries summarize the research and quote numbers exactly as the source reports them.</li>
           <li>
-            Every entry based on a published case links to at least one public source we opened and checked.
-            Community submissions without a public source are labeled as such.
+            New public cases are gathered every month, and community submissions are welcome. Nothing is published
+            until it has been reviewed.
           </li>
-          <li>Entries are summaries of the research. Go to the source for the full story.</li>
-          <li>Evidence, numbers, and metrics are quoted exactly as the source reports them.</li>
-          <li>Community submissions are reviewed before they appear. Anonymized entries are allowed.</li>
         </ul>
 
-        <h2>Found a mistake?</h2>
+        <h2>Who makes it</h2>
         <p>
-          <a href="https://github.com/jessholbrook/receipts/issues/new">Open an issue</a> with the correction and a
-          source. Or <Link href="/submit">submit a win</Link> of your own.
+          Receipts is made by Jess Holbrook, a UX research leader. The code and the data behind it are open on{" "}
+          <a href="https://github.com/jessholbrook/receipts">GitHub</a>.
         </p>
 
-        <h2>Cite it, share it</h2>
-        <p>
-          Receipts lives at <a href="https://www.researchreceipts.org">researchreceipts.org</a>. Every entry has its own
-          link with a preview card, so you can drop a single receipt into a deck, a doc or a budget thread. For the
-          skeptic in your life, <a href="https://whathasresearcheverdone.com">whathasresearcheverdone.com</a> gets you
-          here too.
-        </p>
+        <h2>Get involved</h2>
+        <ul>
+          <li>
+            Know a case that belongs here? <Link href="/submit">Submit a win</Link>. Anonymized cases are welcome.
+          </li>
+          <li>
+            Spot an error or a better source?{" "}
+            <a href="https://github.com/jessholbrook/receipts/issues/new">Open an issue on GitHub</a> with the
+            correction and a link.
+          </li>
+        </ul>
       </div>
     </div>
   );

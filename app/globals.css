@@ -2090,3 +2090,23 @@ a.receipt:focus-visible .card-thumb {
   color: var(--ink-3);
   opacity: 1;
 }
+
+/* header on small phones: How we rate stays reachable from the footer, About and the evidence filter */
+.submit-short {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .nav .nav-how {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .submit-long {
+    display: none;
+  }
+  .submit-short {
+    display: inline;
+  }
+}
