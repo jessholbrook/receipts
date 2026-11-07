@@ -63,7 +63,8 @@ export default async function About() {
 
         <h2>Who makes it</h2>
         <p>
-          Receipts is made by Jess Holbrook, a UX research leader. The code and the data behind it are open on{" "}
+          Receipts was made by <a href="https://www.linkedin.com/in/jessholbrook/">Jess Holbrook</a>. The code and the
+          data behind it are open on{" "}
           <a href="https://github.com/jessholbrook/receipts">GitHub</a>.
         </p>
 
