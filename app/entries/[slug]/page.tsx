@@ -68,9 +68,9 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
               </>
             )}
           </div>
-          <EvidenceBadge level={e.evidence_strength} />
           <h1>{e.title}</h1>
           <p className="company">
+            <EvidenceBadge level={e.evidence_strength} />{" "}
             {e.company}
             {e.is_anonymized && " (anonymized)"}
             {e.year ? ` · ${e.year}` : ""}

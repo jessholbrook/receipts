@@ -362,7 +362,7 @@
     "insight": "Most respondents linked the green lock with security, but many had no idea what the plain HTTP icon meant, and many wrongly thought HTTPS guaranteed a site was trustworthy. Shape alone needed to signal risk for colour-blind users, and words were needed to teach meaning.",
     "change": "Google selected three indicators: a lock with 'Secure' for HTTPS, and 'Not secure' with neutral and red-triangle icons for HTTP and broken HTTPS. Chrome adopted them in Chrome 53, rolling out 'Not secure' for HTTP gradually to avoid alarming people.",
     "outcome": "The paper reports the proposed indicators were adopted by Google Chrome. No post-launch comprehension or behaviour metrics are given.",
-    "headline_metric": null,
+    "headline_metric": "Added 'Not secure' label",
     "attribution": "Direct. The paper documents the research and states Chrome adopted the indicators it selected.",
     "caveats": "Decision only: no measured outcome after launch. Survey respondents were tech-savvy extension users and Google Consumer Surveys panels, and the indicators were not yet tested in countries with many new internet users. Authors are Google employees.",
     "methods": [

@@ -47,7 +47,7 @@
     "insight": "Many users barely navigate inside GitLab because they arrive via links from Slack, email and other tools. Their work is narrowly scoped, so they wanted quick access to a few core features, and they used workarounds such as bookmarks and open tabs. Card sorts showed people wanted analytics items grouped together.",
     "change": "GitLab stopped pursuing its earlier proposed fixes and built a new navigation around three themes from the feedback (less overwhelm, better orientation, picking up where you left off). It added pinning, task-based sidebar categories and a new Analyze section, and shipped with an on/off toggle.",
     "outcome": "Participants in the longitudinal study found the new navigation an improvement and preferred its features, especially pinning and the task-based sidebar. They also raised problems, such as not being able to pin whole projects and unpinning items by accident. No usage or satisfaction numbers are given.",
-    "headline_metric": null,
+    "headline_metric": "Rebuilt nav with pinning",
     "attribution": "Strong for the decisions: the posts trace the abandoned fixes, the pinning feature and the sidebar groupings to specific studies. The outcome is qualitative.",
     "caveats": "Company blog posts with no numbers on adoption or satisfaction; a quarterly navigation survey was set up but results are not reported. Community reaction to redesigns is mixed and not covered here.",
     "methods": [
@@ -95,7 +95,7 @@
     "insight": "Learners wanted to know which mistakes they had made in past lessons and to practise their 'weak areas'. One learner described repeatedly forgetting verb forms for a tense.",
     "change": "Duolingo built the Practice Hub, a subscription feature that gathers past mistakes for targeted practice and adds speaking and listening practice.",
     "outcome": "The feature shipped as part of Duolingo's paid tier. No usage, retention or revenue figures are given.",
-    "headline_metric": null,
+    "headline_metric": "Built the Practice Hub",
     "attribution": "The company names the research as 'the inspiration' for the feature. How much the interviews shaped the final design is not described.",
     "caveats": "A short example inside a general post written for learners, not a case study. No metrics. The feature also sits behind a paywall, so the company had a commercial reason to build it.",
     "methods": [
@@ -171,7 +171,7 @@
     "insight": "The floating panels hindered people who spend many hours a day in Figma: they cramped the canvas, especially on small screens, designs peeked out distractingly behind them, rulers sat further from the work, and they slowed people down. A dropdown for 'clip content' also added a click that slowed workflows.",
     "change": "For the October 2024 full rollout, the navigation and properties panels became fixed (but resizable). Clip content went back to a checkbox, and constraints were expanded by default. Floating panels stayed only in Minimize UI, Figma Slides grid view and FigJam.",
     "outcome": "A core design decision was reversed before general release. No metrics are shared.",
-    "headline_metric": null,
+    "headline_metric": "Re-docked the panels",
     "attribution": "Clear that beta feedback and data drove the reversal ('the nail in the coffin was learning that they slowed people down'). The evidence came from a beta rather than planned research.",
     "caveats": "Evidence is beta feedback and product analytics rather than structured research, and no numbers are given. Company blog post; heavy public criticism of the floating panels on Figma's forum was likely also a factor.",
     "methods": [
@@ -209,7 +209,7 @@
     "insight": "Early concepts felt overwhelming and confusing. Customers wanted to choose what appears on their home screen. Interrupting people with the new design while they were trying to do a task went badly.",
     "change": "Monzo built customisation into the new home screen, kept core jobs (balances, card details, transaction search) prominent, and let customers snooze the upgrade and be prompted later.",
     "outcome": "The new home screen rolled out to more than 8 million customers. No outcome metrics are shared.",
-    "headline_metric": null,
+    "headline_metric": "Added home customisation",
     "attribution": "The user researcher names customisation as a direct result of research. No outcome data is linked to it.",
     "caveats": "Short company post with quotes from team members; methods, sample breakdowns and experiment results are not given.",
     "methods": [
@@ -249,7 +249,7 @@
     "insight": "Without breaks, beta-wave activity (associated with stress) kept building and spiked at transitions between meetings, and frontal alpha asymmetry suggested people were less engaged. With breaks, stress stayed level and engagement was higher.",
     "change": "Microsoft promoted Outlook settings that shave 5, 10 or 15 minutes off meetings, and added organisation-wide defaults so a company can build in breaks for everyone.",
     "outcome": "The settings shipped for individuals and organisations in 2021. No data on adoption or effect on wellbeing is given.",
-    "headline_metric": null,
+    "headline_metric": "Built breaks into Outlook",
     "attribution": "Microsoft says the findings 'helped inform' the settings. Adjustable meeting lengths may have been in the works anyway; the study mainly justified and publicised them.",
     "caveats": "Very small sample (14), lab setting, and EEG proxies for stress and engagement. Published as a marketing-led Work Trend Index piece. No measure of whether the product change reduced fatigue.",
     "methods": [
@@ -285,7 +285,7 @@
     "insight": "Support confirmed customers got lost and filed cases about finding apps. In testing, an object-based layout was most intuitive, and none of the participants, even customers who had embraced inbound marketing, organised the apps by the methodology.",
     "change": "HubSpot replaced the methodology-based menu with an object-based navigation, released first to beta customers and then to all users.",
     "outcome": "The post was written at beta launch. It expected fewer support cases about finding apps but reports no results.",
-    "headline_metric": null,
+    "headline_metric": "Switched to object nav",
     "attribution": "Strong for the decision: the post credits the tests with settling a long internal debate. No outcome data.",
     "caveats": "Very small samples (four customers in the card sort, six people in the usability test). Old (2012). No follow-up numbers were published in this post. Company blog.",
     "methods": [
@@ -324,7 +324,7 @@
     "insight": "Many users never noticed that filtering was possible, and saving views, sorting and adding columns were rarely found. Related controls, like search and filters, sat far apart. Usage data showed users who save and revisit a view have 16% higher week-12 retention, yet only 5% of new users touched saved views in their first month and only 15% of daily users saved one.",
     "change": "The redesigned table view added tabs for saved views, quick filters based on the most-used properties, and column editing on the main screen. The board view got its own layout with pipeline and saved-view toggles up front.",
     "outcome": "Released as an opt-in experience in 2020. No post-launch results are reported.",
-    "headline_metric": null,
+    "headline_metric": "Added saved-view tabs",
     "attribution": "The post ties each design change to a usability or analytics finding. There is no outcome data.",
     "caveats": "Company product blog with an opt-in launch and no reported results. The 16% retention link for saved views is correlational. Usability study sample sizes are not given.",
     "methods": [
@@ -366,7 +366,7 @@
     "insight": "Customisation was a big reason people love Adobe's desktop tools, and keyboard shortcuts are central to fast work, but few iPad artists use keyboards. Testers said Fresco felt a little slow. Very few noticed tool options placed directly below the tool, while floating options were easy to find but took canvas space.",
     "change": "Adobe built Fresco as a new app combining pixels and vectors, with a customisable app frame. It added a Touch Shortcut that temporarily changes the current tool's action, and docked tool options at the bottom of the toolbar with the option to drag them anywhere. Some early experiences were reworked after poor test results.",
     "outcome": "Fresco launched in 2019 and kept evolving with monthly releases. No usage or business metrics are given.",
-    "headline_metric": null,
+    "headline_metric": "Built Fresco instead",
     "attribution": "The article says the decision to create Fresco 'grew from extensive user research' and links specific features to test findings. No outcome data.",
     "caveats": "Promotional company article timed with product updates. Adobe also had strategic reasons (competing on iPad) that the article does not weigh. No metrics.",
     "methods": [

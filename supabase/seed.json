@@ -86,7 +86,7 @@
   "insight": "Around 40% of shakes were bought first thing in the morning, to go, by people facing a long, dull commute. They wanted something to occupy one free hand, keep them full until mid-morning and not make a mess on work clothes; a thick shake through a thin straw beat bagels or doughnuts on all counts. Demographics did not explain the purchase; the situation did.",
   "change": "Christensen's team recommended a thicker, more interesting morning shake (e.g. with fruit chunks) to last the commute, and a separate thinner shake for children in the afternoon.",
   "outcome": "The source does not report whether the chain made the changes or whether sales rose. The case is cited as the origin story for the jobs-to-be-done approach to research.",
-  "headline_metric": null,
+  "headline_metric": "Proposed a thicker shake",
   "attribution": "The research clearly produced the recommendation, but there is no documented business outcome.",
   "caveats": "Classic teaching story told by Christensen in talks and books; the chain is never named in the original HBS write-up (it is often assumed to be McDonald's in retellings, which is not confirmed there). No sample sizes, dates or sales results are published. Include as a famous illustration of a research reframing, not as proof of impact.",
   "methods": [
@@ -159,7 +159,7 @@
   "insight": "Paste alone was over 11% of all Word 2003 commands, more than twice the next (Save), and the top five commands were about 32% of use. Even though many people used Ctrl+V or the context menu, the Paste toolbar button was still the most-clicked button. Usability tests also showed most people don't click unlabeled 16x16 icons beyond the first few.",
   "change": "The team dropped an early idea of leaving Cut/Copy/Paste buttons out of the Ribbon and made Paste the first large button on Word's first tab. Ribbon commands were given text labels.",
   "outcome": "Jensen Harris writes that the data 'kept us from making a crucial, stupid mistake' that beta testers, being expert users, might not have caught. No post-launch metrics are given.",
-  "headline_metric": null,
+  "headline_metric": "Kept the Paste button",
   "attribution": "Direct: the design lead names the specific decision the data changed.",
   "caveats": "Written by Microsoft's own UX lead. Analytics is behavioural data rather than direct observation, though it was paired with usability testing. No outcome metric; the Ribbon itself was controversial with experienced users at launch.",
   "methods": [
@@ -202,7 +202,7 @@
   "insight": "Users with infinite scroll saw fewer items than the control group, clicked fewer, saved fewer favorites and bought fewer items from search (overall purchases held because people found items other ways). Showing more results per page barely changed behaviour and did not increase purchases; adding delay to search changed nothing measurable.",
   "change": "Etsy removed infinite scroll ('we took infinite scroll out back and we shot it') and changed its process to validate premises with minimal experiments before building large features.",
   "outcome": "A feature that hurt search engagement and search-driven purchases was rolled back. Dan McKinley's talk gives directional results but no percentages; avoided cost is the main win, plus a shift in how Etsy scoped product work.",
-  "headline_metric": null,
+  "headline_metric": "Killed infinite scroll",
   "attribution": "Direct: the experiment results were the stated reason for removing the feature.",
   "caveats": "First-party conference talk by an Etsy engineer (2012). The win is avoiding a harmful change after it was built, not before. Exact effect sizes are not in the talk transcript; larger percentages circulating in third-party blogs could not be verified. This is experimentation rather than qualitative research.",
   "methods": [
@@ -532,7 +532,7 @@
   "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
   "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
   "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
-  "headline_metric": null,
+  "headline_metric": "Dropped the native app",
   "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
   "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
   "methods": [
@@ -574,7 +574,7 @@
   "insight": "Respondents' core need was to put their views across clearly, and the department only accepted text responses; most of the improvement could come from process and content, not new software.",
   "change": "The team decided not to build a new product or service, and instead to use existing tools more effectively, write consultations in plain English and keep respondents informed throughout the policy process.",
   "outcome": "No new build. The product manager writes that the approach needed 'no hard cash'. No metrics reported.",
-  "headline_metric": null,
+  "headline_metric": "No new consultation tool",
   "attribution": "Direct: the product manager states the research led to the no-build decision.",
   "caveats": "Short first-party blog post with no participant numbers or cost estimate. Whether the process changes improved consultations is not reported.",
   "methods": [
@@ -613,7 +613,7 @@
   "insight": "There was no identified need for a central webchat component. Teams would benefit more from shared service patterns. The research also warned against assuming webchat saves money on its own, and found chat conversations are a useful source of insight into user needs.",
   "change": "GDS did not build a webchat platform. It produced patterns and guidance for the Service Manual and a published approach to implementing webchat, then ended the alpha.",
   "outcome": "A central platform build was avoided; guidance was published instead. No cost figures given.",
-  "headline_metric": null,
+  "headline_metric": "Dropped central webchat",
   "attribution": "Direct: the GDS post presents the decision as a result of the research.",
   "caveats": "First-party. No participant counts or estimate of cost avoided. Platform builds may also have been weighed against other GDS priorities not discussed.",
   "methods": [
@@ -652,7 +652,7 @@
   "insight": "Helpline and webchat were first-come, first-served, so urgent, complex cases often couldn't get through; only 29% of queries handled were high-priority. A chatbot would not fix this. Many users had only a smartphone with limited credit or a landline, and many had health conditions or disabilities.",
   "change": "Shelter moved from a chatbot to a triage approach that prioritises urgent, complex cases for one-to-one advice and points simpler needs to advice content. It applied for less funding to run a triage discovery (a later implementation bid succeeded) and launched a tailored journey for low-urgency needs on its existing site without AI.",
   "outcome": "The chatbot build was not pursued. No outcome metrics for triage are reported yet.",
-  "headline_metric": null,
+  "headline_metric": "Chose triage over chatbot",
   "attribution": "Direct: Shelter's product team says the discovery findings redirected the funding bid and the product.",
   "caveats": "First-party charity blog. Outcomes of the triage approach were not published at the time; the 29% figure is a pre-change baseline.",
   "methods": [
@@ -696,7 +696,7 @@
   "insight": "The need was not only in clinics: rural families far from hospitals tried to keep babies warm with blankets, warm water bottles or light bulbs, which were usually not enough (and bulbs sometimes shattered over babies).",
   "change": "Alongside the electrically heated clinic version, the team built a cheaper at-home model heated with warm water, with more safety features and more wax to hold 37°C for longer, including during an emergency trip to hospital. Both use a sleeping-bag pouch with a phase-change wax pad.",
   "outcome": "At the time of the source the product was in clinical trials with an expected price of $100–$200, against $1,000–$2,000 for incubators in developing countries. Mothers in trials were reluctant to take babies out, and NGOs in Africa and Asia were sending inquiries. No mortality or deployment figures are given.",
-  "headline_metric": null,
+  "headline_metric": "Built an at-home warmer",
   "attribution": "The student newspaper credits observations of rural families' unmet needs with the at-home model. Later impact claims are not covered by this source.",
   "caveats": "Often retold as a dramatic pivot 'from incubator to sleeping bag'; the 2010 source describes adding an at-home version to a clinic device rather than abandoning it. Health outcomes are not documented here. Student-newspaper source written while the venture was pre-launch.",
   "methods": [
@@ -1097,7 +1097,7 @@
   "insight": "Most users began their outfit search on social media and then used 'hacky ways' to find similar pieces to buy, so the real problem sat in the jump from inspiration to shopping rather than in search technology.",
   "change": "The team changed the project's direction from a computer-vision search tool to redesigning the inspiration-to-purchase journey so users could get there with less effort.",
   "outcome": "No metrics. The author describes the result as a 'different approach, huge impact!' for the project's direction.",
-  "headline_metric": null,
+  "headline_metric": "Dropped vision search",
   "attribution": "Direct for the decision: the post says the research finding itself changed the project's course. Nothing is reported about what shipped afterwards.",
   "caveats": "Short first-party blog post used to illustrate an innovation process. Number of customers and methods are vague ('several'). No outcome data, and it isn't clear whether the redesigned journey launched.",
   "methods": [
@@ -1134,7 +1134,7 @@
   "insight": "Complexity was a main barrier: roughly one in two customers didn't understand what sustainability means in fashion. Trust was the other blocker, and customers needed a positive, emotional connection to the topic before digging deeper.",
   "change": "Zalando launched a value-based browsing experience in the Fashion Store, mapping its existing sustainability criteria onto six cause areas (animal welfare, reusing materials, worker well-being, water conservation, reducing emissions, extending the life of fashion) described in simpler language.",
   "outcome": "No outcome metrics reported. Zalando described the launch as a first step and a learning opportunity.",
-  "headline_metric": null,
+  "headline_metric": "Launched shop-by-cause",
   "attribution": "The launch post explicitly ties the design approach (plain-language cause areas) to the research finding about complexity. No evidence about whether it changed behaviour.",
   "caveats": "First-party announcement, partly sustainability communications. No adoption or conversion data. The ethnographic component is small (12 people) and the survey is self-reported attitudes.",
   "methods": [
@@ -1301,7 +1301,7 @@
   "insight": "Shoppers usually use the phone with one hand while the other pushes a cart or picks items. Missing items are inevitable, and good communication matters more than perfection: customers still give 5-star ratings when the shopper clearly tried their best.",
   "change": "A simplified, one-handed Shopper app with large icons, big tap targets and fewer manual inputs; prompts asking customers for replacement preferences on low-stock items; quick messaging with shelf photos; context such as first-time customer flags; crowdsourced out-of-stock data that stops later customers adding the item; and auto-generated substitution messages customers can approve with one tap.",
   "outcome": "No numbers. Instacart says automated messaging cuts back-and-forth for both shopper and customer and that ratings data supports the value of communication.",
-  "headline_metric": null,
+  "headline_metric": "Built a one-handed app",
   "attribution": "The post presents the one-handed principle and the communication features as direct results of field observation, but gives no outcome data.",
   "caveats": "First-party design blog written partly for recruiting. No participant numbers, dates or metrics. Some features (crowdsourced stock data) rely on analytics as much as research.",
   "methods": [
@@ -1339,7 +1339,7 @@
   "insight": "Many travelers were unsure about trips and their future income, reacted poorly to aggressive sales tactics, and split into risk-averse and risk-tolerant groups. Sanitation photos of intimate spaces like rooms and food caused discomfort, while communal spaces like lobbies did not. Attitudes differed by country (Brazil and Mexico readier to travel than Argentina), and six in ten planned a first trip within their own country.",
   "change": "Flexible cancellation and modification features, and flexible packages, became core products. The team pushed back on stakeholders who wanted a hard sell and moved to a softer, reassuring voice. Supplier sanitation imagery was guided toward communal spaces rather than rooms and food.",
   "outcome": "No business metrics reported. The team says flexible packages became the most popular option despite higher prices, and flexibility features became core products.",
-  "headline_metric": null,
+  "headline_metric": "Dropped the hard sell",
   "attribution": "The NN/g article, based on interviews with Despegar's UX and research leads, credits the research with the tone change and the imagery guidance. The rise of flexible packages was also driven by the pandemic itself, so research is one of several causes.",
   "caveats": "Secondhand account from NN/g interviews with the company's own UX leads. Mostly self-reported attitudes gathered during a crisis. No metrics on bookings, conversion or revenue.",
   "methods": [
@@ -1378,7 +1378,7 @@
   "insight": "Mobile users were very active in the evening but reluctant to phone agents. Research also showed some information (popular unit types, guest parking, community issues) is best supplied by residents, and that the map is central to the UAE search journey.",
   "change": "Property Finder tested and launched WhatsApp Leads, a way to message agents instead of calling. Related findings led to resident-written Community Guides, Building Reviews on listing pages, and better map search.",
   "outcome": "The company says WhatsApp Leads reached 'almost instant product-market fit'. No lead numbers are given. Separately, it reports over 10% of mobile searches used Map Search.",
-  "headline_metric": null,
+  "headline_metric": "Launched WhatsApp leads",
   "attribution": "The post states the evening-browsing finding 'inspired' the WhatsApp test. The success claim is qualitative.",
   "caveats": "First-party blog by a product manager, published in 2023 about 2019 work. No lead volumes, conversion or test design reported. The specific research method behind the WhatsApp insight isn't separated from the general list of methods.",
   "methods": [
@@ -1418,7 +1418,7 @@
   "insight": "Participants in user testing kept asking for a way to share and discuss listings with others inside the product.",
   "change": "Rightmove launched Shared Lists in November 2025 for both renters and buyers: users build collections of agents' listings and share them, and recipients can react, comment and propose alternatives.",
   "outcome": "No usage or business metrics reported at launch.",
-  "headline_metric": null,
+  "headline_metric": "Built Shared Lists",
   "attribution": "The company directly credits user testing as the source of the idea. Nothing yet shows whether it changed behaviour.",
   "caveats": "Trade-press report of a launch announcement. 'Thousands of hours' is unspecific and refers to user testing in general, not a dedicated study. No outcome data.",
   "methods": [
@@ -1540,7 +1540,7 @@
   "insight": "Perfect automatic capture isn't achievable for something this subjective. Users needed a sense of authorship and control. The team's own enthusiasm for futuristic, gesture-heavy interfaces had hidden how complex they would be for real users. Teaching the model what to ignore (fingers over lens, blur, inside a pocket) mattered as much as what to capture.",
   "change": "Added a hardware capture button and a software viewfinder; let users choose the still frame and clip length; simplified the UI; had the camera slightly over-deliver clips so users could delete and learn what it looks for; kept processing on-device.",
   "outcome": "No metric reported. The research changed core product decisions about user control and interface design.",
-  "headline_metric": null,
+  "headline_metric": "Added a shutter button",
   "attribution": "The design lead attributes the control features and simplified UI directly to the human-centered research process.",
   "caveats": "No outcome metric. Google Clips was discontinued in 2019, so these decisions did not make it a commercial success. Account is first-party (Google Design) plus press coverage of it.",
   "methods": [
@@ -1682,7 +1682,7 @@
   "insight": "Many disabled gamers open packaging with their teeth and wanted that never to be necessary. People preferred more simple steps over fewer complicated ones. Small circular loops were hard to grip; perforated edges caused paper cuts; plastic covers were frustrating.",
   "change": "Loops on the outer tape, inner box, quick-start guide and cable wrap; loops made oval after a tester without fingers on one hand struggled with circles; hinged inner box; front-open pulp tray; no twist ties or plastic; box adjusted so the controller's big buttons don't get pressed in transit.",
   "outcome": "Testers reported the box was easy to open. Microsoft described it as its first packaging designed specifically for accessibility and said it was discussing applying the lessons to future products. No metric reported.",
-  "headline_metric": null,
+  "headline_metric": "Built one-hand packaging",
   "attribution": "Direct: Microsoft names specific features that came from specific participant feedback.",
   "caveats": "First-party feature story; no quantitative outcome. Small number of testers. Promotional context around a product launch.",
   "methods": [
@@ -1761,7 +1761,7 @@
   "insight": "People budget data carefully and avoid anything with unknown cost; they 'peek' at videos before committing; they share videos offline via SD cards and sideloading; they download ahead for offline times; and they want locally relevant content. Participants rejected a low-res keyframes-plus-audio concept because they still wanted good video quality.",
   "change": "Built YouTube Go with data cost on every video in the feed, a preview showing keyframes and file size, a choice of quality levels with sizes (e.g. 2MB / 5MB / 12MB), offline peer-to-peer sharing, offline as a normal state, and local trending content. Dropped the keyframe-plus-audio concept.",
   "outcome": "No metric published. The research defined the product and killed an early concept; the app launched in India and other markets in 2017.",
-  "headline_metric": null,
+  "headline_metric": "Showed data cost upfront",
   "attribution": "Direct: Google ties each core feature to a research finding.",
   "caveats": "First-party design story with no sample size or outcome metrics. YouTube Go was later discontinued (2022) in favor of the main app, so its long-term success is unclear.",
   "methods": [
@@ -1837,7 +1837,7 @@
   "insight": "Many owners prefer a traditional gear lever over dials or buttons; they eat lunch and do paperwork in the cab like a mobile office; some nap or sleep overnight in the cab at job sites; and the bed is used as a work surface.",
   "change": "A physical shift lever that folds away to free console space; an available fold-out work surface big enough for a laptop; Max Recline near-flat seats; an available tailgate workbench with tablet holder and clamping points.",
   "outcome": "No metric reported. The research shaped specific interior and tailgate features in the 2021 F-150.",
-  "headline_metric": null,
+  "headline_metric": "Added fold-away shifter",
   "attribution": "Trade-press article paraphrasing Ford's chief designer, who links each feature to field findings.",
   "caveats": "No sales or satisfaction data tied to the features. Secondary account of a conference presentation, with no direct quotes. Number of participants not stated.",
   "methods": [
@@ -1874,7 +1874,7 @@
   "insight": "Around 10% of rides were for someone else, a large hidden use case, and identity confusion between requester, rider and driver was the main pain point.",
   "change": "Built a flow to request a ride for another person with the rider's own details. Testing showed an early design sent about 30 notifications to requester and rider; the team cut these to key moments.",
   "outcome": "No post-launch metrics reported. Research sized the opportunity and drove the decision to build the feature and to trim its notifications.",
-  "headline_metric": null,
+  "headline_metric": "Built ride-for-others",
   "attribution": "The designer describes the research and data as the basis for prioritizing the feature and for the notification changes.",
   "caveats": "No outcome numbers despite baseline problems (cancellations, pickup time) being named. Interview with the designer in Lyft's own 'Behind the Design' series, republished by UX Magazine.",
   "methods": [
@@ -1913,7 +1913,7 @@
   "insight": "Riders wanted to understand the car's choices, especially when a route differed from what they expected and where the car would pull over at the destination.",
   "change": "Added messaging in the Waymo app and on the in-car screen to explain when a route may differ from what a rider expects, and more specific expectations about where the car will pull over at the end of a trip.",
   "outcome": "No metric reported. Waymo lists these as changes deployed based on rider feedback.",
-  "headline_metric": null,
+  "headline_metric": "Explained route changes",
   "attribution": "Waymo explicitly names these changes as resulting from rider feedback gathered through its research program.",
   "caveats": "First-party blog with no numbers, sample sizes or before/after data. Changes described are modest. Promotional context around opening the driverless service to the public.",
   "methods": [
@@ -1952,7 +1952,7 @@
   "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
   "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
   "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
-  "headline_metric": null,
+  "headline_metric": "60+ accessibility options",
   "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
   "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
   "methods": [
@@ -1991,7 +1991,7 @@
   "insight": "Not seeing like counts was beneficial for some people and annoying to others, who use likes to see what's trending or popular.",
   "change": "Rather than removing like counts globally, Instagram and Facebook let people choose to hide like counts on posts in their feed and on their own posts (May 2021).",
   "outcome": "No metric reported. The research changed the decision from a blanket removal to an optional setting.",
-  "headline_metric": null,
+  "headline_metric": "Made like counts optional",
   "attribution": "Instagram attributes the opt-in approach to what it heard during testing from people and experts.",
   "caveats": "Primarily product testing plus feedback; Instagram has not published the research. Critics noted the outcome also preserved engagement metrics advertisers value. No well-being outcome data shared.",
   "methods": [
@@ -2036,7 +2036,7 @@
   "insight": "The model could make basic errors with 'misleading matter-of-fact confidence' (one tester: it 'very confidently told me there was an item on a menu that was in fact not there'). Testers repeatedly said they wanted to know the facial and visible characteristics of people around them, information sighted people get at a glance.",
   "change": "Be My Eyes warns users not to rely on the AI for safety or health tasks (prescriptions, allergens, crossing streets) or as a replacement for a cane or guide dog; added an option to leave the AI and connect immediately to a human volunteer; and is designing ways to describe features of people without identifying them by name.",
   "outcome": "OpenAI reports that hallucinations and errors noticeably fell in frequency and severity over the beta, and testers noticed better text recognition and richer descriptions. No figures given.",
-  "headline_metric": null,
+  "headline_metric": "Added human fallback",
   "attribution": "The system card ties the warnings, fallback and face-description work directly to issues raised by beta testers.",
   "caveats": "Beta testing and feedback rather than a structured study; no metrics. Source is OpenAI's own system card, written as part of a launch. Improvements in hallucination may be due to model work rather than the research itself.",
   "methods": [
@@ -2075,7 +2075,7 @@
   "insight": "Users needed live guidance while framing, not just the camera's location. Blind and low-vision users valued automatic capture (not having to find the shutter), even though sighted users generally dislike it. Users also wanted it for group photos.",
   "change": "Built voice instructions telling users whether they are left, right or centered; combined audio cues, haptics and high-contrast visuals; made the camera capture automatically once the face is centered; extended support to group photos.",
   "outcome": "No metric reported. Testing changed the core interaction and scope of the feature.",
-  "headline_metric": null,
+  "headline_metric": "Added live voice guidance",
   "attribution": "Google states the early study showed the team had been focused on the wrong solution, and that testing feedback set the final mix of cues and auto-capture.",
   "caveats": "Small, partly internal sample (three blind Googlers in the first study); first-party blog with no outcome data.",
   "methods": [
@@ -2154,7 +2154,7 @@
   "insight": "Each reaction had to be 'extremely easily recognizable' everywhere; some candidates, like 'Yay', didn't get used in some countries.",
   "change": "Launched five reactions alongside Like (Love, Haha, Wow, Sad, Angry), dropped 'Yay', and kept the same set and near-identical translations worldwide.",
   "outcome": "No usage or outcome numbers in the source. Research shaped which reactions shipped and killed one.",
-  "headline_metric": null,
+  "headline_metric": "Picked five, dropped Yay",
   "attribution": "The article links the chosen set to Keltner's recognition research and the multi-country tests, and the dropped 'Yay' directly to test results.",
   "caveats": "Journalism based on interviews with Facebook and Keltner; methods of the country tests aren't described. No outcome data. 2016.",
   "methods": [
@@ -2272,7 +2272,7 @@
   "insight": "Customers cared most about the bill summary and amount due, then usage and meter information, and wanted to understand supply charges separately from delivery charges.",
   "change": "The new bill, launched March 2014, ordered information by importance, put summarised usage and charges on the front, clearly separated supply from delivery charges, colour-coded sections and moved contact details and messages to the back. It went to nearly 4 million households in under a year.",
   "outcome": "Qualtrics' customer story reports an 'industry-leading rise in customer satisfaction' and a J.D. Power award. No satisfaction scores, call volumes or other figures are given.",
-  "headline_metric": null,
+  "headline_metric": "Customer satisfaction up",
   "attribution": "Weak to moderate. The research clearly shaped the bill, but the satisfaction rise is reported at company level and other ComEd initiatives over the same period likely contributed.",
   "caveats": "Outcome claim comes from the survey vendor's customer story, with no numbers or method. The independent press coverage (2014) documents the research process but reports no results. Crowdsourced design competition was part of the process, not just research.",
   "methods": [
@@ -2355,7 +2355,7 @@
   "insight": "Stage-based sub-navigation would add steps, and stage names are not self-explanatory, especially to people unfamiliar with GitLab's DevOps vocabulary. Context and discoverability were the recurring problems.",
   "change": "GitLab kept its existing global/contextual navigation model with incremental changes, rather than restructuring it around DevOps stages, and planned further interviews and journey mapping.",
   "outcome": "In the post's words, findings from the studies 'cautioned us against moving in that direction'. No metric is reported.",
-  "headline_metric": null,
+  "headline_metric": "Rejected stage-based nav",
   "attribution": "Stated directly by GitLab's UX researcher, though the post doesn't describe the studies in detail.",
   "caveats": "Light on method detail. The post describes ongoing work, so the decision may have been revisited later. No measure of what was avoided.",
   "methods": [
@@ -2393,7 +2393,7 @@
   "insight": "Debuggability was the biggest problem, making up 67% of open-ended feedback: the information existed but was scattered across dashboards and UIs. Performance and reliability made up another 19%. Stakeholder interviews also showed that past measurement dashboards were usually abandoned, so the team chose one success metric (engineer capacity saved) instead.",
   "change": "The team built a vision for a unified console and used it to secure executive buy-in. After evaluating options, they chose to extend an existing infrastructure console (Sigma) rather than build a bespoke console modelled on Google Cloud's, shipped a readability redesign of a job page, and designed a 'Needs Attention' pipeline page tested through three RITE rounds.",
   "outcome": "The paper reports executive buy-in and incremental shipped improvements. Projected savings were estimated at 69 (conservative), 208 (moderate) or 1,663 (aggressive) full-time engineers' worth of capacity per year, but these are forecasts, not measured results. The pipeline MVP was still to be released at the time of writing.",
-  "headline_metric": null,
+  "headline_metric": "Extended existing console",
   "attribution": "Direct for the decisions: the authors state the survey and interviews defined the problem and that the evaluation drove the choice to extend Sigma. No measured outcome yet.",
   "caveats": "Short CHI 2025 workshop submission written by the team itself. Savings figures are internal estimates. The paper notes Gemini was used to edit parts of the text. The redesign's effect on time-to-find information is described qualitatively.",
   "methods": [
@@ -2715,7 +2715,7 @@
   "insight": "Member counts help people 'read the room' in a channel. New users ignored a compose button at the bottom of the sidebar, often tried right-clicking, and missed key features when sections started collapsed. Users preferred familiar search placement over novel layouts.",
   "change": "Restored the channel member count the team had planned to hide; made the custom-sections entry point less prominent with an in-product prompt; chose a conventional top-navigation search layout; moved compose to the top of the sidebar; built fuller right-click menus across the app; made collapsible views start open.",
   "outcome": "After these changes, the new design 'beat or tied' the existing one on the benchmark tasks, which the authors cite as the basis for confidence in the release. No numbers are given.",
-  "headline_metric": null,
+  "headline_metric": "Restored member counts",
   "attribution": "Direct for the design decisions: each change is tied to a specific pilot or benchmark finding. The benchmark result is reported only qualitatively.",
   "caveats": "First-party blog post with no sample sizes, task-success figures or post-launch metrics. Pilot participants were Slack champions, who are not typical users. Rated 'decision' because no measured outcome is shared.",
   "methods": [
@@ -2755,7 +2755,7 @@
   "insight": "With search in the left-hand navigation, it 'just wasn't findable' for users.",
   "change": "Search was moved back to the top of the interface. The authors say other changes were also revisited after pulse surveys and pilot feedback, without naming them.",
   "outcome": "A design decision was reversed before launch. No metrics are reported.",
-  "headline_metric": null,
+  "headline_metric": "Moved search back to top",
   "attribution": "Direct: the authors (Slack's VP of Product Design and a principal PM) state that research, pilot feedback and usage data drove the reversal.",
   "caveats": "First-party post with no method detail or numbers. Undated on the page (images suggest 2023). Usage data contributed alongside research, so research was one of several signals.",
   "methods": [
@@ -2794,7 +2794,7 @@
   "insight": "The new experience required more clicks, changes to keyboard navigation slowed invoice creation for keyboard-heavy users, and the new layout made the invoice page harder to read and navigate.",
   "change": "Deleting a line item went from two clicks to one; Tab in branding and tax fields now selects and moves on; the date field accepts typing immediately; attachments preview in place; single clicks for printing/downloading, creating another invoice, sending receipts and marking as sent; invoice number shown in the browser tab. A redesign of the top half of the create-invoice page was started, and classic invoicing was kept available until 27 February 2025.",
   "outcome": "Specific usability fixes shipped and the retirement of classic invoicing was postponed. No metrics are reported.",
-  "headline_metric": null,
+  "headline_metric": "Cut clicks in invoicing",
   "attribution": "Direct for the changes: Xero's Head of Product lists the fixes as responses to what users reported and what researchers observed.",
   "caveats": "First-party post responding to customer complaints, so partly reputation management. Research happened after launch, not before. No numbers on how many users were observed or whether the fixes improved speed. The postponement may have had other reasons.",
   "methods": [
@@ -2872,7 +2872,7 @@
   "insight": "Interviewees said they relied heavily on email notifications, which clashed with data showing low email engagement. Re-cutting the data by account type explained it: designers on team accounts opened 80% of comment-notification emails, while many other users simply received nothing ('71% of users don't receive any notifications'). Interviews also showed people rarely visited the file browser, so the bell in its top-right corner was 'out of sight and out of mind'. Collaborators who weren't file owners got no comment notifications at all.",
   "change": "The bell was moved to a more prominent spot at the upper left of the file browser. The team made team-account users the reference group for notification experiments, and after an experiment released comment notifications for file editors, not only owners.",
   "outcome": "The post reports the changes and says the work shaped the half's roadmap and a series of experiments. It gives no metric for the effect of the changes.",
-  "headline_metric": null,
+  "headline_metric": "Moved notification bell",
   "attribution": "Direct for the decisions: the bell move and the team-account focus are traced to specific interview and data findings. The editor-notification change came partly from the researchers' own experience and was then tested in an experiment, results not shared.",
   "caveats": "Figma's own blog, written as a showcase of its research practice. No outcome numbers for the shipped changes. The 80% and 71% figures describe the problem, not the result.",
   "methods": [
@@ -2910,7 +2910,7 @@
   "insight": "People's most valued uses of Firefox fell into a stable set of categories, and high usage wasn't always good for them (for example, huge numbers of open tabs felt overwhelming). Firefox Focus, despite its small audience, was often used alongside another Firefox mobile browser for specific jobs and mattered a lot in those workflows.",
   "change": "The study gave leadership evidence to look beyond raw usage numbers when judging Firefox Focus, and the use-case categories fed into further mixed-method research and survey work.",
   "outcome": "The authors say the most tangible success was highlighting the value of Firefox Focus to leadership teams that had been questioning investment in it. They don't state a formal decision or any metric.",
-  "headline_metric": null,
+  "headline_metric": "Made the case for Focus",
   "attribution": "Moderate. The researchers say their study (along with a colleague's research) showed Focus's value. The post doesn't say what was decided or that the research was the deciding factor.",
   "caveats": "Self-reported impact by the researchers who ran the study. Influence on a funding debate, not a measured outcome. 2021 post.",
   "methods": [
@@ -2947,7 +2947,7 @@
   "insight": "PiP often helped people get tasks done: a student watched lectures while taking notes, others used background video to stay motivated during dull work or to calm down while reading something hard. The team found nothing seriously wrong that would stop habit formation.",
   "change": "The team decided not to make 'habit-forming' the measure of PiP's success, and to better support existing uses instead, starting with more controls such as changing the volume. A separate experiment on PiP discoverability was prepared at the same time.",
   "outcome": "A change in product strategy and feature priorities. No usage or satisfaction metrics are reported for the changes.",
-  "headline_metric": null,
+  "headline_metric": "Dropped habit as metric",
   "attribution": "Direct for the strategy change: the post's 'Our research impact' section ties it to the interviews.",
   "caveats": "Small qualitative sample (11 people). Mozilla's own blog. No outcome data.",
   "methods": [
@@ -3024,7 +3024,7 @@
   "insight": "Screenshots were the dominant tool for keeping wish lists, promotions, shopping history and more, because apps beat websites on experience and price and patchy, costly data made an offline image more reliable than a link. People then struggled to find the right screenshot among countless images and couldn't act on the information in it.",
   "change": "The team shaped the product around screenshots instead of a wish list: Firefox ScreenshotGo, an Android app to capture and organise screenshots and get back to related content online, released in the Indonesian Google Play store.",
   "outcome": "The product direction changed and an app shipped in Indonesia. The post reports no adoption or usage numbers.",
-  "headline_metric": null,
+  "headline_metric": "Built ScreenshotGo",
   "attribution": "Direct for the pivot: the post says the screenshot finding was 'out of our expectation' and that the validated findings shaped ScreenshotGo's blueprint.",
   "caveats": "Written by the team's designer. No outcome data, and the post doesn't say how the app performed. Small field sample (eight people). 2018.",
   "methods": [
@@ -3062,7 +3062,7 @@
   "insight": "Participants naturally described their tabs by time and found the chronological order helpful, especially for recent tabs. They wanted to delete single tabs and batches easily. In real use, the combination of thumbnail, title, URL and date stamp jogged people's memory of unfinished tasks. Missing thumbnails and enlarged system text (truncating titles) broke the design.",
   "change": "After the first round the team added dates to 'Today' and 'Yesterday', renamed 'Older' to 'Last Week', and made tab deletion easier to reach. After the diary study it prioritised fixing thumbnail loading, and planned research on Android, tablet and desktop plus accessibility work for large text.",
   "outcome": "Design changes and a further research plan. No usage metrics are reported.",
-  "headline_metric": null,
+  "headline_metric": "Added date labels to tabs",
   "attribution": "Direct: each design change is described as coming from a specific research round.",
   "caveats": "Small samples. The post describes a feature still in beta, with no shipped outcome data. Mozilla's own blog.",
   "methods": [
@@ -3100,7 +3100,7 @@
   "insight": "Hosts wanted the reliability of a professional, trusted brand together with the personal attention, local knowledge and entrepreneurial drive of an individual host, and saw property management companies as too volume-focused. The Tokyo pilot confirmed that nearby co-hosts with local expertise and a personal connection were the most wanted, and helped shape messaging, pricing and packaging.",
   "change": "Airbnb built Co-hosting as a marketplace connecting hosts with nearby co-hosts from its own community, with search by location and profiles highlighting each co-host's approach and expertise, instead of a professional service or partner directory.",
   "outcome": "The post says inquiries for hosting services went from a trickle to 'a torrent' before co-hosting was promoted or deeply integrated into the main product. No numbers are given, and the author says it is still early.",
-  "headline_metric": null,
+  "headline_metric": "Hosting inquiries up",
   "attribution": "Direct for the choice of model: the post ties it to the concept-test feedback and the Tokyo pilot. The demand claim follows the launch but isn't isolated from other factors.",
   "caveats": "Airbnb's own design blog, written by the lead designer. No figures. Published in 2016, when the service was still in pilot cities.",
   "methods": [
@@ -3140,7 +3140,7 @@
   "insight": "Drivers didn't understand how cash service fees worked. In testing, many tapped briskly through the steps without reading, reached the 'pending' screen and assumed they had paid, even though they had never gone to a convenience store. Some said they would phone support straight away to ask why the payment was still processing.",
   "change": "The team built an in-app collection flow giving drivers control over when and how much to pay, with step-by-step instructions, information before the flow, contextual help on first use, and the ability to restart, cancel, or see their payment code from the 'pending' screen. Copy was localised with local help rather than translated at the end.",
   "outcome": "The redesigned flow went on to be released in several markets, including Mexico, Brazil, India and Japan. No metrics are given.",
-  "headline_metric": null,
+  "headline_metric": "Rebuilt cash fee flow",
   "attribution": "Direct for the design changes: the post traces the restart and code-access features to the specific failure seen in prototype tests.",
   "caveats": "Uber's design blog, written by the product designer. No numbers on payment completion or support calls. Exact research dates not given.",
   "methods": [
@@ -3180,7 +3180,7 @@
   "insight": "'Improving listings' is a key job suppliers want to get done on Wayfair and is highly underserved. Needs also differ by company size, headquarters location and whether a supplier is a distributor or manufacturer.",
   "change": "'Build the Best Listing', focused on the product-addition experience, was prioritised in the H2 2022 Global Supplier Technology roadmap over new features. The segmentation is used to send new suppliers personalised communications.",
   "outcome": "A roadmap decision and a supplier experience vision. The author says the segmentation helped improve supplier satisfaction and loyalty, especially among smaller businesses, but gives no figures.",
-  "headline_metric": null,
+  "headline_metric": "Put listings on roadmap",
   "attribution": "Direct for the roadmap priority, which the post attributes to the research finding. The satisfaction claim is unsupported by data in the post.",
   "caveats": "Written by Wayfair's user research lead for the area. No outcome metrics. The listing work's results aren't reported.",
   "methods": [
@@ -3218,7 +3218,7 @@
   "insight": "Many new users were senior citizens, or relatives ordering for them, who chose Instacart as the safer option. Customers wanted an option for a fully contactless drop-off. New customers called the support line instead of using self-help, and the help centre didn't let them solve problems directly.",
   "change": "Instacart launched a Senior Support Service (high-touch support for customers over 60), rolled out contactless delivery across the board, and redesigned the help centre to link people to pages where they can fix issues themselves.",
   "outcome": "Features launched. The post reports no metrics for them.",
-  "headline_metric": null,
+  "headline_metric": "Added senior support line",
   "attribution": "The research manager says the Senior Support Service was 'one example of a feature launch based on these insights'. Contactless delivery was also an industry-wide pandemic response, so research was one input among many.",
   "caveats": "Instacart's own design blog. Methods are described only at a high level. Pandemic conditions pushed every delivery company the same way.",
   "methods": [
@@ -3299,7 +3299,7 @@
   "insight": "Riders navigated in many ways (memorising routes, voice guidance, listening to passengers, phones stuck to the speedometer). Shortcuts and landmarks made navigation faster and safer. Car routes and arrival times were wrong for bikes, and drivers relied on each other as a community when lost.",
   "change": "Google launched two-wheeler mode on Android in India and Indonesia (named 'two-wheeler' in India and 'motor' in Indonesia to match local usage), with two-wheeler routes and shortcuts, arrival times, more landmarks and improved voice navigation in more languages. Design principles from the fieldwork also guided other Maps improvements in both countries.",
   "outcome": "A new transport mode shipped. The post gives no usage or accuracy figures.",
-  "headline_metric": null,
+  "headline_metric": "Built a two-wheeler mode",
   "attribution": "Strong: the authors credit the field research with defining the product, and local testers caught unsuitable roads and missing landmarks.",
   "caveats": "Written by the Google researcher and designer involved. No metrics. The market need may have been visible from data too; the post doesn't compare.",
   "methods": [
@@ -3376,7 +3376,7 @@
   "insight": "The top validated problem was helping people sell their old phone quickly so they could put the money toward a new one. After launch, users wanted a shorter purchase journey and more accurate price indications.",
   "change": "Tokopedia built Tukar Tambah: choose a new phone, let the app scan the old phone and estimate its value in rupiah, pay the difference, and a courier delivers the new phone and collects the old one. After the evaluation research the team shortened the purchase journey and worked on pricing accuracy.",
   "outcome": "The author says purchase completion rose 'significantly' in the first two quarters after launch, and the number of trade-ins kept growing as the feature expanded. No figures are given.",
-  "headline_metric": null,
+  "headline_metric": "Purchase completion up",
   "attribution": "Moderate. The post links the improvements to research feedback, but completion gains in the first months after a launch have many possible causes.",
   "caveats": "Written by a Tokopedia researcher as an argument for research. No numbers, no control. Dates of the work aren't given.",
   "methods": [
@@ -3452,7 +3452,7 @@
   "insight": "Many users barely navigate inside GitLab because they arrive via links from Slack, email and other tools. Their work is narrowly scoped, so they wanted quick access to a few core features, and they used workarounds such as bookmarks and open tabs. Card sorts showed people wanted analytics items grouped together.",
   "change": "GitLab stopped pursuing its earlier proposed fixes and built a new navigation around three themes from the feedback (less overwhelm, better orientation, picking up where you left off). It added pinning, task-based sidebar categories and a new Analyze section, and shipped with an on/off toggle.",
   "outcome": "Participants in the longitudinal study found the new navigation an improvement and preferred its features, especially pinning and the task-based sidebar. They also raised problems, such as not being able to pin whole projects and unpinning items by accident. No usage or satisfaction numbers are given.",
-  "headline_metric": null,
+  "headline_metric": "Rebuilt nav with pinning",
   "attribution": "Strong for the decisions: the posts trace the abandoned fixes, the pinning feature and the sidebar groupings to specific studies. The outcome is qualitative.",
   "caveats": "Company blog posts with no numbers on adoption or satisfaction; a quarterly navigation survey was set up but results are not reported. Community reaction to redesigns is mixed and not covered here.",
   "methods": [
@@ -3500,7 +3500,7 @@
   "insight": "Learners wanted to know which mistakes they had made in past lessons and to practise their 'weak areas'. One learner described repeatedly forgetting verb forms for a tense.",
   "change": "Duolingo built the Practice Hub, a subscription feature that gathers past mistakes for targeted practice and adds speaking and listening practice.",
   "outcome": "The feature shipped as part of Duolingo's paid tier. No usage, retention or revenue figures are given.",
-  "headline_metric": null,
+  "headline_metric": "Built the Practice Hub",
   "attribution": "The company names the research as 'the inspiration' for the feature. How much the interviews shaped the final design is not described.",
   "caveats": "A short example inside a general post written for learners, not a case study. No metrics. The feature also sits behind a paywall, so the company had a commercial reason to build it.",
   "methods": [
@@ -3576,7 +3576,7 @@
   "insight": "The floating panels hindered people who spend many hours a day in Figma: they cramped the canvas, especially on small screens, designs peeked out distractingly behind them, rulers sat further from the work, and they slowed people down. A dropdown for 'clip content' also added a click that slowed workflows.",
   "change": "For the October 2024 full rollout, the navigation and properties panels became fixed (but resizable). Clip content went back to a checkbox, and constraints were expanded by default. Floating panels stayed only in Minimize UI, Figma Slides grid view and FigJam.",
   "outcome": "A core design decision was reversed before general release. No metrics are shared.",
-  "headline_metric": null,
+  "headline_metric": "Re-docked the panels",
   "attribution": "Clear that beta feedback and data drove the reversal ('the nail in the coffin was learning that they slowed people down'). The evidence came from a beta rather than planned research.",
   "caveats": "Evidence is beta feedback and product analytics rather than structured research, and no numbers are given. Company blog post; heavy public criticism of the floating panels on Figma's forum was likely also a factor.",
   "methods": [
@@ -3614,7 +3614,7 @@
   "insight": "Early concepts felt overwhelming and confusing. Customers wanted to choose what appears on their home screen. Interrupting people with the new design while they were trying to do a task went badly.",
   "change": "Monzo built customisation into the new home screen, kept core jobs (balances, card details, transaction search) prominent, and let customers snooze the upgrade and be prompted later.",
   "outcome": "The new home screen rolled out to more than 8 million customers. No outcome metrics are shared.",
-  "headline_metric": null,
+  "headline_metric": "Added home customisation",
   "attribution": "The user researcher names customisation as a direct result of research. No outcome data is linked to it.",
   "caveats": "Short company post with quotes from team members; methods, sample breakdowns and experiment results are not given.",
   "methods": [
@@ -3654,7 +3654,7 @@
   "insight": "Without breaks, beta-wave activity (associated with stress) kept building and spiked at transitions between meetings, and frontal alpha asymmetry suggested people were less engaged. With breaks, stress stayed level and engagement was higher.",
   "change": "Microsoft promoted Outlook settings that shave 5, 10 or 15 minutes off meetings, and added organisation-wide defaults so a company can build in breaks for everyone.",
   "outcome": "The settings shipped for individuals and organisations in 2021. No data on adoption or effect on wellbeing is given.",
-  "headline_metric": null,
+  "headline_metric": "Built breaks into Outlook",
   "attribution": "Microsoft says the findings 'helped inform' the settings. Adjustable meeting lengths may have been in the works anyway; the study mainly justified and publicised them.",
   "caveats": "Very small sample (14), lab setting, and EEG proxies for stress and engagement. Published as a marketing-led Work Trend Index piece. No measure of whether the product change reduced fatigue.",
   "methods": [
@@ -3690,7 +3690,7 @@
   "insight": "Support confirmed customers got lost and filed cases about finding apps. In testing, an object-based layout was most intuitive, and none of the participants, even customers who had embraced inbound marketing, organised the apps by the methodology.",
   "change": "HubSpot replaced the methodology-based menu with an object-based navigation, released first to beta customers and then to all users.",
   "outcome": "The post was written at beta launch. It expected fewer support cases about finding apps but reports no results.",
-  "headline_metric": null,
+  "headline_metric": "Switched to object nav",
   "attribution": "Strong for the decision: the post credits the tests with settling a long internal debate. No outcome data.",
   "caveats": "Very small samples (four customers in the card sort, six people in the usability test). Old (2012). No follow-up numbers were published in this post. Company blog.",
   "methods": [
@@ -3729,7 +3729,7 @@
   "insight": "Many users never noticed that filtering was possible, and saving views, sorting and adding columns were rarely found. Related controls, like search and filters, sat far apart. Usage data showed users who save and revisit a view have 16% higher week-12 retention, yet only 5% of new users touched saved views in their first month and only 15% of daily users saved one.",
   "change": "The redesigned table view added tabs for saved views, quick filters based on the most-used properties, and column editing on the main screen. The board view got its own layout with pipeline and saved-view toggles up front.",
   "outcome": "Released as an opt-in experience in 2020. No post-launch results are reported.",
-  "headline_metric": null,
+  "headline_metric": "Added saved-view tabs",
   "attribution": "The post ties each design change to a usability or analytics finding. There is no outcome data.",
   "caveats": "Company product blog with an opt-in launch and no reported results. The 16% retention link for saved views is correlational. Usability study sample sizes are not given.",
   "methods": [
@@ -3771,7 +3771,7 @@
   "insight": "Customisation was a big reason people love Adobe's desktop tools, and keyboard shortcuts are central to fast work, but few iPad artists use keyboards. Testers said Fresco felt a little slow. Very few noticed tool options placed directly below the tool, while floating options were easy to find but took canvas space.",
   "change": "Adobe built Fresco as a new app combining pixels and vectors, with a customisable app frame. It added a Touch Shortcut that temporarily changes the current tool's action, and docked tool options at the bottom of the toolbar with the option to drag them anywhere. Some early experiences were reworked after poor test results.",
   "outcome": "Fresco launched in 2019 and kept evolving with monthly releases. No usage or business metrics are given.",
-  "headline_metric": null,
+  "headline_metric": "Built Fresco instead",
   "attribution": "The article says the decision to create Fresco 'grew from extensive user research' and links specific features to test findings. No outcome data.",
   "caveats": "Promotional company article timed with product updates. Adobe also had strategic reasons (competing on iPad) that the article does not weigh. No metrics.",
   "methods": [
@@ -4243,7 +4243,7 @@
   "insight": "Most respondents linked the green lock with security, but many had no idea what the plain HTTP icon meant, and many wrongly thought HTTPS guaranteed a site was trustworthy. Shape alone needed to signal risk for colour-blind users, and words were needed to teach meaning.",
   "change": "Google selected three indicators: a lock with 'Secure' for HTTPS, and 'Not secure' with neutral and red-triangle icons for HTTP and broken HTTPS. Chrome adopted them in Chrome 53, rolling out 'Not secure' for HTTP gradually to avoid alarming people.",
   "outcome": "The paper reports the proposed indicators were adopted by Google Chrome. No post-launch comprehension or behaviour metrics are given.",
-  "headline_metric": null,
+  "headline_metric": "Added 'Not secure' label",
   "attribution": "Direct. The paper documents the research and states Chrome adopted the indicators it selected.",
   "caveats": "Decision only: no measured outcome after launch. Survey respondents were tech-savvy extension users and Google Consumer Surveys panels, and the indicators were not yet tested in countries with many new internet users. Authors are Google employees.",
   "methods": [
@@ -4734,7 +4734,7 @@
   "insight": "People wanted to be treated with dignity and respect, not just processed; transferring benefits must not disrupt payments or require re-applying; the language of 'assessment' and 'assessor' was intimidating; and even brown envelopes caused anxiety because of what they had come to signal.",
   "change": "The case transfer policy guaranteed no one would need to re-apply; the agency's Charter was co-designed with panel members; Adult Disability Payment processes used 'client consultation' and 'practitioner' instead of 'assessment' and 'assessor'; letters moved from brown to white envelopes; tone-of-voice, branding, buildings, telephony greetings, opening hours and local delivery venues were shaped by panel input.",
   "outcome": "The government's legacy report documents these decisions as directly informed by panel research and concludes the panels achieved their purpose of helping design and deliver the new benefits. No outcome metrics are attached to the individual decisions.",
-  "headline_metric": null,
+  "headline_metric": "Guaranteed no re-applying",
   "attribution": "Direct for the listed decisions, which the report traces to specific panel findings. Whether they improved client outcomes is not measured here.",
   "caveats": "Self-assessment by the Scottish Government of its own programme, partly based on interviews with its own staff. No comparison with outcomes under the UK system. Panel members self-selected.",
   "methods": [

@@ -96,7 +96,7 @@
     "insight": "Perfect automatic capture isn't achievable for something this subjective. Users needed a sense of authorship and control. The team's own enthusiasm for futuristic, gesture-heavy interfaces had hidden how complex they would be for real users. Teaching the model what to ignore (fingers over lens, blur, inside a pocket) mattered as much as what to capture.",
     "change": "Added a hardware capture button and a software viewfinder; let users choose the still frame and clip length; simplified the UI; had the camera slightly over-deliver clips so users could delete and learn what it looks for; kept processing on-device.",
     "outcome": "No metric reported. The research changed core product decisions about user control and interface design.",
-    "headline_metric": null,
+    "headline_metric": "Added a shutter button",
     "attribution": "The design lead attributes the control features and simplified UI directly to the human-centered research process.",
     "caveats": "No outcome metric. Google Clips was discontinued in 2019, so these decisions did not make it a commercial success. Account is first-party (Google Design) plus press coverage of it.",
     "methods": [
@@ -238,7 +238,7 @@
     "insight": "Many disabled gamers open packaging with their teeth and wanted that never to be necessary. People preferred more simple steps over fewer complicated ones. Small circular loops were hard to grip; perforated edges caused paper cuts; plastic covers were frustrating.",
     "change": "Loops on the outer tape, inner box, quick-start guide and cable wrap; loops made oval after a tester without fingers on one hand struggled with circles; hinged inner box; front-open pulp tray; no twist ties or plastic; box adjusted so the controller's big buttons don't get pressed in transit.",
     "outcome": "Testers reported the box was easy to open. Microsoft described it as its first packaging designed specifically for accessibility and said it was discussing applying the lessons to future products. No metric reported.",
-    "headline_metric": null,
+    "headline_metric": "Built one-hand packaging",
     "attribution": "Direct: Microsoft names specific features that came from specific participant feedback.",
     "caveats": "First-party feature story; no quantitative outcome. Small number of testers. Promotional context around a product launch.",
     "methods": [
@@ -317,7 +317,7 @@
     "insight": "People budget data carefully and avoid anything with unknown cost; they 'peek' at videos before committing; they share videos offline via SD cards and sideloading; they download ahead for offline times; and they want locally relevant content. Participants rejected a low-res keyframes-plus-audio concept because they still wanted good video quality.",
     "change": "Built YouTube Go with data cost on every video in the feed, a preview showing keyframes and file size, a choice of quality levels with sizes (e.g. 2MB / 5MB / 12MB), offline peer-to-peer sharing, offline as a normal state, and local trending content. Dropped the keyframe-plus-audio concept.",
     "outcome": "No metric published. The research defined the product and killed an early concept; the app launched in India and other markets in 2017.",
-    "headline_metric": null,
+    "headline_metric": "Showed data cost upfront",
     "attribution": "Direct: Google ties each core feature to a research finding.",
     "caveats": "First-party design story with no sample size or outcome metrics. YouTube Go was later discontinued (2022) in favor of the main app, so its long-term success is unclear.",
     "methods": [
@@ -393,7 +393,7 @@
     "insight": "Many owners prefer a traditional gear lever over dials or buttons; they eat lunch and do paperwork in the cab like a mobile office; some nap or sleep overnight in the cab at job sites; and the bed is used as a work surface.",
     "change": "A physical shift lever that folds away to free console space; an available fold-out work surface big enough for a laptop; Max Recline near-flat seats; an available tailgate workbench with tablet holder and clamping points.",
     "outcome": "No metric reported. The research shaped specific interior and tailgate features in the 2021 F-150.",
-    "headline_metric": null,
+    "headline_metric": "Added fold-away shifter",
     "attribution": "Trade-press article paraphrasing Ford's chief designer, who links each feature to field findings.",
     "caveats": "No sales or satisfaction data tied to the features. Secondary account of a conference presentation, with no direct quotes. Number of participants not stated.",
     "methods": [
@@ -430,7 +430,7 @@
     "insight": "Around 10% of rides were for someone else, a large hidden use case, and identity confusion between requester, rider and driver was the main pain point.",
     "change": "Built a flow to request a ride for another person with the rider's own details. Testing showed an early design sent about 30 notifications to requester and rider; the team cut these to key moments.",
     "outcome": "No post-launch metrics reported. Research sized the opportunity and drove the decision to build the feature and to trim its notifications.",
-    "headline_metric": null,
+    "headline_metric": "Built ride-for-others",
     "attribution": "The designer describes the research and data as the basis for prioritizing the feature and for the notification changes.",
     "caveats": "No outcome numbers despite baseline problems (cancellations, pickup time) being named. Interview with the designer in Lyft's own 'Behind the Design' series, republished by UX Magazine.",
     "methods": [
@@ -469,7 +469,7 @@
     "insight": "Riders wanted to understand the car's choices, especially when a route differed from what they expected and where the car would pull over at the destination.",
     "change": "Added messaging in the Waymo app and on the in-car screen to explain when a route may differ from what a rider expects, and more specific expectations about where the car will pull over at the end of a trip.",
     "outcome": "No metric reported. Waymo lists these as changes deployed based on rider feedback.",
-    "headline_metric": null,
+    "headline_metric": "Explained route changes",
     "attribution": "Waymo explicitly names these changes as resulting from rider feedback gathered through its research program.",
     "caveats": "First-party blog with no numbers, sample sizes or before/after data. Changes described are modest. Promotional context around opening the driverless service to the public.",
     "methods": [
@@ -508,7 +508,7 @@
     "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
     "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
     "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
-    "headline_metric": null,
+    "headline_metric": "60+ accessibility options",
     "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
     "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
     "methods": [
@@ -547,7 +547,7 @@
     "insight": "Not seeing like counts was beneficial for some people and annoying to others, who use likes to see what's trending or popular.",
     "change": "Rather than removing like counts globally, Instagram and Facebook let people choose to hide like counts on posts in their feed and on their own posts (May 2021).",
     "outcome": "No metric reported. The research changed the decision from a blanket removal to an optional setting.",
-    "headline_metric": null,
+    "headline_metric": "Made like counts optional",
     "attribution": "Instagram attributes the opt-in approach to what it heard during testing from people and experts.",
     "caveats": "Primarily product testing plus feedback; Instagram has not published the research. Critics noted the outcome also preserved engagement metrics advertisers value. No well-being outcome data shared.",
     "methods": [
@@ -592,7 +592,7 @@
     "insight": "The model could make basic errors with 'misleading matter-of-fact confidence' (one tester: it 'very confidently told me there was an item on a menu that was in fact not there'). Testers repeatedly said they wanted to know the facial and visible characteristics of people around them, information sighted people get at a glance.",
     "change": "Be My Eyes warns users not to rely on the AI for safety or health tasks (prescriptions, allergens, crossing streets) or as a replacement for a cane or guide dog; added an option to leave the AI and connect immediately to a human volunteer; and is designing ways to describe features of people without identifying them by name.",
     "outcome": "OpenAI reports that hallucinations and errors noticeably fell in frequency and severity over the beta, and testers noticed better text recognition and richer descriptions. No figures given.",
-    "headline_metric": null,
+    "headline_metric": "Added human fallback",
     "attribution": "The system card ties the warnings, fallback and face-description work directly to issues raised by beta testers.",
     "caveats": "Beta testing and feedback rather than a structured study; no metrics. Source is OpenAI's own system card, written as part of a launch. Improvements in hallucination may be due to model work rather than the research itself.",
     "methods": [
@@ -631,7 +631,7 @@
     "insight": "Users needed live guidance while framing, not just the camera's location. Blind and low-vision users valued automatic capture (not having to find the shutter), even though sighted users generally dislike it. Users also wanted it for group photos.",
     "change": "Built voice instructions telling users whether they are left, right or centered; combined audio cues, haptics and high-contrast visuals; made the camera capture automatically once the face is centered; extended support to group photos.",
     "outcome": "No metric reported. Testing changed the core interaction and scope of the feature.",
-    "headline_metric": null,
+    "headline_metric": "Added live voice guidance",
     "attribution": "Google states the early study showed the team had been focused on the wrong solution, and that testing feedback set the final mix of cues and auto-capture.",
     "caveats": "Small, partly internal sample (three blind Googlers in the first study); first-party blog with no outcome data.",
     "methods": [
@@ -710,7 +710,7 @@
     "insight": "Each reaction had to be 'extremely easily recognizable' everywhere; some candidates, like 'Yay', didn't get used in some countries.",
     "change": "Launched five reactions alongside Like (Love, Haha, Wow, Sad, Angry), dropped 'Yay', and kept the same set and near-identical translations worldwide.",
     "outcome": "No usage or outcome numbers in the source. Research shaped which reactions shipped and killed one.",
-    "headline_metric": null,
+    "headline_metric": "Picked five, dropped Yay",
     "attribution": "The article links the chosen set to Keltner's recognition research and the multi-country tests, and the dropped 'Yay' directly to test results.",
     "caveats": "Journalism based on interviews with Facebook and Keltner; methods of the country tests aren't described. No outcome data. 2016.",
     "methods": [

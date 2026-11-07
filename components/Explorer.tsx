@@ -1,14 +1,16 @@
 "use client";
 
-import { useMemo, useState, useEffect, useCallback } from "react";
+import { useMemo, useState, useEffect, useCallback, useRef } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { Entry } from "@/lib/types";
-import { FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
+import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
 
 type Selected = Partial<Record<FacetKey, string[]>>;
 
 const EVIDENCE_RANK: Record<string, number> = { tested: 0, measured: 1, reported: 2, decision: 3 };
+// Evidence has its own bar above the results; the sidebar carries the rest.
+const SIDEBAR_FACETS = FACETS.filter((f) => f.key !== "evidence_strength");
 
 function entryValues(e: Entry, key: FacetKey): string[] {
   const v = e[key as keyof Entry];
@@ -35,10 +37,13 @@ function haystack(e: Entry): string {
     .toLowerCase();
 }
 
+const plural = (n: number) => `${n} ${n === 1 ? "receipt" : "receipts"}`;
+
 export default function Explorer({ entries }: { entries: Entry[] }) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
+  const sheetRef = useRef<HTMLDialogElement>(null);
 
   const initial = useMemo(() => {
     const sel: Selected = {};
@@ -53,7 +58,6 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const [selected, setSelected] = useState<Selected>(initial.sel);
   const [q, setQ] = useState(initial.q);
   const [sort, setSort] = useState(initial.sort);
-  const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
   // keep URL shareable
@@ -71,18 +75,22 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
   const searchIndex = useMemo(() => new Map(entries.map((e) => [e.slug, haystack(e)])), [entries]);
 
-  const textMatched = useMemo(() => {
-    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
-    if (!terms.length) return entries;
-    return entries.filter((e) => {
-      const h = searchIndex.get(e.slug) ?? "";
-      return terms.every((t) => h.includes(t));
-    });
-  }, [entries, q, searchIndex]);
+  const searchFilter = useCallback(
+    (query: string) => {
+      const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!terms.length) return entries;
+      return entries.filter((e) => {
+        const h = searchIndex.get(e.slug) ?? "";
+        return terms.every((t) => h.includes(t));
+      });
+    },
+    [entries, searchIndex],
+  );
+
+  const textMatched = useMemo(() => searchFilter(q), [searchFilter, q]);
 
   const results = useMemo(() => {
-    const r = textMatched.filter((e) => matches(e, selected));
-    const sorted = [...r];
+    const sorted = textMatched.filter((e) => matches(e, selected));
     if (sort === "evidence") {
       sorted.sort(
         (a, b) =>
@@ -120,133 +128,273 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
   const activeChips = FACETS.flatMap((f) => (selected[f.key] ?? []).map((v) => ({ key: f.key, value: v })));
   const activeCount = activeChips.length;
+  const sidebarActive = activeChips.filter((c) => c.key !== "evidence_strength").length;
+
+  // Empty state: what would each single removal give back?
+  const recoveries = useMemo(() => {
+    if (results.length) return [];
+    const out: { label: string; n: number; apply: () => void }[] = [];
+    for (const { key, value } of activeChips) {
+      const without: Selected = { ...selected, [key]: (selected[key] ?? []).filter((v) => v !== value) };
+      const n = textMatched.filter((e) => matches(e, without)).length;
+      if (n > 0) out.push({ label: `Remove “${labelFor(key, value)}”`, n, apply: () => toggle(key, value) });
+    }
+    if (q.trim()) {
+      const n = entries.filter((e) => matches(e, selected)).length;
+      if (n > 0) out.push({ label: `Clear search “${q.trim()}”`, n, apply: () => setQ("") });
+    }
+    return out.sort((a, b) => b.n - a.n).slice(0, 3);
+  }, [results.length, activeChips, selected, textMatched, q, entries, toggle]);
+
+  const groups = useMemo(() => {
+    if (sort !== "evidence") return null;
+    return EVIDENCE.map((ev) => ({ ev, items: results.filter((e) => e.evidence_strength === ev.value) })).filter(
+      (g) => g.items.length,
+    );
+  }, [results, sort]);
+
+  const openSheet = () => sheetRef.current?.showModal();
+  const closeSheet = () => sheetRef.current?.close();
+
+  const facetList = (idPrefix: string) =>
+    SIDEBAR_FACETS.map((f) => {
+      const c = counts[f.key] ?? {};
+      const opts = f.options.filter((o) => (c[o.value] ?? 0) > 0 || (selected[f.key] ?? []).includes(o.value));
+      if (!opts.length) return null;
+      const limit = 6;
+      const isExpanded = expanded[f.key];
+      const shown = isExpanded ? opts : opts.slice(0, limit);
+      return (
+        <fieldset key={f.key} className="facet">
+          <legend className="facet-h">{f.label}</legend>
+          {shown.map((o) => {
+            const n = c[o.value] ?? 0;
+            const checked = (selected[f.key] ?? []).includes(o.value);
+            const id = `${idPrefix}-${f.key}-${o.value}`;
+            return (
+              <div key={o.value} className="facet-opt" data-empty={n === 0 && !checked}>
+                <input id={id} type="checkbox" checked={checked} onChange={() => toggle(f.key, o.value)} />
+                <label htmlFor={id}>{o.label}</label>
+                <span className="count" aria-label={`${n} receipts`}>
+                  {n}
+                </span>
+              </div>
+            );
+          })}
+          {opts.length > limit && (
+            <button
+              type="button"
+              className="text-btn"
+              aria-expanded={!!isExpanded}
+              onClick={() => setExpanded((x) => ({ ...x, [f.key]: !isExpanded }))}
+            >
+              {isExpanded ? "Show fewer" : `Show all ${opts.length}`}
+            </button>
+          )}
+        </fieldset>
+      );
+    });
+
+  const evSelected = selected.evidence_strength ?? [];
 
   return (
-    <div className="explorer">
-      <aside className="filters" aria-label="Filters">
-        <button
-          type="button"
-          className="btn secondary filters-toggle"
-          aria-expanded={open}
-          aria-controls="filters-body"
-          onClick={() => setOpen((o) => !o)}
-        >
-          {open ? "Hide filters" : `Filters${activeCount ? ` (${activeCount})` : ""}`}
-        </button>
-        <div id="filters-body" className="filters-body" data-open={open}>
-          {FACETS.map((f) => {
-            const c = counts[f.key] ?? {};
-            const opts = f.options.filter((o) => (c[o.value] ?? 0) > 0 || (selected[f.key] ?? []).includes(o.value));
-            if (!opts.length) return null;
-            // show options with results first, keep taxonomy order otherwise
-            const limit = 6;
-            const isExpanded = expanded[f.key];
-            const shown = isExpanded ? opts : opts.slice(0, limit);
+    <>
+      <section className="evidence-bar" aria-labelledby="evidence-h">
+        <div className="evidence-bar-head">
+          <h2 id="evidence-h">How strong is the evidence?</h2>
+          <a href="/about" className="text-link">
+            How we rate
+          </a>
+        </div>
+        <div className="evidence-opts">
+          {EVIDENCE.map((ev) => {
+            const n = counts.evidence_strength?.[ev.value] ?? 0;
+            const on = evSelected.includes(ev.value);
             return (
-              <fieldset key={f.key} className="facet" style={{ border: "none", margin: 0, padding: undefined }}>
-                <legend className="visually-hidden">{f.label}</legend>
-                <h3 aria-hidden="true">{f.label}</h3>
-                {shown.map((o) => {
-                  const n = c[o.value] ?? 0;
-                  const checked = (selected[f.key] ?? []).includes(o.value);
-                  return (
-                    <label key={o.value} className="facet-opt" data-empty={n === 0 && !checked} title={o.description}>
-                      <input type="checkbox" checked={checked} onChange={() => toggle(f.key, o.value)} />
-                      <span>{o.label}</span>
-                      <span className="count">{n}</span>
-                    </label>
-                  );
-                })}
-                {opts.length > limit && (
-                  <button
-                    type="button"
-                    className="facet-more"
-                    onClick={() => setExpanded((x) => ({ ...x, [f.key]: !isExpanded }))}
-                  >
-                    {isExpanded ? "Show fewer" : `Show all ${opts.length}`}
-                  </button>
-                )}
-              </fieldset>
+              <button
+                key={ev.value}
+                type="button"
+                className={`evidence-opt ev-tone-${ev.value}`}
+                aria-pressed={on}
+                disabled={n === 0 && !on}
+                onClick={() => toggle("evidence_strength", ev.value)}
+              >
+                <span className="evidence-opt-top">
+                  <span className={`ev ev-${ev.value}`}>{ev.label}</span>
+                  <span className="evidence-opt-n">{n}</span>
+                </span>
+                <span className="evidence-opt-def">{ev.short}</span>
+              </button>
             );
           })}
         </div>
-      </aside>
+      </section>
 
-      <section aria-label="Results">
-        <div className="toolbar">
-          <label htmlFor="q" className="visually-hidden">
-            Search
-          </label>
-          <input
-            id="q"
-            className="search"
-            type="search"
-            placeholder="Search companies, methods, outcomes…"
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-          />
-          <label htmlFor="sort" className="visually-hidden">
-            Sort
-          </label>
-          <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
-            <option value="evidence">Strongest evidence first</option>
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="added">Recently added</option>
-          </select>
-          <button
-            type="button"
-            className="btn secondary lucky"
-            disabled={results.length === 0}
-            onClick={() => {
-              const pick = results[Math.floor(Math.random() * results.length)];
-              if (pick) router.push(`/entries/${pick.slug}`);
-            }}
-            title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
-          >
-            I&rsquo;m Feeling Lucky
-          </button>
-        </div>
+      <div className="explorer">
+        <aside className="filters" aria-label="Filters">
+          <a href="#results" className="skip-inline">
+            Skip filters
+          </a>
+          {facetList("side")}
+        </aside>
 
-        {activeCount > 0 && (
-          <div className="active-filters">
-            {activeChips.map(({ key, value }) => (
-              <button
-                key={`${key}:${value}`}
-                type="button"
-                className="chip"
-                onClick={() => toggle(key, value)}
-                aria-label={`Remove filter ${labelFor(key, value)}`}
-              >
-                {labelFor(key, value)} <span aria-hidden="true">×</span>
-              </button>
-            ))}
-            <button type="button" className="facet-more" onClick={() => setSelected({})}>
-              Clear all
+        <section id="results" className="results" aria-labelledby="results-h" tabIndex={-1}>
+          <h2 id="results-h" className="visually-hidden">
+            Results
+          </h2>
+          <div className="toolbar">
+            <label htmlFor="q" className="visually-hidden">
+              Search
+            </label>
+            <input
+              id="q"
+              className="search"
+              type="search"
+              placeholder="Search companies, methods, outcomes…"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
+            <button type="button" className="btn secondary filters-toggle" onClick={openSheet}>
+              Filters{sidebarActive ? ` (${sidebarActive})` : ""}
+            </button>
+            <label htmlFor="sort" className="visually-hidden">
+              Sort
+            </label>
+            <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
+              <option value="evidence">Strongest evidence first</option>
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="added">Recently added</option>
+            </select>
+            <button
+              type="button"
+              className="btn secondary lucky"
+              disabled={results.length === 0}
+              onClick={() => {
+                const pick = results[Math.floor(Math.random() * results.length)];
+                if (pick) router.push(`/entries/${pick.slug}`);
+              }}
+              title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
+            >
+              I&rsquo;m Feeling Lucky
             </button>
           </div>
-        )}
 
-        <p className="result-count" aria-live="polite">
-          {results.length} {results.length === 1 ? "receipt" : "receipts"}
-        </p>
+          {activeCount > 0 && (
+            <div className="active-filters">
+              {activeChips.map(({ key, value }) => (
+                <button
+                  key={`${key}:${value}`}
+                  type="button"
+                  className="chip"
+                  onClick={() => toggle(key, value)}
+                  aria-label={`Remove filter ${labelFor(key, value)}`}
+                >
+                  {labelFor(key, value)} <span aria-hidden="true">×</span>
+                </button>
+              ))}
+              <button type="button" className="text-btn" onClick={() => setSelected({})}>
+                Clear all
+              </button>
+            </div>
+          )}
 
-        {results.length ? (
-          <div className="grid">
-            {results.map((e) => (
-              <EntryCard key={e.slug} entry={e} />
-            ))}
+          <p className="result-count" aria-live="polite">
+            {activeCount || q.trim() ? `${plural(results.length)} match` : `All ${plural(results.length)}`}
+          </p>
+
+          {results.length === 0 ? (
+            <div className="empty">
+              <p className="empty-h">
+                No receipts match{" "}
+                {[...activeChips.map((c) => labelFor(c.key, c.value)), ...(q.trim() ? [`“${q.trim()}”`] : [])].join(
+                  " + ",
+                )}
+                .
+              </p>
+              {recoveries.length > 0 && (
+                <div className="empty-actions">
+                  {recoveries.map((r) => (
+                    <button key={r.label} type="button" className="btn secondary" onClick={r.apply}>
+                      {r.label} <span className="empty-n">→ {plural(r.n)}</span>
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    className="text-btn"
+                    onClick={() => {
+                      setSelected({});
+                      setQ("");
+                    }}
+                  >
+                    Clear everything
+                  </button>
+                </div>
+              )}
+              <p className="empty-sub">
+                Know a case that fits? <a href="/submit">Submit it</a>.
+              </p>
+            </div>
+          ) : groups ? (
+            groups.map(({ ev, items }) => (
+              <section key={ev.value} className="tier" aria-labelledby={`tier-${ev.value}`}>
+                <div className="tier-head">
+                  <h3 id={`tier-${ev.value}`}>
+                    <span className={`ev ev-${ev.value}`}>{ev.label}</span>
+                    <span className="tier-n">{plural(items.length)}</span>
+                  </h3>
+                  <p className="tier-def">{ev.description}</p>
+                </div>
+                <div className="grid">
+                  {items.map((e) => (
+                    <EntryCard key={e.slug} entry={e} headingLevel={4} />
+                  ))}
+                </div>
+              </section>
+            ))
+          ) : (
+            <div className="grid">
+              {results.map((e) => (
+                <EntryCard key={e.slug} entry={e} />
+              ))}
+            </div>
+          )}
+
+          {results.length > 0 && (
+            <p className="end-note">
+              That&rsquo;s {results.length === entries.length ? "every receipt" : `all ${plural(results.length)}`}.{" "}
+              Know one that&rsquo;s missing? <a href="/submit">Submit a win</a>.
+            </p>
+          )}
+        </section>
+      </div>
+
+      <dialog ref={sheetRef} className="sheet" aria-labelledby="sheet-h" onClick={(e) => e.target === e.currentTarget && closeSheet()}>
+        <div className="sheet-inner">
+          <div className="sheet-head">
+            <h2 id="sheet-h">Filters</h2>
+            <button type="button" className="text-btn" onClick={closeSheet}>
+              Close
+            </button>
           </div>
-        ) : (
-          <div className="empty">
-            Nothing matches yet. Know one?{" "}
-            <a href="/submit" style={{ color: "var(--accent)" }}>
-              Submit it
-            </a>
-            .
+          <div className="sheet-body">{facetList("sheet")}</div>
+          <div className="sheet-foot">
+            <button
+              type="button"
+              className="text-btn"
+              disabled={sidebarActive === 0}
+              onClick={() =>
+                setSelected((prev) => ({ evidence_strength: prev.evidence_strength ?? [] }))
+              }
+            >
+              Clear filters
+            </button>
+            <button type="button" className="btn" onClick={closeSheet}>
+              Show {plural(results.length)}
+            </button>
           </div>
-        )}
-      </section>
-    </div>
+        </div>
+      </dialog>
+    </>
   );
 }

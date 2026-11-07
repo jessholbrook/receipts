@@ -86,7 +86,7 @@
     "insight": "Around 40% of shakes were bought first thing in the morning, to go, by people facing a long, dull commute. They wanted something to occupy one free hand, keep them full until mid-morning and not make a mess on work clothes; a thick shake through a thin straw beat bagels or doughnuts on all counts. Demographics did not explain the purchase; the situation did.",
     "change": "Christensen's team recommended a thicker, more interesting morning shake (e.g. with fruit chunks) to last the commute, and a separate thinner shake for children in the afternoon.",
     "outcome": "The source does not report whether the chain made the changes or whether sales rose. The case is cited as the origin story for the jobs-to-be-done approach to research.",
-    "headline_metric": null,
+    "headline_metric": "Proposed a thicker shake",
     "attribution": "The research clearly produced the recommendation, but there is no documented business outcome.",
     "caveats": "Classic teaching story told by Christensen in talks and books; the chain is never named in the original HBS write-up (it is often assumed to be McDonald's in retellings, which is not confirmed there). No sample sizes, dates or sales results are published. Include as a famous illustration of a research reframing, not as proof of impact.",
     "methods": [
@@ -159,7 +159,7 @@
     "insight": "Paste alone was over 11% of all Word 2003 commands, more than twice the next (Save), and the top five commands were about 32% of use. Even though many people used Ctrl+V or the context menu, the Paste toolbar button was still the most-clicked button. Usability tests also showed most people don't click unlabeled 16x16 icons beyond the first few.",
     "change": "The team dropped an early idea of leaving Cut/Copy/Paste buttons out of the Ribbon and made Paste the first large button on Word's first tab. Ribbon commands were given text labels.",
     "outcome": "Jensen Harris writes that the data 'kept us from making a crucial, stupid mistake' that beta testers, being expert users, might not have caught. No post-launch metrics are given.",
-    "headline_metric": null,
+    "headline_metric": "Kept the Paste button",
     "attribution": "Direct: the design lead names the specific decision the data changed.",
     "caveats": "Written by Microsoft's own UX lead. Analytics is behavioural data rather than direct observation, though it was paired with usability testing. No outcome metric; the Ribbon itself was controversial with experienced users at launch.",
     "methods": [
@@ -202,7 +202,7 @@
     "insight": "Users with infinite scroll saw fewer items than the control group, clicked fewer, saved fewer favorites and bought fewer items from search (overall purchases held because people found items other ways). Showing more results per page barely changed behaviour and did not increase purchases; adding delay to search changed nothing measurable.",
     "change": "Etsy removed infinite scroll ('we took infinite scroll out back and we shot it') and changed its process to validate premises with minimal experiments before building large features.",
     "outcome": "A feature that hurt search engagement and search-driven purchases was rolled back. Dan McKinley's talk gives directional results but no percentages; avoided cost is the main win, plus a shift in how Etsy scoped product work.",
-    "headline_metric": null,
+    "headline_metric": "Killed infinite scroll",
     "attribution": "Direct: the experiment results were the stated reason for removing the feature.",
     "caveats": "First-party conference talk by an Etsy engineer (2012). The win is avoiding a harmful change after it was built, not before. Exact effect sizes are not in the talk transcript; larger percentages circulating in third-party blogs could not be verified. This is experimentation rather than qualitative research.",
     "methods": [
@@ -532,7 +532,7 @@
     "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
     "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
     "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
-    "headline_metric": null,
+    "headline_metric": "Dropped the native app",
     "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
     "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
     "methods": [
@@ -574,7 +574,7 @@
     "insight": "Respondents' core need was to put their views across clearly, and the department only accepted text responses; most of the improvement could come from process and content, not new software.",
     "change": "The team decided not to build a new product or service, and instead to use existing tools more effectively, write consultations in plain English and keep respondents informed throughout the policy process.",
     "outcome": "No new build. The product manager writes that the approach needed 'no hard cash'. No metrics reported.",
-    "headline_metric": null,
+    "headline_metric": "No new consultation tool",
     "attribution": "Direct: the product manager states the research led to the no-build decision.",
     "caveats": "Short first-party blog post with no participant numbers or cost estimate. Whether the process changes improved consultations is not reported.",
     "methods": [
@@ -613,7 +613,7 @@
     "insight": "There was no identified need for a central webchat component. Teams would benefit more from shared service patterns. The research also warned against assuming webchat saves money on its own, and found chat conversations are a useful source of insight into user needs.",
     "change": "GDS did not build a webchat platform. It produced patterns and guidance for the Service Manual and a published approach to implementing webchat, then ended the alpha.",
     "outcome": "A central platform build was avoided; guidance was published instead. No cost figures given.",
-    "headline_metric": null,
+    "headline_metric": "Dropped central webchat",
     "attribution": "Direct: the GDS post presents the decision as a result of the research.",
     "caveats": "First-party. No participant counts or estimate of cost avoided. Platform builds may also have been weighed against other GDS priorities not discussed.",
     "methods": [
@@ -652,7 +652,7 @@
     "insight": "Helpline and webchat were first-come, first-served, so urgent, complex cases often couldn't get through; only 29% of queries handled were high-priority. A chatbot would not fix this. Many users had only a smartphone with limited credit or a landline, and many had health conditions or disabilities.",
     "change": "Shelter moved from a chatbot to a triage approach that prioritises urgent, complex cases for one-to-one advice and points simpler needs to advice content. It applied for less funding to run a triage discovery (a later implementation bid succeeded) and launched a tailored journey for low-urgency needs on its existing site without AI.",
     "outcome": "The chatbot build was not pursued. No outcome metrics for triage are reported yet.",
-    "headline_metric": null,
+    "headline_metric": "Chose triage over chatbot",
     "attribution": "Direct: Shelter's product team says the discovery findings redirected the funding bid and the product.",
     "caveats": "First-party charity blog. Outcomes of the triage approach were not published at the time; the 29% figure is a pre-change baseline.",
     "methods": [
@@ -696,7 +696,7 @@
     "insight": "The need was not only in clinics: rural families far from hospitals tried to keep babies warm with blankets, warm water bottles or light bulbs, which were usually not enough (and bulbs sometimes shattered over babies).",
     "change": "Alongside the electrically heated clinic version, the team built a cheaper at-home model heated with warm water, with more safety features and more wax to hold 37°C for longer, including during an emergency trip to hospital. Both use a sleeping-bag pouch with a phase-change wax pad.",
     "outcome": "At the time of the source the product was in clinical trials with an expected price of $100–$200, against $1,000–$2,000 for incubators in developing countries. Mothers in trials were reluctant to take babies out, and NGOs in Africa and Asia were sending inquiries. No mortality or deployment figures are given.",
-    "headline_metric": null,
+    "headline_metric": "Built an at-home warmer",
     "attribution": "The student newspaper credits observations of rural families' unmet needs with the at-home model. Later impact claims are not covered by this source.",
     "caveats": "Often retold as a dramatic pivot 'from incubator to sleeping bag'; the 2010 source describes adding an at-home version to a clinic device rather than abandoning it. Health outcomes are not documented here. Student-newspaper source written while the venture was pre-launch.",
     "methods": [

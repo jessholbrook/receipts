@@ -10,7 +10,7 @@
     "insight": "Interviewees said they relied heavily on email notifications, which clashed with data showing low email engagement. Re-cutting the data by account type explained it: designers on team accounts opened 80% of comment-notification emails, while many other users simply received nothing ('71% of users don't receive any notifications'). Interviews also showed people rarely visited the file browser, so the bell in its top-right corner was 'out of sight and out of mind'. Collaborators who weren't file owners got no comment notifications at all.",
     "change": "The bell was moved to a more prominent spot at the upper left of the file browser. The team made team-account users the reference group for notification experiments, and after an experiment released comment notifications for file editors, not only owners.",
     "outcome": "The post reports the changes and says the work shaped the half's roadmap and a series of experiments. It gives no metric for the effect of the changes.",
-    "headline_metric": null,
+    "headline_metric": "Moved notification bell",
     "attribution": "Direct for the decisions: the bell move and the team-account focus are traced to specific interview and data findings. The editor-notification change came partly from the researchers' own experience and was then tested in an experiment, results not shared.",
     "caveats": "Figma's own blog, written as a showcase of its research practice. No outcome numbers for the shipped changes. The 80% and 71% figures describe the problem, not the result.",
     "methods": [
@@ -48,7 +48,7 @@
     "insight": "People's most valued uses of Firefox fell into a stable set of categories, and high usage wasn't always good for them (for example, huge numbers of open tabs felt overwhelming). Firefox Focus, despite its small audience, was often used alongside another Firefox mobile browser for specific jobs and mattered a lot in those workflows.",
     "change": "The study gave leadership evidence to look beyond raw usage numbers when judging Firefox Focus, and the use-case categories fed into further mixed-method research and survey work.",
     "outcome": "The authors say the most tangible success was highlighting the value of Firefox Focus to leadership teams that had been questioning investment in it. They don't state a formal decision or any metric.",
-    "headline_metric": null,
+    "headline_metric": "Made the case for Focus",
     "attribution": "Moderate. The researchers say their study (along with a colleague's research) showed Focus's value. The post doesn't say what was decided or that the research was the deciding factor.",
     "caveats": "Self-reported impact by the researchers who ran the study. Influence on a funding debate, not a measured outcome. 2021 post.",
     "methods": [
@@ -85,7 +85,7 @@
     "insight": "PiP often helped people get tasks done: a student watched lectures while taking notes, others used background video to stay motivated during dull work or to calm down while reading something hard. The team found nothing seriously wrong that would stop habit formation.",
     "change": "The team decided not to make 'habit-forming' the measure of PiP's success, and to better support existing uses instead, starting with more controls such as changing the volume. A separate experiment on PiP discoverability was prepared at the same time.",
     "outcome": "A change in product strategy and feature priorities. No usage or satisfaction metrics are reported for the changes.",
-    "headline_metric": null,
+    "headline_metric": "Dropped habit as metric",
     "attribution": "Direct for the strategy change: the post's 'Our research impact' section ties it to the interviews.",
     "caveats": "Small qualitative sample (11 people). Mozilla's own blog. No outcome data.",
     "methods": [
@@ -162,7 +162,7 @@
     "insight": "Screenshots were the dominant tool for keeping wish lists, promotions, shopping history and more, because apps beat websites on experience and price and patchy, costly data made an offline image more reliable than a link. People then struggled to find the right screenshot among countless images and couldn't act on the information in it.",
     "change": "The team shaped the product around screenshots instead of a wish list: Firefox ScreenshotGo, an Android app to capture and organise screenshots and get back to related content online, released in the Indonesian Google Play store.",
     "outcome": "The product direction changed and an app shipped in Indonesia. The post reports no adoption or usage numbers.",
-    "headline_metric": null,
+    "headline_metric": "Built ScreenshotGo",
     "attribution": "Direct for the pivot: the post says the screenshot finding was 'out of our expectation' and that the validated findings shaped ScreenshotGo's blueprint.",
     "caveats": "Written by the team's designer. No outcome data, and the post doesn't say how the app performed. Small field sample (eight people). 2018.",
     "methods": [
@@ -200,7 +200,7 @@
     "insight": "Participants naturally described their tabs by time and found the chronological order helpful, especially for recent tabs. They wanted to delete single tabs and batches easily. In real use, the combination of thumbnail, title, URL and date stamp jogged people's memory of unfinished tasks. Missing thumbnails and enlarged system text (truncating titles) broke the design.",
     "change": "After the first round the team added dates to 'Today' and 'Yesterday', renamed 'Older' to 'Last Week', and made tab deletion easier to reach. After the diary study it prioritised fixing thumbnail loading, and planned research on Android, tablet and desktop plus accessibility work for large text.",
     "outcome": "Design changes and a further research plan. No usage metrics are reported.",
-    "headline_metric": null,
+    "headline_metric": "Added date labels to tabs",
     "attribution": "Direct: each design change is described as coming from a specific research round.",
     "caveats": "Small samples. The post describes a feature still in beta, with no shipped outcome data. Mozilla's own blog.",
     "methods": [
@@ -238,7 +238,7 @@
     "insight": "Hosts wanted the reliability of a professional, trusted brand together with the personal attention, local knowledge and entrepreneurial drive of an individual host, and saw property management companies as too volume-focused. The Tokyo pilot confirmed that nearby co-hosts with local expertise and a personal connection were the most wanted, and helped shape messaging, pricing and packaging.",
     "change": "Airbnb built Co-hosting as a marketplace connecting hosts with nearby co-hosts from its own community, with search by location and profiles highlighting each co-host's approach and expertise, instead of a professional service or partner directory.",
     "outcome": "The post says inquiries for hosting services went from a trickle to 'a torrent' before co-hosting was promoted or deeply integrated into the main product. No numbers are given, and the author says it is still early.",
-    "headline_metric": null,
+    "headline_metric": "Hosting inquiries up",
     "attribution": "Direct for the choice of model: the post ties it to the concept-test feedback and the Tokyo pilot. The demand claim follows the launch but isn't isolated from other factors.",
     "caveats": "Airbnb's own design blog, written by the lead designer. No figures. Published in 2016, when the service was still in pilot cities.",
     "methods": [
@@ -278,7 +278,7 @@
     "insight": "Drivers didn't understand how cash service fees worked. In testing, many tapped briskly through the steps without reading, reached the 'pending' screen and assumed they had paid, even though they had never gone to a convenience store. Some said they would phone support straight away to ask why the payment was still processing.",
     "change": "The team built an in-app collection flow giving drivers control over when and how much to pay, with step-by-step instructions, information before the flow, contextual help on first use, and the ability to restart, cancel, or see their payment code from the 'pending' screen. Copy was localised with local help rather than translated at the end.",
     "outcome": "The redesigned flow went on to be released in several markets, including Mexico, Brazil, India and Japan. No metrics are given.",
-    "headline_metric": null,
+    "headline_metric": "Rebuilt cash fee flow",
     "attribution": "Direct for the design changes: the post traces the restart and code-access features to the specific failure seen in prototype tests.",
     "caveats": "Uber's design blog, written by the product designer. No numbers on payment completion or support calls. Exact research dates not given.",
     "methods": [
@@ -318,7 +318,7 @@
     "insight": "'Improving listings' is a key job suppliers want to get done on Wayfair and is highly underserved. Needs also differ by company size, headquarters location and whether a supplier is a distributor or manufacturer.",
     "change": "'Build the Best Listing', focused on the product-addition experience, was prioritised in the H2 2022 Global Supplier Technology roadmap over new features. The segmentation is used to send new suppliers personalised communications.",
     "outcome": "A roadmap decision and a supplier experience vision. The author says the segmentation helped improve supplier satisfaction and loyalty, especially among smaller businesses, but gives no figures.",
-    "headline_metric": null,
+    "headline_metric": "Put listings on roadmap",
     "attribution": "Direct for the roadmap priority, which the post attributes to the research finding. The satisfaction claim is unsupported by data in the post.",
     "caveats": "Written by Wayfair's user research lead for the area. No outcome metrics. The listing work's results aren't reported.",
     "methods": [
@@ -356,7 +356,7 @@
     "insight": "Many new users were senior citizens, or relatives ordering for them, who chose Instacart as the safer option. Customers wanted an option for a fully contactless drop-off. New customers called the support line instead of using self-help, and the help centre didn't let them solve problems directly.",
     "change": "Instacart launched a Senior Support Service (high-touch support for customers over 60), rolled out contactless delivery across the board, and redesigned the help centre to link people to pages where they can fix issues themselves.",
     "outcome": "Features launched. The post reports no metrics for them.",
-    "headline_metric": null,
+    "headline_metric": "Added senior support line",
     "attribution": "The research manager says the Senior Support Service was 'one example of a feature launch based on these insights'. Contactless delivery was also an industry-wide pandemic response, so research was one input among many.",
     "caveats": "Instacart's own design blog. Methods are described only at a high level. Pandemic conditions pushed every delivery company the same way.",
     "methods": [
@@ -437,7 +437,7 @@
     "insight": "Riders navigated in many ways (memorising routes, voice guidance, listening to passengers, phones stuck to the speedometer). Shortcuts and landmarks made navigation faster and safer. Car routes and arrival times were wrong for bikes, and drivers relied on each other as a community when lost.",
     "change": "Google launched two-wheeler mode on Android in India and Indonesia (named 'two-wheeler' in India and 'motor' in Indonesia to match local usage), with two-wheeler routes and shortcuts, arrival times, more landmarks and improved voice navigation in more languages. Design principles from the fieldwork also guided other Maps improvements in both countries.",
     "outcome": "A new transport mode shipped. The post gives no usage or accuracy figures.",
-    "headline_metric": null,
+    "headline_metric": "Built a two-wheeler mode",
     "attribution": "Strong: the authors credit the field research with defining the product, and local testers caught unsuitable roads and missing landmarks.",
     "caveats": "Written by the Google researcher and designer involved. No metrics. The market need may have been visible from data too; the post doesn't compare.",
     "methods": [
@@ -514,7 +514,7 @@
     "insight": "The top validated problem was helping people sell their old phone quickly so they could put the money toward a new one. After launch, users wanted a shorter purchase journey and more accurate price indications.",
     "change": "Tokopedia built Tukar Tambah: choose a new phone, let the app scan the old phone and estimate its value in rupiah, pay the difference, and a courier delivers the new phone and collects the old one. After the evaluation research the team shortened the purchase journey and worked on pricing accuracy.",
     "outcome": "The author says purchase completion rose 'significantly' in the first two quarters after launch, and the number of trade-ins kept growing as the feature expanded. No figures are given.",
-    "headline_metric": null,
+    "headline_metric": "Purchase completion up",
     "attribution": "Moderate. The post links the improvements to research feedback, but completion gains in the first months after a launch have many possible causes.",
     "caveats": "Written by a Tokopedia researcher as an argument for research. No numbers, no control. Dates of the work aren't given.",
     "methods": [

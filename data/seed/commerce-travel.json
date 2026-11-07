@@ -337,7 +337,7 @@
     "insight": "Most users began their outfit search on social media and then used 'hacky ways' to find similar pieces to buy, so the real problem sat in the jump from inspiration to shopping rather than in search technology.",
     "change": "The team changed the project's direction from a computer-vision search tool to redesigning the inspiration-to-purchase journey so users could get there with less effort.",
     "outcome": "No metrics. The author describes the result as a 'different approach, huge impact!' for the project's direction.",
-    "headline_metric": null,
+    "headline_metric": "Dropped vision search",
     "attribution": "Direct for the decision: the post says the research finding itself changed the project's course. Nothing is reported about what shipped afterwards.",
     "caveats": "Short first-party blog post used to illustrate an innovation process. Number of customers and methods are vague ('several'). No outcome data, and it isn't clear whether the redesigned journey launched.",
     "methods": [
@@ -374,7 +374,7 @@
     "insight": "Complexity was a main barrier: roughly one in two customers didn't understand what sustainability means in fashion. Trust was the other blocker, and customers needed a positive, emotional connection to the topic before digging deeper.",
     "change": "Zalando launched a value-based browsing experience in the Fashion Store, mapping its existing sustainability criteria onto six cause areas (animal welfare, reusing materials, worker well-being, water conservation, reducing emissions, extending the life of fashion) described in simpler language.",
     "outcome": "No outcome metrics reported. Zalando described the launch as a first step and a learning opportunity.",
-    "headline_metric": null,
+    "headline_metric": "Launched shop-by-cause",
     "attribution": "The launch post explicitly ties the design approach (plain-language cause areas) to the research finding about complexity. No evidence about whether it changed behaviour.",
     "caveats": "First-party announcement, partly sustainability communications. No adoption or conversion data. The ethnographic component is small (12 people) and the survey is self-reported attitudes.",
     "methods": [
@@ -541,7 +541,7 @@
     "insight": "Shoppers usually use the phone with one hand while the other pushes a cart or picks items. Missing items are inevitable, and good communication matters more than perfection: customers still give 5-star ratings when the shopper clearly tried their best.",
     "change": "A simplified, one-handed Shopper app with large icons, big tap targets and fewer manual inputs; prompts asking customers for replacement preferences on low-stock items; quick messaging with shelf photos; context such as first-time customer flags; crowdsourced out-of-stock data that stops later customers adding the item; and auto-generated substitution messages customers can approve with one tap.",
     "outcome": "No numbers. Instacart says automated messaging cuts back-and-forth for both shopper and customer and that ratings data supports the value of communication.",
-    "headline_metric": null,
+    "headline_metric": "Built a one-handed app",
     "attribution": "The post presents the one-handed principle and the communication features as direct results of field observation, but gives no outcome data.",
     "caveats": "First-party design blog written partly for recruiting. No participant numbers, dates or metrics. Some features (crowdsourced stock data) rely on analytics as much as research.",
     "methods": [
@@ -579,7 +579,7 @@
     "insight": "Many travelers were unsure about trips and their future income, reacted poorly to aggressive sales tactics, and split into risk-averse and risk-tolerant groups. Sanitation photos of intimate spaces like rooms and food caused discomfort, while communal spaces like lobbies did not. Attitudes differed by country (Brazil and Mexico readier to travel than Argentina), and six in ten planned a first trip within their own country.",
     "change": "Flexible cancellation and modification features, and flexible packages, became core products. The team pushed back on stakeholders who wanted a hard sell and moved to a softer, reassuring voice. Supplier sanitation imagery was guided toward communal spaces rather than rooms and food.",
     "outcome": "No business metrics reported. The team says flexible packages became the most popular option despite higher prices, and flexibility features became core products.",
-    "headline_metric": null,
+    "headline_metric": "Dropped the hard sell",
     "attribution": "The NN/g article, based on interviews with Despegar's UX and research leads, credits the research with the tone change and the imagery guidance. The rise of flexible packages was also driven by the pandemic itself, so research is one of several causes.",
     "caveats": "Secondhand account from NN/g interviews with the company's own UX leads. Mostly self-reported attitudes gathered during a crisis. No metrics on bookings, conversion or revenue.",
     "methods": [
@@ -618,7 +618,7 @@
     "insight": "Mobile users were very active in the evening but reluctant to phone agents. Research also showed some information (popular unit types, guest parking, community issues) is best supplied by residents, and that the map is central to the UAE search journey.",
     "change": "Property Finder tested and launched WhatsApp Leads, a way to message agents instead of calling. Related findings led to resident-written Community Guides, Building Reviews on listing pages, and better map search.",
     "outcome": "The company says WhatsApp Leads reached 'almost instant product-market fit'. No lead numbers are given. Separately, it reports over 10% of mobile searches used Map Search.",
-    "headline_metric": null,
+    "headline_metric": "Launched WhatsApp leads",
     "attribution": "The post states the evening-browsing finding 'inspired' the WhatsApp test. The success claim is qualitative.",
     "caveats": "First-party blog by a product manager, published in 2023 about 2019 work. No lead volumes, conversion or test design reported. The specific research method behind the WhatsApp insight isn't separated from the general list of methods.",
     "methods": [
@@ -658,7 +658,7 @@
     "insight": "Participants in user testing kept asking for a way to share and discuss listings with others inside the product.",
     "change": "Rightmove launched Shared Lists in November 2025 for both renters and buyers: users build collections of agents' listings and share them, and recipients can react, comment and propose alternatives.",
     "outcome": "No usage or business metrics reported at launch.",
-    "headline_metric": null,
+    "headline_metric": "Built Shared Lists",
     "attribution": "The company directly credits user testing as the source of the idea. Nothing yet shows whether it changed behaviour.",
     "caveats": "Trade-press report of a launch announcement. 'Thousands of hours' is unspecific and refers to user testing in general, not a dedicated study. No outcome data.",
     "methods": [

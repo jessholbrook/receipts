@@ -1,6 +1,6 @@
 // Canonical taxonomy. Keep docs/taxonomy.md in sync.
 
-export type Option = { value: string; label: string; description?: string };
+export type Option = { value: string; label: string; description?: string; short?: string };
 
 export const METHODS: Option[] = [
   { value: "usability_testing", label: "Usability testing" },
@@ -91,21 +91,25 @@ export const COMPANY_SIZES: Option[] = [
 export const EVIDENCE: Option[] = [
   {
     value: "tested",
+    short: "A/B test or controlled experiment",
     label: "Tested",
     description: "Controlled experiment or A/B test tied to the research-driven change.",
   },
   {
     value: "measured",
+    short: "Before/after numbers, no control group",
     label: "Measured",
     description: "Before/after metrics, but no control group.",
   },
   {
     value: "reported",
+    short: "Result stated, method not shared",
     label: "Reported",
     description: "The company states an outcome but doesn't share how it was measured.",
   },
   {
     value: "decision",
+    short: "Changed a decision, no metric",
     label: "Decision",
     description: "Research changed a decision (killed, pivoted, re-prioritized). No metric.",
   },

@@ -90,7 +90,7 @@
     "insight": "Customers cared most about the bill summary and amount due, then usage and meter information, and wanted to understand supply charges separately from delivery charges.",
     "change": "The new bill, launched March 2014, ordered information by importance, put summarised usage and charges on the front, clearly separated supply from delivery charges, colour-coded sections and moved contact details and messages to the back. It went to nearly 4 million households in under a year.",
     "outcome": "Qualtrics' customer story reports an 'industry-leading rise in customer satisfaction' and a J.D. Power award. No satisfaction scores, call volumes or other figures are given.",
-    "headline_metric": null,
+    "headline_metric": "Customer satisfaction up",
     "attribution": "Weak to moderate. The research clearly shaped the bill, but the satisfaction rise is reported at company level and other ComEd initiatives over the same period likely contributed.",
     "caveats": "Outcome claim comes from the survey vendor's customer story, with no numbers or method. The independent press coverage (2014) documents the research process but reports no results. Crowdsourced design competition was part of the process, not just research.",
     "methods": [
@@ -173,7 +173,7 @@
     "insight": "Stage-based sub-navigation would add steps, and stage names are not self-explanatory, especially to people unfamiliar with GitLab's DevOps vocabulary. Context and discoverability were the recurring problems.",
     "change": "GitLab kept its existing global/contextual navigation model with incremental changes, rather than restructuring it around DevOps stages, and planned further interviews and journey mapping.",
     "outcome": "In the post's words, findings from the studies 'cautioned us against moving in that direction'. No metric is reported.",
-    "headline_metric": null,
+    "headline_metric": "Rejected stage-based nav",
     "attribution": "Stated directly by GitLab's UX researcher, though the post doesn't describe the studies in detail.",
     "caveats": "Light on method detail. The post describes ongoing work, so the decision may have been revisited later. No measure of what was avoided.",
     "methods": [
@@ -211,7 +211,7 @@
     "insight": "Debuggability was the biggest problem, making up 67% of open-ended feedback: the information existed but was scattered across dashboards and UIs. Performance and reliability made up another 19%. Stakeholder interviews also showed that past measurement dashboards were usually abandoned, so the team chose one success metric (engineer capacity saved) instead.",
     "change": "The team built a vision for a unified console and used it to secure executive buy-in. After evaluating options, they chose to extend an existing infrastructure console (Sigma) rather than build a bespoke console modelled on Google Cloud's, shipped a readability redesign of a job page, and designed a 'Needs Attention' pipeline page tested through three RITE rounds.",
     "outcome": "The paper reports executive buy-in and incremental shipped improvements. Projected savings were estimated at 69 (conservative), 208 (moderate) or 1,663 (aggressive) full-time engineers' worth of capacity per year, but these are forecasts, not measured results. The pipeline MVP was still to be released at the time of writing.",
-    "headline_metric": null,
+    "headline_metric": "Extended existing console",
     "attribution": "Direct for the decisions: the authors state the survey and interviews defined the problem and that the evaluation drove the choice to extend Sigma. No measured outcome yet.",
     "caveats": "Short CHI 2025 workshop submission written by the team itself. Savings figures are internal estimates. The paper notes Gemini was used to edit parts of the text. The redesign's effect on time-to-find information is described qualitatively.",
     "methods": [
@@ -533,7 +533,7 @@
     "insight": "Member counts help people 'read the room' in a channel. New users ignored a compose button at the bottom of the sidebar, often tried right-clicking, and missed key features when sections started collapsed. Users preferred familiar search placement over novel layouts.",
     "change": "Restored the channel member count the team had planned to hide; made the custom-sections entry point less prominent with an in-product prompt; chose a conventional top-navigation search layout; moved compose to the top of the sidebar; built fuller right-click menus across the app; made collapsible views start open.",
     "outcome": "After these changes, the new design 'beat or tied' the existing one on the benchmark tasks, which the authors cite as the basis for confidence in the release. No numbers are given.",
-    "headline_metric": null,
+    "headline_metric": "Restored member counts",
     "attribution": "Direct for the design decisions: each change is tied to a specific pilot or benchmark finding. The benchmark result is reported only qualitatively.",
     "caveats": "First-party blog post with no sample sizes, task-success figures or post-launch metrics. Pilot participants were Slack champions, who are not typical users. Rated 'decision' because no measured outcome is shared.",
     "methods": [
@@ -573,7 +573,7 @@
     "insight": "With search in the left-hand navigation, it 'just wasn't findable' for users.",
     "change": "Search was moved back to the top of the interface. The authors say other changes were also revisited after pulse surveys and pilot feedback, without naming them.",
     "outcome": "A design decision was reversed before launch. No metrics are reported.",
-    "headline_metric": null,
+    "headline_metric": "Moved search back to top",
     "attribution": "Direct: the authors (Slack's VP of Product Design and a principal PM) state that research, pilot feedback and usage data drove the reversal.",
     "caveats": "First-party post with no method detail or numbers. Undated on the page (images suggest 2023). Usage data contributed alongside research, so research was one of several signals.",
     "methods": [
@@ -612,7 +612,7 @@
     "insight": "The new experience required more clicks, changes to keyboard navigation slowed invoice creation for keyboard-heavy users, and the new layout made the invoice page harder to read and navigate.",
     "change": "Deleting a line item went from two clicks to one; Tab in branding and tax fields now selects and moves on; the date field accepts typing immediately; attachments preview in place; single clicks for printing/downloading, creating another invoice, sending receipts and marking as sent; invoice number shown in the browser tab. A redesign of the top half of the create-invoice page was started, and classic invoicing was kept available until 27 February 2025.",
     "outcome": "Specific usability fixes shipped and the retirement of classic invoicing was postponed. No metrics are reported.",
-    "headline_metric": null,
+    "headline_metric": "Cut clicks in invoicing",
     "attribution": "Direct for the changes: Xero's Head of Product lists the fixes as responses to what users reported and what researchers observed.",
     "caveats": "First-party post responding to customer complaints, so partly reputation management. Research happened after launch, not before. No numbers on how many users were observed or whether the fixes improved speed. The postponement may have had other reasons.",
     "methods": [
