@@ -6,16 +6,10 @@ export function EvidenceBadge({ level }: { level: Entry["evidence_strength"] }) 
   return <span className={`ev ev-${level}`}>{labelFor("evidence_strength", level)}</span>;
 }
 
-const SOURCE_SHORT: Record<Entry["source_type"], string> = {
-  first_party: "Company's own account",
-  agency_vendor: "Agency or vendor account",
-  independent: "Independent source",
-  community: "Community submission",
-};
-
-// A receipt: the header names the shop (industry, year, evidence), the result is the
-// line people read, and the story sits below it. Inside an evidence section the section
-// header already names the level, so the badge is optional.
+// A receipt: the header names the shop (industry, year, evidence), the result is the line
+// people read, then who it is and who is telling it. The full title lives on the entry page;
+// on the card it would only repeat the result. Inside an evidence section the section header
+// already names the level, so the badge is optional.
 export function EntryCard({
   entry,
   headingLevel = 3,
@@ -36,20 +30,18 @@ export function EntryCard({
         {showBadge && <EvidenceBadge level={entry.evidence_strength} />}
       </div>
       <p className="receipt-result">{entry.headline_metric ?? "See the full receipt"}</p>
-      <Title className="receipt-title">{entry.title}</Title>
-      <p className="company">
-        {entry.company}
-        <span className={`source-line source-${entry.source_type}`}>{SOURCE_SHORT[entry.source_type]}</span>
-      </p>
+      <Title className="receipt-title">{entry.company}</Title>
+      <p className="source-line">{labelFor("source_type", entry.source_type)}</p>
       <p className="summary">{entry.summary}</p>
       {entry.methods.length > 0 && (
         <div className="receipt-foot">
-          <span className="visually-hidden">Methods: </span>
-          {entry.methods.slice(0, 3).map((m) => (
-            <span key={m} className="tag">
-              {labelFor("methods", m)}
+          <span className="visually-hidden">Method: </span>
+          <span className="tag">{labelFor("methods", entry.methods[0])}</span>
+          {entry.methods.length > 1 && (
+            <span className="tag-more" aria-label={`and ${entry.methods.length - 1} more`}>
+              +{entry.methods.length - 1}
             </span>
-          ))}
+          )}
         </div>
       )}
     </Link>

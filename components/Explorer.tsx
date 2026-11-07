@@ -6,6 +6,7 @@ import type { Entry } from "@/lib/types";
 import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
 import CopyButton from "./CopyButton";
+import { LAST_RESULTS_KEY } from "./BackToResults";
 
 type Selected = Partial<Record<FacetKey, string[]>>;
 
@@ -32,13 +33,47 @@ function matches(e: Entry, selected: Selected, skip?: FacetKey): boolean {
 }
 
 function haystack(e: Entry): string {
-  return [e.title, e.company, e.summary, e.problem, e.research, e.insight, e.change, e.outcome, e.headline_metric]
+  return [
+    e.title,
+    e.company,
+    e.summary,
+    e.problem,
+    e.research,
+    e.insight,
+    e.change,
+    e.outcome,
+    e.headline_metric,
+    labelFor("industry", e.industry),
+    ...e.methods.map((m) => labelFor("methods", m)),
+    ...e.metrics.map((m) => labelFor("metrics", m)),
+  ]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
 }
 
 const plural = (n: number) => `${n} ${n === 1 ? "receipt" : "receipts"}`;
+
+// Within an evidence level, the account least likely to be selling something leads.
+const SOURCE_RANK: Record<string, number> = { independent: 0, first_party: 1, community: 2, agency_vendor: 3 };
+const PER_TIER = 6;
+const PER_PAGE = 24;
+
+const orList = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} or ${xs.at(-1)}`);
+
+// A plain-language headline for a filtered view, e.g. "16 receipts where research moved revenue".
+function resultsHeadline(n: number, sel: Selected, q: string): string {
+  const lab = (k: FacetKey) => (sel[k] ?? []).map((v) => labelFor(k, v));
+  const ev = lab("evidence_strength");
+  let h = `${n} ${ev.length ? `${orList(ev)} ` : ""}${n === 1 ? "receipt" : "receipts"}`;
+  if (lab("industry").length) h += ` in ${orList(lab("industry"))}`;
+  if (lab("metrics").length) h += ` where research moved ${orList(lab("metrics").map((m) => m.toLowerCase()))}`;
+  if (lab("methods").length) h += ` using ${orList(lab("methods").map((m) => m.toLowerCase()))}`;
+  const rest = [...lab("product_type"), ...lab("company_size"), ...lab("source_type"), ...lab("research_type")];
+  if (rest.length) h += ` · ${rest.join(", ")}`;
+  if (q.trim()) h += ` matching “${q.trim()}”`;
+  return h;
+}
 
 export default function Explorer({ entries }: { entries: Entry[] }) {
   const router = useRouter();
@@ -60,6 +95,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const [q, setQ] = useState(initial.q);
   const [sort, setSort] = useState(initial.sort);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({});
+  const [pageCount, setPageCount] = useState(1);
+  const sharedLanding = Object.keys(initial.sel).length > 0 || initial.q !== "";
 
   // keep URL shareable
   useEffect(() => {
@@ -72,13 +110,17 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     if (sort !== "evidence") sp.set("sort", sort);
     const qs = sp.toString();
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    try {
+      sessionStorage.setItem(LAST_RESULTS_KEY, qs ? `/?${qs}` : "/");
+    } catch {
+      /* storage unavailable: entry pages fall back to the full list */
+    }
   }, [selected, q, sort, pathname, router]);
 
   // Someone opening a shared filtered link wants the results, not the pitch again.
   useEffect(() => {
-    const shared = Object.keys(initial.sel).length > 0 || initial.q !== "";
-    if (shared) document.getElementById("evidence-h")?.scrollIntoView({ block: "start" });
-  }, [initial]);
+    if (sharedLanding) document.getElementById("results")?.scrollIntoView({ block: "start" });
+  }, [sharedLanding]);
 
   const searchIndex = useMemo(() => new Map(entries.map((e) => [e.slug, haystack(e)])), [entries]);
 
@@ -101,7 +143,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     if (sort === "evidence") {
       sorted.sort(
         (a, b) =>
-          EVIDENCE_RANK[a.evidence_strength] - EVIDENCE_RANK[b.evidence_strength] || (b.year ?? 0) - (a.year ?? 0),
+          EVIDENCE_RANK[a.evidence_strength] - EVIDENCE_RANK[b.evidence_strength] ||
+          SOURCE_RANK[a.source_type] - SOURCE_RANK[b.source_type] ||
+          (b.year ?? 0) - (a.year ?? 0),
       );
     } else if (sort === "newest") {
       sorted.sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
@@ -162,6 +206,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
   const openSheet = () => sheetRef.current?.showModal();
   const closeSheet = () => sheetRef.current?.close();
+  const showResults = () => {
+    closeSheet();
+    document.getElementById("results")?.scrollIntoView({ block: "start" });
+  };
 
   const facetList = (idPrefix: string) =>
     SIDEBAR_FACETS.map((f) => {
@@ -250,8 +298,14 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
         </aside>
 
         <section id="results" className="results" aria-labelledby="results-h" tabIndex={-1}>
-          <h2 id="results-h" className="visually-hidden">
-            Results
+          {sharedLanding && (
+            <p className="landing-note">
+              Receipts is a public atlas of documented UX research wins, each rated for how strong the evidence is.{" "}
+              <a href="/about">How we rate</a>
+            </p>
+          )}
+          <h2 id="results-h" className={activeCount || q.trim() ? "results-h" : "visually-hidden"}>
+            {activeCount || q.trim() ? resultsHeadline(results.length, selected, q) : "Results"}
           </h2>
           <div className="toolbar">
             <label htmlFor="q" className="visually-hidden">
@@ -272,10 +326,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               Sort
             </label>
             <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
-              <option value="evidence">Strongest first</option>
+              <option value="evidence">Strongest</option>
               <option value="newest">Newest</option>
               <option value="oldest">Oldest</option>
-              <option value="added">Recently added</option>
+              <option value="added">Added</option>
             </select>
             <button
               type="button"
@@ -286,8 +340,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 if (pick) router.push(`/entries/${pick.slug}`);
               }}
               title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
+              aria-label="I'm Feeling Lucky: open a random receipt"
             >
-              I&rsquo;m Feeling Lucky
+              <span className="lucky-long">I&rsquo;m Feeling Lucky</span>
+              <span className="lucky-short">Lucky</span>
             </button>
           </div>
 
@@ -315,7 +371,11 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               {activeCount || q.trim() ? `${plural(results.length)} match` : `All ${plural(results.length)}`}
             </p>
             {(activeCount > 0 || q.trim() !== "") && results.length > 0 && (
-              <CopyButton label="Copy link to these results" className="text-btn" text={() => window.location.href} />
+              <CopyButton
+                label="Copy link to these results"
+                className="btn secondary btn-sm"
+                text={() => window.location.href}
+              />
             )}
           </div>
 
@@ -352,33 +412,55 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               </p>
             </div>
           ) : groups ? (
-            groups.map(({ ev, items }) => (
-              <section key={ev.value} className="tier" aria-labelledby={`tier-${ev.value}`}>
-                <div className="tier-head">
-                  <h3 id={`tier-${ev.value}`}>
-                    <span className={`ev ev-${ev.value}`}>{ev.label}</span>
-                    <span className="tier-n">{plural(items.length)}</span>
-                  </h3>
-                  <p className="tier-def">{ev.description}</p>
-                </div>
-                <div className="grid">
-                  {items.map((e) => (
-                    <EntryCard key={e.slug} entry={e} headingLevel={4} showBadge={false} />
-                  ))}
-                </div>
-              </section>
-            ))
+            groups.map(({ ev, items }) => {
+              const open = openTiers[ev.value] || items.length <= PER_TIER + 2;
+              const shown = open ? items : items.slice(0, PER_TIER);
+              return (
+                <section key={ev.value} className="tier" aria-labelledby={`tier-${ev.value}`}>
+                  <div className="tier-head">
+                    <h3 id={`tier-${ev.value}`}>
+                      <span className={`ev ev-${ev.value}`}>{ev.label}</span>
+                      <span className="tier-n">{plural(items.length)}</span>
+                    </h3>
+                    <p className="tier-def">{ev.short}</p>
+                  </div>
+                  <div className="grid">
+                    {shown.map((e) => (
+                      <EntryCard key={e.slug} entry={e} headingLevel={4} showBadge={false} />
+                    ))}
+                  </div>
+                  {!open && (
+                    <button
+                      type="button"
+                      className="btn secondary show-all"
+                      onClick={() => setOpenTiers((t) => ({ ...t, [ev.value]: true }))}
+                    >
+                      Show all {items.length} {ev.label} receipts
+                    </button>
+                  )}
+                </section>
+              );
+            })
           ) : (
-            <div className="grid">
-              {results.map((e) => (
-                <EntryCard key={e.slug} entry={e} />
-              ))}
-            </div>
+            <>
+              <div className="grid">
+                {results.slice(0, PER_PAGE * pageCount).map((e) => (
+                  <EntryCard key={e.slug} entry={e} />
+                ))}
+              </div>
+              {results.length > PER_PAGE * pageCount && (
+                <button type="button" className="btn secondary show-all" onClick={() => setPageCount((p) => p + 1)}>
+                  Show {Math.min(PER_PAGE, results.length - PER_PAGE * pageCount)} more
+                </button>
+              )}
+            </>
           )}
 
           {results.length > 0 && (
             <p className="end-note">
-              That&rsquo;s {results.length === entries.length ? "every receipt" : `all ${plural(results.length)}`}.{" "}
+              {results.length === entries.length
+                ? `${plural(entries.length)} so far, and growing.`
+                : `${plural(results.length)} in this view.`}{" "}
               Know one that&rsquo;s missing? <a href="/submit">Submit a win</a>.
             </p>
           )}
@@ -405,7 +487,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             >
               Clear filters
             </button>
-            <button type="button" className="btn" onClick={closeSheet}>
+            <button type="button" className="btn" onClick={showResults}>
               Show {plural(results.length)}
             </button>
           </div>

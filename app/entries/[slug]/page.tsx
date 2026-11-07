@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 import { getEntries, getEntry } from "@/lib/supabase";
 import { EVIDENCE, labelFor, SOURCE_TYPES } from "@/lib/taxonomy";
 import { EvidenceBadge } from "@/components/EntryCard";
-import CopyButton from "@/components/CopyButton";
+import CiteActions from "@/components/CiteActions";
+import BackToResults from "@/components/BackToResults";
 import Thumb from "@/components/Thumb";
-
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.researchreceipts.org";
+import { buildCitation, entryUrl } from "@/lib/cite";
 
 export const revalidate = 300;
 
@@ -20,13 +20,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const e = await getEntry(slug);
   if (!e) return { title: "Not found" };
-  return { title: e.title, description: e.summary };
-}
-
-function receiptNo(slug: string) {
-  let h = 0;
-  for (const c of slug) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-  return String(h % 100000).padStart(5, "0");
+  const ev = EVIDENCE.find((x) => x.value === e.evidence_strength);
+  const src = SOURCE_TYPES.find((x) => x.value === e.source_type);
+  // Each receipt unfurls as itself in Slack and elsewhere, with its honesty labels.
+  const shareTitle = `${e.headline_metric ? `${e.headline_metric} · ` : ""}${e.company}`;
+  const shareDesc = `${ev?.label}: ${ev?.short}. Source: ${src?.label}. ${e.summary}`;
+  return {
+    title: e.title,
+    description: e.summary,
+    openGraph: { title: shareTitle, description: shareDesc, type: "article", url: entryUrl(e.slug) },
+    twitter: { card: "summary_large_image", title: shareTitle, description: shareDesc },
+  };
 }
 
 function Section({ label, text }: { label: string; text: string | null }) {
@@ -58,24 +62,14 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
 
   const ev = EVIDENCE.find((x) => x.value === e.evidence_strength);
   const src = SOURCE_TYPES.find((x) => x.value === e.source_type);
-  const url = `${SITE}/entries/${e.slug}`;
   const first = e.sources[0];
-  // Plain text that pastes cleanly into Slack, docs and slides.
-  const citation = [
-    `${e.headline_metric ? e.headline_metric + ": " : ""}${e.title}`,
-    `${e.company}${e.year ? `, ${e.year}` : ""}. Evidence: ${ev?.label} (${ev?.short?.toLowerCase()}).`,
-    first ? `Source: ${first.title}${first.publisher ? `, ${first.publisher}` : ""}. ${first.url}` : null,
-    `Via Receipts: ${url}`,
-  ]
-    .filter(Boolean)
-    .join("\n");
 
   return (
     <div className="wrap">
       <div className="detail">
         <article>
           <div className="crumbs">
-            <Link href="/">All receipts</Link>
+            <BackToResults />
             {e.industry && (
               <>
                 {" / "}
@@ -91,10 +85,10 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             {e.year ? ` · ${e.year}` : ""}
           </p>
           <p className="summary">{e.summary}</p>
-          <div className="cite-actions">
-            <CopyButton label="Copy link" text={url} />
-            <CopyButton label="Copy as citation" text={citation} />
-          </div>
+          <p className="source-note">
+            <strong>{src?.label}.</strong> {src?.description}
+          </p>
+          <CiteActions url={entryUrl(e.slug)} citation={buildCitation(e)} />
 
           <div className="story">
             <Section label="The problem" text={e.problem} />
@@ -147,7 +141,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
           <div className="receipt" style={{ paddingBottom: 30 }}>
             <div className="receipt-top">
               <span>Receipt</span>
-              <span>No. {receiptNo(e.slug)}</span>
+              <span>researchreceipts.org</span>
             </div>
             <div className="mono" style={{ fontSize: 12, color: "var(--ink-3)", textTransform: "uppercase" }}>
               Headline result

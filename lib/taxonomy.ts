@@ -116,14 +116,30 @@ export const EVIDENCE: Option[] = [
 ];
 
 export const SOURCE_TYPES: Option[] = [
-  { value: "first_party", label: "Company's own account", description: "The company's own blog, talk or report." },
+  {
+    value: "first_party",
+    label: "Company's own account",
+    short: "the company's own account",
+    description: "The company's own blog, talk or report.",
+  },
   {
     value: "agency_vendor",
-    label: "Agency / vendor",
+    label: "Agency or vendor account",
+    short: "an agency or vendor account of its own client work (has an incentive)",
     description: "A consultancy or tool vendor writing about its own client work. Has an incentive.",
   },
-  { value: "independent", label: "Independent", description: "Journalism, academic work, audits, books." },
-  { value: "community", label: "Community submission", description: "Submitted to Receipts by a practitioner." },
+  {
+    value: "independent",
+    label: "Independent source",
+    short: "an independent source",
+    description: "Journalism, academic work, audits, books.",
+  },
+  {
+    value: "community",
+    label: "Community submission",
+    short: "a community submission",
+    description: "Submitted to Receipts by a practitioner.",
+  },
 ];
 
 export type FacetKey =
