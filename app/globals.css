@@ -700,7 +700,9 @@ a.receipt:hover .receipt-title {
 
 /* the mask clips any outside outline, so focus draws inside the card */
 a.receipt:focus-visible {
-  outline: none;
+  /* transparent outline: invisible normally, drawn by the system in high-contrast mode */
+  outline: 2px solid transparent;
+  outline-offset: -2px;
   box-shadow:
     inset 0 0 0 2px var(--focus),
     var(--shadow);
@@ -1572,8 +1574,8 @@ a {
   .result-count {
     margin-bottom: 10px;
   }
-  /* the evidence bar right above already defines each level */
-  .tier-def {
+  /* the evidence bar right above already defines each level; keep the source split */
+  .tier-def-text {
     display: none;
   }
   .tier-head {
@@ -1875,5 +1877,262 @@ a.receipt:focus-visible::after {
   }
   .lucky-short {
     display: inline;
+  }
+}
+
+/* ---------- source marks ---------- */
+
+:root {
+  --vendor: #9a3412;
+  --vendor-bg: #fdecdf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --vendor: #fdba74;
+    --vendor-bg: #3b2212;
+  }
+}
+
+:root[data-theme="dark"] {
+  --vendor: #fdba74;
+  --vendor-bg: #3b2212;
+}
+
+.src-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  line-height: 1.3;
+  color: var(--ink-2);
+}
+
+.src-vendor {
+  color: var(--vendor);
+  background: var(--vendor-bg);
+  border: 1px solid color-mix(in srgb, var(--vendor) 35%, transparent);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-weight: 600;
+}
+
+.src-independent {
+  color: var(--ev-tested);
+  font-weight: 600;
+}
+
+.tier-src,
+.results-src {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.tier-head .tier-src {
+  flex-basis: 100%;
+}
+
+.results-src {
+  margin: -6px 0 12px;
+}
+
+.evidence-why {
+  margin: 12px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+  max-width: 80ch;
+}
+
+/* ---------- round 4: toolbar first, collapsible facets ---------- */
+
+@media (min-width: 960px) {
+  .explorer {
+    grid-template-columns: 236px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 40px;
+    row-gap: 0;
+  }
+  .toolbar-cell {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .filters {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .results {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.search-wrap {
+  position: relative;
+  flex: 1 1 260px;
+  min-width: 0;
+  display: flex;
+}
+
+.search-wrap .search {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.search-key {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+  border: 1px solid var(--rule-strong);
+  border-radius: 4px;
+  padding: 0 6px;
+  line-height: 18px;
+  pointer-events: none;
+}
+
+@media (max-width: 959px) {
+  .search-wrap {
+    flex: 1 1 100%;
+  }
+  .search-key {
+    display: none;
+  }
+}
+
+.facet-h {
+  margin-bottom: 4px;
+}
+
+.facet-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 4px 0;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  cursor: pointer;
+  text-align: left;
+}
+
+.facet-toggle:hover {
+  color: var(--ink);
+}
+
+.facet-toggle > span:first-child {
+  flex: 1;
+}
+
+.facet-inuse {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--ink);
+  background: var(--paper-2);
+  border-radius: 999px;
+  padding: 0 7px;
+}
+
+.facet-caret {
+  transition: transform 0.15s ease-out;
+  transform: rotate(-90deg);
+}
+
+.facet-toggle[aria-expanded="true"] .facet-caret {
+  transform: none;
+}
+
+.facet [hidden] {
+  display: none;
+}
+
+.facet > div {
+  padding-top: 4px;
+}
+
+/* ---------- round 4: caveat line, copy fallback, tap targets ---------- */
+
+.caveat-line {
+  margin: -8px 0 18px;
+  max-width: 68ch;
+  font-size: 14px;
+  color: var(--ink-2);
+  padding: 8px 12px;
+  background: var(--ev-reported-bg);
+  border: 1px solid color-mix(in srgb, var(--ev-reported) 35%, transparent);
+  border-radius: var(--radius);
+}
+
+.caveat-line strong {
+  color: var(--ink);
+}
+
+.caveat-line a {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.cite-preview[data-ok="false"] figcaption {
+  color: var(--vendor);
+}
+
+.cite-preview pre::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.site-footer a {
+  display: inline-block;
+  padding: 6px 2px;
+}
+
+#caveats {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 720px) {
+  .evidence-why {
+    display: none;
+  }
+}
+
+/* phone: the first receipt's result belongs on the first screen */
+@media (max-width: 720px) {
+  .explorer {
+    gap: 0;
+    padding-top: 14px;
+  }
+  .hero {
+    padding: 18px 0 14px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .evidence-bar {
+    padding: 12px 0 14px;
+  }
+  .evidence-bar h2 {
+    margin-bottom: 8px;
+  }
+  .evidence-opt {
+    padding: 7px 10px 8px;
+  }
+  .result-row {
+    margin-bottom: 8px;
+  }
+  .tier-head {
+    gap: 2px 12px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
   }
 }

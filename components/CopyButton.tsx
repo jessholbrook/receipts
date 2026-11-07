@@ -31,11 +31,13 @@ export default function CopyButton({
   text,
   className = "btn secondary",
   onCopied,
+  onFailed,
 }: {
   label: string;
   text: string | (() => string);
   className?: string;
   onCopied?: () => void;
+  onFailed?: () => void;
 }) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
 
@@ -48,6 +50,7 @@ export default function CopyButton({
         const ok = await copyText(typeof text === "function" ? text() : text);
         setState(ok ? "copied" : "failed");
         if (ok) onCopied?.();
+        else onFailed?.();
         window.setTimeout(() => setState("idle"), 2200);
       }}
     >

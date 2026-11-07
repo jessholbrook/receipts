@@ -24,6 +24,7 @@ Each research batch file in `data/seed/` is a JSON array of objects shaped like 
   "metrics": ["task_success", "support_cost"],
   "company_size": "public_sector",
   "year": 2014,
+  "year_approx": false,
   "evidence_strength": "measured",
   "source_type": "first_party",
   "sources": [

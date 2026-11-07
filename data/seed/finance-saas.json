@@ -77,7 +77,8 @@
         "publisher": "UserTesting",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "comed-customer-designed-bill",
@@ -279,7 +280,8 @@
         "publisher": "UserTesting",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "monzo-gambling-block",
@@ -404,7 +406,8 @@
         "publisher": "UserTesting",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "everypaw-tv-ad-concept-testing",
@@ -520,7 +523,8 @@
         "publisher": "Coforge",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "slack-2020-redesign-pilot-and-benchmark",
@@ -599,7 +603,8 @@
         "publisher": "Slack Design",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "xero-new-invoicing-feedback-fixes",

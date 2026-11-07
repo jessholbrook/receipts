@@ -847,7 +847,8 @@
     "publisher": "CaseStudies.com",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "american-airlines-trip-management-benchmark",
@@ -1249,7 +1250,8 @@
     "publisher": "CaseStudies.com",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "intertop-checkout-exit-survey",
@@ -1288,7 +1290,8 @@
     "publisher": "Contentsquare",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "instacart-shopper-app-field-research",
@@ -2141,7 +2144,8 @@
     "publisher": "PlaytestCloud",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "facebook-reactions-emotion-research",
@@ -2259,7 +2263,8 @@
     "publisher": "UserTesting",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "comed-customer-designed-bill",
@@ -2461,7 +2466,8 @@
     "publisher": "UserTesting",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "monzo-gambling-block",
@@ -2586,7 +2592,8 @@
     "publisher": "UserTesting",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "everypaw-tv-ad-concept-testing",
@@ -2702,7 +2709,8 @@
     "publisher": "Coforge",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "slack-2020-redesign-pilot-and-benchmark",
@@ -2781,7 +2789,8 @@
     "publisher": "Slack Design",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "xero-new-invoicing-feedback-fixes",
@@ -4973,7 +4982,8 @@
     "publisher": "CTI Digital",
     "date": null
    }
-  ]
+  ],
+  "year_approx": true
  },
  {
   "slug": "louisiana-lamessage-benefit-renewal-texts",

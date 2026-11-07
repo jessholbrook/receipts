@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Entry } from "@/lib/types";
 import { labelFor } from "@/lib/taxonomy";
+import SourceMark from "./SourceMark";
+import { yearLabel } from "@/lib/cite";
 
 export function EvidenceBadge({ level }: { level: Entry["evidence_strength"] }) {
   return <span className={`ev ev-${level}`}>{labelFor("evidence_strength", level)}</span>;
@@ -25,13 +27,15 @@ export function EntryCard({
       <div className="receipt-head">
         <span className="receipt-meta">
           {labelFor("industry", entry.industry)}
-          {entry.year ? ` · ${entry.year}` : ""}
+          {entry.year ? ` · ${yearLabel(entry)}` : ""}
         </span>
         {showBadge && <EvidenceBadge level={entry.evidence_strength} />}
       </div>
       <p className="receipt-result">{entry.headline_metric ?? "See the full receipt"}</p>
       <Title className="receipt-title">{entry.company}</Title>
-      <p className="source-line">{labelFor("source_type", entry.source_type)}</p>
+      <p className="source-line">
+        <SourceMark type={entry.source_type} />
+      </p>
       <p className="summary">{entry.summary}</p>
       {entry.methods.length > 0 && (
         <div className="receipt-foot">

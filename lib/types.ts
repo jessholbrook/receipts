@@ -21,6 +21,7 @@ export type Entry = {
   metrics: string[];
   company_size: string | null;
   year: number | null;
+  year_approx: boolean;
   evidence_strength: "tested" | "measured" | "reported" | "decision";
   source_type: "first_party" | "agency_vendor" | "independent" | "community";
   sources: Source[];

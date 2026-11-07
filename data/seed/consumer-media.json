@@ -697,7 +697,8 @@
         "publisher": "PlaytestCloud",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "facebook-reactions-emotion-research",

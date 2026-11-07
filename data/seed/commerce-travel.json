@@ -87,7 +87,8 @@
         "publisher": "CaseStudies.com",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "american-airlines-trip-management-benchmark",
@@ -489,7 +490,8 @@
         "publisher": "CaseStudies.com",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "intertop-checkout-exit-survey",
@@ -528,7 +530,8 @@
         "publisher": "Contentsquare",
         "date": null
       }
-    ]
+    ],
+    "year_approx": true
   },
   {
     "slug": "instacart-shopper-app-field-research",

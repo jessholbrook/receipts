@@ -6,6 +6,7 @@ import type { Entry } from "@/lib/types";
 import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
 import CopyButton from "./CopyButton";
+import { sourceBreakdown } from "./SourceMark";
 import { LAST_RESULTS_KEY } from "./BackToResults";
 
 type Selected = Partial<Record<FacetKey, string[]>>;
@@ -95,6 +96,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const [q, setQ] = useState(initial.q);
   const [sort, setSort] = useState(initial.sort);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [openFacets, setOpenFacets] = useState<Record<string, boolean>>({ industry: true, metrics: true });
   const [openTiers, setOpenTiers] = useState<Record<string, boolean>>({});
   const [pageCount, setPageCount] = useState(1);
   const sharedLanding = Object.keys(initial.sel).length > 0 || initial.q !== "";
@@ -121,6 +123,18 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   useEffect(() => {
     if (sharedLanding) document.getElementById("results")?.scrollIntoView({ block: "start" });
   }, [sharedLanding]);
+
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => {
+      if (ev.key !== "/" || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+      const t = ev.target as HTMLElement | null;
+      if (t && (t.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(t.tagName))) return;
+      ev.preventDefault();
+      document.getElementById("q")?.focus();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const searchIndex = useMemo(() => new Map(entries.map((e) => [e.slug, haystack(e)])), [entries]);
 
@@ -219,9 +233,27 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
       const limit = 6;
       const isExpanded = expanded[f.key];
       const shown = isExpanded ? opts : opts.slice(0, limit);
+      const inUse = (selected[f.key] ?? []).length;
+      const open = openFacets[f.key] || inUse > 0;
+      const bodyId = `${idPrefix}-${f.key}-opts`;
       return (
         <fieldset key={f.key} className="facet">
-          <legend className="facet-h">{f.label}</legend>
+          <legend className="facet-h">
+            <button
+              type="button"
+              className="facet-toggle"
+              aria-expanded={open}
+              aria-controls={bodyId}
+              onClick={() => setOpenFacets((o) => ({ ...o, [f.key]: !open }))}
+            >
+              <span>{f.label}</span>
+              {inUse > 0 && <span className="facet-inuse">{inUse} on</span>}
+              <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true" className="facet-caret">
+                <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </legend>
+          <div id={bodyId} hidden={!open}>
           {shown.map((o) => {
             const n = c[o.value] ?? 0;
             const checked = (selected[f.key] ?? []).includes(o.value);
@@ -230,9 +262,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               <div key={o.value} className="facet-opt" data-empty={n === 0 && !checked}>
                 <input id={id} type="checkbox" checked={checked} onChange={() => toggle(f.key, o.value)} />
                 <label htmlFor={id}>{o.label}</label>
-                <span className="count" aria-label={`${n} receipts`}>
-                  {n}
-                </span>
+                <span className="count">{n}</span>
               </div>
             );
           })}
@@ -246,6 +276,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               {isExpanded ? "Show fewer" : `Show all ${opts.length}`}
             </button>
           )}
+          </div>
         </fieldset>
       );
     });
@@ -287,9 +318,60 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             );
           })}
         </div>
+        <p className="evidence-why">
+          Each receipt also says who&rsquo;s telling the story: an independent source, the company itself, or a vendor
+          or agency writing about its own client, which has an incentive to look good.
+        </p>
       </section>
 
       <div className="explorer">
+        <div className="toolbar toolbar-cell">
+          <div className="search-wrap">
+            <label htmlFor="q" className="visually-hidden">
+              Search
+            </label>
+            <input
+              id="q"
+              className="search"
+              type="search"
+              placeholder="Search companies, methods, outcomes…"
+              aria-keyshortcuts="/"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
+            {!q && (
+              <kbd className="search-key" aria-hidden="true">
+                /
+              </kbd>
+            )}
+          </div>
+          <button type="button" className="btn secondary filters-toggle" onClick={openSheet}>
+            Filters{sidebarActive ? ` (${sidebarActive})` : ""}
+          </button>
+          <label htmlFor="sort" className="visually-hidden">
+            Sort
+          </label>
+          <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
+            <option value="evidence">Strongest</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="added">Added</option>
+          </select>
+          <button
+            type="button"
+            className="btn secondary lucky"
+            disabled={results.length === 0}
+            onClick={() => {
+              const pick = results[Math.floor(Math.random() * results.length)];
+              if (pick) router.push(`/entries/${pick.slug}`);
+            }}
+            title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
+            aria-label="I'm Feeling Lucky: open a random receipt"
+          >
+            <span className="lucky-long">I&rsquo;m Feeling Lucky</span>
+            <span className="lucky-short">Lucky</span>
+          </button>
+        </div>
         <aside className="filters" aria-label="Filters">
           <a href="#results" className="skip-inline">
             Skip filters
@@ -307,45 +389,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           <h2 id="results-h" className={activeCount || q.trim() ? "results-h" : "visually-hidden"}>
             {activeCount || q.trim() ? resultsHeadline(results.length, selected, q) : "Results"}
           </h2>
-          <div className="toolbar">
-            <label htmlFor="q" className="visually-hidden">
-              Search
-            </label>
-            <input
-              id="q"
-              className="search"
-              type="search"
-              placeholder="Search companies, methods, outcomes…"
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-            />
-            <button type="button" className="btn secondary filters-toggle" onClick={openSheet}>
-              Filters{sidebarActive ? ` (${sidebarActive})` : ""}
-            </button>
-            <label htmlFor="sort" className="visually-hidden">
-              Sort
-            </label>
-            <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
-              <option value="evidence">Strongest</option>
-              <option value="newest">Newest</option>
-              <option value="oldest">Oldest</option>
-              <option value="added">Added</option>
-            </select>
-            <button
-              type="button"
-              className="btn secondary lucky"
-              disabled={results.length === 0}
-              onClick={() => {
-                const pick = results[Math.floor(Math.random() * results.length)];
-                if (pick) router.push(`/entries/${pick.slug}`);
-              }}
-              title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
-              aria-label="I'm Feeling Lucky: open a random receipt"
-            >
-              <span className="lucky-long">I&rsquo;m Feeling Lucky</span>
-              <span className="lucky-short">Lucky</span>
-            </button>
-          </div>
+          {(activeCount > 0 || q.trim() !== "") && results.length > 1 && (
+            <p className="results-src">Sources: {sourceBreakdown(results)}</p>
+          )}
 
           {activeCount > 0 && (
             <div className="active-filters">
@@ -413,16 +459,23 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             </div>
           ) : groups ? (
             groups.map(({ ev, items }) => {
-              const open = openTiers[ev.value] || items.length <= PER_TIER + 2;
+              const open = ev.value === "tested" || openTiers[ev.value] || items.length <= PER_TIER + 2;
               const shown = open ? items : items.slice(0, PER_TIER);
               return (
                 <section key={ev.value} className="tier" aria-labelledby={`tier-${ev.value}`}>
                   <div className="tier-head">
                     <h3 id={`tier-${ev.value}`}>
                       <span className={`ev ev-${ev.value}`}>{ev.label}</span>
-                      <span className="tier-n">{plural(items.length)}</span>
+                      <span className="tier-n">
+                        {" "}
+                        {plural(items.length)}
+                      </span>
                     </h3>
-                    <p className="tier-def">{ev.short}</p>
+
+                    <p className="tier-def">
+                      <span className="tier-def-text">{ev.short} · </span>
+                      Sources: {sourceBreakdown(items)}
+                    </p>
                   </div>
                   <div className="grid">
                     {shown.map((e) => (
@@ -485,7 +538,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 setSelected((prev) => ({ evidence_strength: prev.evidence_strength ?? [] }))
               }
             >
-              Clear filters
+              Clear these filters
             </button>
             <button type="button" className="btn" onClick={showResults}>
               Show {plural(results.length)}

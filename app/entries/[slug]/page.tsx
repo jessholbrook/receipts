@@ -7,7 +7,7 @@ import { EvidenceBadge } from "@/components/EntryCard";
 import CiteActions from "@/components/CiteActions";
 import BackToResults from "@/components/BackToResults";
 import Thumb from "@/components/Thumb";
-import { buildCitation, entryUrl } from "@/lib/cite";
+import { buildCitation, entryUrl, firstSentence, yearLabel } from "@/lib/cite";
 
 export const revalidate = 300;
 
@@ -24,7 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const src = SOURCE_TYPES.find((x) => x.value === e.source_type);
   // Each receipt unfurls as itself in Slack and elsewhere, with its honesty labels.
   const shareTitle = `${e.headline_metric ? `${e.headline_metric} · ` : ""}${e.company}`;
-  const shareDesc = `${ev?.label}: ${ev?.short}. Source: ${src?.label}. ${e.summary}`;
+  // Short enough that Slack keeps the caveat (it trims unfurls around 300 characters).
+  const caveat = firstSentence(e.caveats);
+  const shareDesc = `${ev?.label}: ${ev?.short}. Source: ${src?.label}.${caveat ? ` Caveat: ${caveat}` : ""}`.slice(0, 280);
   return {
     title: e.title,
     description: e.summary,
@@ -82,12 +84,18 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             <EvidenceBadge level={e.evidence_strength} />{" "}
             {e.company}
             {e.is_anonymized && " (anonymized)"}
-            {e.year ? ` · ${e.year}` : ""}
+            {e.year ? ` · ${yearLabel(e)}` : ""}
           </p>
           <p className="summary">{e.summary}</p>
           <p className="source-note">
             <strong>{src?.label}.</strong> {src?.description}
           </p>
+          {e.caveats && (
+            <p className="caveat-line">
+              <strong>Caveat:</strong> {firstSentence(e.caveats)}{" "}
+              <a href="#caveats">All caveats</a>
+            </p>
+          )}
           <CiteActions url={entryUrl(e.slug)} citation={buildCitation(e)} />
 
           <div className="story">
@@ -98,7 +106,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             <Section label="The outcome" text={e.outcome} />
             <Section label="Attribution" text={e.attribution} />
             {e.caveats && (
-              <section>
+              <section id="caveats">
                 <h2>Caveats</h2>
                 <div className="callout">
                   {e.caveats.split(/\n{2,}/).map((p, i) => (
@@ -112,7 +120,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             <section>
               <h2>Sources</h2>
               <div>
-                {e.image_url && first && (
+                {e.image_url && first && e.source_type !== "agency_vendor" && (
                   <a href={first.url} target="_blank" rel="noopener noreferrer" className="source-preview"
                     aria-label={`Open source: ${first.title}`}
                   >
@@ -195,12 +203,6 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
                 </>
               )}
             </dl>
-            <div className="receipt-total" style={{ marginTop: 18 }}>
-              <span className="lbl">Thank you</span>
-              <span className="val" style={{ fontSize: 13 }}>
-                Come again
-              </span>
-            </div>
           </div>
           <p style={{ fontSize: 13, color: "var(--ink-3)", marginTop: 16 }}>
             Spot an error or a better source?{" "}
