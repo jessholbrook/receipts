@@ -4,6 +4,10 @@ import type { Metadata } from "next";
 import { getEntries, getEntry } from "@/lib/supabase";
 import { EVIDENCE, labelFor, SOURCE_TYPES } from "@/lib/taxonomy";
 import { EvidenceBadge } from "@/components/EntryCard";
+import CopyButton from "@/components/CopyButton";
+import Thumb from "@/components/Thumb";
+
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.researchreceipts.org";
 
 export const revalidate = 300;
 
@@ -54,6 +58,17 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
 
   const ev = EVIDENCE.find((x) => x.value === e.evidence_strength);
   const src = SOURCE_TYPES.find((x) => x.value === e.source_type);
+  const url = `${SITE}/entries/${e.slug}`;
+  const first = e.sources[0];
+  // Plain text that pastes cleanly into Slack, docs and slides.
+  const citation = [
+    `${e.headline_metric ? e.headline_metric + ": " : ""}${e.title}`,
+    `${e.company}${e.year ? `, ${e.year}` : ""}. Evidence: ${ev?.label} (${ev?.short?.toLowerCase()}).`,
+    first ? `Source: ${first.title}${first.publisher ? `, ${first.publisher}` : ""}. ${first.url}` : null,
+    `Via Receipts: ${url}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   return (
     <div className="wrap">
@@ -76,6 +91,10 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             {e.year ? ` · ${e.year}` : ""}
           </p>
           <p className="summary">{e.summary}</p>
+          <div className="cite-actions">
+            <CopyButton label="Copy link" text={url} />
+            <CopyButton label="Copy as citation" text={citation} />
+          </div>
 
           <div className="story">
             <Section label="The problem" text={e.problem} />
@@ -98,19 +117,28 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
             )}
             <section>
               <h2>Sources</h2>
-              <ul className="sources">
-                {e.sources.map((s) => (
-                  <li key={s.url}>
-                    <a href={s.url} target="_blank" rel="noopener noreferrer">
-                      {s.title}
-                    </a>
-                    <span className="meta">
-                      {[s.publisher, s.date].filter(Boolean).join(" · ")}
-                    </span>
-                  </li>
-                ))}
-                {e.sources.length === 0 && <li className="meta">Community submission, no public source.</li>}
-              </ul>
+              <div>
+                {e.image_url && first && (
+                  <a href={first.url} target="_blank" rel="noopener noreferrer" className="source-preview"
+                    aria-label={`Open source: ${first.title}`}
+                  >
+                    <Thumb src={e.image_url} className="source-thumb" />
+                  </a>
+                )}
+                <ul className="sources">
+                  {e.sources.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="noopener noreferrer">
+                        {s.title}
+                      </a>
+                      <span className="meta">
+                        {[s.publisher, s.date].filter(Boolean).join(" · ")}
+                      </span>
+                    </li>
+                  ))}
+                  {e.sources.length === 0 && <li className="meta">Community submission, no public source.</li>}
+                </ul>
+              </div>
             </section>
           </div>
         </article>

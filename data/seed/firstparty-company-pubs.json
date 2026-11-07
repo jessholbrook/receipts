@@ -123,7 +123,7 @@
     "insight": "The usability study found that the word 'connection' misled people into thinking their internet connection was the problem rather than a bad certificate. Jargon like 'security credentials' and 'encrypted' didn't help people understand.",
     "change": "New copy and design: plain language with 'certificate' explained on first use, 'connection' removed from headings, short scannable text, and a design that makes the safe choice the clear default while still letting people proceed.",
     "outcome": "In the survey, people shown the redesigned pages were 22–50% less likely to say they would try to ignore the warning, and 29–60% less likely to say they would open the site in another browser (4.7–8.5% for new Firefox pages vs 10–11.3% for Chrome's). The live study found no significant negative effect on usage or retention, which cleared the pages for release to all users.",
-    "headline_metric": "-22–50% would ignore it",
+    "headline_metric": "22–50% fewer say they'd ignore",
     "attribution": "Fairly direct. The tested copy changes came from the usability findings and published warning research, and the survey compared the new pages against the old ones.",
     "caveats": "The headline numbers are stated intentions in a survey panel, not observed behaviour. Ranges are given without per-message detail or sample sizes. The live study only shows no harm. Written by the Mozilla content strategist who worked on it.",
     "methods": [
@@ -395,7 +395,7 @@
     "insight": "Well-applied expressive design was preferred across ages, by up to 87% among 18–24-year-olds. In eye tracking, larger, more prominent key actions were found up to four times faster (for example, an email Send button), and age differences in fixation time largely disappeared for users over 45. But expressive designs that broke familiar patterns, such as a scattered album-art playlist or email actions without text labels, scored worse on usability.",
     "change": "Google shipped Material 3 Expressive in 2025 with new components and guidelines that emphasise size, colour, shape and containment for key actions, while telling teams to keep standard patterns and labels where removing them hurt usability.",
     "outcome": "Lab results: key elements spotted up to 4x faster and tap times on key actions reduced 'by seconds'. Surveys found 32% higher 'subculture', 34% higher 'modernity' and 30% higher 'rebelliousness' ratings. No in-product business metrics are reported.",
-    "headline_metric": "Up to 4x faster to spot",
+    "headline_metric": "Up to 4x faster to spot key UI",
     "attribution": "Direct: the design system was developed and iterated through these studies, and the eye-tracking study compared versions directly.",
     "caveats": "'Up to' four times is a best case across apps. Lab and survey results, not live product metrics. The authors note unfamiliarity affected results, and a strong minority preferred calmer designs. Google writing about its own design system.",
     "methods": [
@@ -477,7 +477,7 @@
     "insight": "One in five FT Edit readers had read the print FT Weekend in the past month, which usage data couldn't show, and they were less likely to work in financial services than full FT subscribers. Many wanted more choice. Ahead of the merge, respondents worried about regularly hitting paywalled stories and losing the focused reading experience.",
     "change": "The FT ran an experimental print marketing campaign for FT Edit inside FT Weekend, trialled recommendation-engine articles alongside the editorial picks, and designed a dedicated FT Edit space in the main FT app that opens automatically for FT Edit subscribers, shields them from paywalled stories, and keeps FT Edit's one-article-at-a-time horizontal carousel.",
     "outcome": "Survey response rate rose 130% after the move to the carousel card. The FT describes the FT Weekend print campaign as 'successful' but gives no figures. The merge design was 'directly influenced' by survey feedback. Personalisation trials were small due to time and technical limits.",
-    "headline_metric": "+130% survey responses",
+    "headline_metric": "Merged Edit into main app",
     "attribution": "Direct for the decisions, which the author ties to specific survey findings. The 130% figure measures the research method (survey placement), not a product outcome.",
     "caveats": "Written by the FT researcher who ran the survey. No metrics for the print campaign or the merged experience. Survey respondents are self-selected.",
     "methods": [
@@ -487,7 +487,6 @@
     "industry": "media_entertainment",
     "product_type": "mobile_app",
     "metrics": [
-      "revenue",
       "engagement"
     ],
     "company_size": "enterprise",

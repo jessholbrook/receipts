@@ -121,7 +121,7 @@
   "insight": "People in the target audience and beyond often rounded up their financial transactions for speed and convenience, and many mothers had trouble saving, whether for lack of money or willpower.",
   "change": "The bank launched 'Keep the Change', which rounds purchases on a Bank of America Visa debit card up to the nearest dollar and transfers the difference from checking to savings.",
   "outcome": "Core77 reports the program 'attracted 2.5 million customers', translating into more than 700,000 new checking accounts and one million new savings accounts.",
-  "headline_metric": "2.5M customers",
+  "headline_metric": "Attracted 2.5M customers",
   "attribution": "The product concept is directly credited to the observed rounding behaviour. Account growth is reported, but the share caused by this program versus marketing and other factors is unknown.",
   "caveats": "Figures appear to come from IDEO/Bank of America material repeated in design press; no method for counting 'attracted' customers is given. IDEO had an incentive to promote the case. Figures and target-audience descriptions vary across later retellings.",
   "methods": [
@@ -286,7 +286,7 @@
   "insight": "The listings shared one problem: the photos were bad, so guests couldn't see what they would be paying for. Meeting hosts in person also showed the founders what hosts needed.",
   "change": "The founders replaced amateur photos with high-quality ones taken themselves; this later grew into Airbnb's professional photography program for hosts.",
   "outcome": "First Round Review reports that better photos doubled weekly revenue from $200 to $400, the first financial improvement in over eight months.",
-  "headline_metric": "$200 to $400/week",
+  "headline_metric": "Weekly revenue $200 → $400",
   "attribution": "Founder-told story. The change is clearly linked to what they observed, but there was no control and the timeframe is short.",
   "caveats": "This is founder lore retold in many forms (camera cost and details vary). The 'research' was informal: reviewing listings and visiting hosts, not a structured study. Revenue at that scale is noisy. Often cited as a design-thinking or 'do things that don't scale' story rather than a research one.",
   "methods": [
@@ -324,7 +324,7 @@
   "insight": "Most of nurses' attention was taken up by the 'system' (documentation, equipment, interruptions) rather than caring for patients, and shift change created hectic starts, especially with patients in pain.",
   "change": "Nurse Knowledge Exchange (later NKEplus): structured handoff with patient involvement, a final hourly round before shift change (pain, toileting, positioning, personal items), support staff covering call lights during handoff, and a unit safety check.",
   "outcome": "KP's Innovation Consultancy reports that 'nurses got to see patients at the start of their shift 3x faster under NKE pilot'. The model later spread across KP units.",
-  "headline_metric": "3x faster to patients",
+  "headline_metric": "Nurses saw patients 3x faster",
   "attribution": "The redesign came directly out of the observation work. The 3x figure is from a pilot, as reported by the team that designed it.",
   "caveats": "Source is a first-party conference deck (2010) with headline figures and no method for the 3x measurement. IDEO's role was teaching the method, so it's sometimes retold as an IDEO project. Pilot results may not hold at scale.",
   "methods": [
@@ -400,7 +400,7 @@
   "insight": "When girls build, they tend to play 'on the inside' of a structure and with characters and stories, and they value small, realistic details (an art studio with paint canisters and a canvas, for example).",
   "change": "LEGO launched Friends: five named mini-doll characters with storylines and detailed settings such as a vet's office, karate studio and beauty parlour.",
   "outcome": "Per NPR: the line 'doubled sales expectations in 2012', the year it launched, and 'sales to girls tripled in just that year'.",
-  "headline_metric": "2x sales expectations",
+  "headline_metric": "Doubled sales expectations",
   "attribution": "The research shaped the line's design and is widely credited for its success, but launch-year sales also depend on marketing, retail placement and price; no causal analysis is published.",
   "caveats": "Sales figures are company statements reported by press. The line was criticized for reinforcing gender stereotypes, so 'success' is commercial, not a verdict on the research framing. Research sample sizes differ across sources.",
   "methods": [
@@ -439,7 +439,7 @@
   "insight": "People hated handling dirty mops and wringing them out; much of the dirt was fine dust that could be picked up electrostatically. One older participant swept spilled coffee grounds and then used a damp paper towel for the fine residue rather than a mop.",
   "change": "The Swiffer: a lightweight sweeper with disposable electrostatic or wet cloths, sold on a razor-and-blades model.",
   "outcome": "Continuum's case study says it generated $100 million in sales in its first four months, more than 11.1 million starter kits sold in the US within a year, and eventually became a $500 million annual brand.",
-  "headline_metric": "11.1M kits in year 1",
+  "headline_metric": "11.1M+ kits sold in first year",
   "attribution": "The product concept is credited to the observation work by both the agency and independent press. Sales also reflect P&G's distribution and marketing power.",
   "caveats": "Sales figures come from the design agency's own case study (incentive to promote); independent press (Boston Globe) confirms the research story and calls the product a 'blockbuster' without numbers. The coffee-grounds anecdote appears in marketing retellings without a cited source. P&G has not published current sales.",
   "methods": [
@@ -733,7 +733,7 @@
   "insight": "Usage was extremely low, around 0.01% of users, which could not justify the work needed to bring the feature up to acceptable quality for millions of users.",
   "change": "Tab Groups was removed from Firefox (with an add-on path for existing users) instead of being rebuilt.",
   "outcome": "More than 24,000 lines of code were removed, freeing the team from maintaining the feature and unblocking multi-process work. Tab groups later returned in a new design years afterwards.",
-  "headline_metric": "24,000+ lines removed",
+  "headline_metric": "Removed Tab Groups",
   "attribution": "Usage data was a central reason, alongside quality and architecture problems, so it was one of several causes.",
   "caveats": "Written on a Mozilla engineer's personal blog, not an official report. Behavioural analytics only; no qualitative research on why people didn't use it. A small but vocal group of users was upset, and Mozilla later reintroduced tab groups, so the long-term call is debatable.",
   "methods": [
@@ -945,7 +945,7 @@
   "insight": "Existing usability research on checkout friction (form design, step order, payment trust, error recovery) applied to the retailer's checkouts, which had violated several of the guidelines.",
   "change": "The guideline recommendations were implemented across every store's checkout. The specific design changes are not described.",
   "outcome": "The retailer reported a '100% increase in checkout conversion rates', i.e. checkout conversion roughly doubled.",
-  "headline_metric": "+100% checkout conv.",
+  "headline_metric": "Checkout conversion doubled",
   "attribution": "Weak. The research is generic third-party research, not studies of this retailer's users, and the outcome is a self-reported number with no method.",
   "caveats": "Promotional post from the research vendor. Client unnamed, so it can't be checked. No baseline, timeframe, measurement method or list of changes. A doubling usually means a very poor starting point. Include only as an example of applying published research, not as a controlled result.",
   "methods": [
@@ -982,7 +982,7 @@
   "insight": "People didn't realise they could pick the cause themselves. Some thought Co-op chose for them or that they'd send their choice by email later, and they overlooked the clickable element on screen.",
   "change": "A content-only fix: the line 'See your local causes' was added inside the 'your community' box. It was tested in the lab, where participants then understood what to do, before going live.",
   "outcome": "Early results after release showed 'a 10% increase in people selecting a cause'.",
-  "headline_metric": "+10% causes selected",
+  "headline_metric": "+10% members choosing a cause",
   "attribution": "Direct. The change came from a specific lab finding, backed by feedback comments and analytics, and was the only change described. Measurement appears to be before/after live data.",
   "caveats": "Early results only, reported a week after launch. Measurement method not stated (no A/B test mentioned) and no baseline given, so it isn't clear what the 10% is relative to. First-party blog.",
   "methods": [
@@ -1262,7 +1262,7 @@
   "insight": "48.6% of respondents said they were leaving because they couldn't complete the checkout form. Heatmaps also showed the 'Buy now' button sat below the fold for most users on the product page.",
   "change": "Checkout fields were cut to three, the order page was split into clear blocks, and autofill was added for signed-in users. The product page was also simplified so the buy button was visible.",
   "outcome": "In the A/B test the variant's conversion rate rose 54.68%. After rollout, average revenue per user grew 11.46% and the checkout bounce rate fell 13.35%.",
-  "headline_metric": "+54.68% checkout conv.",
+  "headline_metric": "+54.68% checkout conversion",
   "attribution": "Direct: the survey pinpointed the form as the barrier, the changes targeted it, and the variant was A/B tested against the original.",
   "caveats": "Reported by the analytics vendor (Hotjar/Contentsquare) about an agency client; both have an incentive. Test length, traffic and significance aren't given. The 54.68% applies to the checkout step, not site-wide conversion. Survey is self-reported by people already leaving. Source undated; year is approximate.",
   "methods": [
@@ -1952,7 +1952,7 @@
   "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
   "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
   "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
-  "headline_metric": "60+ accessibility options",
+  "headline_metric": "Built accessibility suite",
   "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
   "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
   "methods": [
@@ -2192,7 +2192,7 @@
   "insight": "Customers come to a bill with five questions: what do I owe, how do I pay, how can I save, how can I control it, and can you help me. Around 30% of the information printed on the bill was not needed.",
   "change": "The bill was cut down to what was needed, jargon was removed, it was structured around those key questions, and customers were pointed to one central phone number. The framing shifted from a demand for money to a way to save money.",
   "outcome": "After launch (August 2012), the case study reports a reduction of 3,000 calls per week (10%), a saving of more than £750,000 to the organisation, and 17% of customers finding the information clearer. The EU later cited the bill as best practice.",
-  "headline_metric": "-10% query calls",
+  "headline_metric": "Bill query calls down 10%",
   "attribution": "Moderate. The research findings map directly onto the new bill structure, and the call reduction is measured after implementation, but other factors (pricing news, seasonality) are not controlled for.",
   "caveats": "Short case study reproduced with the agency's permission on an EU service-design project site; reads as promotional. No method for the call measurement, no participant numbers, and the savings period (per year?) is not stated. Old (2012).",
   "methods": [
@@ -2474,7 +2474,7 @@
   "insight": "Gambling is often impulsive, so a block that can be lifted instantly offers little protection; people who turn it on want friction that gives them time to reconsider.",
   "change": "The 2018 block required contacting support and then waiting 48 hours before it could be switched off. In 2023 Monzo added cooldown options of up to a year, a personal note shown when a cooldown starts and ends, and routing to specialist support teams for customers who had disclosed gambling harm.",
   "outcome": "Monzo's 2023 post says close to 100,000 people used the block in the previous 10 months, more than 200,000 attempted gambling transactions were blocked, and its compliance with GamCare's recommendations rose from 45% to 87%. No data on whether users' gambling harm fell.",
-  "headline_metric": "~100k users in 10 months",
+  "headline_metric": "~100k used block in 10 months",
   "attribution": "Moderate for the design (Monzo says customer feedback shaped how the block was built); weak for the outcome, which is adoption rather than an effect of research-driven design choices.",
   "caveats": "Research is informal (forum feedback, small testing group) and not described in detail. Outcome figures are Monzo's own and measure uptake and blocked transactions, not reduced harm. Blocked attempts may include repeated attempts by the same people.",
   "methods": [
@@ -2636,7 +2636,7 @@
   "insight": "A key landing page presented several value propositions at once, so Purefy's message was unclear. Prospects also needed more trust signals and social proof. Three distinct segments emerged: new graduates, experienced refinancers and parents.",
   "change": "After a debrief around interview ten, the team made immediate language and sequencing changes, drafted a simplified landing page within a week, and the UX researcher set up an A/B test while interviews were still running. Three personas were created for marketing.",
   "outcome": "The CMO is quoted: 'That one change, which we noticed early on, resulted in a 36% lift in conversion.'",
-  "headline_metric": "+36% conversion",
+  "headline_metric": "+36% landing-page conversion",
   "attribution": "Direct. The tested change came straight from an interview finding, and it was evaluated with an A/B test.",
   "caveats": "Vendor (dscout) case study. No baseline conversion, sample size, test duration or significance reported, and the exact variant isn't described. Small startup, single test.",
   "methods": [
@@ -2985,7 +2985,7 @@
   "insight": "The usability study found that the word 'connection' misled people into thinking their internet connection was the problem rather than a bad certificate. Jargon like 'security credentials' and 'encrypted' didn't help people understand.",
   "change": "New copy and design: plain language with 'certificate' explained on first use, 'connection' removed from headings, short scannable text, and a design that makes the safe choice the clear default while still letting people proceed.",
   "outcome": "In the survey, people shown the redesigned pages were 22–50% less likely to say they would try to ignore the warning, and 29–60% less likely to say they would open the site in another browser (4.7–8.5% for new Firefox pages vs 10–11.3% for Chrome's). The live study found no significant negative effect on usage or retention, which cleared the pages for release to all users.",
-  "headline_metric": "-22–50% would ignore it",
+  "headline_metric": "22–50% fewer say they'd ignore",
   "attribution": "Fairly direct. The tested copy changes came from the usability findings and published warning research, and the survey compared the new pages against the old ones.",
   "caveats": "The headline numbers are stated intentions in a survey panel, not observed behaviour. Ranges are given without per-message detail or sample sizes. The live study only shows no harm. Written by the Mozilla content strategist who worked on it.",
   "methods": [
@@ -3257,7 +3257,7 @@
   "insight": "Well-applied expressive design was preferred across ages, by up to 87% among 18–24-year-olds. In eye tracking, larger, more prominent key actions were found up to four times faster (for example, an email Send button), and age differences in fixation time largely disappeared for users over 45. But expressive designs that broke familiar patterns, such as a scattered album-art playlist or email actions without text labels, scored worse on usability.",
   "change": "Google shipped Material 3 Expressive in 2025 with new components and guidelines that emphasise size, colour, shape and containment for key actions, while telling teams to keep standard patterns and labels where removing them hurt usability.",
   "outcome": "Lab results: key elements spotted up to 4x faster and tap times on key actions reduced 'by seconds'. Surveys found 32% higher 'subculture', 34% higher 'modernity' and 30% higher 'rebelliousness' ratings. No in-product business metrics are reported.",
-  "headline_metric": "Up to 4x faster to spot",
+  "headline_metric": "Up to 4x faster to spot key UI",
   "attribution": "Direct: the design system was developed and iterated through these studies, and the eye-tracking study compared versions directly.",
   "caveats": "'Up to' four times is a best case across apps. Lab and survey results, not live product metrics. The authors note unfamiliarity affected results, and a strong minority preferred calmer designs. Google writing about its own design system.",
   "methods": [
@@ -3339,7 +3339,7 @@
   "insight": "One in five FT Edit readers had read the print FT Weekend in the past month, which usage data couldn't show, and they were less likely to work in financial services than full FT subscribers. Many wanted more choice. Ahead of the merge, respondents worried about regularly hitting paywalled stories and losing the focused reading experience.",
   "change": "The FT ran an experimental print marketing campaign for FT Edit inside FT Weekend, trialled recommendation-engine articles alongside the editorial picks, and designed a dedicated FT Edit space in the main FT app that opens automatically for FT Edit subscribers, shields them from paywalled stories, and keeps FT Edit's one-article-at-a-time horizontal carousel.",
   "outcome": "Survey response rate rose 130% after the move to the carousel card. The FT describes the FT Weekend print campaign as 'successful' but gives no figures. The merge design was 'directly influenced' by survey feedback. Personalisation trials were small due to time and technical limits.",
-  "headline_metric": "+130% survey responses",
+  "headline_metric": "Merged Edit into main app",
   "attribution": "Direct for the decisions, which the author ties to specific survey findings. The 130% figure measures the research method (survey placement), not a product outcome.",
   "caveats": "Written by the FT researcher who ran the survey. No metrics for the print campaign or the merged experience. Survey respondents are self-selected.",
   "methods": [
@@ -3349,7 +3349,6 @@
   "industry": "media_entertainment",
   "product_type": "mobile_app",
   "metrics": [
-   "revenue",
    "engagement"
   ],
   "company_size": "enterprise",
@@ -3415,7 +3414,7 @@
   "insight": "Moving the button down to the file tree did not hurt findability, it improved it: people expected it there, as on other Git platforms. On empty repositories, though, removing the button badly hurt findability.",
   "change": "The clone button moved to the file tree controls and returned to the repository page. A clone button was added above the instructions on the empty-repository page rather than dropped.",
   "outcome": "Proposed file-tree position: 98% correct, 15 seconds on average. Live header position: 84% correct, 21 seconds. Empty repository without a button: 50% correct, 37 seconds, versus 77% and 16 seconds with the button. At publication the change was being built by a community contributor.",
-  "headline_metric": "84% → 98% found it",
+  "headline_metric": "Clone button found 84% → 98%",
   "attribution": "Direct for the decision: the post says the tests drove both choices. The numbers are test results, not live product metrics after launch.",
   "caveats": "Small unmoderated samples (about 40 per variant) and a single click task, with no statistical testing reported. No post-launch data. Written by the designer who ran the tests on GitLab's own blog.",
   "methods": [
@@ -3510,7 +3509,6 @@
   "industry": "education",
   "product_type": "mobile_app",
   "metrics": [
-   "revenue",
    "engagement"
   ],
   "company_size": "enterprise",
@@ -3537,7 +3535,7 @@
   "insight": "There is no single triage style. People move between keeping a curated inbox, moving items to other task tools, skimming, and clearing unreads, depending on context. Notification volume also changes what people need: large-team users need different tools from small-team users.",
   "change": "Activity 2.0 brings DMs, mentions, threads, reminders, reactions and key channel notifications into one feed, with a simple default and optional filters, saved views, keyboard navigation and bulk actions for heavy users.",
   "outcome": "Slack reports an 80% engagement rate for the new experience, and that 60% of engaged Activity users are starting to triage and recall DMs from Activity. It also says some users struggled to leave familiar workflows.",
-  "headline_metric": "80% engagement rate",
+  "headline_metric": "80% engagement with new Activity",
   "attribution": "Partial. The triage insight clearly shaped the design, but the engagement numbers are not compared with Activity 1.0 and no method is given.",
   "caveats": "'Engagement rate' is not defined and there is no baseline. Company design blog post, written partly to showcase the team's process.",
   "methods": [
@@ -3811,7 +3809,7 @@
   "insight": "The tool's interruptions made concentration hard: code suggestions appeared automatically too quickly, and the hint bar took a lot of work to find.",
   "change": "The team co-designed changes that give developers more control over when intelligent suggestions surface, for both inline code insertion suggestions and single-line code change suggestions.",
   "outcome": "Microsoft reports a 3.5x increase in regular users of inline code insertion suggestions. Testing of the enhanced single-line code change suggestions showed a 176% increase in suggestions accepted and a 29% increase in regular users.",
-  "headline_metric": "3.5x regular users",
+  "headline_metric": "3.5x regular users of a feature",
   "attribution": "The case study links the changes to the research, but it does not say how the numbers were measured, over what period, or whether other changes shipped at the same time.",
   "caveats": "Short promotional case study in Microsoft's inclusive design toolkit, with no method, baseline or dates for the numbers. 'Testing' may mean an A/B test, but this is not stated.",
   "methods": [
@@ -3851,7 +3849,7 @@
   "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
   "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
   "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
-  "headline_metric": "+6% DAU",
+  "headline_metric": "+6% daily active users in India",
   "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
   "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
   "methods": [
@@ -3891,7 +3889,7 @@
   "insight": "In testing the existing workflow, 0 of 5 participants indented and signed their comment correctly. With the prototype, all 5 published a correctly formatted reply in about half the time. The barrier for newcomers was mechanical, not motivation.",
   "change": "The team built a Reply link next to each comment that opens a small box and handles indentation and signatures automatically, released it as a beta feature in 2020, then as an opt-out default on several wikis.",
   "outcome": "In an A/B test from 11 February to 10 March 2021 on 22 Wikipedias, where half of editors got the tool automatically, 72.9% of Junior Contributors with the tool published at least one comment versus 27.6% without (the team calls it a 160% increase). Junior Contributors were 7.2 times more likely to publish a comment they started, and reverts of their comments fell 79.5%. The team then offered the tool as an opt-out default across Wikimedia projects.",
-  "headline_metric": "72.9% vs 27.6% posted",
+  "headline_metric": "+160% newer editors commenting",
   "attribution": "Strong. The tool was designed to fix problems found in consultation and usability tests, and the outcome comes from a randomized test of that tool.",
   "caveats": "The write-up is inconsistent about whether the comparison is people who 'opened' the tool or who 'had access' to it; the figures are the same either way, but the exact denominator is unclear. Results are on talk-page participation, not longer-term editor retention. Some large wikis (including English Wikipedia) were not part of the default rollout at first.",
   "methods": [
@@ -3932,7 +3930,7 @@
   "insight": "Newcomers' main obstacles were conceptual rather than technical: they didn't understand policies or 'the Wikipedia way', couldn't find help or editing processes, and often sought help outside Wikipedia. The research recommended in-context help, mentorship and task suggestions based on interests.",
   "change": "The research led to the creation of the Growth team in 2018, which built the newcomer homepage, a help panel, mentorship and 'newcomer tasks' that suggest easy edits on topics the person picks.",
   "outcome": "A randomized experiment on Arabic, Vietnamese, Czech and Korean Wikipedia (97,755 new accounts, Nov 2019–May 2020) estimated activation (first article edit within 24 hours) rose from 21.6% to 24.1%, an 11.6% increase, with constructive activation up 26.7%; retention changes were not detected directly. A later peer-reviewed randomized experiment across 27 non-English Wikipedias found only a small but significant increase in activation (about 1% higher odds of editing within 24 hours) and no difference in retention, productivity or reverts.",
-  "headline_metric": "+11.6% then ~+1% odds",
+  "headline_metric": "Small gains in 27-wiki trial",
   "attribution": "Moderate. The feature set traces back to the 2017 interview research, and both evaluations were randomized, but neither isolates which research finding drove which feature.",
   "caveats": "The two controlled experiments disagree: the larger, later study found much weaker effects than the early pilot. Retention gains in the pilot were inferred, not measured. The homepage seemed to distract newcomers who were already mid-edit. Included as an honest example that a research-led feature can test modestly.",
   "methods": [
@@ -3985,7 +3983,7 @@
   "insight": "Many people did not miss court on purpose: they didn't realise they had to go, forgot, or didn't plan for it. Interviewees also believed most people skip court, when most attend, and that misperception made skipping feel normal.",
   "change": "Police switched to a redesigned summons with a clear title saying what to do, the court date, time and location at the top, and the consequence of not appearing. People could give a phone number to receive text reminders 7 days, 3 days and 1 day before court, with wording tested for plan-making and consequences.",
   "outcome": "J-PAL's summary reports the new form cut failure to appear by 6.4 percentage points from a 41% baseline (about 13%), roughly 17,000 fewer arrest warrants a year. In a randomized evaluation of about 20,000 recipients, any pre-court text cut failure to appear by 8 points from a 38% control mean (21%), and the best text set by 10 points (26%). The city adopted the new form for all summonses and sends the best-performing texts to everyone who gives a number.",
-  "headline_metric": "-26% missed court",
+  "headline_metric": "Missed court dates down 13–26%",
   "attribution": "Strong for the texts (randomized); moderate for the form (quasi-experimental comparison). Interview research shaped the diagnosis and content, though the design also drew heavily on behavioural science theory.",
   "caveats": "The form evaluation was not randomized. Only a minority of recipients gave a phone number, so the text results apply to that group. Much of the design rationale is behavioural economics rather than direct usability testing with recipients. Partners ideas42 and the Crime Lab co-authored the evaluation (published in Science, 2020).",
   "methods": [
@@ -4082,7 +4080,7 @@
   "insight": "People who used a service before often didn't remember which sign-in route they had used, especially for once-a-year tasks. People who had verified their identity tended to remember the certified company they spent time with rather than the name 'GOV.UK Verify'.",
   "change": "GOV.UK added a 'service sign-in page' between the start page and the service, listing each option with short memory-jogging prompt text and a route for new users.",
   "outcome": "In a one-week A/B test in November 2017 on HMRC's Self Assessment service (70% old start page, 30% new design), the Verify link, previously clicked by 4.3% of users, 'nearly doubled' its click rate. Government Gateway completion was unaffected, and on-page searches for 'sign in' and 'log in' fell. The page went live and was rolled out to two more HMRC services.",
-  "headline_metric": "~2x Verify clicks",
+  "headline_metric": "Verify clicks nearly doubled",
   "attribution": "Direct but light on detail. The design responds to stated research findings and was A/B tested.",
   "caveats": "The post gives no exact post-change figure, sample size or significance. The research behind the insights is described only briefly. Measures choice of sign-in route, not whether more people completed the service. GOV.UK Verify was later wound down.",
   "methods": [
@@ -4121,7 +4119,7 @@
   "insight": "Asking for opinions hid the problems: people called the content 'good, or fine'. Giving them tasks revealed missing information and that many were unsure whether mediation suited their circumstances. Specific, descriptive headings helped people find things faster.",
   "change": "The team published eight rounds of changes: restructured the mediation guidance and explained the process plainly, rewrote headings to be more specific, and revamped the 'apply for a court order' chapter.",
   "outcome": "For the mediation chapter, average engagement time per session rose 74%, the page usefulness rating rose from 67% to 80%, and clicks through to find a mediator rose 14%. The team also reports more page views and fewer on-page searches, without figures.",
-  "headline_metric": "Useful: 67% → 80%",
+  "headline_metric": "Rated useful 67% → 80%",
   "attribution": "Direct. The changes respond to task-based testing findings and the metrics are for the rewritten chapter.",
   "caveats": "Before/after analytics with no control group and no stated time periods. Longer engagement time is ambiguous as a success measure. 'Usefulness' is a self-selected page feedback rating. Changes shipped in eight tranches, so effects of individual changes can't be separated.",
   "methods": [
@@ -4160,7 +4158,7 @@
   "insight": "Spanish speakers were abandoning at the citizenship question, likely fearing it made them ineligible; the translation also had words and phrases that didn't land, which the team worked through page by page with clients.",
   "change": "The team added a follow-up question after the citizenship question and reworked the Spanish translation on every page based on the sessions. Separately, client feedback led to changes in document upload.",
   "outcome": "Code for America reports the follow-up question 'substantially increased' completion for Spanish speakers from 51% to 64%, narrowing the gap with English speakers (69%). Overall, MNbenefits cut average time to apply from nearly an hour to 15 minutes (saving an average of 47 minutes) and helped more than 240,000 people access over $100 million in benefits in two years.",
-  "headline_metric": "Spanish: 51% → 64%",
+  "headline_metric": "Spanish completion 51% → 64%",
   "attribution": "Fairly direct for the Spanish-speaker result: the funnel drop-off was diagnosed through research with Spanish speakers and the specific change followed. The headline time saving reflects the whole product, not one finding.",
   "caveats": "Before/after comparison with no control group or stated time windows. Self-reported by Code for America, which co-built the service. The overall time saving compares the new application to the legacy one, whose baseline varies across sources (60 to 110 minutes).",
   "methods": [
@@ -4323,7 +4321,7 @@
   "insight": "About 40% of English-speaking US users couldn't recall their answers when needed; the questions that were hardest to guess were the hardest to remember. A single guess could crack 19.7% of English speakers' 'Favorite food?' answers. 37% of surveyed people who gave fake answers did so to make them harder to guess, which made answers more predictable, and people trusted secret questions more than SMS, the opposite of reality.",
   "change": "Google favoured SMS and email as recovery mechanisms and now uses secret questions only as a last resort, combined with other signals in its login risk analysis.",
   "outcome": "Over a full month of recovery claims, SMS recovery succeeded 80.9% of the time, against 60.8% for the best-performing secret question group (down to 44% for French users) and 75% for email. The paper reports the findings 'motivated Google's decision' to favour these alternatives.",
-  "headline_metric": "SMS 81% vs questions 61%",
+  "headline_metric": "Demoted secret questions",
   "attribution": "Direct for the decision: the paper states the research motivated the switch. The success rates compare existing mechanisms rather than measuring the effect of the switch itself.",
   "caveats": "This is large-scale behavioural analytics plus surveys, not usability testing. No before/after figures for overall recovery success after the change. Authors are Google staff (and a former Google researcher). SMS later became recognised as weaker than other second factors.",
   "methods": [
@@ -4401,7 +4399,7 @@
   "insight": "Mobile users needed large tap targets and did not reliably hit the small photo button; the word 'selfie' was not universally understood; and an interim verification screen shown after only two steps confused people.",
   "change": "Made the whole photo box tappable, replaced 'selfie' with 'Take a photo of yourself', and reworked the unhelpful interim screen, among other plain-language changes.",
   "outcome": "Actual proofing success (people who start and complete all steps) rose from 51% to 60% within two weeks of the changes. Within 30 days the average was 74%, with a daily high of 84%.",
-  "headline_metric": "51% → 74% proofing rate",
+  "headline_metric": "ID check success 51% → 74%",
   "attribution": "Fairly direct: the post lists specific research findings, the changes made in response, and the before/after success rate. It does not rule out other changes or shifts in user mix over the same period.",
   "caveats": "Self-reported by GSA on its own platform. No control group, no participant numbers, and the measurement window is short. The rise continued into the 30-day mark, so some of it may reflect other factors.",
   "methods": [
@@ -4440,7 +4438,7 @@
   "insight": "Veterans were blocked by the technology itself (the PDF failing to open) and by having to navigate multiple VA sites with several logins, not by unwillingness to apply online.",
   "change": "On June 30, 2016 VA launched a plain HTML health care application on Vets.gov that works in any browser, and kept iterating it based on Veteran feedback.",
   "outcome": "Online submissions went from about 62 per day to more than 500 per day; 41,000 online submissions arrived in the first 60 days. In 2015 only about 10% of 582,000 applications were online.",
-  "headline_metric": "62 → 500+ apps/day",
+  "headline_metric": "Daily applications ~62 → 500+",
   "attribution": "Partial. The largest gain likely came from replacing a broken PDF, which basic analytics would reveal. The report credits a user-centered process, but the research methods are described for Vets.gov generally, not tied to specific form decisions.",
   "caveats": "Self-reported by USDS in its report to Congress. No control group. The improvement mixes fixing a technical failure with research-led design; it is not possible to separate them. Completion rates were not reported.",
   "methods": [
@@ -4520,7 +4518,7 @@
   "insight": "Of all the documents in the process, the D8 application form caused the most problems. Applicants were making avoidable mistakes about eligibility rules (such as the one-year marriage requirement), jurisdiction and marriage certificate details.",
   "change": "The D8 was replaced with an online 'smart form' that adapts its questions to the applicant's circumstances, with in-service guidance and validation against common errors (for example a divorce date before the marriage date). Wording and help were refined after launch, and the paper form was redesigned on the same principles.",
   "outcome": "HMCTS reports that about 40% of paper forms were returned for errors; the first online version brought that to 8%, and further work brought it to 0.5% by May 2018.",
-  "headline_metric": "40% → 0.5% form returns",
+  "headline_metric": "Forms sent back ~40% → 0.5%",
   "attribution": "Strong link: research identified the form as the problem and the specific errors to design against; the outcome is the error-return rate for that form. Some of the gain comes from validation that any digital form could add.",
   "caveats": "Figures are self-reported by HMCTS in a blog post without method detail. Comparing paper to online is not like for like, and early online users were a limited, self-selected pool. An alpha assessment also cited a separate 17% judicial rejection rate, not reported on here.",
   "methods": [
@@ -4694,7 +4692,7 @@
   "insight": "Users valued being able to reach key functions from anywhere on the page, but about 20% of prototype testers reported problems with how the header appeared and disappeared; editors in particular wanted it to stay put rather than pop in and out.",
   "change": "The team chose which links to include based on testing, removed the show/hide trigger behaviour so the header became persistent, and later added an edit button to it.",
   "outcome": "In an A/B test from 5 to 31 January 2022, logged-in users in the treatment group scrolled on average 15% less per session than the control group. In two later A/B tests, the share of people completing at least one edit via the header's edit button rose 2.8% and 6.8% compared with other edit buttons, and those edits were less likely to be reverted (no figure given due to a wide margin of error).",
-  "headline_metric": "-15% scrolling (A/B)",
+  "headline_metric": "Scrolling down 15% in A/B test",
   "attribution": "Good: research determined the header's contents and behaviour, and the outcome comes from a controlled A/B test of that design. The A/B test measures the feature as a whole, not each research-driven decision separately.",
   "caveats": "Scrolling less is a proxy for efficiency, not a direct measure of task success. Results are for logged-in users on pilot wikis. Participant counts for the user testing are not given on the project page. Self-reported by the Foundation, though it publishes the underlying reports openly.",
   "methods": [
@@ -4824,7 +4822,7 @@
   "insight": "In the original design, 30% of prescribers missed alerts because they required scrolling, 60% intended to cancel a drug but didn't complete the cancellation, some misread the cancel checkbox as an ordering control, and repeated alerts confused people.",
   "change": "Alerts were redesigned using chunking, proximity of clinical data to the decision point, visual importance ordering, signal words, a tabular layout for alert text and consistent controls.",
   "outcome": "Compared with the original alerts: time spent on alerts fell from a median of 85 to 56 seconds (p=0.015); total scenario time fell from 246 to 195 seconds (p=0.010); prescribing errors per prescriber fell from a median of 4 to 2 (p=0.024); overall satisfaction rose from 4.3 to 5.2 on a 7-point scale (p=0.033); perceived workload dropped modestly (p=0.042).",
-  "headline_metric": "Errors: median 4 → 2",
+  "headline_metric": "Median prescribing errors 4 → 2",
   "attribution": "Strong: a controlled crossover comparison of the original and research-informed redesign, with no training on the new design.",
   "caveats": "Lab simulation with fictitious patients, not live care; single VA site, outpatient only, 20 prescribers. The redesign also introduced new usability errors (for example, 2 prescribers clicked Cancel when they meant to proceed). The authors note error counts remained too high even after redesign.",
   "methods": [
@@ -4909,7 +4907,7 @@
   "insight": "Screen reader and low-vision users were slowed down by decorative images, vague link text and column layouts that made navigation order unclear.",
   "change": "Launched 'Tesco Access' on 22 May 2001: an alternative interface with superfluous images removed, clearly described links and a single-column layout, designed so anyone could buy 30 items in 15 minutes over a 56K connection.",
   "outcome": "The W3C business case, citing the Employers' Forum on Disability, states the accessible site cost £35,000 to develop and that revenue from it rose to £13 million a year. It also displayed well on mobile devices and slow connections. The site won RNIB's 'See it Right' award.",
-  "headline_metric": "£13m/yr on £35k build",
+  "headline_metric": "£35k build credited £13m a year",
   "attribution": "The site was built and validated through extensive testing with visually impaired users; the revenue figure is attributed to that site. How the £13m was calculated, and how much was new versus diverted spend, is not stated.",
   "caveats": "Old (2001–2003) and the revenue figure is second-hand with no method. A separate 'accessible version' is no longer considered best practice; the W3C page itself says so. The often-quoted 700,000 orders a week figure refers to Tesco.com overall, not the accessible site.",
   "methods": [
@@ -4988,7 +4986,7 @@
   "insight": "Churn often happened because clients didn't know what they had to do to keep benefits or struggled with the procedural steps; most relied solely on mobile phones and strongly preferred electronic communication to mail. Later research showed clients replied to the one-way texts, and trusted professional-toned messages more because friendly ones could look like scams.",
   "change": "Launched LA'MESSAGE, opt-in text reminders for eleven case types across four programs, from April to December 2019. Added an auto-responder and recorded voice message pointing to customer service after seeing clients reply. Adopted professional message framing after the tone A/B test.",
   "outcome": "About 27,000 of 108,000 people offered reminders opted in. Compared with clients who did not opt in: SNAP renewal 70% vs 51% baseline; Medicaid annual approval 25% vs 15%; WIC appointments kept 52% vs 29%; SNAP simplified reporting 81% vs 67%. In the A/B test, professional framing led 37.6% to return Medicaid renewal packets versus 33.8% for friendly framing.",
-  "headline_metric": "SNAP renewals 70% vs 51%",
+  "headline_metric": "Texted: 70% renewed SNAP vs 51%",
   "attribution": "Research identified the problem (people not knowing a step was due) and the channel (texts). The main outcome comparison is between people who chose to opt in and those who didn't, so it overstates the effect; only the message-tone result comes from a randomized test.",
   "caveats": "Opt-in clients are likely more engaged than the baseline group, so the large gaps are not causal estimates. No significance testing reported. Self-reported by Code for America, which ran the pilot. Some groups were small (58 FITAP clients).",
   "methods": [

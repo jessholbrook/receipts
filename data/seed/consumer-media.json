@@ -508,7 +508,7 @@
     "insight": "Vision accessibility is 'a huge spectrum', so no single setting works. Players didn't fully trust developers to configure things for them and wanted granular control over each option.",
     "change": "Shipped over 60 individually customizable options for vision, hearing and motor impairments, including text-to-speech for all on-screen text, a high-contrast mode, an enhanced listening 'sonar' mode, audio cues for navigation and combat, and toggles replacing holds and rapid presses.",
     "outcome": "No usage metrics published. Disabled players and advocacy groups widely praised the game; Saylor said, \"Now everything is there. And it works.\"",
-    "headline_metric": "60+ accessibility options",
+    "headline_metric": "Built accessibility suite",
     "attribution": "Developers describe the option design as shaped by consulting and playtesting with disabled players; NPR reports the options came 'after a lot of experimenting and consulting'.",
     "caveats": "No quantitative outcome. Account is journalism quoting the developers and a consultant. The exact count of options varies by source ('around 60', 'over 60').",
     "methods": [

@@ -39,6 +39,9 @@ export async function submitEntry(_prev: SubmitState, fd: FormData): Promise<Sub
   if (!company) fieldErrors.company = "Name the company, or describe it if anonymized.";
   if (summary.length < 30) fieldErrors.summary = "A couple of sentences, please (30+ characters).";
   if (!isValid("evidence_strength", evidence)) fieldErrors.evidence_strength = "Pick an evidence level.";
+  if (evidence === "decision" && /\d/.test(str(fd, "headline_metric", 40)))
+    fieldErrors.headline_metric =
+      "Decision entries have no metric, so name the decision instead (e.g. “Killed the native app”).";
   if (str(fd, "consent") !== "yes") fieldErrors.consent = "Please confirm you're allowed to share this.";
 
   const pick = (facet: string, k = facet) => {

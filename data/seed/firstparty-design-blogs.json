@@ -10,7 +10,7 @@
     "insight": "Moving the button down to the file tree did not hurt findability, it improved it: people expected it there, as on other Git platforms. On empty repositories, though, removing the button badly hurt findability.",
     "change": "The clone button moved to the file tree controls and returned to the repository page. A clone button was added above the instructions on the empty-repository page rather than dropped.",
     "outcome": "Proposed file-tree position: 98% correct, 15 seconds on average. Live header position: 84% correct, 21 seconds. Empty repository without a button: 50% correct, 37 seconds, versus 77% and 16 seconds with the button. At publication the change was being built by a community contributor.",
-    "headline_metric": "84% → 98% found it",
+    "headline_metric": "Clone button found 84% → 98%",
     "attribution": "Direct for the decision: the post says the tests drove both choices. The numbers are test results, not live product metrics after launch.",
     "caveats": "Small unmoderated samples (about 40 per variant) and a single click task, with no statistical testing reported. No post-launch data. Written by the designer who ran the tests on GitLab's own blog.",
     "methods": [
@@ -105,7 +105,6 @@
     "industry": "education",
     "product_type": "mobile_app",
     "metrics": [
-      "revenue",
       "engagement"
     ],
     "company_size": "enterprise",
@@ -132,7 +131,7 @@
     "insight": "There is no single triage style. People move between keeping a curated inbox, moving items to other task tools, skimming, and clearing unreads, depending on context. Notification volume also changes what people need: large-team users need different tools from small-team users.",
     "change": "Activity 2.0 brings DMs, mentions, threads, reminders, reactions and key channel notifications into one feed, with a simple default and optional filters, saved views, keyboard navigation and bulk actions for heavy users.",
     "outcome": "Slack reports an 80% engagement rate for the new experience, and that 60% of engaged Activity users are starting to triage and recall DMs from Activity. It also says some users struggled to leave familiar workflows.",
-    "headline_metric": "80% engagement rate",
+    "headline_metric": "80% engagement with new Activity",
     "attribution": "Partial. The triage insight clearly shaped the design, but the engagement numbers are not compared with Activity 1.0 and no method is given.",
     "caveats": "'Engagement rate' is not defined and there is no baseline. Company design blog post, written partly to showcase the team's process.",
     "methods": [
@@ -406,7 +405,7 @@
     "insight": "The tool's interruptions made concentration hard: code suggestions appeared automatically too quickly, and the hint bar took a lot of work to find.",
     "change": "The team co-designed changes that give developers more control over when intelligent suggestions surface, for both inline code insertion suggestions and single-line code change suggestions.",
     "outcome": "Microsoft reports a 3.5x increase in regular users of inline code insertion suggestions. Testing of the enhanced single-line code change suggestions showed a 176% increase in suggestions accepted and a 29% increase in regular users.",
-    "headline_metric": "3.5x regular users",
+    "headline_metric": "3.5x regular users of a feature",
     "attribution": "The case study links the changes to the research, but it does not say how the numbers were measured, over what period, or whether other changes shipped at the same time.",
     "caveats": "Short promotional case study in Microsoft's inclusive design toolkit, with no method, baseline or dates for the numbers. 'Testing' may mean an A/B test, but this is not stated.",
     "methods": [
@@ -446,7 +445,7 @@
     "insight": "Duolingo's Hindi was technically correct but uncommon in everyday speech: interviewees called the in-app currency 'coin' or 'diamond', not the Hindi word used, and English words like 'level' and 'language' were more natural. New learners tended to tap the most prominent button, so they read the Duolingo Plus promotion as a paywall and quit, and several said they would prefer a one-time fee to a subscription.",
     "change": "Onboarding swapped some Hindi words for the common English ones, written in English. Duolingo first removed the early Plus promotion for new learners, then removed Duolingo Plus entirely in India and a few other Asian countries, choosing growth before monetisation.",
     "outcome": "The wording change gave a 1% increase in onboarding completion. Removing the early Plus promotion gave a 1% increase in daily active users; removing Plus altogether gave a 6% increase. (A separate data-led change, putting the English course at the top of the list, added 2% to daily active users.)",
-    "headline_metric": "+6% DAU",
+    "headline_metric": "+6% daily active users in India",
     "attribution": "Good: each change was A/B tested, and the post ties the wording and paywall changes to what interviews and observation showed. The decision to drop Plus also reflected a business choice to grow first.",
     "caveats": "Short company post with no sample sizes, test durations or significance figures. The 6% gain came from removing a revenue product, so it says nothing about revenue. India-specific, during the 2020 lockdown surge.",
     "methods": [

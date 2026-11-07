@@ -34,6 +34,6 @@ Each research batch file in `data/seed/` is a JSON array of objects shaped like 
 
 Rules:
 - All taxonomy fields must use slugs from `docs/taxonomy.md`.
-- `headline_metric` is short (≤ 25 chars), or `null` for `decision` entries with no number.
+- `headline_metric` is short (≤ 32 chars) and readable on its own: direction + number + what changed ("+36% landing-page conversion"). For `decision` entries it names the decision ("Killed the native app") and contains no numbers: a number there would contradict "no metric".
 - Every entry needs at least one source URL that was actually opened and confirmed.
 - Write in plain English, own words. No marketing tone. Short quotes only.

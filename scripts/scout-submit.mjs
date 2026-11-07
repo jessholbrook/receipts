@@ -51,6 +51,9 @@ for (const e of candidates) {
   for (const k of ["research_type", "industry", "product_type", "company_size", "evidence_strength", "source_type"])
     if (e[k] != null && !TAX[k].has(e[k])) errs.push(`${k}=${e[k]} invalid`);
   for (const k of ["methods", "metrics"]) if (!Array.isArray(e[k]) || e[k].some((v) => !TAX[k].has(v))) errs.push(`${k} invalid`);
+  if (e.evidence_strength === "decision" && /\d/.test(e.headline_metric ?? ""))
+    errs.push("decision entries name the decision, not a number");
+  if (e.headline_metric && e.headline_metric.length > 32) errs.push("headline_metric over 32 chars");
   if (!e.sources?.length || !e.sources.every((s) => /^https?:\/\//.test(s.url))) errs.push("needs source urls");
   if (errs.length) {
     console.log(`skip ${e.slug}: ${errs.join("; ")}`);

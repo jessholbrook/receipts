@@ -185,7 +185,7 @@
     "insight": "Existing usability research on checkout friction (form design, step order, payment trust, error recovery) applied to the retailer's checkouts, which had violated several of the guidelines.",
     "change": "The guideline recommendations were implemented across every store's checkout. The specific design changes are not described.",
     "outcome": "The retailer reported a '100% increase in checkout conversion rates', i.e. checkout conversion roughly doubled.",
-    "headline_metric": "+100% checkout conv.",
+    "headline_metric": "Checkout conversion doubled",
     "attribution": "Weak. The research is generic third-party research, not studies of this retailer's users, and the outcome is a self-reported number with no method.",
     "caveats": "Promotional post from the research vendor. Client unnamed, so it can't be checked. No baseline, timeframe, measurement method or list of changes. A doubling usually means a very poor starting point. Include only as an example of applying published research, not as a controlled result.",
     "methods": [
@@ -222,7 +222,7 @@
     "insight": "People didn't realise they could pick the cause themselves. Some thought Co-op chose for them or that they'd send their choice by email later, and they overlooked the clickable element on screen.",
     "change": "A content-only fix: the line 'See your local causes' was added inside the 'your community' box. It was tested in the lab, where participants then understood what to do, before going live.",
     "outcome": "Early results after release showed 'a 10% increase in people selecting a cause'.",
-    "headline_metric": "+10% causes selected",
+    "headline_metric": "+10% members choosing a cause",
     "attribution": "Direct. The change came from a specific lab finding, backed by feedback comments and analytics, and was the only change described. Measurement appears to be before/after live data.",
     "caveats": "Early results only, reported a week after launch. Measurement method not stated (no A/B test mentioned) and no baseline given, so it isn't clear what the 10% is relative to. First-party blog.",
     "methods": [
@@ -502,7 +502,7 @@
     "insight": "48.6% of respondents said they were leaving because they couldn't complete the checkout form. Heatmaps also showed the 'Buy now' button sat below the fold for most users on the product page.",
     "change": "Checkout fields were cut to three, the order page was split into clear blocks, and autofill was added for signed-in users. The product page was also simplified so the buy button was visible.",
     "outcome": "In the A/B test the variant's conversion rate rose 54.68%. After rollout, average revenue per user grew 11.46% and the checkout bounce rate fell 13.35%.",
-    "headline_metric": "+54.68% checkout conv.",
+    "headline_metric": "+54.68% checkout conversion",
     "attribution": "Direct: the survey pinpointed the form as the barrier, the changes targeted it, and the variant was A/B tested against the original.",
     "caveats": "Reported by the analytics vendor (Hotjar/Contentsquare) about an agency client; both have an incentive. Test length, traffic and significance aren't given. The 54.68% applies to the checkout step, not site-wide conversion. Survey is self-reported by people already leaving. Source undated; year is approximate.",
     "methods": [

@@ -51,7 +51,7 @@
     "insight": "Mobile users needed large tap targets and did not reliably hit the small photo button; the word 'selfie' was not universally understood; and an interim verification screen shown after only two steps confused people.",
     "change": "Made the whole photo box tappable, replaced 'selfie' with 'Take a photo of yourself', and reworked the unhelpful interim screen, among other plain-language changes.",
     "outcome": "Actual proofing success (people who start and complete all steps) rose from 51% to 60% within two weeks of the changes. Within 30 days the average was 74%, with a daily high of 84%.",
-    "headline_metric": "51% → 74% proofing rate",
+    "headline_metric": "ID check success 51% → 74%",
     "attribution": "Fairly direct: the post lists specific research findings, the changes made in response, and the before/after success rate. It does not rule out other changes or shifts in user mix over the same period.",
     "caveats": "Self-reported by GSA on its own platform. No control group, no participant numbers, and the measurement window is short. The rise continued into the 30-day mark, so some of it may reflect other factors.",
     "methods": [
@@ -90,7 +90,7 @@
     "insight": "Veterans were blocked by the technology itself (the PDF failing to open) and by having to navigate multiple VA sites with several logins, not by unwillingness to apply online.",
     "change": "On June 30, 2016 VA launched a plain HTML health care application on Vets.gov that works in any browser, and kept iterating it based on Veteran feedback.",
     "outcome": "Online submissions went from about 62 per day to more than 500 per day; 41,000 online submissions arrived in the first 60 days. In 2015 only about 10% of 582,000 applications were online.",
-    "headline_metric": "62 → 500+ apps/day",
+    "headline_metric": "Daily applications ~62 → 500+",
     "attribution": "Partial. The largest gain likely came from replacing a broken PDF, which basic analytics would reveal. The report credits a user-centered process, but the research methods are described for Vets.gov generally, not tied to specific form decisions.",
     "caveats": "Self-reported by USDS in its report to Congress. No control group. The improvement mixes fixing a technical failure with research-led design; it is not possible to separate them. Completion rates were not reported.",
     "methods": [
@@ -170,7 +170,7 @@
     "insight": "Of all the documents in the process, the D8 application form caused the most problems. Applicants were making avoidable mistakes about eligibility rules (such as the one-year marriage requirement), jurisdiction and marriage certificate details.",
     "change": "The D8 was replaced with an online 'smart form' that adapts its questions to the applicant's circumstances, with in-service guidance and validation against common errors (for example a divorce date before the marriage date). Wording and help were refined after launch, and the paper form was redesigned on the same principles.",
     "outcome": "HMCTS reports that about 40% of paper forms were returned for errors; the first online version brought that to 8%, and further work brought it to 0.5% by May 2018.",
-    "headline_metric": "40% → 0.5% form returns",
+    "headline_metric": "Forms sent back ~40% → 0.5%",
     "attribution": "Strong link: research identified the form as the problem and the specific errors to design against; the outcome is the error-return rate for that form. Some of the gain comes from validation that any digital form could add.",
     "caveats": "Figures are self-reported by HMCTS in a blog post without method detail. Comparing paper to online is not like for like, and early online users were a limited, self-selected pool. An alpha assessment also cited a separate 17% judicial rejection rate, not reported on here.",
     "methods": [
@@ -344,7 +344,7 @@
     "insight": "Users valued being able to reach key functions from anywhere on the page, but about 20% of prototype testers reported problems with how the header appeared and disappeared; editors in particular wanted it to stay put rather than pop in and out.",
     "change": "The team chose which links to include based on testing, removed the show/hide trigger behaviour so the header became persistent, and later added an edit button to it.",
     "outcome": "In an A/B test from 5 to 31 January 2022, logged-in users in the treatment group scrolled on average 15% less per session than the control group. In two later A/B tests, the share of people completing at least one edit via the header's edit button rose 2.8% and 6.8% compared with other edit buttons, and those edits were less likely to be reverted (no figure given due to a wide margin of error).",
-    "headline_metric": "-15% scrolling (A/B)",
+    "headline_metric": "Scrolling down 15% in A/B test",
     "attribution": "Good: research determined the header's contents and behaviour, and the outcome comes from a controlled A/B test of that design. The A/B test measures the feature as a whole, not each research-driven decision separately.",
     "caveats": "Scrolling less is a proxy for efficiency, not a direct measure of task success. Results are for logged-in users on pilot wikis. Participant counts for the user testing are not given on the project page. Self-reported by the Foundation, though it publishes the underlying reports openly.",
     "methods": [
@@ -474,7 +474,7 @@
     "insight": "In the original design, 30% of prescribers missed alerts because they required scrolling, 60% intended to cancel a drug but didn't complete the cancellation, some misread the cancel checkbox as an ordering control, and repeated alerts confused people.",
     "change": "Alerts were redesigned using chunking, proximity of clinical data to the decision point, visual importance ordering, signal words, a tabular layout for alert text and consistent controls.",
     "outcome": "Compared with the original alerts: time spent on alerts fell from a median of 85 to 56 seconds (p=0.015); total scenario time fell from 246 to 195 seconds (p=0.010); prescribing errors per prescriber fell from a median of 4 to 2 (p=0.024); overall satisfaction rose from 4.3 to 5.2 on a 7-point scale (p=0.033); perceived workload dropped modestly (p=0.042).",
-    "headline_metric": "Errors: median 4 → 2",
+    "headline_metric": "Median prescribing errors 4 → 2",
     "attribution": "Strong: a controlled crossover comparison of the original and research-informed redesign, with no training on the new design.",
     "caveats": "Lab simulation with fictitious patients, not live care; single VA site, outpatient only, 20 prescribers. The redesign also introduced new usability errors (for example, 2 prescribers clicked Cancel when they meant to proceed). The authors note error counts remained too high even after redesign.",
     "methods": [
@@ -559,7 +559,7 @@
     "insight": "Screen reader and low-vision users were slowed down by decorative images, vague link text and column layouts that made navigation order unclear.",
     "change": "Launched 'Tesco Access' on 22 May 2001: an alternative interface with superfluous images removed, clearly described links and a single-column layout, designed so anyone could buy 30 items in 15 minutes over a 56K connection.",
     "outcome": "The W3C business case, citing the Employers' Forum on Disability, states the accessible site cost £35,000 to develop and that revenue from it rose to £13 million a year. It also displayed well on mobile devices and slow connections. The site won RNIB's 'See it Right' award.",
-    "headline_metric": "£13m/yr on £35k build",
+    "headline_metric": "£35k build credited £13m a year",
     "attribution": "The site was built and validated through extensive testing with visually impaired users; the revenue figure is attributed to that site. How the £13m was calculated, and how much was new versus diverted spend, is not stated.",
     "caveats": "Old (2001–2003) and the revenue figure is second-hand with no method. A separate 'accessible version' is no longer considered best practice; the W3C page itself says so. The often-quoted 700,000 orders a week figure refers to Tesco.com overall, not the accessible site.",
     "methods": [
@@ -638,7 +638,7 @@
     "insight": "Churn often happened because clients didn't know what they had to do to keep benefits or struggled with the procedural steps; most relied solely on mobile phones and strongly preferred electronic communication to mail. Later research showed clients replied to the one-way texts, and trusted professional-toned messages more because friendly ones could look like scams.",
     "change": "Launched LA'MESSAGE, opt-in text reminders for eleven case types across four programs, from April to December 2019. Added an auto-responder and recorded voice message pointing to customer service after seeing clients reply. Adopted professional message framing after the tone A/B test.",
     "outcome": "About 27,000 of 108,000 people offered reminders opted in. Compared with clients who did not opt in: SNAP renewal 70% vs 51% baseline; Medicaid annual approval 25% vs 15%; WIC appointments kept 52% vs 29%; SNAP simplified reporting 81% vs 67%. In the A/B test, professional framing led 37.6% to return Medicaid renewal packets versus 33.8% for friendly framing.",
-    "headline_metric": "SNAP renewals 70% vs 51%",
+    "headline_metric": "Texted: 70% renewed SNAP vs 51%",
     "attribution": "Research identified the problem (people not knowing a step was due) and the channel (texts). The main outcome comparison is between people who chose to opt in and those who didn't, so it overstates the effect; only the message-tone result comes from a randomized test.",
     "caveats": "Opt-in clients are likely more engaged than the baseline group, so the large gaps are not causal estimates. No significance testing reported. Self-reported by Code for America, which ran the pilot. Some groups were small (58 FITAP clients).",
     "methods": [

@@ -10,7 +10,7 @@
     "insight": "Customers come to a bill with five questions: what do I owe, how do I pay, how can I save, how can I control it, and can you help me. Around 30% of the information printed on the bill was not needed.",
     "change": "The bill was cut down to what was needed, jargon was removed, it was structured around those key questions, and customers were pointed to one central phone number. The framing shifted from a demand for money to a way to save money.",
     "outcome": "After launch (August 2012), the case study reports a reduction of 3,000 calls per week (10%), a saving of more than £750,000 to the organisation, and 17% of customers finding the information clearer. The EU later cited the bill as best practice.",
-    "headline_metric": "-10% query calls",
+    "headline_metric": "Bill query calls down 10%",
     "attribution": "Moderate. The research findings map directly onto the new bill structure, and the call reduction is measured after implementation, but other factors (pricing news, seasonality) are not controlled for.",
     "caveats": "Short case study reproduced with the agency's permission on an EU service-design project site; reads as promotional. No method for the call measurement, no participant numbers, and the savings period (per year?) is not stated. Old (2012).",
     "methods": [
@@ -292,7 +292,7 @@
     "insight": "Gambling is often impulsive, so a block that can be lifted instantly offers little protection; people who turn it on want friction that gives them time to reconsider.",
     "change": "The 2018 block required contacting support and then waiting 48 hours before it could be switched off. In 2023 Monzo added cooldown options of up to a year, a personal note shown when a cooldown starts and ends, and routing to specialist support teams for customers who had disclosed gambling harm.",
     "outcome": "Monzo's 2023 post says close to 100,000 people used the block in the previous 10 months, more than 200,000 attempted gambling transactions were blocked, and its compliance with GamCare's recommendations rose from 45% to 87%. No data on whether users' gambling harm fell.",
-    "headline_metric": "~100k users in 10 months",
+    "headline_metric": "~100k used block in 10 months",
     "attribution": "Moderate for the design (Monzo says customer feedback shaped how the block was built); weak for the outcome, which is adoption rather than an effect of research-driven design choices.",
     "caveats": "Research is informal (forum feedback, small testing group) and not described in detail. Outcome figures are Monzo's own and measure uptake and blocked transactions, not reduced harm. Blocked attempts may include repeated attempts by the same people.",
     "methods": [
@@ -454,7 +454,7 @@
     "insight": "A key landing page presented several value propositions at once, so Purefy's message was unclear. Prospects also needed more trust signals and social proof. Three distinct segments emerged: new graduates, experienced refinancers and parents.",
     "change": "After a debrief around interview ten, the team made immediate language and sequencing changes, drafted a simplified landing page within a week, and the UX researcher set up an A/B test while interviews were still running. Three personas were created for marketing.",
     "outcome": "The CMO is quoted: 'That one change, which we noticed early on, resulted in a 36% lift in conversion.'",
-    "headline_metric": "+36% conversion",
+    "headline_metric": "+36% landing-page conversion",
     "attribution": "Direct. The tested change came straight from an interview finding, and it was evaluated with an A/B test.",
     "caveats": "Vendor (dscout) case study. No baseline conversion, sample size, test duration or significance reported, and the exact variant isn't described. Small startup, single test.",
     "methods": [

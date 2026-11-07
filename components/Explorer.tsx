@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { Entry } from "@/lib/types";
 import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
+import CopyButton from "./CopyButton";
 
 type Selected = Partial<Record<FacetKey, string[]>>;
 
@@ -72,6 +73,12 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     const qs = sp.toString();
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
   }, [selected, q, sort, pathname, router]);
+
+  // Someone opening a shared filtered link wants the results, not the pitch again.
+  useEffect(() => {
+    const shared = Object.keys(initial.sel).length > 0 || initial.q !== "";
+    if (shared) document.getElementById("evidence-h")?.scrollIntoView({ block: "start" });
+  }, [initial]);
 
   const searchIndex = useMemo(() => new Map(entries.map((e) => [e.slug, haystack(e)])), [entries]);
 
@@ -200,12 +207,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   return (
     <>
       <section className="evidence-bar" aria-labelledby="evidence-h">
-        <div className="evidence-bar-head">
-          <h2 id="evidence-h">How strong is the evidence?</h2>
-          <a href="/about" className="text-link">
-            How we rate
-          </a>
-        </div>
+        <h2 id="evidence-h">Filter by evidence strength</h2>
         <div className="evidence-opts">
           {EVIDENCE.map((ev) => {
             const n = counts.evidence_strength?.[ev.value] ?? 0;
@@ -216,11 +218,20 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 type="button"
                 className={`evidence-opt ev-tone-${ev.value}`}
                 aria-pressed={on}
-                disabled={n === 0 && !on}
-                onClick={() => toggle("evidence_strength", ev.value)}
+                aria-disabled={n === 0 && !on}
+                data-empty={n === 0 && !on}
+                onClick={() => {
+                  if (n === 0 && !on) return;
+                  toggle("evidence_strength", ev.value);
+                }}
               >
                 <span className="evidence-opt-top">
-                  <span className={`ev ev-${ev.value}`}>{ev.label}</span>
+                  <span className="evidence-check" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="12" height="12">
+                      <path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span className="evidence-opt-label">{ev.label}</span>
                   <span className="evidence-opt-n">{n}</span>
                 </span>
                 <span className="evidence-opt-def">{ev.short}</span>
@@ -261,9 +272,9 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               Sort
             </label>
             <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
-              <option value="evidence">Strongest evidence first</option>
-              <option value="newest">Newest first</option>
-              <option value="oldest">Oldest first</option>
+              <option value="evidence">Strongest first</option>
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
               <option value="added">Recently added</option>
             </select>
             <button
@@ -299,9 +310,14 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             </div>
           )}
 
-          <p className="result-count" aria-live="polite">
-            {activeCount || q.trim() ? `${plural(results.length)} match` : `All ${plural(results.length)}`}
-          </p>
+          <div className="result-row">
+            <p className="result-count" aria-live="polite">
+              {activeCount || q.trim() ? `${plural(results.length)} match` : `All ${plural(results.length)}`}
+            </p>
+            {(activeCount > 0 || q.trim() !== "") && results.length > 0 && (
+              <CopyButton label="Copy link to these results" className="text-btn" text={() => window.location.href} />
+            )}
+          </div>
 
           {results.length === 0 ? (
             <div className="empty">
@@ -347,7 +363,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 </div>
                 <div className="grid">
                   {items.map((e) => (
-                    <EntryCard key={e.slug} entry={e} headingLevel={4} />
+                    <EntryCard key={e.slug} entry={e} headingLevel={4} showBadge={false} />
                   ))}
                 </div>
               </section>

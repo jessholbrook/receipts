@@ -58,6 +58,10 @@ for (const e of all) {
       e[k] = e[k].filter((v) => TAX[k].has(v));
     }
   }
+  // "Decision" means no metric: its headline names the decision, never a number
+  if (e.evidence_strength === "decision" && /\d/.test(e.headline_metric ?? ""))
+    errs.push(`decision entry has a number in headline_metric ("${e.headline_metric}")`);
+  if (e.headline_metric && e.headline_metric.length > 32) errs.push("headline_metric over 32 characters");
   if (!Array.isArray(e.sources) || !e.sources.length || !e.sources.every((s) => /^https?:\/\//.test(s.url ?? "")))
     errs.push("needs at least one valid source url");
   if (errs.length) {
@@ -94,7 +98,7 @@ const sql = rows.length
 
 const outPath = path.join(root, process.argv.includes("--out") ? process.argv[process.argv.indexOf("--out") + 1] : "supabase/seed.sql");
 fs.writeFileSync(outPath, sql);
-fs.writeFileSync(path.join(root, "supabase/seed.json"), JSON.stringify(out.map(({ _file, ...e }) => e), null, 1));
+fs.writeFileSync(path.join(root, "supabase/seed.json"), JSON.stringify(out.map((e) => { const copy = { ...e }; delete copy._file; return copy; }), null, 1));
 
 const by = (k) => out.reduce((m, e) => ((m[e[k]] = (m[e[k]] ?? 0) + 1), m), {});
 console.log(`files: ${files.join(", ")}`);

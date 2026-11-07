@@ -121,7 +121,7 @@
     "insight": "People in the target audience and beyond often rounded up their financial transactions for speed and convenience, and many mothers had trouble saving, whether for lack of money or willpower.",
     "change": "The bank launched 'Keep the Change', which rounds purchases on a Bank of America Visa debit card up to the nearest dollar and transfers the difference from checking to savings.",
     "outcome": "Core77 reports the program 'attracted 2.5 million customers', translating into more than 700,000 new checking accounts and one million new savings accounts.",
-    "headline_metric": "2.5M customers",
+    "headline_metric": "Attracted 2.5M customers",
     "attribution": "The product concept is directly credited to the observed rounding behaviour. Account growth is reported, but the share caused by this program versus marketing and other factors is unknown.",
     "caveats": "Figures appear to come from IDEO/Bank of America material repeated in design press; no method for counting 'attracted' customers is given. IDEO had an incentive to promote the case. Figures and target-audience descriptions vary across later retellings.",
     "methods": [
@@ -286,7 +286,7 @@
     "insight": "The listings shared one problem: the photos were bad, so guests couldn't see what they would be paying for. Meeting hosts in person also showed the founders what hosts needed.",
     "change": "The founders replaced amateur photos with high-quality ones taken themselves; this later grew into Airbnb's professional photography program for hosts.",
     "outcome": "First Round Review reports that better photos doubled weekly revenue from $200 to $400, the first financial improvement in over eight months.",
-    "headline_metric": "$200 to $400/week",
+    "headline_metric": "Weekly revenue $200 → $400",
     "attribution": "Founder-told story. The change is clearly linked to what they observed, but there was no control and the timeframe is short.",
     "caveats": "This is founder lore retold in many forms (camera cost and details vary). The 'research' was informal: reviewing listings and visiting hosts, not a structured study. Revenue at that scale is noisy. Often cited as a design-thinking or 'do things that don't scale' story rather than a research one.",
     "methods": [
@@ -324,7 +324,7 @@
     "insight": "Most of nurses' attention was taken up by the 'system' (documentation, equipment, interruptions) rather than caring for patients, and shift change created hectic starts, especially with patients in pain.",
     "change": "Nurse Knowledge Exchange (later NKEplus): structured handoff with patient involvement, a final hourly round before shift change (pain, toileting, positioning, personal items), support staff covering call lights during handoff, and a unit safety check.",
     "outcome": "KP's Innovation Consultancy reports that 'nurses got to see patients at the start of their shift 3x faster under NKE pilot'. The model later spread across KP units.",
-    "headline_metric": "3x faster to patients",
+    "headline_metric": "Nurses saw patients 3x faster",
     "attribution": "The redesign came directly out of the observation work. The 3x figure is from a pilot, as reported by the team that designed it.",
     "caveats": "Source is a first-party conference deck (2010) with headline figures and no method for the 3x measurement. IDEO's role was teaching the method, so it's sometimes retold as an IDEO project. Pilot results may not hold at scale.",
     "methods": [
@@ -400,7 +400,7 @@
     "insight": "When girls build, they tend to play 'on the inside' of a structure and with characters and stories, and they value small, realistic details (an art studio with paint canisters and a canvas, for example).",
     "change": "LEGO launched Friends: five named mini-doll characters with storylines and detailed settings such as a vet's office, karate studio and beauty parlour.",
     "outcome": "Per NPR: the line 'doubled sales expectations in 2012', the year it launched, and 'sales to girls tripled in just that year'.",
-    "headline_metric": "2x sales expectations",
+    "headline_metric": "Doubled sales expectations",
     "attribution": "The research shaped the line's design and is widely credited for its success, but launch-year sales also depend on marketing, retail placement and price; no causal analysis is published.",
     "caveats": "Sales figures are company statements reported by press. The line was criticized for reinforcing gender stereotypes, so 'success' is commercial, not a verdict on the research framing. Research sample sizes differ across sources.",
     "methods": [
@@ -439,7 +439,7 @@
     "insight": "People hated handling dirty mops and wringing them out; much of the dirt was fine dust that could be picked up electrostatically. One older participant swept spilled coffee grounds and then used a damp paper towel for the fine residue rather than a mop.",
     "change": "The Swiffer: a lightweight sweeper with disposable electrostatic or wet cloths, sold on a razor-and-blades model.",
     "outcome": "Continuum's case study says it generated $100 million in sales in its first four months, more than 11.1 million starter kits sold in the US within a year, and eventually became a $500 million annual brand.",
-    "headline_metric": "11.1M kits in year 1",
+    "headline_metric": "11.1M+ kits sold in first year",
     "attribution": "The product concept is credited to the observation work by both the agency and independent press. Sales also reflect P&G's distribution and marketing power.",
     "caveats": "Sales figures come from the design agency's own case study (incentive to promote); independent press (Boston Globe) confirms the research story and calls the product a 'blockbuster' without numbers. The coffee-grounds anecdote appears in marketing retellings without a cited source. P&G has not published current sales.",
     "methods": [
@@ -733,7 +733,7 @@
     "insight": "Usage was extremely low, around 0.01% of users, which could not justify the work needed to bring the feature up to acceptable quality for millions of users.",
     "change": "Tab Groups was removed from Firefox (with an add-on path for existing users) instead of being rebuilt.",
     "outcome": "More than 24,000 lines of code were removed, freeing the team from maintaining the feature and unblocking multi-process work. Tab groups later returned in a new design years afterwards.",
-    "headline_metric": "24,000+ lines removed",
+    "headline_metric": "Removed Tab Groups",
     "attribution": "Usage data was a central reason, alongside quality and architecture problems, so it was one of several causes.",
     "caveats": "Written on a Mozilla engineer's personal blog, not an official report. Behavioural analytics only; no qualitative research on why people didn't use it. A small but vocal group of users was upset, and Mozilla later reintroduced tab groups, so the long-term call is debatable.",
     "methods": [

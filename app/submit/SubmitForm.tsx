@@ -126,8 +126,9 @@ export default function SubmitForm() {
         />
         <Text
           name="headline_metric"
-          label="Headline number"
-          hint="Short, e.g. “+18% conversion” or “$2M avoided”. Leave blank if there's no number."
+          label="Headline result"
+          err={fe.headline_metric}
+          hint="Short, e.g. “+18% conversion” or “$2M avoided”. For a Decision, name the decision instead, e.g. “Killed the native app”."
         />
       </fieldset>
 
