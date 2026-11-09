@@ -182,18 +182,26 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
                   <dd>{e.verified_by}</dd>
                 </>
               )}
-              <dt>Methods</dt>
-              <dd className="tags" style={{ marginBottom: 0 }}>
-                {e.methods.map((m) => (
-                  <FacetLink key={m} facet="methods" value={m} />
-                ))}
-              </dd>
-              <dt>Metrics</dt>
-              <dd className="tags" style={{ marginBottom: 0 }}>
-                {e.metrics.map((m) => (
-                  <FacetLink key={m} facet="metrics" value={m} />
-                ))}
-              </dd>
+              {e.methods.length > 0 && (
+                <>
+                  <dt>Methods</dt>
+                  <dd className="tags" style={{ marginBottom: 0 }}>
+                    {e.methods.map((m) => (
+                      <FacetLink key={m} facet="methods" value={m} />
+                    ))}
+                  </dd>
+                </>
+              )}
+              {e.metrics.length > 0 && (
+                <>
+                  <dt>Metrics</dt>
+                  <dd className="tags" style={{ marginBottom: 0 }}>
+                    {e.metrics.map((m) => (
+                      <FacetLink key={m} facet="metrics" value={m} />
+                    ))}
+                  </dd>
+                </>
+              )}
               {e.research_type && (
                 <>
                   <dt>Research type</dt>
