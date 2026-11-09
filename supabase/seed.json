@@ -2111,7 +2111,7 @@
   "research": "Iterative remote playtests via PlaytestCloud: single-session tests for first impressions and longitudinal tests for longer-term play. Number of players and rounds not stated.",
   "insight": "The vendor does not detail specific findings; the playtests pointed to the art style, how visible scores were, and reward progression as areas to improve.",
   "change": "Refreshed the art style, added character skins, made scores and leaderboards more visible, added reward progression, and added live events and boss modes.",
-  "outcome": "Day 1 and Day 3 retention up 10%; tutorial completions up 40%; rewarded-video ad conversions up 10%. Art-style changes alone were credited with a 5% Day 1 retention lift.",
+  "outcome": "Day 1 and Day 3 retention up 10%; tutorial completions up 40%; rewarded-video ad conversions up 10%.",
   "headline_metric": "+40% tutorial completions",
   "attribution": "The vendor credits the playtest-driven changes, but doesn't explain how the lifts were measured or separate them from other factors.",
   "caveats": "Vendor marketing about its own client. No method for the metrics, no dates, no sample sizes, no control. Several changes shipped together.",
@@ -2416,7 +2416,7 @@
   "sources": [
    {
     "title": "From 600 Tools to 1 Console: A UX-Driven Transformation",
-    "url": "https://arxiv.org/abs/2506.16107",
+    "url": "https://arxiv.org/pdf/2506.16107#page=3",
     "publisher": "arXiv (CHI '25 workshop paper)",
     "date": "2025-06-19"
    }
@@ -3975,7 +3975,7 @@
    },
    {
     "title": "Increasing Participation in Peer Production Communities with the Newcomer Homepage (Warncke-Wang, Ho, Miller, Johnson)",
-    "url": "https://arxiv.org/abs/2308.09642",
+    "url": "https://arxiv.org/pdf/2308.09642#page=13",
     "publisher": "arXiv / Proceedings of the ACM on Human-Computer Interaction (CSCW)",
     "date": "2023-09-28"
    }
