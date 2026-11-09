@@ -346,7 +346,7 @@
   "sources": [
    {
     "title": "Using Human Centered Design to Achieve Operational Impact (Kaiser Permanente Innovation Consultancy, Christi Zuber)",
-    "url": "https://www.poms.org/KP's_Innovation_Christi_Zuber.pdf",
+    "url": "https://www.poms.org/KP's_Innovation_Christi_Zuber.pdf#page=5",
     "publisher": "POMS College of Healthcare Operations Management",
     "date": "2010-05-06"
    }
@@ -532,7 +532,7 @@
   "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
   "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
   "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
-  "headline_metric": "Dropped the native app",
+  "headline_metric": "Didn't build a native app",
   "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
   "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
   "methods": [
@@ -1239,15 +1239,15 @@
   "source_type": "agency_vendor",
   "sources": [
    {
-    "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
-    "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
-    "publisher": "Hotjar (via FeaturedCustomers)",
-    "date": null
-   },
-   {
     "title": "Case Study: Time4Sleep achieves 63% increase in mobile conversions with Hotjar",
     "url": "https://www.casestudies.com/company/hotjar/case-study/time4sleep-customer-case-study",
     "publisher": "CaseStudies.com",
+    "date": null
+   },
+   {
+    "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
+    "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
+    "publisher": "Hotjar (via FeaturedCustomers)",
     "date": null
    }
   ],
@@ -1479,7 +1479,7 @@
   "sources": [
    {
     "title": "Improving SSL Warnings: Comprehension and Adherence",
-    "url": "https://research.google/pubs/improving-ssl-warnings-comprehension-and-adherence/",
+    "url": "https://research.google.com/pubs/archive/43265.pdf",
     "publisher": "Google Research (CHI 2015)",
     "date": "2015-04-18"
    },
@@ -1633,9 +1633,9 @@
   "insight": "Location maps showed players wandering aimlessly in the jungle level; players fired at out-of-range enemies; AI marines grabbed the Warthogs before players could; players aimed the Wraith turret low and blew themselves up; a death heat map showed one base on the Valhalla map had an advantage.",
   "change": "Added one-way ledges so players couldn't backtrack in the jungle; made the reticle turn red when enemies were in range; added more Warthogs; limited how low the Wraith turret could aim; reshaped Valhalla's terrain; rebalanced ammo, grenades and melee.",
   "outcome": "Follow-up telemetry showed players moving through the jungle level as intended. In later ratings, 52% of players gave that level 5 out of 5 for fun and 40% gave it 4. Some issues (finding the melee button, one cliff route) were still unresolved at the time of writing.",
-  "headline_metric": "92% rated level 4–5 fun",
+  "headline_metric": "52% rated Jungle 5/5 for fun",
   "attribution": "Direct for each fix: the article ties specific design changes to specific playtest observations.",
-  "caveats": "Journalism based on access to the lab, not a published study. The fun ratings are from playtesters, not a before/after comparison with a baseline. 2007. The full Wired text was read via an archived copy because wired.com blocked automated fetching.",
+  "caveats": "Journalism based on access to the lab, not a published study. The fun ratings are from playtesters, not a before/after comparison with a baseline. 2007.",
   "methods": [
    "usability_testing",
    "analytics",
@@ -3835,7 +3835,7 @@
   "sources": [
    {
     "title": "Microsoft Inclusive Design for Cognition: Case Studies (PDF)",
-    "url": "https://inclusive.microsoft.design/tools-and-activities/CaseStudiesCreatingForCognition.pdf",
+    "url": "https://inclusive.microsoft.design/tools-and-activities/CaseStudiesCreatingForCognition.pdf#page=5",
     "publisher": "Microsoft Inclusive Design",
     "date": "2023-03-03"
    }
@@ -3892,7 +3892,7 @@
   "insight": "In testing the existing workflow, 0 of 5 participants indented and signed their comment correctly. With the prototype, all 5 published a correctly formatted reply in about half the time. The barrier for newcomers was mechanical, not motivation.",
   "change": "The team built a Reply link next to each comment that opens a small box and handles indentation and signatures automatically, released it as a beta feature in 2020, then as an opt-out default on several wikis.",
   "outcome": "In an A/B test from 11 February to 10 March 2021 on 22 Wikipedias, where half of editors got the tool automatically, 72.9% of Junior Contributors with the tool published at least one comment versus 27.6% without (the team calls it a 160% increase). Junior Contributors were 7.2 times more likely to publish a comment they started, and reverts of their comments fell 79.5%. The team then offered the tool as an opt-out default across Wikimedia projects.",
-  "headline_metric": "+160% newer editors commenting",
+  "headline_metric": "Comments posted 27.6% → 72.9%",
   "attribution": "Strong. The tool was designed to fix problems found in consultation and usability tests, and the outcome comes from a randomized test of that tool.",
   "caveats": "The write-up is inconsistent about whether the comparison is people who 'opened' the tool or who 'had access' to it; the figures are the same either way, but the exact denominator is unclear. Results are on talk-page participation, not longer-term editor retention. Some large wikis (including English Wikipedia) were not part of the default rollout at first.",
   "methods": [
@@ -4059,6 +4059,12 @@
   "source_type": "first_party",
   "sources": [
    {
+    "title": "Using A/B testing to measurably improve common user journeys",
+    "url": "https://insidegovuk.blog.gov.uk/2017/11/14/using-ab-testing-to-measurably-improve-common-user-journeys/",
+    "publisher": "Inside GOV.UK blog",
+    "date": "2017-11-14"
+   },
+   {
     "title": "Benchmarking GOV.UK and what we are doing with what we found out",
     "url": "https://userresearch.blog.gov.uk/2016/02/19/benchmarking-gov-uk-and-what-we-are-doing-with-what-we-found-out/",
     "publisher": "GOV.UK User research blog",
@@ -4069,12 +4075,6 @@
     "url": "https://insidegovuk.blog.gov.uk/2016/08/23/absolutely-fabulous-testing/",
     "publisher": "Inside GOV.UK blog",
     "date": "2016-08-23"
-   },
-   {
-    "title": "Using A/B testing to measurably improve common user journeys",
-    "url": "https://insidegovuk.blog.gov.uk/2017/11/14/using-ab-testing-to-measurably-improve-common-user-journeys/",
-    "publisher": "Inside GOV.UK blog",
-    "date": "2017-11-14"
    }
   ]
  },
@@ -4192,7 +4192,7 @@
   "sources": [
    {
     "title": "MNbenefits Report 2022",
-    "url": "https://digitalgovernmenthub.org/wp-content/uploads/2023/04/MNbenefits_Report_2022.pdf",
+    "url": "https://digitalgovernmenthub.org/wp-content/uploads/2023/04/MNbenefits_Report_2022.pdf#page=11",
     "publisher": "Code for America (via Digital Government Hub)",
     "date": "2022-12-01"
    }
@@ -4899,7 +4899,7 @@
   "sources": [
    {
     "title": "IRS Direct File Pilot Program: Filing Season 2024 After Action Report (Publication 5969)",
-    "url": "https://www.irs.gov/pub/irs-pdf/p5969.pdf",
+    "url": "https://www.irs.gov/pub/irs-pdf/p5969.pdf#page=4",
     "publisher": "Internal Revenue Service",
     "date": "2024-05-03"
    }

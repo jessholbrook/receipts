@@ -32,7 +32,7 @@
     "sources": [
       {
         "title": "Improving SSL Warnings: Comprehension and Adherence",
-        "url": "https://research.google/pubs/improving-ssl-warnings-comprehension-and-adherence/",
+        "url": "https://research.google.com/pubs/archive/43265.pdf",
         "publisher": "Google Research (CHI 2015)",
         "date": "2015-04-18"
       },
@@ -186,9 +186,9 @@
     "insight": "Location maps showed players wandering aimlessly in the jungle level; players fired at out-of-range enemies; AI marines grabbed the Warthogs before players could; players aimed the Wraith turret low and blew themselves up; a death heat map showed one base on the Valhalla map had an advantage.",
     "change": "Added one-way ledges so players couldn't backtrack in the jungle; made the reticle turn red when enemies were in range; added more Warthogs; limited how low the Wraith turret could aim; reshaped Valhalla's terrain; rebalanced ammo, grenades and melee.",
     "outcome": "Follow-up telemetry showed players moving through the jungle level as intended. In later ratings, 52% of players gave that level 5 out of 5 for fun and 40% gave it 4. Some issues (finding the melee button, one cliff route) were still unresolved at the time of writing.",
-    "headline_metric": "92% rated level 4–5 fun",
+    "headline_metric": "52% rated Jungle 5/5 for fun",
     "attribution": "Direct for each fix: the article ties specific design changes to specific playtest observations.",
-    "caveats": "Journalism based on access to the lab, not a published study. The fun ratings are from playtesters, not a before/after comparison with a baseline. 2007. The full Wired text was read via an archived copy because wired.com blocked automated fetching.",
+    "caveats": "Journalism based on access to the lab, not a published study. The fun ratings are from playtesters, not a before/after comparison with a baseline. 2007.",
     "methods": [
       "usability_testing",
       "analytics",

@@ -346,7 +346,7 @@
     "sources": [
       {
         "title": "Using Human Centered Design to Achieve Operational Impact (Kaiser Permanente Innovation Consultancy, Christi Zuber)",
-        "url": "https://www.poms.org/KP's_Innovation_Christi_Zuber.pdf",
+        "url": "https://www.poms.org/KP's_Innovation_Christi_Zuber.pdf#page=5",
         "publisher": "POMS College of Healthcare Operations Management",
         "date": "2010-05-06"
       }
@@ -532,7 +532,7 @@
     "insight": "Many participants planned to return later and continue their work on another device, and said a consistent interface across devices mattered for getting their tasks done.",
     "change": "JSTOR decided not to build a JSTOR app. It prioritized a consistent responsive web interface and individual user accounts so people could save sources and pick up where they left off.",
     "outcome": "A native app build was avoided; effort went into responsive web and accounts. No metrics are reported.",
-    "headline_metric": "Dropped the native app",
+    "headline_metric": "Didn't build a native app",
     "attribution": "Direct: the vendor's write-up presents the interview findings as the basis of the decision.",
     "caveats": "Published by the research-tool vendor (Ethnio) as a customer story, so it has a promotional angle; undated and without participant counts. No cost-avoided figure.",
     "methods": [

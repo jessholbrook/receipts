@@ -479,15 +479,15 @@
     "source_type": "agency_vendor",
     "sources": [
       {
-        "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
-        "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
-        "publisher": "Hotjar (via FeaturedCustomers)",
-        "date": null
-      },
-      {
         "title": "Case Study: Time4Sleep achieves 63% increase in mobile conversions with Hotjar",
         "url": "https://www.casestudies.com/company/hotjar/case-study/time4sleep-customer-case-study",
         "publisher": "CaseStudies.com",
+        "date": null
+      },
+      {
+        "title": "Time4Sleep made mobile conversions skyrocket—and you can, too!",
+        "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/Time4Sleep.pdf",
+        "publisher": "Hotjar (via FeaturedCustomers)",
         "date": null
       }
     ],
