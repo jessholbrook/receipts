@@ -33,8 +33,14 @@
     "source_type": "first_party",
     "sources": [
       {
-        "title": "Talk pages project/Replying",
-        "url": "https://www.mediawiki.org/wiki/Talk_pages_project/Replying",
+        "title": "Reply Tool AB Test Report",
+        "url": "https://wikimedia-research.github.io/Reply-tools-analysis-2021/",
+        "publisher": "Wikimedia Foundation (Product Analytics)",
+        "date": "2021-04-23"
+      },
+      {
+        "title": "Talk pages project/Replying: Impact",
+        "url": "https://www.mediawiki.org/wiki/Talk_pages_project/Replying#Impact",
         "publisher": "MediaWiki.org (Wikimedia Foundation)",
         "date": "2021-04-23"
       }
