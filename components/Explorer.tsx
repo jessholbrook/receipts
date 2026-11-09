@@ -534,7 +534,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
               {results.length === entries.length
                 ? `${plural(entries.length)} so far, and growing.`
                 : `${plural(results.length)} in this view.`}{" "}
-              Know one that&rsquo;s missing? <a href="/submit">Submit a win</a>.
+              Know one that&rsquo;s missing? <a href="/submit">Submit a receipt</a>.
             </p>
           )}
         </section>

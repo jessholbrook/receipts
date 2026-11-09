@@ -69,7 +69,7 @@ export default function About() {
         <h2>Found a mistake?</h2>
         <p>
           <a href="https://github.com/jessholbrook/receipts/issues/new">Open an issue</a> with the correction and a
-          source. Or <Link href="/submit">submit a win</Link> of your own.
+          source. Or <Link href="/submit">submit a receipt</Link> of your own.
         </p>
 
         <h2>Cite it, share it</h2>

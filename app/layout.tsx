@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 How we rate
               </Link>
               <Link href="/submit" className="btn">
-                <span className="submit-long">Submit a win</span>
+                <span className="submit-long">Submit a receipt</span>
                 <span className="submit-short">Submit</span>
               </Link>
               <ThemeToggle />

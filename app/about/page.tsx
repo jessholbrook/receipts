@@ -71,7 +71,7 @@ export default async function About() {
         <h2>Get involved</h2>
         <ul>
           <li>
-            Know a case that belongs here? <Link href="/submit">Submit a win</Link>. Anonymized cases are welcome.
+            Know a case that belongs here? <Link href="/submit">Submit a receipt</Link>. Anonymized cases are welcome.
           </li>
           <li>
             Spot an error or a better source?{" "}

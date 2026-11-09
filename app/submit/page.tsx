@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SubmitForm from "./SubmitForm";
 
-export const metadata: Metadata = { title: "Submit a win" };
+export const metadata: Metadata = { title: "Submit a receipt" };
 
 export default function SubmitPage() {
   return (
