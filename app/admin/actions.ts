@@ -2,7 +2,7 @@
 
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { supabase } from "@/lib/supabase";
 
 const COOKIE = "receipts_admin";
@@ -47,6 +47,7 @@ export async function approve(fd: FormData) {
     final_entry: entry,
   });
   if (error) redirect(`/admin?err=${encodeURIComponent(error.message)}`);
+  revalidateTag("entries");
   revalidatePath("/");
   redirect(`/admin?ok=${encodeURIComponent("Approved and published.")}`);
 }

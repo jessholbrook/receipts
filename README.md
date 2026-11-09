@@ -50,6 +50,14 @@ RECEIPTS_ADMIN_TOKEN=... node scripts/fetch-thumbnails.mjs                  # al
 RECEIPTS_ADMIN_TOKEN=... node scripts/fetch-thumbnails.mjs --only-missing   # just new ones
 ```
 
+## Link previews
+
+Every page sets its own preview card through `lib/share.ts` (a page's openGraph replaces the layout's,
+so the site name is added there). Filtered homepage links get a card of their own: the homepage reads
+the link's filters in `generateMetadata`, counts matches with the same code the page uses
+(`lib/filters.ts`), and points the image at `/og/filtered?…`. The entry list behind it is cached for
+five minutes (`getEntriesCached`), and approving a submission clears it.
+
 ## Moderation
 
 Go to `/admin` and sign in with the moderator passphrase. Pending submissions show up with an

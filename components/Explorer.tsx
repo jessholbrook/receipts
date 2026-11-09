@@ -9,8 +9,7 @@ import CopyButton from "./CopyButton";
 import { track } from "@/lib/track";
 import { sourceBreakdown } from "./SourceMark";
 import { LAST_RESULTS_KEY } from "./BackToResults";
-
-type Selected = Partial<Record<FacetKey, string[]>>;
+import { entryValues, haystack, matches, type Selected } from "@/lib/filters";
 
 const EVIDENCE_RANK: Record<string, number> = { tested: 0, measured: 1, reported: 2, decision: 3 };
 // Evidence leads the sidebar; the rest follow in taxonomy order.
@@ -18,44 +17,6 @@ const SIDEBAR_FACETS = [
   ...FACETS.filter((f) => f.key === "evidence_strength"),
   ...FACETS.filter((f) => f.key !== "evidence_strength"),
 ];
-
-function entryValues(e: Entry, key: FacetKey): string[] {
-  const v = e[key as keyof Entry];
-  if (Array.isArray(v)) return v as string[];
-  return v ? [String(v)] : [];
-}
-
-function matches(e: Entry, selected: Selected, skip?: FacetKey): boolean {
-  for (const f of FACETS) {
-    if (f.key === skip) continue;
-    const sel = selected[f.key];
-    if (!sel || sel.length === 0) continue;
-    const vals = entryValues(e, f.key);
-    // within a facet: OR. across facets: AND.
-    if (!sel.some((s) => vals.includes(s))) return false;
-  }
-  return true;
-}
-
-function haystack(e: Entry): string {
-  return [
-    e.title,
-    e.company,
-    e.summary,
-    e.problem,
-    e.research,
-    e.insight,
-    e.change,
-    e.outcome,
-    e.headline_metric,
-    labelFor("industry", e.industry),
-    ...e.methods.map((m) => labelFor("methods", m)),
-    ...e.metrics.map((m) => labelFor("metrics", m)),
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-}
 
 const plural = (n: number) => `${n} ${n === 1 ? "receipt" : "receipts"}`;
 
@@ -430,7 +391,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
           <div className="result-row">
             <p className="result-count" aria-live="polite">
-              {activeCount || q.trim() ? `${plural(results.length)} match` : `All ${plural(results.length)}`}
+              {activeCount || q.trim() ? `${plural(results.length)} ${results.length === 1 ? "matches" : "match"}` : `All ${plural(results.length)}`}
             </p>
             {(activeCount > 0 || q.trim() !== "") && results.length > 0 && (
               <CopyButton

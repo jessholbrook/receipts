@@ -1,4 +1,5 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import { unstable_cache } from "next/cache";
 import type { Entry } from "./types";
 
 // Publishable (anon) key: safe to expose. All access control lives in Postgres RLS
@@ -24,6 +25,11 @@ export async function getEntries(): Promise<Entry[]> {
   if (error) throw new Error(error.message);
   return (data ?? []) as Entry[];
 }
+
+// The homepage renders per request (filtered links get their own preview card), and link
+// unfurlers hit it often, so the full list is cached for five minutes. Approving a submission
+// clears it via the "entries" tag.
+export const getEntriesCached = unstable_cache(getEntries, ["entries"], { revalidate: 300, tags: ["entries"] });
 
 export async function getEntry(slug: string): Promise<Entry | null> {
   const { data, error } = await supabase().from("entries").select(ENTRY_COLUMNS).eq("slug", slug).maybeSingle();
