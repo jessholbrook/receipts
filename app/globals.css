@@ -237,6 +237,7 @@ a {
   flex-wrap: wrap;
   gap: 16px 32px;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 /* ---------- hero ---------- */
@@ -1964,6 +1965,12 @@ a.receipt:focus-visible::after {
 .site-footer a {
   display: inline-block;
   padding: 6px 2px;
+}
+
+/* The domain line reads as a sentence: keep the tall tap area, drop the side padding. */
+.site-footer .footer-domains a {
+  display: inline;
+  padding: 6px 0;
 }
 
 #caveats {

@@ -65,8 +65,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <footer className="site-footer">
           <div className="wrap">
-            <span>
-              <a href="https://www.researchreceipts.org">researchreceipts.org</a>: a public atlas of UX research wins
+            <span className="footer-domains">
+              <a href="https://www.researchreceipts.org">researchreceipts.org</a> (aka{" "}
+              <a href="https://whathasresearcheverdone.com">whathasresearcheverdone.com</a>): a public atlas of UX
+              research wins
             </span>
             <span>
               <Link href="/about">About</Link> · <Link href="/how-we-rate">How we rate</Link> ·{" "}
