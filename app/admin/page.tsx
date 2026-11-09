@@ -8,7 +8,24 @@ import LoginForm from "./LoginForm";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Moderation", robots: { index: false } };
 
-const TABS = ["pending", "approved", "rejected", "all"] as const;
+const TABS = ["pending", "approved", "rejected", "all", "activity"] as const;
+
+// What each event means, in the order worth reading them.
+const EVENT_LABELS: Record<string, string> = {
+  copy_citation: "Copied a citation",
+  copy_link: "Copied an entry link",
+  copy_results_link: "Copied a filtered-results link",
+  share_landing: "Arrived on a shared filtered link",
+  source_click: "Opened an original source",
+  filter: "Used a filter",
+  search: "Searched",
+  lucky: "Pressed I'm Feeling Lucky",
+  show_all: "Expanded an evidence section",
+  sheet_open: "Opened phone filters",
+  submit_success: "Submitted a case",
+};
+
+type EventRow = { name: string; events: number; detail: { key: string; n: number }[] };
 
 export default async function AdminPage({
   searchParams,
@@ -30,8 +47,12 @@ export default async function AdminPage({
   }
 
   const tab = (TABS as readonly string[]).includes(sp.tab ?? "") ? sp.tab! : "pending";
-  const { data, error } = await supabase().rpc("admin_list_submissions", { token, which: tab });
-  const items = (data ?? []) as Submission[];
+  const isActivity = tab === "activity";
+  const { data, error } = isActivity
+    ? await supabase().rpc("admin_event_summary", { token, days: 30 })
+    : await supabase().rpc("admin_list_submissions", { token, which: tab });
+  const items = (isActivity ? [] : data ?? []) as Submission[];
+  const activity = (isActivity ? data ?? [] : []) as EventRow[];
 
   return (
     <div className="wrap">
@@ -68,7 +89,38 @@ export default async function AdminPage({
         </div>
       )}
 
-      {!error && items.length === 0 && <div className="empty">Nothing here.</div>}
+      {isActivity && !error && (
+        <section className="activity">
+          <p className="hint">
+            Last 30 days. Anonymous counts from the site&rsquo;s own event log; traffic (visits, pages, referrers) is in
+            Vercel Analytics.
+          </p>
+          {activity.length === 0 ? (
+            <div className="empty">No activity recorded yet.</div>
+          ) : (
+            <table className="activity-table">
+              <thead>
+                <tr>
+                  <th scope="col">Action</th>
+                  <th scope="col">Count</th>
+                  <th scope="col">Most common</th>
+                </tr>
+              </thead>
+              <tbody>
+                {activity.map((r) => (
+                  <tr key={r.name}>
+                    <td>{EVENT_LABELS[r.name] ?? r.name}</td>
+                    <td className="num">{r.events}</td>
+                    <td>{r.detail.map((d) => `${d.key} (${d.n})`).join(", ") || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </section>
+      )}
+
+      {!isActivity && !error && items.length === 0 && <div className="empty">Nothing here.</div>}
 
       <div className="queue">
         {items.map((s) => (

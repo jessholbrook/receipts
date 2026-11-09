@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import TrackClicks from "@/components/TrackClicks";
 import ThemeToggle from "@/components/ThemeToggle";
 import { themeInitScript } from "@/lib/theme";
 
@@ -73,6 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </span>
           </div>
         </footer>
+        <Analytics />
+        <TrackClicks />
       </body>
     </html>
   );

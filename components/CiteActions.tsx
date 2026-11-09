@@ -2,10 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import CopyButton from "./CopyButton";
+import { track } from "@/lib/track";
 
 // Copy link / Copy as citation, with a visible preview of exactly what went to the clipboard.
 // If the clipboard is blocked, the same text appears selected so it can be copied by hand.
-export default function CiteActions({ url, citation }: { url: string; citation: string }) {
+export default function CiteActions({ slug, url, citation }: { slug: string; url: string; citation: string }) {
   const [shown, setShown] = useState<{ text: string; ok: boolean } | null>(null);
   const preRef = useRef<HTMLPreElement>(null);
 
@@ -25,13 +26,19 @@ export default function CiteActions({ url, citation }: { url: string; citation: 
         <CopyButton
           label="Copy link"
           text={url}
-          onCopied={() => setShown({ text: url, ok: true })}
+          onCopied={() => {
+            setShown({ text: url, ok: true });
+            track("copy_link", { slug });
+          }}
           onFailed={() => setShown({ text: url, ok: false })}
         />
         <CopyButton
           label="Copy as citation"
           text={citation}
-          onCopied={() => setShown({ text: citation, ok: true })}
+          onCopied={() => {
+            setShown({ text: citation, ok: true });
+            track("copy_citation", { slug });
+          }}
           onFailed={() => setShown({ text: citation, ok: false })}
         />
       </div>

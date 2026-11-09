@@ -96,7 +96,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
               <a href="#caveats">All caveats</a>
             </p>
           )}
-          <CiteActions url={entryUrl(e.slug)} citation={buildCitation(e)} />
+          <CiteActions slug={e.slug} url={entryUrl(e.slug)} citation={buildCitation(e)} />
 
           <div className="story">
             <Section label="The problem" text={e.problem} />
@@ -122,6 +122,9 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
               <div>
                 {e.image_url && first && e.source_type !== "agency_vendor" && (
                   <a href={first.url} target="_blank" rel="noopener noreferrer" className="source-preview"
+                    data-track="source_click"
+                    data-slug={e.slug}
+                    data-host={new URL(first.url).hostname}
                     aria-label={`Open source: ${first.title}`}
                   >
                     <Thumb src={e.image_url} className="source-thumb" />
@@ -130,7 +133,14 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
                 <ul className="sources">
                   {e.sources.map((s) => (
                     <li key={s.url}>
-                      <a href={s.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-track="source_click"
+                        data-slug={e.slug}
+                        data-host={new URL(s.url).hostname}
+                      >
                         {s.title}
                       </a>
                       <span className="meta">

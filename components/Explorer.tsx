@@ -6,6 +6,7 @@ import type { Entry } from "@/lib/types";
 import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
 import CopyButton from "./CopyButton";
+import { track } from "@/lib/track";
 import { sourceBreakdown } from "./SourceMark";
 import { LAST_RESULTS_KEY } from "./BackToResults";
 
@@ -128,7 +129,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
 
   // Someone opening a shared filtered link wants the results, not the pitch again.
   useEffect(() => {
-    if (sharedLanding) document.getElementById("results")?.scrollIntoView({ block: "start" });
+    if (sharedLanding) {
+      document.getElementById("results")?.scrollIntoView({ block: "start" });
+      track("share_landing", { q: window.location.search.slice(1, 120) });
+    }
   }, [sharedLanding]);
 
   useEffect(() => {
@@ -142,6 +146,15 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
+
+  // what people look for: short queries only, lowercased, after they pause typing
+  useEffect(() => {
+    const term = q.trim().toLowerCase();
+    if (term.length < 2 || term.length > 40) return;
+    const t = window.setTimeout(() => track("search", { q: term, n: results.length }), 1500);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [q]);
 
   const searchIndex = useMemo(() => new Map(entries.map((e) => [e.slug, haystack(e)])), [entries]);
 
@@ -193,6 +206,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   const toggle = useCallback((key: FacetKey, value: string) => {
     setSelected((prev) => {
       const cur = prev[key] ?? [];
+      if (!cur.includes(value)) track("filter", { facet: key, value });
       const next = cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value];
       return { ...prev, [key]: next };
     });
@@ -225,7 +239,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     );
   }, [results, sort]);
 
-  const openSheet = () => sheetRef.current?.showModal();
+  const openSheet = () => {
+    sheetRef.current?.showModal();
+    track("sheet_open");
+  };
   const closeSheet = () => sheetRef.current?.close();
   const showResults = () => {
     closeSheet();
@@ -359,7 +376,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
             disabled={results.length === 0}
             onClick={() => {
               const pick = results[Math.floor(Math.random() * results.length)];
-              if (pick) router.push(`/entries/${pick.slug}`);
+              if (pick) {
+                track("lucky", { slug: pick.slug });
+                router.push(`/entries/${pick.slug}`);
+              }
             }}
             title={activeCount || q.trim() ? "A random receipt from your current filters" : "A random receipt"}
             aria-label="I'm Feeling Lucky: open a random receipt"
@@ -417,6 +437,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 label="Copy link to these results"
                 className="btn secondary btn-sm"
                 text={() => window.location.href}
+                onCopied={() => track("copy_results_link", { q: window.location.search.slice(1, 120) })}
               />
             )}
           </div>
@@ -482,7 +503,10 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                     <button
                       type="button"
                       className="btn secondary show-all"
-                      onClick={() => setOpenTiers((t) => ({ ...t, [ev.value]: true }))}
+                      onClick={() => {
+                        setOpenTiers((t) => ({ ...t, [ev.value]: true }));
+                        track("show_all", { value: ev.value });
+                      }}
                     >
                       Show all {items.length} {ev.label} receipts
                     </button>

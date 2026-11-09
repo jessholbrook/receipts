@@ -1,6 +1,7 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
+import { track } from "@/lib/track";
 import Link from "next/link";
 import { submitEntry, SubmitState } from "./actions";
 import {
@@ -78,6 +79,10 @@ function Text({
 export default function SubmitForm() {
   const [state, action, pending] = useActionState<SubmitState, FormData>(submitEntry, { ok: false });
   const fe = state.fieldErrors ?? {};
+
+  useEffect(() => {
+    if (state.ok) track("submit_success");
+  }, [state.ok]);
 
   if (state.ok) {
     return (

@@ -2110,3 +2110,33 @@ a.receipt:focus-visible .card-thumb {
     display: inline;
   }
 }
+
+/* ---------- admin activity ---------- */
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: var(--card);
+  border: 1px solid var(--rule);
+}
+
+.activity-table th,
+.activity-table td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.activity-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+}
+
+.activity-table .num {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}

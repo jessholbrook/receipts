@@ -62,6 +62,16 @@ To change the passphrase, run in the Supabase SQL editor:
 update admin_secrets set passphrase_hash = extensions.crypt('NEW-PASSPHRASE', extensions.gen_salt('bf', 10));
 ```
 
+## Analytics
+
+- **Traffic** (visits, pages, referrers, countries, devices): Vercel Web Analytics, cookieless.
+  Turn it on once in the Vercel project's Analytics tab; the `<Analytics />` component is already in the layout.
+- **Key actions** (citations copied, sources opened, filters, searches, Lucky, shared-link landings,
+  submissions): anonymous rows in the `events` table, written by `lib/track.ts`. No cookies, ids or IPs are
+  stored, and nothing is sent when the visitor has Do Not Track or Global Privacy Control on. Anyone can insert
+  a known event name; nobody can read the table through the API. See counts at `/admin` → **activity**.
+- Local dev doesn't record events unless `localStorage["receipts-track-local"] = "1"`.
+
 ### About the Supabase security advisor warnings
 
 The advisor flags the `admin_*` functions as "SECURITY DEFINER executable by anon". That's by design:
