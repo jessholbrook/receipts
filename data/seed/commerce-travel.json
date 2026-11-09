@@ -123,7 +123,7 @@
     "sources": [
       {
         "title": "American Airlines customer story",
-        "url": "https://www.usertesting.com/resources/customers/american-airlines-usertesting",
+        "url": "https://www.usertesting.com/resources/customers/american-airlines",
         "publisher": "UserTesting",
         "date": null
       },
@@ -526,7 +526,7 @@
     "sources": [
       {
         "title": "A/B testing examples (Turum-burum for Intertop)",
-        "url": "https://contentsquare.com/blog/ab-testing-examples/",
+        "url": "https://contentsquare.com/guides/ab-testing/examples/",
         "publisher": "Contentsquare",
         "date": null
       }
@@ -565,7 +565,7 @@
     "sources": [
       {
         "title": "Designing Digital Experiences That Augment the Analog World",
-        "url": "https://company.instacart.com/how-its-made/designing-digital-experiences-that-augment-the-analog-world",
+        "url": "https://company.instacart.com/tech-innovation/designing-digital-experiences-that-augment-the-analog-world",
         "publisher": "Instacart",
         "date": "2021-08-18"
       }
@@ -644,7 +644,7 @@
     "sources": [
       {
         "title": "Property portals redesigned",
-        "url": "https://www.propertyfinder.ae/blog/?p=29156",
+        "url": "https://www.propertyfinder.ae/blog/property-portals-redesigned/",
         "publisher": "Property Finder Blog",
         "date": "2023-07-24"
       }
@@ -680,7 +680,7 @@
     "sources": [
       {
         "title": "Rightmove rolls out Shared Lists to help renters and buyers' search",
-        "url": "https://www.property118.com/?p=186705",
+        "url": "https://www.property118.com/rightmove-rolls-out-shared-lists-to-help-renters-and-buyers-search/",
         "publisher": "Property118",
         "date": "2025-11-19"
       }
