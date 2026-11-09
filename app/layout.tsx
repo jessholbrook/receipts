@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareMeta } from "@/lib/share";
 import Link from "next/link";
 import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,18 +18,16 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.researchreceipt
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  twitter: { card: "summary_large_image" },
   title: {
     default: "Receipts — What has UX research ever done for us?",
     template: "%s · Receipts",
   },
   description:
     "A public atlas of documented cases where UX research improved products, business metrics and decisions. Every entry rated for evidence strength.",
-  openGraph: {
-    title: "Receipts — What has UX research ever done for us?",
-    description: "Documented UX research wins, rated for evidence strength. Filter by method, industry and metric.",
-    type: "website",
-  },
+  ...shareMeta(
+    "Receipts — What has UX research ever done for us?",
+    "Documented UX research wins, rated for evidence strength. Filter by method, industry and metric.",
+  ),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

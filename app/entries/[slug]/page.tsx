@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { shareMeta } from "@/lib/share";
 import { getEntries, getEntry } from "@/lib/supabase";
 import { EVIDENCE, labelFor, SOURCE_TYPES } from "@/lib/taxonomy";
 import { EvidenceBadge } from "@/components/EntryCard";
@@ -30,8 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: e.title,
     description: e.summary,
-    openGraph: { title: shareTitle, description: shareDesc, type: "article", url: entryUrl(e.slug) },
-    twitter: { card: "summary_large_image", title: shareTitle, description: shareDesc },
+    ...shareMeta(shareTitle, shareDesc, { type: "article", url: entryUrl(e.slug) }),
   };
 }
 

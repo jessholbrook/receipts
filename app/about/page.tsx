@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { shareMeta } from "@/lib/share";
 import { getEntries } from "@/lib/supabase";
 
 export const revalidate = 300;
@@ -8,6 +9,10 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Receipts is a public atlas of documented UX research wins, each rated for how strong the evidence is and who is telling the story.",
+  ...shareMeta(
+    "About Receipts",
+    "Why this atlas of UX research wins exists, who made it, and how every receipt is sourced and rated.",
+  ),
 };
 
 export default async function About() {

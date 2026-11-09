@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
+import { shareMeta } from "@/lib/share";
 import Link from "next/link";
 import SubmitForm from "./SubmitForm";
 
-export const metadata: Metadata = { title: "Submit a receipt" };
+export const metadata: Metadata = {
+  title: "Submit a receipt",
+  description: "Add a case where UX research changed a product, a metric or a decision. Every submission is reviewed.",
+  ...shareMeta(
+    "Submit a receipt to Receipts",
+    "Got a case where UX research changed a product, a metric or a decision? Add it. Anonymized cases are welcome; every one is reviewed.",
+  ),
+};
 
 export default function SubmitPage() {
   return (

@@ -1,10 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { shareMeta } from "@/lib/share";
 import { EVIDENCE, SOURCE_TYPES } from "@/lib/taxonomy";
 import { EvidenceBadge } from "@/components/EntryCard";
 import type { Entry } from "@/lib/types";
 
-export const metadata: Metadata = { title: "How we rate evidence" };
+export const metadata: Metadata = {
+  title: "How we rate evidence",
+  description: "The four evidence levels behind every receipt, from controlled experiments to changed decisions.",
+  ...shareMeta(
+    "How Receipts rates evidence",
+    "Tested, Measured, Reported or Decision: the four evidence levels, and why vendor accounts are flagged.",
+  ),
+};
 
 export default function About() {
   return (

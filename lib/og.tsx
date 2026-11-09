@@ -55,10 +55,12 @@ export async function renderOg(opts: {
   const allText = [kicker, title, company, metric, ev?.label, source?.text, resultLabel, "Receipts", "What has UX research ever done for us?"]
     .filter(Boolean)
     .join(" ");
+  // The kicker and labels render uppercased (textTransform), so the font subset needs capitals too.
+  const glyphs = `${allText} ${allText.toUpperCase()}`;
   const [serif, mono, sans] = await Promise.all([
-    googleFont("Newsreader", 600, allText),
-    googleFont("JetBrains Mono", 600, allText),
-    googleFont("Source Sans 3", 400, allText),
+    googleFont("Newsreader", 600, glyphs),
+    googleFont("JetBrains Mono", 600, glyphs),
+    googleFont("Source Sans 3", 400, glyphs),
   ]);
   const fonts = [
     serif && { name: "Newsreader", data: serif, weight: 600 as const },
