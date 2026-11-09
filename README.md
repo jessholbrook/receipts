@@ -60,6 +60,16 @@ The pending tab shows a review checklist (`app/admin/ReviewChecklist.tsx`) built
 seed data caught: headline numbers must be stated word for word in the first source, and the last sentence of
 each section gets the hardest look, because that's where unsupported details tend to creep in.
 
+Each pending submission also runs an automated **source check** (`lib/sourcecheck.ts`, served by
+`app/admin/source-check/route.ts`). It fetches the submission's sources (HTML, PDFs, and Medium posts via
+their RSS feed), finds every key figure (anything with a unit or currency, 100+, or the headline) in the
+source text, and shows the matching sentence. It warns when the headline number isn't stated, is only in
+a later source, or is buried; and when a last-sentence figure isn't in any source. A match isn't proof: still
+read the sentence. "Re-check edited JSON" runs it again on your edits.
+
+Because it fetches links strangers submitted, the endpoint is moderator-only and refuses private, internal
+and non-standard-port addresses on every redirect hop, with an 8 MB / 12 s cap per source.
+
 To change the passphrase, run in the Supabase SQL editor:
 
 ```sql

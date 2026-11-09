@@ -315,16 +315,16 @@
     "source_type": "first_party",
     "sources": [
       {
-        "title": "How to block gambling spending from your Monzo account",
-        "url": "https://monzo.com/blog/2018/06/19/gambling-block-self-exclusion",
-        "publisher": "Monzo blog",
-        "date": "2018-06-19"
-      },
-      {
         "title": "We've improved our gambling block",
         "url": "https://monzo.com/blog/weve-improved-our-gambling-block",
         "publisher": "Monzo blog",
         "date": "2023-09-13"
+      },
+      {
+        "title": "How to block gambling spending from your Monzo account",
+        "url": "https://monzo.com/blog/2018/06/19/gambling-block-self-exclusion",
+        "publisher": "Monzo blog",
+        "date": "2018-06-19"
       }
     ]
   },

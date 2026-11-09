@@ -5,6 +5,7 @@ import type { Submission } from "@/lib/types";
 import { approve, getToken, logout, reject } from "./actions";
 import LoginForm from "./LoginForm";
 import ReviewChecklist from "./ReviewChecklist";
+import SourceCheck from "./SourceCheck";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Moderation", robots: { index: false } };
@@ -148,6 +149,7 @@ export default async function AdminPage({
 
             {s.status === "pending" && (
               <div style={{ display: "grid", gap: 12 }}>
+                <SourceCheck entry={s.entry} textareaId={`entry-${s.id}`} />
                 <form action={approve} className="field">
                   <input type="hidden" name="id" value={s.id} />
                   <label htmlFor={`entry-${s.id}`}>
