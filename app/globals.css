@@ -2111,6 +2111,42 @@ a.receipt:focus-visible .card-thumb {
   }
 }
 
+/* ---------- admin review checklist ---------- */
+
+.checklist {
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.checklist summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.checklist ol {
+  margin: 10px 0 2px;
+  padding-left: 22px;
+  display: grid;
+  gap: 8px;
+  max-width: 72ch;
+}
+
+.checklist li::marker {
+  font-family: var(--font-mono), monospace;
+  color: var(--ink-3);
+}
+
+.checklist code {
+  font-family: var(--font-mono), monospace;
+  font-size: 12.5px;
+}
+
 /* ---------- admin activity ---------- */
 
 .activity-table {

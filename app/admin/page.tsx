@@ -4,6 +4,7 @@ import { supabase } from "@/lib/supabase";
 import type { Submission } from "@/lib/types";
 import { approve, getToken, logout, reject } from "./actions";
 import LoginForm from "./LoginForm";
+import ReviewChecklist from "./ReviewChecklist";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Moderation", robots: { index: false } };
@@ -119,6 +120,8 @@ export default async function AdminPage({
           )}
         </section>
       )}
+
+      {tab === "pending" && !error && <ReviewChecklist open={items.length > 0} />}
 
       {!isActivity && !error && items.length === 0 && <div className="empty">Nothing here.</div>}
 

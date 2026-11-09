@@ -56,6 +56,10 @@ Go to `/admin` and sign in with the moderator passphrase. Pending submissions sh
 editable JSON version of the entry: fix the slug, wording or ratings, then approve to publish,
 or reject with a private note.
 
+The pending tab shows a review checklist (`app/admin/ReviewChecklist.tsx`) built from what source audits of the
+seed data caught: headline numbers must be stated word for word in the first source, and the last sentence of
+each section gets the hardest look, because that's where unsupported details tend to creep in.
+
 To change the passphrase, run in the Supabase SQL editor:
 
 ```sql
