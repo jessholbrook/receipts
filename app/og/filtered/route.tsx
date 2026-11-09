@@ -20,7 +20,7 @@ export async function GET(req: Request) {
         : {
             kicker: context || "Filtered view",
             title: countPhrase(hits.length, phrase),
-            company: imageSubtitle(hits),
+            company: imageSubtitle(hits, sel),
             evidence: onlyEvidence,
             metric: "Show me the receipts.",
           },

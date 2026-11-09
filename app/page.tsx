@@ -25,7 +25,7 @@ export async function generateMetadata({ searchParams }: { searchParams: SP }): 
   const title = n
     ? `${countPhrase(n, phrase)}${context ? ` · ${context}` : ""}`
     : `No receipts yet: ${phrase}${context ? ` · ${context}` : ""}`;
-  const description = shareDescription(hits);
+  const description = shareDescription(hits, sel);
 
   // Canonical query (facet order, no sort) so equal views share one cached image.
   const query = new URLSearchParams();

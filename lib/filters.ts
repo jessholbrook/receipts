@@ -74,6 +74,14 @@ export function isFiltered(sel: Selected, q: string): boolean {
   return Object.values(sel).some((v) => v && v.length) || !!q.trim();
 }
 
+// How each source type reads after "from" in a preview title: "25 receipts from agency or vendor accounts".
+const SOURCE_PHRASE: Record<string, string> = {
+  first_party: "companies' own accounts",
+  agency_vendor: "agency or vendor accounts",
+  independent: "independent sources",
+  community: "community submissions",
+};
+
 const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
 const orList = (xs: string[]) => (xs.length <= 2 ? xs.join(" or ") : `${xs.slice(0, -1).join(", ")} or ${xs.at(-1)}`);
 
@@ -92,9 +100,11 @@ export function describeFilters(sel: Selected, q: string): { phrase: string; con
   let phrase = ev.length ? `${orList(ev)} receipts` : "Receipts";
   if (metrics.length) phrase += ` about ${orList(metrics)}`;
   if (methods.length) phrase += ` using ${orList(methods)}`;
+  const sources = (sel.source_type ?? []).map((v) => SOURCE_PHRASE[v] ?? lower(labelFor("source_type", v)));
+  if (sources.length) phrase += ` from ${orList(sources)}`;
   if (query) phrase += ` matching “${query.slice(0, 40)}”`;
 
-  const context = (["industry", "product_type", "company_size", "source_type", "research_type"] as FacetKey[])
+  const context = (["industry", "product_type", "company_size", "research_type"] as FacetKey[])
     .flatMap((k) => (sel[k] ?? []).map((v) => labelFor(k, v)))
     .join(" · ");
   return { phrase, context };
@@ -116,25 +126,25 @@ export function evidenceBreakdown(entries: Entry[]): string {
   return xs.length ? `${xs.slice(0, -1).join(", ")} and ${xs.at(-1)}` : "";
 }
 
-/** Sentence for a link preview: evidence mix, then how many come from vendors. */
-export function shareDescription(hits: Entry[]): string {
+/** Sentence for a link preview: evidence mix, then how many come from vendors (unless the link filters by source). */
+export function shareDescription(hits: Entry[], sel: Selected = {}): string {
   if (!hits.length) return "Nothing documented for this view yet. Know a case? Submit a receipt.";
   const vendors = hits.filter((e) => e.source_type === "agency_vendor").length;
   const vendorLine =
-    vendors === 0
+    vendors === 0 || sel.source_type?.length
       ? ""
       : vendors === hits.length
         ? hits.length === 1
           ? " It comes from an agency or vendor account, flagged as such."
           : " All come from agency or vendor accounts, flagged as such."
         : ` ${vendors} ${vendors === 1 ? "comes from an agency or vendor account" : "come from agency or vendor accounts"}, flagged as such.`;
-  return `${evidenceBreakdown(hits)}.${vendorLine} Every receipt is rated for evidence strength, with its sources.`;
+  return `${evidenceBreakdown(hits)}.${vendorLine}`;
 }
 
 /** Subtitle for a filtered preview image: the evidence mix, or, when there's only one level, the vendor share. */
-export function imageSubtitle(hits: Entry[]): string {
+export function imageSubtitle(hits: Entry[], sel: Selected = {}): string {
   const levels = new Set(hits.map((e) => e.evidence_strength)).size;
-  if (levels > 1) return evidenceBreakdown(hits);
+  if (levels > 1 || sel.source_type?.length) return evidenceBreakdown(hits);
   const vendors = hits.filter((e) => e.source_type === "agency_vendor").length;
   if (!vendors) return hits.length === 1 ? "Not from a vendor account" : "None from vendor accounts";
   return vendors === hits.length ? "From vendor accounts, flagged" : `${vendors} of ${hits.length} from vendor accounts, flagged`;
