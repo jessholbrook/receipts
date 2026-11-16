@@ -54,7 +54,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
       const raw = params.get(f.key);
       if (raw) sel[f.key] = raw.split(",").filter(Boolean);
     }
-    return { sel, q: params.get("q") ?? "", sort: params.get("sort") ?? "evidence", view: params.get("view") === "cards" ? "cards" : "map" };
+    return { sel, q: params.get("q") ?? "", sort: params.get("sort") ?? "evidence", view: params.get("view") === "map" ? "map" : "cards" };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
