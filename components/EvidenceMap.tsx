@@ -26,7 +26,7 @@ export default function EvidenceMap({ entries }: { entries: Entry[] }) {
   return (
     <div className="evidence-map">
       <div className="map-intro">
-        <div><h2>What has research changed?</h2><p>One dot, one receipt. Choose a dot to read the story.</p></div>
+        <div><h2>What has research changed?</h2><p>Each dot is a receipt. Choose one to see what changed.</p></div>
         <a href="/how-we-rate">How we rate the evidence ↗</a>
       </div>
       <div className="map-layout">
@@ -54,8 +54,8 @@ export default function EvidenceMap({ entries }: { entries: Entry[] }) {
             })}
           </section>)}
           <details className="map-method"><summary>How receipts are placed</summary>
-            <p>Rows are editorial groupings, not impact scores. Each receipt has one primary home, even when it describes several benefits. Dot size and position within a cell do not rank impact. Empty cells mean no matching receipts in this collection, not that research has no value there.</p>
-            <p>The evidence categories and source accounts are unchanged. New receipts stay visible under “Not yet grouped” until assigned.</p>
+            <p>We group receipts by the main thing research changed. Some fit more than one row; we pick one so each receipt appears once. The columns show how strong the evidence is.</p>
+            <p>The dots don’t measure the size of a win. An empty space just means there are no matching receipts in this view.</p>
           </details>
         </div>
         <aside className="map-detail" ref={detail} aria-label="Selected receipt" aria-live="polite">
@@ -68,7 +68,7 @@ export default function EvidenceMap({ entries }: { entries: Entry[] }) {
             <p>{selected.summary}</p>
             {selected.caveats && <details><summary>What to keep in mind</summary><p>{selected.caveats}</p>{selected.attribution && <p>{selected.attribution}</p>}</details>}
             <Link href={`/entries/${selected.slug}`} className="btn secondary">Read receipt & sources ↗</Link>
-          </> : <div className="map-detail-empty"><span aria-hidden="true" className="map-empty-dot" /><h3>There’s a story behind every dot.</h3><p>Select a receipt to see what the team learned, what changed, and how the result was documented.</p><p className="map-detail-meta">Search and filters narrow both the map and the cards.</p></div>}
+          </> : <div className="map-detail-empty"><span aria-hidden="true" className="map-empty-dot" /><h3>Take a closer look.</h3><p>Choose a receipt to see what the research found, what changed, and where the evidence comes from.</p></div>}
         </aside>
       </div>
     </div>
