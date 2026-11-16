@@ -3,6 +3,7 @@ import { shareMeta } from "@/lib/share";
 import Link from "next/link";
 import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import "./evidence-map.css";
 import { Analytics } from "@vercel/analytics/next";
 import TrackClicks from "@/components/TrackClicks";
 import ThemeToggle from "@/components/ThemeToggle";
