@@ -7,7 +7,7 @@ The homepage adds a map of published receipts alongside the existing card view. 
 - Map and Cards consume the same filtered results from `Explorer`. Search, all existing facets, result counts, empty-state recovery, and Lucky use the same pool.
 - Cards are the default when no view is specified. `?view=cards` opens the cards; `?view=map` opens the map. The view is retained in result links and the existing back-to-results mechanism.
 - Map uses the existing filter dialog at every width to recover the space occupied by the desktop sidebar. Cards retain the sidebar and sorting. The sort choice is preserved while the map is open.
-- The homepage introduction keeps its copy but uses a smaller headline and less vertical space.
+- The homepage introduction keeps its copy with a larger responsive headline (40–72px), with responsive section padding and an explicit gap between the title and paragraph at every screen width.
 - Desktop: a full-width explorer contains the matrix and a sticky receipt preview. Small screens: contribution groups reflow into two evidence columns; selecting a dot reveals the summary above the map and brings it into view.
 - Source summaries, evidence ratings, caveats, and the linked receipt pages come from existing published records. No database/schema changes or new analytics events.
 
