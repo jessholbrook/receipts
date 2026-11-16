@@ -46,7 +46,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero hero-atlas">
         <div className="wrap hero-grid">
           <h1>What has UX research ever done for us?</h1>
           <p className="lede">

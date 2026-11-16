@@ -51,3 +51,6 @@ supabase/seed.sql
 **/.impeccable/hook.pending.json
 .impeccable/critique/*
 !.impeccable/critique/ignore.md
+
+# Local prototype inspection and public data snapshots
+/.local/

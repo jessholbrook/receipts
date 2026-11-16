@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { Entry } from "@/lib/types";
 import { EVIDENCE, FACETS, FacetKey, labelFor } from "@/lib/taxonomy";
 import { EntryCard } from "./EntryCard";
+import EvidenceMap from "./EvidenceMap";
 import CopyButton from "./CopyButton";
 import { track } from "@/lib/track";
 import { sourceBreakdown } from "./SourceMark";
@@ -53,13 +54,14 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
       const raw = params.get(f.key);
       if (raw) sel[f.key] = raw.split(",").filter(Boolean);
     }
-    return { sel, q: params.get("q") ?? "", sort: params.get("sort") ?? "evidence" };
+    return { sel, q: params.get("q") ?? "", sort: params.get("sort") ?? "evidence", view: params.get("view") === "cards" ? "cards" : "map" };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [selected, setSelected] = useState<Selected>(initial.sel);
   const [q, setQ] = useState(initial.q);
   const [sort, setSort] = useState(initial.sort);
+  const [view, setView] = useState(initial.view);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [openFacets, setOpenFacets] = useState<Record<string, boolean>>({
     evidence_strength: true,
@@ -79,6 +81,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     }
     if (q.trim()) sp.set("q", q.trim());
     if (sort !== "evidence") sp.set("sort", sort);
+    sp.set("view", view);
     const qs = sp.toString();
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
     try {
@@ -86,7 +89,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
     } catch {
       /* storage unavailable: entry pages fall back to the full list */
     }
-  }, [selected, q, sort, pathname, router]);
+  }, [selected, q, sort, view, pathname, router]);
 
   // Someone opening a shared filtered link wants the results, not the pitch again.
   useEffect(() => {
@@ -298,7 +301,7 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
   return (
     <>
 
-      <div className="explorer">
+      <div className={`explorer ${view === "map" ? "explorer-map" : ""}`}>
         <div className="toolbar toolbar-cell">
           <div className="search-wrap">
             <label htmlFor="q" className="visually-hidden">
@@ -322,10 +325,14 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
           <button type="button" className="btn secondary filters-toggle" onClick={openSheet}>
             Filters{sidebarActive ? ` (${sidebarActive})` : ""}
           </button>
+          <div className="view-switch" role="group" aria-label="View receipts">
+            <button type="button" aria-pressed={view === "map"} onClick={() => setView("map")}>Map</button>
+            <button type="button" aria-pressed={view === "cards"} onClick={() => setView("cards")}>Cards</button>
+          </div>
           <label htmlFor="sort" className="visually-hidden">
             Sort
           </label>
-          <select id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
+          <select hidden={view === "map"} id="sort" className="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
             <option value="evidence">Strongest</option>
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
@@ -435,6 +442,8 @@ export default function Explorer({ entries }: { entries: Entry[] }) {
                 Know a case that fits? <a href="/submit">Submit it</a>.
               </p>
             </div>
+          ) : view === "map" ? (
+            <EvidenceMap entries={results} />
           ) : groups ? (
             groups.map(({ ev, items }) => {
               const open = ev.value === "tested" || openTiers[ev.value] || items.length <= PER_TIER + 2;
