@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Explorer from "@/components/Explorer";
+import HeroMark from "@/components/HeroMark";
+import EvidenceKey from "@/components/EvidenceKey";
 import { getEntriesCached } from "@/lib/supabase";
 import { countPhrase, describeFilters, filterEntries, isFiltered, parseSelected, shareDescription } from "@/lib/filters";
 import { FACETS } from "@/lib/taxonomy";
@@ -48,14 +50,27 @@ export default async function Home() {
     <>
       <section className="hero hero-atlas">
         <div className="wrap hero-grid">
-          <h1>What has UX research ever done for us?</h1>
-          <p className="lede">
-            We&rsquo;re tired of this question and we&rsquo;re guessing we&rsquo;re not the only ones. Receipts is a
-            public atlas of documented UX research wins you can reference and share, so we can all move past justifying
-            the value of research.
-          </p>
+          <div className="hero-text">
+            <h1>
+              what has ux
+              <br />
+              research ever
+              <br />
+              done for us?
+            </h1>
+            <p className="lede">
+              We&rsquo;re tired of this question and we&rsquo;re guessing we&rsquo;re not the only ones. Receipts is a
+              public atlas of documented UX research wins you can reference and share, so we can all move past
+              justifying the value of research.
+            </p>
+            <p className="hero-count">{entries.length} receipts. Every one links to its source.</p>
+          </div>
+          <div className="hero-art">
+            <HeroMark />
+          </div>
         </div>
       </section>
+      <EvidenceKey entries={entries} />
       <div className="wrap">
         <Suspense fallback={<p className="result-count">Loading receipts…</p>}>
           <Explorer entries={entries} />

@@ -10,7 +10,7 @@ export default async function Image() {
   const entries = await getEntries().catch(() => []);
   return renderOg({
     kicker: entries.length ? `${entries.length} documented UX research wins` : "Documented UX research wins",
-    title: "What has UX research ever done for us?",
+    title: "what has ux research ever done for us?",
     company: "Rated for evidence strength, with every source.",
     metric: "Show me the receipts.",
   });

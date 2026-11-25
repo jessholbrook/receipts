@@ -7,7 +7,7 @@ export const contentType = "image/png";
 export default async function Image() {
   return renderOg({
     kicker: "About",
-    title: "What has UX research ever done for us?",
+    title: "what has ux research ever done for us?",
     company: "Why this atlas exists, and how it works.",
     metric: "Show me the receipts.",
     resultLabel: "TOTAL",

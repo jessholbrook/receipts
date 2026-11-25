@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ResultCircles from "@/components/ResultCircles";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { shareMeta } from "@/lib/share";
@@ -156,6 +157,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
         </article>
 
         <aside className="side-receipt">
+          <ResultCircles metric={e.headline_metric} />
           <div className="receipt" style={{ paddingBottom: 30 }}>
             <div className="receipt-top">
               <span>Receipt</span>
