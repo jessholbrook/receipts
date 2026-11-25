@@ -2796,6 +2796,7 @@ a.receipt:focus-visible {
   margin: 0 0 14px;
   overflow: hidden;
   background: var(--grey-shape);
+  transition: background-color 0.3s ease-out;
 }
 
 .card-thumb {
@@ -2809,25 +2810,42 @@ a.receipt:focus-visible {
   filter: grayscale(1) contrast(1.08);
   opacity: 1;
   mix-blend-mode: multiply;
+  transition:
+    filter 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+a.receipt:hover .card-thumb-wrap,
+a.receipt:focus-visible .card-thumb-wrap {
+  background-color: #ffffff;
 }
 
 a.receipt:hover .card-thumb,
 a.receipt:focus-visible .card-thumb {
-  filter: grayscale(1) contrast(1.2);
+  filter: none;
   opacity: 1;
 }
 
-:root[data-theme="dark"] .card-thumb,
-:root[data-theme="dark"] a.receipt:hover .card-thumb {
+:root[data-theme="dark"] .card-thumb {
   mix-blend-mode: normal;
   opacity: 0.6;
 }
 
+:root[data-theme="dark"] a.receipt:hover .card-thumb,
+:root[data-theme="dark"] a.receipt:focus-visible .card-thumb {
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .card-thumb,
-  :root:not([data-theme="light"]) a.receipt:hover .card-thumb {
+  :root:not([data-theme="light"]) .card-thumb {
     mix-blend-mode: normal;
     opacity: 0.6;
+  }
+  :root:not([data-theme="light"]) a.receipt:hover .card-thumb,
+  :root:not([data-theme="light"]) a.receipt:focus-visible .card-thumb {
+    mix-blend-mode: normal;
+    opacity: 1;
   }
 }
 
@@ -3152,4 +3170,24 @@ a.receipt:focus-visible .card-thumb {
 
 .evidence-map .map-empty-dot {
   background: var(--signal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-thumb-wrap,
+  .card-thumb {
+    transition: none;
+  }
+}
+
+/* dark mode: the photo isn't multiplied, so keep the strip grey behind it while it fades up */
+:root[data-theme="dark"] a.receipt:hover .card-thumb-wrap,
+:root[data-theme="dark"] a.receipt:focus-visible .card-thumb-wrap {
+  background-color: var(--grey-shape);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) a.receipt:hover .card-thumb-wrap,
+  :root:not([data-theme="light"]) a.receipt:focus-visible .card-thumb-wrap {
+    background-color: var(--grey-shape);
+  }
 }
