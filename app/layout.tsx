@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { shareMeta } from "@/lib/share";
 import Link from "next/link";
-import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
+import { Inter_Tight, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./evidence-map.css";
 import { Analytics } from "@vercel/analytics/next";
@@ -9,10 +9,10 @@ import TrackClicks from "@/components/TrackClicks";
 import ThemeToggle from "@/components/ThemeToggle";
 import { themeInitScript } from "@/lib/theme";
 
-// Newsreader's optical-size axis gives display cuts at headline sizes, text cuts on card titles.
-const serif = Newsreader({ subsets: ["latin"], variable: "--font-serif", display: "swap", axes: ["opsz"] });
-const sans = Source_Sans_3({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
+// One grotesque for everything, in the Swiss manner (Fred Troller's Geigy work set in Akzidenz).
+// The mono face is kept only for code-like text: the moderator's JSON editor.
+const sans = Inter_Tight({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "700", "800"] });
+const code = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code", display: "swap" });
 
 // Canonical address. The bare domain and whathasresearcheverdone.com redirect here.
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.researchreceipts.org";
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${code.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
@@ -45,16 +45,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="wrap">
             <Link href="/" className="logo" aria-label="Receipts home">
               <span className="logo-mark" aria-hidden="true" />
-              Receipts
+              receipts
             </Link>
             <nav className="nav" aria-label="Main">
-              <Link href="/about">About</Link>
+              <Link href="/about">about</Link>
               <Link href="/how-we-rate" className="nav-how">
-                How we rate
+                how we rate
               </Link>
-              <Link href="/submit" className="btn">
-                <span className="submit-long">Submit a receipt</span>
-                <span className="submit-short">Submit</span>
+              <Link href="/submit" className="nav-submit">
+                <span className="nav-submit-mark" aria-hidden="true" />
+                <span className="submit-long">submit a receipt</span>
+                <span className="submit-short">submit</span>
               </Link>
               <ThemeToggle />
             </nav>
@@ -64,6 +65,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <footer className="site-footer">
+          <span className="footer-circle" aria-hidden="true" />
+          <div className="wrap footer-cta">
+            <p>
+              know a case that belongs here? <Link href="/submit">submit a receipt.</Link>
+            </p>
+          </div>
           <div className="wrap">
             <span className="footer-domains">
               <a href="https://www.researchreceipts.org">researchreceipts.org</a> (aka{" "}
@@ -71,9 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               research wins
             </span>
             <span>
-              <Link href="/about">About</Link> · <Link href="/how-we-rate">How we rate</Link> ·{" "}
-              <Link href="/submit">Submit</Link> ·{" "}
-              <a href="https://github.com/jessholbrook/receipts">Source</a>
+              <Link href="/about">about</Link> · <Link href="/how-we-rate">how we rate</Link> ·{" "}
+              <Link href="/submit">submit</Link> ·{" "}
+              <a href="https://github.com/jessholbrook/receipts">source</a>
             </span>
           </div>
         </footer>

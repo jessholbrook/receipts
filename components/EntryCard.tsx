@@ -9,10 +9,15 @@ export function EvidenceBadge({ level }: { level: Entry["evidence_strength"] }) 
   return <span className={`ev ev-${level}`}>{labelFor("evidence_strength", level)}</span>;
 }
 
-// A receipt: the header names the shop (industry, year, evidence), the result is the line
-// people read, then who it is and who is telling it. The full title lives on the entry page;
-// on the card it would only repeat the result. Inside an evidence section the section header
-// already names the level, so the badge is optional.
+// A receipt, after Troller: a black rule, the source's photo pressed into grey, the evidence sign,
+// then the result set as large as it will go. The full title sits under the result in plain text;
+// company and who is telling the story close the card.
+function resultSize(text: string): "xl" | "l" | "m" {
+  if (text.length <= 7) return "xl";
+  if (text.length <= 18) return "l";
+  return "m";
+}
+
 export function EntryCard({
   entry,
   headingLevel = 3,
@@ -23,33 +28,27 @@ export function EntryCard({
   showBadge?: boolean;
 }) {
   const Title = headingLevel === 4 ? "h4" : "h3";
+  const result = entry.headline_metric ?? "See the full receipt";
   return (
     <Link href={`/entries/${entry.slug}`} className="receipt">
-      {entry.image_url && <Thumb src={entry.image_url} className="card-thumb" />}
+      {entry.image_url && (
+        <span className="card-thumb-wrap">
+          <Thumb src={entry.image_url} className="card-thumb" />
+        </span>
+      )}
       <div className="receipt-head">
+        {showBadge && <EvidenceBadge level={entry.evidence_strength} />}
         <span className="receipt-meta">
           {labelFor("industry", entry.industry)}
           {entry.year ? ` · ${yearLabel(entry)}` : ""}
         </span>
-        {showBadge && <EvidenceBadge level={entry.evidence_strength} />}
       </div>
-      <p className="receipt-result">{entry.headline_metric ?? "See the full receipt"}</p>
-      <Title className="receipt-title">{entry.company}</Title>
+      <p className={`receipt-result receipt-result-${resultSize(result)}`}>{result}</p>
+      <Title className="receipt-title">{entry.title}</Title>
       <p className="source-line">
+        <span className="receipt-company">{entry.company}</span>
         <SourceMark type={entry.source_type} />
       </p>
-      <p className="summary">{entry.summary}</p>
-      {entry.methods.length > 0 && (
-        <div className="receipt-foot">
-          <span className="visually-hidden">Method: </span>
-          <span className="tag">{labelFor("methods", entry.methods[0])}</span>
-          {entry.methods.length > 1 && (
-            <span className="tag-more" aria-label={`and ${entry.methods.length - 1} more`}>
-              +{entry.methods.length - 1}
-            </span>
-          )}
-        </div>
-      )}
     </Link>
   );
 }

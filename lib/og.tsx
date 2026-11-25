@@ -1,14 +1,17 @@
-// Shared rendering for Open Graph images (1200x630).
+// Shared rendering for Open Graph images (1200x630), in the site's Troller style:
+// paper, one heavy grotesque, the evidence sign, a red circle cropped off the corner.
 import { ImageResponse } from "next/og";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
-const EV: Record<string, { label: string; fg: string; bg: string }> = {
-  tested: { label: "TESTED", fg: "#166534", bg: "#dcfce7" },
-  measured: { label: "MEASURED", fg: "#1d4ed8", bg: "#dbeafe" },
-  reported: { label: "REPORTED", fg: "#854d0e", bg: "#fef3c7" },
-  decision: { label: "DECISION", fg: "#7e22ce", bg: "#f3e8ff" },
-};
+const INK = "#111111";
+const INK_2 = "#33332f";
+const INK_3 = "#55554f";
+const PAPER = "#f5f5f2";
+const RED = "#e3231b";
+const GREY = "#c9c9c4";
+
+const EV_LABEL: Record<string, string> = { tested: "tested", measured: "measured", reported: "reported", decision: "decision" };
 
 async function googleFont(family: string, weight: number, text: string): Promise<ArrayBuffer | null> {
   try {
@@ -29,13 +32,23 @@ function Mark() {
   return (
     <div
       style={{
-        width: 30,
-        height: 36,
-        background: "#0e0e0e",
+        width: 26,
+        height: 32,
+        background: RED,
         clipPath: "polygon(0 0, 100% 0, 100% 88%, 83% 100%, 67% 88%, 50% 100%, 33% 88%, 17% 100%, 0 88%)",
       }}
     />
   );
+}
+
+// The evidence levels as shapes: solid circle, half circle, ring, square.
+function Sign({ level }: { level: string }) {
+  const base = { display: "flex", width: 26, height: 26 } as const;
+  if (level === "tested") return <div style={{ ...base, borderRadius: 13, background: RED }} />;
+  if (level === "measured")
+    return <div style={{ ...base, borderRadius: 13, backgroundImage: `linear-gradient(90deg, ${RED} 50%, ${GREY} 50%)` }} />;
+  if (level === "reported") return <div style={{ ...base, borderRadius: 13, border: `6px solid ${INK}` }} />;
+  return <div style={{ ...base, width: 23, height: 23, margin: 1.5, background: INK }} />;
 }
 
 export async function renderOg(opts: {
@@ -51,24 +64,26 @@ export async function renderOg(opts: {
   const { kicker, title, metric, evidence, source, resultLabel = "TOTAL" } = opts;
   // one line for the company; the full name is on the page
   const company = opts.company && opts.company.length > 52 ? `${opts.company.slice(0, 50).trimEnd()}…` : opts.company;
-  const ev = evidence ? EV[evidence] : undefined;
-  const allText = [kicker, title, company, metric, ev?.label, source?.text, resultLabel, "Receipts", "What has UX research ever done for us?"]
+  const ev = evidence ? EV_LABEL[evidence] : undefined;
+  const allText = [kicker, title, company, metric, ev, source?.text, resultLabel, "receipts", "What has UX research ever done for us?"]
     .filter(Boolean)
     .join(" ");
   // The kicker and labels render uppercased (textTransform), so the font subset needs capitals too.
-  const glyphs = `${allText} ${allText.toUpperCase()}`;
-  const [serif, mono, sans] = await Promise.all([
-    googleFont("Newsreader", 600, glyphs),
-    googleFont("JetBrains Mono", 600, glyphs),
-    googleFont("Source Sans 3", 400, glyphs),
+  const glyphs = `${allText} ${allText.toUpperCase()} …`;
+  const [heavy, bold, regular] = await Promise.all([
+    googleFont("Inter Tight", 800, glyphs),
+    googleFont("Inter Tight", 700, glyphs),
+    googleFont("Inter Tight", 500, glyphs),
   ]);
   const fonts = [
-    serif && { name: "Newsreader", data: serif, weight: 600 as const },
-    mono && { name: "JetBrains Mono", data: mono, weight: 600 as const },
-    sans && { name: "Source Sans 3", data: sans, weight: 400 as const },
-  ].filter(Boolean) as { name: string; data: ArrayBuffer; weight: 400 | 600 }[];
+    heavy && { name: "Inter Tight", data: heavy, weight: 800 as const },
+    bold && { name: "Inter Tight", data: bold, weight: 700 as const },
+    regular && { name: "Inter Tight", data: regular, weight: 500 as const },
+  ].filter(Boolean) as { name: string; data: ArrayBuffer; weight: 500 | 700 | 800 }[];
 
-  const titleSize = title.length > 110 ? 40 : title.length > 80 ? 46 : title.length > 55 ? 54 : 66;
+  const titleSize = title.length > 110 ? 40 : title.length > 80 ? 46 : title.length > 55 ? 54 : 68;
+  const metricText = metric ?? "What has UX research ever done for us?";
+  const metricSize = metricText.length > 34 ? 30 : metricText.length > 24 ? 36 : 44;
 
   return new ImageResponse(
     (
@@ -77,97 +92,73 @@ export async function renderOg(opts: {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#f7f7f5",
-          padding: "56px 64px",
-          fontFamily: "Source Sans 3",
+          position: "relative",
+          background: PAPER,
+          padding: "56px 64px 52px",
+          fontFamily: "Inter Tight",
+          color: INK,
         }}
       >
         <div
           style={{
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            background: "#ffffff",
-            border: "1px solid #e0e0dc",
-            padding: "40px 48px",
-            boxShadow: "0 4px 24px rgba(0,0,0,0.07)",
+            position: "absolute",
+            right: -110,
+            top: -110,
+            width: 260,
+            height: 260,
+            borderRadius: 130,
+            background: RED,
           }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <Mark />
-              <span style={{ fontFamily: "Newsreader", fontSize: 34, color: "#0e0e0e" }}>Receipts</span>
-            </div>
-            {ev ? (
-              <div
-                style={{
-                  display: "flex",
-                  fontFamily: "JetBrains Mono",
-                  fontSize: 22,
-                  letterSpacing: 2,
-                  color: ev.fg,
-                  background: ev.bg,
-                  padding: "6px 18px",
-                  borderRadius: 999,
-                }}
-              >
-                {ev.label}
-              </div>
-            ) : null}
+        />
+        <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <Mark />
+            <span style={{ fontSize: 32, fontWeight: 800, letterSpacing: -0.6 }}>receipts</span>
           </div>
-          {kicker ? (
-            <div
-              style={{
-                display: "flex",
-                marginTop: 34,
-                fontFamily: "JetBrains Mono",
-                fontSize: 20,
-                letterSpacing: 2,
-                color: "#5a5a5a",
-                textTransform: "uppercase",
-              }}
-            >
-              {kicker}
+
+          {ev || kicker ? (
+            <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 40 }}>
+              {ev && evidence ? <Sign level={evidence} /> : null}
+              {ev ? <span style={{ fontSize: 24, fontWeight: 700 }}>{ev}</span> : null}
+              {kicker ? (
+                <span
+                  style={{
+                    fontSize: 20,
+                    fontWeight: 700,
+                    letterSpacing: 1.5,
+                    color: INK_3,
+                    textTransform: "uppercase",
+                    marginLeft: ev ? 6 : 0,
+                  }}
+                >
+                  {ev ? `· ${kicker}` : kicker}
+                </span>
+              ) : null}
             </div>
           ) : null}
+
           <div
             style={{
               display: "flex",
-              marginTop: kicker ? 14 : 48,
-              fontFamily: "Newsreader",
+              marginTop: ev || kicker ? 16 : 48,
+              maxWidth: 1000,
               fontSize: titleSize,
-              lineHeight: 1.08,
-              color: "#0e0e0e",
-              letterSpacing: -1,
+              fontWeight: 800,
+              lineHeight: 1.02,
+              letterSpacing: -titleSize * 0.025,
             }}
           >
             {title}
           </div>
+
           {company || source ? (
-            <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 16, marginTop: 18 }}>
-              {company ? <span style={{ fontSize: 28, color: "#383838" }}>{company}</span> : null}
+            <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 18, marginTop: 20 }}>
+              {company ? <span style={{ fontSize: 26, fontWeight: 500, color: INK_2 }}>{company}</span> : null}
               {source ? (
-                <div
-                  style={
-                    source.vendor
-                      ? {
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 8,
-                          fontSize: 22,
-                          color: "#9a3412",
-                          background: "#fdecdf",
-                          border: "2px solid #e8b48f",
-                          borderRadius: 8,
-                          padding: "4px 12px",
-                        }
-                      : { display: "flex", fontSize: 22, color: "#383838" }
-                  }
-                >
+                <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 22, fontWeight: source.vendor ? 700 : 500, color: source.vendor ? INK : INK_3 }}>
                   {source.vendor ? (
-                    <svg width="22" height="22" viewBox="0 0 16 16">
-                      <path d="M8 1.5 15 14H1z" fill="none" stroke="#9a3412" strokeWidth="1.6" strokeLinejoin="round" />
-                      <path d="M8 6v3.6M8 11.6v.4" stroke="#9a3412" strokeWidth="1.6" strokeLinecap="round" />
+                    <svg width="20" height="18" viewBox="0 0 12 11">
+                      <path d="M6,0 L12,11 L0,11 Z" fill={RED} />
                     </svg>
                   ) : null}
                   {source.text}
@@ -175,19 +166,23 @@ export async function renderOg(opts: {
               ) : null}
             </div>
           ) : null}
+
           <div style={{ flex: 1, display: "flex" }} />
+
           <div
             style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "baseline",
-              borderTop: "2px dashed #bdbdb7",
-              paddingTop: 18,
-              fontFamily: "JetBrains Mono",
+              gap: 24,
+              borderTop: `4px solid ${INK}`,
+              paddingTop: 16,
             }}
           >
-            <span style={{ fontSize: 22, color: "#5a5a5a", letterSpacing: 2 }}>{resultLabel}</span>
-            <span style={{ fontSize: 36, color: "#0e0e0e" }}>{metric ?? "What has UX research ever done for us?"}</span>
+            <span style={{ fontSize: 20, fontWeight: 700, color: INK_3, letterSpacing: 1.5, textTransform: "uppercase" }}>
+              {resultLabel}
+            </span>
+            <span style={{ fontSize: metricSize, fontWeight: 800, letterSpacing: -metricSize * 0.025 }}>{metricText}</span>
           </div>
         </div>
       </div>
