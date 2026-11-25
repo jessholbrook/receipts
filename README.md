@@ -90,6 +90,14 @@ Read the [rating guide](https://www.researchreceipts.org/how-we-rate), [`BRIEF.m
 
 Screenshots were captured from the public site on November 16, 2026, in light mode: desktop at 1440 × 1100 and mobile at 390 × 1000. The live collection can change after capture. See [screenshot capture notes](docs/screenshots/README.md) to refresh them.
 
+## Design
+
+The look follows Fred Troller's Swiss/Geigy work: one signal red, warm grey and black on paper, one heavy
+grotesque (Inter Tight), flat overlapping geometry. Evidence levels are shapes, not colours: tested = solid
+circle, measured = half circle, reported = ring, decision = square (`.ev` badges and `components/EvidenceSign.tsx`).
+Entries whose result is two percentages ("27.6% → 72.9%") get area-true circles (`components/ResultCircles.tsx`).
+The redesign is the last layer of `app/globals.css`, overriding the earlier rounds above it.
+
 ## Stack and structure
 
 - **Next.js 15 App Router**, **React 19**, and **TypeScript**.
