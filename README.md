@@ -27,7 +27,9 @@ The collection includes commercial results, public services, accessibility impro
 
 ### Cards
 
-Cards show the headline outcome, company, evidence level, source context, and a summary. The default “Strongest” sort groups receipts by evidence level; within a level, source type and year help order the results. You can also sort by newest year, oldest year, or date added.
+![Receipt cards in the strongest-first grid: each card has a black top rule, the source's photo in grey, the result set large, the title, and the company and source, with the evidence and industry filters in the sidebar](docs/screenshots/homepage-grid.png)
+
+Cards show the headline outcome set large, the receipt's title, the company, its evidence sign, and who is telling the story, with the source's photo where there is one. The default “Strongest” sort groups receipts by evidence level; within a level, source type and year help order the results. You can also sort by newest year, oldest year, or date added.
 
 Desktop cards keep filters in a sidebar. Smaller screens use a filter dialog. Search, filters, sorting, and view selection are reflected in the URL, and entry pages provide a way back to your results.
 
