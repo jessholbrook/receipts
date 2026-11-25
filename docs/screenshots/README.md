@@ -1,6 +1,6 @@
 # README screenshots
 
-Captured from **https://www.researchreceipts.org** on **November 16, 2026**, after the larger homepage title and spacing changes were merged. These are browser captures of the deployed app with its loaded web fonts and published data.
+Captured from **https://www.researchreceipts.org** on **November 25, 2026**, after the Fred Troller redesign was merged. These are browser captures of the deployed app with its loaded web fonts and published data.
 
 | File | Page and state | Viewport |
 | --- | --- | --- |

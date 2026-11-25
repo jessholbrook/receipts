@@ -8,7 +8,7 @@ A public atlas of documented UX research wins. Find a case, see what the researc
 
 [whathasresearcheverdone.com](https://whathasresearcheverdone.com) gets you here too.
 
-![Receipts homepage with the larger introduction, shared search, evidence filters, and receipt cards](docs/screenshots/homepage-cards.png)
+![Receipts homepage: the lowercase headline beside the red receipt over a grey circle, then the evidence key with its four signs and counts, and the search and view controls](docs/screenshots/homepage-cards.png)
 
 **In this README:** [Explore](#two-ways-to-explore) · [Evidence](#evidence-sources-and-caveats) · [Stack](#stack-and-structure) · [Local setup](#run-locally) · [Data and publishing](#data-and-publishing) · [Moderation](#moderation-and-source-checks) · [Analytics](#sharing-caching-and-analytics) · [Contribute](#contribute)
 
@@ -84,11 +84,11 @@ Read the [rating guide](https://www.researchreceipts.org/how-we-rate), [`BRIEF.m
 <details>
 <summary>Mobile homepage</summary>
 
-<img src="docs/screenshots/homepage-mobile.png" alt="Mobile Receipts homepage with a larger stacked title and introduction, search, and view controls" width="390" />
+<img src="docs/screenshots/homepage-mobile.png" alt="Mobile Receipts homepage with the stacked headline and introduction, the receipt figure, and the evidence key in two columns" width="390" />
 
 </details>
 
-Screenshots were captured from the public site on November 16, 2026, in light mode: desktop at 1440 × 1100 and mobile at 390 × 1000. The live collection can change after capture. See [screenshot capture notes](docs/screenshots/README.md) to refresh them.
+Screenshots were captured from the public site on November 25, 2026, after the Fred Troller redesign, in light mode: desktop at 1440 × 1100 and mobile at 390 × 1000. The live collection can change after capture. See [screenshot capture notes](docs/screenshots/README.md) to refresh them.
 
 ## Design
 
